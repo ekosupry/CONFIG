@@ -39,7 +39,7 @@ hosts:
 #🔴
 proxies: 
   - name: SG DO TLS
-    server: 104.18.3.2
+    server: wc.vanillicon.com
     port: 443
     type: vmess
     uuid: f3f06036-f052-4478-acbb-0b81307d4bb5
@@ -56,7 +56,7 @@ proxies:
     udp: true
 
   - name: SG DO NTLS
-    server: 104.18.3.2
+    server: wc.vanillicon.com
     port: 80
     type: vmess
     uuid: f3f06036-f052-4478-acbb-0b81307d4bb5
@@ -73,7 +73,7 @@ proxies:
     udp: true
 
   - name: SG DO GRPC
-    server: 104.18.3.2
+    server: wc.vanillicon.com
     port: 443
     type: vmess
     uuid: f3f06036-f052-4478-acbb-0b81307d4bb5
@@ -87,7 +87,7 @@ proxies:
       grpc-service-name: vmess-grpc
 
   - name: VLESS KNC 443
-    server: 104.18.3.2
+    server: wc.vanillicon.com
     port: 443
     type: vless
     uuid: 80510fd1-7a7d-4b83-a3db-05fb7f23dea5
@@ -104,7 +104,7 @@ proxies:
     udp: true
 
   - name: VLESS KNC2 443
-    server: 104.18.3.2
+    server: wc.vanillicon.com
     port: 443
     type: vless
     uuid: 80510fd1-7a7d-4b83-a3db-05fb7f23dea5
@@ -121,7 +121,7 @@ proxies:
     udp: true
 
   - name: VLESS KNC KR 443
-    server: 104.18.3.2
+    server: wc.vanillicon.com
     port: 443
     type: vless
     uuid: 4994c6a3-3242-45b8-a3e3-7d0fb82b0ece
@@ -138,7 +138,7 @@ proxies:
     udp: true
 
   - name: VLESS DO 443
-    server: 104.18.3.2
+    server: wc.vanillicon.com
     port: 443
     type: vless
     uuid: b0cb1b0b-f5ba-4ca4-a587-cfe48126bff7

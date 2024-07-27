@@ -1,0 +1,197 @@
+proxies:
+#Singapura port 443
+  - name: TROJAN SG HERZA 443
+    server: 104.18.3.2
+    port: 443
+    type: trojan
+    password: 231f1a50-05fb-11ef-92ec-1577c1651679
+    skip-cert-verify: true
+    sni: 11.lowh.net
+    network: ws
+    ws-opts:
+      path: /welcome
+      headers:
+        Host: 11.lowh.net
+    udp: true
+
+  - name: VMESS SG3 HE 443
+    server: 104.18.3.2
+    port: 443
+    type: vmess
+    uuid: d99d8ad0-05fb-11ef-9a34-1577c1651679
+    alterId: 0
+    cipher: auto
+    tls: true
+    skip-cert-verify: true
+    servername: 2.htmlcdn.net
+    network: ws
+    ws-opts:
+      path: /hello
+      headers:
+        Host: 2.htmlcdn.net
+    udp: true
+
+  - name: VMESS XMMB+Biznet 443
+    server: 104.18.3.2
+    port: 443
+    type: vmess
+    uuid: 32bce4a0-234a-11ef-b832-1577c1651679
+    alterId: 0
+    cipher: auto
+    tls: true
+    skip-cert-verify: true
+    servername: cbtp.xmbb.net
+    network: ws
+    ws-opts:
+      path: /hello
+      headers:
+        Host: cbtp.xmbb.net
+    udp: true
+
+  - name: TROJAN SG Path 443
+    server: 104.18.3.2
+    port: 443
+    type: trojan
+    password: 2c8085e0-234b-11ef-bfbc-1577c1651679
+    skip-cert-verify: true
+    sni: sg.xmbb.net
+    network: ws
+    ws-opts:
+      path: /welcome
+      headers:
+        Host: sg.xmbb.net
+    udp: true
+
+  - name: TROJAN SG 443
+    server: 104.18.3.2
+    port: 443
+    type: trojan
+    password: f2c32630-05fa-11ef-83f5-1577c1651679
+    skip-cert-verify: true
+    sni: 002.htmlcdn.net
+    network: ws
+    ws-opts:
+      path: /welcome
+      headers:
+        Host: 002.htmlcdn.net
+    udp: true
+
+  - name: VLESS SG HE 443
+    server: 104.18.3.2
+    port: 443
+    type: vless
+    uuid: 76c34260-05fb-11ef-91e9-1577c1651679
+    alterId: 0
+    cipher: auto
+    tls: true
+    skip-cert-verify: true
+    servername: sg-vless-ws.bypass.id
+    network: ws
+    ws-opts:
+      path: /howdy
+      headers:
+        Host: sg-vless-ws.bypass.id
+    udp: true
+
+  - name: VLESS SG2 443
+    server: 104.18.3.2
+    port: 443
+    type: vless
+    uuid: 906cfa30-05fb-11ef-bc87-1577c1651679
+    alterId: 0
+    cipher: auto
+    tls: true
+    skip-cert-verify: true
+    servername: sg-vless-ws.bypass.id
+    network: ws
+    ws-opts:
+      path: /howdy
+      headers:
+        Host: sg-vless-ws.bypass.id
+    udp: true
+
+  - name: VMESS SG HE 443
+    server: 104.18.3.2
+    port: 443
+    type: vmess
+    uuid: 14735480-05fa-11ef-9f13-1577c1651679
+    alterId: 0
+    cipher: auto
+    tls: true
+    skip-cert-verify: true
+    servername: 001.htmlcdn.net
+    network: ws
+    ws-opts:
+      path: /hello
+      headers:
+        Host: 001.htmlcdn.net
+    udp: true
+
+# port 80
+  - name: VMESS SG HE 80
+    server: 104.18.3.2
+    port: 80
+    type: vmess
+    uuid: c5a61b70-05fa-11ef-84b3-1577c1651679
+    alterId: 0
+    cipher: auto
+    tls: false
+    skip-cert-verify: true
+    servername: 001.htmlcdn.net
+    network: ws
+    ws-opts:
+      path: /worryfree
+      headers:
+        Host: 001.htmlcdn.net
+    udp: true
+
+  - name: VMESS SGS 80
+    server: 104.18.3.2
+    port: 80
+    type: vmess
+    uuid: 830381c0-2354-11ef-b642-1577c1651679
+    alterId: 0
+    cipher: auto
+    tls: false
+    skip-cert-verify: true
+    servername: 2.htmlcdn.net
+    network: ws
+    ws-opts:
+      path: /worryfree
+      headers:
+        Host: 2.htmlcdn.net
+    udp: true
+
+  - name: VMESS SG XMMB 80
+    server: 104.18.3.2
+    port: 80
+    type: vmess
+    uuid: 36e90e70-2355-11ef-90b9-1577c1651679
+    alterId: 0
+    cipher: auto
+    tls: false
+    skip-cert-verify: true
+    servername: cbtp.xmbb.net
+    network: ws
+    ws-opts:
+      path: /worryfree
+      headers:
+        Host: cbtp.xmbb.net
+    udp: true
+
+  - name: VLESS SG Bypass 80
+    server: 104.18.3.2
+    port: 80
+    type: vless
+    uuid: 873dd460-2355-11ef-bf8e-1577c1651679
+    alterId: 0
+    cipher: auto
+    tls: false
+    skip-cert-verify: true
+    servername: sg-vless-ws.bypass.id
+    network: ws
+    ws-opts:
+      path: /worryfree
+      headers:
+        Host: sg-vless-ws.bypass.id
+    udp: true

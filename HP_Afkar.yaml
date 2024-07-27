@@ -42,49 +42,18 @@ proxies:
     server: wc.vanillicon.com
     port: 443
     type: vmess
-    uuid: f3f06036-f052-4478-acbb-0b81307d4bb5
+    uuid: b2cbe9a2-49f6-4062-9b51-4d6eae668383
     alterId: 0
     cipher: auto
     tls: true
     skip-cert-verify: true
-    servername: kuhaku.zerossh.my.id
+    servername: sgo-viprext.my.id
     network: ws
     ws-opts:
       path: /vmess
       headers:
-        Host: kuhaku.zerossh.my.id
+        Host: sgo-viprext.my.id
     udp: true
-
-  - name: SG DO NTLS
-    server: wc.vanillicon.com
-    port: 80
-    type: vmess
-    uuid: f3f06036-f052-4478-acbb-0b81307d4bb5
-    alterId: 0
-    cipher: auto
-    tls: false
-    skip-cert-verify: true
-    servername: kuhaku.zerossh.my.id
-    network: ws
-    ws-opts:
-      path: /vmess
-      headers:
-        Host: kuhaku.zerossh.my.id
-    udp: true
-
-  - name: SG DO GRPC
-    server: wc.vanillicon.com
-    port: 443
-    type: vmess
-    uuid: f3f06036-f052-4478-acbb-0b81307d4bb5
-    alterId: 0
-    cipher: auto
-    network: grpc
-    tls: true
-    servername: kuhaku.zerossh.my.id
-    skip-cert-verify: true
-    grpc-opts:
-      grpc-service-name: vmess-grpc
 
   - name: VLESS KNC 443
     server: wc.vanillicon.com
@@ -168,8 +137,6 @@ proxy-groups:
   disable-udp: false
   proxies:
     -  SG DO TLS
-    -  SG DO NTLS
-    -  SG DO GRPC
     -  VLESS KNC 443
     -  VLESS KNC2 443
     -  VLESS KNC KR 443
@@ -188,8 +155,6 @@ proxy-groups:
     -  LOAD-BALANCE
     -  FALLBACK
     -  SG DO TLS
-    -  SG DO NTLS
-    -  SG DO GRPC
     -  VLESS KNC 443
     -  VLESS KNC2 443
     -  VLESS KNC KR 443
@@ -208,8 +173,6 @@ proxy-groups:
     -  LOAD-BALANCE
     -  FALLBACK
     -  SG DO TLS
-    -  SG DO NTLS
-    -  SG DO GRPC
     -  VLESS KNC 443
     -  VLESS KNC2 443
     -  VLESS KNC KR 443
@@ -229,8 +192,6 @@ proxy-groups:
     -  LOAD-BALANCE
     -  FALLBACK
     -  SG DO TLS
-    -  SG DO NTLS
-    -  SG DO GRPC
     -  VLESS KNC 443
     -  VLESS KNC2 443
     -  VLESS KNC KR 443
@@ -248,8 +209,6 @@ proxy-groups:
     -  LOAD-BALANCE
     -  FALLBACK
     -  SG DO TLS
-    -  SG DO NTLS
-    -  SG DO GRPC
     -  VLESS KNC 443
     -  VLESS KNC2 443
     -  VLESS KNC KR 443
@@ -301,8 +260,6 @@ proxy-groups:
   disable-udp: false
   proxies:
     -  SG DO TLS
-    -  SG DO NTLS
-    -  SG DO GRPC
     -  VLESS KNC 443
     -  VLESS KNC2 443
     -  VLESS KNC KR 443
@@ -316,8 +273,6 @@ proxy-groups:
   disable-udp: false
   proxies:
     -  SG DO TLS
-    -  SG DO NTLS
-    -  SG DO GRPC
     -  VLESS KNC 443
     -  VLESS KNC2 443
     -  VLESS KNC KR 443
@@ -332,8 +287,6 @@ proxy-groups:
   disable-udp: false
   proxies:
     -  SG DO TLS
-    -  SG DO NTLS
-    -  SG DO GRPC
     -  VLESS KNC 443
     -  VLESS KNC2 443
     -  VLESS KNC KR 443

@@ -383,7 +383,7 @@ rules:
 # >BISA DI ISI SUBDOMAIN,IP-CIDR ATAU PORT GAME 
 # KUSUS
 - DOMAIN-SUFFIX,whoer.net,SOSMED
-- DOMAIN-SUFFIX,zello.com,SOSMED
+- DOMAIN-SUFFIX,zello.com,AKUN BANK
 - DOMAIN-SUFFIX,google.com,Global✅
 - DOMAIN-SUFFIX,blogspot.com,Global✅
 - DOMAIN-SUFFIX,blogger.com,Global✅

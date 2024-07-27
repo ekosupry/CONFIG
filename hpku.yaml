@@ -1,42 +1,80 @@
-port: 7890
-socks-port: 7891
-# redir-port: 7892
+---
+# ================= XL ==================
+mode: rule
 allow-lan: true
-# 仅适用于设置 allow-lan 为 true 时
-# "*": 绑定所有 IP 地址
-#192.168.122.11: 绑定单个 IPv4 地址
-# "[aaaa::a8aa:ff:fe09:57d8]": 绑定单个 IPv6 地址
-# bind-address: "*"
+unified-delay: true
+bind-address: '*'
+log-level: silent
+ipv6: false
+geodata-mode: true
+external-controller: 0.0.0.0:9090
+external-ui: dashboard/dist
+tcp-concurrent: true
+interface-name: ""
+enable-process: false
+geodata-loader: memconservative
+inbound-tfo: true
+secret: ""
+# geox-url: {mmdb: "https://cdn.jsdelivr.net/gh/Dreamacro/maxmind-geoip@release/Country.mmdb",geoip: "https://github.com/v2fly/geoip/releases/latest/download/geoip-only-cn-private.dat",geosite: "https://github.com/taamarin/v2ray-rules-dat/raw/release/GeoSite.dat"}
+profile:
+  store-selected: true
+  store-fake-ip: false
+experimental: {
+    sniff-tls-sni: false,
+    fingerprint: ""
+}
+sniffer:
+  enable: false
+  sniffing:
+    - tls
+    - http
+  force-domain:
+    - '+'
+  skip-domain: 
+    - '+.google.com'
+  port-whitelist:
+    - 443
+    - 80
+hosts: {
+  "cacerts.digicert.com": "104.21.21.147",
+  "ota.googlezip.net": "127.0.0.1",
+  "ota-cache1.googlezip.net": "127.0.0.1",
+  "ota-cache2.googlezip.net": "127.0.0.1"
+}
+tun:
+  enable: false
+  device: Meta
+  stack: system
+  dns-hijack:
+    - any:53
+  auto-route: false
+  auto-detect-interface: false
 dns:
   enable: true
-  ipv6: false
-  use-host: true
-  enhanced-mode: fake-ip
-  listen: 0.0.0.0:7874
-  nameserver:
-    - 8.8.8.8
-    - 1.0.0.1
-    - https://dns.google/dns-query
-  fallback:
-    - 1.1.1.1
-    - 8.8.4.4
-    - https://cloudflare-dns.com/dns-query
-    - 112.215.203.254
+  ipv6: true
+  prefer-h3: false
   default-nameserver:
     - 8.8.8.8
+  listen: 0.0.0.0:1053
+  use-hosts: true
+  enhanced-mode: fake-ip
+  fake-ip-range: 28.0.0.1/8
+  fake-ip-filter: [
+    "*.local",
+    "*.localhost",
+  ]
+  nameserver:
     - 1.1.1.1
-    - 112.215.203.254
-mode: Rule
-log-level: info
-external-controller: 127.0.0.1:9090
-experimental:
-  ignore-resolve-fail: true 
-hosts:
-  'mtalk.google.com': 108.177.125.188
-#   '*.clash.dev': 127.0.0.1
-#   'alpha.clash.dev': '::1'
-#🔴_____________________________________proxies______________________________________🔴
-#🔴
+  fallback: []
+  fallback-filter:
+    geoip: false
+    geoip-code: "!ID"
+    geosite: [GFW]
+    ipcidr: []
+    domain: ['+.google.com','+.facebook.com','+.youtube.com']
+tproxy-port: 9898
+mixed-port: 7890
+# ================= PG ==========
 proxies: 
   - name: SG DO TLS
     server: 104.18.3.2
@@ -105,7 +143,8 @@ proxies:
 
   - name: VLESS KNC2 443
     server: 104.18.3.2
-    port: 443
+    port: 443
+
     type: vless
     uuid: 80510fd1-7a7d-4b83-a3db-05fb7f23dea5
     alterId: 0
@@ -122,7 +161,8 @@ proxies:
 
   - name: VLESS KNC KR 443
     server: 104.18.3.2
-    port: 443
+    port: 443
+
     type: vless
     uuid: 4994c6a3-3242-45b8-a3e3-7d0fb82b0ece
     alterId: 0
@@ -139,7 +179,8 @@ proxies:
 
   - name: VLESS DO 443
     server: 104.18.3.2
-    port: 443
+    port: 443
+
     type: vless
     uuid: b0cb1b0b-f5ba-4ca4-a587-cfe48126bff7
     alterId: 0
@@ -154,7 +195,8 @@ proxies:
         Host: sgdo1.aframdani.cloud
     udp: true
     
-    
+    
+
 #🔴
 #🔴_____________________________________proxies______________________________________🔴
 #
@@ -173,7 +215,9 @@ proxy-groups:
     -  VLESS KNC2 443
     -  VLESS KNC KR 443
     -  VLESS DO 443
-    -  DIRECT
+    -  DIRECT
+
+
  #⬜⬜
 - name: "WHATSAPP"
   type: select #PILIIH SALAH SATU : SELECT,LOAD-BALANCE,FALLBACK,URL-TEST
@@ -585,8 +629,10 @@ rules:
 - RULE-SET,Nsfw,18+
 - RULE-SET,YouTube,YOUTUBE
 - RULE-SET,Speed,Global✅
-- RULE-SET,Zero,AKUN BANK
-
+- RULE-SET,Zero,AKUN BANK
+
+
+
 # Local Area Network
 - IP-CIDR,192.168.0.0/16,DIRECT
 - IP-CIDR,10.0.0.0/8,DIRECT

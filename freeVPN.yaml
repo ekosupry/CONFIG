@@ -1,4 +1,6 @@
 proxies:
+
+#port 443
   - name: VLESS ARIS CF
     server: 104.18.3.2
     port: 443
@@ -14,23 +16,6 @@ proxies:
       path: /?ed=2048
       headers:
         Host: server.arisctunnel.me
-    udp: true
-    
-  - name: VLESS 80
-    server: 104.18.3.2
-    port: 80
-    type: vless
-    uuid: dfc3ad71-4ab8-424e-b5f7-965d18153ccb
-    alterId: 0
-    cipher: auto
-    tls: false
-    skip-cert-verify: true
-    servername: id1.porpuse.cfd
-    network: ws
-    ws-opts:
-      path: /vless-bodong
-      headers:
-        Host: id1.porpuse.cfd
     udp: true
 
   - name: VLESS PUTRI VPN
@@ -152,40 +137,6 @@ proxies:
         Host: sgdo1.aframdani.cloud
     udp: true
 
-  - name: VLESS KNC KR 80
-    server: 104.18.3.2
-    port: 80
-    type: vless
-    uuid: 4994c6a3-3242-45b8-a3e3-7d0fb82b0ece
-    alterId: 0
-    cipher: auto
-    tls: false
-    skip-cert-verify: true
-    servername: kr.free.knc.my.id
-    network: ws
-    ws-opts:
-      path: /?ed=2048
-      headers:
-        Host: kr.free.knc.my.id
-    udp: true
-
-  - name: VLESS KNC 80
-    server: 104.18.3.2
-    port: 80
-    type: vless
-    uuid: 80510fd1-7a7d-4b83-a3db-05fb7f23dea5
-    alterId: 0
-    cipher: auto
-    tls: false
-    skip-cert-verify: true
-    servername: id.knc.my.id
-    network: ws
-    ws-opts:
-      path: /?ed=2048
-      headers:
-        Host: id.knc.my.id
-    udp: true
-
   - name: worker game
     server: 104.18.3.2
     port: 443
@@ -214,23 +165,6 @@ proxies:
       path: /trojan-ws
       headers:
         Host: m.onekas.my.id
-    udp: true
-
-  - name: vidio2
-    server: 104.18.3.2
-    port: 80
-    type: vmess
-    uuid: 97cdf301-49a0-4cec-85d4-894bb84d86ab
-    alterId: 0
-    cipher: auto
-    tls: false
-    skip-cert-verify: true
-    servername: id-5.rzs.my.id
-    network: ws
-    ws-opts:
-      path: /vmess
-      headers:
-        Host: id-5.rzs.my.id
     udp: true
 
   - name: vidio
@@ -315,4 +249,73 @@ proxies:
       path: /websocket-trojan
       headers:
         Host: id-trojan-vvip-4.topvpn.my.id
+    udp: true
+    
+#port 80
+  - name: VLESS KNC KR 80
+    server: 104.18.3.2
+    port: 80
+    type: vless
+    uuid: 4994c6a3-3242-45b8-a3e3-7d0fb82b0ece
+    alterId: 0
+    cipher: auto
+    tls: false
+    skip-cert-verify: true
+    servername: kr.free.knc.my.id
+    network: ws
+    ws-opts:
+      path: /?ed=2048
+      headers:
+        Host: kr.free.knc.my.id
+    udp: true
+
+  - name: VLESS 80
+    server: 104.18.3.2
+    port: 80
+    type: vless
+    uuid: dfc3ad71-4ab8-424e-b5f7-965d18153ccb
+    alterId: 0
+    cipher: auto
+    tls: false
+    skip-cert-verify: true
+    servername: id1.porpuse.cfd
+    network: ws
+    ws-opts:
+      path: /vless-bodong
+      headers:
+        Host: id1.porpuse.cfd
+    udp: true
+
+  - name: vidio2
+    server: 104.18.3.2
+    port: 80
+    type: vmess
+    uuid: 97cdf301-49a0-4cec-85d4-894bb84d86ab
+    alterId: 0
+    cipher: auto
+    tls: false
+    skip-cert-verify: true
+    servername: id-5.rzs.my.id
+    network: ws
+    ws-opts:
+      path: /vmess
+      headers:
+        Host: id-5.rzs.my.id
+    udp: true
+
+  - name: VLESS KNC 80
+    server: 104.18.3.2
+    port: 80
+    type: vless
+    uuid: 80510fd1-7a7d-4b83-a3db-05fb7f23dea5
+    alterId: 0
+    cipher: auto
+    tls: false
+    skip-cert-verify: true
+    servername: id.knc.my.id
+    network: ws
+    ws-opts:
+      path: /?ed=2048
+      headers:
+        Host: id.knc.my.id
     udp: true

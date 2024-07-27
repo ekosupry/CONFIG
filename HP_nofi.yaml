@@ -105,7 +105,7 @@ proxies:
 
   - name: VLESS KNC2 443
     server: 104.18.3.2
-    port: 443
+    port: 443
     type: vless
     uuid: 80510fd1-7a7d-4b83-a3db-05fb7f23dea5
     alterId: 0
@@ -122,7 +122,7 @@ proxies:
 
   - name: VLESS KNC KR 443
     server: 104.18.3.2
-    port: 443
+    port: 443
     type: vless
     uuid: 4994c6a3-3242-45b8-a3e3-7d0fb82b0ece
     alterId: 0
@@ -139,7 +139,7 @@ proxies:
 
   - name: VLESS DO 443
     server: 104.18.3.2
-    port: 443
+    port: 443
     type: vless
     uuid: b0cb1b0b-f5ba-4ca4-a587-cfe48126bff7
     alterId: 0
@@ -154,7 +154,8 @@ proxies:
         Host: sgdo1.aframdani.cloud
     udp: true
     
-    
+    
+
 #🔴
 #🔴_____________________________________proxies______________________________________🔴
 #
@@ -173,7 +174,9 @@ proxy-groups:
     -  VLESS KNC2 443
     -  VLESS KNC KR 443
     -  VLESS DO 443
-    -  DIRECT
+    -  DIRECT
+
+
  #⬜⬜
 #Koneksi Sosmed
 - name: "SOSMED"
@@ -1132,5 +1135,3 @@ rules:
 - MATCH,Global✅
 
 #--------------------------------------
-
-

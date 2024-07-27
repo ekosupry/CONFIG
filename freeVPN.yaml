@@ -1,6 +1,3 @@
-# Config by ekombelgedez
-# wa 081511411523
-
 proxies:
   - name: VLESS ARIS CF
     server: 104.18.3.2

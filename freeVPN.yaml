@@ -2,7 +2,6 @@
 # wa 081511411523
 
 proxies:
-#Akun IDL opok
   - name: VLESS ARIS CF
     server: 104.18.3.2
     port: 443

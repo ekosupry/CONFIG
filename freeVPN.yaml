@@ -1,8 +1,20 @@
 proxies:
-
-#port 443
+  - name: TROJAN TARIK
+    server: 104.17.3.81
+    port: 443
+    type: trojan
+    password: 38460e7d-95bb-49e5-a90b-519ff74f182d
+    skip-cert-verify: true
+    sni: l5mrh.tarik.my.id
+    network: ws
+    ws-opts:
+      path: /whatever/trojan-ws
+      headers:
+        Host: l5mrh.tarik.my.id
+    udp: true
+    
   - name: VLESS ARIS CF
-    server: 104.18.3.2
+    server: 104.17.3.81
     port: 443
     type: vless
     uuid: 1b6c1745-992e-4aac-8685-266c090e50ea
@@ -19,7 +31,7 @@ proxies:
     udp: true
 
   - name: VLESS DO
-    server: 104.18.3.2
+    server: 104.17.3.81
     port: 443
     type: vless
     uuid: 01edb904-33ae-42cf-99d4-28f96082082e
@@ -36,7 +48,7 @@ proxies:
     udp: true
 
   - name: VMESS VIPREX 443
-    server: 104.18.3.2
+    server: 104.17.3.81
     port: 443
     type: vmess
     uuid: b2cbe9a2-49f6-4062-9b51-4d6eae668383
@@ -53,7 +65,7 @@ proxies:
     udp: true
 
   - name: VLESS KNC KR
-    server: 104.18.3.2
+    server: 104.17.3.81
     port: 443
     type: vless
     uuid: 4994c6a3-3242-45b8-a3e3-7d0fb82b0ece
@@ -70,7 +82,7 @@ proxies:
     udp: true
 
   - name: VLESS KNC
-    server: 104.18.3.2
+    server: 104.17.3.81
     port: 443
     type: vless
     uuid: 80510fd1-7a7d-4b83-a3db-05fb7f23dea5
@@ -87,7 +99,7 @@ proxies:
     udp: true
 
   - name: VLESS KNC2
-    server: 104.18.3.2
+    server: 104.17.3.81
     port: 443
     type: vless
     uuid: 80510fd1-7a7d-4b83-a3db-05fb7f23dea5
@@ -104,7 +116,7 @@ proxies:
     udp: true
 
   - name: VLESS SG DO
-    server: 104.18.3.2
+    server: 104.17.3.81
     port: 443
     type: vless
     uuid: b0cb1b0b-f5ba-4ca4-a587-cfe48126bff7
@@ -121,7 +133,7 @@ proxies:
     udp: true
 
   - name: worker game
-    server: 104.18.3.2
+    server: 104.17.3.81
     port: 443
     type: vless
     uuid: 1e6611ce-aec7-4a64-8699-d7d731659f05
@@ -136,62 +148,8 @@ proxies:
         Host: Ns-stOrE.NSIDIk685.WORkeRs.DEv
     udp: true
 
-  - name: TROJAN TARIK
-    server: 104.18.3.2
-    port: 443
-    type: trojan
-    password: 38460e7d-95bb-49e5-a90b-519ff74f182d
-    skip-cert-verify: true
-    sni: l5mrh.tarik.my.id
-    network: ws
-    ws-opts:
-      path: /whatever/trojan-ws
-      headers:
-        Host: l5mrh.tarik.my.id
-    udp: true
-
-  - name: vidio
-    server: 104.18.3.2
-    port: 443
-    type: trojan
-    password: 3cce8c72-9ea0-4783-b67c-f7a3e9df2643
-    skip-cert-verify: true
-    sni: id-trojan-vvip-4.topvpn.my.id
-    network: ws
-    ws-opts:
-      path: /websocket-trojan
-      headers:
-        Host: id-trojan-vvip-4.topvpn.my.id
-    udp: true
-
-  - name: UWU
-    server: 104.18.3.2
-    port: 443
-    type: trojan
-    password: qj1Dz1CJmFQRhWr1SP80aA
-    skip-cert-verify: true
-    sni: cdn-21.gsmxreality.com
-    network: grpc
-    grpc-opts:
-      grpc-service-name: 443trojan
-    udp: true
-
-  - name: trojan-ws-tls cf
-    server: 104.18.3.2
-    port: 443
-    type: trojan
-    password: 2cdb71fa
-    skip-cert-verify: true
-    sni: eq2.cfw.icu
-    network: ws
-    ws-opts:
-      path: /trojan-ws
-      headers:
-        Host: eq2.cfw.icu
-    udp: true
-
   - name: UWU vless ff
-    server: 104.18.3.2
+    server: 104.17.3.81
     port: 443
     type: vless
     uuid: bcf50589-9654-4331-93a6-da896914ec47
@@ -205,38 +163,9 @@ proxies:
       headers:
         Host: de4ecf6b.isvphp-4g8.pages.dev
     udp: true
-
-  - name: ig ssl
-    server: 104.18.3.2
-    port: 443
-    type: trojan
-    password: 800fc4a0
-    skip-cert-verify: true
-    sni: eq3.cfw.icu
-    network: ws
-    ws-opts:
-      path: /trojan-ws
-      headers:
-        Host: eq3.cfw.icu
-    udp: true
-
-  - name: ssl2
-    server: 104.18.3.2
-    port: 443
-    type: trojan
-    password: 3cce8c72-9ea0-4783-b67c-f7a3e9df2643
-    skip-cert-verify: true
-    sni: id-trojan-vvip-4.topvpn.my.id
-    network: ws
-    ws-opts:
-      path: /websocket-trojan
-      headers:
-        Host: id-trojan-vvip-4.topvpn.my.id
-    udp: true
-    
 #port 80
   - name: VLESS KNC KR 80
-    server: 104.18.3.2
+    server: 104.17.3.81
     port: 80
     type: vless
     uuid: 4994c6a3-3242-45b8-a3e3-7d0fb82b0ece
@@ -252,25 +181,8 @@ proxies:
         Host: kr.free.knc.my.id
     udp: true
 
-  - name: VLESS 80
-    server: 104.18.3.2
-    port: 80
-    type: vless
-    uuid: dfc3ad71-4ab8-424e-b5f7-965d18153ccb
-    alterId: 0
-    cipher: auto
-    tls: false
-    skip-cert-verify: true
-    servername: id1.porpuse.cfd
-    network: ws
-    ws-opts:
-      path: /vless-bodong
-      headers:
-        Host: id1.porpuse.cfd
-    udp: true
-
   - name: vidio2
-    server: 104.18.3.2
+    server: 104.17.3.81
     port: 80
     type: vmess
     uuid: 97cdf301-49a0-4cec-85d4-894bb84d86ab
@@ -287,7 +199,7 @@ proxies:
     udp: true
 
   - name: VLESS KNC 80
-    server: 104.18.3.2
+    server: 104.17.3.81
     port: 80
     type: vless
     uuid: 80510fd1-7a7d-4b83-a3db-05fb7f23dea5

@@ -4,6 +4,13 @@ payload:
 #zello
 - DOMAIN-SUFFIX,zello.com
 - DOMAIN-KEYWORD,zello
+#mini market
+- DOMAIN-KEYWORD,alfa
+- DOMAIN-SUFFIX,alfamart.co.id
+- DOMAIN-SUFFIX,indomaret.co.id
+- DOMAIN-KEYWORD,indomaret
+- DOMAIN-KEYWORD,alfamidi
+- DOMAIN-SUFFIX,alfamidiku.com
 # &gt; MOLA TV
 - DOMAIN-SUFFIX,mola.tv
 - DOMAIN-SUFFIX,ws.mola.tv

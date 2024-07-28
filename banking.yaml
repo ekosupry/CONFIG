@@ -36,35 +36,29 @@ payload:
   - DOMAIN-KEYWORD,sch.id
   - DOMAIN-KEYWORD,desa.id
   - DOMAIN-KEYWORD,ponpes.id
-
   #Go-Pay [Go-Jek]
   - DOMAIN-KEYWORD,gopay-topup
-
   #OVO
   - DOMAIN-SUFFIX,ovo.id
-
   #LinkAja
   - DOMAIN-SUFFIX,linkaja.com
-
   #Dana
   - DOMAIN-SUFFIX,split.io
   - DOMAIN-SUFFIX,dana.id
   - DOMAIN-SUFFIX,innov8.id
-
   #Doku
   - DOMAIN-SUFFIX,dokuwallet.com
-
   #BCA
   - DOMAIN-SUFFIX,klikbca.com
-
+  - DOMAIN-KEYWORD,bca
   #BRI (BRI Link,  BRImo, BRIcredit)
   - DOMAIN-SUFFIX,bri.co.id
-
   #Mandiri
   - DOMAIN-SUFFIX,mandiri.co.id
-
+  #Bank Mas
+  - DOMAIN-SUFFIX,bankmas.co.id
+  - DOMAIN-KEYWORD,bankmas
   #Bank Syariah Mandiri
   - DOMAIN-SUFFIX,bsm.co.id
-
   #Muamalat
   - DOMAIN-SUFFIX,bankmuamalat.co.id

@@ -1,6 +1,4 @@
 proxies:
-
-#port 443
   - name: VLESS ARIS CF
     server: 104.18.3.2
     port: 443
@@ -16,23 +14,6 @@ proxies:
       path: /?ed=2048
       headers:
         Host: server.arisctunnel.me
-    udp: true
-
-  - name: VLESS PUTRI VPN
-    server: 104.18.3.2
-    port: 443
-    type: vless
-    uuid: f9021b31-e8bd-4b4d-a1d3-c9b0c1476c44
-    alterId: 0
-    cipher: auto
-    tls: true
-    skip-cert-verify: true
-    servername: sg1.putrivpn.biz.id
-    network: ws
-    ws-opts:
-      path: /vlesscf
-      headers:
-        Host: sg1.putrivpn.biz.id
     udp: true
 
   - name: VLESS DO
@@ -153,60 +134,6 @@ proxies:
         Host: Ns-stOrE.NSIDIk685.WORkeRs.DEv
     udp: true
 
-  - name: pubg
-    server: 104.18.3.2
-    port: 443
-    type: trojan
-    password: 265e8bfc-892a-473c-8c75-363ceb738176
-    skip-cert-verify: true
-    sni: m.onekas.my.id
-    network: ws
-    ws-opts:
-      path: /trojan-ws
-      headers:
-        Host: m.onekas.my.id
-    udp: true
-
-  - name: vidio
-    server: 104.18.3.2
-    port: 443
-    type: trojan
-    password: 3cce8c72-9ea0-4783-b67c-f7a3e9df2643
-    skip-cert-verify: true
-    sni: id-trojan-vvip-4.topvpn.my.id
-    network: ws
-    ws-opts:
-      path: /websocket-trojan
-      headers:
-        Host: id-trojan-vvip-4.topvpn.my.id
-    udp: true
-
-  - name: UWU
-    server: 104.18.3.2
-    port: 443
-    type: trojan
-    password: qj1Dz1CJmFQRhWr1SP80aA
-    skip-cert-verify: true
-    sni: cdn-21.gsmxreality.com
-    network: grpc
-    grpc-opts:
-      grpc-service-name: 443trojan
-    udp: true
-
-  - name: trojan-ws-tls cf
-    server: 104.18.3.2
-    port: 443
-    type: trojan
-    password: 2cdb71fa
-    skip-cert-verify: true
-    sni: eq2.cfw.icu
-    network: ws
-    ws-opts:
-      path: /trojan-ws
-      headers:
-        Host: eq2.cfw.icu
-    udp: true
-
   - name: UWU vless ff
     server: 104.18.3.2
     port: 443
@@ -222,35 +149,6 @@ proxies:
       headers:
         Host: de4ecf6b.isvphp-4g8.pages.dev
     udp: true
-
-  - name: ig ssl
-    server: 104.18.3.2
-    port: 443
-    type: trojan
-    password: 800fc4a0
-    skip-cert-verify: true
-    sni: eq3.cfw.icu
-    network: ws
-    ws-opts:
-      path: /trojan-ws
-      headers:
-        Host: eq3.cfw.icu
-    udp: true
-
-  - name: ssl2
-    server: 104.18.3.2
-    port: 443
-    type: trojan
-    password: 3cce8c72-9ea0-4783-b67c-f7a3e9df2643
-    skip-cert-verify: true
-    sni: id-trojan-vvip-4.topvpn.my.id
-    network: ws
-    ws-opts:
-      path: /websocket-trojan
-      headers:
-        Host: id-trojan-vvip-4.topvpn.my.id
-    udp: true
-    
 #port 80
   - name: VLESS KNC KR 80
     server: 104.18.3.2
@@ -267,23 +165,6 @@ proxies:
       path: /?ed=2048
       headers:
         Host: kr.free.knc.my.id
-    udp: true
-
-  - name: VLESS 80
-    server: 104.18.3.2
-    port: 80
-    type: vless
-    uuid: dfc3ad71-4ab8-424e-b5f7-965d18153ccb
-    alterId: 0
-    cipher: auto
-    tls: false
-    skip-cert-verify: true
-    servername: id1.porpuse.cfd
-    network: ws
-    ws-opts:
-      path: /vless-bodong
-      headers:
-        Host: id1.porpuse.cfd
     udp: true
 
   - name: vidio2

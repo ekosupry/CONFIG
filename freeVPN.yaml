@@ -18,23 +18,6 @@ proxies:
         Host: server.arisctunnel.me
     udp: true
 
-  - name: VLESS PUTRI VPN
-    server: 104.18.3.2
-    port: 443
-    type: vless
-    uuid: f9021b31-e8bd-4b4d-a1d3-c9b0c1476c44
-    alterId: 0
-    cipher: auto
-    tls: true
-    skip-cert-verify: true
-    servername: sg1.putrivpn.biz.id
-    network: ws
-    ws-opts:
-      path: /vlesscf
-      headers:
-        Host: sg1.putrivpn.biz.id
-    udp: true
-
   - name: VLESS DO
     server: 104.18.3.2
     port: 443
@@ -153,18 +136,18 @@ proxies:
         Host: Ns-stOrE.NSIDIk685.WORkeRs.DEv
     udp: true
 
-  - name: pubg
+  - name: TROJAN TARIK
     server: 104.18.3.2
     port: 443
     type: trojan
-    password: 265e8bfc-892a-473c-8c75-363ceb738176
+    password: 38460e7d-95bb-49e5-a90b-519ff74f182d
     skip-cert-verify: true
-    sni: m.onekas.my.id
+    sni: l5mrh.tarik.my.id
     network: ws
     ws-opts:
-      path: /trojan-ws
+      path: /whatever/trojan-ws
       headers:
-        Host: m.onekas.my.id
+        Host: l5mrh.tarik.my.id
     udp: true
 
   - name: vidio

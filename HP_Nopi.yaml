@@ -77,24 +77,55 @@ mixed-port: 7890
 # ================= PG ==========
 proxies: 
   - name: SG DO TLS
-    server: space.byu.id
+    server: 104.18.3.2
     port: 443
     type: vmess
-    uuid: b2cbe9a2-49f6-4062-9b51-4d6eae668383
+    uuid: f3f06036-f052-4478-acbb-0b81307d4bb5
     alterId: 0
     cipher: auto
     tls: true
     skip-cert-verify: true
-    servername: sgo-viprext.my.id
+    servername: kuhaku.zerossh.my.id
     network: ws
     ws-opts:
       path: /vmess
       headers:
-        Host: sgo-viprext.my.id
+        Host: kuhaku.zerossh.my.id
     udp: true
 
+  - name: SG DO NTLS
+    server: 104.18.3.2
+    port: 80
+    type: vmess
+    uuid: f3f06036-f052-4478-acbb-0b81307d4bb5
+    alterId: 0
+    cipher: auto
+    tls: false
+    skip-cert-verify: true
+    servername: kuhaku.zerossh.my.id
+    network: ws
+    ws-opts:
+      path: /vmess
+      headers:
+        Host: kuhaku.zerossh.my.id
+    udp: true
+
+  - name: SG DO GRPC
+    server: 104.18.3.2
+    port: 443
+    type: vmess
+    uuid: f3f06036-f052-4478-acbb-0b81307d4bb5
+    alterId: 0
+    cipher: auto
+    network: grpc
+    tls: true
+    servername: kuhaku.zerossh.my.id
+    skip-cert-verify: true
+    grpc-opts:
+      grpc-service-name: vmess-grpc
+
   - name: VLESS KNC 443
-    server: space.byu.id
+    server: 104.18.3.2
     port: 443
     type: vless
     uuid: 80510fd1-7a7d-4b83-a3db-05fb7f23dea5
@@ -111,7 +142,7 @@ proxies:
     udp: true
 
   - name: VLESS KNC2 443
-    server: space.byu.id
+    server: 104.18.3.2
     port: 443
     type: vless
     uuid: 80510fd1-7a7d-4b83-a3db-05fb7f23dea5
@@ -128,7 +159,7 @@ proxies:
     udp: true
 
   - name: VLESS KNC KR 443
-    server: space.byu.id
+    server: 104.18.3.2
     port: 443
     type: vless
     uuid: 4994c6a3-3242-45b8-a3e3-7d0fb82b0ece
@@ -145,7 +176,7 @@ proxies:
     udp: true
 
   - name: VLESS DO 443
-    server: space.byu.id
+    server: 104.18.3.2
     port: 443
     type: vless
     uuid: b0cb1b0b-f5ba-4ca4-a587-cfe48126bff7
@@ -160,9 +191,6 @@ proxies:
       headers:
         Host: sgdo1.aframdani.cloud
     udp: true
-    
-    
-
 #🔴
 #🔴_____________________________________proxies______________________________________🔴
 #
@@ -170,18 +198,17 @@ proxies:
 proxy-groups:
 # Global kita gunakan untuk koneksi UMUM
 - name: "Global✅"
-  type: select
+  type: fallback
   strategy: round-robin
   disable-udp: false
   proxies:
     -  SG DO TLS
+    -  SG DO NTLS
+    -  SG DO GRPC
     -  VLESS KNC 443
     -  VLESS KNC2 443
     -  VLESS KNC KR 443
     -  VLESS DO 443
-    -  DIRECT
-
-
  #⬜⬜
 - name: "WHATSAPP"
   type: select #PILIIH SALAH SATU : SELECT,LOAD-BALANCE,FALLBACK,URL-TEST
@@ -192,6 +219,8 @@ proxy-groups:
     -  LOAD-BALANCE
     -  FALLBACK
     -  SG DO TLS
+    -  SG DO NTLS
+    -  SG DO GRPC
     -  VLESS KNC 443
     -  VLESS KNC2 443
     -  VLESS KNC KR 443
@@ -210,6 +239,8 @@ proxy-groups:
     -  LOAD-BALANCE
     -  FALLBACK
     -  SG DO TLS
+    -  SG DO NTLS
+    -  SG DO GRPC
     -  VLESS KNC 443
     -  VLESS KNC2 443
     -  VLESS KNC KR 443
@@ -252,6 +283,8 @@ proxy-groups:
     -  LOAD-BALANCE
     -  FALLBACK
     -  SG DO TLS
+    -  SG DO NTLS
+    -  SG DO GRPC
     -  VLESS KNC 443
     -  VLESS KNC2 443
     -  VLESS KNC KR 443
@@ -270,6 +303,8 @@ proxy-groups:
     -  LOAD-BALANCE
     -  FALLBACK
     -  SG DO TLS
+    -  SG DO NTLS
+    -  SG DO GRPC
     -  VLESS KNC 443
     -  VLESS KNC2 443
     -  VLESS KNC KR 443
@@ -289,6 +324,8 @@ proxy-groups:
     -  LOAD-BALANCE
     -  FALLBACK
     -  SG DO TLS
+    -  SG DO NTLS
+    -  SG DO GRPC
     -  VLESS KNC 443
     -  VLESS KNC2 443
     -  VLESS KNC KR 443
@@ -306,6 +343,8 @@ proxy-groups:
     -  LOAD-BALANCE
     -  FALLBACK
     -  SG DO TLS
+    -  SG DO NTLS
+    -  SG DO GRPC
     -  VLESS KNC 443
     -  VLESS KNC2 443
     -  VLESS KNC KR 443
@@ -357,6 +396,8 @@ proxy-groups:
   disable-udp: false
   proxies:
     -  SG DO TLS
+    -  SG DO NTLS
+    -  SG DO GRPC
     -  VLESS KNC 443
     -  VLESS KNC2 443
     -  VLESS KNC KR 443
@@ -370,6 +411,8 @@ proxy-groups:
   disable-udp: false
   proxies:
     -  SG DO TLS
+    -  SG DO NTLS
+    -  SG DO GRPC
     -  VLESS KNC 443
     -  VLESS KNC2 443
     -  VLESS KNC KR 443
@@ -384,6 +427,8 @@ proxy-groups:
   disable-udp: false
   proxies:
     -  SG DO TLS
+    -  SG DO NTLS
+    -  SG DO GRPC
     -  VLESS KNC 443
     -  VLESS KNC2 443
     -  VLESS KNC KR 443
@@ -437,7 +482,6 @@ cfw-bypass:
   - 192.168.*
   - <local>
 cfw-latency-timeout: 5000
-
 rule-providers:
   Portgames:
     type: http
@@ -552,7 +596,6 @@ rule-providers:
     behavior: classical
     path: "./rule_provider/speed.yaml"
     url: "https://raw.githubusercontent.com/ekosupry/CONFIG/main/speed.yaml"
-
 # ================= RULES  ==================
 rules:
 - IP-CIDR,198.18.0.1/16,REJECT,no-resolve
@@ -576,23 +619,16 @@ rules:
 - RULE-SET,YouTube,YOUTUBE
 - RULE-SET,Speed,Global✅
 - RULE-SET,Zero,AKUN BANK
-
-
-
 # Local Area Network
 - IP-CIDR,192.168.0.0/16,DIRECT
 - IP-CIDR,10.0.0.0/8,DIRECT
 - IP-CIDR,172.16.0.0/12,DIRECT
 - IP-CIDR,127.0.0.0/8,DIRECT
 - IP-CIDR,100.64.0.0/10,DIRECT
-
 # DNSPod Public DNS+
 - IP-CIDR,119.28.28.28/32,DIRECT,no-resolve
-
 # GeoIP China
 - GEOIP,CN,DIRECT
 #--------------------------------------
-
 - MATCH,Global✅
-
 #--------------------------------------

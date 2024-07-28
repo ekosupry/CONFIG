@@ -11,6 +11,8 @@ payload:
 - DOMAIN-KEYWORD,indomaret
 - DOMAIN-KEYWORD,alfamidi
 - DOMAIN-SUFFIX,alfamidiku.com
+- DOMAIN-SUFFIX,aksesmu.id
+- DOMAIN-KEYWORD,aksesmu
 # &gt; MOLA TV
 - DOMAIN-SUFFIX,mola.tv
 - DOMAIN-SUFFIX,ws.mola.tv

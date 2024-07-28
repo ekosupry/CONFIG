@@ -1,6 +1,6 @@
 proxies:
   - name: TROJAN TARIK
-    server: 104.18.3.2
+    server: 104.17.3.81
     port: 443
     type: trojan
     password: 38460e7d-95bb-49e5-a90b-519ff74f182d
@@ -14,7 +14,7 @@ proxies:
     udp: true
     
   - name: VLESS ARIS CF
-    server: 104.18.3.2
+    server: 104.17.3.81
     port: 443
     type: vless
     uuid: 1b6c1745-992e-4aac-8685-266c090e50ea
@@ -31,7 +31,7 @@ proxies:
     udp: true
 
   - name: VLESS DO
-    server: 104.18.3.2
+    server: 104.17.3.81
     port: 443
     type: vless
     uuid: 01edb904-33ae-42cf-99d4-28f96082082e
@@ -48,7 +48,7 @@ proxies:
     udp: true
 
   - name: VMESS VIPREX 443
-    server: 104.18.3.2
+    server: 104.17.3.81
     port: 443
     type: vmess
     uuid: b2cbe9a2-49f6-4062-9b51-4d6eae668383
@@ -65,7 +65,7 @@ proxies:
     udp: true
 
   - name: VLESS KNC KR
-    server: 104.18.3.2
+    server: 104.17.3.81
     port: 443
     type: vless
     uuid: 4994c6a3-3242-45b8-a3e3-7d0fb82b0ece
@@ -82,7 +82,7 @@ proxies:
     udp: true
 
   - name: VLESS KNC
-    server: 104.18.3.2
+    server: 104.17.3.81
     port: 443
     type: vless
     uuid: 80510fd1-7a7d-4b83-a3db-05fb7f23dea5
@@ -99,7 +99,7 @@ proxies:
     udp: true
 
   - name: VLESS KNC2
-    server: 104.18.3.2
+    server: 104.17.3.81
     port: 443
     type: vless
     uuid: 80510fd1-7a7d-4b83-a3db-05fb7f23dea5
@@ -116,7 +116,7 @@ proxies:
     udp: true
 
   - name: VLESS SG DO
-    server: 104.18.3.2
+    server: 104.17.3.81
     port: 443
     type: vless
     uuid: b0cb1b0b-f5ba-4ca4-a587-cfe48126bff7
@@ -133,7 +133,7 @@ proxies:
     udp: true
 
   - name: worker game
-    server: 104.18.3.2
+    server: 104.17.3.81
     port: 443
     type: vless
     uuid: 1e6611ce-aec7-4a64-8699-d7d731659f05
@@ -149,7 +149,7 @@ proxies:
     udp: true
 
   - name: UWU vless ff
-    server: 104.18.3.2
+    server: 104.17.3.81
     port: 443
     type: vless
     uuid: bcf50589-9654-4331-93a6-da896914ec47
@@ -165,7 +165,7 @@ proxies:
     udp: true
 #port 80
   - name: VLESS KNC KR 80
-    server: 104.18.3.2
+    server: 104.17.3.81
     port: 80
     type: vless
     uuid: 4994c6a3-3242-45b8-a3e3-7d0fb82b0ece
@@ -182,7 +182,7 @@ proxies:
     udp: true
 
   - name: vidio2
-    server: 104.18.3.2
+    server: 104.17.3.81
     port: 80
     type: vmess
     uuid: 97cdf301-49a0-4cec-85d4-894bb84d86ab
@@ -199,7 +199,7 @@ proxies:
     udp: true
 
   - name: VLESS KNC 80
-    server: 104.18.3.2
+    server: 104.17.3.81
     port: 80
     type: vless
     uuid: 80510fd1-7a7d-4b83-a3db-05fb7f23dea5

@@ -1,4 +1,18 @@
 proxies:
+  - name: TROJAN TARIK
+    server: 104.18.3.2
+    port: 443
+    type: trojan
+    password: 38460e7d-95bb-49e5-a90b-519ff74f182d
+    skip-cert-verify: true
+    sni: l5mrh.tarik.my.id
+    network: ws
+    ws-opts:
+      path: /whatever/trojan-ws
+      headers:
+        Host: l5mrh.tarik.my.id
+    udp: true
+    
   - name: VLESS ARIS CF
     server: 104.18.3.2
     port: 443

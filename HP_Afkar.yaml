@@ -159,9 +159,7 @@ proxies:
       path: /vless-ws
       headers:
         Host: sgdo1.aframdani.cloud
-    udp: true
-    
-    
+    udp: true 
 
 #🔴
 #🔴_____________________________________proxies______________________________________🔴
@@ -170,7 +168,7 @@ proxies:
 proxy-groups:
 # Global kita gunakan untuk koneksi UMUM
 - name: "Global✅"
-  type: select
+  type: fallback
   strategy: round-robin
   disable-udp: false
   proxies:
@@ -179,7 +177,8 @@ proxy-groups:
     -  VLESS KNC2 443
     -  VLESS KNC KR 443
     -  VLESS DO 443
-    -  DIRECT
+  url: 'http://www.gstatic.com/generate_204'
+  interval: 300
 
 
  #⬜⬜

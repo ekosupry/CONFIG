@@ -163,7 +163,20 @@ proxies:
       headers:
         Host: sgdo1.aframdani.cloud
     udp: true 
-
+    
+  - name: TROJAN TARIK
+    server: space.byu.id
+    port: 443
+    type: trojan
+    password: 38460e7d-95bb-49e5-a90b-519ff74f182d
+    skip-cert-verify: true
+    sni: l5mrh.tarik.my.id
+    network: ws
+    ws-opts:
+      path: /whatever/trojan-ws
+      headers:
+        Host: l5mrh.tarik.my.id
+    udp: true
 #🔴
 #🔴_____________________________________proxies______________________________________🔴
 #
@@ -180,6 +193,7 @@ proxy-groups:
     -  VLESS KNC2 443
     -  VLESS KNC KR 443
     -  VLESS DO 443
+    -  TROJAN TARIK
   url: 'http://www.gstatic.com/generate_204'
   interval: 300
 
@@ -198,6 +212,7 @@ proxy-groups:
     -  VLESS KNC2 443
     -  VLESS KNC KR 443
     -  VLESS DO 443
+    -  TROJAN TARIK
     -  DIRECT
   url: 'http://www.gstatic.com/generate_204'
   interval: 300
@@ -216,6 +231,7 @@ proxy-groups:
     -  VLESS KNC2 443
     -  VLESS KNC KR 443
     -  VLESS DO 443
+    -  TROJAN TARIK
     -  DIRECT
   url: 'http://www.gstatic.com/generate_204'
   interval: 300
@@ -258,6 +274,7 @@ proxy-groups:
     -  VLESS KNC2 443
     -  VLESS KNC KR 443
     -  VLESS DO 443
+    -  TROJAN TARIK
     -  DIRECT
   url: 'http://www.gstatic.com/generate_204'
   interval: 300
@@ -276,6 +293,7 @@ proxy-groups:
     -  VLESS KNC2 443
     -  VLESS KNC KR 443
     -  VLESS DO 443
+    -  TROJAN TARIK
     -  DIRECT
     -  REJECT
   url: 'http://www.gstatic.com/generate_204'
@@ -295,6 +313,7 @@ proxy-groups:
     -  VLESS KNC2 443
     -  VLESS KNC KR 443
     -  VLESS DO 443
+    -  TROJAN TARIK 
     -  DIRECT
     -  REJECT
   url: 'http://www.gstatic.com/generate_204'
@@ -312,6 +331,7 @@ proxy-groups:
     -  VLESS KNC2 443
     -  VLESS KNC KR 443
     -  VLESS DO 443
+    -  TROJAN TARIK
     -  DIRECT
     -  REJECT
   url: 'http://www.gstatic.com/generate_204'
@@ -363,6 +383,7 @@ proxy-groups:
     -  VLESS KNC2 443
     -  VLESS KNC KR 443
     -  VLESS DO 443
+    -  TROJAN TARIK
   url: 'http://www.gstatic.com/generate_204'
   interval: 300
   #koneksi untuk iklan,
@@ -376,6 +397,7 @@ proxy-groups:
     -  VLESS KNC2 443
     -  VLESS KNC KR 443
     -  VLESS DO 443
+    -  TROJAN TARIK
   url: 'http://www.gstatic.com/generate_204'
   interval: 300
  #⬜⬜
@@ -390,6 +412,7 @@ proxy-groups:
     -  VLESS KNC2 443
     -  VLESS KNC KR 443
     -  VLESS DO 443
+    -  TROJAN TARIK
   url: 'http://www.gstatic.com/generate_204'
   interval: 300
  #⬜⬜

@@ -191,9 +191,6 @@ proxies:
       headers:
         Host: sgdo1.aframdani.cloud
     udp: true
-    
-    
-
 #🔴
 #🔴_____________________________________proxies______________________________________🔴
 #
@@ -201,7 +198,7 @@ proxies:
 proxy-groups:
 # Global kita gunakan untuk koneksi UMUM
 - name: "Global✅"
-  type: select
+  type: fallback
   strategy: round-robin
   disable-udp: false
   proxies:
@@ -212,9 +209,6 @@ proxy-groups:
     -  VLESS KNC2 443
     -  VLESS KNC KR 443
     -  VLESS DO 443
-    -  DIRECT
-
-
  #⬜⬜
 - name: "WHATSAPP"
   type: select #PILIIH SALAH SATU : SELECT,LOAD-BALANCE,FALLBACK,URL-TEST

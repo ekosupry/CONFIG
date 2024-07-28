@@ -402,7 +402,6 @@ proxy-groups:
     -  VLESS KNC2 443 FREE
     -  VLESS KNC KR 443 FREE
     -  VLESS DO 443 FREE
-    -  VLESS DO 443
   url: 'http://www.gstatic.com/generate_204'
   interval: 300
   #koneksi untuk iklan,
@@ -418,7 +417,6 @@ proxy-groups:
     -  VLESS KNC2 443 FREE
     -  VLESS KNC KR 443 FREE
     -  VLESS DO 443 FREE
-    -  VLESS DO 443
   url: 'http://www.gstatic.com/generate_204'
   interval: 300
  #⬜⬜

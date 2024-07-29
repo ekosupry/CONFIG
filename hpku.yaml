@@ -520,11 +520,7 @@ rule-providers:
     behavior: domain
     path: "./rule_provider/youtube.yaml"
     url: "https://raw.githubusercontent.com/ekosupry/CONFIG/main/youtube.yaml"
-  WA:
-    type: http
-    behavior: classical
-    path: "./rule_provider/whatsapp.yaml"
-    url: "https://raw.githubusercontent.com/ekosupry/CONFIG/main/whatsapp.yaml"  
+  yaml"
   Facebook:
     type: http
     behavior: classical
@@ -617,7 +613,6 @@ rules:
 - RULE-SET,Portgames,PORT GAME
 - RULE-SET,Gaming,RUANG GAME
 - RULE-SET,Game-TCP,RUANG GAME
-- RULE-SET,WA,WHATSAPP
 - RULE-SET,Facebook,FACEBOOK
 - RULE-SET,Personalads,IKLAN
 - RULE-SET,Basicads,IKLAN

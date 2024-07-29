@@ -228,26 +228,6 @@ proxy-groups:
     -  VLESS DO 443
     -  TROJAN TARIK
  #⬜⬜
-- name: "WHATSAPP"
-  type: select #PILIIH SALAH SATU : SELECT,LOAD-BALANCE,FALLBACK,URL-TEST
-  strategy: round-robin
-  disable-udp: false
-  proxies:
-    -  BEST PING
-    -  LOAD-BALANCE
-    -  FALLBACK
-    -  SG DO TLS
-    -  SG DO NTLS
-    -  SG DO GRPC
-    -  VLESS KNC 443
-    -  VLESS KNC2 443
-    -  VLESS KNC KR 443
-    -  VLESS DO 443
-    -  TROJAN TARIK
-    -  DIRECT
-  url: 'http://www.gstatic.com/generate_204'
-  interval: 300
-#⬜⬜
 #Koneksi Sosmed
 - name: "FACEBOOK"
   type: select #PILIIH SALAH SATU : SELECT,LOAD-BALANCE,FALLBACK,URL-TEST

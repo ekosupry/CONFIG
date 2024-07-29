@@ -80,7 +80,7 @@ tproxy-port: 9898
 mixed-port: 7890
 # ================= PG ==========
 proxies: 
-  - name: SG DO TLS PREMIUM
+  - name: PREMIUM TLS
     server: 104.18.3.2
     port: 443
     type: vmess
@@ -97,7 +97,7 @@ proxies:
         Host: kuhaku.zerossh.my.id
     udp: true
 
-  - name: SG DO NTLS PREMIUM
+  - name: PREMIUM NTLS
     server: 104.18.3.2
     port: 80
     type: vmess
@@ -114,7 +114,7 @@ proxies:
         Host: kuhaku.zerossh.my.id
     udp: true
 
-  - name: SG DO GRPC PREMIUM
+  - name: PREMIUM GRPC
     server: 104.18.3.2
     port: 443
     type: vmess
@@ -128,7 +128,7 @@ proxies:
     grpc-opts:
       grpc-service-name: vmess-grpc
 
-  - name: VLESS KNC 443 FREE
+  - name: FREE KNC TLS
     server: 104.18.3.2
     port: 443
     type: vless
@@ -145,7 +145,7 @@ proxies:
         Host: id.knc.my.id
     udp: true
 
-  - name: VLESS KNC2 443 FREE
+  - name: FREE KNC 2
     server: 104.18.3.2
     port: 443
     type: vless
@@ -162,7 +162,7 @@ proxies:
         Host: id2.knc.my.id
     udp: true
 
-  - name: VLESS KNC KR 443 FREE
+  - name: FREE KNC KR
     server: 104.18.3.2
     port: 443
     type: vless
@@ -179,7 +179,7 @@ proxies:
         Host: kr.free.knc.my.id
     udp: true
 
-  - name: VLESS DO 443 FREE
+  - name: FREE AFRAMDANI
     server: 104.18.3.2
     port: 443
     type: vless
@@ -220,13 +220,13 @@ proxy-groups:
   strategy: round-robin
   disable-udp: false
   proxies:
-    -  SG DO TLS PREMIUM
-    -  SG DO NTLS PREMIUM
-    -  SG DO GRPC PREMIUM
-    -  VLESS KNC 443 FREE
-    -  VLESS KNC2 443 FREE
-    -  VLESS KNC KR 443 FREE
-    -  VLESS DO 443 FREE
+    -  PREMIUM TLS
+    -  PREMIUM NTLS
+    -  PREMIUM GRPC
+    -  FREE KNC TLS
+    -  FREE KNC 2
+    -  FREE KNC KR
+    -  FREE AFRAMDANI
     -  TROJAN TARIK
  #⬜⬜
 - name: "WHATSAPP"
@@ -237,13 +237,13 @@ proxy-groups:
     -  BEST PING
     -  LOAD-BALANCE
     -  FALLBACK
-    -  SG DO TLS PREMIUM
-    -  SG DO NTLS PREMIUM
-    -  SG DO GRPC PREMIUM
-    -  VLESS KNC 443 FREE
-    -  VLESS KNC2 443 FREE
-    -  VLESS KNC KR 443 FREE
-    -  VLESS DO 443 FREE
+    -  PREMIUM TLS
+    -  PREMIUM NTLS
+    -  PREMIUM GRPC
+    -  FREE KNC TLS
+    -  FREE KNC 2
+    -  FREE KNC KR
+    -  FREE AFRAMDANI
     -  TROJAN TARIK
     -  DIRECT
   url: 'http://www.gstatic.com/generate_204'
@@ -258,13 +258,13 @@ proxy-groups:
     -  BEST PING
     -  LOAD-BALANCE
     -  FALLBACK
-    -  SG DO TLS PREMIUM
-    -  SG DO NTLS PREMIUM
-    -  SG DO GRPC PREMIUM
-    -  VLESS KNC 443 FREE
-    -  VLESS KNC2 443 FREE
-    -  VLESS KNC KR 443 FREE
-    -  VLESS DO 443 FREE
+    -  PREMIUM TLS
+    -  PREMIUM NTLS
+    -  PREMIUM GRPC
+    -  FREE KNC TLS
+    -  FREE KNC 2
+    -  FREE KNC KR
+    -  FREE AFRAMDANI
     -  TROJAN TARIK
     -  DIRECT
   url: 'http://www.gstatic.com/generate_204'
@@ -275,8 +275,8 @@ proxy-groups:
   strategy: round-robin
   disable-udp: false
   proxies:
-    -  VLESS KNC 443 FREE
-    -  VLESS KNC2 443 FREE
+    -  FREE KNC TLS
+    -  FREE KNC 2
     -  DIRECT
   url: 'http://www.gstatic.com/generate_204'
   interval: 300
@@ -286,8 +286,8 @@ proxy-groups:
   strategy: round-robin
   disable-udp: false
   proxies:
-    -  VLESS KNC 443 FREE
-    -  VLESS KNC2 443 FREE
+    -  FREE KNC TLS
+    -  FREE KNC 2
     -  DIRECT
   url: 'http://www.gstatic.com/generate_204'
   interval: 300
@@ -303,13 +303,13 @@ proxy-groups:
     -  BEST PING
     -  LOAD-BALANCE
     -  FALLBACK
-    -  SG DO TLS PREMIUM
-    -  SG DO NTLS PREMIUM
-    -  SG DO GRPC PREMIUM
-    -  VLESS KNC 443 FREE
-    -  VLESS KNC2 443 FREE
-    -  VLESS KNC KR 443 FREE
-    -  VLESS DO 443 FREE
+    -  PREMIUM TLS
+    -  PREMIUM NTLS
+    -  PREMIUM GRPC
+    -  FREE KNC TLS
+    -  FREE KNC 2
+    -  FREE KNC KR
+    -  FREE AFRAMDANI
     -  TROJAN TARIK
     -  DIRECT
   url: 'http://www.gstatic.com/generate_204'
@@ -324,13 +324,13 @@ proxy-groups:
     -  BEST PING
     -  LOAD-BALANCE
     -  FALLBACK
-    -  SG DO TLS PREMIUM
-    -  SG DO NTLS PREMIUM
-    -  SG DO GRPC PREMIUM
-    -  VLESS KNC 443 FREE
-    -  VLESS KNC2 443 FREE
-    -  VLESS KNC KR 443 FREE
-    -  VLESS DO 443 FREE
+    -  PREMIUM TLS
+    -  PREMIUM NTLS
+    -  PREMIUM GRPC
+    -  FREE KNC TLS
+    -  FREE KNC 2
+    -  FREE KNC KR
+    -  FREE AFRAMDANI
     -  TROJAN TARIK
     -  DIRECT
     -  REJECT
@@ -346,13 +346,13 @@ proxy-groups:
     -  BEST PING
     -  LOAD-BALANCE
     -  FALLBACK
-    -  SG DO TLS PREMIUM
-    -  SG DO NTLS PREMIUM
-    -  SG DO GRPC PREMIUM
-    -  VLESS KNC 443 FREE
-    -  VLESS KNC2 443 FREE
-    -  VLESS KNC KR 443 FREE
-    -  VLESS DO 443 FREE
+    -  PREMIUM TLS
+    -  PREMIUM NTLS
+    -  PREMIUM GRPC
+    -  FREE KNC TLS
+    -  FREE KNC 2
+    -  FREE KNC KR
+    -  FREE AFRAMDANI
     -  TROJAN TARIK
     -  DIRECT
     -  REJECT
@@ -366,13 +366,13 @@ proxy-groups:
     -  BEST PING
     -  LOAD-BALANCE
     -  FALLBACK
-    -  SG DO TLS PREMIUM
-    -  SG DO NTLS PREMIUM
-    -  SG DO GRPC PREMIUM
-    -  VLESS KNC 443 FREE
-    -  VLESS KNC2 443 FREE
-    -  VLESS KNC KR 443 FREE
-    -  VLESS DO 443 FREE
+    -  PREMIUM TLS
+    -  PREMIUM NTLS
+    -  PREMIUM GRPC
+    -  FREE KNC TLS
+    -  FREE KNC 2
+    -  FREE KNC KR
+    -  FREE AFRAMDANI
     -  TROJAN TARIK
     -  DIRECT
     -  REJECT
@@ -420,13 +420,13 @@ proxy-groups:
   strategy: round-robin
   disable-udp: false
   proxies:
-    -  SG DO TLS PREMIUM
-    -  SG DO NTLS PREMIUM
-    -  SG DO GRPC PREMIUM
-    -  VLESS KNC 443 FREE
-    -  VLESS KNC2 443 FREE
-    -  VLESS KNC KR 443 FREE
-    -  VLESS DO 443 FREE
+    -  PREMIUM TLS
+    -  PREMIUM NTLS
+    -  PREMIUM GRPC
+    -  FREE KNC TLS
+    -  FREE KNC 2
+    -  FREE KNC KR
+    -  FREE AFRAMDANI
     -  TROJAN TARIK
   url: 'http://www.gstatic.com/generate_204'
   interval: 300
@@ -436,13 +436,13 @@ proxy-groups:
   strategy: round-robin
   disable-udp: false
   proxies:
-    -  SG DO TLS PREMIUM
-    -  SG DO NTLS PREMIUM
-    -  SG DO GRPC PREMIUM
-    -  VLESS KNC 443 FREE
-    -  VLESS KNC2 443 FREE
-    -  VLESS KNC KR 443 FREE
-    -  VLESS DO 443 FREE
+    -  PREMIUM TLS
+    -  PREMIUM NTLS
+    -  PREMIUM GRPC
+    -  FREE KNC TLS
+    -  FREE KNC 2
+    -  FREE KNC KR
+    -  FREE AFRAMDANI
     -  TROJAN TARIK
   url: 'http://www.gstatic.com/generate_204'
   interval: 300
@@ -453,13 +453,13 @@ proxy-groups:
   strategy: round-robin
   disable-udp: false
   proxies:
-    -  SG DO TLS PREMIUM
-    -  SG DO NTLS PREMIUM
-    -  SG DO GRPC PREMIUM
-    -  VLESS KNC 443 FREE
-    -  VLESS KNC2 443 FREE
-    -  VLESS KNC KR 443 FREE
-    -  VLESS DO 443 FREE
+    -  PREMIUM TLS
+    -  PREMIUM NTLS
+    -  PREMIUM GRPC
+    -  FREE KNC TLS
+    -  FREE KNC 2
+    -  FREE KNC KR
+    -  FREE AFRAMDANI
     -  TROJAN TARIK
   url: 'http://www.gstatic.com/generate_204'
   interval: 300

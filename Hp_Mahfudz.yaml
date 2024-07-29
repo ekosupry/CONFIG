@@ -1,4 +1,4 @@
-# SINGAPURA DIGITAL OCEAN EXP DATE:29/07/2024
+# SINGAPURA DIGITAL OCEAN EXP DATE:28/08/2024
 # PREMIUM 10rb/device aktif 1 bulan,2 device 15rb
 # ==== Paket ILMUPEDIA ======
 # Buy paket TSEL dial *363*844# / *363*555#
@@ -84,7 +84,7 @@ proxies:
     server: 104.18.3.2
     port: 443
     type: vmess
-    uuid: ccdb8911-1db9-4cf5-bfb3-5821068b3b5f
+    uuid: dae41af2-eec0-4b09-8ead-21c98dc14614
     alterId: 0
     cipher: auto
     tls: true
@@ -101,7 +101,7 @@ proxies:
     server: 104.18.3.2
     port: 80
     type: vmess
-    uuid: ccdb8911-1db9-4cf5-bfb3-5821068b3b5f
+    uuid: dae41af2-eec0-4b09-8ead-21c98dc14614
     alterId: 0
     cipher: auto
     tls: false
@@ -118,7 +118,7 @@ proxies:
     server: 104.18.3.2
     port: 443
     type: vmess
-    uuid: ccdb8911-1db9-4cf5-bfb3-5821068b3b5f
+    uuid: dae41af2-eec0-4b09-8ead-21c98dc14614
     alterId: 0
     cipher: auto
     network: grpc

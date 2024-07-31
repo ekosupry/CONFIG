@@ -1,0 +1,119 @@
+proxies:
+- name: VMEES SG GS 80
+  server: 104.17.3.81
+  port: 80
+  type: vmess
+  uuid: 28401650-44fc-11ef-8b8e-1577c1651679
+  alterId: 0
+  cipher: auto
+  tls: false
+  skip-cert-verify: true
+  servername: 2.htmlcdn.net
+  network: ws
+  ws-opts:
+    path: /worryfree
+    headers:
+      Host: 2.htmlcdn.net
+  udp: true
+
+- name: VMESS SG HE 80
+  server: 104.17.3.81
+  port: 80
+  type: vmess
+  uuid: e9ccc870-44fb-11ef-bc9b-1577c1651679
+  alterId: 0
+  cipher: auto
+  tls: false
+  skip-cert-verify: true
+  servername: 11.lowh.net
+  network: ws
+  ws-opts:
+    path: /worryfree
+    headers:
+      Host: 11.lowh.net
+  udp: true
+
+- name: VMESS GS 443
+  server: 104.17.3.81
+  port: 443
+  type: vmess
+  uuid: b03846f0-44fb-11ef-9b55-1577c1651679
+  alterId: 0
+  cipher: auto
+  tls: true
+  skip-cert-verify: true
+  servername: 2.htmlcdn.net
+  network: ws
+  ws-opts:
+    path: /hello
+    headers:
+      Host: 2.htmlcdn.net
+  udp: true
+
+- name: VMESS SG HE 80
+  server: 104.17.3.81
+  port: 80
+  type: vmess
+  uuid: 684ff7f0-44fb-11ef-9b59-1577c1651679
+  alterId: 0
+  cipher: auto
+  tls: false
+  skip-cert-verify: true
+  servername: 10.lowh.net
+  network: ws
+  ws-opts:
+    path: /worryfree
+    headers:
+      Host: 10.lowh.net
+  udp: true
+
+- name: VMESS SG HE 443
+  server: 104.17.3.81
+  port: 443
+  type: vmess
+  uuid: 0589ab10-44fb-11ef-8022-1577c1651679
+  alterId: 0
+  cipher: auto
+  tls: true
+  skip-cert-verify: true
+  servername: 10.lowh.net
+  network: ws
+  ws-opts:
+    path: /hello
+    headers:
+      Host: 10.lowh.net
+  udp: true
+
+- name: VLESS BYPASS 443
+  server: 104.17.3.81
+  port: 443
+  type: vless
+  uuid: ee6a0ff0-44e9-11ef-a6d6-1577c1651679
+  alterId: 0
+  cipher: auto
+  tls: true
+  skip-cert-verify: true
+  servername: sg-vless-ws.bypass.id
+  network: ws
+  ws-opts:
+    path: /hello
+    headers:
+      Host: sg-vless-ws.bypass.id
+  udp: true
+
+- name: VLEES Bypass 80
+  server: 104.17.3.81
+  port: 80
+  type: vless
+  uuid: fdd8f4d0-4500-11ef-8227-1577c1651679
+  alterId: 0
+  cipher: auto
+  tls: false
+  skip-cert-verify: true
+  servername: sg-vless-ws.bypass.id
+  network: ws
+  ws-opts:
+    path: /worryfree
+    headers:
+      Host: sg-vless-ws.bypass.id
+  udp: true

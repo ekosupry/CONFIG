@@ -79,7 +79,7 @@ proxies:
 proxy-providers:
   SG:
     type: http
-    url: "https://raw.githubusercontent.com/ekosupry/CONFIG/main/list_vpn_nonaktif_ekosinga.yaml"
+    url: "https://raw.githubusercontent.com/ekosupry/CONFIG/main/list_vpn_nonaktif_dedisinga.yaml"
     path: "./proxy_provider/SINGA.yaml"
     health-check:
       enable: true

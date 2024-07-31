@@ -1,0 +1,159 @@
+proxies:
+
+- name: TROJAN BIZNET 80
+  server: 104.17.3.81
+  port: 80
+  type: trojan
+  password: dffe4de0-4505-11ef-bfe6-1577c1651679
+  skip-cert-verify: true
+  sni: biznet1.1server.co
+  network: ws
+  ws-opts:
+    path: /worryfree
+    headers:
+      Host: biznet1.1server.co
+  udp: true
+
+- name: TROJAN BIZNET 443
+  server: 104.17.3.81
+  port: 443
+  type: trojan
+  password: 2499b1e0-4505-11ef-b43f-1577c1651679
+  skip-cert-verify: true
+  sni: biznet1.1server.co
+  network: ws
+  ws-opts:
+    path: /welcome
+    headers:
+      Host: biznet1.1server.co
+  udp: true
+
+- name: TROJAN ID Sanggoro 443
+  server: 104.17.3.81
+  port: 443
+  type: trojan
+  password: ac1c4440-4501-11ef-bee9-1577c1651679
+  skip-cert-verify: true
+  sni: 4.lowh.net
+  network: ws
+  ws-opts:
+    path: /welcome
+    headers:
+      Host: 4.lowh.net
+  udp: true
+
+- name: TROJAN ID Sanggoro 80
+  server: 104.17.3.81
+  port: 80
+  type: trojan
+  password: 448ab9b0-4502-11ef-b5fe-1577c1651679
+  skip-cert-verify: true
+  sni: 4.lowh.net
+  network: ws
+  ws-opts:
+    path: /worryfree
+    headers:
+      Host: 4.lowh.net
+  udp: true
+
+- name: VMEES ID HSP 80
+  server: 104.17.3.81
+  port: 80
+  type: vmess
+  uuid: 5bdac700-44fe-11ef-998e-1577c1651679
+  alterId: 0
+  cipher: auto
+  tls: false
+  skip-cert-verify: true
+  servername: hsp1.htmlcdn.net
+  network: ws
+  ws-opts:
+    path: /api/v1/token/hetoken/worryfree
+    headers:
+      Host: hsp1.htmlcdn.net
+  udp: true
+
+- name: VMESS ID HSP 443
+  server: 104.17.3.81
+  port: 443
+  type: vmess
+  uuid: fb1c9920-44fd-11ef-ae10-1577c1651679
+  alterId: 0
+  cipher: auto
+  tls: true
+  skip-cert-verify: true
+  servername: hsp1.htmlcdn.net
+  network: ws
+  ws-opts:
+    path: /hello
+    headers:
+      Host: hsp1.htmlcdn.net
+  udp: true
+
+- name: VMEES ID Sanggoro 80
+  server: 104.17.3.81
+  port: 80
+  type: vmess
+  uuid: 983df490-44fd-11ef-9a14-1577c1651679
+  alterId: 0
+  cipher: auto
+  tls: false
+  skip-cert-verify: true
+  servername: 5.lowh.net
+  network: ws
+  ws-opts:
+    path: /worryfree
+    headers:
+      Host: 5.lowh.net
+  udp: true
+
+- name: VMESS ID Biznet 80
+  server: 104.17.3.81
+  port: 80
+  type: vmess
+  uuid: cc8846e0-44fc-11ef-8af8-1577c1651679
+  alterId: 0
+  cipher: auto
+  tls: false
+  skip-cert-verify: true
+  servername: cbtp.xmbb.net
+  network: ws
+  ws-opts:
+    path: /worryfree
+    headers:
+      Host: cbtp.xmbb.net
+  udp: true
+
+- name: VMESS ID SANGGORO 443
+  server: 104.17.3.81
+  port: 443
+  type: vmess
+  uuid: 42fc57c0-44fd-11ef-a9b9-1577c1651679
+  alterId: 0
+  cipher: auto
+  tls: true
+  skip-cert-verify: true
+  servername: 5.lowh.net
+  network: ws
+  ws-opts:
+    path: /hello
+    headers:
+      Host: 5.lowh.net
+  udp: true
+
+- name: VMESS ID Biznet 443
+  server: 104.17.3.81
+  port: 443
+  type: vmess
+  uuid: 87370080-44fc-11ef-a375-1577c1651679
+  alterId: 0
+  cipher: auto
+  tls: true
+  skip-cert-verify: true
+  servername: cbtp.xmbb.net
+  network: ws
+  ws-opts:
+    path: /hello
+    headers:
+      Host: cbtp.xmbb.net
+  udp: true

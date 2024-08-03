@@ -241,7 +241,7 @@ proxy-groups:
 #⬜⬜
 #koneksi untuk YOUTUBE,
 - name: "YOUTUBE"
-  type: select
+  type: fallback
   strategy: round-robin
   disable-udp: false
   proxies:
@@ -253,8 +253,6 @@ proxy-groups:
     -  VLESS KNC KR 443
     -  VLESS DO 443
     -  TROJAN TARIK
-    -  DIRECT
-    -  REJECT
   url: 'http://www.gstatic.com/generate_204'
   interval: 300
  #⬜⬜

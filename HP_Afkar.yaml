@@ -415,23 +415,6 @@ proxy-groups:
   interval: 300
  #⬜⬜
    #koneksi untuk iklan,
-- name: "TRAFIK"
-  type: url-test
-  proxies:
-    -  Global✅
-    -  SOSMED
-    -  YOUTUBE
-    -  STREAMING
-    -  AKUN BANK
-    -  18+
-    -  MARKETPLACE
-    -  IKLAN
-    -  BEST PING
-    -  LOAD-BALANCE
-    -  FALLBACK
-  url: 'http://www.gstatic.com/generate_204'
-  interval: 300
- #⬜⬜
 #🟡_________________________________PROCY-GROUP__________________________________🟡
 # Clash for Windows
 cfw-bypass:

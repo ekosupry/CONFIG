@@ -241,7 +241,7 @@ proxy-groups:
 #⬜⬜
 #koneksi untuk YOUTUBE,
 - name: "YOUTUBE"
-  type: fallback
+  type: url-test
   strategy: round-robin
   disable-udp: false
   proxies:

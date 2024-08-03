@@ -1,8 +1,8 @@
-# SINGAPURA DIGITAL OCEAN EXP DATE: 09/08/2024
-# PREMIUM 10rb/device aktif 1 bulan,2 device 15rb
+# Anda menggunakan akun GRATIS
+# Gass PREMIUM 10rb/device aktif 1 bulan,2 device 15rb
 # ==== Paket ILMUPEDIA ======
 # Buy paket TSEL dial *363*844# / *363*555#
-#=============== AFKAR NETWORK =====================
+#===========================================
 mode: rule
 allow-lan: true
 unified-delay: true
@@ -80,55 +80,24 @@ mixed-port: 7890
 # ================= PG ==========
 proxies: 
   - name: SG DO TLS
-    server: 104.18.3.2
+    server: 104.17.3.81
     port: 443
     type: vmess
-    uuid: f3f06036-f052-4478-acbb-0b81307d4bb5
+    uuid: b2cbe9a2-49f6-4062-9b51-4d6eae668383
     alterId: 0
     cipher: auto
     tls: true
     skip-cert-verify: true
-    servername: kuhaku.zerossh.my.id
+    servername: sgo-viprext.my.id
     network: ws
     ws-opts:
       path: /vmess
       headers:
-        Host: kuhaku.zerossh.my.id
+        Host: sgo-viprext.my.id
     udp: true
-
-  - name: SG DO NTLS
-    server: 104.18.3.2
-    port: 80
-    type: vmess
-    uuid: f3f06036-f052-4478-acbb-0b81307d4bb5
-    alterId: 0
-    cipher: auto
-    tls: false
-    skip-cert-verify: true
-    servername: kuhaku.zerossh.my.id
-    network: ws
-    ws-opts:
-      path: /vmess
-      headers:
-        Host: kuhaku.zerossh.my.id
-    udp: true
-
-  - name: SG DO GRPC
-    server: 104.18.3.2
-    port: 443
-    type: vmess
-    uuid: f3f06036-f052-4478-acbb-0b81307d4bb5
-    alterId: 0
-    cipher: auto
-    network: grpc
-    tls: true
-    servername: kuhaku.zerossh.my.id
-    skip-cert-verify: true
-    grpc-opts:
-      grpc-service-name: vmess-grpc
 
   - name: VLESS KNC 443
-    server: 104.18.3.2
+    server: 104.17.3.81
     port: 443
     type: vless
     uuid: 80510fd1-7a7d-4b83-a3db-05fb7f23dea5
@@ -145,7 +114,7 @@ proxies:
     udp: true
 
   - name: VLESS KNC2 443
-    server: 104.18.3.2
+    server: 104.17.3.81
     port: 443
     type: vless
     uuid: 80510fd1-7a7d-4b83-a3db-05fb7f23dea5
@@ -162,7 +131,7 @@ proxies:
     udp: true
 
   - name: VLESS KNC KR 443
-    server: 104.18.3.2
+    server: 104.17.3.81
     port: 443
     type: vless
     uuid: 4994c6a3-3242-45b8-a3e3-7d0fb82b0ece
@@ -179,7 +148,7 @@ proxies:
     udp: true
 
   - name: VLESS DO 443
-    server: 104.18.3.2
+    server: 104.17.3.81
     port: 443
     type: vless
     uuid: b0cb1b0b-f5ba-4ca4-a587-cfe48126bff7
@@ -193,10 +162,10 @@ proxies:
       path: /vless-ws
       headers:
         Host: sgdo1.aframdani.cloud
-    udp: true
-
+    udp: true 
+    
   - name: TROJAN TARIK
-    server: 104.18.3.2
+    server: 104.17.3.81
     port: 443
     type: trojan
     password: 38460e7d-95bb-49e5-a90b-519ff74f182d
@@ -220,13 +189,15 @@ proxy-groups:
   disable-udp: false
   proxies:
     -  SG DO TLS
-    -  SG DO NTLS
-    -  SG DO GRPC
     -  VLESS KNC 443
     -  VLESS KNC2 443
     -  VLESS KNC KR 443
     -  VLESS DO 443
     -  TROJAN TARIK
+  url: 'http://www.gstatic.com/generate_204'
+  interval: 300
+
+
  #⬜⬜
 - name: "WHATSAPP"
   type: select #PILIIH SALAH SATU : SELECT,LOAD-BALANCE,FALLBACK,URL-TEST
@@ -237,8 +208,6 @@ proxy-groups:
     -  LOAD-BALANCE
     -  FALLBACK
     -  SG DO TLS
-    -  SG DO NTLS
-    -  SG DO GRPC
     -  VLESS KNC 443
     -  VLESS KNC2 443
     -  VLESS KNC KR 443
@@ -258,8 +227,6 @@ proxy-groups:
     -  LOAD-BALANCE
     -  FALLBACK
     -  SG DO TLS
-    -  SG DO NTLS
-    -  SG DO GRPC
     -  VLESS KNC 443
     -  VLESS KNC2 443
     -  VLESS KNC KR 443
@@ -303,8 +270,6 @@ proxy-groups:
     -  LOAD-BALANCE
     -  FALLBACK
     -  SG DO TLS
-    -  SG DO NTLS
-    -  SG DO GRPC
     -  VLESS KNC 443
     -  VLESS KNC2 443
     -  VLESS KNC KR 443
@@ -324,8 +289,6 @@ proxy-groups:
     -  LOAD-BALANCE
     -  FALLBACK
     -  SG DO TLS
-    -  SG DO NTLS
-    -  SG DO GRPC
     -  VLESS KNC 443
     -  VLESS KNC2 443
     -  VLESS KNC KR 443
@@ -346,13 +309,11 @@ proxy-groups:
     -  LOAD-BALANCE
     -  FALLBACK
     -  SG DO TLS
-    -  SG DO NTLS
-    -  SG DO GRPC
     -  VLESS KNC 443
     -  VLESS KNC2 443
     -  VLESS KNC KR 443
     -  VLESS DO 443
-    -  TROJAN TARIK
+    -  TROJAN TARIK 
     -  DIRECT
     -  REJECT
   url: 'http://www.gstatic.com/generate_204'
@@ -366,8 +327,6 @@ proxy-groups:
     -  LOAD-BALANCE
     -  FALLBACK
     -  SG DO TLS
-    -  SG DO NTLS
-    -  SG DO GRPC
     -  VLESS KNC 443
     -  VLESS KNC2 443
     -  VLESS KNC KR 443
@@ -420,8 +379,6 @@ proxy-groups:
   disable-udp: false
   proxies:
     -  SG DO TLS
-    -  SG DO NTLS
-    -  SG DO GRPC
     -  VLESS KNC 443
     -  VLESS KNC2 443
     -  VLESS KNC KR 443
@@ -436,8 +393,6 @@ proxy-groups:
   disable-udp: false
   proxies:
     -  SG DO TLS
-    -  SG DO NTLS
-    -  SG DO GRPC
     -  VLESS KNC 443
     -  VLESS KNC2 443
     -  VLESS KNC KR 443
@@ -453,8 +408,6 @@ proxy-groups:
   disable-udp: false
   proxies:
     -  SG DO TLS
-    -  SG DO NTLS
-    -  SG DO GRPC
     -  VLESS KNC 443
     -  VLESS KNC2 443
     -  VLESS KNC KR 443
@@ -509,6 +462,7 @@ cfw-bypass:
   - 192.168.*
   - <local>
 cfw-latency-timeout: 5000
+
 rule-providers:
   Portgames:
     type: http

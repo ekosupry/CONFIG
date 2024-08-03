@@ -80,7 +80,7 @@ mixed-port: 7890
 # ================= PG ==========
 proxies: 
   - name: SG DO TLS
-    server: 104.18.3.2
+    server: 104.17.3.81
     port: 443
     type: vmess
     uuid: b2cbe9a2-49f6-4062-9b51-4d6eae668383
@@ -97,7 +97,7 @@ proxies:
     udp: true
 
   - name: VLESS KNC 443
-    server: 104.18.3.2
+    server: 104.17.3.81
     port: 443
     type: vless
     uuid: 80510fd1-7a7d-4b83-a3db-05fb7f23dea5
@@ -114,7 +114,7 @@ proxies:
     udp: true
 
   - name: VLESS KNC2 443
-    server: 104.18.3.2
+    server: 104.17.3.81
     port: 443
     type: vless
     uuid: 80510fd1-7a7d-4b83-a3db-05fb7f23dea5
@@ -131,7 +131,7 @@ proxies:
     udp: true
 
   - name: VLESS KNC KR 443
-    server: 104.18.3.2
+    server: 104.17.3.81
     port: 443
     type: vless
     uuid: 4994c6a3-3242-45b8-a3e3-7d0fb82b0ece
@@ -148,7 +148,7 @@ proxies:
     udp: true
 
   - name: VLESS DO 443
-    server: 104.18.3.2
+    server: 104.17.3.81
     port: 443
     type: vless
     uuid: b0cb1b0b-f5ba-4ca4-a587-cfe48126bff7
@@ -165,7 +165,7 @@ proxies:
     udp: true 
     
   - name: TROJAN TARIK
-    server: 104.18.3.2
+    server: 104.17.3.81
     port: 443
     type: trojan
     password: 38460e7d-95bb-49e5-a90b-519ff74f182d
@@ -577,7 +577,6 @@ rule-providers:
     behavior: classical
     path: "./rule_provider/speed.yaml"
     url: "https://raw.githubusercontent.com/ekosupry/CONFIG/main/speed.yaml"
-
 # ================= RULES  ==================
 rules:
 - IP-CIDR,198.18.0.1/16,REJECT,no-resolve

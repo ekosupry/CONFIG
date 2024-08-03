@@ -184,7 +184,7 @@ proxies:
 proxy-groups:
 # Global kita gunakan untuk koneksi UMUM
 - name: "Global✅"
-  type: fallback
+  type: url-test
   strategy: round-robin
   disable-udp: false
   proxies:
@@ -196,8 +196,6 @@ proxy-groups:
     -  TROJAN TARIK
   url: 'http://www.gstatic.com/generate_204'
   interval: 300
-
-
  #⬜⬜
 - name: "WHATSAPP"
   type: select #PILIIH SALAH SATU : SELECT,LOAD-BALANCE,FALLBACK,URL-TEST

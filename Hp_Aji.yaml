@@ -79,25 +79,42 @@ tproxy-port: 9898
 mixed-port: 7890
 # ================= PG ==========
 proxies: 
-  - name: SG DO TLS
-    server: 104.17.3.81
+  - name: IDL TLS
+    server: 104.18.3.2
     port: 443
     type: vmess
-    uuid: b2cbe9a2-49f6-4062-9b51-4d6eae668383
+    uuid: cedf07b8-2f39-4c29-828d-c5f1911573e1
     alterId: 0
     cipher: auto
     tls: true
     skip-cert-verify: true
-    servername: sgo-viprext.my.id
+    servername: vvipp.klmpk.me
     network: ws
     ws-opts:
       path: /vmess
       headers:
-        Host: sgo-viprext.my.id
+        Host: vvipp.klmpk.me
+    udp: true
+
+  - name: IDL NTLS
+    server: 104.18.3.2
+    port: 80
+    type: vmess
+    uuid: cedf07b8-2f39-4c29-828d-c5f1911573e1
+    alterId: 0
+    cipher: auto
+    tls: false
+    skip-cert-verify: true
+    servername: vvipp.klmpk.me
+    network: ws
+    ws-opts:
+      path: /vmess
+      headers:
+        Host: vvipp.klmpk.me
     udp: true
 
   - name: VLESS KNC 443
-    server: 104.17.3.81
+    server: 104.18.3.2
     port: 443
     type: vless
     uuid: 80510fd1-7a7d-4b83-a3db-05fb7f23dea5
@@ -114,7 +131,7 @@ proxies:
     udp: true
 
   - name: VLESS KNC2 443
-    server: 104.17.3.81
+    server: 104.18.3.2
     port: 443
     type: vless
     uuid: 80510fd1-7a7d-4b83-a3db-05fb7f23dea5
@@ -131,7 +148,7 @@ proxies:
     udp: true
 
   - name: VLESS KNC KR 443
-    server: 104.17.3.81
+    server: 104.18.3.2
     port: 443
     type: vless
     uuid: 4994c6a3-3242-45b8-a3e3-7d0fb82b0ece
@@ -148,7 +165,7 @@ proxies:
     udp: true
 
   - name: VLESS DO 443
-    server: 104.17.3.81
+    server: 104.18.3.2
     port: 443
     type: vless
     uuid: b0cb1b0b-f5ba-4ca4-a587-cfe48126bff7
@@ -165,7 +182,7 @@ proxies:
     udp: true 
     
   - name: TROJAN TARIK
-    server: 104.17.3.81
+    server: 104.18.3.2
     port: 443
     type: trojan
     password: 38460e7d-95bb-49e5-a90b-519ff74f182d
@@ -188,7 +205,8 @@ proxy-groups:
   strategy: round-robin
   disable-udp: false
   proxies:
-    -  SG DO TLS
+    -  IDL TLS
+    -  IDL NTLS
     -  VLESS KNC 443
     -  VLESS KNC2 443
     -  VLESS KNC KR 443
@@ -197,6 +215,56 @@ proxy-groups:
   url: 'http://www.gstatic.com/generate_204'
   interval: 300
  #⬜⬜
+- name: "WHATSAPP"
+  type: select #PILIIH SALAH SATU : SELECT,LOAD-BALANCE,FALLBACK,URL-TEST
+  strategy: round-robin
+  disable-udp: false
+  proxies:
+    -  BEST PING
+    -  LOAD-BALANCE
+    -  FALLBACK
+    -  IDL TLS
+    -  IDL NTLS
+    -  VLESS KNC 443
+    -  VLESS KNC2 443
+    -  VLESS KNC KR 443
+    -  VLESS DO 443
+    -  TROJAN TARIK
+    -  DIRECT
+  url: 'http://www.gstatic.com/generate_204'
+  interval: 300
+#⬜⬜
+#Koneksi Sosmed
+- name: "FACEBOOK"
+  type: select #PILIIH SALAH SATU : SELECT,LOAD-BALANCE,FALLBACK,URL-TEST
+  strategy: round-robin
+  disable-udp: false
+  proxies:
+    -  BEST PING
+    -  LOAD-BALANCE
+    -  FALLBACK
+    -  IDL TLS
+    -  IDL NTLS
+    -  VLESS KNC 443
+    -  VLESS KNC2 443
+    -  VLESS KNC KR 443
+    -  VLESS DO 443
+    -  TROJAN TARIK
+    -  DIRECT
+  url: 'http://www.gstatic.com/generate_204'
+  interval: 300
+#Koneksi Sosmed
+- name: "RUANG GAME"
+  type: select #PILIIH SALAH SATU : SELECT,LOAD-BALANCE,FALLBACK,URL-TEST
+  strategy: round-robin
+  disable-udp: false
+  proxies:
+    -  VLESS KNC 443
+    -  VLESS KNC2 443
+    -  DIRECT
+  url: 'http://www.gstatic.com/generate_204'
+  interval: 300
+#Koneksi Sosmed
 - name: "PORT GAME"
   type: select #PILIIH SALAH SATU : SELECT,LOAD-BALANCE,FALLBACK,URL-TEST
   strategy: round-robin
@@ -204,6 +272,28 @@ proxy-groups:
   proxies:
     -  VLESS KNC 443
     -  VLESS KNC2 443
+    -  DIRECT
+  url: 'http://www.gstatic.com/generate_204'
+  interval: 300
+#⬜⬜
+#⬜⬜
+#⬜⬜
+#Koneksi Sosmed
+- name: "SOSMED"
+  type: select #PILIIH SALAH SATU : SELECT,LOAD-BALANCE,FALLBACK,URL-TEST
+  strategy: round-robin
+  disable-udp: false
+  proxies:
+    -  BEST PING
+    -  LOAD-BALANCE
+    -  FALLBACK
+    -  IDL TLS
+    -  IDL NTLS
+    -  VLESS KNC 443
+    -  VLESS KNC2 443
+    -  VLESS KNC KR 443
+    -  VLESS DO 443
+    -  TROJAN TARIK
     -  DIRECT
   url: 'http://www.gstatic.com/generate_204'
   interval: 300
@@ -217,7 +307,8 @@ proxy-groups:
     -  BEST PING
     -  LOAD-BALANCE
     -  FALLBACK
-    -  SG DO TLS
+    -  IDL TLS
+    -  IDL NTLS
     -  VLESS KNC 443
     -  VLESS KNC2 443
     -  VLESS KNC KR 443
@@ -228,11 +319,36 @@ proxy-groups:
   url: 'http://www.gstatic.com/generate_204'
   interval: 300
  #⬜⬜
+#koneksi nonton video
+- name: "STREAMING"
+  type: select
+  strategy: round-robin
+  disable-udp: false
+  proxies:
+    -  BEST PING
+    -  LOAD-BALANCE
+    -  FALLBACK
+    -  IDL TLS
+    -  IDL NTLS
+    -  VLESS KNC 443
+    -  VLESS KNC2 443
+    -  VLESS KNC KR 443
+    -  VLESS DO 443
+    -  TROJAN TARIK 
+    -  DIRECT
+    -  REJECT
+  url: 'http://www.gstatic.com/generate_204'
+  interval: 300
+ #⬜⬜
  #koneksi untuk Bank,
 - name: "AKUN BANK"
   type: select
   proxies:
-    -  SG DO TLS
+    -  BEST PING
+    -  LOAD-BALANCE
+    -  FALLBACK
+    -  IDL TLS
+    -  IDL NTLS
     -  VLESS KNC 443
     -  VLESS KNC2 443
     -  VLESS KNC KR 443
@@ -284,7 +400,8 @@ proxy-groups:
   strategy: round-robin
   disable-udp: false
   proxies:
-    -  SG DO TLS
+    -  IDL TLS
+    -  IDL NTLS
     -  VLESS KNC 443
     -  VLESS KNC2 443
     -  VLESS KNC KR 443
@@ -298,7 +415,6 @@ proxy-groups:
   strategy: round-robin
   disable-udp: false
   proxies:
-    -  SG DO TLS
     -  VLESS KNC 443
     -  VLESS KNC2 443
     -  VLESS KNC KR 443
@@ -313,7 +429,8 @@ proxy-groups:
   strategy: round-robin
   disable-udp: false
   proxies:
-    -  SG DO TLS
+    -  IDL TLS
+    -  IDL NTLS
     -  VLESS KNC 443
     -  VLESS KNC2 443
     -  VLESS KNC KR 443
@@ -322,6 +439,7 @@ proxy-groups:
   url: 'http://www.gstatic.com/generate_204'
   interval: 300
  #⬜⬜
+   #koneksi untuk iklan,
 #🟡_________________________________PROCY-GROUP__________________________________🟡
 # Clash for Windows
 cfw-bypass:
@@ -350,17 +468,53 @@ cfw-bypass:
   - 192.168.*
   - <local>
 cfw-latency-timeout: 5000
+
 rule-providers:
   Portgames:
     type: http
     behavior: classical
     path: "./rule_provider/portgames.yaml"
     url: "https://raw.githubusercontent.com/ekosupry/CONFIG/main/portgame.yaml"
+  Gaming:
+    type: http
+    behavior: classical
+    path: "./rule_provider/gaming.yaml"
+    url: "https://raw.githubusercontent.com/ekosupry/CONFIG/main/gaming.yaml"
+  Game-TCP:
+    type: http
+    behavior: classical
+    path: "./rule_provider/gametcp.yaml"
+    url: "https://raw.githubusercontent.com/ekosupry/CONFIG/main/gametcp.yaml"
+  Sosmed:
+    type: http
+    behavior: classical
+    path: "./rule_provider/fl-sosmed.yaml"
+    url: "https://raw.githubusercontent.com/ekosupry/CONFIG/main/sosmed.yaml"
+  Nonton:
+    type: http
+    behavior: classical
+    path: "./rule_provider/fl-streaming.yaml"
+    url: "https://raw.githubusercontent.com/ekosupry/CONFIG/main/nonton.yaml"
   YouTube:
     type: http
     behavior: domain
     path: "./rule_provider/youtube.yaml"
     url: "https://raw.githubusercontent.com/ekosupry/CONFIG/main/youtube.yaml"
+  WA:
+    type: http
+    behavior: classical
+    path: "./rule_provider/whatsapp.yaml"
+    url: "https://raw.githubusercontent.com/ekosupry/CONFIG/main/whatsapp.yaml"  
+  Facebook:
+    type: http
+    behavior: classical
+    path: "./rule_provider/wafb.yaml"
+    url: "https://raw.githubusercontent.com/ekosupry/CONFIG/main/facebook.yaml"  
+  Zero:
+    type: http
+    behavior: classical
+    path: "./rule_provider/zerotier.yaml"
+    url: "https://raw.githubusercontent.com/ekosupry/CONFIG/main/zerotier.yaml"
 #rulindo
   Indo:
     type: http
@@ -372,6 +526,16 @@ rule-providers:
     behavior: classical
     path: "./rule_provider/banking.yaml"
     url: "https://raw.githubusercontent.com/ekosupry/CONFIG/main/banking.yaml"
+  rule_disneyplus:
+    type: http
+    behavior: classical
+    path: "./rule_provider/rule_disneyplus.yaml"
+    url: "https://raw.githubusercontent.com/ekosupry/CONFIG/main/rule_disney.yaml"
+  rule_netflix:
+    type: http
+    behavior: domain
+    path: "./rule_provider/rule_netflix.yaml"
+    url: "https://raw.githubusercontent.com/ekosupry/CONFIG/main/rule_netflix.yaml"
 #iklan&18+
   Nsfw:
     type: http
@@ -414,21 +578,35 @@ rule-providers:
     behavior: classical
     path: "./rule_provider/shopee.yaml"
     url: "https://raw.githubusercontent.com/ekosupry/CONFIG/main/shopee.yaml"
+  Speed:
+    type: http
+    behavior: classical
+    path: "./rule_provider/speed.yaml"
+    url: "https://raw.githubusercontent.com/ekosupry/CONFIG/main/speed.yaml"
+
 # ================= RULES  ==================
 rules:
 - IP-CIDR,198.18.0.1/16,REJECT,no-resolve
+- RULE-SET,Sosmed,SOSMED
 - RULE-SET,Market,MARKETPLACE
 - RULE-SET,Bukalapak,MARKETPLACE
 - RULE-SET,Tokopedia,MARKETPLACE
 - RULE-SET,Shopee,MARKETPLACE
+- RULE-SET,Nonton,STREAMING
 - RULE-SET,Indo,AKUN BANK
 - RULE-SET,Bank,AKUN BANK
 - RULE-SET,Portgames,PORT GAME
+- RULE-SET,Gaming,RUANG GAME
+- RULE-SET,Game-TCP,RUANG GAME
+- RULE-SET,WA,WHATSAPP
+- RULE-SET,Facebook,FACEBOOK
 - RULE-SET,Personalads,IKLAN
 - RULE-SET,Basicads,IKLAN
 - RULE-SET,18+,18+
 - RULE-SET,Nsfw,18+
 - RULE-SET,YouTube,YOUTUBE
+- RULE-SET,Speed,Global✅
+- RULE-SET,Zero,AKUN BANK
 # Local Area Network
 - IP-CIDR,192.168.0.0/16,DIRECT
 - IP-CIDR,10.0.0.0/8,DIRECT

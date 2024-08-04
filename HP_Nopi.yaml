@@ -1,8 +1,8 @@
-# Anda menggunakan akun GRATIS
-# Gass PREMIUM 10rb/device aktif 1 bulan,2 device 15rb
+# SINGAPURA DIGITAL OCEAN EXP DATE: 09/08/2024
+# PREMIUM 10rb/device aktif 1 bulan,2 device 15rb
 # ==== Paket ILMUPEDIA ======
 # Buy paket TSEL dial *363*844# / *363*555#
-#===========================================
+#=============== AFKAR NETWORK =====================
 mode: rule
 allow-lan: true
 unified-delay: true
@@ -79,6 +79,54 @@ tproxy-port: 9898
 mixed-port: 7890
 # ================= PG ==========
 proxies: 
+  - name: SG DO TLS
+    server: 104.18.3.2
+    port: 443
+    type: vmess
+    uuid: f3f06036-f052-4478-acbb-0b81307d4bb5
+    alterId: 0
+    cipher: auto
+    tls: true
+    skip-cert-verify: true
+    servername: kuhaku.zerossh.my.id
+    network: ws
+    ws-opts:
+      path: /vmess
+      headers:
+        Host: kuhaku.zerossh.my.id
+    udp: true
+
+  - name: SG DO NTLS
+    server: 104.18.3.2
+    port: 80
+    type: vmess
+    uuid: f3f06036-f052-4478-acbb-0b81307d4bb5
+    alterId: 0
+    cipher: auto
+    tls: false
+    skip-cert-verify: true
+    servername: kuhaku.zerossh.my.id
+    network: ws
+    ws-opts:
+      path: /vmess
+      headers:
+        Host: kuhaku.zerossh.my.id
+    udp: true
+
+  - name: SG DO GRPC
+    server: 104.18.3.2
+    port: 443
+    type: vmess
+    uuid: f3f06036-f052-4478-acbb-0b81307d4bb5
+    alterId: 0
+    cipher: auto
+    network: grpc
+    tls: true
+    servername: kuhaku.zerossh.my.id
+    skip-cert-verify: true
+    grpc-opts:
+      grpc-service-name: vmess-grpc
+      
   - name: IDL TLS
     server: 104.18.3.2
     port: 443
@@ -112,6 +160,7 @@ proxies:
       headers:
         Host: vvipp.klmpk.me
     udp: true
+
 
   - name: VLESS KNC 443
     server: 104.18.3.2
@@ -179,8 +228,8 @@ proxies:
       path: /vless-ws
       headers:
         Host: sgdo1.aframdani.cloud
-    udp: true 
-    
+    udp: true
+
   - name: TROJAN TARIK
     server: 104.18.3.2
     port: 443
@@ -201,10 +250,13 @@ proxies:
 proxy-groups:
 # Global kita gunakan untuk koneksi UMUM
 - name: "Global✅"
-  type: url-test
+  type: fallback
   strategy: round-robin
   disable-udp: false
   proxies:
+    -  SG DO TLS
+    -  SG DO NTLS
+    -  SG DO GRPC
     -  IDL TLS
     -  IDL NTLS
     -  VLESS KNC 443
@@ -212,8 +264,6 @@ proxy-groups:
     -  VLESS KNC KR 443
     -  VLESS DO 443
     -  TROJAN TARIK
-  url: 'http://www.gstatic.com/generate_204'
-  interval: 300
  #⬜⬜
 - name: "WHATSAPP"
   type: select #PILIIH SALAH SATU : SELECT,LOAD-BALANCE,FALLBACK,URL-TEST
@@ -223,6 +273,9 @@ proxy-groups:
     -  BEST PING
     -  LOAD-BALANCE
     -  FALLBACK
+    -  SG DO TLS
+    -  SG DO NTLS
+    -  SG DO GRPC
     -  IDL TLS
     -  IDL NTLS
     -  VLESS KNC 443
@@ -243,6 +296,9 @@ proxy-groups:
     -  BEST PING
     -  LOAD-BALANCE
     -  FALLBACK
+    -  SG DO TLS
+    -  SG DO NTLS
+    -  SG DO GRPC
     -  IDL TLS
     -  IDL NTLS
     -  VLESS KNC 443
@@ -276,8 +332,6 @@ proxy-groups:
   url: 'http://www.gstatic.com/generate_204'
   interval: 300
 #⬜⬜
-#⬜⬜
-#⬜⬜
 #Koneksi Sosmed
 - name: "SOSMED"
   type: select #PILIIH SALAH SATU : SELECT,LOAD-BALANCE,FALLBACK,URL-TEST
@@ -287,6 +341,9 @@ proxy-groups:
     -  BEST PING
     -  LOAD-BALANCE
     -  FALLBACK
+    -  SG DO TLS
+    -  SG DO NTLS
+    -  SG DO GRPC
     -  IDL TLS
     -  IDL NTLS
     -  VLESS KNC 443
@@ -307,6 +364,9 @@ proxy-groups:
     -  BEST PING
     -  LOAD-BALANCE
     -  FALLBACK
+    -  SG DO TLS
+    -  SG DO NTLS
+    -  SG DO GRPC
     -  IDL TLS
     -  IDL NTLS
     -  VLESS KNC 443
@@ -328,13 +388,16 @@ proxy-groups:
     -  BEST PING
     -  LOAD-BALANCE
     -  FALLBACK
+    -  SG DO TLS
+    -  SG DO NTLS
+    -  SG DO GRPC
     -  IDL TLS
     -  IDL NTLS
     -  VLESS KNC 443
     -  VLESS KNC2 443
     -  VLESS KNC KR 443
     -  VLESS DO 443
-    -  TROJAN TARIK 
+    -  TROJAN TARIK
     -  DIRECT
     -  REJECT
   url: 'http://www.gstatic.com/generate_204'
@@ -347,6 +410,9 @@ proxy-groups:
     -  BEST PING
     -  LOAD-BALANCE
     -  FALLBACK
+    -  SG DO TLS
+    -  SG DO NTLS
+    -  SG DO GRPC
     -  IDL TLS
     -  IDL NTLS
     -  VLESS KNC 443
@@ -400,6 +466,9 @@ proxy-groups:
   strategy: round-robin
   disable-udp: false
   proxies:
+    -  SG DO TLS
+    -  SG DO NTLS
+    -  SG DO GRPC
     -  IDL TLS
     -  IDL NTLS
     -  VLESS KNC 443
@@ -415,6 +484,9 @@ proxy-groups:
   strategy: round-robin
   disable-udp: false
   proxies:
+    -  SG DO TLS
+    -  SG DO NTLS
+    -  SG DO GRPC
     -  VLESS KNC 443
     -  VLESS KNC2 443
     -  VLESS KNC KR 443
@@ -429,6 +501,9 @@ proxy-groups:
   strategy: round-robin
   disable-udp: false
   proxies:
+    -  SG DO TLS
+    -  SG DO NTLS
+    -  SG DO GRPC
     -  IDL TLS
     -  IDL NTLS
     -  VLESS KNC 443
@@ -439,7 +514,6 @@ proxy-groups:
   url: 'http://www.gstatic.com/generate_204'
   interval: 300
  #⬜⬜
-   #koneksi untuk iklan,
 #🟡_________________________________PROCY-GROUP__________________________________🟡
 # Clash for Windows
 cfw-bypass:
@@ -468,7 +542,6 @@ cfw-bypass:
   - 192.168.*
   - <local>
 cfw-latency-timeout: 5000
-
 rule-providers:
   Portgames:
     type: http
@@ -583,7 +656,6 @@ rule-providers:
     behavior: classical
     path: "./rule_provider/speed.yaml"
     url: "https://raw.githubusercontent.com/ekosupry/CONFIG/main/speed.yaml"
-
 # ================= RULES  ==================
 rules:
 - IP-CIDR,198.18.0.1/16,REJECT,no-resolve

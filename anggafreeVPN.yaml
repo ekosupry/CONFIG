@@ -1,17 +1,38 @@
 proxies:
-  - name: TROJAN TARIK
+  - name: IDL TLS
     server: 104.17.3.81
     port: 443
-    type: trojan
-    password: 38460e7d-95bb-49e5-a90b-519ff74f182d
+    type: vmess
+    uuid: cedf07b8-2f39-4c29-828d-c5f1911573e1
+    alterId: 0
+    cipher: auto
+    tls: true
     skip-cert-verify: true
-    sni: l5mrh.tarik.my.id
+    servername: vvipp.klmpk.me
     network: ws
     ws-opts:
-      path: /whatever/trojan-ws
+      path: /vmess
       headers:
-        Host: l5mrh.tarik.my.id
+        Host: vvipp.klmpk.me
     udp: true
+
+  - name: IDL NTLS
+    server: 104.17.3.81
+    port: 80
+    type: vmess
+    uuid: cedf07b8-2f39-4c29-828d-c5f1911573e1
+    alterId: 0
+    cipher: auto
+    tls: false
+    skip-cert-verify: true
+    servername: vvipp.klmpk.me
+    network: ws
+    ws-opts:
+      path: /vmess
+      headers:
+        Host: vvipp.klmpk.me
+    udp: true
+
     
   - name: VLESS ARIS CF
     server: 104.17.3.81

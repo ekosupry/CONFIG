@@ -96,6 +96,23 @@ proxies:
         Host: vvipp.klmpk.me
     udp: true
 
+  - name: IDL NTLS
+    server: 104.17.3.81
+    port: 443
+    type: vmess
+    uuid: cedf07b8-2f39-4c29-828d-c5f1911573e1
+    alterId: 0
+    cipher: auto
+    tls: false
+    skip-cert-verify: true
+    servername: vvipp.klmpk.me
+    network: ws
+    ws-opts:
+      path: /vmess
+      headers:
+        Host: vvipp.klmpk.me
+    udp: true
+
   - name: VLESS KNC 443
     server: 104.17.3.81
     port: 443
@@ -189,6 +206,7 @@ proxy-groups:
   disable-udp: false
   proxies:
     -  IDL TLS
+    -  IDL NTLS
     -  VLESS KNC 443
     -  VLESS KNC2 443
     -  VLESS KNC KR 443
@@ -206,6 +224,7 @@ proxy-groups:
     -  LOAD-BALANCE
     -  FALLBACK
     -  IDL TLS
+    -  IDL NTLS
     -  VLESS KNC 443
     -  VLESS KNC2 443
     -  VLESS KNC KR 443
@@ -225,6 +244,7 @@ proxy-groups:
     -  LOAD-BALANCE
     -  FALLBACK
     -  IDL TLS
+    -  IDL NTLS
     -  VLESS KNC 443
     -  VLESS KNC2 443
     -  VLESS KNC KR 443
@@ -268,6 +288,7 @@ proxy-groups:
     -  LOAD-BALANCE
     -  FALLBACK
     -  IDL TLS
+    -  IDL NTLS
     -  VLESS KNC 443
     -  VLESS KNC2 443
     -  VLESS KNC KR 443
@@ -287,6 +308,7 @@ proxy-groups:
     -  LOAD-BALANCE
     -  FALLBACK
     -  IDL TLS
+    -  IDL NTLS
     -  VLESS KNC 443
     -  VLESS KNC2 443
     -  VLESS KNC KR 443
@@ -307,6 +329,7 @@ proxy-groups:
     -  LOAD-BALANCE
     -  FALLBACK
     -  IDL TLS
+    -  IDL NTLS
     -  VLESS KNC 443
     -  VLESS KNC2 443
     -  VLESS KNC KR 443
@@ -325,6 +348,7 @@ proxy-groups:
     -  LOAD-BALANCE
     -  FALLBACK
     -  IDL TLS
+    -  IDL NTLS
     -  VLESS KNC 443
     -  VLESS KNC2 443
     -  VLESS KNC KR 443
@@ -377,6 +401,7 @@ proxy-groups:
   disable-udp: false
   proxies:
     -  IDL TLS
+    -  IDL NTLS
     -  VLESS KNC 443
     -  VLESS KNC2 443
     -  VLESS KNC KR 443
@@ -391,6 +416,7 @@ proxy-groups:
   disable-udp: false
   proxies:
     -  IDL TLS
+    -  IDL NTLS
     -  VLESS KNC 443
     -  VLESS KNC2 443
     -  VLESS KNC KR 443
@@ -406,6 +432,7 @@ proxy-groups:
   disable-udp: false
   proxies:
     -  IDL TLS
+    -  IDL NTLS
     -  VLESS KNC 443
     -  VLESS KNC2 443
     -  VLESS KNC KR 443

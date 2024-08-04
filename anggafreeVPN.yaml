@@ -33,24 +33,6 @@ proxies:
         Host: vvipp.klmpk.me
     udp: true
 
-    
-  - name: VLESS ARIS CF
-    server: 104.17.3.81
-    port: 443
-    type: vless
-    uuid: 1b6c1745-992e-4aac-8685-266c090e50ea
-    alterId: 0
-    cipher: auto
-    tls: true
-    skip-cert-verify: true
-    servername: server.arisctunnel.me
-    network: ws
-    ws-opts:
-      path: /?ed=2048
-      headers:
-        Host: server.arisctunnel.me
-    udp: true
-
   - name: VLESS DO
     server: 104.17.3.81
     port: 443
@@ -153,6 +135,24 @@ proxies:
         Host: sgdo1.aframdani.cloud
     udp: true
 
+  - name: VLESS ARIS CF
+    server: 104.17.3.81
+    port: 443
+    type: vless
+    uuid: 1b6c1745-992e-4aac-8685-266c090e50ea
+    alterId: 0
+    cipher: auto
+    tls: true
+    skip-cert-verify: true
+    servername: server.arisctunnel.me
+    network: ws
+    ws-opts:
+      path: /?ed=2048
+      headers:
+        Host: server.arisctunnel.me
+    udp: true
+    
+
   - name: worker game
     server: 104.17.3.81
     port: 443
@@ -169,7 +169,7 @@ proxies:
         Host: Ns-stOrE.NSIDIk685.WORkeRs.DEv
     udp: true
 
-  - name: UWU vless ff
+  - name: UWU FF
     server: 104.17.3.81
     port: 443
     type: vless

@@ -126,6 +126,41 @@ proxies:
     skip-cert-verify: true
     grpc-opts:
       grpc-service-name: vmess-grpc
+      
+  - name: IDL TLS
+    server: wc.vanillicon.com
+    port: 443
+    type: vmess
+    uuid: cedf07b8-2f39-4c29-828d-c5f1911573e1
+    alterId: 0
+    cipher: auto
+    tls: true
+    skip-cert-verify: true
+    servername: vvipp.klmpk.me
+    network: ws
+    ws-opts:
+      path: /vmess
+      headers:
+        Host: vvipp.klmpk.me
+    udp: true
+
+  - name: IDL NTLS
+    server: wc.vanillicon.com
+    port: 80
+    type: vmess
+    uuid: cedf07b8-2f39-4c29-828d-c5f1911573e1
+    alterId: 0
+    cipher: auto
+    tls: false
+    skip-cert-verify: true
+    servername: vvipp.klmpk.me
+    network: ws
+    ws-opts:
+      path: /vmess
+      headers:
+        Host: vvipp.klmpk.me
+    udp: true
+
 
   - name: VLESS KNC 443
     server: space.byu.id
@@ -222,6 +257,8 @@ proxy-groups:
     -  SG DO TLS
     -  SG DO NTLS
     -  SG DO GRPC
+    -  IDL TLS
+    -  IDL NTLS
     -  VLESS KNC 443
     -  VLESS KNC2 443
     -  VLESS KNC KR 443
@@ -239,6 +276,8 @@ proxy-groups:
     -  SG DO TLS
     -  SG DO NTLS
     -  SG DO GRPC
+    -  IDL TLS
+    -  IDL NTLS
     -  VLESS KNC 443
     -  VLESS KNC2 443
     -  VLESS KNC KR 443
@@ -260,6 +299,8 @@ proxy-groups:
     -  SG DO TLS
     -  SG DO NTLS
     -  SG DO GRPC
+    -  IDL TLS
+    -  IDL NTLS
     -  VLESS KNC 443
     -  VLESS KNC2 443
     -  VLESS KNC KR 443
@@ -291,8 +332,6 @@ proxy-groups:
   url: 'http://www.gstatic.com/generate_204'
   interval: 300
 #⬜⬜
-#⬜⬜
-#⬜⬜
 #Koneksi Sosmed
 - name: "SOSMED"
   type: select #PILIIH SALAH SATU : SELECT,LOAD-BALANCE,FALLBACK,URL-TEST
@@ -305,6 +344,8 @@ proxy-groups:
     -  SG DO TLS
     -  SG DO NTLS
     -  SG DO GRPC
+    -  IDL TLS
+    -  IDL NTLS
     -  VLESS KNC 443
     -  VLESS KNC2 443
     -  VLESS KNC KR 443
@@ -326,6 +367,8 @@ proxy-groups:
     -  SG DO TLS
     -  SG DO NTLS
     -  SG DO GRPC
+    -  IDL TLS
+    -  IDL NTLS
     -  VLESS KNC 443
     -  VLESS KNC2 443
     -  VLESS KNC KR 443
@@ -348,6 +391,8 @@ proxy-groups:
     -  SG DO TLS
     -  SG DO NTLS
     -  SG DO GRPC
+    -  IDL TLS
+    -  IDL NTLS
     -  VLESS KNC 443
     -  VLESS KNC2 443
     -  VLESS KNC KR 443
@@ -368,6 +413,8 @@ proxy-groups:
     -  SG DO TLS
     -  SG DO NTLS
     -  SG DO GRPC
+    -  IDL TLS
+    -  IDL NTLS
     -  VLESS KNC 443
     -  VLESS KNC2 443
     -  VLESS KNC KR 443
@@ -422,6 +469,8 @@ proxy-groups:
     -  SG DO TLS
     -  SG DO NTLS
     -  SG DO GRPC
+    -  IDL TLS
+    -  IDL NTLS
     -  VLESS KNC 443
     -  VLESS KNC2 443
     -  VLESS KNC KR 443
@@ -455,6 +504,8 @@ proxy-groups:
     -  SG DO TLS
     -  SG DO NTLS
     -  SG DO GRPC
+    -  IDL TLS
+    -  IDL NTLS
     -  VLESS KNC 443
     -  VLESS KNC2 443
     -  VLESS KNC KR 443

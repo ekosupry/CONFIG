@@ -79,21 +79,21 @@ tproxy-port: 9898
 mixed-port: 7890
 # ================= PG ==========
 proxies: 
-  - name: SG DO TLS
+  - name: IDL TLS
     server: 104.17.3.81
     port: 443
     type: vmess
-    uuid: b2cbe9a2-49f6-4062-9b51-4d6eae668383
+    uuid: cedf07b8-2f39-4c29-828d-c5f1911573e1
     alterId: 0
     cipher: auto
     tls: true
     skip-cert-verify: true
-    servername: sgo-viprext.my.id
+    servername: vvipp.klmpk.me
     network: ws
     ws-opts:
       path: /vmess
       headers:
-        Host: sgo-viprext.my.id
+        Host: vvipp.klmpk.me
     udp: true
 
   - name: VLESS KNC 443
@@ -188,7 +188,7 @@ proxy-groups:
   strategy: round-robin
   disable-udp: false
   proxies:
-    -  SG DO TLS
+    -  IDL TLS
     -  VLESS KNC 443
     -  VLESS KNC2 443
     -  VLESS KNC KR 443
@@ -205,7 +205,7 @@ proxy-groups:
     -  BEST PING
     -  LOAD-BALANCE
     -  FALLBACK
-    -  SG DO TLS
+    -  IDL TLS
     -  VLESS KNC 443
     -  VLESS KNC2 443
     -  VLESS KNC KR 443
@@ -224,7 +224,7 @@ proxy-groups:
     -  BEST PING
     -  LOAD-BALANCE
     -  FALLBACK
-    -  SG DO TLS
+    -  IDL TLS
     -  VLESS KNC 443
     -  VLESS KNC2 443
     -  VLESS KNC KR 443
@@ -267,7 +267,7 @@ proxy-groups:
     -  BEST PING
     -  LOAD-BALANCE
     -  FALLBACK
-    -  SG DO TLS
+    -  IDL TLS
     -  VLESS KNC 443
     -  VLESS KNC2 443
     -  VLESS KNC KR 443
@@ -286,7 +286,7 @@ proxy-groups:
     -  BEST PING
     -  LOAD-BALANCE
     -  FALLBACK
-    -  SG DO TLS
+    -  IDL TLS
     -  VLESS KNC 443
     -  VLESS KNC2 443
     -  VLESS KNC KR 443
@@ -306,7 +306,7 @@ proxy-groups:
     -  BEST PING
     -  LOAD-BALANCE
     -  FALLBACK
-    -  SG DO TLS
+    -  IDL TLS
     -  VLESS KNC 443
     -  VLESS KNC2 443
     -  VLESS KNC KR 443
@@ -324,7 +324,7 @@ proxy-groups:
     -  BEST PING
     -  LOAD-BALANCE
     -  FALLBACK
-    -  SG DO TLS
+    -  IDL TLS
     -  VLESS KNC 443
     -  VLESS KNC2 443
     -  VLESS KNC KR 443
@@ -376,7 +376,7 @@ proxy-groups:
   strategy: round-robin
   disable-udp: false
   proxies:
-    -  SG DO TLS
+    -  IDL TLS
     -  VLESS KNC 443
     -  VLESS KNC2 443
     -  VLESS KNC KR 443
@@ -390,7 +390,7 @@ proxy-groups:
   strategy: round-robin
   disable-udp: false
   proxies:
-    -  SG DO TLS
+    -  IDL TLS
     -  VLESS KNC 443
     -  VLESS KNC2 443
     -  VLESS KNC KR 443
@@ -405,7 +405,7 @@ proxy-groups:
   strategy: round-robin
   disable-udp: false
   proxies:
-    -  SG DO TLS
+    -  IDL TLS
     -  VLESS KNC 443
     -  VLESS KNC2 443
     -  VLESS KNC KR 443

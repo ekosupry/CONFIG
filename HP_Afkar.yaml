@@ -98,7 +98,7 @@ proxies:
 
   - name: IDL NTLS
     server: 104.17.3.81
-    port: 443
+    port: 80
     type: vmess
     uuid: cedf07b8-2f39-4c29-828d-c5f1911573e1
     alterId: 0

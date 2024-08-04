@@ -415,8 +415,6 @@ proxy-groups:
   strategy: round-robin
   disable-udp: false
   proxies:
-    -  IDL TLS
-    -  IDL NTLS
     -  VLESS KNC 443
     -  VLESS KNC2 443
     -  VLESS KNC KR 443

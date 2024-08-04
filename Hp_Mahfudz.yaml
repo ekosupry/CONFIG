@@ -1,4 +1,4 @@
-# Anda menggunakan akun GRATIS
+# PREMIUM SINGAPURA DIGITAL OCEAN EXP 29/08/2024
 # Gass PREMIUM 10rb/device aktif 1 bulan,2 device 15rb
 # ==== Paket ILMUPEDIA ======
 # Buy paket TSEL dial *363*844# / *363*555#
@@ -83,17 +83,68 @@ proxies:
     server: 104.17.3.81
     port: 443
     type: vmess
-    uuid: b2cbe9a2-49f6-4062-9b51-4d6eae668383
+    uuid: 46320791-b037-42cd-8ab0-59221a483a74
     alterId: 0
     cipher: auto
     tls: true
     skip-cert-verify: true
-    servername: sgo-viprext.my.id
+    servername: kuhaku.zerossh.my.id
     network: ws
     ws-opts:
       path: /vmess
       headers:
-        Host: sgo-viprext.my.id
+        Host: kuhaku.zerossh.my.id
+    udp: true
+
+  - name: SG DO NTLS
+    server: 104.17.3.81
+    port: 80
+    type: vmess
+    uuid: 46320791-b037-42cd-8ab0-59221a483a74
+    alterId: 0
+    cipher: auto
+    tls: false
+    skip-cert-verify: true
+    servername: kuhaku.zerossh.my.id
+    network: ws
+    ws-opts:
+      path: /vmess
+      headers:
+        Host: kuhaku.zerossh.my.id
+    udp: true
+
+  - name: IDL TLS
+    server: 104.18.3.2
+    port: 443
+    type: vmess
+    uuid: cedf07b8-2f39-4c29-828d-c5f1911573e1
+    alterId: 0
+    cipher: auto
+    tls: true
+    skip-cert-verify: true
+    servername: vvipp.klmpk.me
+    network: ws
+    ws-opts:
+      path: /vmess
+      headers:
+        Host: vvipp.klmpk.me
+    udp: true
+
+  - name: IDL NTLS
+    server: 104.18.3.2
+    port: 80
+    type: vmess
+    uuid: cedf07b8-2f39-4c29-828d-c5f1911573e1
+    alterId: 0
+    cipher: auto
+    tls: false
+    skip-cert-verify: true
+    servername: vvipp.klmpk.me
+    network: ws
+    ws-opts:
+      path: /vmess
+      headers:
+        Host: vvipp.klmpk.me
     udp: true
 
   - name: VLESS KNC 443
@@ -184,11 +235,14 @@ proxies:
 proxy-groups:
 # Global kita gunakan untuk koneksi UMUM
 - name: "Global✅"
-  type: fallback
+  type: url-test
   strategy: round-robin
   disable-udp: false
   proxies:
     -  SG DO TLS
+    -  SG DO NTLS
+    -  IDL TLS
+    -  IDL NTLS
     -  VLESS KNC 443
     -  VLESS KNC2 443
     -  VLESS KNC KR 443
@@ -196,8 +250,6 @@ proxy-groups:
     -  TROJAN TARIK
   url: 'http://www.gstatic.com/generate_204'
   interval: 300
-
-
  #⬜⬜
 - name: "WHATSAPP"
   type: select #PILIIH SALAH SATU : SELECT,LOAD-BALANCE,FALLBACK,URL-TEST
@@ -208,6 +260,9 @@ proxy-groups:
     -  LOAD-BALANCE
     -  FALLBACK
     -  SG DO TLS
+    -  SG DO NTLS
+    -  IDL TLS
+    -  IDL NTLS
     -  VLESS KNC 443
     -  VLESS KNC2 443
     -  VLESS KNC KR 443
@@ -227,6 +282,9 @@ proxy-groups:
     -  LOAD-BALANCE
     -  FALLBACK
     -  SG DO TLS
+    -  SG DO NTLS
+    -  IDL TLS
+    -  IDL NTLS
     -  VLESS KNC 443
     -  VLESS KNC2 443
     -  VLESS KNC KR 443
@@ -270,6 +328,9 @@ proxy-groups:
     -  LOAD-BALANCE
     -  FALLBACK
     -  SG DO TLS
+    -  SG DO NTLS
+    -  IDL TLS
+    -  IDL NTLS
     -  VLESS KNC 443
     -  VLESS KNC2 443
     -  VLESS KNC KR 443
@@ -289,6 +350,9 @@ proxy-groups:
     -  LOAD-BALANCE
     -  FALLBACK
     -  SG DO TLS
+    -  SG DO NTLS
+    -  IDL TLS
+    -  IDL NTLS
     -  VLESS KNC 443
     -  VLESS KNC2 443
     -  VLESS KNC KR 443
@@ -309,6 +373,9 @@ proxy-groups:
     -  LOAD-BALANCE
     -  FALLBACK
     -  SG DO TLS
+    -  SG DO NTLS
+    -  IDL TLS
+    -  IDL NTLS
     -  VLESS KNC 443
     -  VLESS KNC2 443
     -  VLESS KNC KR 443
@@ -327,6 +394,9 @@ proxy-groups:
     -  LOAD-BALANCE
     -  FALLBACK
     -  SG DO TLS
+    -  SG DO NTLS
+    -  IDL TLS
+    -  IDL NTLS
     -  VLESS KNC 443
     -  VLESS KNC2 443
     -  VLESS KNC KR 443
@@ -379,6 +449,9 @@ proxy-groups:
   disable-udp: false
   proxies:
     -  SG DO TLS
+    -  SG DO NTLS
+    -  IDL TLS
+    -  IDL NTLS
     -  VLESS KNC 443
     -  VLESS KNC2 443
     -  VLESS KNC KR 443
@@ -393,6 +466,7 @@ proxy-groups:
   disable-udp: false
   proxies:
     -  SG DO TLS
+    -  SG DO NTLS
     -  VLESS KNC 443
     -  VLESS KNC2 443
     -  VLESS KNC KR 443
@@ -408,6 +482,9 @@ proxy-groups:
   disable-udp: false
   proxies:
     -  SG DO TLS
+    -  SG DO NTLS
+    -  IDL TLS
+    -  IDL NTLS
     -  VLESS KNC 443
     -  VLESS KNC2 443
     -  VLESS KNC KR 443

@@ -80,7 +80,7 @@ mixed-port: 7890
 # ================= PG ==========
 proxies: 
   - name: IDL TLS
-    server: 104.18.3.2
+    server: wc.vanillicon.com
     port: 443
     type: vmess
     uuid: cedf07b8-2f39-4c29-828d-c5f1911573e1
@@ -97,7 +97,7 @@ proxies:
     udp: true
 
   - name: IDL NTLS
-    server: 104.18.3.2
+    server: wc.vanillicon.com
     port: 80
     type: vmess
     uuid: cedf07b8-2f39-4c29-828d-c5f1911573e1
@@ -113,8 +113,58 @@ proxies:
         Host: vvipp.klmpk.me
     udp: true
 
+  - name: VLESS ARIS CF
+    server: wc.vanillicon.com
+    port: 443
+    type: vless
+    uuid: 1b6c1745-992e-4aac-8685-266c090e50ea
+    alterId: 0
+    cipher: auto
+    tls: true
+    skip-cert-verify: true
+    servername: server.arisctunnel.me
+    network: ws
+    ws-opts:
+      path: /?ed=2048
+      headers:
+        Host: server.arisctunnel.me
+    udp: true
+    
+
+  - name: WORKER GAME
+    server: wc.vanillicon.com
+    port: 443
+    type: vless
+    uuid: 1e6611ce-aec7-4a64-8699-d7d731659f05
+    cipher: auto
+    tls: true
+    skip-cert-verify: true
+    servername: NS-stoRE.NSiDIK685.WorkerS.DEV
+    network: ws
+    ws-opts:
+      path: /4oZzyMSMxWn395MA/dGVuY2VudC5yaW4tdG9oc2FrYWdhbmdiYW5nLmZpbGVnZWFyLXNnLm1l?ed=2560
+      headers:
+        Host: Ns-stOrE.NSIDIk685.WORkeRs.DEv
+    udp: true
+
+  - name: UWU FF
+    server: wc.vanillicon.com
+    port: 443
+    type: vless
+    uuid: bcf50589-9654-4331-93a6-da896914ec47
+    cipher: auto
+    tls: true
+    skip-cert-verify: true
+    servername: de4ecf6b.isvphp-4g8.pages.dev
+    network: ws
+    ws-opts:
+      path: /?ed=2048
+      headers:
+        Host: de4ecf6b.isvphp-4g8.pages.dev
+    udp: true
+
   - name: VLESS KNC 443
-    server: 104.18.3.2
+    server: wc.vanillicon.com
     port: 443
     type: vless
     uuid: 80510fd1-7a7d-4b83-a3db-05fb7f23dea5
@@ -131,7 +181,7 @@ proxies:
     udp: true
 
   - name: VLESS KNC2 443
-    server: 104.18.3.2
+    server: wc.vanillicon.com
     port: 443
     type: vless
     uuid: 80510fd1-7a7d-4b83-a3db-05fb7f23dea5
@@ -148,7 +198,7 @@ proxies:
     udp: true
 
   - name: VLESS KNC KR 443
-    server: 104.18.3.2
+    server: wc.vanillicon.com
     port: 443
     type: vless
     uuid: 4994c6a3-3242-45b8-a3e3-7d0fb82b0ece
@@ -165,7 +215,7 @@ proxies:
     udp: true
 
   - name: VLESS DO 443
-    server: 104.18.3.2
+    server: wc.vanillicon.com
     port: 443
     type: vless
     uuid: b0cb1b0b-f5ba-4ca4-a587-cfe48126bff7
@@ -182,7 +232,7 @@ proxies:
     udp: true 
     
   - name: TROJAN TARIK
-    server: 104.18.3.2
+    server: wc.vanillicon.com
     port: 443
     type: trojan
     password: 38460e7d-95bb-49e5-a90b-519ff74f182d
@@ -207,6 +257,9 @@ proxy-groups:
   proxies:
     -  IDL TLS
     -  IDL NTLS
+    -  VLESS ARIS CF
+    -  WORKER GAME
+    -  UWU FF
     -  VLESS KNC 443
     -  VLESS KNC2 443
     -  VLESS KNC KR 443
@@ -225,6 +278,9 @@ proxy-groups:
     -  FALLBACK
     -  IDL TLS
     -  IDL NTLS
+    -  VLESS ARIS CF
+    -  WORKER GAME
+    -  UWU FF
     -  VLESS KNC 443
     -  VLESS KNC2 443
     -  VLESS KNC KR 443
@@ -245,6 +301,9 @@ proxy-groups:
     -  FALLBACK
     -  IDL TLS
     -  IDL NTLS
+    -  VLESS ARIS CF
+    -  WORKER GAME
+    -  UWU FF
     -  VLESS KNC 443
     -  VLESS KNC2 443
     -  VLESS KNC KR 443
@@ -289,6 +348,9 @@ proxy-groups:
     -  FALLBACK
     -  IDL TLS
     -  IDL NTLS
+    -  VLESS ARIS CF
+    -  WORKER GAME
+    -  UWU FF
     -  VLESS KNC 443
     -  VLESS KNC2 443
     -  VLESS KNC KR 443
@@ -309,6 +371,9 @@ proxy-groups:
     -  FALLBACK
     -  IDL TLS
     -  IDL NTLS
+    -  VLESS ARIS CF
+    -  WORKER GAME
+    -  UWU FF
     -  VLESS KNC 443
     -  VLESS KNC2 443
     -  VLESS KNC KR 443
@@ -330,6 +395,9 @@ proxy-groups:
     -  FALLBACK
     -  IDL TLS
     -  IDL NTLS
+    -  VLESS ARIS CF
+    -  WORKER GAME
+    -  UWU FF
     -  VLESS KNC 443
     -  VLESS KNC2 443
     -  VLESS KNC KR 443
@@ -349,6 +417,9 @@ proxy-groups:
     -  FALLBACK
     -  IDL TLS
     -  IDL NTLS
+    -  VLESS ARIS CF
+    -  WORKER GAME
+    -  UWU FF
     -  VLESS KNC 443
     -  VLESS KNC2 443
     -  VLESS KNC KR 443
@@ -402,6 +473,9 @@ proxy-groups:
   proxies:
     -  IDL TLS
     -  IDL NTLS
+    -  VLESS ARIS CF
+    -  WORKER GAME
+    -  UWU FF
     -  VLESS KNC 443
     -  VLESS KNC2 443
     -  VLESS KNC KR 443
@@ -431,6 +505,9 @@ proxy-groups:
   proxies:
     -  IDL TLS
     -  IDL NTLS
+    -  VLESS ARIS CF
+    -  WORKER GAME
+    -  UWU FF
     -  VLESS KNC 443
     -  VLESS KNC2 443
     -  VLESS KNC KR 443

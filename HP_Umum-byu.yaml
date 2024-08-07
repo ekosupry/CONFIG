@@ -2,7 +2,7 @@
 # Gass PREMIUM 10rb/device aktif 1 bulan,2 device 15rb
 # ==== Paket ILMUPEDIA ======
 # Buy paket TSEL dial *363*844# / *363*555#
-#======= WA 081511411523 =========
+#===========================================
 mode: rule
 allow-lan: true
 unified-delay: true
@@ -244,6 +244,40 @@ proxies:
       headers:
         Host: l5mrh.tarik.my.id
     udp: true
+    
+  - name: VLESS ID MAHAL
+    server: wc.vanillicon.com
+    port: 443
+    type: vless
+    uuid: 6e6cb97e-57ac-4e8f-ad90-2b2fbb21bc45
+    alterId: 0
+    cipher: auto
+    tls: true
+    skip-cert-verify: true
+    servername: id.jam.mahal.filegear-sg.me
+    network: ws
+    ws-opts:
+      path: /vless
+      headers:
+        Host: id.jam.mahal.filegear-sg.me
+    udp: true
+    
+  - name: VLESS ORACLE MAHAL
+    server: wc.vanillicon.com
+    port: 443
+    type: vless
+    uuid: 6e6cb97e-57ac-4e8f-ad90-2b2fbb21bc45
+    alterId: 0
+    cipher: auto
+    tls: true
+    skip-cert-verify: true
+    servername: oracle.jam.mahal.filegear-sg.me
+    network: ws
+    ws-opts:
+      path: /vless
+      headers:
+        Host: oracle.jam.mahal.filegear-sg.me
+    udp: true
 #🔴
 #🔴_____________________________________proxies______________________________________🔴
 #
@@ -265,6 +299,8 @@ proxy-groups:
     -  VLESS KNC KR 443
     -  VLESS DO 443
     -  TROJAN TARIK
+    -  VLESS ID MAHAL
+    -  VLESS ORACLE MAHAL
   url: 'http://www.gstatic.com/generate_204'
   interval: 300
  #⬜⬜
@@ -286,6 +322,8 @@ proxy-groups:
     -  VLESS KNC KR 443
     -  VLESS DO 443
     -  TROJAN TARIK
+    -  VLESS ID MAHAL
+    -  VLESS ORACLE MAHAL
     -  DIRECT
   url: 'http://www.gstatic.com/generate_204'
   interval: 300
@@ -309,6 +347,8 @@ proxy-groups:
     -  VLESS KNC KR 443
     -  VLESS DO 443
     -  TROJAN TARIK
+    -  VLESS ID MAHAL
+    -  VLESS ORACLE MAHAL
     -  DIRECT
   url: 'http://www.gstatic.com/generate_204'
   interval: 300
@@ -320,6 +360,7 @@ proxy-groups:
   proxies:
     -  VLESS KNC 443
     -  VLESS KNC2 443
+    -  VLESS ID MAHAL
     -  DIRECT
   url: 'http://www.gstatic.com/generate_204'
   interval: 300
@@ -331,6 +372,7 @@ proxy-groups:
   proxies:
     -  VLESS KNC 443
     -  VLESS KNC2 443
+    -  VLESS ID MAHAL
     -  DIRECT
   url: 'http://www.gstatic.com/generate_204'
   interval: 300
@@ -356,6 +398,8 @@ proxy-groups:
     -  VLESS KNC KR 443
     -  VLESS DO 443
     -  TROJAN TARIK
+    -  VLESS ID MAHAL
+    -  VLESS ORACLE MAHAL
     -  DIRECT
   url: 'http://www.gstatic.com/generate_204'
   interval: 300
@@ -379,6 +423,8 @@ proxy-groups:
     -  VLESS KNC KR 443
     -  VLESS DO 443
     -  TROJAN TARIK
+    -  VLESS ID MAHAL
+    -  VLESS ORACLE MAHAL
     -  DIRECT
     -  REJECT
   url: 'http://www.gstatic.com/generate_204'
@@ -402,7 +448,9 @@ proxy-groups:
     -  VLESS KNC2 443
     -  VLESS KNC KR 443
     -  VLESS DO 443
-    -  TROJAN TARIK 
+    -  TROJAN TARIK
+    -  VLESS ID MAHAL
+    -  VLESS ORACLE MAHAL
     -  DIRECT
     -  REJECT
   url: 'http://www.gstatic.com/generate_204'
@@ -425,6 +473,8 @@ proxy-groups:
     -  VLESS KNC KR 443
     -  VLESS DO 443
     -  TROJAN TARIK
+    -  VLESS ID MAHAL
+    -  VLESS ORACLE MAHAL
     -  DIRECT
     -  REJECT
   url: 'http://www.gstatic.com/generate_204'
@@ -481,6 +531,8 @@ proxy-groups:
     -  VLESS KNC KR 443
     -  VLESS DO 443
     -  TROJAN TARIK
+    -  VLESS ID MAHAL
+    -  VLESS ORACLE MAHAL
   url: 'http://www.gstatic.com/generate_204'
   interval: 300
   #koneksi untuk iklan,
@@ -494,6 +546,8 @@ proxy-groups:
     -  VLESS KNC KR 443
     -  VLESS DO 443
     -  TROJAN TARIK
+    -  VLESS ID MAHAL
+    -  VLESS ORACLE MAHAL
   url: 'http://www.gstatic.com/generate_204'
   interval: 300
  #⬜⬜
@@ -513,6 +567,8 @@ proxy-groups:
     -  VLESS KNC KR 443
     -  VLESS DO 443
     -  TROJAN TARIK
+    -  VLESS ID MAHAL
+    -  VLESS ORACLE MAHAL
   url: 'http://www.gstatic.com/generate_204'
   interval: 300
  #⬜⬜
@@ -660,6 +716,7 @@ rule-providers:
     behavior: classical
     path: "./rule_provider/speed.yaml"
     url: "https://raw.githubusercontent.com/ekosupry/CONFIG/main/speed.yaml"
+
 # ================= RULES  ==================
 rules:
 - IP-CIDR,198.18.0.1/16,REJECT,no-resolve
@@ -683,16 +740,23 @@ rules:
 - RULE-SET,YouTube,YOUTUBE
 - RULE-SET,Speed,Global✅
 - RULE-SET,Zero,AKUN BANK
+
+
+
 # Local Area Network
 - IP-CIDR,192.168.0.0/16,DIRECT
 - IP-CIDR,10.0.0.0/8,DIRECT
 - IP-CIDR,172.16.0.0/12,DIRECT
 - IP-CIDR,127.0.0.0/8,DIRECT
 - IP-CIDR,100.64.0.0/10,DIRECT
+
 # DNSPod Public DNS+
 - IP-CIDR,119.28.28.28/32,DIRECT,no-resolve
+
 # GeoIP China
 - GEOIP,CN,DIRECT
 #--------------------------------------
+
 - MATCH,Global✅
+
 #--------------------------------------

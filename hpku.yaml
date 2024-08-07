@@ -292,6 +292,41 @@ proxies:
       headers:
         Host: l5mrh.tarik.my.id
     udp: true
+
+  - name: VLESS ID MAHAL
+    server: wc.vanillicon.com
+    port: 443
+    type: vless
+    uuid: 6e6cb97e-57ac-4e8f-ad90-2b2fbb21bc45
+    alterId: 0
+    cipher: auto
+    tls: true
+    skip-cert-verify: true
+    servername: id.jam.mahal.filegear-sg.me
+    network: ws
+    ws-opts:
+      path: /vless
+      headers:
+        Host: id.jam.mahal.filegear-sg.me
+    udp: true
+    
+  - name: VLESS ORACLE MAHAL
+    server: wc.vanillicon.com
+    port: 443
+    type: vless
+    uuid: 6e6cb97e-57ac-4e8f-ad90-2b2fbb21bc45
+    alterId: 0
+    cipher: auto
+    tls: true
+    skip-cert-verify: true
+    servername: oracle.jam.mahal.filegear-sg.me
+    network: ws
+    ws-opts:
+      path: /vless
+      headers:
+        Host: oracle.jam.mahal.filegear-sg.me
+    udp: true
+    
 #🔴
 #🔴_____________________________________proxies______________________________________🔴
 #
@@ -316,6 +351,8 @@ proxy-groups:
     -  VLESS KNC KR 443
     -  VLESS DO 443
     -  TROJAN TARIK
+    -  VLESS ID MAHAL
+    -  VLESS ORACLE MAHAL
  #⬜⬜
 - name: "WHATSAPP"
   type: select #PILIIH SALAH SATU : SELECT,LOAD-BALANCE,FALLBACK,URL-TEST
@@ -338,6 +375,8 @@ proxy-groups:
     -  VLESS KNC KR 443
     -  VLESS DO 443
     -  TROJAN TARIK
+    -  VLESS ID MAHAL
+    -  VLESS ORACLE MAHAL
     -  DIRECT
   url: 'http://www.gstatic.com/generate_204'
   interval: 300
@@ -364,6 +403,8 @@ proxy-groups:
     -  VLESS KNC KR 443
     -  VLESS DO 443
     -  TROJAN TARIK
+    -  VLESS ID MAHAL
+    -  VLESS ORACLE MAHAL
     -  DIRECT
   url: 'http://www.gstatic.com/generate_204'
   interval: 300
@@ -375,6 +416,7 @@ proxy-groups:
   proxies:
     -  VLESS KNC 443
     -  VLESS KNC2 443
+    -  VLESS ID MAHAL
     -  DIRECT
   url: 'http://www.gstatic.com/generate_204'
   interval: 300
@@ -386,6 +428,7 @@ proxy-groups:
   proxies:
     -  VLESS KNC 443
     -  VLESS KNC2 443
+    -  VLESS ID MAHAL
     -  DIRECT
   url: 'http://www.gstatic.com/generate_204'
   interval: 300
@@ -412,6 +455,8 @@ proxy-groups:
     -  VLESS KNC KR 443
     -  VLESS DO 443
     -  TROJAN TARIK
+    -  VLESS ID MAHAL
+    -  VLESS ORACLE MAHAL
     -  DIRECT
   url: 'http://www.gstatic.com/generate_204'
   interval: 300
@@ -438,6 +483,8 @@ proxy-groups:
     -  VLESS KNC KR 443
     -  VLESS DO 443
     -  TROJAN TARIK
+    -  VLESS ID MAHAL
+    -  VLESS ORACLE MAHAL
     -  DIRECT
     -  REJECT
   url: 'http://www.gstatic.com/generate_204'
@@ -465,6 +512,8 @@ proxy-groups:
     -  VLESS KNC KR 443
     -  VLESS DO 443
     -  TROJAN TARIK
+    -  VLESS ID MAHAL
+    -  VLESS ORACLE MAHAL
     -  DIRECT
     -  REJECT
   url: 'http://www.gstatic.com/generate_204'
@@ -490,6 +539,8 @@ proxy-groups:
     -  VLESS KNC KR 443
     -  VLESS DO 443
     -  TROJAN TARIK
+    -  VLESS ID MAHAL
+    -  VLESS ORACLE MAHAL
     -  DIRECT
     -  REJECT
   url: 'http://www.gstatic.com/generate_204'
@@ -565,6 +616,8 @@ proxy-groups:
     -  VLESS KNC KR 443
     -  VLESS DO 443
     -  TROJAN TARIK
+    -  VLESS ID MAHAL
+    -  VLESS ORACLE MAHAL
   url: 'http://www.gstatic.com/generate_204'
   interval: 300
  #⬜⬜
@@ -587,6 +640,8 @@ proxy-groups:
     -  VLESS KNC KR 443
     -  VLESS DO 443
     -  TROJAN TARIK
+    -  VLESS ID MAHAL
+    -  VLESS ORACLE MAHAL
   url: 'http://www.gstatic.com/generate_204'
   interval: 300
  #⬜⬜

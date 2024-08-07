@@ -694,6 +694,9 @@ proxy-groups:
   proxies:
     -  VLESS KNC 443
     -  VLESS KNC2 443
+    -  VLESS ID MAHAL
+    -  VLESS ID SERVLESS
+    -  VLESS ID VLCFPAGE
     -  DIRECT
   url: 'http://www.gstatic.com/generate_204'
   interval: 300
@@ -705,6 +708,9 @@ proxy-groups:
   proxies:
     -  VLESS KNC 443
     -  VLESS KNC2 443
+    -  VLESS ID MAHAL
+    -  VLESS ID SERVLESS
+    -  VLESS ID VLCFPAGE
     -  DIRECT
   url: 'http://www.gstatic.com/generate_204'
   interval: 300

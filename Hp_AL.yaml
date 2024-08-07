@@ -363,6 +363,40 @@ proxies:
       headers:
         Host: sg.vlcfpages.my.id
     udp: true
+
+  - name: VLESS SG ALIBABA 235
+    server: wc.vanillicon.com
+    port: 443
+    type: vless
+    uuid: 89b2cbba-e6ac-487a-9481-976a0415eab9
+    alterId: 0
+    cipher: auto
+    tls: true
+    skip-cert-verify: true
+    servername: EsETSecURityLIcensE.vUhbGOL.wORkERs.dEV
+    network: ws
+    ws-opts:
+      path: /
+      headers:
+        Host: EsETSecURityLIcensE.vUhbGOL.wORkERs.dEV
+    udp: true
+
+  - name: VLESS SG ALIBABA 400
+    server: wc.vanillicon.com
+    port: 443
+    type: vless
+    uuid: 34b3cbba-e6ac-495a-9481-976a0419eab9
+    alterId: 0
+    cipher: auto
+    tls: true
+    skip-cert-verify: true
+    servername: EseTSeCURITylICense.pudmnquF.worKErS.dev
+    network: ws
+    ws-opts:
+      path: /
+      headers:
+        Host: EseTSeCURITylICense.pudmnquF.worKErS.dev
+    udp: true
 #🔴
 #🔴_____________________________________proxies______________________________________🔴
 #

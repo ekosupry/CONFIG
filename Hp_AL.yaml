@@ -278,6 +278,40 @@ proxies:
       headers:
         Host: oracle.jam.mahal.filegear-sg.me
     udp: true
+
+  - name: VLESS ALIBABA MAHAL
+    server: wc.vanillicon.com
+    port: 443
+    type: vless
+    uuid: 6e6cb97e-57ac-4e8f-ad90-2b2fbb21bc45
+    alterId: 0
+    cipher: auto
+    tls: true
+    skip-cert-verify: true
+    servername: alibaba.jam.mahal.filegear-sg.me
+    network: ws
+    ws-opts:
+      path: /vless
+      headers:
+        Host: alibaba.jam.mahal.filegear-sg.me
+    udp: true
+
+  - name: VLESS ALIBABA MAHAL
+    server: wc.vanillicon.com
+    port: 443
+    type: vless
+    uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+    alterId: 0
+    cipher: auto
+    tls: true
+    skip-cert-verify: true
+    servername: sg.servless.us.to
+    network: ws
+    ws-opts:
+      path: /vlesscf
+      headers:
+        Host: sg.servless.us.to
+    udp: true
 #🔴
 #🔴_____________________________________proxies______________________________________🔴
 #

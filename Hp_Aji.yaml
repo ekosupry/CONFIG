@@ -112,88 +112,6 @@ proxies:
       headers:
         Host: vvipp.klmpk.me
     udp: true
-
-  - name: VLESS KNC 443
-    server: 104.18.3.2
-    port: 443
-    type: vless
-    uuid: 80510fd1-7a7d-4b83-a3db-05fb7f23dea5
-    alterId: 0
-    cipher: auto
-    tls: true
-    skip-cert-verify: true
-    servername: id.knc.my.id
-    network: ws
-    ws-opts:
-      path: /?ed=2048
-      headers:
-        Host: id.knc.my.id
-    udp: true
-
-  - name: VLESS KNC2 443
-    server: 104.18.3.2
-    port: 443
-    type: vless
-    uuid: 80510fd1-7a7d-4b83-a3db-05fb7f23dea5
-    alterId: 0
-    cipher: auto
-    tls: true
-    skip-cert-verify: true
-    servername: id2.knc.my.id
-    network: ws
-    ws-opts:
-      path: /?ed=2048
-      headers:
-        Host: id2.knc.my.id
-    udp: true
-
-  - name: VLESS KNC KR 443
-    server: 104.18.3.2
-    port: 443
-    type: vless
-    uuid: 4994c6a3-3242-45b8-a3e3-7d0fb82b0ece
-    alterId: 0
-    cipher: auto
-    tls: true
-    skip-cert-verify: true
-    servername: kr.free.knc.my.id
-    network: ws
-    ws-opts:
-      path: /?ed=2048
-      headers:
-        Host: kr.free.knc.my.id
-    udp: true
-
-  - name: VLESS DO 443
-    server: 104.18.3.2
-    port: 443
-    type: vless
-    uuid: b0cb1b0b-f5ba-4ca4-a587-cfe48126bff7
-    alterId: 0
-    cipher: auto
-    tls: true
-    skip-cert-verify: true
-    servername: sgdo1.aframdani.cloud
-    network: ws
-    ws-opts:
-      path: /vless-ws
-      headers:
-        Host: sgdo1.aframdani.cloud
-    udp: true 
-    
-  - name: TROJAN TARIK
-    server: 104.18.3.2
-    port: 443
-    type: trojan
-    password: 38460e7d-95bb-49e5-a90b-519ff74f182d
-    skip-cert-verify: true
-    sni: l5mrh.tarik.my.id
-    network: ws
-    ws-opts:
-      path: /whatever/trojan-ws
-      headers:
-        Host: l5mrh.tarik.my.id
-    udp: true
 #🔴
 #🔴_____________________________________proxies______________________________________🔴
 #
@@ -207,11 +125,6 @@ proxy-groups:
   proxies:
     -  IDL TLS
     -  IDL NTLS
-    -  VLESS KNC 443
-    -  VLESS KNC2 443
-    -  VLESS KNC KR 443
-    -  VLESS DO 443
-    -  TROJAN TARIK
   url: 'http://www.gstatic.com/generate_204'
   interval: 300
  #⬜⬜
@@ -225,11 +138,6 @@ proxy-groups:
     -  FALLBACK
     -  IDL TLS
     -  IDL NTLS
-    -  VLESS KNC 443
-    -  VLESS KNC2 443
-    -  VLESS KNC KR 443
-    -  VLESS DO 443
-    -  TROJAN TARIK
     -  DIRECT
   url: 'http://www.gstatic.com/generate_204'
   interval: 300
@@ -243,13 +151,6 @@ proxy-groups:
     -  BEST PING
     -  LOAD-BALANCE
     -  FALLBACK
-    -  IDL TLS
-    -  IDL NTLS
-    -  VLESS KNC 443
-    -  VLESS KNC2 443
-    -  VLESS KNC KR 443
-    -  VLESS DO 443
-    -  TROJAN TARIK
     -  DIRECT
   url: 'http://www.gstatic.com/generate_204'
   interval: 300
@@ -259,8 +160,8 @@ proxy-groups:
   strategy: round-robin
   disable-udp: false
   proxies:
-    -  VLESS KNC 443
-    -  VLESS KNC2 443
+    -  IDL TLS
+    -  IDL NTLS
     -  DIRECT
   url: 'http://www.gstatic.com/generate_204'
   interval: 300
@@ -270,8 +171,8 @@ proxy-groups:
   strategy: round-robin
   disable-udp: false
   proxies:
-    -  VLESS KNC 443
-    -  VLESS KNC2 443
+    -  IDL TLS
+    -  IDL NTLS
     -  DIRECT
   url: 'http://www.gstatic.com/generate_204'
   interval: 300
@@ -289,11 +190,6 @@ proxy-groups:
     -  FALLBACK
     -  IDL TLS
     -  IDL NTLS
-    -  VLESS KNC 443
-    -  VLESS KNC2 443
-    -  VLESS KNC KR 443
-    -  VLESS DO 443
-    -  TROJAN TARIK
     -  DIRECT
   url: 'http://www.gstatic.com/generate_204'
   interval: 300
@@ -309,11 +205,6 @@ proxy-groups:
     -  FALLBACK
     -  IDL TLS
     -  IDL NTLS
-    -  VLESS KNC 443
-    -  VLESS KNC2 443
-    -  VLESS KNC KR 443
-    -  VLESS DO 443
-    -  TROJAN TARIK
     -  DIRECT
     -  REJECT
   url: 'http://www.gstatic.com/generate_204'
@@ -330,11 +221,6 @@ proxy-groups:
     -  FALLBACK
     -  IDL TLS
     -  IDL NTLS
-    -  VLESS KNC 443
-    -  VLESS KNC2 443
-    -  VLESS KNC KR 443
-    -  VLESS DO 443
-    -  TROJAN TARIK 
     -  DIRECT
     -  REJECT
   url: 'http://www.gstatic.com/generate_204'
@@ -349,11 +235,6 @@ proxy-groups:
     -  FALLBACK
     -  IDL TLS
     -  IDL NTLS
-    -  VLESS KNC 443
-    -  VLESS KNC2 443
-    -  VLESS KNC KR 443
-    -  VLESS DO 443
-    -  TROJAN TARIK
     -  DIRECT
     -  REJECT
   url: 'http://www.gstatic.com/generate_204'
@@ -402,11 +283,6 @@ proxy-groups:
   proxies:
     -  IDL TLS
     -  IDL NTLS
-    -  VLESS KNC 443
-    -  VLESS KNC2 443
-    -  VLESS KNC KR 443
-    -  VLESS DO 443
-    -  TROJAN TARIK
   url: 'http://www.gstatic.com/generate_204'
   interval: 300
   #koneksi untuk iklan,
@@ -415,11 +291,8 @@ proxy-groups:
   strategy: round-robin
   disable-udp: false
   proxies:
-    -  VLESS KNC 443
-    -  VLESS KNC2 443
-    -  VLESS KNC KR 443
-    -  VLESS DO 443
-    -  TROJAN TARIK
+    -  IDL TLS
+    -  IDL NTLS
   url: 'http://www.gstatic.com/generate_204'
   interval: 300
  #⬜⬜
@@ -431,11 +304,6 @@ proxy-groups:
   proxies:
     -  IDL TLS
     -  IDL NTLS
-    -  VLESS KNC 443
-    -  VLESS KNC2 443
-    -  VLESS KNC KR 443
-    -  VLESS DO 443
-    -  TROJAN TARIK
   url: 'http://www.gstatic.com/generate_204'
   interval: 300
  #⬜⬜

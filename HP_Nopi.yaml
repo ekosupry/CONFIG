@@ -83,7 +83,7 @@ proxies:
     server: 104.18.3.2
     port: 443
     type: vmess
-    uuid: f3f06036-f052-4478-acbb-0b81307d4bb5
+    uuid: 46320791-b037-42cd-8ab0-59221a483a74
     alterId: 0
     cipher: auto
     tls: true
@@ -100,7 +100,7 @@ proxies:
     server: 104.18.3.2
     port: 80
     type: vmess
-    uuid: f3f06036-f052-4478-acbb-0b81307d4bb5
+    uuid: 46320791-b037-42cd-8ab0-59221a483a74
     alterId: 0
     cipher: auto
     tls: false
@@ -117,7 +117,7 @@ proxies:
     server: 104.18.3.2
     port: 443
     type: vmess
-    uuid: f3f06036-f052-4478-acbb-0b81307d4bb5
+    uuid: 46320791-b037-42cd-8ab0-59221a483a74
     alterId: 0
     cipher: auto
     network: grpc

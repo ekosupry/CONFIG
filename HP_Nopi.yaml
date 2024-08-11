@@ -928,8 +928,6 @@ proxy-groups:
     -  SG DO TLS
     -  SG DO NTLS
     -  SG DO GRPC
-    -  IDL TLS
-    -  IDL NTLS
     -  VLESS ARIS CF
     -  WORKER GAME
     -  UWU FF
@@ -965,30 +963,10 @@ proxy-groups:
     -  SG DO TLS
     -  SG DO NTLS
     -  SG DO GRPC
-    -  VLESS ARIS CF
-    -  WORKER GAME
-    -  UWU FF
     -  VLESS KNC 443
     -  VLESS KNC2 443
     -  VLESS KNC KR 443
     -  VLESS DO 443
-    -  TROJAN TARIK
-    -  VLESS ID MAHAL
-    -  VLESS ORACLE MAHAL
-    -  VLESS ALIBABA MAHAL
-    -  VLESS SG SERVLESS
-    -  VLESS ID SERVLESS
-    -  VLESS ID VLCFPAGE
-    -  VLESS SG VLCFPAGE
-    -  VLESS SG ALIBABA 235
-    -  VLESS SG ALIBABA 400
-    -  VLESS SG ALIBABA 262
-    -  VLESS SG ALIBABA 502
-    -  VLESS SG ALIBABA 619
-    -  VLESS SG ALIBABA 457
-    -  VLESS SG ALIBABA 189
-    -  VLESS SG ALIBABA TLS
-    -  VLESS SG ALIBABA NTLS
   url: 'http://www.gstatic.com/generate_204'
   interval: 300
  #⬜⬜

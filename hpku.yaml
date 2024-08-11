@@ -1,4 +1,4 @@
-# SINGAPURA DIGITAL OCEAN EXP DATE: 09/08/2024
+# SINGAPURA DIGITAL OCEAN EXP DATE: 29/08/2024
 # PREMIUM 10rb/device aktif 1 bulan,2 device 15rb
 # ==== Paket ILMUPEDIA ======
 # Buy paket TSEL dial *363*844# / *363*555#
@@ -83,7 +83,7 @@ proxies:
     server: wc.vanillicon.com
     port: 443
     type: vmess
-    uuid: f3f06036-f052-4478-acbb-0b81307d4bb5
+    uuid: 46320791-b037-42cd-8ab0-59221a483a74
     alterId: 0
     cipher: auto
     tls: true
@@ -100,7 +100,7 @@ proxies:
     server: wc.vanillicon.com
     port: 80
     type: vmess
-    uuid: f3f06036-f052-4478-acbb-0b81307d4bb5
+    uuid: 46320791-b037-42cd-8ab0-59221a483a74
     alterId: 0
     cipher: auto
     tls: false
@@ -117,7 +117,7 @@ proxies:
     server: wc.vanillicon.com
     port: 443
     type: vmess
-    uuid: f3f06036-f052-4478-acbb-0b81307d4bb5
+    uuid: 46320791-b037-42cd-8ab0-59221a483a74
     alterId: 0
     cipher: auto
     network: grpc
@@ -612,35 +612,7 @@ proxy-groups:
     -  BEST PING
     -  LOAD-BALANCE
     -  FALLBACK
-    -  SG DO TLS
-    -  SG DO NTLS
-    -  SG DO GRPC
-    -  IDL TLS
-    -  IDL NTLS
-    -  VLESS ARIS CF
-    -  WORKER GAME
-    -  UWU FF
-    -  VLESS KNC 443
-    -  VLESS KNC2 443
-    -  VLESS KNC KR 443
-    -  VLESS DO 443
-    -  TROJAN TARIK
-    -  VLESS ID MAHAL
-    -  VLESS ORACLE MAHAL
-    -  VLESS ALIBABA MAHAL
-    -  VLESS SG SERVLESS
-    -  VLESS ID SERVLESS
-    -  VLESS ID VLCFPAGE
-    -  VLESS SG VLCFPAGE
-    -  VLESS SG ALIBABA 235
-    -  VLESS SG ALIBABA 400
-    -  VLESS SG ALIBABA 262
-    -  VLESS SG ALIBABA 502
-    -  VLESS SG ALIBABA 619
-    -  VLESS SG ALIBABA 457
-    -  VLESS SG ALIBABA 189
-    -  VLESS SG ALIBABA TLS
-    -  VLESS SG ALIBABA NTLS
+    -  PREMIUM
     -  DIRECT
   url: 'http://www.gstatic.com/generate_204'
   interval: 300
@@ -654,35 +626,7 @@ proxy-groups:
     -  BEST PING
     -  LOAD-BALANCE
     -  FALLBACK
-    -  SG DO TLS
-    -  SG DO NTLS
-    -  SG DO GRPC
-    -  IDL TLS
-    -  IDL NTLS
-    -  VLESS ARIS CF
-    -  WORKER GAME
-    -  UWU FF
-    -  VLESS KNC 443
-    -  VLESS KNC2 443
-    -  VLESS KNC KR 443
-    -  VLESS DO 443
-    -  TROJAN TARIK
-    -  VLESS ID MAHAL
-    -  VLESS ORACLE MAHAL
-    -  VLESS ALIBABA MAHAL
-    -  VLESS SG SERVLESS
-    -  VLESS ID SERVLESS
-    -  VLESS ID VLCFPAGE
-    -  VLESS SG VLCFPAGE
-    -  VLESS SG ALIBABA 235
-    -  VLESS SG ALIBABA 400
-    -  VLESS SG ALIBABA 262
-    -  VLESS SG ALIBABA 502
-    -  VLESS SG ALIBABA 619
-    -  VLESS SG ALIBABA 457
-    -  VLESS SG ALIBABA 189
-    -  VLESS SG ALIBABA TLS
-    -  VLESS SG ALIBABA NTLS
+    -  PREMIUM
     -  DIRECT
   url: 'http://www.gstatic.com/generate_204'
   interval: 300
@@ -724,35 +668,7 @@ proxy-groups:
     -  BEST PING
     -  LOAD-BALANCE
     -  FALLBACK
-    -  SG DO TLS
-    -  SG DO NTLS
-    -  SG DO GRPC
-    -  IDL TLS
-    -  IDL NTLS
-    -  VLESS ARIS CF
-    -  WORKER GAME
-    -  UWU FF
-    -  VLESS KNC 443
-    -  VLESS KNC2 443
-    -  VLESS KNC KR 443
-    -  VLESS DO 443
-    -  TROJAN TARIK
-    -  VLESS ID MAHAL
-    -  VLESS ORACLE MAHAL
-    -  VLESS ALIBABA MAHAL
-    -  VLESS SG SERVLESS
-    -  VLESS ID SERVLESS
-    -  VLESS ID VLCFPAGE
-    -  VLESS SG VLCFPAGE
-    -  VLESS SG ALIBABA 235
-    -  VLESS SG ALIBABA 400
-    -  VLESS SG ALIBABA 262
-    -  VLESS SG ALIBABA 502
-    -  VLESS SG ALIBABA 619
-    -  VLESS SG ALIBABA 457
-    -  VLESS SG ALIBABA 189
-    -  VLESS SG ALIBABA TLS
-    -  VLESS SG ALIBABA NTLS
+    -  PREMIUM
     -  DIRECT
   url: 'http://www.gstatic.com/generate_204'
   interval: 300
@@ -766,35 +682,7 @@ proxy-groups:
     -  BEST PING
     -  LOAD-BALANCE
     -  FALLBACK
-    -  SG DO TLS
-    -  SG DO NTLS
-    -  SG DO GRPC
-    -  IDL TLS
-    -  IDL NTLS
-    -  VLESS ARIS CF
-    -  WORKER GAME
-    -  UWU FF
-    -  VLESS KNC 443
-    -  VLESS KNC2 443
-    -  VLESS KNC KR 443
-    -  VLESS DO 443
-    -  TROJAN TARIK
-    -  VLESS ID MAHAL
-    -  VLESS ORACLE MAHAL
-    -  VLESS ALIBABA MAHAL
-    -  VLESS SG SERVLESS
-    -  VLESS ID SERVLESS
-    -  VLESS ID VLCFPAGE
-    -  VLESS SG VLCFPAGE
-    -  VLESS SG ALIBABA 235
-    -  VLESS SG ALIBABA 400
-    -  VLESS SG ALIBABA 262
-    -  VLESS SG ALIBABA 502
-    -  VLESS SG ALIBABA 619
-    -  VLESS SG ALIBABA 457
-    -  VLESS SG ALIBABA 189
-    -  VLESS SG ALIBABA TLS
-    -  VLESS SG ALIBABA NTLS
+    -  PREMIUM
     -  DIRECT
     -  REJECT
   url: 'http://www.gstatic.com/generate_204'
@@ -809,35 +697,7 @@ proxy-groups:
     -  BEST PING
     -  LOAD-BALANCE
     -  FALLBACK
-    -  SG DO TLS
-    -  SG DO NTLS
-    -  SG DO GRPC
-    -  IDL TLS
-    -  IDL NTLS
-    -  VLESS ARIS CF
-    -  WORKER GAME
-    -  UWU FF
-    -  VLESS KNC 443
-    -  VLESS KNC2 443
-    -  VLESS KNC KR 443
-    -  VLESS DO 443
-    -  TROJAN TARIK
-    -  VLESS ID MAHAL
-    -  VLESS ORACLE MAHAL
-    -  VLESS ALIBABA MAHAL
-    -  VLESS SG SERVLESS
-    -  VLESS ID SERVLESS
-    -  VLESS ID VLCFPAGE
-    -  VLESS SG VLCFPAGE
-    -  VLESS SG ALIBABA 235
-    -  VLESS SG ALIBABA 400
-    -  VLESS SG ALIBABA 262
-    -  VLESS SG ALIBABA 502
-    -  VLESS SG ALIBABA 619
-    -  VLESS SG ALIBABA 457
-    -  VLESS SG ALIBABA 189
-    -  VLESS SG ALIBABA TLS
-    -  VLESS SG ALIBABA NTLS
+    -  PREMIUM
     -  DIRECT
     -  REJECT
   url: 'http://www.gstatic.com/generate_204'
@@ -850,49 +710,9 @@ proxy-groups:
     -  BEST PING
     -  LOAD-BALANCE
     -  FALLBACK
-    -  SG DO TLS
-    -  SG DO NTLS
-    -  SG DO GRPC
-    -  IDL TLS
-    -  IDL NTLS
-    -  VLESS ARIS CF
-    -  WORKER GAME
-    -  UWU FF
-    -  VLESS KNC 443
-    -  VLESS KNC2 443
-    -  VLESS KNC KR 443
-    -  VLESS DO 443
-    -  TROJAN TARIK
-    -  VLESS ID MAHAL
-    -  VLESS ORACLE MAHAL
-    -  VLESS ALIBABA MAHAL
-    -  VLESS SG SERVLESS
-    -  VLESS ID SERVLESS
-    -  VLESS ID VLCFPAGE
-    -  VLESS SG VLCFPAGE
-    -  VLESS SG ALIBABA 235
-    -  VLESS SG ALIBABA 400
-    -  VLESS SG ALIBABA 262
-    -  VLESS SG ALIBABA 502
-    -  VLESS SG ALIBABA 619
-    -  VLESS SG ALIBABA 457
-    -  VLESS SG ALIBABA 189
-    -  VLESS SG ALIBABA TLS
-    -  VLESS SG ALIBABA NTLS
+    -  PREMIUM
+    -  RUANG GAME
     -  DIRECT
-    -  REJECT
-  url: 'http://www.gstatic.com/generate_204'
-  interval: 300
- #⬜⬜
- #koneksi untuk porno,
-- name: "18+"
-  type: select
-  strategy: round-robin
-  disable-udp: false
-  proxies:
-    -  BEST PING
-    -  LOAD-BALANCE
-    -  FALLBACK
     -  REJECT
   url: 'http://www.gstatic.com/generate_204'
   interval: 300
@@ -904,6 +724,7 @@ proxy-groups:
     -  BEST PING
     -  LOAD-BALANCE
     -  FALLBACK
+    -  PREMIUM
     -  REJECT
   url: 'http://www.gstatic.com/generate_204'
   interval: 300
@@ -915,7 +736,17 @@ proxy-groups:
     -  BEST PING
     -  LOAD-BALANCE
     -  FALLBACK
+    -  PREMIUM
     -  REJECT
+  url: 'http://www.gstatic.com/generate_204'
+  interval: 300
+ #⬜⬜
+- name: "PREMIUM"
+  type: url-test
+  proxies:
+    -  SG DO TLS
+    -  SG DO NTLS
+    -  SG DO GRPC
   url: 'http://www.gstatic.com/generate_204'
   interval: 300
  #⬜⬜
@@ -928,8 +759,6 @@ proxy-groups:
     -  SG DO TLS
     -  SG DO NTLS
     -  SG DO GRPC
-    -  IDL TLS
-    -  IDL NTLS
     -  VLESS ARIS CF
     -  WORKER GAME
     -  UWU FF
@@ -965,30 +794,10 @@ proxy-groups:
     -  SG DO TLS
     -  SG DO NTLS
     -  SG DO GRPC
-    -  VLESS ARIS CF
-    -  WORKER GAME
-    -  UWU FF
     -  VLESS KNC 443
     -  VLESS KNC2 443
     -  VLESS KNC KR 443
     -  VLESS DO 443
-    -  TROJAN TARIK
-    -  VLESS ID MAHAL
-    -  VLESS ORACLE MAHAL
-    -  VLESS ALIBABA MAHAL
-    -  VLESS SG SERVLESS
-    -  VLESS ID SERVLESS
-    -  VLESS ID VLCFPAGE
-    -  VLESS SG VLCFPAGE
-    -  VLESS SG ALIBABA 235
-    -  VLESS SG ALIBABA 400
-    -  VLESS SG ALIBABA 262
-    -  VLESS SG ALIBABA 502
-    -  VLESS SG ALIBABA 619
-    -  VLESS SG ALIBABA 457
-    -  VLESS SG ALIBABA 189
-    -  VLESS SG ALIBABA TLS
-    -  VLESS SG ALIBABA NTLS
   url: 'http://www.gstatic.com/generate_204'
   interval: 300
  #⬜⬜
@@ -1190,8 +999,8 @@ rules:
 - RULE-SET,Facebook,FACEBOOK
 - RULE-SET,Personalads,IKLAN
 - RULE-SET,Basicads,IKLAN
-- RULE-SET,18+,18+
-- RULE-SET,Nsfw,18+
+- RULE-SET,18+,IKLAN
+- RULE-SET,Nsfw,IKLAN
 - RULE-SET,YouTube,YOUTUBE
 - RULE-SET,Speed,Global✅
 - RULE-SET,Zero,AKUN BANK

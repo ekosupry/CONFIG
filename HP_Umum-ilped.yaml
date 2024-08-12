@@ -359,19 +359,6 @@ proxy-groups:
   url: 'http://www.gstatic.com/generate_204'
   interval: 300
  #⬜⬜
- #koneksi untuk porno,
-- name: "18+"
-  type: select
-  strategy: round-robin
-  disable-udp: false
-  proxies:
-    -  BEST PING
-    -  LOAD-BALANCE
-    -  FALLBACK
-    -  REJECT
-  url: 'http://www.gstatic.com/generate_204'
-  interval: 300
- #⬜⬜
  #koneksi untuk BELANJA,
 - name: "MARKETPLACE"
   type: select
@@ -602,8 +589,8 @@ rules:
 - RULE-SET,Facebook,FACEBOOK
 - RULE-SET,Personalads,IKLAN
 - RULE-SET,Basicads,IKLAN
-- RULE-SET,18+,18+
-- RULE-SET,Nsfw,18+
+- RULE-SET,18+,IKLAN
+- RULE-SET,Nsfw,IKLAN
 - RULE-SET,YouTube,YOUTUBE
 - RULE-SET,Speed,Global✅
 - RULE-SET,Zero,AKUN BANK

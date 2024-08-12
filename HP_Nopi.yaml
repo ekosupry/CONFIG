@@ -797,7 +797,6 @@ proxy-groups:
     -  VLESS KNC 443
     -  VLESS KNC2 443
     -  VLESS KNC KR 443
-    -  VLESS DO 443
   url: 'http://www.gstatic.com/generate_204'
   interval: 300
  #⬜⬜

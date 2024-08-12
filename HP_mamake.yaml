@@ -820,19 +820,6 @@ proxy-groups:
   url: 'http://www.gstatic.com/generate_204'
   interval: 300
  #⬜⬜
- #koneksi untuk porno,
-- name: "18+"
-  type: select
-  strategy: round-robin
-  disable-udp: false
-  proxies:
-    -  BEST PING
-    -  LOAD-BALANCE
-    -  FALLBACK
-    -  REJECT
-  url: 'http://www.gstatic.com/generate_204'
-  interval: 300
- #⬜⬜
  #koneksi untuk BELANJA,
 - name: "MARKETPLACE"
   type: select
@@ -1098,7 +1085,6 @@ rule-providers:
     behavior: classical
     path: "./rule_provider/speed.yaml"
     url: "https://raw.githubusercontent.com/ekosupry/CONFIG/main/speed.yaml"
-
 # ================= RULES  ==================
 rules:
 - IP-CIDR,198.18.0.1/16,REJECT,no-resolve
@@ -1122,23 +1108,16 @@ rules:
 - RULE-SET,YouTube,YOUTUBE
 - RULE-SET,Speed,Global✅
 - RULE-SET,Zero,AKUN BANK
-
-
-
 # Local Area Network
 - IP-CIDR,192.168.0.0/16,DIRECT
 - IP-CIDR,10.0.0.0/8,DIRECT
 - IP-CIDR,172.16.0.0/12,DIRECT
 - IP-CIDR,127.0.0.0/8,DIRECT
 - IP-CIDR,100.64.0.0/10,DIRECT
-
 # DNSPod Public DNS+
 - IP-CIDR,119.28.28.28/32,DIRECT,no-resolve
-
 # GeoIP China
 - GEOIP,CN,DIRECT
 #--------------------------------------
-
 - MATCH,Global✅
-
 #--------------------------------------

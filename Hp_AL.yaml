@@ -1117,28 +1117,21 @@ rules:
 - RULE-SET,Facebook,FACEBOOK
 - RULE-SET,Personalads,IKLAN
 - RULE-SET,Basicads,IKLAN
-- RULE-SET,18+,18+
-- RULE-SET,Nsfw,18+
+- RULE-SET,18+,IKLAN
+- RULE-SET,Nsfw,IKLAN
 - RULE-SET,YouTube,YOUTUBE
 - RULE-SET,Speed,Global✅
 - RULE-SET,Zero,AKUN BANK
-
-
-
 # Local Area Network
 - IP-CIDR,192.168.0.0/16,DIRECT
 - IP-CIDR,10.0.0.0/8,DIRECT
 - IP-CIDR,172.16.0.0/12,DIRECT
 - IP-CIDR,127.0.0.0/8,DIRECT
 - IP-CIDR,100.64.0.0/10,DIRECT
-
 # DNSPod Public DNS+
 - IP-CIDR,119.28.28.28/32,DIRECT,no-resolve
-
 # GeoIP China
 - GEOIP,CN,DIRECT
 #--------------------------------------
-
 - MATCH,Global✅
-
 #--------------------------------------

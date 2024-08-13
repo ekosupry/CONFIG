@@ -4,6 +4,11 @@ payload:
 #zello
 - DOMAIN-SUFFIX,zello.com
 - DOMAIN-KEYWORD,zello
+- DOMAIN-SUFFIX,github.com
+- DOMAIN-KEYWORD,github
+- DOMAIN-SUFFIX,howdy.id
+- DOMAIN-SUFFIX,detik.com
+- DOMAIN-SUFFIX,saweria.co
 #mini market
 - DOMAIN-KEYWORD,alfa
 - DOMAIN-SUFFIX,alfamart.co.id

@@ -1,7 +1,20 @@
 payload:
 # Mulai baris ini kebawah bisa di edit/hapus
 # &gt; LIST Streaming IP/Lokasi Wajib Indo
-#zello
+#operator
+- DOMAIN-SUFFIX,xl.co.id
+- DOMAIN-SUFFIX,byu.id
+- DOMAIN-KEYWORD,byu
+- DOMAIN-SUFFIX,telkomsel.com
+- DOMAIN-KEYWORD,telkomsel
+- DOMAIN-SUFFIX,im3.id
+- DOMAIN-KEYWORD,im3
+- DOMAIN-KEYWORD,indosat
+- DOMAIN-SUFFIX,indosatooredoo.com
+- DOMAIN-SUFFIX,tri.co.id
+- DOMAIN-SUFFIX,smartfren.com
+- DOMAIN-KEYWORD,smartfren
+#pribadi
 - DOMAIN-SUFFIX,zello.com
 - DOMAIN-KEYWORD,zello
 - DOMAIN-SUFFIX,github.com

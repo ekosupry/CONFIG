@@ -154,7 +154,6 @@ proxy-groups:
   - BEST-PING
   - INDONESIA
   - MANCANEGARA
-  - FREE
   - DIRECT
   - REJECT
   url: 'http://www.gstatic.com/generate_204'
@@ -238,7 +237,6 @@ proxy-groups:
   proxies:
   - INDONESIA
   - MANCANEGARA
-  - FREE
   - DIRECT
   url: 'http://www.gstatic.com/generate_204'
   interval: 60
@@ -253,18 +251,6 @@ proxy-groups:
   url: 'http://www.gstatic.com/generate_204'
   interval: 60
 - name: IKLAN 🛡
-  type: select
-  strategy: round-robin
-  disable-udp: false
-  proxies:
-  - BALANCE
-  - INDONESIA
-  - MANCANEGARA
-  - DIRECT
-  - REJECT
-  url: 'http://www.gstatic.com/generate_204'
-  interval: 60
-- name: 18+ ❌
   type: select
   strategy: round-robin
   disable-udp: false
@@ -457,8 +443,8 @@ rules:
 - RULE-SET,Facebook,FACEBOOK
 - RULE-SET,Personalads,IKLAN 🛡
 - RULE-SET,Basicads,IKLAN 🛡
-- RULE-SET,18+,18+ ❌
-- RULE-SET,Nsfw,18+ ❌
+- RULE-SET,18+,IKLAN 🛡
+- RULE-SET,Nsfw,IKLAN 🛡
 - RULE-SET,YouTube,YOUTUBE 🎦
 - RULE-SET,Speed,SPEEDTEST ⚡
 - RULE-SET,Zero,ZEROTIER ⚠️

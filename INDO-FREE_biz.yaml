@@ -2,7 +2,7 @@ proxies:
 
 # Akun INDO port 443
   - name: VLESS KNC 443
-    server: 104.17.3.81
+    server: space.byu.id
     port: 443
     type: vless
     uuid: 80510fd1-7a7d-4b83-a3db-05fb7f23dea5
@@ -19,7 +19,7 @@ proxies:
     udp: true
 
   - name: VLESS KNC2 443
-    server: 104.17.3.81
+    server: space.byu.id
     port: 443
     type: vless
     uuid: 80510fd1-7a7d-4b83-a3db-05fb7f23dea5
@@ -36,7 +36,7 @@ proxies:
     udp: true
 
   - name: VMESS ID
-    server: 104.17.3.81
+    server: space.byu.id
     port: 80
     type: vmess
     uuid: 97cdf301-49a0-4cec-85d4-894bb84d86ab
@@ -53,7 +53,7 @@ proxies:
     udp: true
 
   - name: VLESS KNC 80
-    server: 104.17.3.81
+    server: space.byu.id
     port: 80
     type: vless
     uuid: 80510fd1-7a7d-4b83-a3db-05fb7f23dea5
@@ -70,7 +70,7 @@ proxies:
     udp: true
 
   - name: VLESS ID MAHAL
-    server: 104.17.3.81
+    server: space.byu.id
     port: 443
     type: vless
     uuid: 6e6cb97e-57ac-4e8f-ad90-2b2fbb21bc45
@@ -87,7 +87,7 @@ proxies:
     udp: true
 
   - name: VLESS ID SERVLESS
-    server: 104.17.3.81
+    server: space.byu.id
     port: 443
     type: vless
     uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
@@ -104,7 +104,7 @@ proxies:
     udp: true
 
   - name: VLESS ID VLCFPAGE
-    server: 104.17.3.81
+    server: space.byu.id
     port: 443
     type: vless
     uuid: 0bc51b14-02aa-40db-aeba-8a9569a7244d

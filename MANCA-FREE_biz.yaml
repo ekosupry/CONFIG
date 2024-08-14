@@ -1,1 +1,85 @@
+proxies:
+  - name: IDL TLS
+    server: 104.17.3.81
+    port: 443
+    type: vmess
+    uuid: cedf07b8-2f39-4c29-828d-c5f1911573e1
+    alterId: 0
+    cipher: auto
+    tls: true
+    skip-cert-verify: true
+    servername: vvipp.klmpk.me
+    network: ws
+    ws-opts:
+      path: /vmess
+      headers:
+        Host: vvipp.klmpk.me
+    udp: true
 
+  - name: IDL NTLS
+    server: 104.17.3.81
+    port: 80
+    type: vmess
+    uuid: cedf07b8-2f39-4c29-828d-c5f1911573e1
+    alterId: 0
+    cipher: auto
+    tls: false
+    skip-cert-verify: true
+    servername: vvipp.klmpk.me
+    network: ws
+    ws-opts:
+      path: /vmess
+      headers:
+        Host: vvipp.klmpk.me
+    udp: true
+
+  - name: VLESS DO
+    server: 104.17.3.81
+    port: 443
+    type: vless
+    uuid: 01edb904-33ae-42cf-99d4-28f96082082e
+    alterId: 0
+    cipher: auto
+    tls: true
+    skip-cert-verify: true
+    servername: sgdo.lotush.my.id
+    network: ws
+    ws-opts:
+      path: /trixie
+      headers:
+        Host: sgdo.lotush.my.id
+    udp: true
+
+  - name: VMESS VIPREX 443
+    server: 104.17.3.81
+    port: 443
+    type: vmess
+    uuid: b2cbe9a2-49f6-4062-9b51-4d6eae668383
+    alterId: 0
+    cipher: auto
+    tls: true
+    skip-cert-verify: true
+    servername: sgo-viprext.my.id
+    network: ws
+    ws-opts:
+      path: /vmess
+      headers:
+        Host: sgo-viprext.my.id
+    udp: true
+
+  - name: VLESS KNC KR
+    server: 104.17.3.81
+    port: 443
+    type: vless
+    uuid: 4994c6a3-3242-45b8-a3e3-7d0fb82b0ece
+    alterId: 0
+    cipher: auto
+    tls: true
+    skip-cert-verify: true
+    servername: kr.free.knc.my.id
+    network: ws
+    ws-opts:
+      path: /?ed=2048
+      headers:
+        Host: kr.free.knc.my.id
+    udp: true

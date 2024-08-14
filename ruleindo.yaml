@@ -3,6 +3,11 @@ payload:
 # &gt; LIST Streaming IP/Lokasi Wajib Indo
 #operator
 - DOMAIN-SUFFIX,xl.co.id
+- DOMAIN-SUFFIX,axis.co.id
+- DOMAIN-KEYWORD,axis
+- DOMAIN-KEYWORD,xlaxiata
+- DOMAIN-KEYWORD,xlaxiata2
+- DOMAIN-KEYWORD,xlaxiata-resources
 - DOMAIN-SUFFIX,byu.id
 - DOMAIN-KEYWORD,byu
 - DOMAIN-SUFFIX,telkomsel.com

@@ -354,14 +354,13 @@ proxy-groups:
   interval: 300
 #Koneksi Sosmed
 - name: "RUANG GAME"
-  type: select #PILIIH SALAH SATU : SELECT,LOAD-BALANCE,FALLBACK,URL-TEST
+  type: url-test #PILIIH SALAH SATU : SELECT,LOAD-BALANCE,FALLBACK,URL-TEST
   strategy: round-robin
   disable-udp: false
   proxies:
     -  VLESS KNC 443
     -  VLESS KNC2 443
     -  VLESS ID MAHAL
-    -  DIRECT
   url: 'http://www.gstatic.com/generate_204'
   interval: 300
 #Koneksi Sosmed

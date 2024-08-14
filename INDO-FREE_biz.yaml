@@ -1,17 +1,36 @@
 proxies:
 
 # Akun INDO port 443
-
-  - name: TROJAN SANGGORO 443
-    server: 104.18.3.2
+  - name: VLESS KNC 443
+    server: 104.17.3.81
     port: 443
-    type: trojan
-    password: 214030a0-2349-11ef-bbed-1577c1651679
+    type: vless
+    uuid: 80510fd1-7a7d-4b83-a3db-05fb7f23dea5
+    alterId: 0
+    cipher: auto
+    tls: true
     skip-cert-verify: true
-    sni: 4.lowh.net
+    servername: id.knc.my.id
     network: ws
     ws-opts:
-      path: /welcome
+      path: /?ed=2048
       headers:
-        Host: 4.lowh.net
+        Host: id.knc.my.id
+    udp: true
+
+  - name: VLESS KNC2 443
+    server: 104.17.3.81
+    port: 443
+    type: vless
+    uuid: 80510fd1-7a7d-4b83-a3db-05fb7f23dea5
+    alterId: 0
+    cipher: auto
+    tls: true
+    skip-cert-verify: true
+    servername: id2.knc.my.id
+    network: ws
+    ws-opts:
+      path: /?ed=2048
+      headers:
+        Host: id2.knc.my.id
     udp: true

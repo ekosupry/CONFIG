@@ -1,1 +1,17 @@
+proxies:
 
+# Akun INDO port 443
+
+  - name: TROJAN SANGGORO 443
+    server: 104.18.3.2
+    port: 443
+    type: trojan
+    password: 214030a0-2349-11ef-bbed-1577c1651679
+    skip-cert-verify: true
+    sni: 4.lowh.net
+    network: ws
+    ws-opts:
+      path: /welcome
+      headers:
+        Host: 4.lowh.net
+    udp: true

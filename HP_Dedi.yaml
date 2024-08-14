@@ -112,6 +112,23 @@ proxies:
       headers:
         Host: vvipp.klmpk.me
     udp: true
+    
+  - name: VLESS DO 443
+    server: 104.18.3.2
+    port: 443
+    type: vless
+    uuid: b0cb1b0b-f5ba-4ca4-a587-cfe48126bff7
+    alterId: 0
+    cipher: auto
+    tls: true
+    skip-cert-verify: true
+    servername: sgdo1.aframdani.cloud
+    network: ws
+    ws-opts:
+      path: /vless-ws
+      headers:
+        Host: sgdo1.aframdani.cloud
+    udp: true 
 #🔴
 #🔴_____________________________________proxies______________________________________🔴
 #
@@ -125,6 +142,7 @@ proxy-groups:
   proxies:
     -  IDL TLS
     -  IDL NTLS
+    -  VLESS DO 443
   url: 'http://www.gstatic.com/generate_204'
   interval: 300
  #⬜⬜
@@ -138,6 +156,7 @@ proxy-groups:
     -  FALLBACK
     -  IDL TLS
     -  IDL NTLS
+    -  VLESS DO 443
     -  DIRECT
   url: 'http://www.gstatic.com/generate_204'
   interval: 300
@@ -156,13 +175,13 @@ proxy-groups:
   interval: 300
 #Koneksi Sosmed
 - name: "RUANG GAME"
-  type: select #PILIIH SALAH SATU : SELECT,LOAD-BALANCE,FALLBACK,URL-TEST
+  type: url-test #PILIIH SALAH SATU : SELECT,LOAD-BALANCE,FALLBACK,URL-TEST
   strategy: round-robin
   disable-udp: false
   proxies:
     -  IDL TLS
     -  IDL NTLS
-    -  DIRECT
+    -  VLESS DO 443
   url: 'http://www.gstatic.com/generate_204'
   interval: 300
 #Koneksi Sosmed
@@ -173,6 +192,7 @@ proxy-groups:
   proxies:
     -  IDL TLS
     -  IDL NTLS
+    -  VLESS DO 443
     -  DIRECT
   url: 'http://www.gstatic.com/generate_204'
   interval: 300
@@ -190,6 +210,7 @@ proxy-groups:
     -  FALLBACK
     -  IDL TLS
     -  IDL NTLS
+    -  VLESS DO 443
     -  DIRECT
   url: 'http://www.gstatic.com/generate_204'
   interval: 300
@@ -205,6 +226,7 @@ proxy-groups:
     -  FALLBACK
     -  IDL TLS
     -  IDL NTLS
+    -  VLESS DO 443
     -  DIRECT
     -  REJECT
   url: 'http://www.gstatic.com/generate_204'
@@ -221,6 +243,7 @@ proxy-groups:
     -  FALLBACK
     -  IDL TLS
     -  IDL NTLS
+    -  VLESS DO 443
     -  DIRECT
     -  REJECT
   url: 'http://www.gstatic.com/generate_204'
@@ -235,6 +258,7 @@ proxy-groups:
     -  FALLBACK
     -  IDL TLS
     -  IDL NTLS
+    -  VLESS DO 443
     -  DIRECT
     -  REJECT
   url: 'http://www.gstatic.com/generate_204'
@@ -270,6 +294,7 @@ proxy-groups:
   proxies:
     -  IDL TLS
     -  IDL NTLS
+    -  VLESS DO 443
   url: 'http://www.gstatic.com/generate_204'
   interval: 300
   #koneksi untuk iklan,
@@ -280,6 +305,7 @@ proxy-groups:
   proxies:
     -  IDL TLS
     -  IDL NTLS
+    -  VLESS DO 443
   url: 'http://www.gstatic.com/generate_204'
   interval: 300
  #⬜⬜
@@ -291,6 +317,7 @@ proxy-groups:
   proxies:
     -  IDL TLS
     -  IDL NTLS
+    -  VLESS DO 443
   url: 'http://www.gstatic.com/generate_204'
   interval: 300
  #⬜⬜

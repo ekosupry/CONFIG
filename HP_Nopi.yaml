@@ -632,7 +632,7 @@ proxy-groups:
   interval: 300
 #Koneksi Sosmed
 - name: "RUANG GAME"
-  type: select #PILIIH SALAH SATU : SELECT,LOAD-BALANCE,FALLBACK,URL-TEST
+  type: url-test #PILIIH SALAH SATU : SELECT,LOAD-BALANCE,FALLBACK,URL-TEST
   strategy: round-robin
   disable-udp: false
   proxies:
@@ -641,9 +641,8 @@ proxy-groups:
     -  VLESS ID MAHAL
     -  VLESS ID SERVLESS
     -  VLESS ID VLCFPAGE
-    -  DIRECT
   url: 'http://www.gstatic.com/generate_204'
-  interval: 300
+  interval: 120
 #Koneksi Sosmed
 - name: "PORT GAME"
   type: select #PILIIH SALAH SATU : SELECT,LOAD-BALANCE,FALLBACK,URL-TEST

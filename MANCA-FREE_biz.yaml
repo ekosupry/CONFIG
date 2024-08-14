@@ -167,3 +167,224 @@ proxies:
       headers:
         Host: kr.free.knc.my.id
     udp: true
+
+  - name: VLESS ORACLE MAHAL
+    server: 104.17.3.81
+    port: 443
+    type: vless
+    uuid: 6e6cb97e-57ac-4e8f-ad90-2b2fbb21bc45
+    alterId: 0
+    cipher: auto
+    tls: true
+    skip-cert-verify: true
+    servername: oracle.jam.mahal.filegear-sg.me
+    network: ws
+    ws-opts:
+      path: /vless
+      headers:
+        Host: oracle.jam.mahal.filegear-sg.me
+    udp: true
+
+  - name: VLESS ALIBABA MAHAL
+    server: 104.17.3.81
+    port: 443
+    type: vless
+    uuid: 6e6cb97e-57ac-4e8f-ad90-2b2fbb21bc45
+    alterId: 0
+    cipher: auto
+    tls: true
+    skip-cert-verify: true
+    servername: alibaba.jam.mahal.filegear-sg.me
+    network: ws
+    ws-opts:
+      path: /vless
+      headers:
+        Host: alibaba.jam.mahal.filegear-sg.me
+    udp: true
+
+  - name: VLESS SG SERVLESS
+    server: 104.17.3.81
+    port: 443
+    type: vless
+    uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+    alterId: 0
+    cipher: auto
+    tls: true
+    skip-cert-verify: true
+    servername: sg.servless.us.to
+    network: ws
+    ws-opts:
+      path: /vlesscf
+      headers:
+        Host: sg.servless.us.to
+    udp: true
+
+  - name: VLESS SG VLCFPAGE
+    server: 104.17.3.81
+    port: 443
+    type: vless
+    uuid: f69a85fe-4a6e-40f3-bcd0-f3c800388b58
+    alterId: 0
+    cipher: auto
+    tls: true
+    skip-cert-verify: true
+    servername: sg.vlcfpages.my.id
+    network: ws
+    ws-opts:
+      path: /?ed=2048
+      headers:
+        Host: sg.vlcfpages.my.id
+    udp: true
+
+  - name: VLESS SG ALIBABA 235
+    server: 104.17.3.81
+    port: 443
+    type: vless
+    uuid: 89b2cbba-e6ac-487a-9481-976a0415eab9
+    alterId: 0
+    cipher: auto
+    tls: true
+    skip-cert-verify: true
+    servername: EsETSecURityLIcensE.vUhbGOL.wORkERs.dEV
+    network: ws
+    ws-opts:
+      path: /
+      headers:
+        Host: EsETSecURityLIcensE.vUhbGOL.wORkERs.dEV
+    udp: true
+
+  - name: VLESS SG ALIBABA 400
+    server: 104.17.3.81
+    port: 443
+    type: vless
+    uuid: 34b3cbba-e6ac-495a-9481-976a0419eab9
+    alterId: 0
+    cipher: auto
+    tls: true
+    skip-cert-verify: true
+    servername: EseTSeCURITylICense.pudmnquF.worKErS.dev
+    network: ws
+    ws-opts:
+      path: /
+      headers:
+        Host: EseTSeCURITylICense.pudmnquF.worKErS.dev
+    udp: true
+
+  - name: VLESS SG ALIBABA 262
+    server: 104.17.3.81
+    port: 443
+    type: vless
+    uuid: 89b3cbba-e6ac-485a-9481-976a0415eab9
+    alterId: 0
+    cipher: auto
+    tls: true
+    skip-cert-verify: true
+    servername: miumiUMadReKoSE.pAgES.dEv
+    network: ws
+    ws-opts:
+      path: /oyafdnkpgfcx0bjg?ed
+      headers:
+        Host: miumiUMadReKoSE.pAgES.dEv
+    udp: true
+
+  - name: VLESS SG ALIBABA 502
+    server: 104.17.3.81
+    port: 443
+    type: vless
+    uuid: e4e7b149-8bd8-4266-8cbb-0987604dbc87
+    alterId: 0
+    cipher: auto
+    tls: true
+    skip-cert-verify: true
+    servername: toujiediansigema.5112233.xyz
+    network: ws
+    ws-opts:
+      path: /TG@juzibaipiao偷节点死吗
+      headers:
+        Host: toujiediansigema.5112233.xyz
+    udp: true
+
+  - name: VLESS SG ALIBABA 619
+    server: 104.17.3.81
+    port: 443
+    type: vless
+    uuid: 89b3cbba-e6ac-485a-9481-976a0415eab9
+    alterId: 0
+    cipher: auto
+    tls: true
+    skip-cert-verify: true
+    servername: V2FiVeTeL.pAges.Dev
+    network: ws
+    ws-opts:
+      path: /
+      headers:
+        Host: V2FiVeTeL.pAges.Dev
+    udp: true
+
+  - name: VLESS SG ALIBABA 457
+    server: 104.17.3.81
+    port: 443
+    type: vless
+    uuid: a64f0cea-ca89-40e6-b316-b3badff1eb90
+    alterId: 0
+    cipher: auto
+    tls: true
+    skip-cert-verify: true
+    servername: iSAA1.paGEs.DEV
+    network: ws
+    ws-opts:
+      path: /BDwnEtVwG7BS0S9f?ed
+      headers:
+        Host: iSAA1.paGEs.DEV
+    udp: true
+
+  - name: VLESS SG ALIBABA 189
+    server: 104.17.3.81
+    port: 443
+    type: vless
+    uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+    alterId: 0
+    cipher: auto
+    tls: true
+    skip-cert-verify: true
+    servername: xn--4s9h.pages.dev
+    network: ws
+    ws-opts:
+      path: /?ed
+      headers:
+        Host: xn--4s9h.pages.dev
+    udp: true
+
+  - name: VLESS SG ALIBABA TLS
+    server: 104.17.3.81
+    port: 443
+    type: vless
+    uuid: f9021b31-e8bd-4b4d-a1d3-c9b0c1476c44
+    alterId: 0
+    cipher: auto
+    tls: true
+    skip-cert-verify: true
+    servername: sg-alibaba.tingkehvpn.my.id
+    network: ws
+    ws-opts:
+      path: /vlesscf
+      headers:
+        Host: sg-alibaba.tingkehvpn.my.id
+    udp: true
+
+  - name: VLESS SG ALIBABA NTLS
+    server: 104.17.3.81
+    port: 80
+    type: vless
+    uuid: f9021b31-e8bd-4b4d-a1d3-c9b0c1476c44
+    alterId: 0
+    cipher: auto
+    tls: false
+    skip-cert-verify: true
+    servername: sg-alibaba.tingkehvpn.my.id
+    network: ws
+    ws-opts:
+      path: /vlesscf
+      headers:
+        Host: sg-alibaba.tingkehvpn.my.id
+    udp: true

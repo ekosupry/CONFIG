@@ -77,26 +77,18 @@ mixed-port: 7890
 # ====== wa: 081511411523 ======
 proxies:
 proxy-providers:
-  SG:
+  MC:
     type: http
-    url: "https://raw.githubusercontent.com/ekosupry/CONFIG/main/list_vpn_nonaktif_ekosinga.yaml"
-    path: "./proxy_provider/SINGA.yaml"
+    url: "https://raw.githubusercontent.com/ekosupry/CONFIG/main/MANCA-FREE_biz.yaml"
+    path: "./proxy_provider/MANCANEGARA.yaml"
     health-check:
       enable: true
       url: http://www.gstatic.com/generate_204
       interval: 60
   ID:
     type: http
-    url: "https://raw.githubusercontent.com/ekosupry/CONFIG/main/list_vpn_nonaktif_ekoindo.yaml"
-    path: "./proxy_provider/NUSANTARA.yaml"
-    health-check:
-      enable: true
-      url: http://www.gstatic.com/generate_204
-      interval: 60
-  FR:
-    type: http
-    url: "https://raw.githubusercontent.com/ekosupry/CONFIG/main/freeVPN.yaml"
-    path: "./proxy_provider/FREE.yaml"
+    url: "https://raw.githubusercontent.com/ekosupry/CONFIG/main/INDO-FREE_biz.yaml"
+    path: "./proxy_provider/INDONESIA.yaml"
     health-check:
       enable: true
       url: http://www.gstatic.com/generate_204
@@ -108,9 +100,8 @@ proxy-groups:
   strategy: round-robin
   disable-udp: false
   use:
-  - SG
+  - MC
   - ID
-  - FR
   url: 'http://www.gstatic.com/generate_204'
   interval: 60
 - name: UMUM 🌏
@@ -120,9 +111,8 @@ proxy-groups:
   - BALANCE
   - FALLBACK
   - BEST-PING
-  - NUSANTARA
-  - SINGA
-  - FREE
+  - INDONESIA
+  - MANCANEGARA
   - DIRECT
   url: 'http://www.gstatic.com/generate_204'
   interval: 60
@@ -134,8 +124,8 @@ proxy-groups:
   - BALANCE
   - FALLBACK
   - BEST-PING
-  - NUSANTARA
-  - SINGA
+  - INDONESIA
+  - MANCANEGARA
   - DIRECT
   - REJECT
   url: 'http://www.gstatic.com/generate_204'
@@ -148,8 +138,8 @@ proxy-groups:
   - BALANCE
   - FALLBACK
   - BEST-PING
-  - NUSANTARA
-  - SINGA
+  - INDONESIA
+  - MANCANEGARA
   - DIRECT
   - REJECT
   url: 'http://www.gstatic.com/generate_204'
@@ -162,8 +152,8 @@ proxy-groups:
   - BALANCE
   - FALLBACK
   - BEST-PING
-  - NUSANTARA
-  - SINGA
+  - INDONESIA
+  - MANCANEGARA
   - FREE
   - DIRECT
   - REJECT
@@ -176,8 +166,8 @@ proxy-groups:
   - BALANCE
   - FALLBACK
   - BEST-PING
-  - NUSANTARA
-  - SINGA
+  - INDONESIA
+  - MANCANEGARA
   - DIRECT
   - REJECT
   url: 'http://www.gstatic.com/generate_204'
@@ -189,8 +179,8 @@ proxy-groups:
   - BALANCE
   - FALLBACK
   - BEST-PING
-  - NUSANTARA
-  - SINGA
+  - INDONESIA
+  - MANCANEGARA
   - DIRECT
   - REJECT
   url: 'http://www.gstatic.com/generate_204'
@@ -202,9 +192,8 @@ proxy-groups:
   - BALANCE
   - FALLBACK
   - BEST-PING
-  - NUSANTARA
-  - SINGA
-  - FREE
+  - INDONESIA
+  - MANCANEGARA
   - DIRECT
   - REJECT
   url: 'http://www.gstatic.com/generate_204'
@@ -213,11 +202,11 @@ proxy-groups:
   type: select
   disable-udp: false
   proxies:
-  - NUSANTARA
-  - SINGA
+  - INDONESIA
+  - MANCANEGARA
   - DIRECT
   use:
-  - SG
+  - MC
   - ID
   url: 'http://www.gstatic.com/generate_204'
   interval: 60
@@ -226,9 +215,8 @@ proxy-groups:
   disable-udp: false
   proxies:
   - DIRECT
-  - NUSANTARA
+  - INDONESIA
   use:
-  - SG
   - ID
   url: 'http://www.gstatic.com/generate_204'
   interval: 60
@@ -237,7 +225,7 @@ proxy-groups:
   strategy: round-robin
   disable-udp: false
   proxies:
-  - NUSANTARA
+  - INDONESIA
   - DIRECT
   use:
   - ID
@@ -248,8 +236,8 @@ proxy-groups:
   strategy: round-robin
   disable-udp: false
   proxies:
-  - NUSANTARA
-  - SINGA
+  - INDONESIA
+  - MANCANEGARA
   - FREE
   - DIRECT
   url: 'http://www.gstatic.com/generate_204'
@@ -259,8 +247,8 @@ proxy-groups:
   strategy: consistent-hashing
   disable-udp: false
   proxies:
-  - NUSANTARA
-  - SINGA
+  - INDONESIA
+  - MANCANEGARA
   - DIRECT
   url: 'http://www.gstatic.com/generate_204'
   interval: 60
@@ -270,9 +258,8 @@ proxy-groups:
   disable-udp: false
   proxies:
   - BALANCE
-  - NUSANTARA
-  - SINGA
-  - FREE
+  - INDONESIA
+  - MANCANEGARA
   - DIRECT
   - REJECT
   url: 'http://www.gstatic.com/generate_204'
@@ -283,9 +270,8 @@ proxy-groups:
   disable-udp: false
   proxies:
   - BALANCE
-  - NUSANTARA
-  - SINGA
-  - FREE
+  - INDONESIA
+  - MANCANEGARA
   - DIRECT
   - REJECT
   url: 'http://www.gstatic.com/generate_204'
@@ -295,7 +281,7 @@ proxy-groups:
   strategy: round-robin
   disable-udp: false
   use:
-  - SG
+  - MC
   - ID
   url: http://www.gstatic.com/generate_204
   interval: 30
@@ -305,7 +291,7 @@ proxy-groups:
   strategy: round-robin
   disable-udp: false
   use:
-  - SG
+  - MC
   - ID
   url: http://www.gstatic.com/generate_204
   interval: 60
@@ -315,12 +301,12 @@ proxy-groups:
   strategy: round-robin
   disable-udp: false
   use:
-  - SG
+  - MC
   - ID
   url: http://www.gstatic.com/generate_204
   interval: 60
 
-- name: NUSANTARA
+- name: INDONESIA
   type: url-test
   strategy: round-robin
   disable-udp: false
@@ -329,24 +315,14 @@ proxy-groups:
   url: http://www.gstatic.com/generate_204
   interval: 50
 
-- name: SINGA
+- name: MANCANEGARA
   type: url-test
   strategy: round-robin
   disable-udp: false
   use:
-  - SG
+  - MC
   url: http://www.gstatic.com/generate_204
   interval: 50
-
-- name: FREE
-  type: url-test
-  strategy: round-robin
-  disable-udp: false
-  use:
-  - FR
-  url: http://www.gstatic.com/generate_204
-  interval: 50
-
 # ================= RP  ==================
 rule-providers:
   Portgames:

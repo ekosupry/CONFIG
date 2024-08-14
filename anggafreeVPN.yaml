@@ -252,6 +252,40 @@ proxies:
       headers:
         Host: id.jam.mahal.filegear-sg.me
     udp: true
+
+  - name: VLESS ID SERVLESS
+    server: 104.17.3.81
+    port: 443
+    type: vless
+    uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+    alterId: 0
+    cipher: auto
+    tls: true
+    skip-cert-verify: true
+    servername: id.servless.us.to
+    network: ws
+    ws-opts:
+      path: /vlesscf
+      headers:
+        Host: id.servless.us.to
+    udp: true
+
+  - name: VLESS ID VLCFPAGE
+    server: 104.17.3.81
+    port: 443
+    type: vless
+    uuid: 0bc51b14-02aa-40db-aeba-8a9569a7244d
+    alterId: 0
+    cipher: auto
+    tls: true
+    skip-cert-verify: true
+    servername: id.vlcfpages.my.id
+    network: ws
+    ws-opts:
+      path: /?ed=2048
+      headers:
+        Host: id.vlcfpages.my.id
+    udp: true
     
   - name: VLESS ORACLE MAHAL
     server: 104.17.3.81
@@ -302,40 +336,6 @@ proxies:
       path: /vlesscf
       headers:
         Host: sg.servless.us.to
-    udp: true
-
-  - name: VLESS ID SERVLESS
-    server: 104.17.3.81
-    port: 443
-    type: vless
-    uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
-    alterId: 0
-    cipher: auto
-    tls: true
-    skip-cert-verify: true
-    servername: id.servless.us.to
-    network: ws
-    ws-opts:
-      path: /vlesscf
-      headers:
-        Host: id.servless.us.to
-    udp: true
-
-  - name: VLESS ID VLCFPAGE
-    server: 104.17.3.81
-    port: 443
-    type: vless
-    uuid: 0bc51b14-02aa-40db-aeba-8a9569a7244d
-    alterId: 0
-    cipher: auto
-    tls: true
-    skip-cert-verify: true
-    servername: id.vlcfpages.my.id
-    network: ws
-    ws-opts:
-      path: /?ed=2048
-      headers:
-        Host: id.vlcfpages.my.id
     udp: true
 
   - name: VLESS SG VLCFPAGE
@@ -471,7 +471,7 @@ proxies:
     ws-opts:
       path: /?ed
       headers:
-        Host: pages.dev.
+        Host: xn--4s9h.pages.dev
     udp: true
 
   - name: VLESS SG ALIBABA TLS

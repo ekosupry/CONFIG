@@ -79,6 +79,54 @@ tproxy-port: 9898
 mixed-port: 7890
 # ================= PG ==========
 proxies: 
+  - name: INDOXRAY 443
+    server: 104.17.3.81
+    port: 443
+    type: vmess
+    uuid: b809ba19-00e2-483d-b1bc-bd7633a678ff
+    alterId: 0
+    cipher: auto
+    tls: true
+    skip-cert-verify: true
+    servername: indoxray.me
+    network: ws
+    ws-opts:
+      path: /vmess
+      headers:
+        Host: indoxray.me
+    udp: true
+
+  - name: INDOXRAY NTLS
+    server: 104.17.3.81
+    port: 80
+    type: vmess
+    uuid: b809ba19-00e2-483d-b1bc-bd7633a678ff
+    alterId: 0
+    cipher: auto
+    tls: false
+    skip-cert-verify: true
+    servername: indoxray.me
+    network: ws
+    ws-opts:
+      path: /vmess
+      headers:
+        Host: indoxray.me
+    udp: true
+
+  - name: INDOXRAY GRPC
+    server: 104.18.3.2
+    port: 443
+    type: vmess
+    uuid: b809ba19-00e2-483d-b1bc-bd7633a678ff
+    alterId: 0
+    cipher: auto
+    network: grpc
+    tls: true
+    servername: indoxray.me
+    skip-cert-verify: true
+    grpc-opts:
+      grpc-service-name: vmess-grpc
+    
   - name: SG DO TLS
     server: 104.18.3.2
     port: 443
@@ -574,6 +622,9 @@ proxy-groups:
   strategy: round-robin
   disable-udp: false
   proxies:
+    -  INDOXRAY 443
+    -  INDOXRAY NTLS
+    -  INDOXRAY GRPC
     -  SG DO TLS
     -  SG DO NTLS
     -  SG DO GRPC
@@ -641,8 +692,11 @@ proxy-groups:
     -  VLESS ID MAHAL
     -  VLESS ID SERVLESS
     -  VLESS ID VLCFPAGE
+    -  INDOXRAY 443
+    -  INDOXRAY NTLS
+    -  INDOXRAY GRPC
   url: 'http://www.gstatic.com/generate_204'
-  interval: 300
+  interval: 120
 #Koneksi Sosmed
 - name: "PORT GAME"
   type: select #PILIIH SALAH SATU : SELECT,LOAD-BALANCE,FALLBACK,URL-TEST
@@ -654,6 +708,9 @@ proxy-groups:
     -  VLESS ID MAHAL
     -  VLESS ID SERVLESS
     -  VLESS ID VLCFPAGE
+    -  INDOXRAY 443
+    -  INDOXRAY NTLS
+    -  INDOXRAY GRPC
     -  DIRECT
   url: 'http://www.gstatic.com/generate_204'
   interval: 300
@@ -758,12 +815,15 @@ proxy-groups:
     -  SG DO TLS
     -  SG DO NTLS
     -  SG DO GRPC
-    -  VLESS ARIS CF
-    -  WORKER GAME
-    -  UWU FF
     -  VLESS KNC 443
     -  VLESS KNC2 443
     -  VLESS KNC KR 443
+    -  INDOXRAY 443
+    -  INDOXRAY NTLS
+    -  INDOXRAY GRPC
+    -  VLESS ARIS CF
+    -  WORKER GAME
+    -  UWU FF
     -  VLESS DO 443
     -  TROJAN TARIK
     -  VLESS ID MAHAL
@@ -796,7 +856,6 @@ proxy-groups:
     -  VLESS KNC 443
     -  VLESS KNC2 443
     -  VLESS KNC KR 443
-    -  VLESS DO 443
   url: 'http://www.gstatic.com/generate_204'
   interval: 300
  #⬜⬜
@@ -809,6 +868,9 @@ proxy-groups:
     -  SG DO TLS
     -  SG DO NTLS
     -  SG DO GRPC
+    -  INDOXRAY 443
+    -  INDOXRAY NTLS
+    -  INDOXRAY GRPC
     -  IDL TLS
     -  IDL NTLS
     -  VLESS ARIS CF

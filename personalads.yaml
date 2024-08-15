@@ -1,4 +1,7 @@
 payload:
+#judi online
+  - DOMAIN-SUFFIX,jepein89mx.my.id
+#iklan
   - DOMAIN-SUFFIX,pagead2.googlesyndication.com
   - DOMAIN-SUFFIX,pagead2.googleadservices.com
   - DOMAIN-SUFFIX,ads.google.com

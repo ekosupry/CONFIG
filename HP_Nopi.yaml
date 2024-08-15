@@ -795,17 +795,17 @@ proxy-groups:
   strategy: round-robin
   disable-udp: false
   proxies:
-    -  INDOXRAY 443
-    -  INDOXRAY NTLS
     -  SG DO TLS
     -  SG DO NTLS
     -  SG DO GRPC
-    -  VLESS ARIS CF
-    -  WORKER GAME
-    -  UWU FF
     -  VLESS KNC 443
     -  VLESS KNC2 443
     -  VLESS KNC KR 443
+    -  INDOXRAY 443
+    -  INDOXRAY NTLS
+    -  VLESS ARIS CF
+    -  WORKER GAME
+    -  UWU FF
     -  VLESS DO 443
     -  TROJAN TARIK
     -  VLESS ID MAHAL

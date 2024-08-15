@@ -79,8 +79,56 @@ tproxy-port: 9898
 mixed-port: 7890
 # ================= PG ==========
 proxies: 
-  - name: IDL TLS
+  - name: INDOXRAY 443
+    server: 104.17.3.81
+    port: 443
+    type: vmess
+    uuid: b809ba19-00e2-483d-b1bc-bd7633a678ff
+    alterId: 0
+    cipher: auto
+    tls: true
+    skip-cert-verify: true
+    servername: indoxray.me
+    network: ws
+    ws-opts:
+      path: /vmess
+      headers:
+        Host: indoxray.me
+    udp: true
+
+  - name: INDOXRAY NTLS
+    server: 104.17.3.81
+    port: 80
+    type: vmess
+    uuid: b809ba19-00e2-483d-b1bc-bd7633a678ff
+    alterId: 0
+    cipher: auto
+    tls: false
+    skip-cert-verify: true
+    servername: indoxray.me
+    network: ws
+    ws-opts:
+      path: /vmess
+      headers:
+        Host: indoxray.me
+    udp: true
+
+  - name: INDOXRAY GRPC
     server: 104.18.3.2
+    port: 443
+    type: vmess
+    uuid: b809ba19-00e2-483d-b1bc-bd7633a678ff
+    alterId: 0
+    cipher: auto
+    network: grpc
+    tls: true
+    servername: indoxray.me
+    skip-cert-verify: true
+    grpc-opts:
+      grpc-service-name: vmess-grpc
+
+  - name: IDL TLS
+    server: 104.17.3.81
     port: 443
     type: vmess
     uuid: cedf07b8-2f39-4c29-828d-c5f1911573e1
@@ -97,7 +145,7 @@ proxies:
     udp: true
 
   - name: IDL NTLS
-    server: 104.18.3.2
+    server: 104.17.3.81
     port: 80
     type: vmess
     uuid: cedf07b8-2f39-4c29-828d-c5f1911573e1
@@ -113,8 +161,58 @@ proxies:
         Host: vvipp.klmpk.me
     udp: true
 
+  - name: VLESS ARIS CF
+    server: 104.17.3.81
+    port: 443
+    type: vless
+    uuid: 1b6c1745-992e-4aac-8685-266c090e50ea
+    alterId: 0
+    cipher: auto
+    tls: true
+    skip-cert-verify: true
+    servername: server.arisctunnel.me
+    network: ws
+    ws-opts:
+      path: /?ed=2048
+      headers:
+        Host: server.arisctunnel.me
+    udp: true
+    
+
+  - name: WORKER GAME
+    server: 104.17.3.81
+    port: 443
+    type: vless
+    uuid: 1e6611ce-aec7-4a64-8699-d7d731659f05
+    cipher: auto
+    tls: true
+    skip-cert-verify: true
+    servername: NS-stoRE.NSiDIK685.WorkerS.DEV
+    network: ws
+    ws-opts:
+      path: /4oZzyMSMxWn395MA/dGVuY2VudC5yaW4tdG9oc2FrYWdhbmdiYW5nLmZpbGVnZWFyLXNnLm1l?ed=2560
+      headers:
+        Host: Ns-stOrE.NSIDIk685.WORkeRs.DEv
+    udp: true
+
+  - name: UWU FF
+    server: 104.17.3.81
+    port: 443
+    type: vless
+    uuid: bcf50589-9654-4331-93a6-da896914ec47
+    cipher: auto
+    tls: true
+    skip-cert-verify: true
+    servername: de4ecf6b.isvphp-4g8.pages.dev
+    network: ws
+    ws-opts:
+      path: /?ed=2048
+      headers:
+        Host: de4ecf6b.isvphp-4g8.pages.dev
+    udp: true
+
   - name: VLESS KNC 443
-    server: 104.18.3.2
+    server: 104.17.3.81
     port: 443
     type: vless
     uuid: 80510fd1-7a7d-4b83-a3db-05fb7f23dea5
@@ -131,7 +229,7 @@ proxies:
     udp: true
 
   - name: VLESS KNC2 443
-    server: 104.18.3.2
+    server: 104.17.3.81
     port: 443
     type: vless
     uuid: 80510fd1-7a7d-4b83-a3db-05fb7f23dea5
@@ -148,7 +246,7 @@ proxies:
     udp: true
 
   - name: VLESS KNC KR 443
-    server: 104.18.3.2
+    server: 104.17.3.81
     port: 443
     type: vless
     uuid: 4994c6a3-3242-45b8-a3e3-7d0fb82b0ece
@@ -165,7 +263,7 @@ proxies:
     udp: true
 
   - name: VLESS DO 443
-    server: 104.18.3.2
+    server: 104.17.3.81
     port: 443
     type: vless
     uuid: b0cb1b0b-f5ba-4ca4-a587-cfe48126bff7
@@ -182,7 +280,7 @@ proxies:
     udp: true 
     
   - name: TROJAN TARIK
-    server: 104.18.3.2
+    server: 104.17.3.81
     port: 443
     type: trojan
     password: 38460e7d-95bb-49e5-a90b-519ff74f182d
@@ -193,6 +291,278 @@ proxies:
       path: /whatever/trojan-ws
       headers:
         Host: l5mrh.tarik.my.id
+    udp: true
+    
+  - name: VLESS ID MAHAL
+    server: 104.17.3.81
+    port: 443
+    type: vless
+    uuid: 6e6cb97e-57ac-4e8f-ad90-2b2fbb21bc45
+    alterId: 0
+    cipher: auto
+    tls: true
+    skip-cert-verify: true
+    servername: id.jam.mahal.filegear-sg.me
+    network: ws
+    ws-opts:
+      path: /vless
+      headers:
+        Host: id.jam.mahal.filegear-sg.me
+    udp: true
+    
+  - name: VLESS ORACLE MAHAL
+    server: 104.17.3.81
+    port: 443
+    type: vless
+    uuid: 6e6cb97e-57ac-4e8f-ad90-2b2fbb21bc45
+    alterId: 0
+    cipher: auto
+    tls: true
+    skip-cert-verify: true
+    servername: oracle.jam.mahal.filegear-sg.me
+    network: ws
+    ws-opts:
+      path: /vless
+      headers:
+        Host: oracle.jam.mahal.filegear-sg.me
+    udp: true
+
+  - name: VLESS ALIBABA MAHAL
+    server: 104.17.3.81
+    port: 443
+    type: vless
+    uuid: 6e6cb97e-57ac-4e8f-ad90-2b2fbb21bc45
+    alterId: 0
+    cipher: auto
+    tls: true
+    skip-cert-verify: true
+    servername: alibaba.jam.mahal.filegear-sg.me
+    network: ws
+    ws-opts:
+      path: /vless
+      headers:
+        Host: alibaba.jam.mahal.filegear-sg.me
+    udp: true
+
+  - name: VLESS SG SERVLESS
+    server: 104.17.3.81
+    port: 443
+    type: vless
+    uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+    alterId: 0
+    cipher: auto
+    tls: true
+    skip-cert-verify: true
+    servername: sg.servless.us.to
+    network: ws
+    ws-opts:
+      path: /vlesscf
+      headers:
+        Host: sg.servless.us.to
+    udp: true
+
+  - name: VLESS ID SERVLESS
+    server: 104.17.3.81
+    port: 443
+    type: vless
+    uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+    alterId: 0
+    cipher: auto
+    tls: true
+    skip-cert-verify: true
+    servername: id.servless.us.to
+    network: ws
+    ws-opts:
+      path: /vlesscf
+      headers:
+        Host: id.servless.us.to
+    udp: true
+
+  - name: VLESS ID VLCFPAGE
+    server: 104.17.3.81
+    port: 443
+    type: vless
+    uuid: 0bc51b14-02aa-40db-aeba-8a9569a7244d
+    alterId: 0
+    cipher: auto
+    tls: true
+    skip-cert-verify: true
+    servername: id.vlcfpages.my.id
+    network: ws
+    ws-opts:
+      path: /?ed=2048
+      headers:
+        Host: id.vlcfpages.my.id
+    udp: true
+
+  - name: VLESS SG VLCFPAGE
+    server: 104.17.3.81
+    port: 443
+    type: vless
+    uuid: f69a85fe-4a6e-40f3-bcd0-f3c800388b58
+    alterId: 0
+    cipher: auto
+    tls: true
+    skip-cert-verify: true
+    servername: sg.vlcfpages.my.id
+    network: ws
+    ws-opts:
+      path: /?ed=2048
+      headers:
+        Host: sg.vlcfpages.my.id
+    udp: true
+
+  - name: VLESS SG ALIBABA 235
+    server: 104.17.3.81
+    port: 443
+    type: vless
+    uuid: 89b2cbba-e6ac-487a-9481-976a0415eab9
+    alterId: 0
+    cipher: auto
+    tls: true
+    skip-cert-verify: true
+    servername: EsETSecURityLIcensE.vUhbGOL.wORkERs.dEV
+    network: ws
+    ws-opts:
+      path: /
+      headers:
+        Host: EsETSecURityLIcensE.vUhbGOL.wORkERs.dEV
+    udp: true
+
+  - name: VLESS SG ALIBABA 400
+    server: 104.17.3.81
+    port: 443
+    type: vless
+    uuid: 34b3cbba-e6ac-495a-9481-976a0419eab9
+    alterId: 0
+    cipher: auto
+    tls: true
+    skip-cert-verify: true
+    servername: EseTSeCURITylICense.pudmnquF.worKErS.dev
+    network: ws
+    ws-opts:
+      path: /
+      headers:
+        Host: EseTSeCURITylICense.pudmnquF.worKErS.dev
+    udp: true
+
+  - name: VLESS SG ALIBABA 262
+    server: 104.17.3.81
+    port: 443
+    type: vless
+    uuid: 89b3cbba-e6ac-485a-9481-976a0415eab9
+    alterId: 0
+    cipher: auto
+    tls: true
+    skip-cert-verify: true
+    servername: miumiUMadReKoSE.pAgES.dEv
+    network: ws
+    ws-opts:
+      path: /oyafdnkpgfcx0bjg?ed
+      headers:
+        Host: miumiUMadReKoSE.pAgES.dEv
+    udp: true
+
+  - name: VLESS SG ALIBABA 502
+    server: 104.17.3.81
+    port: 443
+    type: vless
+    uuid: e4e7b149-8bd8-4266-8cbb-0987604dbc87
+    alterId: 0
+    cipher: auto
+    tls: true
+    skip-cert-verify: true
+    servername: toujiediansigema.5112233.xyz
+    network: ws
+    ws-opts:
+      path: /TG@juzibaipiao偷节点死吗
+      headers:
+        Host: toujiediansigema.5112233.xyz
+    udp: true
+
+  - name: VLESS SG ALIBABA 619
+    server: 104.17.3.81
+    port: 443
+    type: vless
+    uuid: 89b3cbba-e6ac-485a-9481-976a0415eab9
+    alterId: 0
+    cipher: auto
+    tls: true
+    skip-cert-verify: true
+    servername: V2FiVeTeL.pAges.Dev
+    network: ws
+    ws-opts:
+      path: /
+      headers:
+        Host: V2FiVeTeL.pAges.Dev
+    udp: true
+
+  - name: VLESS SG ALIBABA 457
+    server: 104.17.3.81
+    port: 443
+    type: vless
+    uuid: a64f0cea-ca89-40e6-b316-b3badff1eb90
+    alterId: 0
+    cipher: auto
+    tls: true
+    skip-cert-verify: true
+    servername: iSAA1.paGEs.DEV
+    network: ws
+    ws-opts:
+      path: /BDwnEtVwG7BS0S9f?ed
+      headers:
+        Host: iSAA1.paGEs.DEV
+    udp: true
+
+  - name: VLESS SG ALIBABA 189
+    server: 104.17.3.81
+    port: 443
+    type: vless
+    uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+    alterId: 0
+    cipher: auto
+    tls: true
+    skip-cert-verify: true
+    servername: xn--4s9h.pages.dev
+    network: ws
+    ws-opts:
+      path: /?ed
+      headers:
+        Host: pages.dev.
+    udp: true
+
+  - name: VLESS SG ALIBABA TLS
+    server: 104.17.3.81
+    port: 443
+    type: vless
+    uuid: f9021b31-e8bd-4b4d-a1d3-c9b0c1476c44
+    alterId: 0
+    cipher: auto
+    tls: true
+    skip-cert-verify: true
+    servername: sg-alibaba.tingkehvpn.my.id
+    network: ws
+    ws-opts:
+      path: /vlesscf
+      headers:
+        Host: sg-alibaba.tingkehvpn.my.id
+    udp: true
+
+  - name: VLESS SG ALIBABA NTLS
+    server: 104.17.3.81
+    port: 80
+    type: vless
+    uuid: f9021b31-e8bd-4b4d-a1d3-c9b0c1476c44
+    alterId: 0
+    cipher: auto
+    tls: false
+    skip-cert-verify: true
+    servername: sg-alibaba.tingkehvpn.my.id
+    network: ws
+    ws-opts:
+      path: /vlesscf
+      headers:
+        Host: sg-alibaba.tingkehvpn.my.id
     udp: true
 #🔴
 #🔴_____________________________________proxies______________________________________🔴
@@ -205,13 +575,35 @@ proxy-groups:
   strategy: round-robin
   disable-udp: false
   proxies:
+    -  INDOXRAY 443
+    -  INDOXRAY NTLS
+    -  INDOXRAY GRPC
     -  IDL TLS
     -  IDL NTLS
+    -  VLESS ARIS CF
+    -  WORKER GAME
+    -  UWU FF
     -  VLESS KNC 443
     -  VLESS KNC2 443
     -  VLESS KNC KR 443
     -  VLESS DO 443
     -  TROJAN TARIK
+    -  VLESS ID MAHAL
+    -  VLESS ORACLE MAHAL
+    -  VLESS ALIBABA MAHAL
+    -  VLESS SG SERVLESS
+    -  VLESS ID SERVLESS
+    -  VLESS ID VLCFPAGE
+    -  VLESS SG VLCFPAGE
+    -  VLESS SG ALIBABA 235
+    -  VLESS SG ALIBABA 400
+    -  VLESS SG ALIBABA 262
+    -  VLESS SG ALIBABA 502
+    -  VLESS SG ALIBABA 619
+    -  VLESS SG ALIBABA 457
+    -  VLESS SG ALIBABA 189
+    -  VLESS SG ALIBABA TLS
+    -  VLESS SG ALIBABA NTLS
   url: 'http://www.gstatic.com/generate_204'
   interval: 300
  #⬜⬜
@@ -223,13 +615,6 @@ proxy-groups:
     -  BEST PING
     -  LOAD-BALANCE
     -  FALLBACK
-    -  IDL TLS
-    -  IDL NTLS
-    -  VLESS KNC 443
-    -  VLESS KNC2 443
-    -  VLESS KNC KR 443
-    -  VLESS DO 443
-    -  TROJAN TARIK
     -  DIRECT
   url: 'http://www.gstatic.com/generate_204'
   interval: 300
@@ -243,13 +628,6 @@ proxy-groups:
     -  BEST PING
     -  LOAD-BALANCE
     -  FALLBACK
-    -  IDL TLS
-    -  IDL NTLS
-    -  VLESS KNC 443
-    -  VLESS KNC2 443
-    -  VLESS KNC KR 443
-    -  VLESS DO 443
-    -  TROJAN TARIK
     -  DIRECT
   url: 'http://www.gstatic.com/generate_204'
   interval: 300
@@ -261,6 +639,9 @@ proxy-groups:
   proxies:
     -  VLESS KNC 443
     -  VLESS KNC2 443
+    -  VLESS ID MAHAL
+    -  VLESS ID SERVLESS
+    -  VLESS ID VLCFPAGE
   url: 'http://www.gstatic.com/generate_204'
   interval: 300
 #Koneksi Sosmed
@@ -271,6 +652,9 @@ proxy-groups:
   proxies:
     -  VLESS KNC 443
     -  VLESS KNC2 443
+    -  VLESS ID MAHAL
+    -  VLESS ID SERVLESS
+    -  VLESS ID VLCFPAGE
     -  DIRECT
   url: 'http://www.gstatic.com/generate_204'
   interval: 300
@@ -286,13 +670,6 @@ proxy-groups:
     -  BEST PING
     -  LOAD-BALANCE
     -  FALLBACK
-    -  IDL TLS
-    -  IDL NTLS
-    -  VLESS KNC 443
-    -  VLESS KNC2 443
-    -  VLESS KNC KR 443
-    -  VLESS DO 443
-    -  TROJAN TARIK
     -  DIRECT
   url: 'http://www.gstatic.com/generate_204'
   interval: 300
@@ -306,13 +683,6 @@ proxy-groups:
     -  BEST PING
     -  LOAD-BALANCE
     -  FALLBACK
-    -  IDL TLS
-    -  IDL NTLS
-    -  VLESS KNC 443
-    -  VLESS KNC2 443
-    -  VLESS KNC KR 443
-    -  VLESS DO 443
-    -  TROJAN TARIK
     -  DIRECT
     -  REJECT
   url: 'http://www.gstatic.com/generate_204'
@@ -327,13 +697,6 @@ proxy-groups:
     -  BEST PING
     -  LOAD-BALANCE
     -  FALLBACK
-    -  IDL TLS
-    -  IDL NTLS
-    -  VLESS KNC 443
-    -  VLESS KNC2 443
-    -  VLESS KNC KR 443
-    -  VLESS DO 443
-    -  TROJAN TARIK 
     -  DIRECT
     -  REJECT
   url: 'http://www.gstatic.com/generate_204'
@@ -346,14 +709,20 @@ proxy-groups:
     -  BEST PING
     -  LOAD-BALANCE
     -  FALLBACK
-    -  IDL TLS
-    -  IDL NTLS
-    -  VLESS KNC 443
-    -  VLESS KNC2 443
-    -  VLESS KNC KR 443
-    -  VLESS DO 443
-    -  TROJAN TARIK
     -  DIRECT
+    -  REJECT
+  url: 'http://www.gstatic.com/generate_204'
+  interval: 300
+ #⬜⬜
+ #koneksi untuk porno,
+- name: "18+"
+  type: select
+  strategy: round-robin
+  disable-udp: false
+  proxies:
+    -  BEST PING
+    -  LOAD-BALANCE
+    -  FALLBACK
     -  REJECT
   url: 'http://www.gstatic.com/generate_204'
   interval: 300
@@ -386,13 +755,35 @@ proxy-groups:
   strategy: round-robin
   disable-udp: false
   proxies:
-    -  IDL TLS
-    -  IDL NTLS
     -  VLESS KNC 443
     -  VLESS KNC2 443
     -  VLESS KNC KR 443
+    -  INDOXRAY 443
+    -  INDOXRAY NTLS
+    -  INDOXRAY GRPC
+    -  IDL TLS
+    -  IDL NTLS
+    -  VLESS ARIS CF
+    -  WORKER GAME
+    -  UWU FF
     -  VLESS DO 443
     -  TROJAN TARIK
+    -  VLESS ID MAHAL
+    -  VLESS ORACLE MAHAL
+    -  VLESS ALIBABA MAHAL
+    -  VLESS SG SERVLESS
+    -  VLESS ID SERVLESS
+    -  VLESS ID VLCFPAGE
+    -  VLESS SG VLCFPAGE
+    -  VLESS SG ALIBABA 235
+    -  VLESS SG ALIBABA 400
+    -  VLESS SG ALIBABA 262
+    -  VLESS SG ALIBABA 502
+    -  VLESS SG ALIBABA 619
+    -  VLESS SG ALIBABA 457
+    -  VLESS SG ALIBABA 189
+    -  VLESS SG ALIBABA TLS
+    -  VLESS SG ALIBABA NTLS
   url: 'http://www.gstatic.com/generate_204'
   interval: 300
   #koneksi untuk iklan,
@@ -405,7 +796,26 @@ proxy-groups:
     -  VLESS KNC2 443
     -  VLESS KNC KR 443
     -  VLESS DO 443
+    -  INDOXRAY 443
+    -  INDOXRAY NTLS
+    -  INDOXRAY GRPC
     -  TROJAN TARIK
+    -  VLESS ID MAHAL
+    -  VLESS ORACLE MAHAL
+    -  VLESS ALIBABA MAHAL
+    -  VLESS SG SERVLESS
+    -  VLESS ID SERVLESS
+    -  VLESS ID VLCFPAGE
+    -  VLESS SG VLCFPAGE
+    -  VLESS SG ALIBABA 235
+    -  VLESS SG ALIBABA 400
+    -  VLESS SG ALIBABA 262
+    -  VLESS SG ALIBABA 502
+    -  VLESS SG ALIBABA 619
+    -  VLESS SG ALIBABA 457
+    -  VLESS SG ALIBABA 189
+    -  VLESS SG ALIBABA TLS
+    -  VLESS SG ALIBABA NTLS
   url: 'http://www.gstatic.com/generate_204'
   interval: 300
  #⬜⬜
@@ -417,11 +827,33 @@ proxy-groups:
   proxies:
     -  IDL TLS
     -  IDL NTLS
+    -  INDOXRAY 443
+    -  INDOXRAY NTLS
+    -  INDOXRAY GRPC
+    -  VLESS ARIS CF
+    -  WORKER GAME
+    -  UWU FF
     -  VLESS KNC 443
     -  VLESS KNC2 443
     -  VLESS KNC KR 443
     -  VLESS DO 443
     -  TROJAN TARIK
+    -  VLESS ID MAHAL
+    -  VLESS ORACLE MAHAL
+    -  VLESS ALIBABA MAHAL
+    -  VLESS SG SERVLESS
+    -  VLESS ID SERVLESS
+    -  VLESS ID VLCFPAGE
+    -  VLESS SG VLCFPAGE
+    -  VLESS SG ALIBABA 235
+    -  VLESS SG ALIBABA 400
+    -  VLESS SG ALIBABA 262
+    -  VLESS SG ALIBABA 502
+    -  VLESS SG ALIBABA 619
+    -  VLESS SG ALIBABA 457
+    -  VLESS SG ALIBABA 189
+    -  VLESS SG ALIBABA TLS
+    -  VLESS SG ALIBABA NTLS
   url: 'http://www.gstatic.com/generate_204'
   interval: 300
  #⬜⬜

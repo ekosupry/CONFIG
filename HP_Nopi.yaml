@@ -112,6 +112,20 @@ proxies:
       headers:
         Host: indoxray.me
     udp: true
+
+  - name: INDOXRAY GRPC
+    server: 104.18.3.2
+    port: 443
+    type: vmess
+    uuid: b809ba19-00e2-483d-b1bc-bd7633a678ff
+    alterId: 0
+    cipher: auto
+    network: grpc
+    tls: true
+    servername: indoxray.me
+    skip-cert-verify: true
+    grpc-opts:
+      grpc-service-name: vmess-grpc
     
   - name: SG DO TLS
     server: 104.18.3.2
@@ -610,6 +624,7 @@ proxy-groups:
   proxies:
     -  INDOXRAY 443
     -  INDOXRAY NTLS
+    -  INDOXRAY GRPC
     -  SG DO TLS
     -  SG DO NTLS
     -  SG DO GRPC
@@ -679,6 +694,7 @@ proxy-groups:
     -  VLESS ID VLCFPAGE
     -  INDOXRAY 443
     -  INDOXRAY NTLS
+    -  INDOXRAY GRPC
   url: 'http://www.gstatic.com/generate_204'
   interval: 120
 #Koneksi Sosmed
@@ -694,6 +710,7 @@ proxy-groups:
     -  VLESS ID VLCFPAGE
     -  INDOXRAY 443
     -  INDOXRAY NTLS
+    -  INDOXRAY GRPC
     -  DIRECT
   url: 'http://www.gstatic.com/generate_204'
   interval: 300
@@ -803,6 +820,7 @@ proxy-groups:
     -  VLESS KNC KR 443
     -  INDOXRAY 443
     -  INDOXRAY NTLS
+    -  INDOXRAY GRPC
     -  VLESS ARIS CF
     -  WORKER GAME
     -  UWU FF
@@ -852,6 +870,7 @@ proxy-groups:
     -  SG DO GRPC
     -  INDOXRAY 443
     -  INDOXRAY NTLS
+    -  INDOXRAY GRPC
     -  IDL TLS
     -  IDL NTLS
     -  VLESS ARIS CF

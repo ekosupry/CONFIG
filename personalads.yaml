@@ -7,7 +7,9 @@ payload:
   - DOMAIN-SUFFIX,japantomat.com
   - DOMAIN-SUFFIX,ruangqqdominoqq.lol
   - DOMAIN-SUFFIX,texaspasti.xyz
-  - - DOMAIN-KEYWORD,poker
+  - DOMAIN-KEYWORD,poker
+  - DOMAIN-KEYWORD,texas
+  - DOMAIN-KEYWORD,toto
 #iklan
   - DOMAIN-SUFFIX,pagead2.googlesyndication.com
   - DOMAIN-SUFFIX,pagead2.googleadservices.com

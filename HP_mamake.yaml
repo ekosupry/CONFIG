@@ -564,32 +564,6 @@ proxy-groups:
     -  BEST PING
     -  LOAD-BALANCE
     -  FALLBACK
-    -  IDL TLS
-    -  IDL NTLS
-    -  VLESS ARIS CF
-    -  WORKER GAME
-    -  UWU FF
-    -  VLESS KNC 443
-    -  VLESS KNC2 443
-    -  VLESS KNC KR 443
-    -  VLESS DO 443
-    -  TROJAN TARIK
-    -  VLESS ID MAHAL
-    -  VLESS ORACLE MAHAL
-    -  VLESS ALIBABA MAHAL
-    -  VLESS SG SERVLESS
-    -  VLESS ID SERVLESS
-    -  VLESS ID VLCFPAGE
-    -  VLESS SG VLCFPAGE
-    -  VLESS SG ALIBABA 235
-    -  VLESS SG ALIBABA 400
-    -  VLESS SG ALIBABA 262
-    -  VLESS SG ALIBABA 502
-    -  VLESS SG ALIBABA 619
-    -  VLESS SG ALIBABA 457
-    -  VLESS SG ALIBABA 189
-    -  VLESS SG ALIBABA TLS
-    -  VLESS SG ALIBABA NTLS
     -  DIRECT
   url: 'http://www.gstatic.com/generate_204'
   interval: 300
@@ -600,35 +574,9 @@ proxy-groups:
   strategy: round-robin
   disable-udp: false
   proxies:
+    -  FALLBACK
     -  BEST PING
     -  LOAD-BALANCE
-    -  FALLBACK
-    -  IDL TLS
-    -  IDL NTLS
-    -  VLESS ARIS CF
-    -  WORKER GAME
-    -  UWU FF
-    -  VLESS KNC 443
-    -  VLESS KNC2 443
-    -  VLESS KNC KR 443
-    -  VLESS DO 443
-    -  TROJAN TARIK
-    -  VLESS ID MAHAL
-    -  VLESS ORACLE MAHAL
-    -  VLESS ALIBABA MAHAL
-    -  VLESS SG SERVLESS
-    -  VLESS ID SERVLESS
-    -  VLESS ID VLCFPAGE
-    -  VLESS SG VLCFPAGE
-    -  VLESS SG ALIBABA 235
-    -  VLESS SG ALIBABA 400
-    -  VLESS SG ALIBABA 262
-    -  VLESS SG ALIBABA 502
-    -  VLESS SG ALIBABA 619
-    -  VLESS SG ALIBABA 457
-    -  VLESS SG ALIBABA 189
-    -  VLESS SG ALIBABA TLS
-    -  VLESS SG ALIBABA NTLS
     -  DIRECT
   url: 'http://www.gstatic.com/generate_204'
   interval: 300
@@ -660,43 +608,15 @@ proxy-groups:
   url: 'http://www.gstatic.com/generate_204'
   interval: 300
 #⬜⬜
-#⬜⬜
-#⬜⬜
 #Koneksi Sosmed
 - name: "SOSMED"
   type: select #PILIIH SALAH SATU : SELECT,LOAD-BALANCE,FALLBACK,URL-TEST
   strategy: round-robin
   disable-udp: false
   proxies:
+    -  FALLBACK
     -  BEST PING
     -  LOAD-BALANCE
-    -  FALLBACK
-    -  IDL TLS
-    -  IDL NTLS
-    -  VLESS ARIS CF
-    -  WORKER GAME
-    -  UWU FF
-    -  VLESS KNC 443
-    -  VLESS KNC2 443
-    -  VLESS KNC KR 443
-    -  VLESS DO 443
-    -  TROJAN TARIK
-    -  VLESS ID MAHAL
-    -  VLESS ORACLE MAHAL
-    -  VLESS ALIBABA MAHAL
-    -  VLESS SG SERVLESS
-    -  VLESS ID SERVLESS
-    -  VLESS ID VLCFPAGE
-    -  VLESS SG VLCFPAGE
-    -  VLESS SG ALIBABA 235
-    -  VLESS SG ALIBABA 400
-    -  VLESS SG ALIBABA 262
-    -  VLESS SG ALIBABA 502
-    -  VLESS SG ALIBABA 619
-    -  VLESS SG ALIBABA 457
-    -  VLESS SG ALIBABA 189
-    -  VLESS SG ALIBABA TLS
-    -  VLESS SG ALIBABA NTLS
     -  DIRECT
   url: 'http://www.gstatic.com/generate_204'
   interval: 300
@@ -710,32 +630,6 @@ proxy-groups:
     -  BEST PING
     -  LOAD-BALANCE
     -  FALLBACK
-    -  IDL TLS
-    -  IDL NTLS
-    -  VLESS ARIS CF
-    -  WORKER GAME
-    -  UWU FF
-    -  VLESS KNC 443
-    -  VLESS KNC2 443
-    -  VLESS KNC KR 443
-    -  VLESS DO 443
-    -  TROJAN TARIK
-    -  VLESS ID MAHAL
-    -  VLESS ORACLE MAHAL
-    -  VLESS ALIBABA MAHAL
-    -  VLESS SG SERVLESS
-    -  VLESS ID SERVLESS
-    -  VLESS ID VLCFPAGE
-    -  VLESS SG VLCFPAGE
-    -  VLESS SG ALIBABA 235
-    -  VLESS SG ALIBABA 400
-    -  VLESS SG ALIBABA 262
-    -  VLESS SG ALIBABA 502
-    -  VLESS SG ALIBABA 619
-    -  VLESS SG ALIBABA 457
-    -  VLESS SG ALIBABA 189
-    -  VLESS SG ALIBABA TLS
-    -  VLESS SG ALIBABA NTLS
     -  DIRECT
     -  REJECT
   url: 'http://www.gstatic.com/generate_204'
@@ -750,32 +644,6 @@ proxy-groups:
     -  BEST PING
     -  LOAD-BALANCE
     -  FALLBACK
-    -  IDL TLS
-    -  IDL NTLS
-    -  VLESS ARIS CF
-    -  WORKER GAME
-    -  UWU FF
-    -  VLESS KNC 443
-    -  VLESS KNC2 443
-    -  VLESS KNC KR 443
-    -  VLESS DO 443
-    -  TROJAN TARIK
-    -  VLESS ID MAHAL
-    -  VLESS ORACLE MAHAL
-    -  VLESS ALIBABA MAHAL
-    -  VLESS SG SERVLESS
-    -  VLESS ID SERVLESS
-    -  VLESS ID VLCFPAGE
-    -  VLESS SG VLCFPAGE
-    -  VLESS SG ALIBABA 235
-    -  VLESS SG ALIBABA 400
-    -  VLESS SG ALIBABA 262
-    -  VLESS SG ALIBABA 502
-    -  VLESS SG ALIBABA 619
-    -  VLESS SG ALIBABA 457
-    -  VLESS SG ALIBABA 189
-    -  VLESS SG ALIBABA TLS
-    -  VLESS SG ALIBABA NTLS
     -  DIRECT
     -  REJECT
   url: 'http://www.gstatic.com/generate_204'
@@ -788,32 +656,6 @@ proxy-groups:
     -  BEST PING
     -  LOAD-BALANCE
     -  FALLBACK
-    -  IDL TLS
-    -  IDL NTLS
-    -  VLESS ARIS CF
-    -  WORKER GAME
-    -  UWU FF
-    -  VLESS KNC 443
-    -  VLESS KNC2 443
-    -  VLESS KNC KR 443
-    -  VLESS DO 443
-    -  TROJAN TARIK
-    -  VLESS ID MAHAL
-    -  VLESS ORACLE MAHAL
-    -  VLESS ALIBABA MAHAL
-    -  VLESS SG SERVLESS
-    -  VLESS ID SERVLESS
-    -  VLESS ID VLCFPAGE
-    -  VLESS SG VLCFPAGE
-    -  VLESS SG ALIBABA 235
-    -  VLESS SG ALIBABA 400
-    -  VLESS SG ALIBABA 262
-    -  VLESS SG ALIBABA 502
-    -  VLESS SG ALIBABA 619
-    -  VLESS SG ALIBABA 457
-    -  VLESS SG ALIBABA 189
-    -  VLESS SG ALIBABA TLS
-    -  VLESS SG ALIBABA NTLS
     -  DIRECT
     -  REJECT
   url: 'http://www.gstatic.com/generate_204'
@@ -823,10 +665,11 @@ proxy-groups:
 - name: "MARKETPLACE"
   type: select
   proxies:
-    -  BEST PING
-    -  LOAD-BALANCE
-    -  FALLBACK
     -  REJECT
+    -  LOAD-BALANCE
+    -  BEST PING
+    -  FALLBACK
+    -  DIRECT
   url: 'http://www.gstatic.com/generate_204'
   interval: 300
  #⬜⬜
@@ -834,10 +677,10 @@ proxy-groups:
 - name: "IKLAN"
   type: select
   proxies:
+    -  REJECT
     -  BEST PING
     -  LOAD-BALANCE
     -  FALLBACK
-    -  REJECT
   url: 'http://www.gstatic.com/generate_204'
   interval: 300
  #⬜⬜
@@ -847,14 +690,14 @@ proxy-groups:
   strategy: round-robin
   disable-udp: false
   proxies:
-    -  IDL TLS
-    -  IDL NTLS
-    -  VLESS ARIS CF
-    -  WORKER GAME
-    -  UWU FF
     -  VLESS KNC 443
     -  VLESS KNC2 443
+    -  VLESS ARIS CF
     -  VLESS KNC KR 443
+    -  IDL TLS
+    -  IDL NTLS
+    -  WORKER GAME
+    -  UWU FF
     -  VLESS DO 443
     -  TROJAN TARIK
     -  VLESS ID MAHAL
@@ -1102,8 +945,8 @@ rules:
 - RULE-SET,Facebook,FACEBOOK
 - RULE-SET,Personalads,IKLAN
 - RULE-SET,Basicads,IKLAN
-- RULE-SET,18+,18+
-- RULE-SET,Nsfw,18+
+- RULE-SET,18+,IKLAN
+- RULE-SET,Nsfw,IKLAN
 - RULE-SET,YouTube,YOUTUBE
 - RULE-SET,Speed,Global✅
 - RULE-SET,Zero,AKUN BANK

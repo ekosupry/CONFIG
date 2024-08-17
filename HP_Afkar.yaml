@@ -665,10 +665,11 @@ proxy-groups:
 - name: "MARKETPLACE"
   type: select
   proxies:
+    -  REJECT
     -  LOAD-BALANCE
     -  BEST PING
     -  FALLBACK
-    -  REJECT
+    -  DIRECT
   url: 'http://www.gstatic.com/generate_204'
   interval: 300
  #⬜⬜

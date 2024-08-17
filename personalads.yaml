@@ -86,6 +86,7 @@ payload:
   - DOMAIN-SUFFIX,imo88.website
   - DOMAIN-SUFFIX,betme88.com
   - DOMAIN-SUFFIX,pelita168-jos.com
+  - IP-CIDR,119.31.254.234/24
   - DOMAIN-KEYWORD,poker
   - DOMAIN-KEYWORD,texas
   - DOMAIN-KEYWORD,toto

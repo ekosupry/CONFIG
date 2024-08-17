@@ -625,8 +625,8 @@ proxy-groups:
   strategy: round-robin
   disable-udp: false
   proxies:
-    -  BEST PING
     -  LOAD-BALANCE
+    -  BEST PING
     -  FALLBACK
     -  DIRECT
   url: 'http://www.gstatic.com/generate_204'
@@ -659,17 +659,15 @@ proxy-groups:
   url: 'http://www.gstatic.com/generate_204'
   interval: 300
 #⬜⬜
-#⬜⬜
-#⬜⬜
 #Koneksi Sosmed
 - name: "SOSMED"
   type: select #PILIIH SALAH SATU : SELECT,LOAD-BALANCE,FALLBACK,URL-TEST
   strategy: round-robin
   disable-udp: false
   proxies:
+    -  FALLBACK
     -  BEST PING
     -  LOAD-BALANCE
-    -  FALLBACK
     -  DIRECT
   url: 'http://www.gstatic.com/generate_204'
   interval: 300
@@ -706,6 +704,7 @@ proxy-groups:
 - name: "AKUN BANK"
   type: select
   proxies:
+    -  RUANG GAME
     -  BEST PING
     -  LOAD-BALANCE
     -  FALLBACK
@@ -714,25 +713,12 @@ proxy-groups:
   url: 'http://www.gstatic.com/generate_204'
   interval: 300
  #⬜⬜
- #koneksi untuk porno,
-- name: "18+"
-  type: select
-  strategy: round-robin
-  disable-udp: false
-  proxies:
-    -  BEST PING
-    -  LOAD-BALANCE
-    -  FALLBACK
-    -  REJECT
-  url: 'http://www.gstatic.com/generate_204'
-  interval: 300
- #⬜⬜
  #koneksi untuk BELANJA,
 - name: "MARKETPLACE"
   type: select
   proxies:
-    -  BEST PING
     -  LOAD-BALANCE
+    -  BEST PING
     -  FALLBACK
     -  REJECT
   url: 'http://www.gstatic.com/generate_204'
@@ -742,10 +728,10 @@ proxy-groups:
 - name: "IKLAN"
   type: select
   proxies:
+    -  REJECT
     -  BEST PING
     -  LOAD-BALANCE
     -  FALLBACK
-    -  REJECT
   url: 'http://www.gstatic.com/generate_204'
   interval: 300
  #⬜⬜
@@ -757,6 +743,7 @@ proxy-groups:
   proxies:
     -  VLESS KNC 443
     -  VLESS KNC2 443
+    -  VLESS DO 443
     -  VLESS KNC KR 443
     -  INDOXRAY 443
     -  INDOXRAY NTLS

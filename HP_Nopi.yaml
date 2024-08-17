@@ -703,6 +703,7 @@ proxy-groups:
   strategy: round-robin
   disable-udp: false
   proxies:
+    -  DIRECT
     -  VLESS KNC 443
     -  VLESS KNC2 443
     -  VLESS ID MAHAL
@@ -711,7 +712,6 @@ proxy-groups:
     -  INDOXRAY 443
     -  INDOXRAY NTLS
     -  INDOXRAY GRPC
-    -  DIRECT
   url: 'http://www.gstatic.com/generate_204'
   interval: 300
 #⬜⬜

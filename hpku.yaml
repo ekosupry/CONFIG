@@ -79,8 +79,56 @@ tproxy-port: 9898
 mixed-port: 7890
 # ================= PG ==========
 proxies: 
+  - name: INDOXRAY 443
+    server: 104.17.3.81
+    port: 443
+    type: vmess
+    uuid: b809ba19-00e2-483d-b1bc-bd7633a678ff
+    alterId: 0
+    cipher: auto
+    tls: true
+    skip-cert-verify: true
+    servername: indoxray.me
+    network: ws
+    ws-opts:
+      path: /vmess
+      headers:
+        Host: indoxray.me
+    udp: true
+
+  - name: INDOXRAY NTLS
+    server: 104.17.3.81
+    port: 80
+    type: vmess
+    uuid: b809ba19-00e2-483d-b1bc-bd7633a678ff
+    alterId: 0
+    cipher: auto
+    tls: false
+    skip-cert-verify: true
+    servername: indoxray.me
+    network: ws
+    ws-opts:
+      path: /vmess
+      headers:
+        Host: indoxray.me
+    udp: true
+
+  - name: INDOXRAY GRPC
+    server: space.byu.id
+    port: 443
+    type: vmess
+    uuid: b809ba19-00e2-483d-b1bc-bd7633a678ff
+    alterId: 0
+    cipher: auto
+    network: grpc
+    tls: true
+    servername: indoxray.me
+    skip-cert-verify: true
+    grpc-opts:
+      grpc-service-name: vmess-grpc
+    
   - name: SG DO TLS
-    server: wc.vanillicon.com
+    server: space.byu.id
     port: 443
     type: vmess
     uuid: 46320791-b037-42cd-8ab0-59221a483a74
@@ -97,7 +145,7 @@ proxies:
     udp: true
 
   - name: SG DO NTLS
-    server: wc.vanillicon.com
+    server: space.byu.id
     port: 80
     type: vmess
     uuid: 46320791-b037-42cd-8ab0-59221a483a74
@@ -114,7 +162,7 @@ proxies:
     udp: true
 
   - name: SG DO GRPC
-    server: wc.vanillicon.com
+    server: space.byu.id
     port: 443
     type: vmess
     uuid: 46320791-b037-42cd-8ab0-59221a483a74
@@ -128,7 +176,7 @@ proxies:
       grpc-service-name: vmess-grpc
       
   - name: IDL TLS
-    server: wc.vanillicon.com
+    server: space.byu.id
     port: 443
     type: vmess
     uuid: cedf07b8-2f39-4c29-828d-c5f1911573e1
@@ -145,7 +193,7 @@ proxies:
     udp: true
 
   - name: IDL NTLS
-    server: wc.vanillicon.com
+    server: space.byu.id
     port: 80
     type: vmess
     uuid: cedf07b8-2f39-4c29-828d-c5f1911573e1
@@ -162,7 +210,7 @@ proxies:
     udp: true
 
   - name: VLESS ARIS CF
-    server: wc.vanillicon.com
+    server: space.byu.id
     port: 443
     type: vless
     uuid: 1b6c1745-992e-4aac-8685-266c090e50ea
@@ -179,7 +227,7 @@ proxies:
     udp: true
     
   - name: WORKER GAME
-    server: wc.vanillicon.com
+    server: space.byu.id
     port: 443
     type: vless
     uuid: 1e6611ce-aec7-4a64-8699-d7d731659f05
@@ -195,7 +243,7 @@ proxies:
     udp: true
 
   - name: UWU FF
-    server: wc.vanillicon.com
+    server: space.byu.id
     port: 443
     type: vless
     uuid: bcf50589-9654-4331-93a6-da896914ec47
@@ -211,7 +259,7 @@ proxies:
     udp: true
 
   - name: VLESS KNC 443
-    server: wc.vanillicon.com
+    server: space.byu.id
     port: 443
     type: vless
     uuid: 80510fd1-7a7d-4b83-a3db-05fb7f23dea5
@@ -228,7 +276,7 @@ proxies:
     udp: true
 
   - name: VLESS KNC2 443
-    server: wc.vanillicon.com
+    server: space.byu.id
     port: 443
     type: vless
     uuid: 80510fd1-7a7d-4b83-a3db-05fb7f23dea5
@@ -245,7 +293,7 @@ proxies:
     udp: true
 
   - name: VLESS KNC KR 443
-    server: wc.vanillicon.com
+    server: space.byu.id
     port: 443
     type: vless
     uuid: 4994c6a3-3242-45b8-a3e3-7d0fb82b0ece
@@ -262,7 +310,7 @@ proxies:
     udp: true
 
   - name: VLESS DO 443
-    server: wc.vanillicon.com
+    server: space.byu.id
     port: 443
     type: vless
     uuid: b0cb1b0b-f5ba-4ca4-a587-cfe48126bff7
@@ -279,7 +327,7 @@ proxies:
     udp: true 
     
   - name: TROJAN TARIK
-    server: wc.vanillicon.com
+    server: space.byu.id
     port: 443
     type: trojan
     password: 38460e7d-95bb-49e5-a90b-519ff74f182d
@@ -293,7 +341,7 @@ proxies:
     udp: true
     
   - name: VLESS ID MAHAL
-    server: wc.vanillicon.com
+    server: space.byu.id
     port: 443
     type: vless
     uuid: 6e6cb97e-57ac-4e8f-ad90-2b2fbb21bc45
@@ -310,7 +358,7 @@ proxies:
     udp: true
     
   - name: VLESS ORACLE MAHAL
-    server: wc.vanillicon.com
+    server: space.byu.id
     port: 443
     type: vless
     uuid: 6e6cb97e-57ac-4e8f-ad90-2b2fbb21bc45
@@ -327,7 +375,7 @@ proxies:
     udp: true
 
   - name: VLESS ALIBABA MAHAL
-    server: wc.vanillicon.com
+    server: space.byu.id
     port: 443
     type: vless
     uuid: 6e6cb97e-57ac-4e8f-ad90-2b2fbb21bc45
@@ -344,7 +392,7 @@ proxies:
     udp: true
 
   - name: VLESS SG SERVLESS
-    server: wc.vanillicon.com
+    server: space.byu.id
     port: 443
     type: vless
     uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
@@ -361,7 +409,7 @@ proxies:
     udp: true
 
   - name: VLESS ID SERVLESS
-    server: wc.vanillicon.com
+    server: space.byu.id
     port: 443
     type: vless
     uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
@@ -378,7 +426,7 @@ proxies:
     udp: true
 
   - name: VLESS ID VLCFPAGE
-    server: wc.vanillicon.com
+    server: space.byu.id
     port: 443
     type: vless
     uuid: 0bc51b14-02aa-40db-aeba-8a9569a7244d
@@ -395,7 +443,7 @@ proxies:
     udp: true
 
   - name: VLESS SG VLCFPAGE
-    server: wc.vanillicon.com
+    server: space.byu.id
     port: 443
     type: vless
     uuid: f69a85fe-4a6e-40f3-bcd0-f3c800388b58
@@ -412,7 +460,7 @@ proxies:
     udp: true
 
   - name: VLESS SG ALIBABA 235
-    server: wc.vanillicon.com
+    server: space.byu.id
     port: 443
     type: vless
     uuid: 89b2cbba-e6ac-487a-9481-976a0415eab9
@@ -429,7 +477,7 @@ proxies:
     udp: true
 
   - name: VLESS SG ALIBABA 400
-    server: wc.vanillicon.com
+    server: space.byu.id
     port: 443
     type: vless
     uuid: 34b3cbba-e6ac-495a-9481-976a0419eab9
@@ -446,7 +494,7 @@ proxies:
     udp: true
 
   - name: VLESS SG ALIBABA 262
-    server: wc.vanillicon.com
+    server: space.byu.id
     port: 443
     type: vless
     uuid: 89b3cbba-e6ac-485a-9481-976a0415eab9
@@ -463,7 +511,7 @@ proxies:
     udp: true
 
   - name: VLESS SG ALIBABA 502
-    server: wc.vanillicon.com
+    server: space.byu.id
     port: 443
     type: vless
     uuid: e4e7b149-8bd8-4266-8cbb-0987604dbc87
@@ -480,7 +528,7 @@ proxies:
     udp: true
 
   - name: VLESS SG ALIBABA 619
-    server: wc.vanillicon.com
+    server: space.byu.id
     port: 443
     type: vless
     uuid: 89b3cbba-e6ac-485a-9481-976a0415eab9
@@ -497,7 +545,7 @@ proxies:
     udp: true
 
   - name: VLESS SG ALIBABA 457
-    server: wc.vanillicon.com
+    server: space.byu.id
     port: 443
     type: vless
     uuid: a64f0cea-ca89-40e6-b316-b3badff1eb90
@@ -514,7 +562,7 @@ proxies:
     udp: true
 
   - name: VLESS SG ALIBABA 189
-    server: wc.vanillicon.com
+    server: space.byu.id
     port: 443
     type: vless
     uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
@@ -531,7 +579,7 @@ proxies:
     udp: true
 
   - name: VLESS SG ALIBABA TLS
-    server: wc.vanillicon.com
+    server: space.byu.id
     port: 443
     type: vless
     uuid: f9021b31-e8bd-4b4d-a1d3-c9b0c1476c44
@@ -548,7 +596,7 @@ proxies:
     udp: true
 
   - name: VLESS SG ALIBABA NTLS
-    server: wc.vanillicon.com
+    server: space.byu.id
     port: 80
     type: vless
     uuid: f9021b31-e8bd-4b4d-a1d3-c9b0c1476c44
@@ -574,6 +622,9 @@ proxy-groups:
   strategy: round-robin
   disable-udp: false
   proxies:
+    -  INDOXRAY 443
+    -  INDOXRAY NTLS
+    -  INDOXRAY GRPC
     -  SG DO TLS
     -  SG DO NTLS
     -  SG DO GRPC
@@ -610,9 +661,9 @@ proxy-groups:
   disable-udp: false
   proxies:
     -  BEST PING
+    -  PREMIUM
     -  LOAD-BALANCE
     -  FALLBACK
-    -  PREMIUM
     -  DIRECT
   url: 'http://www.gstatic.com/generate_204'
   interval: 300
@@ -623,9 +674,9 @@ proxy-groups:
   strategy: round-robin
   disable-udp: false
   proxies:
+    -  FALLBACK
     -  BEST PING
     -  LOAD-BALANCE
-    -  FALLBACK
     -  PREMIUM
     -  DIRECT
   url: 'http://www.gstatic.com/generate_204'
@@ -641,8 +692,11 @@ proxy-groups:
     -  VLESS ID MAHAL
     -  VLESS ID SERVLESS
     -  VLESS ID VLCFPAGE
+    -  INDOXRAY 443
+    -  INDOXRAY NTLS
+    -  INDOXRAY GRPC
   url: 'http://www.gstatic.com/generate_204'
-  interval: 300
+  interval: 120
 #Koneksi Sosmed
 - name: "PORT GAME"
   type: select #PILIIH SALAH SATU : SELECT,LOAD-BALANCE,FALLBACK,URL-TEST
@@ -654,6 +708,9 @@ proxy-groups:
     -  VLESS ID MAHAL
     -  VLESS ID SERVLESS
     -  VLESS ID VLCFPAGE
+    -  INDOXRAY 443
+    -  INDOXRAY NTLS
+    -  INDOXRAY GRPC
     -  DIRECT
   url: 'http://www.gstatic.com/generate_204'
   interval: 300
@@ -664,9 +721,9 @@ proxy-groups:
   strategy: round-robin
   disable-udp: false
   proxies:
+    -  FALLBACK
     -  BEST PING
     -  LOAD-BALANCE
-    -  FALLBACK
     -  PREMIUM
     -  DIRECT
   url: 'http://www.gstatic.com/generate_204'
@@ -679,9 +736,9 @@ proxy-groups:
   disable-udp: false
   proxies:
     -  BEST PING
+    -  PREMIUM
     -  LOAD-BALANCE
     -  FALLBACK
-    -  PREMIUM
     -  DIRECT
     -  REJECT
   url: 'http://www.gstatic.com/generate_204'
@@ -694,9 +751,9 @@ proxy-groups:
   disable-udp: false
   proxies:
     -  BEST PING
+    -  PREMIUM
     -  LOAD-BALANCE
     -  FALLBACK
-    -  PREMIUM
     -  DIRECT
     -  REJECT
   url: 'http://www.gstatic.com/generate_204'
@@ -706,11 +763,11 @@ proxy-groups:
 - name: "AKUN BANK"
   type: select
   proxies:
+    -  RUANG GAME
     -  BEST PING
     -  LOAD-BALANCE
     -  FALLBACK
     -  PREMIUM
-    -  RUANG GAME
     -  DIRECT
     -  REJECT
   url: 'http://www.gstatic.com/generate_204'
@@ -720,8 +777,8 @@ proxy-groups:
 - name: "MARKETPLACE"
   type: select
   proxies:
-    -  BEST PING
     -  LOAD-BALANCE
+    -  BEST PING
     -  FALLBACK
     -  PREMIUM
     -  REJECT
@@ -732,11 +789,11 @@ proxy-groups:
 - name: "IKLAN"
   type: select
   proxies:
+    -  REJECT
     -  BEST PING
     -  LOAD-BALANCE
     -  FALLBACK
     -  PREMIUM
-    -  REJECT
   url: 'http://www.gstatic.com/generate_204'
   interval: 300
  #⬜⬜
@@ -758,12 +815,15 @@ proxy-groups:
     -  SG DO TLS
     -  SG DO NTLS
     -  SG DO GRPC
-    -  VLESS ARIS CF
-    -  WORKER GAME
-    -  UWU FF
     -  VLESS KNC 443
     -  VLESS KNC2 443
     -  VLESS KNC KR 443
+    -  INDOXRAY 443
+    -  INDOXRAY NTLS
+    -  INDOXRAY GRPC
+    -  VLESS ARIS CF
+    -  WORKER GAME
+    -  UWU FF
     -  VLESS DO 443
     -  TROJAN TARIK
     -  VLESS ID MAHAL
@@ -796,7 +856,6 @@ proxy-groups:
     -  VLESS KNC 443
     -  VLESS KNC2 443
     -  VLESS KNC KR 443
-    -  VLESS DO 443
   url: 'http://www.gstatic.com/generate_204'
   interval: 300
  #⬜⬜
@@ -809,6 +868,9 @@ proxy-groups:
     -  SG DO TLS
     -  SG DO NTLS
     -  SG DO GRPC
+    -  INDOXRAY 443
+    -  INDOXRAY NTLS
+    -  INDOXRAY GRPC
     -  IDL TLS
     -  IDL NTLS
     -  VLESS ARIS CF

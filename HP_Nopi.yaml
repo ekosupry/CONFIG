@@ -661,9 +661,9 @@ proxy-groups:
   disable-udp: false
   proxies:
     -  BEST PING
+    -  PREMIUM
     -  LOAD-BALANCE
     -  FALLBACK
-    -  PREMIUM
     -  DIRECT
   url: 'http://www.gstatic.com/generate_204'
   interval: 300
@@ -674,9 +674,9 @@ proxy-groups:
   strategy: round-robin
   disable-udp: false
   proxies:
+    -  FALLBACK
     -  BEST PING
     -  LOAD-BALANCE
-    -  FALLBACK
     -  PREMIUM
     -  DIRECT
   url: 'http://www.gstatic.com/generate_204'
@@ -721,9 +721,9 @@ proxy-groups:
   strategy: round-robin
   disable-udp: false
   proxies:
+    -  FALLBACK
     -  BEST PING
     -  LOAD-BALANCE
-    -  FALLBACK
     -  PREMIUM
     -  DIRECT
   url: 'http://www.gstatic.com/generate_204'
@@ -736,9 +736,9 @@ proxy-groups:
   disable-udp: false
   proxies:
     -  BEST PING
+    -  PREMIUM
     -  LOAD-BALANCE
     -  FALLBACK
-    -  PREMIUM
     -  DIRECT
     -  REJECT
   url: 'http://www.gstatic.com/generate_204'
@@ -751,9 +751,9 @@ proxy-groups:
   disable-udp: false
   proxies:
     -  BEST PING
+    -  PREMIUM
     -  LOAD-BALANCE
     -  FALLBACK
-    -  PREMIUM
     -  DIRECT
     -  REJECT
   url: 'http://www.gstatic.com/generate_204'
@@ -763,11 +763,11 @@ proxy-groups:
 - name: "AKUN BANK"
   type: select
   proxies:
+    -  RUANG GAME
     -  BEST PING
     -  LOAD-BALANCE
     -  FALLBACK
     -  PREMIUM
-    -  RUANG GAME
     -  DIRECT
     -  REJECT
   url: 'http://www.gstatic.com/generate_204'
@@ -777,8 +777,8 @@ proxy-groups:
 - name: "MARKETPLACE"
   type: select
   proxies:
-    -  BEST PING
     -  LOAD-BALANCE
+    -  BEST PING
     -  FALLBACK
     -  PREMIUM
     -  REJECT
@@ -789,11 +789,11 @@ proxy-groups:
 - name: "IKLAN"
   type: select
   proxies:
+    -  REJECT
     -  BEST PING
     -  LOAD-BALANCE
     -  FALLBACK
     -  PREMIUM
-    -  REJECT
   url: 'http://www.gstatic.com/generate_204'
   interval: 300
  #⬜⬜

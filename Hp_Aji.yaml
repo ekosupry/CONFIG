@@ -988,7 +988,35 @@ rule-providers:
     behavior: classical
     path: "./rule_provider/speed.yaml"
     url: "https://raw.githubusercontent.com/ekosupry/CONFIG/main/speed.yaml"
-
+  Judol:
+    type: http
+    behavior: classical
+    path: "./rule_provider/Judol.yaml"
+    url: "https://raw.githubusercontent.com/ekosupry/CONFIG/main/Judi_Online.yaml"
+# ================= RULES  ==================
+rules:
+- IP-CIDR,198.18.0.1/16,REJECT,no-resolve
+- RULE-SET,Sosmed,SOSMED
+- RULE-SET,Market,MARKETPLACE
+- RULE-SET,Bukalapak,MARKETPLACE
+- RULE-SET,Tokopedia,MARKETPLACE
+- RULE-SET,Shopee,MARKETPLACE
+- RULE-SET,Nonton,STREAMING
+- RULE-SET,Indo,AKUN BANK
+- RULE-SET,Bank,AKUN BANK
+- RULE-SET,Portgames,PORT GAME
+- RULE-SET,Gaming,RUANG GAME
+- RULE-SET,Game-TCP,RUANG GAME
+- RULE-SET,WA,WHATSAPP
+- RULE-SET,Facebook,FACEBOOK
+- RULE-SET,Personalads,IKLAN
+- RULE-SET,Basicads,IKLAN
+- RULE-SET,18+,IKLAN
+- RULE-SET,Nsfw,IKLAN
+- RULE-SET,YouTube,YOUTUBE
+- RULE-SET,Speed,Global✅
+- RULE-SET,Zero,AKUN BANK
+- RULE-SET,Judol,IKLAN
 # ================= RULES  ==================
 rules:
 - IP-CIDR,198.18.0.1/16,REJECT,no-resolve

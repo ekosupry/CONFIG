@@ -988,7 +988,11 @@ rule-providers:
     behavior: classical
     path: "./rule_provider/speed.yaml"
     url: "https://raw.githubusercontent.com/ekosupry/CONFIG/main/speed.yaml"
-
+  Judol:
+    type: http
+    behavior: classical
+    path: "./rule_provider/Judol.yaml"
+    url: "https://raw.githubusercontent.com/ekosupry/CONFIG/main/Judi_Online.yaml"
 # ================= RULES  ==================
 rules:
 - IP-CIDR,198.18.0.1/16,REJECT,no-resolve
@@ -1012,6 +1016,7 @@ rules:
 - RULE-SET,YouTube,YOUTUBE
 - RULE-SET,Speed,Global✅
 - RULE-SET,Zero,AKUN BANK
+- RULE-SET,Judol,IKLAN
 # Local Area Network
 - IP-CIDR,192.168.0.0/16,DIRECT
 - IP-CIDR,10.0.0.0/8,DIRECT

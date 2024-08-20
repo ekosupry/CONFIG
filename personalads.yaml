@@ -1,4 +1,6 @@
 payload:
+  # PERSONAL BLOK
+  - DOMAIN-SUFFIX,hot51.art
   # TikTok
   - DOMAIN-SUFFIX,byteoversea.com
   - DOMAIN-SUFFIX,ibytedtos.com

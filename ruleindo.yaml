@@ -23,6 +23,7 @@ payload:
 - DOMAIN-SUFFIX,zello.com
 - DOMAIN-KEYWORD,zello
 - DOMAIN-SUFFIX,github.com
+- DOMAIN-SUFFIX,pastebin.com
 - DOMAIN-KEYWORD,github
 - DOMAIN-SUFFIX,howdy.id
 - DOMAIN-SUFFIX,detik.com

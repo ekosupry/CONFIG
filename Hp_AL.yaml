@@ -574,9 +574,9 @@ proxy-groups:
   strategy: round-robin
   disable-udp: false
   proxies:
+    -  LOAD-BALANCE
     -  FALLBACK
     -  BEST PING
-    -  LOAD-BALANCE
     -  DIRECT
   url: 'http://www.gstatic.com/generate_204'
   interval: 300
@@ -599,11 +599,10 @@ proxy-groups:
   strategy: round-robin
   disable-udp: false
   proxies:
-    -  VLESS KNC 443
-    -  VLESS KNC2 443
-    -  VLESS ID MAHAL
-    -  VLESS ID SERVLESS
-    -  VLESS ID VLCFPAGE
+    -  RUANG GAME
+    -  BEST PING
+    -  LOAD-BALANCE
+    -  FALLBACK
     -  DIRECT
   url: 'http://www.gstatic.com/generate_204'
   interval: 300
@@ -641,9 +640,9 @@ proxy-groups:
   strategy: round-robin
   disable-udp: false
   proxies:
+    -  FALLBACK
     -  BEST PING
     -  LOAD-BALANCE
-    -  FALLBACK
     -  DIRECT
     -  REJECT
   url: 'http://www.gstatic.com/generate_204'
@@ -653,11 +652,11 @@ proxy-groups:
 - name: "AKUN BANK"
   type: select
   proxies:
+    -  RUANG GAME
     -  BEST PING
     -  LOAD-BALANCE
     -  FALLBACK
     -  DIRECT
-    -  REJECT
   url: 'http://www.gstatic.com/generate_204'
   interval: 300
  #⬜⬜

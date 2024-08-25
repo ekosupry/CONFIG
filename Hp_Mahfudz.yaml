@@ -674,9 +674,9 @@ proxy-groups:
   strategy: round-robin
   disable-udp: false
   proxies:
+    -  LOAD-BALANCE
     -  FALLBACK
     -  BEST PING
-    -  LOAD-BALANCE
     -  PREMIUM
     -  DIRECT
   url: 'http://www.gstatic.com/generate_204'
@@ -692,9 +692,6 @@ proxy-groups:
     -  VLESS ID MAHAL
     -  VLESS ID SERVLESS
     -  VLESS ID VLCFPAGE
-    -  INDOXRAY 443
-    -  INDOXRAY NTLS
-    -  INDOXRAY GRPC
   url: 'http://www.gstatic.com/generate_204'
   interval: 120
 #Koneksi Sosmed
@@ -703,14 +700,9 @@ proxy-groups:
   strategy: round-robin
   disable-udp: false
   proxies:
-    -  VLESS KNC 443
-    -  VLESS KNC2 443
-    -  VLESS ID MAHAL
-    -  VLESS ID SERVLESS
-    -  VLESS ID VLCFPAGE
-    -  INDOXRAY 443
-    -  INDOXRAY NTLS
-    -  INDOXRAY GRPC
+    -  RUANG GAME
+    -  BEST PING
+    -  PREMIUM
     -  DIRECT
   url: 'http://www.gstatic.com/generate_204'
   interval: 300

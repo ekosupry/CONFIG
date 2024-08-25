@@ -80,7 +80,7 @@ proxies:
     server: 104.17.3.81
     port: 443
     type: vless
-    uuid: 76c34260-05fb-11ef-91e9-1577c1651679
+    uuid: dbc3a360-62f2-11ef-ab89-1577c1651679
     alterId: 0
     cipher: auto
     tls: true
@@ -88,7 +88,7 @@ proxies:
     servername: sg-vless-ws.bypass.id
     network: ws
     ws-opts:
-      path: /howdy
+      path: /hello
       headers:
         Host: sg-vless-ws.bypass.id
     udp: true

@@ -104,10 +104,6 @@ proxies:
     skip-cert-verify: true
     servername: sg-vless-xtls.bypass.id
     network: tcp
-    ws-opts:
-      path: /
-      headers:
-        Host: 
     udp: true
 
   - name: VMESS SG HE 443

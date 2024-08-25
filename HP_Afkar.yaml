@@ -599,12 +599,11 @@ proxy-groups:
   strategy: round-robin
   disable-udp: false
   proxies:
+    -  RUANG GAME
+    -  BEST PING
+    -  FALLBACK
+    -  LOAD-BALANCE
     -  DIRECT
-    -  VLESS KNC 443
-    -  VLESS KNC2 443
-    -  VLESS ID MAHAL
-    -  VLESS ID SERVLESS
-    -  VLESS ID VLCFPAGE
   url: 'http://www.gstatic.com/generate_204'
   interval: 300
 #⬜⬜

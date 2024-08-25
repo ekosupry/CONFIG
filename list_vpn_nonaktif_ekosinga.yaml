@@ -137,7 +137,7 @@ proxies:
     servername: 10.lowh.net
     network: ws
     ws-opts:
-      path: /worryfree
+      path: /hello
       headers:
         Host: 10.lowh.net
     udp: true

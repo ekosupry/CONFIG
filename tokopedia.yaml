@@ -1,3 +1,5 @@
 payload:
   # Tokopedia
   - DOMAIN-KEYWORD,tokopedia.link
+  - DOMAIN-SUFFIX,capcutapi.com
+  - DOMAIN-KEYWORD,capcut

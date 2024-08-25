@@ -66,14 +66,14 @@ proxies:
     server: 104.17.3.81
     port: 443
     type: trojan
-    password: f2c32630-05fa-11ef-83f5-1577c1651679
+    password: c0367ce0-62f1-11ef-86f4-1577c1651679
     skip-cert-verify: true
-    sni: 002.htmlcdn.net
+    sni: sg-trojan.1server.co
     network: ws
     ws-opts:
       path: /welcome
       headers:
-        Host: 002.htmlcdn.net
+        Host: sg-trojan.1server.co
     udp: true
 
   - name: VLESS SG HE 443

@@ -107,7 +107,7 @@ proxies:
     ws-opts:
       path: /
       headers:
-        Host: sg-vless-xtls.bypass.id
+        Host: 
     udp: true
 
   - name: VMESS SG HE 443

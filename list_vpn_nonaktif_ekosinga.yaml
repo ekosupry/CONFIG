@@ -93,19 +93,6 @@ proxies:
         Host: sg-vless-ws.bypass.id
     udp: true
 
-  - name: VLESS SG X 443
-    server: 104.17.3.81
-    port: 443
-    type: vless
-    uuid: 85c0c1a0-62f3-11ef-9e31-1577c1651679
-    alterId: 0
-    cipher: auto
-    tls: true
-    skip-cert-verify: true
-    servername: sg-vless-xtls.bypass.id
-    network: tcp
-    udp: true
-
   - name: VMESS SG HE 443
     server: 104.17.3.81
     port: 443

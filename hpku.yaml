@@ -80,7 +80,7 @@ mixed-port: 7890
 # ================= PG ==========
 proxies: 
   - name: INDOXRAY 443
-    server: 104.17.3.81
+    server: space.byu.id
     port: 443
     type: vmess
     uuid: b809ba19-00e2-483d-b1bc-bd7633a678ff
@@ -97,7 +97,7 @@ proxies:
     udp: true
 
   - name: INDOXRAY NTLS
-    server: 104.17.3.81
+    server: space.byu.id
     port: 80
     type: vmess
     uuid: b809ba19-00e2-483d-b1bc-bd7633a678ff
@@ -674,9 +674,9 @@ proxy-groups:
   strategy: round-robin
   disable-udp: false
   proxies:
+    -  LOAD-BALANCE
     -  FALLBACK
     -  BEST PING
-    -  LOAD-BALANCE
     -  PREMIUM
     -  DIRECT
   url: 'http://www.gstatic.com/generate_204'
@@ -703,14 +703,9 @@ proxy-groups:
   strategy: round-robin
   disable-udp: false
   proxies:
-    -  VLESS KNC 443
-    -  VLESS KNC2 443
-    -  VLESS ID MAHAL
-    -  VLESS ID SERVLESS
-    -  VLESS ID VLCFPAGE
-    -  INDOXRAY 443
-    -  INDOXRAY NTLS
-    -  INDOXRAY GRPC
+    -  RUANG GAME
+    -  BEST PING
+    -  PREMIUM
     -  DIRECT
   url: 'http://www.gstatic.com/generate_204'
   interval: 300
@@ -750,10 +745,10 @@ proxy-groups:
   strategy: round-robin
   disable-udp: false
   proxies:
+    -  FALLBACK
     -  BEST PING
     -  PREMIUM
     -  LOAD-BALANCE
-    -  FALLBACK
     -  DIRECT
     -  REJECT
   url: 'http://www.gstatic.com/generate_204'

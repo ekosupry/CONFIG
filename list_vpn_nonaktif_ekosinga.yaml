@@ -97,17 +97,17 @@ proxies:
     server: 104.17.3.81
     port: 443
     type: vmess
-    uuid: 14735480-05fa-11ef-9f13-1577c1651679
+    uuid: 005473a0-62f5-11ef-a58f-1577c1651679
     alterId: 0
     cipher: auto
     tls: true
     skip-cert-verify: true
-    servername: 001.htmlcdn.net
+    servername: 10.lowh.net
     network: ws
     ws-opts:
       path: /hello
       headers:
-        Host: 001.htmlcdn.net
+        Host: 10.lowh.net
     udp: true
 
 # port 80

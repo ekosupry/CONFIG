@@ -1,5 +1,19 @@
 proxies:
 #Singapura port 443
+  - name: TROJAN US 443
+    server: 104.17.3.81
+    port: 443
+    type: trojan
+    password: 7479cad0-62f5-11ef-acec-1577c1651679
+    skip-cert-verify: true
+    sni: 3.lowh.net
+    network: ws
+    ws-opts:
+      path: /welcome
+      headers:
+        Host: 3.lowh.net
+    udp: true
+
   - name: TROJAN SG HERZA 443
     server: 104.17.3.81
     port: 443

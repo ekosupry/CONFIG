@@ -1,9 +1,7 @@
 proxies:
-
 # Akun INDO port 443
-
   - name: TROJAN SANGGORO 443
-    server: 104.18.3.2
+    server: 104.17.3.81
     port: 443
     type: trojan
     password: 304030a0-2349-11ef-bbed-1577c1651679
@@ -17,7 +15,7 @@ proxies:
     udp: true
 
   - name: TROJAN Biznet 443
-    server: 104.18.3.2
+    server: 104.17.3.81
     port: 443
     type: trojan
     password: 430689a0-05fb-11ef-9733-1577c1651679
@@ -31,7 +29,7 @@ proxies:
     udp: true
 
   - name: VMESS SANGGORO 443
-    server: 104.18.3.2
+    server: 104.17.3.81
     port: 443
     type: vmess
     uuid: b5ec3460-05fb-11ef-820d-1577c1651679
@@ -48,7 +46,7 @@ proxies:
     udp: true
 
   - name: VMESS ID HSP 443
-    server: 104.18.3.2
+    server: 104.17.3.81
     port: 443
     type: vmess
     uuid: 401b5500-4719-11ef-9959-1577c1651679
@@ -65,7 +63,7 @@ proxies:
     udp: true
 
   - name: TROJAN ID HSP 443
-    server: 104.18.3.2
+    server: 104.17.3.81
     port: 443
     type: trojan
     password: 90d1ddc0-4719-11ef-9f4e-1577c1651679
@@ -80,7 +78,7 @@ proxies:
 
 #port 80
   - name: TROJAN SANGGORO 80
-    server: 104.18.3.2
+    server: 104.17.3.81
     port: 80
     type: trojan
     password: 84941e50-4717-11ef-8718-1577c1651679
@@ -94,7 +92,7 @@ proxies:
     udp: true
 
   - name: TROJAN ID HSP 80
-    server: 104.18.3.2
+    server: 104.17.3.81
     port: 80
     type: trojan
     password: de15ba10-4719-11ef-b018-1577c1651679
@@ -108,7 +106,7 @@ proxies:
     udp: true
 
   - name: VMESS SANGGORO 80
-    server: 104.18.3.2
+    server: 104.17.3.81
     port: 80
     type: vmess
     uuid: d0711820-2354-11ef-a485-1577c1651679

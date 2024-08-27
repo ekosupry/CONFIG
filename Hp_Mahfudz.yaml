@@ -660,8 +660,8 @@ proxy-groups:
   strategy: round-robin
   disable-udp: false
   proxies:
-    -  BEST PING
     -  PREMIUM
+    -  BEST PING
     -  LOAD-BALANCE
     -  FALLBACK
     -  DIRECT
@@ -727,8 +727,8 @@ proxy-groups:
   strategy: round-robin
   disable-udp: false
   proxies:
-    -  BEST PING
     -  PREMIUM
+    -  BEST PING
     -  LOAD-BALANCE
     -  FALLBACK
     -  DIRECT

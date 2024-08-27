@@ -651,11 +651,8 @@ proxy-groups:
   disable-udp: false
   proxies:
     -  DIRECT
-    -  VLESS KNC 443
-    -  VLESS KNC2 443
-    -  VLESS ID MAHAL
-    -  VLESS ID SERVLESS
-    -  VLESS ID VLCFPAGE
+    -  RUANG GAME
+    -  BEST PING
   url: 'http://www.gstatic.com/generate_204'
   interval: 300
 #⬜⬜

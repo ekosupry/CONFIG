@@ -650,9 +650,9 @@ proxy-groups:
   strategy: round-robin
   disable-udp: false
   proxies:
+    -  DIRECT
     -  RUANG GAME
     -  BEST PING
-    -  DIRECT
   url: 'http://www.gstatic.com/generate_204'
   interval: 300
 #⬜⬜
@@ -689,9 +689,9 @@ proxy-groups:
   strategy: round-robin
   disable-udp: false
   proxies:
-    -  FALLBACK
     -  BEST PING
     -  LOAD-BALANCE
+    -  FALLBACK
     -  DIRECT
     -  REJECT
   url: 'http://www.gstatic.com/generate_204'
@@ -1014,29 +1014,6 @@ rules:
 - RULE-SET,Speed,Global✅
 - RULE-SET,Zero,AKUN BANK
 - RULE-SET,Judol,IKLAN
-# ================= RULES  ==================
-rules:
-- IP-CIDR,198.18.0.1/16,REJECT,no-resolve
-- RULE-SET,Sosmed,SOSMED
-- RULE-SET,Market,MARKETPLACE
-- RULE-SET,Bukalapak,MARKETPLACE
-- RULE-SET,Tokopedia,MARKETPLACE
-- RULE-SET,Shopee,MARKETPLACE
-- RULE-SET,Nonton,STREAMING
-- RULE-SET,Indo,AKUN BANK
-- RULE-SET,Bank,AKUN BANK
-- RULE-SET,Portgames,PORT GAME
-- RULE-SET,Gaming,RUANG GAME
-- RULE-SET,Game-TCP,RUANG GAME
-- RULE-SET,WA,WHATSAPP
-- RULE-SET,Facebook,FACEBOOK
-- RULE-SET,Personalads,IKLAN
-- RULE-SET,Basicads,IKLAN
-- RULE-SET,18+,IKLAN
-- RULE-SET,Nsfw,IKLAN
-- RULE-SET,YouTube,YOUTUBE
-- RULE-SET,Speed,Global✅
-- RULE-SET,Zero,AKUN BANK
 # Local Area Network
 - IP-CIDR,192.168.0.0/16,DIRECT
 - IP-CIDR,10.0.0.0/8,DIRECT

@@ -1,4 +1,4 @@
-# SINGAPURA DIGITAL OCEAN EXP DATE: 29/08/2024
+# SINGAPURA DIGITAL OCEAN EXP DATE: 27/09/2024
 # PREMIUM 10rb/device aktif 1 bulan,2 device 15rb
 # ==== Paket ILMUPEDIA ======
 # Buy paket TSEL dial *363*844# / *363*555#
@@ -131,7 +131,7 @@ proxies:
     server: 104.18.3.2
     port: 443
     type: vmess
-    uuid: 46320791-b037-42cd-8ab0-59221a483a74
+    uuid: 99f4b372-865d-4bf5-a9ad-f9afd7d786a8
     alterId: 0
     cipher: auto
     tls: true
@@ -148,7 +148,7 @@ proxies:
     server: 104.18.3.2
     port: 80
     type: vmess
-    uuid: 46320791-b037-42cd-8ab0-59221a483a74
+    uuid: 99f4b372-865d-4bf5-a9ad-f9afd7d786a8
     alterId: 0
     cipher: auto
     tls: false
@@ -165,7 +165,7 @@ proxies:
     server: 104.18.3.2
     port: 443
     type: vmess
-    uuid: 46320791-b037-42cd-8ab0-59221a483a74
+    uuid: 99f4b372-865d-4bf5-a9ad-f9afd7d786a8
     alterId: 0
     cipher: auto
     network: grpc
@@ -702,7 +702,6 @@ proxy-groups:
   proxies:
     -  RUANG GAME
     -  BEST PING
-    -  FALLBACK
     -  PREMIUM
     -  DIRECT
   url: 'http://www.gstatic.com/generate_204'
@@ -743,10 +742,10 @@ proxy-groups:
   strategy: round-robin
   disable-udp: false
   proxies:
-    -  FALLBACK
     -  BEST PING
     -  PREMIUM
     -  LOAD-BALANCE
+    -  FALLBACK
     -  DIRECT
     -  REJECT
   url: 'http://www.gstatic.com/generate_204'
@@ -770,11 +769,11 @@ proxy-groups:
 - name: "MARKETPLACE"
   type: select
   proxies:
-    -  REJECT
     -  LOAD-BALANCE
     -  BEST PING
     -  FALLBACK
     -  PREMIUM
+    -  REJECT
   url: 'http://www.gstatic.com/generate_204'
   interval: 300
  #⬜⬜

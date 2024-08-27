@@ -660,8 +660,8 @@ proxy-groups:
   strategy: round-robin
   disable-udp: false
   proxies:
-    -  BEST PING
     -  PREMIUM
+    -  BEST PING
     -  LOAD-BALANCE
     -  FALLBACK
     -  DIRECT
@@ -727,8 +727,8 @@ proxy-groups:
   strategy: round-robin
   disable-udp: false
   proxies:
-    -  BEST PING
     -  PREMIUM
+    -  BEST PING
     -  LOAD-BALANCE
     -  FALLBACK
     -  DIRECT
@@ -769,11 +769,11 @@ proxy-groups:
 - name: "MARKETPLACE"
   type: select
   proxies:
+    -  REJECT
     -  LOAD-BALANCE
     -  BEST PING
     -  FALLBACK
     -  PREMIUM
-    -  REJECT
   url: 'http://www.gstatic.com/generate_204'
   interval: 300
  #⬜⬜

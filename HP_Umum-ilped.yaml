@@ -243,6 +243,23 @@ proxies:
         Host: sg.ryo.biz.id
     udp: true
 
+  - name: VLESS RIO BIZ NTLS
+    server: 104.18.3.2
+    port: 80
+    type: vless
+    uuid: 9afa7e48-1af0-418f-b063-04bc7776b70e
+    alterId: 0
+    cipher: auto
+    tls: false
+    skip-cert-verify: true
+    servername: sg.ryo.biz.id
+    network: ws
+    ws-opts:
+      path: /vless-ws
+      headers:
+        Host: sg.ryo.biz.id
+    udp: true
+
   - name: WORKER GAME
     server: 104.18.3.2
     port: 443
@@ -638,6 +655,7 @@ proxy-groups:
     -  WORKER GAME
     -  UWU FF
     -  VLESS RIO BIZ
+    -  VLESS RIO BIZ NTLS
     -  VLESS KNC 443
     -  VLESS KNC2 443
     -  VLESS KNC KR 443
@@ -800,6 +818,7 @@ proxy-groups:
     -  VLESS DO LOTUS NTLS
     -  VLESS DO 443
     -  VLESS RIO BIZ
+    -  VLESS RIO BIZ NTLS
     -  VLESS KNC KR 443
     -  INDO VPN 443
     -  INDO VPN NTLS
@@ -841,6 +860,7 @@ proxy-groups:
     -  VLESS DO LOTUS
     -  VLESS DO LOTUS NTLS
     -  VLESS RIO BIZ
+    -  VLESS RIO BIZ NTLS
     -  TROJAN TARIK
     -  INDO VPN 443
     -  INDO VPN NTLS
@@ -877,6 +897,7 @@ proxy-groups:
     -  INDOXRAY GRPC
     -  VLESS ARIS CF
     -  VLESS RIO BIZ
+    -  VLESS RIO BIZ NTLS
     -  WORKER GAME
     -  UWU FF
     -  VLESS KNC 443

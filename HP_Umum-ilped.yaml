@@ -545,7 +545,7 @@ proxies:
     ws-opts:
       path: /?ed
       headers:
-        Host: pages.dev.
+        Host: xn--4s9h.pages.dev
     udp: true
 
   - name: VLESS SG ALIBABA TLS

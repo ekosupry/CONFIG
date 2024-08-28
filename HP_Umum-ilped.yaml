@@ -175,7 +175,7 @@ proxies:
         Host: vvipp.klmpk.me
     udp: true
 
-  - name: VLESS ARIS CF
+  - name: VLESS ARIS TLS
     server: 104.18.3.2
     port: 443
     type: vless
@@ -183,6 +183,23 @@ proxies:
     alterId: 0
     cipher: auto
     tls: true
+    skip-cert-verify: true
+    servername: server.arisctunnel.me
+    network: ws
+    ws-opts:
+      path: /?ed=2048
+      headers:
+        Host: server.arisctunnel.me
+    udp: true
+
+  - name: VLESS ARIS NTLS
+    server: 104.18.3.2
+    port: 80
+    type: vless
+    uuid: 1b6c1745-992e-4aac-8685-266c090e50ea
+    alterId: 0
+    cipher: auto
+    tls: false
     skip-cert-verify: true
     servername: server.arisctunnel.me
     network: ws
@@ -693,7 +710,8 @@ proxy-groups:
   strategy: round-robin
   disable-udp: false
   proxies:
-    -  VLESS ARIS CF
+    -  VLESS ARIS TLS
+    -  VLESS ARIS NTLS
     -  VLESS DO LOTUS
     -  VLESS DO LOTUS NTLS
     -  VLESS DO TLS
@@ -883,7 +901,8 @@ proxy-groups:
     -  INDOXRAY GRPC
     -  IDL TLS
     -  IDL NTLS
-    -  VLESS ARIS CF
+    -  VLESS ARIS TLS
+    -  VLESS ARIS NTLS
     -  WORKER GAME
     -  UWU FF
     -  VLESS ID MAHAL
@@ -921,6 +940,8 @@ proxy-groups:
     -  VLESS DO LOTUS NTLS
     -  VLESS RIO BIZ
     -  VLESS RIO BIZ NTLS
+    -  VLESS ARIS TLS
+    -  VLESS ARIS NTLS
     -  TROJAN TARIK
     -  INDO VPN 443
     -  INDO VPN NTLS
@@ -955,7 +976,8 @@ proxy-groups:
     -  INDO VPN 443
     -  INDO VPN NTLS
     -  INDOXRAY GRPC
-    -  VLESS ARIS CF
+    -  VLESS ARIS TLS
+    -  VLESS ARIS NTLS
     -  VLESS RIO BIZ
     -  VLESS RIO BIZ NTLS
     -  WORKER GAME

@@ -804,16 +804,16 @@ proxy-groups:
   strategy: round-robin
   disable-udp: false
   proxies:
-    -  SG DO TLS
-    -  SG DO NTLS
     -  SG DO GRPC
+    -  SG DO TLS
     -  VLESS KNC 443
     -  VLESS KNC2 443
+    -  SG DO NTLS
+    -  VLESS ARIS CF
     -  VLESS KNC KR 443
     -  INDOXRAY 443
     -  INDOXRAY NTLS
     -  INDOXRAY GRPC
-    -  VLESS ARIS CF
     -  WORKER GAME
     -  UWU FF
     -  VLESS DO 443

@@ -1077,6 +1077,17 @@ proxy-groups:
   url: 'http://www.gstatic.com/generate_204'
   interval: 300
  #⬜⬜
+ #Koneksi Sosmed
+- name: "PREMIUM"
+  type: fallback #PILIIH SALAH SATU : SELECT,LOAD-BALANCE,FALLBACK,URL-TEST
+  strategy: round-robin
+  disable-udp: false
+  proxies:
+    -  SG DO GRPC
+    -  SG DO TLS
+    -  SG DO NTLS
+  url: 'http://www.gstatic.com/generate_204'
+  interval: 30
 #🟡_________________________________PROCY-GROUP__________________________________🟡
 # Clash for Windows
 cfw-bypass:

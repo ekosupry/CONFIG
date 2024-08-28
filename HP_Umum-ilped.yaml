@@ -343,7 +343,7 @@ proxies:
         Host: kr.free.knc.my.id
     udp: true
 
-  - name: VLESS DO 443
+  - name: VLESS DO TLS
     server: 104.18.3.2
     port: 443
     type: vless
@@ -375,6 +375,40 @@ proxies:
       path: /vless-ws
       headers:
         Host: sgdo1.aframdani.cloud
+    udp: true 
+
+  - name: VLESS DO 443
+    server: 104.18.3.2
+    port: 443
+    type: vless
+    uuid: b0cb1b0b-f5ba-4ca4-a587-cfe48126bff7
+    alterId: 0
+    cipher: auto
+    tls: true
+    skip-cert-verify: true
+    servername: xcl.aframdani.cloud
+    network: ws
+    ws-opts:
+      path: /vless-ws
+      headers:
+        Host: xcl.aframdani.cloud
+    udp: true 
+
+  - name: VLESS DO 80
+    server: 104.18.3.2
+    port: 80
+    type: vless
+    uuid: b0cb1b0b-f5ba-4ca4-a587-cfe48126bff7
+    alterId: 0
+    cipher: auto
+    tls: false
+    skip-cert-verify: true
+    servername: xcl.aframdani.cloud
+    network: ws
+    ws-opts:
+      path: /vless-ws
+      headers:
+        Host: xcl.aframdani.cloud
     udp: true 
     
   - name: VLESS ID MAHAL
@@ -662,8 +696,10 @@ proxy-groups:
     -  VLESS ARIS CF
     -  VLESS DO LOTUS
     -  VLESS DO LOTUS NTLS
-    -  VLESS DO 443
+    -  VLESS DO TLS
     -  VLESS DO NTLS
+    -  VLESS DO 443
+    -  VLESS DO 80
     -  WORKER GAME
     -  UWU FF
     -  VLESS RIO BIZ
@@ -834,8 +870,10 @@ proxy-groups:
     -  VLESS KNC2 443
     -  VLESS DO LOTUS
     -  VLESS DO LOTUS NTLS
-    -  VLESS DO 443
+    -  VLESS DO TLS
     -  VLESS DO NTLS
+    -  VLESS DO 443
+    -  VLESS DO 80
     -  VLESS RIO BIZ
     -  VLESS RIO BIZ NTLS
     -  VLESS KNC KR 443
@@ -875,8 +913,10 @@ proxy-groups:
     -  VLESS KNC 443
     -  VLESS KNC2 443
     -  VLESS KNC KR 443
-    -  VLESS DO 443
+    -  VLESS DO TLS
     -  VLESS DO NTLS
+    -  VLESS DO 443
+    -  VLESS DO 80
     -  VLESS DO LOTUS
     -  VLESS DO LOTUS NTLS
     -  VLESS RIO BIZ
@@ -923,8 +963,10 @@ proxy-groups:
     -  VLESS KNC 443
     -  VLESS KNC2 443
     -  VLESS KNC KR 443
-    -  VLESS DO 443
+    -  VLESS DO TLS
     -  VLESS DO NTLS
+    -  VLESS DO 443
+    -  VLESS DO 80
     -  VLESS DO LOTUS
     -  VLESS DO LOTUS NTLS
     -  TROJAN TARIK

@@ -330,14 +330,14 @@ proxies:
     server: 104.18.3.2
     port: 443
     type: trojan
-    password: 38460e7d-95bb-49e5-a90b-519ff74f182d
+    password: KCSiYoDzwlLc8o6m4qbKsg
     skip-cert-verify: true
-    sni: l5mrh.tarik.my.id
+    sni: indo.vpnpremium.id
     network: ws
     ws-opts:
-      path: /whatever/trojan-ws
+      path: /trojan
       headers:
-        Host: l5mrh.tarik.my.id
+        Host: indo.vpnpremium.id
     udp: true
     
   - name: VLESS ID MAHAL

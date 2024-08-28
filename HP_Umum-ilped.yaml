@@ -619,6 +619,7 @@ proxy-groups:
     -  VLESS DO 443
     -  WORKER GAME
     -  UWU FF
+    -  VLESS RIO BIZ
     -  VLESS KNC 443
     -  VLESS KNC2 443
     -  VLESS KNC KR 443
@@ -779,6 +780,7 @@ proxy-groups:
     -  VLESS KNC2 443
     -  VLESS DO LOTUS
     -  VLESS DO 443
+    -  VLESS RIO BIZ
     -  VLESS KNC KR 443
     -  INDO VPN 443
     -  INDO VPN NTLS
@@ -818,6 +820,7 @@ proxy-groups:
     -  VLESS KNC KR 443
     -  VLESS DO 443
     -  VLESS DO LOTUS
+    -  VLESS RIO BIZ
     -  TROJAN TARIK
     -  INDO VPN 443
     -  INDO VPN NTLS
@@ -853,6 +856,7 @@ proxy-groups:
     -  INDO VPN NTLS
     -  INDOXRAY GRPC
     -  VLESS ARIS CF
+    -  VLESS RIO BIZ
     -  WORKER GAME
     -  UWU FF
     -  VLESS KNC 443

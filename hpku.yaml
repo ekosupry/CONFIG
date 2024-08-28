@@ -1,8 +1,8 @@
-# SINGAPURA DIGITAL OCEAN EXP DATE: 29/08/2024
-# PREMIUM 10rb/device aktif 1 bulan,2 device 15rb
+# Anda menggunakan akun GRATIS
+# Gass PREMIUM 10rb/device aktif 1 bulan,2 device 15rb
 # ==== Paket ILMUPEDIA ======
 # Buy paket TSEL dial *363*844# / *363*555#
-#=============== AFKAR NETWORK =====================
+#===========================================
 mode: rule
 allow-lan: true
 unified-delay: true
@@ -79,42 +79,56 @@ tproxy-port: 9898
 mixed-port: 7890
 # ================= PG ==========
 proxies: 
-  - name: INDOXRAY 443
-    server: space.byu.id
+  - name: INDO VPN 443
+    server: wc.vanillicon.com
     port: 443
     type: vmess
-    uuid: b809ba19-00e2-483d-b1bc-bd7633a678ff
+    uuid: 59c00424-7413-4107-8c98-085ed4f7fe6c
     alterId: 0
     cipher: auto
     tls: true
     skip-cert-verify: true
-    servername: indoxray.me
+    servername: indo.vpnpremium.id
     network: ws
     ws-opts:
       path: /vmess
       headers:
-        Host: indoxray.me
+        Host: indo.vpnpremium.id
     udp: true
 
-  - name: INDOXRAY NTLS
-    server: space.byu.id
+  - name: INDO VPN NTLS
+    server: wc.vanillicon.com
     port: 80
     type: vmess
-    uuid: b809ba19-00e2-483d-b1bc-bd7633a678ff
+    uuid: 59c00424-7413-4107-8c98-085ed4f7fe6c
     alterId: 0
     cipher: auto
     tls: false
     skip-cert-verify: true
-    servername: indoxray.me
+    servername: indo.vpnpremium.id
     network: ws
     ws-opts:
       path: /vmess
       headers:
-        Host: indoxray.me
+        Host: indo.vpnpremium.id
+    udp: true
+
+  - name: TROJAN TARIK
+    server: wc.vanillicon.com
+    port: 443
+    type: trojan
+    password: KCSiYoDzwlLc8o6m4qbKsg
+    skip-cert-verify: true
+    sni: indo.vpnpremium.id
+    network: ws
+    ws-opts:
+      path: /trojan
+      headers:
+        Host: indo.vpnpremium.id
     udp: true
 
   - name: INDOXRAY GRPC
-    server: space.byu.id
+    server: wc.vanillicon.com
     port: 443
     type: vmess
     uuid: b809ba19-00e2-483d-b1bc-bd7633a678ff
@@ -126,57 +140,9 @@ proxies:
     skip-cert-verify: true
     grpc-opts:
       grpc-service-name: vmess-grpc
-    
-  - name: SG DO TLS
-    server: space.byu.id
-    port: 443
-    type: vmess
-    uuid: 46320791-b037-42cd-8ab0-59221a483a74
-    alterId: 0
-    cipher: auto
-    tls: true
-    skip-cert-verify: true
-    servername: kuhaku.zerossh.my.id
-    network: ws
-    ws-opts:
-      path: /vmess
-      headers:
-        Host: kuhaku.zerossh.my.id
-    udp: true
 
-  - name: SG DO NTLS
-    server: space.byu.id
-    port: 80
-    type: vmess
-    uuid: 46320791-b037-42cd-8ab0-59221a483a74
-    alterId: 0
-    cipher: auto
-    tls: false
-    skip-cert-verify: true
-    servername: kuhaku.zerossh.my.id
-    network: ws
-    ws-opts:
-      path: /vmess
-      headers:
-        Host: kuhaku.zerossh.my.id
-    udp: true
-
-  - name: SG DO GRPC
-    server: space.byu.id
-    port: 443
-    type: vmess
-    uuid: 46320791-b037-42cd-8ab0-59221a483a74
-    alterId: 0
-    cipher: auto
-    network: grpc
-    tls: true
-    servername: kuhaku.zerossh.my.id
-    skip-cert-verify: true
-    grpc-opts:
-      grpc-service-name: vmess-grpc
-      
   - name: IDL TLS
-    server: space.byu.id
+    server: wc.vanillicon.com
     port: 443
     type: vmess
     uuid: cedf07b8-2f39-4c29-828d-c5f1911573e1
@@ -193,7 +159,7 @@ proxies:
     udp: true
 
   - name: IDL NTLS
-    server: space.byu.id
+    server: wc.vanillicon.com
     port: 80
     type: vmess
     uuid: cedf07b8-2f39-4c29-828d-c5f1911573e1
@@ -210,7 +176,7 @@ proxies:
     udp: true
 
   - name: VLESS ARIS CF
-    server: space.byu.id
+    server: wc.vanillicon.com
     port: 443
     type: vless
     uuid: 1b6c1745-992e-4aac-8685-266c090e50ea
@@ -226,8 +192,9 @@ proxies:
         Host: server.arisctunnel.me
     udp: true
     
+
   - name: WORKER GAME
-    server: space.byu.id
+    server: wc.vanillicon.com
     port: 443
     type: vless
     uuid: 1e6611ce-aec7-4a64-8699-d7d731659f05
@@ -243,7 +210,7 @@ proxies:
     udp: true
 
   - name: UWU FF
-    server: space.byu.id
+    server: wc.vanillicon.com
     port: 443
     type: vless
     uuid: bcf50589-9654-4331-93a6-da896914ec47
@@ -259,7 +226,7 @@ proxies:
     udp: true
 
   - name: VLESS KNC 443
-    server: space.byu.id
+    server: wc.vanillicon.com
     port: 443
     type: vless
     uuid: 80510fd1-7a7d-4b83-a3db-05fb7f23dea5
@@ -276,7 +243,7 @@ proxies:
     udp: true
 
   - name: VLESS KNC2 443
-    server: space.byu.id
+    server: wc.vanillicon.com
     port: 443
     type: vless
     uuid: 80510fd1-7a7d-4b83-a3db-05fb7f23dea5
@@ -293,7 +260,7 @@ proxies:
     udp: true
 
   - name: VLESS KNC KR 443
-    server: space.byu.id
+    server: wc.vanillicon.com
     port: 443
     type: vless
     uuid: 4994c6a3-3242-45b8-a3e3-7d0fb82b0ece
@@ -310,7 +277,7 @@ proxies:
     udp: true
 
   - name: VLESS DO 443
-    server: space.byu.id
+    server: wc.vanillicon.com
     port: 443
     type: vless
     uuid: b0cb1b0b-f5ba-4ca4-a587-cfe48126bff7
@@ -326,22 +293,8 @@ proxies:
         Host: sgdo1.aframdani.cloud
     udp: true 
     
-  - name: TROJAN TARIK
-    server: space.byu.id
-    port: 443
-    type: trojan
-    password: 38460e7d-95bb-49e5-a90b-519ff74f182d
-    skip-cert-verify: true
-    sni: l5mrh.tarik.my.id
-    network: ws
-    ws-opts:
-      path: /whatever/trojan-ws
-      headers:
-        Host: l5mrh.tarik.my.id
-    udp: true
-    
   - name: VLESS ID MAHAL
-    server: space.byu.id
+    server: wc.vanillicon.com
     port: 443
     type: vless
     uuid: 6e6cb97e-57ac-4e8f-ad90-2b2fbb21bc45
@@ -358,7 +311,7 @@ proxies:
     udp: true
     
   - name: VLESS ORACLE MAHAL
-    server: space.byu.id
+    server: wc.vanillicon.com
     port: 443
     type: vless
     uuid: 6e6cb97e-57ac-4e8f-ad90-2b2fbb21bc45
@@ -375,7 +328,7 @@ proxies:
     udp: true
 
   - name: VLESS ALIBABA MAHAL
-    server: space.byu.id
+    server: wc.vanillicon.com
     port: 443
     type: vless
     uuid: 6e6cb97e-57ac-4e8f-ad90-2b2fbb21bc45
@@ -392,7 +345,7 @@ proxies:
     udp: true
 
   - name: VLESS SG SERVLESS
-    server: space.byu.id
+    server: wc.vanillicon.com
     port: 443
     type: vless
     uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
@@ -409,7 +362,7 @@ proxies:
     udp: true
 
   - name: VLESS ID SERVLESS
-    server: space.byu.id
+    server: wc.vanillicon.com
     port: 443
     type: vless
     uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
@@ -426,7 +379,7 @@ proxies:
     udp: true
 
   - name: VLESS ID VLCFPAGE
-    server: space.byu.id
+    server: wc.vanillicon.com
     port: 443
     type: vless
     uuid: 0bc51b14-02aa-40db-aeba-8a9569a7244d
@@ -443,7 +396,7 @@ proxies:
     udp: true
 
   - name: VLESS SG VLCFPAGE
-    server: space.byu.id
+    server: wc.vanillicon.com
     port: 443
     type: vless
     uuid: f69a85fe-4a6e-40f3-bcd0-f3c800388b58
@@ -460,7 +413,7 @@ proxies:
     udp: true
 
   - name: VLESS SG ALIBABA 235
-    server: space.byu.id
+    server: wc.vanillicon.com
     port: 443
     type: vless
     uuid: 89b2cbba-e6ac-487a-9481-976a0415eab9
@@ -477,7 +430,7 @@ proxies:
     udp: true
 
   - name: VLESS SG ALIBABA 400
-    server: space.byu.id
+    server: wc.vanillicon.com
     port: 443
     type: vless
     uuid: 34b3cbba-e6ac-495a-9481-976a0419eab9
@@ -494,7 +447,7 @@ proxies:
     udp: true
 
   - name: VLESS SG ALIBABA 262
-    server: space.byu.id
+    server: wc.vanillicon.com
     port: 443
     type: vless
     uuid: 89b3cbba-e6ac-485a-9481-976a0415eab9
@@ -511,7 +464,7 @@ proxies:
     udp: true
 
   - name: VLESS SG ALIBABA 502
-    server: space.byu.id
+    server: wc.vanillicon.com
     port: 443
     type: vless
     uuid: e4e7b149-8bd8-4266-8cbb-0987604dbc87
@@ -528,7 +481,7 @@ proxies:
     udp: true
 
   - name: VLESS SG ALIBABA 619
-    server: space.byu.id
+    server: wc.vanillicon.com
     port: 443
     type: vless
     uuid: 89b3cbba-e6ac-485a-9481-976a0415eab9
@@ -545,7 +498,7 @@ proxies:
     udp: true
 
   - name: VLESS SG ALIBABA 457
-    server: space.byu.id
+    server: wc.vanillicon.com
     port: 443
     type: vless
     uuid: a64f0cea-ca89-40e6-b316-b3badff1eb90
@@ -562,7 +515,7 @@ proxies:
     udp: true
 
   - name: VLESS SG ALIBABA 189
-    server: space.byu.id
+    server: wc.vanillicon.com
     port: 443
     type: vless
     uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
@@ -575,11 +528,11 @@ proxies:
     ws-opts:
       path: /?ed
       headers:
-        Host: pages.dev.
+        Host: xn--4s9h.pages.dev
     udp: true
 
   - name: VLESS SG ALIBABA TLS
-    server: space.byu.id
+    server: wc.vanillicon.com
     port: 443
     type: vless
     uuid: f9021b31-e8bd-4b4d-a1d3-c9b0c1476c44
@@ -596,7 +549,7 @@ proxies:
     udp: true
 
   - name: VLESS SG ALIBABA NTLS
-    server: space.byu.id
+    server: wc.vanillicon.com
     port: 80
     type: vless
     uuid: f9021b31-e8bd-4b4d-a1d3-c9b0c1476c44
@@ -618,16 +571,13 @@ proxies:
 proxy-groups:
 # Global kita gunakan untuk koneksi UMUM
 - name: "Global✅"
-  type: fallback
+  type: url-test
   strategy: round-robin
   disable-udp: false
   proxies:
-    -  INDOXRAY 443
-    -  INDOXRAY NTLS
+    -  INDO VPN 443
+    -  INDO VPN NTLS
     -  INDOXRAY GRPC
-    -  SG DO TLS
-    -  SG DO NTLS
-    -  SG DO GRPC
     -  IDL TLS
     -  IDL NTLS
     -  VLESS ARIS CF
@@ -654,16 +604,17 @@ proxy-groups:
     -  VLESS SG ALIBABA 189
     -  VLESS SG ALIBABA TLS
     -  VLESS SG ALIBABA NTLS
+  url: 'http://www.gstatic.com/generate_204'
+  interval: 300
  #⬜⬜
 - name: "WHATSAPP"
   type: select #PILIIH SALAH SATU : SELECT,LOAD-BALANCE,FALLBACK,URL-TEST
   strategy: round-robin
   disable-udp: false
   proxies:
-    -  BEST PING
-    -  PREMIUM
-    -  LOAD-BALANCE
     -  FALLBACK
+    -  BEST PING
+    -  LOAD-BALANCE
     -  DIRECT
   url: 'http://www.gstatic.com/generate_204'
   interval: 300
@@ -674,10 +625,9 @@ proxy-groups:
   strategy: round-robin
   disable-udp: false
   proxies:
-    -  LOAD-BALANCE
     -  FALLBACK
+    -  LOAD-BALANCE
     -  BEST PING
-    -  PREMIUM
     -  DIRECT
   url: 'http://www.gstatic.com/generate_204'
   interval: 300
@@ -692,21 +642,19 @@ proxy-groups:
     -  VLESS ID MAHAL
     -  VLESS ID SERVLESS
     -  VLESS ID VLCFPAGE
-    -  INDOXRAY 443
-    -  INDOXRAY NTLS
-    -  INDOXRAY GRPC
+    -  INDO VPN 443
+    -  INDO VPN NTLS
   url: 'http://www.gstatic.com/generate_204'
-  interval: 120
+  interval: 300
 #Koneksi Sosmed
 - name: "PORT GAME"
   type: select #PILIIH SALAH SATU : SELECT,LOAD-BALANCE,FALLBACK,URL-TEST
   strategy: round-robin
   disable-udp: false
   proxies:
+    -  DIRECT
     -  RUANG GAME
     -  BEST PING
-    -  PREMIUM
-    -  DIRECT
   url: 'http://www.gstatic.com/generate_204'
   interval: 300
 #⬜⬜
@@ -719,7 +667,6 @@ proxy-groups:
     -  FALLBACK
     -  BEST PING
     -  LOAD-BALANCE
-    -  PREMIUM
     -  DIRECT
   url: 'http://www.gstatic.com/generate_204'
   interval: 300
@@ -730,10 +677,9 @@ proxy-groups:
   strategy: round-robin
   disable-udp: false
   proxies:
-    -  BEST PING
-    -  PREMIUM
-    -  LOAD-BALANCE
     -  FALLBACK
+    -  BEST PING
+    -  LOAD-BALANCE
     -  DIRECT
     -  REJECT
   url: 'http://www.gstatic.com/generate_204'
@@ -747,7 +693,6 @@ proxy-groups:
   proxies:
     -  FALLBACK
     -  BEST PING
-    -  PREMIUM
     -  LOAD-BALANCE
     -  DIRECT
     -  REJECT
@@ -762,7 +707,6 @@ proxy-groups:
     -  BEST PING
     -  LOAD-BALANCE
     -  FALLBACK
-    -  PREMIUM
     -  DIRECT
     -  REJECT
   url: 'http://www.gstatic.com/generate_204'
@@ -775,7 +719,6 @@ proxy-groups:
     -  LOAD-BALANCE
     -  BEST PING
     -  FALLBACK
-    -  PREMIUM
     -  REJECT
   url: 'http://www.gstatic.com/generate_204'
   interval: 300
@@ -788,16 +731,6 @@ proxy-groups:
     -  BEST PING
     -  LOAD-BALANCE
     -  FALLBACK
-    -  PREMIUM
-  url: 'http://www.gstatic.com/generate_204'
-  interval: 300
- #⬜⬜
-- name: "PREMIUM"
-  type: url-test
-  proxies:
-    -  SG DO TLS
-    -  SG DO NTLS
-    -  SG DO GRPC
   url: 'http://www.gstatic.com/generate_204'
   interval: 300
  #⬜⬜
@@ -807,14 +740,12 @@ proxy-groups:
   strategy: round-robin
   disable-udp: false
   proxies:
-    -  SG DO TLS
-    -  SG DO NTLS
-    -  SG DO GRPC
     -  VLESS KNC 443
     -  VLESS KNC2 443
+    -  VLESS DO 443
     -  VLESS KNC KR 443
-    -  INDOXRAY 443
-    -  INDOXRAY NTLS
+    -  INDO VPN 443
+    -  INDO VPN NTLS
     -  INDOXRAY GRPC
     -  VLESS ARIS CF
     -  WORKER GAME
@@ -837,6 +768,8 @@ proxy-groups:
     -  VLESS SG ALIBABA 189
     -  VLESS SG ALIBABA TLS
     -  VLESS SG ALIBABA NTLS
+    -  IDL TLS
+    -  IDL NTLS
   url: 'http://www.gstatic.com/generate_204'
   interval: 300
   #koneksi untuk iklan,
@@ -845,12 +778,30 @@ proxy-groups:
   strategy: round-robin
   disable-udp: false
   proxies:
-    -  SG DO TLS
-    -  SG DO NTLS
-    -  SG DO GRPC
     -  VLESS KNC 443
     -  VLESS KNC2 443
     -  VLESS KNC KR 443
+    -  VLESS DO 443
+    -  INDO VPN 443
+    -  INDO VPN NTLS
+    -  INDOXRAY GRPC
+    -  TROJAN TARIK
+    -  VLESS ID MAHAL
+    -  VLESS ORACLE MAHAL
+    -  VLESS ALIBABA MAHAL
+    -  VLESS SG SERVLESS
+    -  VLESS ID SERVLESS
+    -  VLESS ID VLCFPAGE
+    -  VLESS SG VLCFPAGE
+    -  VLESS SG ALIBABA 235
+    -  VLESS SG ALIBABA 400
+    -  VLESS SG ALIBABA 262
+    -  VLESS SG ALIBABA 502
+    -  VLESS SG ALIBABA 619
+    -  VLESS SG ALIBABA 457
+    -  VLESS SG ALIBABA 189
+    -  VLESS SG ALIBABA TLS
+    -  VLESS SG ALIBABA NTLS
   url: 'http://www.gstatic.com/generate_204'
   interval: 300
  #⬜⬜
@@ -860,14 +811,11 @@ proxy-groups:
   strategy: round-robin
   disable-udp: false
   proxies:
-    -  SG DO TLS
-    -  SG DO NTLS
-    -  SG DO GRPC
-    -  INDOXRAY 443
-    -  INDOXRAY NTLS
-    -  INDOXRAY GRPC
     -  IDL TLS
     -  IDL NTLS
+    -  INDO VPN 443
+    -  INDO VPN NTLS
+    -  INDOXRAY GRPC
     -  VLESS ARIS CF
     -  WORKER GAME
     -  UWU FF
@@ -895,6 +843,7 @@ proxy-groups:
   url: 'http://www.gstatic.com/generate_204'
   interval: 300
  #⬜⬜
+   #koneksi untuk iklan,
 #🟡_________________________________PROCY-GROUP__________________________________🟡
 # Clash for Windows
 cfw-bypass:
@@ -923,6 +872,7 @@ cfw-bypass:
   - 192.168.*
   - <local>
 cfw-latency-timeout: 5000
+
 rule-providers:
   Portgames:
     type: http

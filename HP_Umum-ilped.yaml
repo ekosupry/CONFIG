@@ -191,6 +191,23 @@ proxies:
       headers:
         Host: server.arisctunnel.me
     udp: true
+
+  - name: VLESS DO LOTUS
+    server: 104.18.3.2
+    port: 443
+    type: vless
+    uuid: 01edb904-33ae-42cf-99d4-28f96082082e
+    alterId: 0
+    cipher: auto
+    tls: true
+    skip-cert-verify: true
+    servername: sgdo.lotush.my.id
+    network: ws
+    ws-opts:
+      path: /trixie
+      headers:
+        Host: sgdo.lotush.my.id
+    udp: true
     
 
   - name: WORKER GAME
@@ -582,12 +599,13 @@ proxy-groups:
     -  IDL TLS
     -  IDL NTLS
     -  VLESS ARIS CF
+    -  VLESS DO LOTUS
+    -  VLESS DO 443
     -  WORKER GAME
     -  UWU FF
     -  VLESS KNC 443
     -  VLESS KNC2 443
     -  VLESS KNC KR 443
-    -  VLESS DO 443
     -  VLESS ID MAHAL
     -  VLESS ORACLE MAHAL
     -  VLESS ALIBABA MAHAL

@@ -208,6 +208,23 @@ proxies:
       headers:
         Host: sgdo.lotush.my.id
     udp: true
+
+  - name: VLESS DO LOTUS NTLS
+    server: 104.18.3.2
+    port: 80
+    type: vless
+    uuid: 01edb904-33ae-42cf-99d4-28f96082082e
+    alterId: 0
+    cipher: auto
+    tls: false
+    skip-cert-verify: true
+    servername: sgdo.lotush.my.id
+    network: ws
+    ws-opts:
+      path: /trixie
+      headers:
+        Host: sgdo.lotush.my.id
+    udp: true
     
   - name: VLESS RIO BIZ
     server: 104.18.3.2
@@ -616,6 +633,7 @@ proxy-groups:
     -  IDL NTLS
     -  VLESS ARIS CF
     -  VLESS DO LOTUS
+    -  VLESS DO LOTUS NTLS
     -  VLESS DO 443
     -  WORKER GAME
     -  UWU FF
@@ -779,6 +797,7 @@ proxy-groups:
     -  VLESS KNC 443
     -  VLESS KNC2 443
     -  VLESS DO LOTUS
+    -  VLESS DO LOTUS NTLS
     -  VLESS DO 443
     -  VLESS RIO BIZ
     -  VLESS KNC KR 443
@@ -820,6 +839,7 @@ proxy-groups:
     -  VLESS KNC KR 443
     -  VLESS DO 443
     -  VLESS DO LOTUS
+    -  VLESS DO LOTUS NTLS
     -  VLESS RIO BIZ
     -  TROJAN TARIK
     -  INDO VPN 443
@@ -864,6 +884,7 @@ proxy-groups:
     -  VLESS KNC KR 443
     -  VLESS DO 443
     -  VLESS DO LOTUS
+    -  VLESS DO LOTUS NTLS
     -  TROJAN TARIK
     -  VLESS ID MAHAL
     -  VLESS ORACLE MAHAL

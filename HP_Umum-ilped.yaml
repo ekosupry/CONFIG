@@ -192,21 +192,21 @@ proxies:
         Host: server.arisctunnel.me
     udp: true
 
-  - name: VLESS ARIS NTLS
+  - name: VLESS KNC 80
     server: 104.18.3.2
     port: 80
     type: vless
-    uuid: 1b6c1745-992e-4aac-8685-266c090e50ea
+    uuid: 80510fd1-7a7d-4b83-a3db-05fb7f23dea5
     alterId: 0
     cipher: auto
     tls: false
     skip-cert-verify: true
-    servername: server.arisctunnel.me
+    servername: id.knc.my.id
     network: ws
     ws-opts:
       path: /?ed=2048
       headers:
-        Host: server.arisctunnel.me
+        Host: id.knc.my.id
     udp: true
 
   - name: VLESS DO LOTUS
@@ -711,7 +711,7 @@ proxy-groups:
   disable-udp: false
   proxies:
     -  VLESS ARIS TLS
-    -  VLESS ARIS NTLS
+    -  VLESS KNC 80
     -  VLESS DO LOTUS
     -  VLESS DO LOTUS NTLS
     -  VLESS DO TLS
@@ -781,6 +781,7 @@ proxy-groups:
   disable-udp: false
   proxies:
     -  VLESS KNC 443
+    -  VLESS KNC 80
     -  VLESS KNC2 443
     -  VLESS ID MAHAL
     -  VLESS ID SERVLESS
@@ -885,6 +886,7 @@ proxy-groups:
   disable-udp: false
   proxies:
     -  VLESS KNC 443
+    -  VLESS KNC 80
     -  VLESS KNC2 443
     -  VLESS DO LOTUS
     -  VLESS DO LOTUS NTLS
@@ -902,7 +904,6 @@ proxy-groups:
     -  IDL TLS
     -  IDL NTLS
     -  VLESS ARIS TLS
-    -  VLESS ARIS NTLS
     -  WORKER GAME
     -  UWU FF
     -  VLESS ID MAHAL
@@ -941,7 +942,7 @@ proxy-groups:
     -  VLESS RIO BIZ
     -  VLESS RIO BIZ NTLS
     -  VLESS ARIS TLS
-    -  VLESS ARIS NTLS
+    -  VLESS KNC 80
     -  TROJAN TARIK
     -  INDO VPN 443
     -  INDO VPN NTLS
@@ -977,7 +978,7 @@ proxy-groups:
     -  INDO VPN NTLS
     -  INDOXRAY GRPC
     -  VLESS ARIS TLS
-    -  VLESS ARIS NTLS
+    -  VLESS KNC 80
     -  VLESS RIO BIZ
     -  VLESS RIO BIZ NTLS
     -  WORKER GAME

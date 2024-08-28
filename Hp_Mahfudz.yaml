@@ -622,14 +622,12 @@ proxy-groups:
   strategy: round-robin
   disable-udp: false
   proxies:
-    -  INDOXRAY 443
-    -  INDOXRAY NTLS
-    -  INDOXRAY GRPC
+    -  SG DO GRPC
     -  SG DO TLS
     -  SG DO NTLS
-    -  SG DO GRPC
-    -  IDL TLS
-    -  IDL NTLS
+    -  VLESS KNC 443
+    -  VLESS KNC2 443
+    -  VLESS KNC KR 443
     -  VLESS ARIS CF
     -  WORKER GAME
     -  UWU FF
@@ -638,6 +636,11 @@ proxy-groups:
     -  VLESS KNC KR 443
     -  VLESS DO 443
     -  TROJAN TARIK
+    -  INDOXRAY 443
+    -  INDOXRAY NTLS
+    -  INDOXRAY GRPC
+    -  IDL TLS
+    -  IDL NTLS
     -  VLESS ID MAHAL
     -  VLESS ORACLE MAHAL
     -  VLESS ALIBABA MAHAL
@@ -660,10 +663,10 @@ proxy-groups:
   strategy: round-robin
   disable-udp: false
   proxies:
+    -  FALLBACK
     -  PREMIUM
     -  BEST PING
     -  LOAD-BALANCE
-    -  FALLBACK
     -  DIRECT
   url: 'http://www.gstatic.com/generate_204'
   interval: 300
@@ -674,10 +677,10 @@ proxy-groups:
   strategy: round-robin
   disable-udp: false
   proxies:
-    -  LOAD-BALANCE
     -  FALLBACK
     -  BEST PING
     -  PREMIUM
+    -  LOAD-BALANCE
     -  DIRECT
   url: 'http://www.gstatic.com/generate_204'
   interval: 300
@@ -727,10 +730,10 @@ proxy-groups:
   strategy: round-robin
   disable-udp: false
   proxies:
+    -  FALLBACK
     -  PREMIUM
     -  BEST PING
     -  LOAD-BALANCE
-    -  FALLBACK
     -  DIRECT
     -  REJECT
   url: 'http://www.gstatic.com/generate_204'
@@ -742,10 +745,10 @@ proxy-groups:
   strategy: round-robin
   disable-udp: false
   proxies:
+    -  FALLBACK
     -  BEST PING
     -  PREMIUM
     -  LOAD-BALANCE
-    -  FALLBACK
     -  DIRECT
     -  REJECT
   url: 'http://www.gstatic.com/generate_204'
@@ -769,11 +772,11 @@ proxy-groups:
 - name: "MARKETPLACE"
   type: select
   proxies:
+    -  REJECT
     -  LOAD-BALANCE
     -  BEST PING
     -  FALLBACK
     -  PREMIUM
-    -  REJECT
   url: 'http://www.gstatic.com/generate_204'
   interval: 300
  #⬜⬜
@@ -804,16 +807,16 @@ proxy-groups:
   strategy: round-robin
   disable-udp: false
   proxies:
-    -  SG DO TLS
-    -  SG DO NTLS
     -  SG DO GRPC
+    -  SG DO TLS
     -  VLESS KNC 443
     -  VLESS KNC2 443
+    -  SG DO NTLS
+    -  VLESS ARIS CF
     -  VLESS KNC KR 443
     -  INDOXRAY 443
     -  INDOXRAY NTLS
     -  INDOXRAY GRPC
-    -  VLESS ARIS CF
     -  WORKER GAME
     -  UWU FF
     -  VLESS DO 443

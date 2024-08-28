@@ -761,6 +761,7 @@ proxy-groups:
   proxies:
     -  VLESS KNC 443
     -  VLESS KNC2 443
+    -  VLESS DO LOTUS
     -  VLESS DO 443
     -  VLESS KNC KR 443
     -  INDO VPN 443
@@ -800,6 +801,7 @@ proxy-groups:
     -  VLESS KNC2 443
     -  VLESS KNC KR 443
     -  VLESS DO 443
+    -  VLESS DO LOTUS
     -  TROJAN TARIK
     -  INDO VPN 443
     -  INDO VPN NTLS
@@ -841,6 +843,7 @@ proxy-groups:
     -  VLESS KNC2 443
     -  VLESS KNC KR 443
     -  VLESS DO 443
+    -  VLESS DO LOTUS
     -  TROJAN TARIK
     -  VLESS ID MAHAL
     -  VLESS ORACLE MAHAL

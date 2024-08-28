@@ -79,38 +79,52 @@ tproxy-port: 9898
 mixed-port: 7890
 # ================= PG ==========
 proxies: 
-  - name: INDOXRAY 443
-    server: 104.17.3.81
+  - name: INDO VPN 443
+    server: 104.18.3.2
     port: 443
     type: vmess
-    uuid: b809ba19-00e2-483d-b1bc-bd7633a678ff
+    uuid: 59c00424-7413-4107-8c98-085ed4f7fe6c
     alterId: 0
     cipher: auto
     tls: true
     skip-cert-verify: true
-    servername: indoxray.me
+    servername: indo.vpnpremium.id
     network: ws
     ws-opts:
       path: /vmess
       headers:
-        Host: indoxray.me
+        Host: indo.vpnpremium.id
     udp: true
 
-  - name: INDOXRAY NTLS
-    server: 104.17.3.81
+  - name: INDO VPN NTLS
+    server: 104.18.3.2
     port: 80
     type: vmess
-    uuid: b809ba19-00e2-483d-b1bc-bd7633a678ff
+    uuid: 59c00424-7413-4107-8c98-085ed4f7fe6c
     alterId: 0
     cipher: auto
     tls: false
     skip-cert-verify: true
-    servername: indoxray.me
+    servername: indo.vpnpremium.id
     network: ws
     ws-opts:
       path: /vmess
       headers:
-        Host: indoxray.me
+        Host: indo.vpnpremium.id
+    udp: true
+
+  - name: TROJAN TARIK
+    server: 104.18.3.2
+    port: 443
+    type: trojan
+    password: KCSiYoDzwlLc8o6m4qbKsg
+    skip-cert-verify: true
+    sni: indo.vpnpremium.id
+    network: ws
+    ws-opts:
+      path: /trojan
+      headers:
+        Host: indo.vpnpremium.id
     udp: true
 
   - name: INDOXRAY GRPC
@@ -278,20 +292,6 @@ proxies:
       headers:
         Host: sgdo1.aframdani.cloud
     udp: true 
-    
-  - name: TROJAN TARIK
-    server: 104.17.3.81
-    port: 443
-    type: trojan
-    password: 38460e7d-95bb-49e5-a90b-519ff74f182d
-    skip-cert-verify: true
-    sni: l5mrh.tarik.my.id
-    network: ws
-    ws-opts:
-      path: /whatever/trojan-ws
-      headers:
-        Host: l5mrh.tarik.my.id
-    udp: true
     
   - name: VLESS ID MAHAL
     server: 104.17.3.81
@@ -528,7 +528,7 @@ proxies:
     ws-opts:
       path: /?ed
       headers:
-        Host: pages.dev.
+        Host: xn--4s9h.pages.dev
     udp: true
 
   - name: VLESS SG ALIBABA TLS
@@ -575,8 +575,8 @@ proxy-groups:
   strategy: round-robin
   disable-udp: false
   proxies:
-    -  INDOXRAY 443
-    -  INDOXRAY NTLS
+    -  INDO VPN 443
+    -  INDO VPN NTLS
     -  INDOXRAY GRPC
     -  IDL TLS
     -  IDL NTLS
@@ -612,9 +612,9 @@ proxy-groups:
   strategy: round-robin
   disable-udp: false
   proxies:
+    -  FALLBACK
     -  BEST PING
     -  LOAD-BALANCE
-    -  FALLBACK
     -  DIRECT
   url: 'http://www.gstatic.com/generate_204'
   interval: 300
@@ -625,9 +625,9 @@ proxy-groups:
   strategy: round-robin
   disable-udp: false
   proxies:
+    -  FALLBACK
     -  LOAD-BALANCE
     -  BEST PING
-    -  FALLBACK
     -  DIRECT
   url: 'http://www.gstatic.com/generate_204'
   interval: 300
@@ -642,6 +642,8 @@ proxy-groups:
     -  VLESS ID MAHAL
     -  VLESS ID SERVLESS
     -  VLESS ID VLCFPAGE
+    -  INDO VPN 443
+    -  INDO VPN NTLS
   url: 'http://www.gstatic.com/generate_204'
   interval: 300
 #Koneksi Sosmed
@@ -651,11 +653,8 @@ proxy-groups:
   disable-udp: false
   proxies:
     -  DIRECT
-    -  VLESS KNC 443
-    -  VLESS KNC2 443
-    -  VLESS ID MAHAL
-    -  VLESS ID SERVLESS
-    -  VLESS ID VLCFPAGE
+    -  RUANG GAME
+    -  BEST PING
   url: 'http://www.gstatic.com/generate_204'
   interval: 300
 #⬜⬜
@@ -678,9 +677,9 @@ proxy-groups:
   strategy: round-robin
   disable-udp: false
   proxies:
+    -  FALLBACK
     -  BEST PING
     -  LOAD-BALANCE
-    -  FALLBACK
     -  DIRECT
     -  REJECT
   url: 'http://www.gstatic.com/generate_204'
@@ -692,9 +691,9 @@ proxy-groups:
   strategy: round-robin
   disable-udp: false
   proxies:
+    -  FALLBACK
     -  BEST PING
     -  LOAD-BALANCE
-    -  FALLBACK
     -  DIRECT
     -  REJECT
   url: 'http://www.gstatic.com/generate_204'
@@ -745,11 +744,9 @@ proxy-groups:
     -  VLESS KNC2 443
     -  VLESS DO 443
     -  VLESS KNC KR 443
-    -  INDOXRAY 443
-    -  INDOXRAY NTLS
+    -  INDO VPN 443
+    -  INDO VPN NTLS
     -  INDOXRAY GRPC
-    -  IDL TLS
-    -  IDL NTLS
     -  VLESS ARIS CF
     -  WORKER GAME
     -  UWU FF
@@ -771,6 +768,8 @@ proxy-groups:
     -  VLESS SG ALIBABA 189
     -  VLESS SG ALIBABA TLS
     -  VLESS SG ALIBABA NTLS
+    -  IDL TLS
+    -  IDL NTLS
   url: 'http://www.gstatic.com/generate_204'
   interval: 300
   #koneksi untuk iklan,
@@ -783,8 +782,8 @@ proxy-groups:
     -  VLESS KNC2 443
     -  VLESS KNC KR 443
     -  VLESS DO 443
-    -  INDOXRAY 443
-    -  INDOXRAY NTLS
+    -  INDO VPN 443
+    -  INDO VPN NTLS
     -  INDOXRAY GRPC
     -  TROJAN TARIK
     -  VLESS ID MAHAL
@@ -814,8 +813,8 @@ proxy-groups:
   proxies:
     -  IDL TLS
     -  IDL NTLS
-    -  INDOXRAY 443
-    -  INDOXRAY NTLS
+    -  INDO VPN 443
+    -  INDO VPN NTLS
     -  INDOXRAY GRPC
     -  VLESS ARIS CF
     -  WORKER GAME

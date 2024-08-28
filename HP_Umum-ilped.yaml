@@ -209,6 +209,22 @@ proxies:
         Host: sgdo.lotush.my.id
     udp: true
     
+  - name: VLESS RIO BIZ
+    server: 104.18.3.2
+    port: 443
+    type: vless
+    uuid: 9afa7e48-1af0-418f-b063-04bc7776b70e
+    alterId: 0
+    cipher: auto
+    tls: true
+    skip-cert-verify: true
+    servername: sg.ryo.biz.id
+    network: ws
+    ws-opts:
+      path: /vless-ws
+      headers:
+        Host: sg.ryo.biz.id
+    udp: true
 
   - name: WORKER GAME
     server: 104.18.3.2

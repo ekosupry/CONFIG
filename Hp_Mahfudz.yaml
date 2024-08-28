@@ -1,8 +1,8 @@
-# SINGAPURA DIGITAL OCEAN EXP DATE: 27/09/2024
-# PREMIUM 10rb/device aktif 1 bulan,2 device 15rb
+# Anda menggunakan akun GRATIS
+# Gass PREMIUM 10rb/device aktif 1 bulan,2 device 15rb
 # ==== Paket ILMUPEDIA ======
 # Buy paket TSEL dial *363*844# / *363*555#
-#=============== AFKAR NETWORK =====================
+#===========================================
 mode: rule
 allow-lan: true
 unified-delay: true
@@ -79,6 +79,54 @@ tproxy-port: 9898
 mixed-port: 7890
 # ================= PG ==========
 proxies: 
+  - name: SG DO TLS
+    server: 104.18.3.2
+    port: 443
+    type: vmess
+    uuid: 99f4b372-865d-4bf5-a9ad-f9afd7d786a8
+    alterId: 0
+    cipher: auto
+    tls: true
+    skip-cert-verify: true
+    servername: kuhaku.zerossh.my.id
+    network: ws
+    ws-opts:
+      path: /vmess
+      headers:
+        Host: kuhaku.zerossh.my.id
+    udp: true
+
+  - name: SG DO NTLS
+    server: 104.18.3.2
+    port: 80
+    type: vmess
+    uuid: 99f4b372-865d-4bf5-a9ad-f9afd7d786a8
+    alterId: 0
+    cipher: auto
+    tls: false
+    skip-cert-verify: true
+    servername: kuhaku.zerossh.my.id
+    network: ws
+    ws-opts:
+      path: /vmess
+      headers:
+        Host: kuhaku.zerossh.my.id
+    udp: true
+
+  - name: SG DO GRPC
+    server: 104.18.3.2
+    port: 443
+    type: vmess
+    uuid: 99f4b372-865d-4bf5-a9ad-f9afd7d786a8
+    alterId: 0
+    cipher: auto
+    network: grpc
+    tls: true
+    servername: kuhaku.zerossh.my.id
+    skip-cert-verify: true
+    grpc-opts:
+      grpc-service-name: vmess-grpc
+
   - name: INDO VPN 443
     server: 104.18.3.2
     port: 443
@@ -140,55 +188,7 @@ proxies:
     skip-cert-verify: true
     grpc-opts:
       grpc-service-name: vmess-grpc
-    
-  - name: SG DO TLS
-    server: 104.18.3.2
-    port: 443
-    type: vmess
-    uuid: 99f4b372-865d-4bf5-a9ad-f9afd7d786a8
-    alterId: 0
-    cipher: auto
-    tls: true
-    skip-cert-verify: true
-    servername: kuhaku.zerossh.my.id
-    network: ws
-    ws-opts:
-      path: /vmess
-      headers:
-        Host: kuhaku.zerossh.my.id
-    udp: true
 
-  - name: SG DO NTLS
-    server: 104.18.3.2
-    port: 80
-    type: vmess
-    uuid: 99f4b372-865d-4bf5-a9ad-f9afd7d786a8
-    alterId: 0
-    cipher: auto
-    tls: false
-    skip-cert-verify: true
-    servername: kuhaku.zerossh.my.id
-    network: ws
-    ws-opts:
-      path: /vmess
-      headers:
-        Host: kuhaku.zerossh.my.id
-    udp: true
-
-  - name: SG DO GRPC
-    server: 104.18.3.2
-    port: 443
-    type: vmess
-    uuid: 99f4b372-865d-4bf5-a9ad-f9afd7d786a8
-    alterId: 0
-    cipher: auto
-    network: grpc
-    tls: true
-    servername: kuhaku.zerossh.my.id
-    skip-cert-verify: true
-    grpc-opts:
-      grpc-service-name: vmess-grpc
-      
   - name: IDL TLS
     server: 104.18.3.2
     port: 443
@@ -223,7 +223,7 @@ proxies:
         Host: vvipp.klmpk.me
     udp: true
 
-  - name: VLESS ARIS CF
+  - name: VLESS ARIS TLS
     server: 104.18.3.2
     port: 443
     type: vless
@@ -239,7 +239,92 @@ proxies:
       headers:
         Host: server.arisctunnel.me
     udp: true
+
+  - name: VLESS KNC 80
+    server: 104.18.3.2
+    port: 80
+    type: vless
+    uuid: 80510fd1-7a7d-4b83-a3db-05fb7f23dea5
+    alterId: 0
+    cipher: auto
+    tls: false
+    skip-cert-verify: true
+    servername: id.knc.my.id
+    network: ws
+    ws-opts:
+      path: /?ed=2048
+      headers:
+        Host: id.knc.my.id
+    udp: true
+
+  - name: VLESS DO LOTUS
+    server: 104.18.3.2
+    port: 443
+    type: vless
+    uuid: 01edb904-33ae-42cf-99d4-28f96082082e
+    alterId: 0
+    cipher: auto
+    tls: true
+    skip-cert-verify: true
+    servername: sgdo.lotush.my.id
+    network: ws
+    ws-opts:
+      path: /trixie
+      headers:
+        Host: sgdo.lotush.my.id
+    udp: true
+
+  - name: VLESS DO LOTUS NTLS
+    server: 104.18.3.2
+    port: 80
+    type: vless
+    uuid: 01edb904-33ae-42cf-99d4-28f96082082e
+    alterId: 0
+    cipher: auto
+    tls: false
+    skip-cert-verify: true
+    servername: sgdo.lotush.my.id
+    network: ws
+    ws-opts:
+      path: /trixie
+      headers:
+        Host: sgdo.lotush.my.id
+    udp: true
     
+  - name: VLESS RIO BIZ
+    server: 104.18.3.2
+    port: 443
+    type: vless
+    uuid: 9afa7e48-1af0-418f-b063-04bc7776b70e
+    alterId: 0
+    cipher: auto
+    tls: true
+    skip-cert-verify: true
+    servername: sg.ryo.biz.id
+    network: ws
+    ws-opts:
+      path: /vless-ws
+      headers:
+        Host: sg.ryo.biz.id
+    udp: true
+
+  - name: VLESS RIO BIZ NTLS
+    server: 104.18.3.2
+    port: 80
+    type: vless
+    uuid: 9afa7e48-1af0-418f-b063-04bc7776b70e
+    alterId: 0
+    cipher: auto
+    tls: false
+    skip-cert-verify: true
+    servername: sg.ryo.biz.id
+    network: ws
+    ws-opts:
+      path: /vless-ws
+      headers:
+        Host: sg.ryo.biz.id
+    udp: true
+
   - name: WORKER GAME
     server: 104.18.3.2
     port: 443
@@ -323,7 +408,7 @@ proxies:
         Host: kr.free.knc.my.id
     udp: true
 
-  - name: VLESS DO 443
+  - name: VLESS DO TLS
     server: 104.18.3.2
     port: 443
     type: vless
@@ -338,7 +423,58 @@ proxies:
       path: /vless-ws
       headers:
         Host: sgdo1.aframdani.cloud
-    udp: true
+    udp: true 
+
+  - name: VLESS DO NTLS
+    server: 104.18.3.2
+    port: 80
+    type: vless
+    uuid: b0cb1b0b-f5ba-4ca4-a587-cfe48126bff7
+    alterId: 0
+    cipher: auto
+    tls: false
+    skip-cert-verify: true
+    servername: sgdo1.aframdani.cloud
+    network: ws
+    ws-opts:
+      path: /vless-ws
+      headers:
+        Host: sgdo1.aframdani.cloud
+    udp: true 
+
+  - name: VLESS DO 443
+    server: 104.18.3.2
+    port: 443
+    type: vless
+    uuid: b0cb1b0b-f5ba-4ca4-a587-cfe48126bff7
+    alterId: 0
+    cipher: auto
+    tls: true
+    skip-cert-verify: true
+    servername: xcl.aframdani.cloud
+    network: ws
+    ws-opts:
+      path: /vless-ws
+      headers:
+        Host: xcl.aframdani.cloud
+    udp: true 
+
+  - name: VLESS DO 80
+    server: 104.18.3.2
+    port: 80
+    type: vless
+    uuid: b0cb1b0b-f5ba-4ca4-a587-cfe48126bff7
+    alterId: 0
+    cipher: auto
+    tls: false
+    skip-cert-verify: true
+    servername: xcl.aframdani.cloud
+    network: ws
+    ws-opts:
+      path: /vless-ws
+      headers:
+        Host: xcl.aframdani.cloud
+    udp: true 
     
   - name: VLESS ID MAHAL
     server: 104.18.3.2
@@ -570,12 +706,12 @@ proxies:
     cipher: auto
     tls: true
     skip-cert-verify: true
-    servername: xn--4s9h.pages.dev
+    servername: xn--4s9h.pages.dev.
     network: ws
     ws-opts:
       path: /?ed
       headers:
-        Host: xn--4s9h.pages.dev
+        Host: xn--4s9h.pages.dev.
     udp: true
 
   - name: VLESS SG ALIBABA TLS
@@ -625,19 +761,21 @@ proxy-groups:
     -  SG DO GRPC
     -  SG DO TLS
     -  SG DO NTLS
+    -  VLESS ARIS TLS
+    -  VLESS KNC 80
+    -  VLESS DO LOTUS
+    -  VLESS DO LOTUS NTLS
+    -  VLESS DO TLS
+    -  VLESS DO NTLS
+    -  VLESS DO 443
+    -  VLESS DO 80
+    -  WORKER GAME
+    -  UWU FF
+    -  VLESS RIO BIZ
+    -  VLESS RIO BIZ NTLS
     -  VLESS KNC 443
     -  VLESS KNC2 443
     -  VLESS KNC KR 443
-    -  VLESS ARIS CF
-    -  WORKER GAME
-    -  UWU FF
-    -  VLESS DO 443
-    -  TROJAN TARIK
-    -  INDO VPN 443
-    -  INDO VPN NTLS
-    -  INDOXRAY GRPC
-    -  IDL TLS
-    -  IDL NTLS
     -  VLESS ID MAHAL
     -  VLESS ORACLE MAHAL
     -  VLESS ALIBABA MAHAL
@@ -654,6 +792,14 @@ proxy-groups:
     -  VLESS SG ALIBABA 189
     -  VLESS SG ALIBABA TLS
     -  VLESS SG ALIBABA NTLS
+    -  INDO VPN 443
+    -  INDO VPN NTLS
+    -  TROJAN TARIK
+    -  INDOXRAY GRPC
+    -  IDL TLS
+    -  IDL NTLS
+  url: 'http://www.gstatic.com/generate_204'
+  interval: 300
  #⬜⬜
 - name: "WHATSAPP"
   type: select #PILIIH SALAH SATU : SELECT,LOAD-BALANCE,FALLBACK,URL-TEST
@@ -674,9 +820,9 @@ proxy-groups:
   strategy: round-robin
   disable-udp: false
   proxies:
-    -  FALLBACK
     -  BEST PING
     -  PREMIUM
+    -  FALLBACK
     -  LOAD-BALANCE
     -  DIRECT
   url: 'http://www.gstatic.com/generate_204'
@@ -688,6 +834,7 @@ proxy-groups:
   disable-udp: false
   proxies:
     -  VLESS KNC 443
+    -  VLESS KNC 80
     -  VLESS KNC2 443
     -  VLESS ID MAHAL
     -  VLESS ID SERVLESS
@@ -696,17 +843,16 @@ proxy-groups:
     -  INDO VPN NTLS
     -  TROJAN TARIK
   url: 'http://www.gstatic.com/generate_204'
-  interval: 120
+  interval: 300
 #Koneksi Sosmed
 - name: "PORT GAME"
   type: select #PILIIH SALAH SATU : SELECT,LOAD-BALANCE,FALLBACK,URL-TEST
   strategy: round-robin
   disable-udp: false
   proxies:
+    -  DIRECT
     -  RUANG GAME
     -  BEST PING
-    -  PREMIUM
-    -  DIRECT
   url: 'http://www.gstatic.com/generate_204'
   interval: 300
 #⬜⬜
@@ -717,9 +863,9 @@ proxy-groups:
   disable-udp: false
   proxies:
     -  FALLBACK
+    -  PREMIUM
     -  BEST PING
     -  LOAD-BALANCE
-    -  PREMIUM
     -  DIRECT
   url: 'http://www.gstatic.com/generate_204'
   interval: 300
@@ -731,8 +877,8 @@ proxy-groups:
   disable-udp: false
   proxies:
     -  FALLBACK
-    -  PREMIUM
     -  BEST PING
+    -  PREMIUM
     -  LOAD-BALANCE
     -  DIRECT
     -  REJECT
@@ -762,7 +908,6 @@ proxy-groups:
     -  BEST PING
     -  LOAD-BALANCE
     -  FALLBACK
-    -  PREMIUM
     -  DIRECT
     -  REJECT
   url: 'http://www.gstatic.com/generate_204'
@@ -776,7 +921,6 @@ proxy-groups:
     -  LOAD-BALANCE
     -  BEST PING
     -  FALLBACK
-    -  PREMIUM
   url: 'http://www.gstatic.com/generate_204'
   interval: 300
  #⬜⬜
@@ -788,16 +932,6 @@ proxy-groups:
     -  BEST PING
     -  LOAD-BALANCE
     -  FALLBACK
-    -  PREMIUM
-  url: 'http://www.gstatic.com/generate_204'
-  interval: 300
- #⬜⬜
-- name: "PREMIUM"
-  type: url-test
-  proxies:
-    -  SG DO TLS
-    -  SG DO NTLS
-    -  SG DO GRPC
   url: 'http://www.gstatic.com/generate_204'
   interval: 300
  #⬜⬜
@@ -809,18 +943,28 @@ proxy-groups:
   proxies:
     -  SG DO GRPC
     -  SG DO TLS
-    -  VLESS KNC 443
-    -  VLESS KNC2 443
     -  SG DO NTLS
-    -  VLESS ARIS CF
+    -  VLESS KNC 443
+    -  VLESS KNC 80
+    -  VLESS KNC2 443
+    -  VLESS DO LOTUS
+    -  VLESS DO LOTUS NTLS
+    -  VLESS DO TLS
+    -  VLESS DO NTLS
+    -  VLESS DO 443
+    -  VLESS DO 80
+    -  VLESS RIO BIZ
+    -  VLESS RIO BIZ NTLS
     -  VLESS KNC KR 443
     -  INDO VPN 443
     -  INDO VPN NTLS
+    -  TROJAN TARIK
     -  INDOXRAY GRPC
+    -  IDL TLS
+    -  IDL NTLS
+    -  VLESS ARIS TLS
     -  WORKER GAME
     -  UWU FF
-    -  VLESS DO 443
-    -  TROJAN TARIK
     -  VLESS ID MAHAL
     -  VLESS ORACLE MAHAL
     -  VLESS ALIBABA MAHAL
@@ -845,12 +989,42 @@ proxy-groups:
   strategy: round-robin
   disable-udp: false
   proxies:
+    -  SG DO GRPC
     -  SG DO TLS
     -  SG DO NTLS
-    -  SG DO GRPC
     -  VLESS KNC 443
     -  VLESS KNC2 443
     -  VLESS KNC KR 443
+    -  VLESS DO TLS
+    -  VLESS DO NTLS
+    -  VLESS DO 443
+    -  VLESS DO 80
+    -  VLESS DO LOTUS
+    -  VLESS DO LOTUS NTLS
+    -  VLESS RIO BIZ
+    -  VLESS RIO BIZ NTLS
+    -  VLESS ARIS TLS
+    -  VLESS KNC 80
+    -  TROJAN TARIK
+    -  INDO VPN 443
+    -  INDO VPN NTLS
+    -  INDOXRAY GRPC
+    -  VLESS ID MAHAL
+    -  VLESS ORACLE MAHAL
+    -  VLESS ALIBABA MAHAL
+    -  VLESS SG SERVLESS
+    -  VLESS ID SERVLESS
+    -  VLESS ID VLCFPAGE
+    -  VLESS SG VLCFPAGE
+    -  VLESS SG ALIBABA 235
+    -  VLESS SG ALIBABA 400
+    -  VLESS SG ALIBABA 262
+    -  VLESS SG ALIBABA 502
+    -  VLESS SG ALIBABA 619
+    -  VLESS SG ALIBABA 457
+    -  VLESS SG ALIBABA 189
+    -  VLESS SG ALIBABA TLS
+    -  VLESS SG ALIBABA NTLS
   url: 'http://www.gstatic.com/generate_204'
   interval: 300
  #⬜⬜
@@ -860,21 +1034,29 @@ proxy-groups:
   strategy: round-robin
   disable-udp: false
   proxies:
+    -  SG DO GRPC
     -  SG DO TLS
     -  SG DO NTLS
-    -  SG DO GRPC
+    -  IDL TLS
+    -  IDL NTLS
     -  INDO VPN 443
     -  INDO VPN NTLS
     -  INDOXRAY GRPC
-    -  IDL TLS
-    -  IDL NTLS
-    -  VLESS ARIS CF
+    -  VLESS ARIS TLS
+    -  VLESS KNC 80
+    -  VLESS RIO BIZ
+    -  VLESS RIO BIZ NTLS
     -  WORKER GAME
     -  UWU FF
     -  VLESS KNC 443
     -  VLESS KNC2 443
     -  VLESS KNC KR 443
+    -  VLESS DO TLS
+    -  VLESS DO NTLS
     -  VLESS DO 443
+    -  VLESS DO 80
+    -  VLESS DO LOTUS
+    -  VLESS DO LOTUS NTLS
     -  TROJAN TARIK
     -  VLESS ID MAHAL
     -  VLESS ORACLE MAHAL
@@ -923,6 +1105,7 @@ cfw-bypass:
   - 192.168.*
   - <local>
 cfw-latency-timeout: 5000
+
 rule-providers:
   Portgames:
     type: http

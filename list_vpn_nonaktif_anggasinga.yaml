@@ -14,20 +14,6 @@ proxies:
         Host: 11.lowh.net
     udp: true
 
-  - name: TROJAN SG Path 443
-    server: 104.17.3.81
-    port: 443
-    type: trojan
-    password: 2c8085e0-234b-11ef-bfbc-1577c1651679
-    skip-cert-verify: true
-    sni: sg.xmbb.net
-    network: ws
-    ws-opts:
-      path: /welcome
-      headers:
-        Host: sg.xmbb.net
-    udp: true
-
   - name: TROJAN SG 443
     server: 104.17.3.81
     port: 443
@@ -76,6 +62,19 @@ proxies:
         Host: sg-vless-ws.bypass.id
     udp: true
 
+  - name: TROJAN SG Path 443
+    server: 104.17.3.81
+    port: 443
+    type: trojan
+    password: 2c8085e0-234b-11ef-bfbc-1577c1651679
+    skip-cert-verify: true
+    sni: sg.xmbb.net
+    network: ws
+    ws-opts:
+      path: /welcome
+      headers:
+        Host: sg.xmbb.net
+    udp: true
 
   - name: VMESS SG3 HE 443
     server: 104.17.3.81

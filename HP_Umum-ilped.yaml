@@ -359,6 +359,23 @@ proxies:
       headers:
         Host: sgdo1.aframdani.cloud
     udp: true 
+
+  - name: VLESS DO NTLS
+    server: 104.18.3.2
+    port: 80
+    type: vless
+    uuid: b0cb1b0b-f5ba-4ca4-a587-cfe48126bff7
+    alterId: 0
+    cipher: auto
+    tls: false
+    skip-cert-verify: true
+    servername: sgdo1.aframdani.cloud
+    network: ws
+    ws-opts:
+      path: /vless-ws
+      headers:
+        Host: sgdo1.aframdani.cloud
+    udp: true 
     
   - name: VLESS ID MAHAL
     server: 104.18.3.2
@@ -638,20 +655,15 @@ proxies:
 proxy-groups:
 # Global kita gunakan untuk koneksi UMUM
 - name: "Global✅"
-  type: url-test
+  type: fallback
   strategy: round-robin
   disable-udp: false
   proxies:
-    -  INDO VPN 443
-    -  INDO VPN NTLS
-    -  TROJAN TARIK
-    -  INDOXRAY GRPC
-    -  IDL TLS
-    -  IDL NTLS
     -  VLESS ARIS CF
     -  VLESS DO LOTUS
     -  VLESS DO LOTUS NTLS
     -  VLESS DO 443
+    -  VLESS DO NTLS
     -  WORKER GAME
     -  UWU FF
     -  VLESS RIO BIZ
@@ -659,6 +671,12 @@ proxy-groups:
     -  VLESS KNC 443
     -  VLESS KNC2 443
     -  VLESS KNC KR 443
+    -  INDO VPN 443
+    -  INDO VPN NTLS
+    -  TROJAN TARIK
+    -  INDOXRAY GRPC
+    -  IDL TLS
+    -  IDL NTLS
     -  VLESS ID MAHAL
     -  VLESS ORACLE MAHAL
     -  VLESS ALIBABA MAHAL
@@ -696,9 +714,9 @@ proxy-groups:
   strategy: round-robin
   disable-udp: false
   proxies:
+    -  BEST PING
     -  FALLBACK
     -  LOAD-BALANCE
-    -  BEST PING
     -  DIRECT
   url: 'http://www.gstatic.com/generate_204'
   interval: 300
@@ -749,8 +767,8 @@ proxy-groups:
   strategy: round-robin
   disable-udp: false
   proxies:
-    -  FALLBACK
     -  BEST PING
+    -  FALLBACK
     -  LOAD-BALANCE
     -  DIRECT
     -  REJECT
@@ -763,8 +781,8 @@ proxy-groups:
   strategy: round-robin
   disable-udp: false
   proxies:
-    -  FALLBACK
     -  BEST PING
+    -  FALLBACK
     -  LOAD-BALANCE
     -  DIRECT
     -  REJECT
@@ -817,6 +835,7 @@ proxy-groups:
     -  VLESS DO LOTUS
     -  VLESS DO LOTUS NTLS
     -  VLESS DO 443
+    -  VLESS DO NTLS
     -  VLESS RIO BIZ
     -  VLESS RIO BIZ NTLS
     -  VLESS KNC KR 443
@@ -857,6 +876,7 @@ proxy-groups:
     -  VLESS KNC2 443
     -  VLESS KNC KR 443
     -  VLESS DO 443
+    -  VLESS DO NTLS
     -  VLESS DO LOTUS
     -  VLESS DO LOTUS NTLS
     -  VLESS RIO BIZ
@@ -904,6 +924,7 @@ proxy-groups:
     -  VLESS KNC2 443
     -  VLESS KNC KR 443
     -  VLESS DO 443
+    -  VLESS DO NTLS
     -  VLESS DO LOTUS
     -  VLESS DO LOTUS NTLS
     -  TROJAN TARIK

@@ -1,19 +1,5 @@
 proxies:
 #Singapura port 443
-  - name: TROJAN US 443
-    server: 104.17.3.81
-    port: 443
-    type: trojan
-    password: 7479cad0-62f5-11ef-acec-1577c1651679
-    skip-cert-verify: true
-    sni: 3.lowh.net
-    network: ws
-    ws-opts:
-      path: /welcome
-      headers:
-        Host: 3.lowh.net
-    udp: true
-
   - name: TROJAN SG HERZA 443
     server: 104.17.3.81
     port: 443
@@ -26,40 +12,6 @@ proxies:
       path: /welcome
       headers:
         Host: 11.lowh.net
-    udp: true
-
-  - name: VMESS SG3 HE 443
-    server: 104.17.3.81
-    port: 443
-    type: vmess
-    uuid: d99d8ad0-05fb-11ef-9a34-1577c1651679
-    alterId: 0
-    cipher: auto
-    tls: true
-    skip-cert-verify: true
-    servername: 2.htmlcdn.net
-    network: ws
-    ws-opts:
-      path: /hello
-      headers:
-        Host: 2.htmlcdn.net
-    udp: true
-
-  - name: VMESS XMMB+Biznet 443
-    server: 104.17.3.81
-    port: 443
-    type: vmess
-    uuid: 32bce4a0-234a-11ef-b832-1577c1651679
-    alterId: 0
-    cipher: auto
-    tls: true
-    skip-cert-verify: true
-    servername: cbtp.xmbb.net
-    network: ws
-    ws-opts:
-      path: /hello
-      headers:
-        Host: cbtp.xmbb.net
     udp: true
 
   - name: TROJAN SG Path 443
@@ -105,6 +57,58 @@ proxies:
       path: /hello
       headers:
         Host: sg-vless-ws.bypass.id
+    udp: true
+
+  - name: VLESS SG Bypass 80
+    server: 104.17.3.81
+    port: 80
+    type: vless
+    uuid: 873dd460-2355-11ef-bf8e-1577c1651679
+    alterId: 0
+    cipher: auto
+    tls: false
+    skip-cert-verify: true
+    servername: sg-vless-ws.bypass.id
+    network: ws
+    ws-opts:
+      path: /worryfree
+      headers:
+        Host: sg-vless-ws.bypass.id
+    udp: true
+
+
+  - name: VMESS SG3 HE 443
+    server: 104.17.3.81
+    port: 443
+    type: vmess
+    uuid: d99d8ad0-05fb-11ef-9a34-1577c1651679
+    alterId: 0
+    cipher: auto
+    tls: true
+    skip-cert-verify: true
+    servername: 2.htmlcdn.net
+    network: ws
+    ws-opts:
+      path: /hello
+      headers:
+        Host: 2.htmlcdn.net
+    udp: true
+
+  - name: VMESS XMMB+Biznet 443
+    server: 104.17.3.81
+    port: 443
+    type: vmess
+    uuid: 32bce4a0-234a-11ef-b832-1577c1651679
+    alterId: 0
+    cipher: auto
+    tls: true
+    skip-cert-verify: true
+    servername: cbtp.xmbb.net
+    network: ws
+    ws-opts:
+      path: /hello
+      headers:
+        Host: cbtp.xmbb.net
     udp: true
 
   - name: VMESS SG HE 443
@@ -176,19 +180,16 @@ proxies:
         Host: cbtp.xmbb.net
     udp: true
 
-  - name: VLESS SG Bypass 80
+  - name: TROJAN US 443
     server: 104.17.3.81
-    port: 80
-    type: vless
-    uuid: 873dd460-2355-11ef-bf8e-1577c1651679
-    alterId: 0
-    cipher: auto
-    tls: false
+    port: 443
+    type: trojan
+    password: 7479cad0-62f5-11ef-acec-1577c1651679
     skip-cert-verify: true
-    servername: sg-vless-ws.bypass.id
+    sni: 3.lowh.net
     network: ws
     ws-opts:
-      path: /worryfree
+      path: /welcome
       headers:
-        Host: sg-vless-ws.bypass.id
+        Host: 3.lowh.net
     udp: true

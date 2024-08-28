@@ -540,12 +540,12 @@ proxies:
     cipher: auto
     tls: true
     skip-cert-verify: true
-    servername: xn--4s9h.pages.dev
+    servername: xn--4s9h.pages.dev.
     network: ws
     ws-opts:
       path: /?ed
       headers:
-        Host: xn--4s9h.pages.dev
+        Host: xn--4s9h.pages.dev.
     udp: true
 
   - name: VLESS SG ALIBABA TLS

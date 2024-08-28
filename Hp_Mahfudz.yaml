@@ -80,7 +80,7 @@ mixed-port: 7890
 # ================= PG ==========
 proxies: 
   - name: INDO VPN 443
-    server: 104.17.3.81
+    server: 104.18.3.2
     port: 443
     type: vmess
     uuid: 59c00424-7413-4107-8c98-085ed4f7fe6c
@@ -97,7 +97,7 @@ proxies:
     udp: true
 
   - name: INDO VPN NTLS
-    server: 104.17.3.81
+    server: 104.18.3.2
     port: 80
     type: vmess
     uuid: 59c00424-7413-4107-8c98-085ed4f7fe6c
@@ -575,7 +575,7 @@ proxies:
     ws-opts:
       path: /?ed
       headers:
-        Host: pages.dev.
+        Host: xn--4s9h.pages.dev
     udp: true
 
   - name: VLESS SG ALIBABA TLS
@@ -631,9 +631,6 @@ proxy-groups:
     -  VLESS ARIS CF
     -  WORKER GAME
     -  UWU FF
-    -  VLESS KNC 443
-    -  VLESS KNC2 443
-    -  VLESS KNC KR 443
     -  VLESS DO 443
     -  TROJAN TARIK
     -  INDO VPN 443

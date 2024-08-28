@@ -1,4 +1,4 @@
-# Anda menggunakan akun GRATIS
+# MAAF LAYANAN TIDAK TERSEDIA
 # Gass PREMIUM 10rb/device aktif 1 bulan,2 device 15rb
 # ==== Paket ILMUPEDIA ======
 # Buy paket TSEL dial *363*844# / *363*555#
@@ -80,7 +80,7 @@ mixed-port: 7890
 # ================= PG ==========
 proxies: 
   - name: INDO VPN 443
-    server: 104.18.3.2
+    server: 192.168.1.1
     port: 443
     type: vmess
     uuid: 59c00424-7413-4107-8c98-085ed4f7fe6c
@@ -97,7 +97,7 @@ proxies:
     udp: true
 
   - name: INDO VPN NTLS
-    server: 104.18.3.2
+    server: 192.168.1.1
     port: 80
     type: vmess
     uuid: 59c00424-7413-4107-8c98-085ed4f7fe6c
@@ -114,7 +114,7 @@ proxies:
     udp: true
 
   - name: TROJAN TARIK
-    server: 104.18.3.2
+    server: 192.168.1.1
     port: 443
     type: trojan
     password: KCSiYoDzwlLc8o6m4qbKsg
@@ -128,7 +128,7 @@ proxies:
     udp: true
 
   - name: INDOXRAY GRPC
-    server: 104.18.3.2
+    server: 192.168.1.1
     port: 443
     type: vmess
     uuid: b809ba19-00e2-483d-b1bc-bd7633a678ff
@@ -142,7 +142,7 @@ proxies:
       grpc-service-name: vmess-grpc
 
   - name: IDL TLS
-    server: 104.17.3.81
+    server: 192.168.1.1
     port: 443
     type: vmess
     uuid: cedf07b8-2f39-4c29-828d-c5f1911573e1
@@ -159,7 +159,7 @@ proxies:
     udp: true
 
   - name: IDL NTLS
-    server: 104.17.3.81
+    server: 192.168.1.1
     port: 80
     type: vmess
     uuid: cedf07b8-2f39-4c29-828d-c5f1911573e1
@@ -176,7 +176,7 @@ proxies:
     udp: true
 
   - name: VLESS ARIS CF
-    server: 104.17.3.81
+    server: 192.168.1.1
     port: 443
     type: vless
     uuid: 1b6c1745-992e-4aac-8685-266c090e50ea
@@ -194,7 +194,7 @@ proxies:
     
 
   - name: WORKER GAME
-    server: 104.17.3.81
+    server: 192.168.1.1
     port: 443
     type: vless
     uuid: 1e6611ce-aec7-4a64-8699-d7d731659f05
@@ -210,7 +210,7 @@ proxies:
     udp: true
 
   - name: UWU FF
-    server: 104.17.3.81
+    server: 192.168.1.1
     port: 443
     type: vless
     uuid: bcf50589-9654-4331-93a6-da896914ec47
@@ -226,7 +226,7 @@ proxies:
     udp: true
 
   - name: VLESS KNC 443
-    server: 104.17.3.81
+    server: 192.168.1.1
     port: 443
     type: vless
     uuid: 80510fd1-7a7d-4b83-a3db-05fb7f23dea5
@@ -243,7 +243,7 @@ proxies:
     udp: true
 
   - name: VLESS KNC2 443
-    server: 104.17.3.81
+    server: 192.168.1.1
     port: 443
     type: vless
     uuid: 80510fd1-7a7d-4b83-a3db-05fb7f23dea5
@@ -260,7 +260,7 @@ proxies:
     udp: true
 
   - name: VLESS KNC KR 443
-    server: 104.17.3.81
+    server: 192.168.1.1
     port: 443
     type: vless
     uuid: 4994c6a3-3242-45b8-a3e3-7d0fb82b0ece
@@ -277,7 +277,7 @@ proxies:
     udp: true
 
   - name: VLESS DO 443
-    server: 104.17.3.81
+    server: 192.168.1.1
     port: 443
     type: vless
     uuid: b0cb1b0b-f5ba-4ca4-a587-cfe48126bff7
@@ -294,7 +294,7 @@ proxies:
     udp: true 
     
   - name: VLESS ID MAHAL
-    server: 104.17.3.81
+    server: 192.168.1.1
     port: 443
     type: vless
     uuid: 6e6cb97e-57ac-4e8f-ad90-2b2fbb21bc45
@@ -311,7 +311,7 @@ proxies:
     udp: true
     
   - name: VLESS ORACLE MAHAL
-    server: 104.17.3.81
+    server: 192.168.1.1
     port: 443
     type: vless
     uuid: 6e6cb97e-57ac-4e8f-ad90-2b2fbb21bc45
@@ -328,7 +328,7 @@ proxies:
     udp: true
 
   - name: VLESS ALIBABA MAHAL
-    server: 104.17.3.81
+    server: 192.168.1.1
     port: 443
     type: vless
     uuid: 6e6cb97e-57ac-4e8f-ad90-2b2fbb21bc45
@@ -345,7 +345,7 @@ proxies:
     udp: true
 
   - name: VLESS SG SERVLESS
-    server: 104.17.3.81
+    server: 192.168.1.1
     port: 443
     type: vless
     uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
@@ -362,7 +362,7 @@ proxies:
     udp: true
 
   - name: VLESS ID SERVLESS
-    server: 104.17.3.81
+    server: 192.168.1.1
     port: 443
     type: vless
     uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
@@ -379,7 +379,7 @@ proxies:
     udp: true
 
   - name: VLESS ID VLCFPAGE
-    server: 104.17.3.81
+    server: 192.168.1.1
     port: 443
     type: vless
     uuid: 0bc51b14-02aa-40db-aeba-8a9569a7244d
@@ -396,7 +396,7 @@ proxies:
     udp: true
 
   - name: VLESS SG VLCFPAGE
-    server: 104.17.3.81
+    server: 192.168.1.1
     port: 443
     type: vless
     uuid: f69a85fe-4a6e-40f3-bcd0-f3c800388b58
@@ -413,7 +413,7 @@ proxies:
     udp: true
 
   - name: VLESS SG ALIBABA 235
-    server: 104.17.3.81
+    server: 192.168.1.1
     port: 443
     type: vless
     uuid: 89b2cbba-e6ac-487a-9481-976a0415eab9
@@ -430,7 +430,7 @@ proxies:
     udp: true
 
   - name: VLESS SG ALIBABA 400
-    server: 104.17.3.81
+    server: 192.168.1.1
     port: 443
     type: vless
     uuid: 34b3cbba-e6ac-495a-9481-976a0419eab9
@@ -447,7 +447,7 @@ proxies:
     udp: true
 
   - name: VLESS SG ALIBABA 262
-    server: 104.17.3.81
+    server: 192.168.1.1
     port: 443
     type: vless
     uuid: 89b3cbba-e6ac-485a-9481-976a0415eab9
@@ -464,7 +464,7 @@ proxies:
     udp: true
 
   - name: VLESS SG ALIBABA 502
-    server: 104.17.3.81
+    server: 192.168.1.1
     port: 443
     type: vless
     uuid: e4e7b149-8bd8-4266-8cbb-0987604dbc87
@@ -481,7 +481,7 @@ proxies:
     udp: true
 
   - name: VLESS SG ALIBABA 619
-    server: 104.17.3.81
+    server: 192.168.1.1
     port: 443
     type: vless
     uuid: 89b3cbba-e6ac-485a-9481-976a0415eab9
@@ -498,7 +498,7 @@ proxies:
     udp: true
 
   - name: VLESS SG ALIBABA 457
-    server: 104.17.3.81
+    server: 192.168.1.1
     port: 443
     type: vless
     uuid: a64f0cea-ca89-40e6-b316-b3badff1eb90
@@ -515,7 +515,7 @@ proxies:
     udp: true
 
   - name: VLESS SG ALIBABA 189
-    server: 104.17.3.81
+    server: 192.168.1.1
     port: 443
     type: vless
     uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
@@ -532,7 +532,7 @@ proxies:
     udp: true
 
   - name: VLESS SG ALIBABA TLS
-    server: 104.17.3.81
+    server: 192.168.1.1
     port: 443
     type: vless
     uuid: f9021b31-e8bd-4b4d-a1d3-c9b0c1476c44
@@ -549,7 +549,7 @@ proxies:
     udp: true
 
   - name: VLESS SG ALIBABA NTLS
-    server: 104.17.3.81
+    server: 192.168.1.1
     port: 80
     type: vless
     uuid: f9021b31-e8bd-4b4d-a1d3-c9b0c1476c44

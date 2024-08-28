@@ -671,12 +671,6 @@ proxy-groups:
     -  VLESS KNC 443
     -  VLESS KNC2 443
     -  VLESS KNC KR 443
-    -  INDO VPN 443
-    -  INDO VPN NTLS
-    -  TROJAN TARIK
-    -  INDOXRAY GRPC
-    -  IDL TLS
-    -  IDL NTLS
     -  VLESS ID MAHAL
     -  VLESS ORACLE MAHAL
     -  VLESS ALIBABA MAHAL
@@ -693,6 +687,12 @@ proxy-groups:
     -  VLESS SG ALIBABA 189
     -  VLESS SG ALIBABA TLS
     -  VLESS SG ALIBABA NTLS
+    -  INDO VPN 443
+    -  INDO VPN NTLS
+    -  TROJAN TARIK
+    -  INDOXRAY GRPC
+    -  IDL TLS
+    -  IDL NTLS
   url: 'http://www.gstatic.com/generate_204'
   interval: 300
  #⬜⬜

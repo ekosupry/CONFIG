@@ -79,38 +79,38 @@ tproxy-port: 9898
 mixed-port: 7890
 # ================= PG ==========
 proxies: 
-  - name: INDOXRAY 443
+  - name: INDO VPN 443
     server: 104.17.3.81
     port: 443
     type: vmess
-    uuid: b809ba19-00e2-483d-b1bc-bd7633a678ff
+    uuid: 59c00424-7413-4107-8c98-085ed4f7fe6c
     alterId: 0
     cipher: auto
     tls: true
     skip-cert-verify: true
-    servername: indoxray.me
+    servername: indo.vpnpremium.id
     network: ws
     ws-opts:
       path: /vmess
       headers:
-        Host: indoxray.me
+        Host: indo.vpnpremium.id
     udp: true
 
-  - name: INDOXRAY NTLS
+  - name: INDO VPN NTLS
     server: 104.17.3.81
     port: 80
     type: vmess
-    uuid: b809ba19-00e2-483d-b1bc-bd7633a678ff
+    uuid: 59c00424-7413-4107-8c98-085ed4f7fe6c
     alterId: 0
     cipher: auto
     tls: false
     skip-cert-verify: true
-    servername: indoxray.me
+    servername: indo.vpnpremium.id
     network: ws
     ws-opts:
       path: /vmess
       headers:
-        Host: indoxray.me
+        Host: indo.vpnpremium.id
     udp: true
 
   - name: INDOXRAY GRPC
@@ -636,8 +636,8 @@ proxy-groups:
     -  VLESS KNC KR 443
     -  VLESS DO 443
     -  TROJAN TARIK
-    -  INDOXRAY 443
-    -  INDOXRAY NTLS
+    -  INDO VPN 443
+    -  INDO VPN NTLS
     -  INDOXRAY GRPC
     -  IDL TLS
     -  IDL NTLS
@@ -695,6 +695,8 @@ proxy-groups:
     -  VLESS ID MAHAL
     -  VLESS ID SERVLESS
     -  VLESS ID VLCFPAGE
+    -  INDO VPN 443
+    -  INDO VPN NTLS
   url: 'http://www.gstatic.com/generate_204'
   interval: 120
 #Koneksi Sosmed
@@ -814,8 +816,8 @@ proxy-groups:
     -  SG DO NTLS
     -  VLESS ARIS CF
     -  VLESS KNC KR 443
-    -  INDOXRAY 443
-    -  INDOXRAY NTLS
+    -  INDO VPN 443
+    -  INDO VPN NTLS
     -  INDOXRAY GRPC
     -  WORKER GAME
     -  UWU FF
@@ -863,8 +865,8 @@ proxy-groups:
     -  SG DO TLS
     -  SG DO NTLS
     -  SG DO GRPC
-    -  INDOXRAY 443
-    -  INDOXRAY NTLS
+    -  INDO VPN 443
+    -  INDO VPN NTLS
     -  INDOXRAY GRPC
     -  IDL TLS
     -  IDL NTLS

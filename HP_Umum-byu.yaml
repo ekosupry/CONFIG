@@ -80,7 +80,7 @@ mixed-port: 7890
 # ================= PG ==========
 proxies: 
   - name: INDO VPN 443
-    server: wc.vanillicon.com
+    server: 104.17.3.81
     port: 443
     type: vmess
     uuid: 59c00424-7413-4107-8c98-085ed4f7fe6c
@@ -97,7 +97,7 @@ proxies:
     udp: true
 
   - name: INDO VPN NTLS
-    server: wc.vanillicon.com
+    server: 104.17.3.81
     port: 80
     type: vmess
     uuid: 59c00424-7413-4107-8c98-085ed4f7fe6c
@@ -334,6 +334,23 @@ proxies:
     alterId: 0
     cipher: auto
     tls: true
+    skip-cert-verify: true
+    servername: id2.knc.my.id
+    network: ws
+    ws-opts:
+      path: /?ed=2048
+      headers:
+        Host: id2.knc.my.id
+    udp: true
+
+  - name: VLESS KNC2 80
+    server: wc.vanillicon.com
+    port: 80
+    type: vless
+    uuid: 80510fd1-7a7d-4b83-a3db-05fb7f23dea5
+    alterId: 0
+    cipher: auto
+    tls: false
     skip-cert-verify: true
     servername: id2.knc.my.id
     network: ws
@@ -712,6 +729,7 @@ proxy-groups:
   proxies:
     -  VLESS ARIS TLS
     -  VLESS KNC 80
+    -  VLESS KNC2 80
     -  VLESS DO LOTUS
     -  VLESS DO LOTUS NTLS
     -  VLESS DO TLS
@@ -775,13 +793,14 @@ proxy-groups:
   url: 'http://www.gstatic.com/generate_204'
   interval: 300
 #Koneksi Sosmed
-- name: "RUANG GAME"
+- name: "LOBBY GAME"
   type: url-test #PILIIH SALAH SATU : SELECT,LOAD-BALANCE,FALLBACK,URL-TEST
   strategy: round-robin
   disable-udp: false
   proxies:
     -  VLESS KNC 443
     -  VLESS KNC 80
+    -  VLESS KNC2 80
     -  VLESS KNC2 443
     -  VLESS ID MAHAL
     -  VLESS ID SERVLESS
@@ -792,13 +811,13 @@ proxy-groups:
   url: 'http://www.gstatic.com/generate_204'
   interval: 300
 #Koneksi Sosmed
-- name: "PORT GAME"
+- name: "PLAY GAME"
   type: select #PILIIH SALAH SATU : SELECT,LOAD-BALANCE,FALLBACK,URL-TEST
   strategy: round-robin
   disable-udp: false
   proxies:
     -  DIRECT
-    -  RUANG GAME
+    -  LOBBY GAME
     -  BEST PING
   url: 'http://www.gstatic.com/generate_204'
   interval: 300
@@ -848,7 +867,7 @@ proxy-groups:
 - name: "AKUN BANK"
   type: select
   proxies:
-    -  RUANG GAME
+    -  LOBBY GAME
     -  BEST PING
     -  LOAD-BALANCE
     -  FALLBACK
@@ -873,9 +892,8 @@ proxy-groups:
   type: select
   proxies:
     -  REJECT
+    -  DIRECT
     -  BEST PING
-    -  LOAD-BALANCE
-    -  FALLBACK
   url: 'http://www.gstatic.com/generate_204'
   interval: 300
  #⬜⬜
@@ -886,8 +904,9 @@ proxy-groups:
   disable-udp: false
   proxies:
     -  VLESS KNC 443
-    -  VLESS KNC 80
     -  VLESS KNC2 443
+    -  VLESS KNC 80
+    -  VLESS KNC2 80
     -  VLESS DO LOTUS
     -  VLESS DO LOTUS NTLS
     -  VLESS DO TLS
@@ -943,6 +962,7 @@ proxy-groups:
     -  VLESS RIO BIZ NTLS
     -  VLESS ARIS TLS
     -  VLESS KNC 80
+    -  VLESS KNC2 80
     -  TROJAN TARIK
     -  INDO VPN 443
     -  INDO VPN NTLS
@@ -979,6 +999,7 @@ proxy-groups:
     -  INDOXRAY GRPC
     -  VLESS ARIS TLS
     -  VLESS KNC 80
+    -  VLESS KNC2 80
     -  VLESS RIO BIZ
     -  VLESS RIO BIZ NTLS
     -  WORKER GAME
@@ -1172,9 +1193,9 @@ rules:
 - RULE-SET,Nonton,STREAMING
 - RULE-SET,Indo,AKUN BANK
 - RULE-SET,Bank,AKUN BANK
-- RULE-SET,Portgames,PORT GAME
-- RULE-SET,Gaming,RUANG GAME
-- RULE-SET,Game-TCP,RUANG GAME
+- RULE-SET,Portgames,PLAY GAME
+- RULE-SET,Gaming,LOBBY GAME
+- RULE-SET,Game-TCP,LOBBY GAME
 - RULE-SET,WA,WHATSAPP
 - RULE-SET,Facebook,FACEBOOK
 - RULE-SET,Personalads,IKLAN

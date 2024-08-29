@@ -1,39 +1,5 @@
 proxies:
-  - name: IDL TLS
-    server: 104.17.3.81
-    port: 443
-    type: vmess
-    uuid: cedf07b8-2f39-4c29-828d-c5f1911573e1
-    alterId: 0
-    cipher: auto
-    tls: true
-    skip-cert-verify: true
-    servername: vvipp.klmpk.me
-    network: ws
-    ws-opts:
-      path: /vmess
-      headers:
-        Host: vvipp.klmpk.me
-    udp: true
-
-  - name: IDL NTLS
-    server: 104.17.3.81
-    port: 80
-    type: vmess
-    uuid: cedf07b8-2f39-4c29-828d-c5f1911573e1
-    alterId: 0
-    cipher: auto
-    tls: false
-    skip-cert-verify: true
-    servername: vvipp.klmpk.me
-    network: ws
-    ws-opts:
-      path: /vmess
-      headers:
-        Host: vvipp.klmpk.me
-    udp: true
-
-  - name: VLESS DO
+  - name: VLESS DO LOTUSH
     server: 104.17.3.81
     port: 443
     type: vless
@@ -49,6 +15,91 @@ proxies:
       headers:
         Host: sgdo.lotush.my.id
     udp: true
+
+  - name: VLESS DO LOTUS NTLS
+    server: 104.17.3.81
+    port: 80
+    type: vless
+    uuid: 01edb904-33ae-42cf-99d4-28f96082082e
+    alterId: 0
+    cipher: auto
+    tls: false
+    skip-cert-verify: true
+    servername: sgdo.lotush.my.id
+    network: ws
+    ws-opts:
+      path: /trixie
+      headers:
+        Host: sgdo.lotush.my.id
+    udp: true
+    
+  - name: VLESS RIO BIZ
+    server: 104.17.3.81
+    port: 443
+    type: vless
+    uuid: 9afa7e48-1af0-418f-b063-04bc7776b70e
+    alterId: 0
+    cipher: auto
+    tls: true
+    skip-cert-verify: true
+    servername: sg.ryo.biz.id
+    network: ws
+    ws-opts:
+      path: /vless-ws
+      headers:
+        Host: sg.ryo.biz.id
+    udp: true
+
+  - name: VLESS RIO BIZ NTLS
+    server: 104.17.3.81
+    port: 80
+    type: vless
+    uuid: 9afa7e48-1af0-418f-b063-04bc7776b70e
+    alterId: 0
+    cipher: auto
+    tls: false
+    skip-cert-verify: true
+    servername: sg.ryo.biz.id
+    network: ws
+    ws-opts:
+      path: /vless-ws
+      headers:
+        Host: sg.ryo.biz.id
+    udp: true
+    
+  - name: VLESS DO 443
+    server: 104.17.3.81
+    port: 443
+    type: vless
+    uuid: b0cb1b0b-f5ba-4ca4-a587-cfe48126bff7
+    alterId: 0
+    cipher: auto
+    tls: true
+    skip-cert-verify: true
+    servername: xcl.aframdani.cloud
+    network: ws
+    ws-opts:
+      path: /vless-ws
+      headers:
+        Host: xcl.aframdani.cloud
+    udp: true 
+
+  - name: VLESS DO 80
+    server: 104.17.3.81
+    port: 80
+    type: vless
+    uuid: b0cb1b0b-f5ba-4ca4-a587-cfe48126bff7
+    alterId: 0
+    cipher: auto
+    tls: false
+    skip-cert-verify: true
+    servername: xcl.aframdani.cloud
+    network: ws
+    ws-opts:
+      path: /vless-ws
+      headers:
+        Host: xcl.aframdani.cloud
+    udp: true 
 
   - name: VMESS VIPREX 443
     server: 104.17.3.81
@@ -100,6 +151,23 @@ proxies:
       headers:
         Host: sgdo1.aframdani.cloud
     udp: true
+    
+  - name: VLESS DO NTLS
+    server: 104.17.3.81
+    port: 80
+    type: vless
+    uuid: b0cb1b0b-f5ba-4ca4-a587-cfe48126bff7
+    alterId: 0
+    cipher: auto
+    tls: false
+    skip-cert-verify: true
+    servername: sgdo1.aframdani.cloud
+    network: ws
+    ws-opts:
+      path: /vless-ws
+      headers:
+        Host: sgdo1.aframdani.cloud
+    udp: true 
 
   - name: VLESS ARIS CF
     server: 104.17.3.81

@@ -873,9 +873,7 @@ proxy-groups:
   type: select
   proxies:
     -  REJECT
-    -  BEST PING
-    -  LOAD-BALANCE
-    -  FALLBACK
+    -  DIRECT
   url: 'http://www.gstatic.com/generate_204'
   interval: 300
  #⬜⬜

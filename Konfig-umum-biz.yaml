@@ -77,10 +77,10 @@ mixed-port: 7890
 # ====== wa: 081511411523 ======
 proxies:
 proxy-providers:
-  MC:
+  SG:
     type: http
     url: "https://raw.githubusercontent.com/ekosupry/CONFIG/main/MANCA-FREE_biz.yaml"
-    path: "./proxy_provider/MANCANEGARA.yaml"
+    path: "./proxy_provider/SINGA.yaml"
     health-check:
       enable: true
       url: http://www.gstatic.com/generate_204
@@ -88,11 +88,12 @@ proxy-providers:
   ID:
     type: http
     url: "https://raw.githubusercontent.com/ekosupry/CONFIG/main/INDO-FREE_biz.yaml"
-    path: "./proxy_provider/INDONESIA.yaml"
+    path: "./proxy_provider/NUSANTARA.yaml"
     health-check:
       enable: true
       url: http://www.gstatic.com/generate_204
       interval: 60
+  
 # ================= PG ==================
 proxy-groups:
 - name: SPEEDTEST ⚡
@@ -100,7 +101,7 @@ proxy-groups:
   strategy: round-robin
   disable-udp: false
   use:
-  - MC
+  - SG
   - ID
   url: 'http://www.gstatic.com/generate_204'
   interval: 60
@@ -111,8 +112,8 @@ proxy-groups:
   - BALANCE
   - FALLBACK
   - BEST-PING
-  - INDONESIA
-  - MANCANEGARA
+  - NUSANTARA
+  - SINGA
   - DIRECT
   url: 'http://www.gstatic.com/generate_204'
   interval: 60
@@ -124,13 +125,13 @@ proxy-groups:
   - BALANCE
   - FALLBACK
   - BEST-PING
-  - INDONESIA
-  - MANCANEGARA
+  - NUSANTARA
+  - SINGA
   - DIRECT
   - REJECT
   url: 'http://www.gstatic.com/generate_204'
   interval: 60
-- name: WHATSAPP
+- name: WHATSAPP 📨
   type: select
   strategy: round-robin
   disable-udp: false
@@ -138,8 +139,8 @@ proxy-groups:
   - BALANCE
   - FALLBACK
   - BEST-PING
-  - INDONESIA
-  - MANCANEGARA
+  - NUSANTARA
+  - SINGA
   - DIRECT
   - REJECT
   url: 'http://www.gstatic.com/generate_204'
@@ -152,8 +153,8 @@ proxy-groups:
   - BALANCE
   - FALLBACK
   - BEST-PING
-  - INDONESIA
-  - MANCANEGARA
+  - NUSANTARA
+  - SINGA
   - DIRECT
   - REJECT
   url: 'http://www.gstatic.com/generate_204'
@@ -165,8 +166,8 @@ proxy-groups:
   - BALANCE
   - FALLBACK
   - BEST-PING
-  - INDONESIA
-  - MANCANEGARA
+  - NUSANTARA
+  - SINGA
   - DIRECT
   - REJECT
   url: 'http://www.gstatic.com/generate_204'
@@ -178,8 +179,8 @@ proxy-groups:
   - BALANCE
   - FALLBACK
   - BEST-PING
-  - INDONESIA
-  - MANCANEGARA
+  - NUSANTARA
+  - SINGA
   - DIRECT
   - REJECT
   url: 'http://www.gstatic.com/generate_204'
@@ -191,8 +192,8 @@ proxy-groups:
   - BALANCE
   - FALLBACK
   - BEST-PING
-  - INDONESIA
-  - MANCANEGARA
+  - NUSANTARA
+  - SINGA
   - DIRECT
   - REJECT
   url: 'http://www.gstatic.com/generate_204'
@@ -201,12 +202,9 @@ proxy-groups:
   type: select
   disable-udp: false
   proxies:
-  - INDONESIA
-  - MANCANEGARA
+  - NUSANTARA
+  - SINGA
   - DIRECT
-  use:
-  - MC
-  - ID
   url: 'http://www.gstatic.com/generate_204'
   interval: 60
 - name: GAMING - MATCH 🎮
@@ -214,9 +212,8 @@ proxy-groups:
   disable-udp: false
   proxies:
   - DIRECT
-  - INDONESIA
-  use:
-  - ID
+  - NUSANTARA
+  - SINGA
   url: 'http://www.gstatic.com/generate_204'
   interval: 60
 - name: TRAFIK-AKUN-INDO 🛑
@@ -224,10 +221,9 @@ proxy-groups:
   strategy: round-robin
   disable-udp: false
   proxies:
-  - INDONESIA
+  - NUSANTARA
+  - SINGA
   - DIRECT
-  use:
-  - ID
   url: 'http://www.gstatic.com/generate_204'
   interval: 60
 - name: BANK 🏧
@@ -235,9 +231,10 @@ proxy-groups:
   strategy: round-robin
   disable-udp: false
   proxies:
-  - INDONESIA
-  - MANCANEGARA
+  - NUSANTARA
+  - SINGA
   - DIRECT
+  - REJECT
   url: 'http://www.gstatic.com/generate_204'
   interval: 60
 - name: ZEROTIER ⚠️
@@ -245,8 +242,8 @@ proxy-groups:
   strategy: consistent-hashing
   disable-udp: false
   proxies:
-  - INDONESIA
-  - MANCANEGARA
+  - NUSANTARA
+  - SINGA
   - DIRECT
   url: 'http://www.gstatic.com/generate_204'
   interval: 60
@@ -256,8 +253,8 @@ proxy-groups:
   disable-udp: false
   proxies:
   - BALANCE
-  - INDONESIA
-  - MANCANEGARA
+  - NUSANTARA
+  - SINGA
   - DIRECT
   - REJECT
   url: 'http://www.gstatic.com/generate_204'
@@ -267,17 +264,16 @@ proxy-groups:
   strategy: round-robin
   disable-udp: false
   use:
-  - MC
+  - SG
   - ID
   url: http://www.gstatic.com/generate_204
   interval: 30
-
 - name: FALLBACK
   type: fallback
   strategy: round-robin
   disable-udp: false
   use:
-  - MC
+  - SG
   - ID
   url: http://www.gstatic.com/generate_204
   interval: 60
@@ -287,12 +283,12 @@ proxy-groups:
   strategy: round-robin
   disable-udp: false
   use:
-  - MC
+  - SG
   - ID
   url: http://www.gstatic.com/generate_204
   interval: 60
 
-- name: INDONESIA
+- name: NUSANTARA
   type: url-test
   strategy: round-robin
   disable-udp: false
@@ -301,12 +297,12 @@ proxy-groups:
   url: http://www.gstatic.com/generate_204
   interval: 50
 
-- name: MANCANEGARA
+- name: SINGA
   type: url-test
   strategy: round-robin
   disable-udp: false
   use:
-  - MC
+  - SG
   url: http://www.gstatic.com/generate_204
   interval: 50
 # ================= RP  ==================
@@ -424,7 +420,11 @@ rule-providers:
     behavior: classical
     path: "./rule_provider/speed.yaml"
     url: "https://raw.githubusercontent.com/ekosupry/CONFIG/main/speed.yaml"
-
+  Judol:
+    type: http
+    behavior: classical
+    path: "./rule_provider/Judol.yaml"
+    url: "https://raw.githubusercontent.com/ekosupry/CONFIG/main/Judi_Online.yaml"
 # ================= RULES  ==================
 rules:
 - IP-CIDR,198.18.0.1/16,REJECT,no-resolve
@@ -439,12 +439,13 @@ rules:
 - RULE-SET,Portgames,GAMING - MATCH 🎮
 - RULE-SET,Gaming,GAMING - ROOM 🕹️
 - RULE-SET,Game-TCP,GAMING - ROOM 🕹️
-- RULE-SET,WA,WHATSAPP
+- RULE-SET,WA,WHATSAPP 📨
 - RULE-SET,Facebook,FACEBOOK
 - RULE-SET,Personalads,IKLAN 🛡
 - RULE-SET,Basicads,IKLAN 🛡
 - RULE-SET,18+,IKLAN 🛡
 - RULE-SET,Nsfw,IKLAN 🛡
+- RULE-SET,Judol,IKLAN 🛡
 - RULE-SET,YouTube,YOUTUBE 🎦
 - RULE-SET,Speed,SPEEDTEST ⚡
 - RULE-SET,Zero,ZEROTIER ⚠️

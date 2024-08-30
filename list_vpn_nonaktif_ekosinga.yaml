@@ -1,19 +1,5 @@
 proxies:
 #Singapura port 443
-  - name: TROJAN SG HERZA 443
-    server: 104.17.3.81
-    port: 443
-    type: trojan
-    password: 231f1a50-05fb-11ef-92ec-1577c1651679
-    skip-cert-verify: true
-    sni: 11.lowh.net
-    network: ws
-    ws-opts:
-      path: /welcome
-      headers:
-        Host: 11.lowh.net
-    udp: true
-
   - name: TROJAN SG 443
     server: 104.17.3.81
     port: 443
@@ -60,6 +46,20 @@ proxies:
       path: /worryfree
       headers:
         Host: sg-vless-ws.bypass.id
+    udp: true
+
+  - name: TROJAN SG HERZA 443
+    server: 104.17.3.81
+    port: 443
+    type: trojan
+    password: 231f1a50-05fb-11ef-92ec-1577c1651679
+    skip-cert-verify: true
+    sni: 11.lowh.net
+    network: ws
+    ws-opts:
+      path: /welcome
+      headers:
+        Host: 11.lowh.net
     udp: true
 
   - name: TROJAN SG Path 443

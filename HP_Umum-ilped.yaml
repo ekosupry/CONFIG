@@ -117,14 +117,14 @@ proxies:
     server: 104.18.3.2
     port: 443
     type: trojan
-    password: KCSiYoDzwlLc8o6m4qbKsg
+    password: 4cb43db0-6797-11ef-95df-1239d0255272
     skip-cert-verify: true
-    sni: indo.vpnpremium.id
+    sni: sg-4.test3.net
     network: ws
     ws-opts:
-      path: /trojan
+      path: /howdy
       headers:
-        Host: indo.vpnpremium.id
+        Host: sg-4.test3.net
     udp: true
 
   - name: INDOXRAY GRPC

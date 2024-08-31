@@ -1,4 +1,4 @@
-payload:
+.payload:
 # Mulai baris ini kebawah bisa di edit/hapus
 # &gt; LIST Streaming IP/Lokasi Wajib Indo
 # remote
@@ -24,6 +24,9 @@ payload:
 #pribadi
 - DOMAIN-SUFFIX,zello.com
 - DOMAIN-SUFFIX,yandex.com
+- DOMAIN-SUFFIX,yandex.net
+- DOMAIN-SUFFIX,yandex.ru
+- DOMAIN-KEYWORD,yandex
 - DOMAIN-KEYWORD,zello
 - DOMAIN-SUFFIX,github.com
 - DOMAIN-SUFFIX,pastebin.com

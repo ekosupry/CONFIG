@@ -1219,7 +1219,7 @@ rules:
 - RULE-SET,YouTube,YOUTUBE
 - RULE-SET,Speed,Global✅
 - RULE-SET,Zero,AKUN BANK
-- RULE-SET,Judol,IKLAN
+- RULE-SET,Judol,Adult🔞
 # Local Area Network
 - IP-CIDR,192.168.0.0/16,DIRECT
 - IP-CIDR,10.0.0.0/8,DIRECT

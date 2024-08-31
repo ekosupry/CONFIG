@@ -899,6 +899,16 @@ proxy-groups:
   url: 'http://www.gstatic.com/generate_204'
   interval: 300
  #⬜⬜
+ #koneksi untuk iklan,
+- name: "Adult🔞"
+  type: select
+  disable-udp: false
+  proxies:
+    -  REJECT
+    -  DIRECT
+  url: 'http://www.gstatic.com/generate_204'
+  interval: 300
+ #⬜⬜
    #koneksi untuk iklan,
 - name: "FALLBACK"
   type: fallback
@@ -1204,8 +1214,8 @@ rules:
 - RULE-SET,Facebook,FACEBOOK
 - RULE-SET,Personalads,IKLAN
 - RULE-SET,Basicads,IKLAN
-- RULE-SET,18+,IKLAN
-- RULE-SET,Nsfw,IKLAN
+- RULE-SET,18+,Adult🔞
+- RULE-SET,Nsfw,Adult🔞
 - RULE-SET,YouTube,YOUTUBE
 - RULE-SET,Speed,Global✅
 - RULE-SET,Zero,AKUN BANK

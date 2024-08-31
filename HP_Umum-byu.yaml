@@ -808,6 +808,8 @@ proxy-groups:
     -  INDO VPN 443
     -  INDO VPN NTLS
     -  TROJAN TARIK
+    -  VMESS SATU TLS
+    -  VMESS SATU NTLS
   url: 'http://www.gstatic.com/generate_204'
   interval: 300
 #Koneksi Sosmed
@@ -897,6 +899,16 @@ proxy-groups:
   url: 'http://www.gstatic.com/generate_204'
   interval: 300
  #⬜⬜
+ #koneksi untuk iklan,
+- name: "Adult🔞"
+  type: select
+  disable-udp: false
+  proxies:
+    -  REJECT
+    -  DIRECT
+  url: 'http://www.gstatic.com/generate_204'
+  interval: 300
+ #⬜⬜
    #koneksi untuk iklan,
 - name: "FALLBACK"
   type: fallback
@@ -963,13 +975,13 @@ proxy-groups:
     -  VLESS ARIS TLS
     -  VLESS KNC 80
     -  VLESS KNC2 80
+    -  VMESS SATU TLS
+    -  VMESS SATU NTLS
     -  TROJAN TARIK
     -  INDO VPN 443
     -  INDO VPN NTLS
     -  INDOXRAY GRPC
     -  VLESS ID MAHAL
-    -  VMESS SATU TLS
-    -  VMESS SATU NTLS
     -  VLESS ORACLE MAHAL
     -  VLESS ALIBABA MAHAL
     -  VLESS SG SERVLESS
@@ -1202,8 +1214,8 @@ rules:
 - RULE-SET,Facebook,FACEBOOK
 - RULE-SET,Personalads,IKLAN
 - RULE-SET,Basicads,IKLAN
-- RULE-SET,18+,IKLAN
-- RULE-SET,Nsfw,IKLAN
+- RULE-SET,18+,Adult🔞
+- RULE-SET,Nsfw,Adult🔞
 - RULE-SET,YouTube,YOUTUBE
 - RULE-SET,Speed,Global✅
 - RULE-SET,Zero,AKUN BANK

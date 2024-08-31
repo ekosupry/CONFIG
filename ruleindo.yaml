@@ -2,7 +2,6 @@ payload:
 # Mulai baris ini kebawah bisa di edit/hapus
 # &gt; LIST Streaming IP/Lokasi Wajib Indo
 # remote
-- IP-CIDR,10.147.17.101/24
 # operator
 - DOMAIN-SUFFIX,xl.co.id
 - DOMAIN-SUFFIX,axis.co.id

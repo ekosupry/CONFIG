@@ -1,4 +1,6 @@
 payload:
+#personal blok
+  - DOMAIN-SUFFIX,croxyproxy.com
 #iklan
   - DOMAIN-SUFFIX,pagead2.googlesyndication.com
   - DOMAIN-SUFFIX,pagead2.googleadservices.com

@@ -141,38 +141,38 @@ proxies:
     grpc-opts:
       grpc-service-name: vmess-grpc
 
-  - name: IDL TLS
-    server: 104.18.3.2
+  - name: VMESS SATU TLS
+    server: wc.vanillicon.com
     port: 443
     type: vmess
-    uuid: cedf07b8-2f39-4c29-828d-c5f1911573e1
+    uuid: 81eb0b22-396a-43a7-8646-1b9d1e6b51fd
     alterId: 0
     cipher: auto
     tls: true
     skip-cert-verify: true
-    servername: vvipp.klmpk.me
+    servername: mzvpn.my.id
     network: ws
     ws-opts:
       path: /vmess
       headers:
-        Host: vvipp.klmpk.me
+        Host: mzvpn.my.id
     udp: true
 
-  - name: IDL NTLS
-    server: 104.18.3.2
+  - name: VMESS SATU NTLS
+    server: wc.vanillicon.com
     port: 80
     type: vmess
-    uuid: cedf07b8-2f39-4c29-828d-c5f1911573e1
+    uuid: 81eb0b22-396a-43a7-8646-1b9d1e6b51fd
     alterId: 0
     cipher: auto
     tls: false
     skip-cert-verify: true
-    servername: vvipp.klmpk.me
+    servername: mzvpn.my.id
     network: ws
     ws-opts:
       path: /vmess
       headers:
-        Host: vvipp.klmpk.me
+        Host: mzvpn.my.id
     udp: true
 
   - name: VLESS ARIS TLS
@@ -763,8 +763,8 @@ proxy-groups:
     -  INDO VPN NTLS
     -  TROJAN TARIK
     -  INDOXRAY GRPC
-    -  IDL TLS
-    -  IDL NTLS
+    -  VMESS SATU TLS
+    -  VMESS SATU NTLS
   url: 'http://www.gstatic.com/generate_204'
   interval: 300
  #⬜⬜
@@ -808,6 +808,8 @@ proxy-groups:
     -  INDO VPN 443
     -  INDO VPN NTLS
     -  TROJAN TARIK
+    -  VMESS SATU TLS
+    -  VMESS SATU NTLS
   url: 'http://www.gstatic.com/generate_204'
   interval: 300
 #Koneksi Sosmed
@@ -920,8 +922,8 @@ proxy-groups:
     -  INDO VPN NTLS
     -  TROJAN TARIK
     -  INDOXRAY GRPC
-    -  IDL TLS
-    -  IDL NTLS
+    -  VMESS SATU TLS
+    -  VMESS SATU NTLS
     -  VLESS ARIS TLS
     -  WORKER GAME
     -  UWU FF
@@ -963,6 +965,8 @@ proxy-groups:
     -  VLESS ARIS TLS
     -  VLESS KNC 80
     -  VLESS KNC2 80
+    -  VMESS SATU TLS
+    -  VMESS SATU NTLS
     -  TROJAN TARIK
     -  INDO VPN 443
     -  INDO VPN NTLS
@@ -992,8 +996,8 @@ proxy-groups:
   strategy: round-robin
   disable-udp: false
   proxies:
-    -  IDL TLS
-    -  IDL NTLS
+    -  VMESS SATU TLS
+    -  VMESS SATU NTLS
     -  INDO VPN 443
     -  INDO VPN NTLS
     -  INDOXRAY GRPC

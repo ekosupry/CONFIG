@@ -723,7 +723,7 @@ proxies:
 proxy-groups:
 # Global kita gunakan untuk koneksi UMUM
 - name: "Global✅"
-  type: fallback
+  type: url-test
   strategy: round-robin
   disable-udp: false
   proxies:

@@ -23,6 +23,7 @@ payload:
 - DOMAIN-KEYWORD,smartfren
 #pribadi
 - DOMAIN-SUFFIX,zello.com
+- DOMAIN-SUFFIX,yandex.com
 - DOMAIN-KEYWORD,zello
 - DOMAIN-SUFFIX,github.com
 - DOMAIN-SUFFIX,pastebin.com

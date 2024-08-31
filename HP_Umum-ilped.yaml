@@ -142,7 +142,7 @@ proxies:
       grpc-service-name: vmess-grpc
 
   - name: VMESS SATU TLS
-    server: wc.vanillicon.com
+    server: 104.18.3.2
     port: 443
     type: vmess
     uuid: 81eb0b22-396a-43a7-8646-1b9d1e6b51fd
@@ -159,7 +159,7 @@ proxies:
     udp: true
 
   - name: VMESS SATU NTLS
-    server: wc.vanillicon.com
+    server: 104.18.3.2
     port: 80
     type: vmess
     uuid: 81eb0b22-396a-43a7-8646-1b9d1e6b51fd

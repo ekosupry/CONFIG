@@ -755,7 +755,6 @@ proxy-groups:
     -  VLESS DO LOTUS
     -  VLESS DO TLS
     -  VLESS DO 443
-    -  VLESS DO 80
     -  VLESS RIO BIZ
     -  VLESS KNC KR 443
     -  INDO VPN 443

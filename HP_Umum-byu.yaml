@@ -1,4 +1,4 @@
-# Anda menggunakan akun GRATIS
+# AKUN PREMIUM SINGAPURA DIGITAL OCEAN AKTIF SAMPAI 27 September 2024
 # Gass PREMIUM 10rb/device aktif 1 bulan,2 device 15rb
 # ==== Paket ILMUPEDIA ======
 # Buy paket TSEL dial *363*844# / *363*555#
@@ -80,7 +80,7 @@ mixed-port: 7890
 # ================= PG ==========
 proxies: 
   - name: INDO VPN 443
-    server: 104.17.3.81
+    server: wc.vanillicon.com
     port: 443
     type: vmess
     uuid: 59c00424-7413-4107-8c98-085ed4f7fe6c
@@ -96,18 +96,35 @@ proxies:
         Host: indo.vpnpremium.id
     udp: true
 
+  - name: INDO VPN NTLS
+    server: wc.vanillicon.com
+    port: 80
+    type: vmess
+    uuid: 59c00424-7413-4107-8c98-085ed4f7fe6c
+    alterId: 0
+    cipher: auto
+    tls: false
+    skip-cert-verify: true
+    servername: indo.vpnpremium.id
+    network: ws
+    ws-opts:
+      path: /vmess
+      headers:
+        Host: indo.vpnpremium.id
+    udp: true
+
   - name: TROJAN TARIK
     server: wc.vanillicon.com
     port: 443
     type: trojan
-    password: 4cb43db0-6797-11ef-95df-1239d0255272
+    password: KCSiYoDzwlLc8o6m4qbKsg
     skip-cert-verify: true
-    sni: sg-4.test3.net
+    sni: indo.vpnpremium.id
     network: ws
     ws-opts:
-      path: /howdy
+      path: /trojan
       headers:
-        Host: sg-4.test3.net
+        Host: indo.vpnpremium.id
     udp: true
 
   - name: INDOXRAY GRPC
@@ -124,7 +141,7 @@ proxies:
     grpc-opts:
       grpc-service-name: vmess-grpc
 
-  - name: VMESS SATU TLS
+  - name: VMESS 1 TLS
     server: wc.vanillicon.com
     port: 443
     type: vmess
@@ -139,6 +156,108 @@ proxies:
       path: /vmess
       headers:
         Host: mzvpn.my.id
+    udp: true
+
+  - name: VMESS 1 NTLS
+    server: wc.vanillicon.com
+    port: 80
+    type: vmess
+    uuid: 81eb0b22-396a-43a7-8646-1b9d1e6b51fd
+    alterId: 0
+    cipher: auto
+    tls: false
+    skip-cert-verify: true
+    servername: mzvpn.my.id
+    network: ws
+    ws-opts:
+      path: /vmess
+      headers:
+        Host: mzvpn.my.id
+    udp: true
+
+  - name: VMESS 2 TLS
+    server: wc.vanillicon.com
+    port: 443
+    type: vmess
+    uuid: a1655f51-1e20-4a92-8a11-b7ca30a7a353
+    alterId: 0
+    cipher: auto
+    tls: true
+    skip-cert-verify: true
+    servername: afrhms07.xfixedfloat.cfd
+    network: ws
+    ws-opts:
+      path: /linkws
+      headers:
+        Host: afrhms07.xfixedfloat.cfd
+    udp: true
+
+  - name: VMESS 2 NTLS
+    server: wc.vanillicon.com
+    port: 80
+    type: vmess
+    uuid: 63911f91-bc91-4b71-8d40-9ba99e7043e0
+    alterId: 0
+    cipher: auto
+    tls: false
+    skip-cert-verify: true
+    servername: GWYp69Yujp2.yofnhkfc.xyz
+    network: ws
+    ws-opts:
+      path: /video/VDXcaM7r
+      headers:
+        Host: GWYp69Yujp2.yofnhkfc.xyz
+    udp: true
+
+  - name: VMESS 3 TLS
+    server: wc.vanillicon.com
+    port: 443
+    type: vmess
+    uuid: edbb1059-1633-4271-b66e-ed4fba47a1bf
+    alterId: 0
+    cipher: auto
+    tls: true
+    skip-cert-verify: true
+    servername: linde06.indiavideo.sbs
+    network: ws
+    ws-opts:
+      path: /linkws
+      headers:
+        Host: linde06.indiavideo.sbs
+    udp: true
+
+  - name: VMESS 3 NTLS
+    server: wc.vanillicon.com
+    port: 80
+    type: vmess
+    uuid: 2c4d6f66-2966-49c1-93aa-a7192ba8f8fc
+    alterId: 0
+    cipher: auto
+    tls: false
+    skip-cert-verify: true
+    servername: 73012792103530616183052842717949.chrsjfklsdjfkljoierfdjklfjlkefeojsdlkfjeoifjsdlkfjweoifjlsdchrs.cyou
+    network: ws
+    ws-opts:
+      path: /V2LINE-TELEGRAM-CHANNEL-VMESS-WS
+      headers:
+        Host: 73012792103530616183052842717949.chrsjfklsdjfkljoierfdjklfjlkefeojsdlkfjeoifjsdlkfjweoifjlsdchrs.cyou
+    udp: true
+
+  - name: VMESS 4 NTLS
+    server: wc.vanillicon.com
+    port: 80
+    type: vmess
+    uuid: 0cb7b3c3-3c08-4391-af4d-3fc410c9c146
+    alterId: 0
+    cipher: auto
+    tls: false
+    skip-cert-verify: true
+    servername: 68690907783461163508239105253758.chrsjfklsdjfkljoierfdjklfjlkefeojsdlkfjeoifjsdlkfjweoifjlsdchrs.cyou
+    network: ws
+    ws-opts:
+      path: /V2LINE-TELEGRAM-CHANNEL-VMESS-WS
+      headers:
+        Host: 68690907783461163508239105253758.chrsjfklsdjfkljoierfdjklfjlkefeojsdlkfjeoifjsdlkfjweoifjlsdchrs.cyou
     udp: true
 
   - name: VLESS ARIS TLS
@@ -158,6 +277,23 @@ proxies:
         Host: server.arisctunnel.me
     udp: true
 
+  - name: VLESS KNC 80
+    server: wc.vanillicon.com
+    port: 80
+    type: vless
+    uuid: 80510fd1-7a7d-4b83-a3db-05fb7f23dea5
+    alterId: 0
+    cipher: auto
+    tls: false
+    skip-cert-verify: true
+    servername: id.knc.my.id
+    network: ws
+    ws-opts:
+      path: /?ed=2048
+      headers:
+        Host: id.knc.my.id
+    udp: true
+
   - name: VLESS DO LOTUS
     server: wc.vanillicon.com
     port: 443
@@ -175,6 +311,23 @@ proxies:
         Host: sgdo.lotush.my.id
     udp: true
 
+  - name: VLESS DO LOTUS NTLS
+    server: wc.vanillicon.com
+    port: 80
+    type: vless
+    uuid: 01edb904-33ae-42cf-99d4-28f96082082e
+    alterId: 0
+    cipher: auto
+    tls: false
+    skip-cert-verify: true
+    servername: sgdo.lotush.my.id
+    network: ws
+    ws-opts:
+      path: /trixie
+      headers:
+        Host: sgdo.lotush.my.id
+    udp: true
+    
   - name: VLESS RIO BIZ
     server: wc.vanillicon.com
     port: 443
@@ -183,6 +336,23 @@ proxies:
     alterId: 0
     cipher: auto
     tls: true
+    skip-cert-verify: true
+    servername: sg.ryo.biz.id
+    network: ws
+    ws-opts:
+      path: /vless-ws
+      headers:
+        Host: sg.ryo.biz.id
+    udp: true
+
+  - name: VLESS RIO BIZ NTLS
+    server: wc.vanillicon.com
+    port: 80
+    type: vless
+    uuid: 9afa7e48-1af0-418f-b063-04bc7776b70e
+    alterId: 0
+    cipher: auto
+    tls: false
     skip-cert-verify: true
     servername: sg.ryo.biz.id
     network: ws
@@ -258,6 +428,23 @@ proxies:
         Host: id2.knc.my.id
     udp: true
 
+  - name: VLESS KNC2 80
+    server: wc.vanillicon.com
+    port: 80
+    type: vless
+    uuid: 80510fd1-7a7d-4b83-a3db-05fb7f23dea5
+    alterId: 0
+    cipher: auto
+    tls: false
+    skip-cert-verify: true
+    servername: id2.knc.my.id
+    network: ws
+    ws-opts:
+      path: /?ed=2048
+      headers:
+        Host: id2.knc.my.id
+    udp: true
+
   - name: VLESS KNC KR 443
     server: wc.vanillicon.com
     port: 443
@@ -292,6 +479,23 @@ proxies:
         Host: sgdo1.aframdani.cloud
     udp: true 
 
+  - name: VLESS DO NTLS
+    server: wc.vanillicon.com
+    port: 80
+    type: vless
+    uuid: b0cb1b0b-f5ba-4ca4-a587-cfe48126bff7
+    alterId: 0
+    cipher: auto
+    tls: false
+    skip-cert-verify: true
+    servername: sgdo1.aframdani.cloud
+    network: ws
+    ws-opts:
+      path: /vless-ws
+      headers:
+        Host: sgdo1.aframdani.cloud
+    udp: true 
+
   - name: VLESS DO 443
     server: wc.vanillicon.com
     port: 443
@@ -309,6 +513,23 @@ proxies:
         Host: xcl.aframdani.cloud
     udp: true 
 
+  - name: VLESS DO 80
+    server: wc.vanillicon.com
+    port: 80
+    type: vless
+    uuid: b0cb1b0b-f5ba-4ca4-a587-cfe48126bff7
+    alterId: 0
+    cipher: auto
+    tls: false
+    skip-cert-verify: true
+    servername: xcl.aframdani.cloud
+    network: ws
+    ws-opts:
+      path: /vless-ws
+      headers:
+        Host: xcl.aframdani.cloud
+    udp: true 
+    
   - name: VLESS ID MAHAL
     server: wc.vanillicon.com
     port: 443
@@ -564,6 +785,22 @@ proxies:
         Host: sg-alibaba.tingkehvpn.my.id
     udp: true
 
+  - name: VLESS SG ALIBABA NTLS
+    server: wc.vanillicon.com
+    port: 80
+    type: vless
+    uuid: f9021b31-e8bd-4b4d-a1d3-c9b0c1476c44
+    alterId: 0
+    cipher: auto
+    tls: false
+    skip-cert-verify: true
+    servername: sg-alibaba.tingkehvpn.my.id
+    network: ws
+    ws-opts:
+      path: /vlesscf
+      headers:
+        Host: sg-alibaba.tingkehvpn.my.id
+    udp: true
 #🔴
 #🔴_____________________________________proxies______________________________________🔴
 #
@@ -571,7 +808,7 @@ proxies:
 proxy-groups:
 # Global kita gunakan untuk koneksi UMUM
 - name: "Global✅"
-  type: url-test
+  type: fallback
   strategy: round-robin
   disable-udp: false
   proxies:
@@ -603,7 +840,9 @@ proxy-groups:
     -  INDO VPN 443
     -  TROJAN TARIK
     -  INDOXRAY GRPC
-    -  VMESS SATU TLS
+    -  VMESS 1 TLS
+    -  VMESS 2 TLS
+    -  VMESS 3 TLS
   url: 'http://www.gstatic.com/generate_204'
   interval: 300
  #⬜⬜
@@ -644,7 +883,6 @@ proxy-groups:
     -  VLESS ID VLCFPAGE
     -  INDO VPN 443
     -  TROJAN TARIK
-    -  VMESS SATU TLS
   url: 'http://www.gstatic.com/generate_204'
   interval: 300
 #Koneksi Sosmed
@@ -678,8 +916,8 @@ proxy-groups:
   strategy: round-robin
   disable-udp: false
   proxies:
-    -  BEST PING
     -  FALLBACK
+    -  BEST PING
     -  LOAD-BALANCE
     -  DIRECT
     -  REJECT
@@ -692,8 +930,8 @@ proxy-groups:
   strategy: round-robin
   disable-udp: false
   proxies:
-    -  BEST PING
     -  FALLBACK
+    -  BEST PING
     -  LOAD-BALANCE
     -  DIRECT
     -  REJECT
@@ -717,10 +955,10 @@ proxy-groups:
 - name: "MARKETPLACE"
   type: select
   proxies:
+    -  REJECT
     -  LOAD-BALANCE
     -  BEST PING
     -  FALLBACK
-    -  REJECT
   url: 'http://www.gstatic.com/generate_204'
   interval: 300
  #⬜⬜
@@ -729,22 +967,22 @@ proxy-groups:
   type: select
   proxies:
     -  REJECT
-    -  DIRECT
     -  BEST PING
+    -  LOAD-BALANCE
+    -  FALLBACK
   url: 'http://www.gstatic.com/generate_204'
   interval: 300
  #⬜⬜
- #koneksi untuk iklan,
 - name: "Adult🔞"
   type: select
   disable-udp: false
   proxies:
     -  REJECT
     -  DIRECT
+    -  BEST PING
   url: 'http://www.gstatic.com/generate_204'
   interval: 300
  #⬜⬜
-   #koneksi untuk iklan,
 - name: "FALLBACK"
   type: fallback
   strategy: round-robin
@@ -756,11 +994,13 @@ proxy-groups:
     -  VLESS DO TLS
     -  VLESS DO 443
     -  VLESS RIO BIZ
+    -  VMESS 1 TLS
+    -  VMESS 2 TLS
+    -  VMESS 3 TLS
     -  VLESS KNC KR 443
     -  INDO VPN 443
     -  TROJAN TARIK
     -  INDOXRAY GRPC
-    -  VMESS SATU TLS
     -  VLESS ARIS TLS
     -  WORKER GAME
     -  UWU FF
@@ -795,10 +1035,12 @@ proxy-groups:
     -  VLESS DO LOTUS
     -  VLESS RIO BIZ
     -  VLESS ARIS TLS
-    -  VMESS SATU TLS
     -  TROJAN TARIK
     -  INDO VPN 443
     -  INDOXRAY GRPC
+    -  VMESS 1 TLS
+    -  VMESS 2 TLS
+    -  VMESS 3 TLS
     -  VLESS ID MAHAL
     -  VLESS ORACLE MAHAL
     -  VLESS ALIBABA MAHAL
@@ -813,7 +1055,7 @@ proxy-groups:
     -  VLESS SG ALIBABA 619
     -  VLESS SG ALIBABA 457
     -  VLESS SG ALIBABA 189
-    -  VLESS SG ALIBABA TLS 
+    -  VLESS SG ALIBABA TLS
   url: 'http://www.gstatic.com/generate_204'
   interval: 300
  #⬜⬜
@@ -823,7 +1065,9 @@ proxy-groups:
   strategy: round-robin
   disable-udp: false
   proxies:
-    -  VMESS SATU TLS
+    -  VMESS 1 TLS
+    -  VMESS 2 TLS
+    -  VMESS 3 TLS
     -  INDO VPN 443
     -  INDOXRAY GRPC
     -  VLESS ARIS TLS
@@ -855,7 +1099,6 @@ proxy-groups:
   url: 'http://www.gstatic.com/generate_204'
   interval: 300
  #⬜⬜
-   #koneksi untuk iklan,
 #🟡_________________________________PROCY-GROUP__________________________________🟡
 # Clash for Windows
 cfw-bypass:
@@ -1027,7 +1270,7 @@ rules:
 - RULE-SET,YouTube,YOUTUBE
 - RULE-SET,Speed,Global✅
 - RULE-SET,Zero,AKUN BANK
-- RULE-SET,Judol,Adult🔞
+- RULE-SET,Judol,IKLAN
 # Local Area Network
 - IP-CIDR,192.168.0.0/16,DIRECT
 - IP-CIDR,10.0.0.0/8,DIRECT

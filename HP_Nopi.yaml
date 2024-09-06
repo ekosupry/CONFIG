@@ -189,38 +189,38 @@ proxies:
     grpc-opts:
       grpc-service-name: vmess-grpc
 
-  - name: IDL TLS
+  - name: VMESS 1 TLS
     server: 104.18.3.2
     port: 443
     type: vmess
-    uuid: cedf07b8-2f39-4c29-828d-c5f1911573e1
+    uuid: 81eb0b22-396a-43a7-8646-1b9d1e6b51fd
     alterId: 0
     cipher: auto
     tls: true
     skip-cert-verify: true
-    servername: vvipp.klmpk.me
+    servername: mzvpn.my.id
     network: ws
     ws-opts:
       path: /vmess
       headers:
-        Host: vvipp.klmpk.me
+        Host: mzvpn.my.id
     udp: true
 
-  - name: IDL NTLS
+  - name: VMESS 2 NTLS
     server: 104.18.3.2
     port: 80
     type: vmess
-    uuid: cedf07b8-2f39-4c29-828d-c5f1911573e1
+    uuid: 81eb0b22-396a-43a7-8646-1b9d1e6b51fd
     alterId: 0
     cipher: auto
     tls: false
     skip-cert-verify: true
-    servername: vvipp.klmpk.me
+    servername: mzvpn.my.id
     network: ws
     ws-opts:
       path: /vmess
       headers:
-        Host: vvipp.klmpk.me
+        Host: mzvpn.my.id
     udp: true
 
   - name: VLESS ARIS TLS

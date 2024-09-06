@@ -999,6 +999,12 @@ proxy-groups:
     -  VMESS 3 TLS
     -  VMESS 3 NTLS
     -  VMESS 4 NTLS
+    -  Akari TLS
+    -  Akari NTLS
+    -  Stark TLS
+    -  Stark NTLS
+    -  Constant TLS
+    -  Constant NTLS
   url: 'http://www.gstatic.com/generate_204'
   interval: 300
  #⬜⬜
@@ -1167,6 +1173,12 @@ proxy-groups:
     -  VLESS DO 80
     -  VLESS RIO BIZ
     -  VLESS RIO BIZ NTLS
+    -  Akari TLS
+    -  Akari NTLS
+    -  Stark TLS
+    -  Stark NTLS
+    -  Constant TLS
+    -  Constant NTLS
     -  VLESS KNC KR 443
     -  INDO VPN 443
     -  INDO VPN NTLS
@@ -1234,6 +1246,12 @@ proxy-groups:
     -  VMESS 3 TLS
     -  VMESS 3 NTLS
     -  VMESS 4 NTLS
+    -  Akari TLS
+    -  Akari NTLS
+    -  Stark TLS
+    -  Stark NTLS
+    -  Constant TLS
+    -  Constant NTLS
     -  VLESS ID MAHAL
     -  VLESS ORACLE MAHAL
     -  VLESS ALIBABA MAHAL
@@ -1269,6 +1287,12 @@ proxy-groups:
     -  VMESS 3 TLS
     -  VMESS 3 NTLS
     -  VMESS 4 NTLS
+    -  Akari TLS
+    -  Akari NTLS
+    -  Stark TLS
+    -  Stark NTLS
+    -  Constant TLS
+    -  Constant NTLS
     -  INDO VPN 443
     -  INDO VPN NTLS
     -  INDOXRAY GRPC

@@ -127,67 +127,98 @@ proxies:
     grpc-opts:
       grpc-service-name: vmess-grpc
 
-  - name: INDO VPN 443
+  - name: Akari TLS
     server: 104.18.3.2
     port: 443
-    type: vmess
-    uuid: 59c00424-7413-4107-8c98-085ed4f7fe6c
-    alterId: 0
+    type: vless
+    uuid: 88833bea-f796-48a9-acab-7f8525351f63
     cipher: auto
     tls: true
-    skip-cert-verify: true
-    servername: indo.vpnpremium.id
-    network: ws
-    ws-opts:
-      path: /vmess
-      headers:
-        Host: indo.vpnpremium.id
     udp: true
+    skip-cert-verify: true
+    network: ws
+    servername: mmx.vpnoir9r.us.kg
+    ws-opts:
+      path: /sgakari
+      headers:
+        Host: mmx.vpnoir9r.us.kg
 
-  - name: INDO VPN NTLS
+  - name: Akari NTLS
     server: 104.18.3.2
     port: 80
-    type: vmess
-    uuid: 59c00424-7413-4107-8c98-085ed4f7fe6c
-    alterId: 0
+    type: vless
+    uuid: 8ecc0606-2931-440a-9a5e-c6fda585ddb6
     cipher: auto
     tls: false
+    udp: true
     skip-cert-verify: true
-    servername: indo.vpnpremium.id
     network: ws
     ws-opts:
-      path: /vmess
+      path: /sgakari
       headers:
-        Host: indo.vpnpremium.id
-    udp: true
+        Host: mmx.vpnoir9r.us.kg
 
-  - name: TROJAN TARIK
+  - name: Stark TLS
     server: 104.18.3.2
     port: 443
-    type: trojan
-    password: KCSiYoDzwlLc8o6m4qbKsg
-    skip-cert-verify: true
-    sni: indo.vpnpremium.id
-    network: ws
-    ws-opts:
-      path: /trojan
-      headers:
-        Host: indo.vpnpremium.id
-    udp: true
-
-  - name: INDOXRAY GRPC
-    server: 104.18.3.2
-    port: 443
-    type: vmess
-    uuid: b809ba19-00e2-483d-b1bc-bd7633a678ff
-    alterId: 0
+    type: vless
+    uuid: f085bb8b-0b74-45c1-9545-48f0e935df4f
     cipher: auto
-    network: grpc
     tls: true
-    servername: indoxray.me
+    udp: true
     skip-cert-verify: true
-    grpc-opts:
-      grpc-service-name: vmess-grpc
+    network: ws
+    servername: mmx.vpnoir9r.us.kg
+    ws-opts:
+      path: /hkey
+      headers:
+        Host: mmx.vpnoir9r.us.kg
+
+  - name: Stark NTLS
+    server: 104.18.3.2
+    port: 80
+    type: vless
+    uuid: f73c58d7-cce1-47e5-bc9e-9928a271e979
+    cipher: auto
+    tls: false
+    udp: true
+    skip-cert-verify: true
+    network: ws
+    ws-opts:
+      path: /hkey
+      headers:
+        Host: mmx.vpnoir9r.us.kg
+
+  - name: Constant TLS
+    server: 104.18.3.2
+    port: 443
+    type: vless
+    uuid: f5fe8c47-1dff-4ed8-b91c-f45acb2dc06c
+    cipher: auto
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    network: ws
+    servername: mmx.vpnoir9r.us.kg
+    ws-opts:
+      path: /sgtcc
+      headers:
+        Host: mmx.vpnoir9r.us.kg
+
+  - name: Constant NTLS
+    server: 104.18.3.2
+    port: 80
+    type: vless
+    uuid: afc9e203-3a2d-40fa-b159-b66620c623c8
+    cipher: auto
+    tls: false
+    udp: true
+    skip-cert-verify: true
+    network: ws
+    ws-opts:
+      path: /sgtcc
+      headers:
+        Host: mmx.vpnoir9r.us.kg
 
   - name: VMESS 1 TLS
     server: 104.18.3.2
@@ -307,6 +338,68 @@ proxies:
       headers:
         Host: 68690907783461163508239105253758.chrsjfklsdjfkljoierfdjklfjlkefeojsdlkfjeoifjsdlkfjweoifjlsdchrs.cyou
     udp: true
+
+  - name: INDO VPN 443
+    server: 104.18.3.2
+    port: 443
+    type: vmess
+    uuid: 59c00424-7413-4107-8c98-085ed4f7fe6c
+    alterId: 0
+    cipher: auto
+    tls: true
+    skip-cert-verify: true
+    servername: indo.vpnpremium.id
+    network: ws
+    ws-opts:
+      path: /vmess
+      headers:
+        Host: indo.vpnpremium.id
+    udp: true
+
+  - name: INDO VPN NTLS
+    server: 104.18.3.2
+    port: 80
+    type: vmess
+    uuid: 59c00424-7413-4107-8c98-085ed4f7fe6c
+    alterId: 0
+    cipher: auto
+    tls: false
+    skip-cert-verify: true
+    servername: indo.vpnpremium.id
+    network: ws
+    ws-opts:
+      path: /vmess
+      headers:
+        Host: indo.vpnpremium.id
+    udp: true
+
+  - name: TROJAN TARIK
+    server: 104.18.3.2
+    port: 443
+    type: trojan
+    password: KCSiYoDzwlLc8o6m4qbKsg
+    skip-cert-verify: true
+    sni: indo.vpnpremium.id
+    network: ws
+    ws-opts:
+      path: /trojan
+      headers:
+        Host: indo.vpnpremium.id
+    udp: true
+
+  - name: INDOXRAY GRPC
+    server: 104.18.3.2
+    port: 443
+    type: vmess
+    uuid: b809ba19-00e2-483d-b1bc-bd7633a678ff
+    alterId: 0
+    cipher: auto
+    network: grpc
+    tls: true
+    servername: indoxray.me
+    skip-cert-verify: true
+    grpc-opts:
+      grpc-service-name: vmess-grpc
 
   - name: VLESS ARIS TLS
     server: 104.18.3.2
@@ -906,6 +999,12 @@ proxy-groups:
     -  VMESS 3 TLS
     -  VMESS 3 NTLS
     -  VMESS 4 NTLS
+    -  Akari TLS
+    -  Akari NTLS
+    -  Stark TLS
+    -  Stark NTLS
+    -  Constant TLS
+    -  Constant NTLS
   url: 'http://www.gstatic.com/generate_204'
   interval: 300
  #⬜⬜
@@ -1074,6 +1173,12 @@ proxy-groups:
     -  VLESS DO 80
     -  VLESS RIO BIZ
     -  VLESS RIO BIZ NTLS
+    -  Akari TLS
+    -  Akari NTLS
+    -  Stark TLS
+    -  Stark NTLS
+    -  Constant TLS
+    -  Constant NTLS
     -  VLESS KNC KR 443
     -  INDO VPN 443
     -  INDO VPN NTLS
@@ -1141,6 +1246,12 @@ proxy-groups:
     -  VMESS 3 TLS
     -  VMESS 3 NTLS
     -  VMESS 4 NTLS
+    -  Akari TLS
+    -  Akari NTLS
+    -  Stark TLS
+    -  Stark NTLS
+    -  Constant TLS
+    -  Constant NTLS
     -  VLESS ID MAHAL
     -  VLESS ORACLE MAHAL
     -  VLESS ALIBABA MAHAL
@@ -1176,6 +1287,12 @@ proxy-groups:
     -  VMESS 3 TLS
     -  VMESS 3 NTLS
     -  VMESS 4 NTLS
+    -  Akari TLS
+    -  Akari NTLS
+    -  Stark TLS
+    -  Stark NTLS
+    -  Constant TLS
+    -  Constant NTLS
     -  INDO VPN 443
     -  INDO VPN NTLS
     -  INDOXRAY GRPC

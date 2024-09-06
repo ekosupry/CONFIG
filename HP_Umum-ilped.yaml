@@ -1,4 +1,4 @@
-# Anda menggunakan akun GRATIS
+# AKUN PREMIUM SINGAPURA DIGITAL OCEAN AKTIF SAMPAI 27 September 2024
 # Gass PREMIUM 10rb/device aktif 1 bulan,2 device 15rb
 # ==== Paket ILMUPEDIA ======
 # Buy paket TSEL dial *363*844# / *363*555#
@@ -80,7 +80,7 @@ mixed-port: 7890
 # ================= PG ==========
 proxies: 
   - name: INDO VPN 443
-    server: 104.17.3.81
+    server: 104.18.3.2
     port: 443
     type: vmess
     uuid: 59c00424-7413-4107-8c98-085ed4f7fe6c
@@ -97,7 +97,7 @@ proxies:
     udp: true
 
   - name: INDO VPN NTLS
-    server: 104.17.3.81
+    server: 104.18.3.2
     port: 80
     type: vmess
     uuid: 59c00424-7413-4107-8c98-085ed4f7fe6c
@@ -117,14 +117,14 @@ proxies:
     server: 104.18.3.2
     port: 443
     type: trojan
-    password: 4cb43db0-6797-11ef-95df-1239d0255272
+    password: KCSiYoDzwlLc8o6m4qbKsg
     skip-cert-verify: true
-    sni: sg-4.test3.net
+    sni: indo.vpnpremium.id
     network: ws
     ws-opts:
-      path: /howdy
+      path: /trojan
       headers:
-        Host: sg-4.test3.net
+        Host: indo.vpnpremium.id
     udp: true
 
   - name: INDOXRAY GRPC
@@ -141,7 +141,7 @@ proxies:
     grpc-opts:
       grpc-service-name: vmess-grpc
 
-  - name: VMESS SATU TLS
+  - name: VMESS 1 TLS
     server: 104.18.3.2
     port: 443
     type: vmess
@@ -158,7 +158,7 @@ proxies:
         Host: mzvpn.my.id
     udp: true
 
-  - name: VMESS SATU NTLS
+  - name: VMESS 1 NTLS
     server: 104.18.3.2
     port: 80
     type: vmess
@@ -173,6 +173,91 @@ proxies:
       path: /vmess
       headers:
         Host: mzvpn.my.id
+    udp: true
+
+  - name: VMESS 2 TLS
+    server: 104.18.3.2
+    port: 443
+    type: vmess
+    uuid: a1655f51-1e20-4a92-8a11-b7ca30a7a353
+    alterId: 0
+    cipher: auto
+    tls: true
+    skip-cert-verify: true
+    servername: afrhms07.xfixedfloat.cfd
+    network: ws
+    ws-opts:
+      path: /linkws
+      headers:
+        Host: afrhms07.xfixedfloat.cfd
+    udp: true
+
+  - name: VMESS 2 NTLS
+    server: 104.18.3.2
+    port: 80
+    type: vmess
+    uuid: 63911f91-bc91-4b71-8d40-9ba99e7043e0
+    alterId: 0
+    cipher: auto
+    tls: false
+    skip-cert-verify: true
+    servername: GWYp69Yujp2.yofnhkfc.xyz
+    network: ws
+    ws-opts:
+      path: /video/VDXcaM7r
+      headers:
+        Host: GWYp69Yujp2.yofnhkfc.xyz
+    udp: true
+
+  - name: VMESS 3 TLS
+    server: 104.18.3.2
+    port: 443
+    type: vmess
+    uuid: edbb1059-1633-4271-b66e-ed4fba47a1bf
+    alterId: 0
+    cipher: auto
+    tls: true
+    skip-cert-verify: true
+    servername: linde06.indiavideo.sbs
+    network: ws
+    ws-opts:
+      path: /linkws
+      headers:
+        Host: linde06.indiavideo.sbs
+    udp: true
+
+  - name: VMESS 3 NTLS
+    server: 104.18.3.2
+    port: 80
+    type: vmess
+    uuid: 2c4d6f66-2966-49c1-93aa-a7192ba8f8fc
+    alterId: 0
+    cipher: auto
+    tls: false
+    skip-cert-verify: true
+    servername: 73012792103530616183052842717949.chrsjfklsdjfkljoierfdjklfjlkefeojsdlkfjeoifjsdlkfjweoifjlsdchrs.cyou
+    network: ws
+    ws-opts:
+      path: /V2LINE-TELEGRAM-CHANNEL-VMESS-WS
+      headers:
+        Host: 73012792103530616183052842717949.chrsjfklsdjfkljoierfdjklfjlkefeojsdlkfjeoifjsdlkfjweoifjlsdchrs.cyou
+    udp: true
+
+  - name: VMESS 4 NTLS
+    server: 104.18.3.2
+    port: 80
+    type: vmess
+    uuid: 0cb7b3c3-3c08-4391-af4d-3fc410c9c146
+    alterId: 0
+    cipher: auto
+    tls: false
+    skip-cert-verify: true
+    servername: 68690907783461163508239105253758.chrsjfklsdjfkljoierfdjklfjlkefeojsdlkfjeoifjsdlkfjweoifjlsdchrs.cyou
+    network: ws
+    ws-opts:
+      path: /V2LINE-TELEGRAM-CHANNEL-VMESS-WS
+      headers:
+        Host: 68690907783461163508239105253758.chrsjfklsdjfkljoierfdjklfjlkefeojsdlkfjeoifjsdlkfjweoifjlsdchrs.cyou
     udp: true
 
   - name: VLESS ARIS TLS
@@ -723,7 +808,7 @@ proxies:
 proxy-groups:
 # Global kita gunakan untuk koneksi UMUM
 - name: "Global✅"
-  type: url-test
+  type: fallback
   strategy: round-robin
   disable-udp: false
   proxies:
@@ -763,8 +848,13 @@ proxy-groups:
     -  INDO VPN NTLS
     -  TROJAN TARIK
     -  INDOXRAY GRPC
-    -  VMESS SATU TLS
-    -  VMESS SATU NTLS
+    -  VMESS 1 TLS
+    -  VMESS 1 NTLS
+    -  VMESS 2 TLS
+    -  VMESS 2 NTLS
+    -  VMESS 3 TLS
+    -  VMESS 3 NTLS
+    -  VMESS 4 NTLS
   url: 'http://www.gstatic.com/generate_204'
   interval: 300
  #⬜⬜
@@ -808,8 +898,6 @@ proxy-groups:
     -  INDO VPN 443
     -  INDO VPN NTLS
     -  TROJAN TARIK
-    -  VMESS SATU TLS
-    -  VMESS SATU NTLS
   url: 'http://www.gstatic.com/generate_204'
   interval: 300
 #Koneksi Sosmed
@@ -843,8 +931,8 @@ proxy-groups:
   strategy: round-robin
   disable-udp: false
   proxies:
-    -  BEST PING
     -  FALLBACK
+    -  BEST PING
     -  LOAD-BALANCE
     -  DIRECT
     -  REJECT
@@ -882,10 +970,10 @@ proxy-groups:
 - name: "MARKETPLACE"
   type: select
   proxies:
+    -  REJECT
     -  LOAD-BALANCE
     -  BEST PING
     -  FALLBACK
-    -  REJECT
   url: 'http://www.gstatic.com/generate_204'
   interval: 300
  #⬜⬜
@@ -894,12 +982,12 @@ proxy-groups:
   type: select
   proxies:
     -  REJECT
-    -  DIRECT
     -  BEST PING
+    -  LOAD-BALANCE
+    -  FALLBACK
   url: 'http://www.gstatic.com/generate_204'
   interval: 300
  #⬜⬜
- #koneksi untuk iklan,
 - name: "Adult🔞"
   type: select
   disable-udp: false
@@ -909,7 +997,6 @@ proxy-groups:
   url: 'http://www.gstatic.com/generate_204'
   interval: 300
  #⬜⬜
-   #koneksi untuk iklan,
 - name: "FALLBACK"
   type: fallback
   strategy: round-robin
@@ -932,8 +1019,13 @@ proxy-groups:
     -  INDO VPN NTLS
     -  TROJAN TARIK
     -  INDOXRAY GRPC
-    -  VMESS SATU TLS
-    -  VMESS SATU NTLS
+    -  VMESS 1 TLS
+    -  VMESS 1 NTLS
+    -  VMESS 2 TLS
+    -  VMESS 2 NTLS
+    -  VMESS 3 TLS
+    -  VMESS 3 NTLS
+    -  VMESS 4 NTLS
     -  VLESS ARIS TLS
     -  WORKER GAME
     -  UWU FF
@@ -975,12 +1067,17 @@ proxy-groups:
     -  VLESS ARIS TLS
     -  VLESS KNC 80
     -  VLESS KNC2 80
-    -  VMESS SATU TLS
-    -  VMESS SATU NTLS
     -  TROJAN TARIK
     -  INDO VPN 443
     -  INDO VPN NTLS
     -  INDOXRAY GRPC
+    -  VMESS 1 TLS
+    -  VMESS 1 NTLS
+    -  VMESS 2 TLS
+    -  VMESS 2 NTLS
+    -  VMESS 3 TLS
+    -  VMESS 3 NTLS
+    -  VMESS 4 NTLS
     -  VLESS ID MAHAL
     -  VLESS ORACLE MAHAL
     -  VLESS ALIBABA MAHAL
@@ -1006,8 +1103,13 @@ proxy-groups:
   strategy: round-robin
   disable-udp: false
   proxies:
-    -  VMESS SATU TLS
-    -  VMESS SATU NTLS
+    -  VMESS 1 TLS
+    -  VMESS 1 NTLS
+    -  VMESS 2 TLS
+    -  VMESS 2 NTLS
+    -  VMESS 3 TLS
+    -  VMESS 3 NTLS
+    -  VMESS 4 NTLS
     -  INDO VPN 443
     -  INDO VPN NTLS
     -  INDOXRAY GRPC
@@ -1047,7 +1149,6 @@ proxy-groups:
   url: 'http://www.gstatic.com/generate_204'
   interval: 300
  #⬜⬜
-   #koneksi untuk iklan,
 #🟡_________________________________PROCY-GROUP__________________________________🟡
 # Clash for Windows
 cfw-bypass:
@@ -1219,7 +1320,7 @@ rules:
 - RULE-SET,YouTube,YOUTUBE
 - RULE-SET,Speed,Global✅
 - RULE-SET,Zero,AKUN BANK
-- RULE-SET,Judol,Adult🔞
+- RULE-SET,Judol,IKLAN
 # Local Area Network
 - IP-CIDR,192.168.0.0/16,DIRECT
 - IP-CIDR,10.0.0.0/8,DIRECT

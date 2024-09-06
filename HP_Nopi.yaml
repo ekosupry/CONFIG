@@ -206,7 +206,7 @@ proxies:
         Host: mzvpn.my.id
     udp: true
 
-  - name: VMESS 2 NTLS
+  - name: VMESS 1 NTLS
     server: 104.18.3.2
     port: 80
     type: vmess

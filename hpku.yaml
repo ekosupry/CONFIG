@@ -862,20 +862,13 @@ proxy-groups:
   proxies:
     -  SG DO GRPC
     -  SG DO TLS
-    -  SG DO NTLS
     -  VLESS ARIS TLS
-    -  VLESS KNC 80
-    -  VLESS KNC2 80
     -  VLESS DO LOTUS
-    -  VLESS DO LOTUS NTLS
     -  VLESS DO TLS
-    -  VLESS DO NTLS
     -  VLESS DO 443
-    -  VLESS DO 80
     -  WORKER GAME
     -  UWU FF
     -  VLESS RIO BIZ
-    -  VLESS RIO BIZ NTLS
     -  VLESS KNC 443
     -  VLESS KNC2 443
     -  VLESS KNC KR 443
@@ -894,18 +887,12 @@ proxy-groups:
     -  VLESS SG ALIBABA 457
     -  VLESS SG ALIBABA 189
     -  VLESS SG ALIBABA TLS
-    -  VLESS SG ALIBABA NTLS
     -  INDO VPN 443
-    -  INDO VPN NTLS
     -  TROJAN TARIK
     -  INDOXRAY GRPC
     -  VMESS 1 TLS
-    -  VMESS 1 NTLS
     -  VMESS 2 TLS
-    -  VMESS 2 NTLS
     -  VMESS 3 TLS
-    -  VMESS 3 NTLS
-    -  VMESS 4 NTLS
   url: 'http://www.gstatic.com/generate_204'
   interval: 300
  #⬜⬜
@@ -942,14 +929,11 @@ proxy-groups:
   disable-udp: false
   proxies:
     -  VLESS KNC 443
-    -  VLESS KNC 80
-    -  VLESS KNC2 80
     -  VLESS KNC2 443
     -  VLESS ID MAHAL
     -  VLESS ID SERVLESS
     -  VLESS ID VLCFPAGE
     -  INDO VPN 443
-    -  INDO VPN NTLS
     -  TROJAN TARIK
   url: 'http://www.gstatic.com/generate_204'
   interval: 300
@@ -1061,31 +1045,19 @@ proxy-groups:
   proxies:
     -  SG DO GRPC
     -  SG DO TLS
-    -  SG DO NTLS
     -  VLESS KNC 443
     -  VLESS KNC2 443
-    -  VLESS KNC 80
-    -  VLESS KNC2 80
     -  VLESS DO LOTUS
-    -  VLESS DO LOTUS NTLS
     -  VLESS DO TLS
-    -  VLESS DO NTLS
     -  VLESS DO 443
-    -  VLESS DO 80
     -  VLESS RIO BIZ
-    -  VLESS RIO BIZ NTLS
     -  VLESS KNC KR 443
     -  INDO VPN 443
-    -  INDO VPN NTLS
     -  TROJAN TARIK
     -  INDOXRAY GRPC
     -  VMESS 1 TLS
-    -  VMESS 1 NTLS
     -  VMESS 2 TLS
-    -  VMESS 2 NTLS
     -  VMESS 3 TLS
-    -  VMESS 3 NTLS
-    -  VMESS 4 NTLS
     -  VLESS ARIS TLS
     -  WORKER GAME
     -  UWU FF
@@ -1104,7 +1076,6 @@ proxy-groups:
     -  VLESS SG ALIBABA 457
     -  VLESS SG ALIBABA 189
     -  VLESS SG ALIBABA TLS
-    -  VLESS SG ALIBABA NTLS
   url: 'http://www.gstatic.com/generate_204'
   interval: 300
   #koneksi untuk iklan,
@@ -1115,32 +1086,20 @@ proxy-groups:
   proxies:
     -  SG DO GRPC
     -  SG DO TLS
-    -  SG DO NTLS
     -  VLESS KNC 443
     -  VLESS KNC2 443
     -  VLESS KNC KR 443
     -  VLESS DO TLS
-    -  VLESS DO NTLS
     -  VLESS DO 443
-    -  VLESS DO 80
     -  VLESS DO LOTUS
-    -  VLESS DO LOTUS NTLS
     -  VLESS RIO BIZ
-    -  VLESS RIO BIZ NTLS
     -  VLESS ARIS TLS
-    -  VLESS KNC 80
-    -  VLESS KNC2 80
     -  TROJAN TARIK
     -  INDO VPN 443
-    -  INDO VPN NTLS
     -  INDOXRAY GRPC
     -  VMESS 1 TLS
-    -  VMESS 1 NTLS
     -  VMESS 2 TLS
-    -  VMESS 2 NTLS
     -  VMESS 3 TLS
-    -  VMESS 3 NTLS
-    -  VMESS 4 NTLS
     -  VLESS ID MAHAL
     -  VLESS ORACLE MAHAL
     -  VLESS ALIBABA MAHAL
@@ -1156,7 +1115,6 @@ proxy-groups:
     -  VLESS SG ALIBABA 457
     -  VLESS SG ALIBABA 189
     -  VLESS SG ALIBABA TLS
-    -  VLESS SG ALIBABA NTLS
   url: 'http://www.gstatic.com/generate_204'
   interval: 300
  #⬜⬜
@@ -1168,33 +1126,21 @@ proxy-groups:
   proxies:
     -  SG DO GRPC
     -  SG DO TLS
-    -  SG DO NTLS
     -  VMESS 1 TLS
-    -  VMESS 1 NTLS
     -  VMESS 2 TLS
-    -  VMESS 2 NTLS
     -  VMESS 3 TLS
-    -  VMESS 3 NTLS
-    -  VMESS 4 NTLS
     -  INDO VPN 443
-    -  INDO VPN NTLS
     -  INDOXRAY GRPC
     -  VLESS ARIS TLS
-    -  VLESS KNC 80
-    -  VLESS KNC2 80
     -  VLESS RIO BIZ
-    -  VLESS RIO BIZ NTLS
     -  WORKER GAME
     -  UWU FF
     -  VLESS KNC 443
     -  VLESS KNC2 443
     -  VLESS KNC KR 443
     -  VLESS DO TLS
-    -  VLESS DO NTLS
     -  VLESS DO 443
-    -  VLESS DO 80
     -  VLESS DO LOTUS
-    -  VLESS DO LOTUS NTLS
     -  TROJAN TARIK
     -  VLESS ID MAHAL
     -  VLESS ORACLE MAHAL
@@ -1211,7 +1157,6 @@ proxy-groups:
     -  VLESS SG ALIBABA 457
     -  VLESS SG ALIBABA 189
     -  VLESS SG ALIBABA TLS
-    -  VLESS SG ALIBABA NTLS
   url: 'http://www.gstatic.com/generate_204'
   interval: 300
  #⬜⬜

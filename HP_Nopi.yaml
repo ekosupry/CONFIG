@@ -814,8 +814,8 @@ proxy-groups:
     -  INDO VPN NTLS
     -  TROJAN TARIK
     -  INDOXRAY GRPC
-    -  IDL TLS
-    -  IDL NTLS
+    -  VMESS 1 TLS
+    -  VMESS 1 NTLS
   url: 'http://www.gstatic.com/generate_204'
   interval: 300
  #⬜⬜
@@ -989,8 +989,8 @@ proxy-groups:
     -  INDO VPN NTLS
     -  TROJAN TARIK
     -  INDOXRAY GRPC
-    -  IDL TLS
-    -  IDL NTLS
+    -  VMESS 1 TLS
+    -  VMESS 1 NTLS
     -  VLESS ARIS TLS
     -  WORKER GAME
     -  UWU FF
@@ -1039,6 +1039,8 @@ proxy-groups:
     -  INDO VPN 443
     -  INDO VPN NTLS
     -  INDOXRAY GRPC
+    -  VMESS 1 TLS
+    -  VMESS 1 NTLS
     -  VLESS ID MAHAL
     -  VLESS ORACLE MAHAL
     -  VLESS ALIBABA MAHAL
@@ -1067,8 +1069,8 @@ proxy-groups:
     -  SG DO GRPC
     -  SG DO TLS
     -  SG DO NTLS
-    -  IDL TLS
-    -  IDL NTLS
+    -  VMESS 1 TLS
+    -  VMESS 1 NTLS
     -  INDO VPN 443
     -  INDO VPN NTLS
     -  INDOXRAY GRPC

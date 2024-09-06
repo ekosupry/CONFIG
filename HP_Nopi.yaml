@@ -223,6 +223,23 @@ proxies:
         Host: mzvpn.my.id
     udp: true
 
+  - name: VMESS 2 TLS
+    server: 104.18.3.2
+    port: 443
+    type: vmess
+    uuid: a1655f51-1e20-4a92-8a11-b7ca30a7a353
+    alterId: 0
+    cipher: auto
+    tls: true
+    skip-cert-verify: true
+    servername: afrhms07.xfixedfloat.cfd
+    network: ws
+    ws-opts:
+      path: /linkws
+      headers:
+        Host: afrhms07.xfixedfloat.cfd
+    udp: true
+
   - name: VLESS ARIS TLS
     server: 104.18.3.2
     port: 443

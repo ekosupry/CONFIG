@@ -274,6 +274,40 @@ proxies:
         Host: linde06.indiavideo.sbs
     udp: true
 
+  - name: VMESS 3 NTLS
+    server: 104.18.3.2
+    port: 80
+    type: vmess
+    uuid: 2c4d6f66-2966-49c1-93aa-a7192ba8f8fc
+    alterId: 0
+    cipher: auto
+    tls: false
+    skip-cert-verify: true
+    servername: 73012792103530616183052842717949.chrsjfklsdjfkljoierfdjklfjlkefeojsdlkfjeoifjsdlkfjweoifjlsdchrs.cyou
+    network: ws
+    ws-opts:
+      path: /V2LINE-TELEGRAM-CHANNEL-VMESS-WS
+      headers:
+        Host: 73012792103530616183052842717949.chrsjfklsdjfkljoierfdjklfjlkefeojsdlkfjeoifjsdlkfjweoifjlsdchrs.cyou
+    udp: true
+
+  - name: VMESS 4 NTLS
+    server: 104.18.3.2
+    port: 80
+    type: vmess
+    uuid: 0cb7b3c3-3c08-4391-af4d-3fc410c9c146
+    alterId: 0
+    cipher: auto
+    tls: false
+    skip-cert-verify: true
+    servername: 68690907783461163508239105253758.chrsjfklsdjfkljoierfdjklfjlkefeojsdlkfjeoifjsdlkfjweoifjlsdchrs.cyou
+    network: ws
+    ws-opts:
+      path: /V2LINE-TELEGRAM-CHANNEL-VMESS-WS
+      headers:
+        Host: 68690907783461163508239105253758.chrsjfklsdjfkljoierfdjklfjlkefeojsdlkfjeoifjsdlkfjweoifjlsdchrs.cyou
+    udp: true
+
   - name: VLESS ARIS TLS
     server: 104.18.3.2
     port: 443
@@ -867,6 +901,11 @@ proxy-groups:
     -  INDOXRAY GRPC
     -  VMESS 1 TLS
     -  VMESS 1 NTLS
+    -  VMESS 2 TLS
+    -  VMESS 2 NTLS
+    -  VMESS 3 TLS
+    -  VMESS 3 NTLS
+    -  VMESS 4 NTLS
   url: 'http://www.gstatic.com/generate_204'
   interval: 300
  #⬜⬜
@@ -1042,6 +1081,11 @@ proxy-groups:
     -  INDOXRAY GRPC
     -  VMESS 1 TLS
     -  VMESS 1 NTLS
+    -  VMESS 2 TLS
+    -  VMESS 2 NTLS
+    -  VMESS 3 TLS
+    -  VMESS 3 NTLS
+    -  VMESS 4 NTLS
     -  VLESS ARIS TLS
     -  WORKER GAME
     -  UWU FF
@@ -1092,6 +1136,11 @@ proxy-groups:
     -  INDOXRAY GRPC
     -  VMESS 1 TLS
     -  VMESS 1 NTLS
+    -  VMESS 2 TLS
+    -  VMESS 2 NTLS
+    -  VMESS 3 TLS
+    -  VMESS 3 NTLS
+    -  VMESS 4 NTLS
     -  VLESS ID MAHAL
     -  VLESS ORACLE MAHAL
     -  VLESS ALIBABA MAHAL
@@ -1122,6 +1171,11 @@ proxy-groups:
     -  SG DO NTLS
     -  VMESS 1 TLS
     -  VMESS 1 NTLS
+    -  VMESS 2 TLS
+    -  VMESS 2 NTLS
+    -  VMESS 3 TLS
+    -  VMESS 3 NTLS
+    -  VMESS 4 NTLS
     -  INDO VPN 443
     -  INDO VPN NTLS
     -  INDOXRAY GRPC

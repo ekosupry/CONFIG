@@ -979,7 +979,6 @@ proxy-groups:
   proxies:
     -  REJECT
     -  DIRECT
-    -  BEST PING
   url: 'http://www.gstatic.com/generate_204'
   interval: 300
  #⬜⬜

@@ -240,6 +240,23 @@ proxies:
         Host: afrhms07.xfixedfloat.cfd
     udp: true
 
+  - name: VMESS 2 NTLS
+    server: 104.18.3.2
+    port: 80
+    type: vmess
+    uuid: 63911f91-bc91-4b71-8d40-9ba99e7043e0
+    alterId: 0
+    cipher: auto
+    tls: false
+    skip-cert-verify: true
+    servername: GWYp69Yujp2.yofnhkfc.xyz
+    network: ws
+    ws-opts:
+      path: /video/VDXcaM7r
+      headers:
+        Host: GWYp69Yujp2.yofnhkfc.xyz
+    udp: true
+
   - name: VLESS ARIS TLS
     server: 104.18.3.2
     port: 443

@@ -257,6 +257,23 @@ proxies:
         Host: GWYp69Yujp2.yofnhkfc.xyz
     udp: true
 
+  - name: VMESS 3 TLS
+    server: 104.18.3.2
+    port: 443
+    type: vmess
+    uuid: edbb1059-1633-4271-b66e-ed4fba47a1bf
+    alterId: 0
+    cipher: auto
+    tls: true
+    skip-cert-verify: true
+    servername: linde06.indiavideo.sbs
+    network: ws
+    ws-opts:
+      path: /linkws
+      headers:
+        Host: linde06.indiavideo.sbs
+    udp: true
+
   - name: VLESS ARIS TLS
     server: 104.18.3.2
     port: 443

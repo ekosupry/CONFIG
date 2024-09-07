@@ -96,23 +96,6 @@ proxies:
         Host: kuhaku.zerossh.my.id
     udp: true
 
-  - name: SG DO NTLS
-    server: wc.vanillicon.com
-    port: 80
-    type: vmess
-    uuid: 99f4b372-865d-4bf5-a9ad-f9afd7d786a8
-    alterId: 0
-    cipher: auto
-    tls: false
-    skip-cert-verify: true
-    servername: kuhaku.zerossh.my.id
-    network: ws
-    ws-opts:
-      path: /vmess
-      headers:
-        Host: kuhaku.zerossh.my.id
-    udp: true
-
   - name: SG DO GRPC
     server: wc.vanillicon.com
     port: 443
@@ -128,7 +111,7 @@ proxies:
       grpc-service-name: vmess-grpc
 
   - name: Akari TLS
-    server: 104.18.3.2
+    server: wc.vanillicon.com
     port: 443
     type: vless
     uuid: 88833bea-f796-48a9-acab-7f8525351f63
@@ -144,7 +127,7 @@ proxies:
         Host: mmx.vpnoir9r.us.kg
 
   - name: Stark TLS
-    server: 104.18.3.2
+    server: wc.vanillicon.com
     port: 443
     type: vless
     uuid: f085bb8b-0b74-45c1-9545-48f0e935df4f
@@ -159,6 +142,23 @@ proxies:
       headers:
         Host: mmx.vpnoir9r.us.kg
 
+  - name: Constant TLS
+    server: wc.vanillicon.com
+    port: 443
+    type: vless
+    uuid: f5fe8c47-1dff-4ed8-b91c-f45acb2dc06c
+    cipher: auto
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    network: ws
+    servername: mmx.vpnoir9r.us.kg
+    ws-opts:
+      path: /sgtcc
+      headers:
+        Host: mmx.vpnoir9r.us.kg
+
+
   - name: INDO VPN 443
     server: wc.vanillicon.com
     port: 443
@@ -167,23 +167,6 @@ proxies:
     alterId: 0
     cipher: auto
     tls: true
-    skip-cert-verify: true
-    servername: indo.vpnpremium.id
-    network: ws
-    ws-opts:
-      path: /vmess
-      headers:
-        Host: indo.vpnpremium.id
-    udp: true
-
-  - name: INDO VPN NTLS
-    server: wc.vanillicon.com
-    port: 80
-    type: vmess
-    uuid: 59c00424-7413-4107-8c98-085ed4f7fe6c
-    alterId: 0
-    cipher: auto
-    tls: false
     skip-cert-verify: true
     servername: indo.vpnpremium.id
     network: ws
@@ -238,23 +221,6 @@ proxies:
         Host: mzvpn.my.id
     udp: true
 
-  - name: VMESS 1 NTLS
-    server: wc.vanillicon.com
-    port: 80
-    type: vmess
-    uuid: 81eb0b22-396a-43a7-8646-1b9d1e6b51fd
-    alterId: 0
-    cipher: auto
-    tls: false
-    skip-cert-verify: true
-    servername: mzvpn.my.id
-    network: ws
-    ws-opts:
-      path: /vmess
-      headers:
-        Host: mzvpn.my.id
-    udp: true
-
   - name: VMESS 2 TLS
     server: wc.vanillicon.com
     port: 443
@@ -270,23 +236,6 @@ proxies:
       path: /linkws
       headers:
         Host: afrhms07.xfixedfloat.cfd
-    udp: true
-
-  - name: VMESS 2 NTLS
-    server: wc.vanillicon.com
-    port: 80
-    type: vmess
-    uuid: 63911f91-bc91-4b71-8d40-9ba99e7043e0
-    alterId: 0
-    cipher: auto
-    tls: false
-    skip-cert-verify: true
-    servername: GWYp69Yujp2.yofnhkfc.xyz
-    network: ws
-    ws-opts:
-      path: /video/VDXcaM7r
-      headers:
-        Host: GWYp69Yujp2.yofnhkfc.xyz
     udp: true
 
   - name: VMESS 3 TLS
@@ -306,40 +255,6 @@ proxies:
         Host: linde06.indiavideo.sbs
     udp: true
 
-  - name: VMESS 3 NTLS
-    server: wc.vanillicon.com
-    port: 80
-    type: vmess
-    uuid: 2c4d6f66-2966-49c1-93aa-a7192ba8f8fc
-    alterId: 0
-    cipher: auto
-    tls: false
-    skip-cert-verify: true
-    servername: 73012792103530616183052842717949.chrsjfklsdjfkljoierfdjklfjlkefeojsdlkfjeoifjsdlkfjweoifjlsdchrs.cyou
-    network: ws
-    ws-opts:
-      path: /V2LINE-TELEGRAM-CHANNEL-VMESS-WS
-      headers:
-        Host: 73012792103530616183052842717949.chrsjfklsdjfkljoierfdjklfjlkefeojsdlkfjeoifjsdlkfjweoifjlsdchrs.cyou
-    udp: true
-
-  - name: VMESS 4 NTLS
-    server: wc.vanillicon.com
-    port: 80
-    type: vmess
-    uuid: 0cb7b3c3-3c08-4391-af4d-3fc410c9c146
-    alterId: 0
-    cipher: auto
-    tls: false
-    skip-cert-verify: true
-    servername: 68690907783461163508239105253758.chrsjfklsdjfkljoierfdjklfjlkefeojsdlkfjeoifjsdlkfjweoifjlsdchrs.cyou
-    network: ws
-    ws-opts:
-      path: /V2LINE-TELEGRAM-CHANNEL-VMESS-WS
-      headers:
-        Host: 68690907783461163508239105253758.chrsjfklsdjfkljoierfdjklfjlkefeojsdlkfjeoifjsdlkfjweoifjlsdchrs.cyou
-    udp: true
-
   - name: VLESS ARIS TLS
     server: wc.vanillicon.com
     port: 443
@@ -355,23 +270,6 @@ proxies:
       path: /?ed=2048
       headers:
         Host: server.arisctunnel.me
-    udp: true
-
-  - name: VLESS KNC 80
-    server: wc.vanillicon.com
-    port: 80
-    type: vless
-    uuid: 80510fd1-7a7d-4b83-a3db-05fb7f23dea5
-    alterId: 0
-    cipher: auto
-    tls: false
-    skip-cert-verify: true
-    servername: id.knc.my.id
-    network: ws
-    ws-opts:
-      path: /?ed=2048
-      headers:
-        Host: id.knc.my.id
     udp: true
 
   - name: VLESS DO LOTUS
@@ -390,23 +288,6 @@ proxies:
       headers:
         Host: sgdo.lotush.my.id
     udp: true
-
-  - name: VLESS DO LOTUS NTLS
-    server: wc.vanillicon.com
-    port: 80
-    type: vless
-    uuid: 01edb904-33ae-42cf-99d4-28f96082082e
-    alterId: 0
-    cipher: auto
-    tls: false
-    skip-cert-verify: true
-    servername: sgdo.lotush.my.id
-    network: ws
-    ws-opts:
-      path: /trixie
-      headers:
-        Host: sgdo.lotush.my.id
-    udp: true
     
   - name: VLESS RIO BIZ
     server: wc.vanillicon.com
@@ -416,23 +297,6 @@ proxies:
     alterId: 0
     cipher: auto
     tls: true
-    skip-cert-verify: true
-    servername: sg.ryo.biz.id
-    network: ws
-    ws-opts:
-      path: /vless-ws
-      headers:
-        Host: sg.ryo.biz.id
-    udp: true
-
-  - name: VLESS RIO BIZ NTLS
-    server: wc.vanillicon.com
-    port: 80
-    type: vless
-    uuid: 9afa7e48-1af0-418f-b063-04bc7776b70e
-    alterId: 0
-    cipher: auto
-    tls: false
     skip-cert-verify: true
     servername: sg.ryo.biz.id
     network: ws
@@ -508,23 +372,6 @@ proxies:
         Host: id2.knc.my.id
     udp: true
 
-  - name: VLESS KNC2 80
-    server: wc.vanillicon.com
-    port: 80
-    type: vless
-    uuid: 80510fd1-7a7d-4b83-a3db-05fb7f23dea5
-    alterId: 0
-    cipher: auto
-    tls: false
-    skip-cert-verify: true
-    servername: id2.knc.my.id
-    network: ws
-    ws-opts:
-      path: /?ed=2048
-      headers:
-        Host: id2.knc.my.id
-    udp: true
-
   - name: VLESS KNC KR 443
     server: wc.vanillicon.com
     port: 443
@@ -559,23 +406,6 @@ proxies:
         Host: sgdo1.aframdani.cloud
     udp: true 
 
-  - name: VLESS DO NTLS
-    server: wc.vanillicon.com
-    port: 80
-    type: vless
-    uuid: b0cb1b0b-f5ba-4ca4-a587-cfe48126bff7
-    alterId: 0
-    cipher: auto
-    tls: false
-    skip-cert-verify: true
-    servername: sgdo1.aframdani.cloud
-    network: ws
-    ws-opts:
-      path: /vless-ws
-      headers:
-        Host: sgdo1.aframdani.cloud
-    udp: true 
-
   - name: VLESS DO 443
     server: wc.vanillicon.com
     port: 443
@@ -584,23 +414,6 @@ proxies:
     alterId: 0
     cipher: auto
     tls: true
-    skip-cert-verify: true
-    servername: xcl.aframdani.cloud
-    network: ws
-    ws-opts:
-      path: /vless-ws
-      headers:
-        Host: xcl.aframdani.cloud
-    udp: true 
-
-  - name: VLESS DO 80
-    server: wc.vanillicon.com
-    port: 80
-    type: vless
-    uuid: b0cb1b0b-f5ba-4ca4-a587-cfe48126bff7
-    alterId: 0
-    cipher: auto
-    tls: false
     skip-cert-verify: true
     servername: xcl.aframdani.cloud
     network: ws
@@ -864,23 +677,6 @@ proxies:
       headers:
         Host: sg-alibaba.tingkehvpn.my.id
     udp: true
-
-  - name: VLESS SG ALIBABA NTLS
-    server: wc.vanillicon.com
-    port: 80
-    type: vless
-    uuid: f9021b31-e8bd-4b4d-a1d3-c9b0c1476c44
-    alterId: 0
-    cipher: auto
-    tls: false
-    skip-cert-verify: true
-    servername: sg-alibaba.tingkehvpn.my.id
-    network: ws
-    ws-opts:
-      path: /vlesscf
-      headers:
-        Host: sg-alibaba.tingkehvpn.my.id
-    udp: true
 #🔴
 #🔴_____________________________________proxies______________________________________🔴
 #
@@ -895,6 +691,9 @@ proxy-groups:
     -  SG DO GRPC
     -  SG DO TLS
     -  VLESS ARIS TLS
+    -  Akari TLS
+    -  Stark TLS
+    -  Constant TLS
     -  VLESS DO LOTUS
     -  VLESS DO TLS
     -  VLESS DO 443
@@ -1066,7 +865,7 @@ proxy-groups:
   proxies:
     -  REJECT
     -  DIRECT
-    -  BEST PING
+    -  PREMIUM
   url: 'http://www.gstatic.com/generate_204'
   interval: 300
  #⬜⬜
@@ -1079,6 +878,9 @@ proxy-groups:
     -  SG DO TLS
     -  VLESS KNC 443
     -  VLESS KNC2 443
+    -  Akari TLS
+    -  Stark TLS
+    -  Constant TLS
     -  VLESS DO LOTUS
     -  VLESS DO TLS
     -  VLESS DO 443
@@ -1118,6 +920,9 @@ proxy-groups:
   proxies:
     -  SG DO GRPC
     -  SG DO TLS
+    -  Akari TLS
+    -  Stark TLS
+    -  Constant TLS
     -  VLESS KNC 443
     -  VLESS KNC2 443
     -  VLESS KNC KR 443
@@ -1158,6 +963,9 @@ proxy-groups:
   proxies:
     -  SG DO GRPC
     -  SG DO TLS
+    -  Akari TLS
+    -  Stark TLS
+    -  Constant TLS
     -  VMESS 1 TLS
     -  VMESS 2 TLS
     -  VMESS 3 TLS
@@ -1200,7 +1008,6 @@ proxy-groups:
   proxies:
     -  SG DO GRPC
     -  SG DO TLS
-    -  SG DO NTLS
   url: 'http://www.gstatic.com/generate_204'
   interval: 30
 #🟡_________________________________PROCY-GROUP__________________________________🟡

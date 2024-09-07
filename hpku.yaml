@@ -127,6 +127,38 @@ proxies:
     grpc-opts:
       grpc-service-name: vmess-grpc
 
+  - name: Akari TLS
+    server: 104.18.3.2
+    port: 443
+    type: vless
+    uuid: 88833bea-f796-48a9-acab-7f8525351f63
+    cipher: auto
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    network: ws
+    servername: mmx.vpnoir9r.us.kg
+    ws-opts:
+      path: /sgakari
+      headers:
+        Host: mmx.vpnoir9r.us.kg
+
+  - name: Stark TLS
+    server: 104.18.3.2
+    port: 443
+    type: vless
+    uuid: f085bb8b-0b74-45c1-9545-48f0e935df4f
+    cipher: auto
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    network: ws
+    servername: mmx.vpnoir9r.us.kg
+    ws-opts:
+      path: /hkey
+      headers:
+        Host: mmx.vpnoir9r.us.kg
+
   - name: INDO VPN 443
     server: wc.vanillicon.com
     port: 443

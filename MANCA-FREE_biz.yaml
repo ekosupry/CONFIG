@@ -1,4 +1,97 @@
 proxies:
+  - name: Akari TLS
+    server: 104.17.3.81
+    port: 443
+    type: vless
+    uuid: 88833bea-f796-48a9-acab-7f8525351f63
+    cipher: auto
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    network: ws
+    servername: mmx.vpnoir9r.us.kg
+    ws-opts:
+      path: /sgakari
+      headers:
+        Host: mmx.vpnoir9r.us.kg
+
+  - name: Akari NTLS
+    server: 104.17.3.81
+    port: 80
+    type: vless
+    uuid: 8ecc0606-2931-440a-9a5e-c6fda585ddb6
+    cipher: auto
+    tls: false
+    udp: true
+    skip-cert-verify: true
+    network: ws
+    ws-opts:
+      path: /sgakari
+      headers:
+        Host: mmx.vpnoir9r.us.kg
+
+  - name: Stark TLS
+    server: 104.17.3.81
+    port: 443
+    type: vless
+    uuid: f085bb8b-0b74-45c1-9545-48f0e935df4f
+    cipher: auto
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    network: ws
+    servername: mmx.vpnoir9r.us.kg
+    ws-opts:
+      path: /hkey
+      headers:
+        Host: mmx.vpnoir9r.us.kg
+
+  - name: Stark NTLS
+    server: 104.17.3.81
+    port: 80
+    type: vless
+    uuid: f73c58d7-cce1-47e5-bc9e-9928a271e979
+    cipher: auto
+    tls: false
+    udp: true
+    skip-cert-verify: true
+    network: ws
+    ws-opts:
+      path: /hkey
+      headers:
+        Host: mmx.vpnoir9r.us.kg
+
+  - name: Constant TLS
+    server: 104.17.3.81
+    port: 443
+    type: vless
+    uuid: f5fe8c47-1dff-4ed8-b91c-f45acb2dc06c
+    cipher: auto
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    network: ws
+    servername: mmx.vpnoir9r.us.kg
+    ws-opts:
+      path: /sgtcc
+      headers:
+        Host: mmx.vpnoir9r.us.kg
+
+  - name: Constant NTLS
+    server: 104.17.3.81
+    port: 80
+    type: vless
+    uuid: afc9e203-3a2d-40fa-b159-b66620c623c8
+    cipher: auto
+    tls: false
+    udp: true
+    skip-cert-verify: true
+    network: ws
+    ws-opts:
+      path: /sgtcc
+      headers:
+        Host: mmx.vpnoir9r.us.kg
+
   - name: VLESS DO LOTUSH
     server: 104.17.3.81
     port: 443

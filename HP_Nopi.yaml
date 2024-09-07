@@ -959,6 +959,12 @@ proxy-groups:
     -  VLESS ARIS TLS
     -  VLESS KNC 80
     -  VLESS KNC2 80
+    -  Akari TLS
+    -  Akari NTLS
+    -  Stark TLS
+    -  Stark NTLS
+    -  Constant TLS
+    -  Constant NTLS
     -  VLESS DO LOTUS
     -  VLESS DO LOTUS NTLS
     -  VLESS DO TLS
@@ -999,12 +1005,6 @@ proxy-groups:
     -  VMESS 3 TLS
     -  VMESS 3 NTLS
     -  VMESS 4 NTLS
-    -  Akari TLS
-    -  Akari NTLS
-    -  Stark TLS
-    -  Stark NTLS
-    -  Constant TLS
-    -  Constant NTLS
   url: 'http://www.gstatic.com/generate_204'
   interval: 300
  #⬜⬜
@@ -1149,7 +1149,7 @@ proxy-groups:
   proxies:
     -  REJECT
     -  DIRECT
-    -  BEST PING
+    -  PREMIUM
   url: 'http://www.gstatic.com/generate_204'
   interval: 300
  #⬜⬜

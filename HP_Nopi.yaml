@@ -220,6 +220,471 @@ proxies:
       headers:
         Host: mmx.vpnoir9r.us.kg
 
+  - name: Shenzhen TLS
+    server: 104.18.3.2
+    port: 443
+    type: vless
+    uuid: 1274725a-c62e-4633-a9d9-09db430e07e8
+    cipher: auto
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    network: ws
+    servername: mmx.vpnoir9r.us.kg
+    ws-opts:
+      path: /sgtencent
+      headers:
+        Host: mmx.vpnoir9r.us.kg
+
+  - name: Shenzhen NTLS
+    server: 104.18.3.2
+    port: 80
+    type: vless
+    uuid: ca31957e-9e6c-4808-a6a5-e8aa807d3647
+    cipher: auto
+    tls: false
+    udp: true
+    skip-cert-verify: true
+    network: ws
+    ws-opts:
+      path: /sgtencent
+      headers:
+        Host: mmx.vpnoir9r.us.kg
+
+  - name: Datacamp TLS
+    server: 104.18.3.2
+    port: 443
+    type: vless
+    uuid: afa67365-6b46-43c9-adf3-5fbf5e8d2037
+    cipher: auto
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    network: ws
+    servername: mmx.vpnoir9r.us.kg
+    ws-opts:
+      path: /DATACAMP
+      headers:
+        Host: mmx.vpnoir9r.us.kg
+
+  - name: Datacamp NTLS
+    server: 104.18.3.2
+    port: 80
+    type: vless
+    uuid: 17a5fc45-52e2-401c-bece-7f6989fe9269
+    cipher: auto
+    tls: false
+    udp: true
+    skip-cert-verify: true
+    network: ws
+    ws-opts:
+      path: /DATACAMP
+      headers:
+        Host: mmx.vpnoir9r.us.kg
+
+  - name: iFog TLS
+    server: 104.18.3.2
+    port: 443
+    type: vless
+    uuid: ac526db3-dd40-479b-8d44-7dc73a9e1910
+    cipher: auto
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    network: ws
+    servername: mmx.vpnoir9r.us.kg
+    ws-opts:
+      path: /IFOG
+      headers:
+        Host: mmx.vpnoir9r.us.kg
+
+  - name: iFog NTLS
+    server: 104.18.3.2
+    port: 80
+    type: vless
+    uuid: 640f4056-8f27-4f5b-8432-ec4c4c771a1d
+    cipher: auto
+    tls: false
+    udp: true
+    skip-cert-verify: true
+    network: ws
+    ws-opts:
+      path: /IFOG
+      headers:
+        Host: mmx.vpnoir9r.us.kg
+
+  - name: Ipxo TLS
+    server: 104.18.3.2
+    port: 443
+    type: vless
+    uuid: 41543ead-8f60-470c-8d8d-89b1ff92d7ae
+    cipher: auto
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    network: ws
+    servername: mmx.vpnoir9r.us.kg
+    ws-opts:
+      path: /REGXA
+      headers:
+        Host: mmx.vpnoir9r.us.kg
+
+  - name: Ipxo NTLS
+    server: 104.18.3.2
+    port: 80
+    type: vless
+    uuid: 1c6d569b-a627-4dfa-86a6-eccbc8d42513
+    cipher: auto
+    tls: false
+    udp: true
+    skip-cert-verify: true
+    network: ws
+    ws-opts:
+      path: /REGXA
+      headers:
+        Host: mmx.vpnoir9r.us.kg
+
+  - name: Contabo TLS
+    server: 104.18.3.2
+    port: 443
+    type: vless
+    uuid: d88db041-0e33-46db-8fa0-82a47eb1fe5d
+    cipher: auto
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    network: ws
+    servername: mmx.vpnoir9r.us.kg
+    ws-opts:
+      path: /CONTABO-SG
+      headers:
+        Host: mmx.vpnoir9r.us.kg
+
+  - name: Contabo NTLS
+    server: 104.18.3.2
+    port: 80
+    type: vless
+    uuid: 8c7dde2c-8ad5-4cb7-a407-bd0c422ff5d5
+    cipher: auto
+    tls: false
+    udp: true
+    skip-cert-verify: true
+    network: ws
+    ws-opts:
+      path: /CONTABO-SG
+      headers:
+        Host: mmx.vpnoir9r.us.kg
+
+  - name: Alibaba TLS
+    server: 104.18.3.2
+    port: 443
+    type: vless
+    uuid: b09f99be-2c42-4c41-a86e-489adf534b9e
+    cipher: auto
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    network: ws
+    servername: mmx.vpnoir9r.us.kg
+    ws-opts:
+      path: /sgalibaba
+      headers:
+        Host: mmx.vpnoir9r.us.kg
+
+  - name: Alibaba NTLS
+    server: 104.18.3.2
+    port: 80
+    type: vless
+    uuid: 866f0cb8-6cc3-44ec-aff9-cd21a1ed55ed
+    cipher: auto
+    tls: false
+    udp: true
+    skip-cert-verify: true
+    network: ws
+    ws-opts:
+      path: /sgalibaba
+      headers:
+        Host: mmx.vpnoir9r.us.kg
+
+  - name: Akamai TLS
+    server: 104.18.3.2
+    port: 443
+    type: vless
+    uuid: 1f4694a2-d6c6-4594-b6cd-a7872f87ac7c
+    cipher: auto
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    network: ws
+    servername: mmx.vpnoir9r.us.kg
+    ws-opts:
+      path: /sgakamai
+      headers:
+        Host: mmx.vpnoir9r.us.kg
+
+  - name: Akamai NTLS
+    server: 104.18.3.2
+    port: 80
+    type: vless
+    uuid: 59be15c9-9f95-4092-871d-1b72662b946b
+    cipher: auto
+    tls: false
+    udp: true
+    skip-cert-verify: true
+    network: ws
+    ws-opts:
+      path: /sgakamai
+      headers:
+        Host: mmx.vpnoir9r.us.kg
+
+  - name: Akamai ID TLS
+    server: 104.18.3.2
+    port: 443
+    type: vless
+    uuid: e38568b2-41b1-4082-81e9-91a1a6c719b7
+    cipher: auto
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    network: ws
+    servername: mmx.vpnoir9r.us.kg
+    ws-opts:
+      path: /idakamai
+      headers:
+        Host: mmx.vpnoir9r.us.kg
+
+  - name: Akamai ID NTLS
+    server: mmx.vpnoir9r.us.kg
+    port: 80
+    type: vless
+    uuid: 7967a40e-c229-4f23-b5a7-9b2f49a3b72b
+    cipher: auto
+    tls: false
+    udp: true
+    skip-cert-verify: true
+    network: ws
+    ws-opts:
+      path: /idakamai
+      headers:
+        Host: mmx.vpnoir9r.us.kg
+
+  - name: Hetzner TLS
+    server: 104.18.3.2
+    port: 443
+    type: vless
+    uuid: fc47849b-9f97-44a5-8c6e-ee019681c7fa
+    cipher: auto
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    network: ws
+    servername: mmx.vpnoir9r.us.kg
+    ws-opts:
+      path: /sghz
+      headers:
+        Host: mmx.vpnoir9r.us.kg
+
+  - name: Hetzner NTLS
+    server: 104.18.3.2
+    port: 80
+    type: vless
+    uuid: 59ce0ae2-dd26-4d73-a046-20f0f81d01ea
+    cipher: auto
+    tls: false
+    udp: true
+    skip-cert-verify: true
+    network: ws
+    ws-opts:
+      path: /sghz
+      headers:
+        Host: mmx.vpnoir9r.us.kg
+
+  - name: Google ID TLS
+    server: 104.18.3.2
+    port: 443
+    type: vless
+    uuid: 4ea53b3b-ce7b-40db-ad47-b61f9e62fe34
+    cipher: auto
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    network: ws
+    servername: mmx.vpnoir9r.us.kg
+    ws-opts:
+      path: /GCPID
+      headers:
+        Host: mmx.vpnoir9r.us.kg
+
+  - name: Google ID NTLS
+    server: 104.18.3.2
+    port: 80
+    type: vless
+    uuid: 6977baaf-b4d4-4545-ad3b-7f476e3c7a5d
+    cipher: auto
+    tls: false
+    udp: true
+    skip-cert-verify: true
+    network: ws
+    ws-opts:
+      path: /GCPID
+      headers:
+        Host: mmx.vpnoir9r.us.kg  
+
+  - name: VPSMALAYSIA1 TLS
+    server: 104.18.3.2
+    port: 443
+    type: vless
+    uuid: a3480092-74a2-4382-bc1e-8af6963d6e6b
+    cipher: auto
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    network: ws
+    servername: mmx.vpnoir9r.us.kg
+    ws-opts:
+      path: /my1
+      headers:
+        Host: mmx.vpnoir9r.us.kg      
+
+  - name: VPSMALAYSIA1 NTLS
+    server: 104.18.3.2
+    port: 80
+    type: vless
+    uuid: 2a40e59e-467c-4b72-9ca0-91d4d9127fbb
+    cipher: auto
+    tls: false
+    udp: true
+    skip-cert-verify: true
+    network: ws
+    ws-opts:
+      path: /my1
+      headers:
+        Host: mmx.vpnoir9r.us.kg 
+        
+  - name: ADSL TLS
+    server: 104.18.3.2
+    port: 443
+    type: vless
+    uuid: 5ab3f778-ad6e-458c-baab-6ec5ca92c5da
+    cipher: auto
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    network: ws
+    servername: mmx.vpnoir9r.us.kg
+    ws-opts:
+      path: /my2
+      headers:
+        Host: mmx.vpnoir9r.us.kg
+        
+  - name: ADSL NTLS
+    server: 104.18.3.2
+    port: 80
+    type: vless
+    uuid: 3700c390-71e2-42b4-80fa-ea610ac1bd10
+    cipher: auto
+    tls: false
+    udp: true
+    skip-cert-verify: true
+    network: ws
+    ws-opts:
+      path: /my2
+      headers:
+        Host: mmx.vpnoir9r.us.kg 
+        
+  - name: Aofei TLS
+    server: 104.18.3.2
+    port: 443
+    type: vless
+    uuid: 4b8ebd4c-f490-4255-a73d-67906f896b2f
+    cipher: auto
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    network: ws
+    servername: mmx.vpnoir9r.us.kg
+    ws-opts:
+      path: /AOFEI
+      headers:
+        Host: mmx.vpnoir9r.us.kg 
+        
+  - name: Aofei NTLS
+    server: 104.18.3.2
+    port: 80
+    type: vless
+    uuid: 0a7ba0bd-1fe7-4647-8d3c-bae9fe27a6e5
+    cipher: auto
+    tls: false
+    udp: true
+    skip-cert-verify: true
+    network: ws
+    ws-opts:
+      path: /AOFEI
+      headers:
+        Host: mmx.vpnoir9r.us.kg
+      
+  - name: Capitalonline TLS
+    server: 104.18.3.2
+    port: 443
+    type: vless
+    uuid: 470a6433-9bf3-4c42-a386-6c2f3782e6b8
+    cipher: auto
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    network: ws
+    servername: mmx.vpnoir9r.us.kg
+    ws-opts:
+      path: /CDSGLOBALSG
+      headers:
+        Host: mmx.vpnoir9r.us.kg 
+        
+  - name: Capitalonline NTLS
+    server: 104.18.3.2
+    port: 80
+    type: vless
+    uuid: 29d4f73f-ab0b-4eed-9ccd-b485bbad10ab
+    cipher: auto
+    tls: false
+    udp: true
+    skip-cert-verify: true
+    network: ws
+    ws-opts:
+      path: /CDSGLOBALSG
+      headers:
+        Host: mmx.vpnoir9r.us.kg 
+
+  - name: OVH SAS TLS
+    server: 104.18.3.2
+    port: 443
+    type: vless
+    uuid: 11a57b96-2107-470c-8fe4-4464e84a64da
+    cipher: auto
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    network: ws
+    servername: mmx.vpnoir9r.us.kg
+    ws-opts:
+      path: /sgovhsas
+      headers:
+        Host: mmx.vpnoir9r.us.kg
+        
+  - name: OVH SAS NTLS
+    server: 104.18.3.2
+    port: 80
+    type: vless
+    uuid: 49200bfa-a0de-4e04-adb0-93ddad0af66c
+    cipher: auto
+    tls: false
+    udp: true
+    skip-cert-verify: true
+    network: ws
+    ws-opts:
+      path: /sgovhsas
+      headers:
+        Host: mmx.vpnoir9r.us.kg  
+      
   - name: VMESS 1 TLS
     server: 104.18.3.2
     port: 443

@@ -941,6 +941,7 @@ proxies:
     alterId: 0
     cipher: auto
     tls: true
+    udp: true
     skip-cert-verify: true
     servername: mzvpn.my.id
     network: ws
@@ -948,7 +949,7 @@ proxies:
       path: /vmess
       headers:
         Host: mzvpn.my.id
-    udp: true
+    
 
   - name: VMESS 1 NTLS
     server: 104.18.3.2
@@ -958,6 +959,7 @@ proxies:
     alterId: 0
     cipher: auto
     tls: false
+    udp: true
     skip-cert-verify: true
     servername: mzvpn.my.id
     network: ws
@@ -965,7 +967,6 @@ proxies:
       path: /vmess
       headers:
         Host: mzvpn.my.id
-    udp: true
 
   - name: VMESS 2 TLS
     server: 104.18.3.2
@@ -975,6 +976,7 @@ proxies:
     alterId: 0
     cipher: auto
     tls: true
+    udp: true
     skip-cert-verify: true
     servername: afrhms07.xfixedfloat.cfd
     network: ws
@@ -982,7 +984,6 @@ proxies:
       path: /linkws
       headers:
         Host: afrhms07.xfixedfloat.cfd
-    udp: true
 
   - name: VMESS 2 NTLS
     server: 104.18.3.2
@@ -992,6 +993,7 @@ proxies:
     alterId: 0
     cipher: auto
     tls: false
+    udp: true
     skip-cert-verify: true
     servername: GWYp69Yujp2.yofnhkfc.xyz
     network: ws
@@ -999,7 +1001,6 @@ proxies:
       path: /video/VDXcaM7r
       headers:
         Host: GWYp69Yujp2.yofnhkfc.xyz
-    udp: true
 
   - name: VMESS 3 TLS
     server: 104.18.3.2
@@ -1009,6 +1010,7 @@ proxies:
     alterId: 0
     cipher: auto
     tls: true
+    udp: true
     skip-cert-verify: true
     servername: linde06.indiavideo.sbs
     network: ws
@@ -1016,7 +1018,6 @@ proxies:
       path: /linkws
       headers:
         Host: linde06.indiavideo.sbs
-    udp: true
 
   - name: VMESS 3 NTLS
     server: 104.18.3.2
@@ -1026,6 +1027,7 @@ proxies:
     alterId: 0
     cipher: auto
     tls: false
+    udp: true
     skip-cert-verify: true
     servername: 73012792103530616183052842717949.chrsjfklsdjfkljoierfdjklfjlkefeojsdlkfjeoifjsdlkfjweoifjlsdchrs.cyou
     network: ws
@@ -1033,7 +1035,6 @@ proxies:
       path: /V2LINE-TELEGRAM-CHANNEL-VMESS-WS
       headers:
         Host: 73012792103530616183052842717949.chrsjfklsdjfkljoierfdjklfjlkefeojsdlkfjeoifjsdlkfjweoifjlsdchrs.cyou
-    udp: true
 
   - name: VMESS 4 NTLS
     server: 104.18.3.2
@@ -1700,12 +1701,9 @@ proxy-groups:
     -  Google ID NTLS
     -  VPSMALAYSIA1 TLS
     -  VPSMALAYSIA1 NTLS
-  
     -  ADSL TLS
-    -  ADSL NTLS
-    
+    -  ADSL NTLS    
     -  Aofei TLS
-
     -  Aofei NTLS
     -  Capitalonline TLS
     -  Capitalonline NTLS
@@ -1713,24 +1711,18 @@ proxy-groups:
     -  OVH SAS NTLS
     -  DigitalOcean TLS
     -  DigitalOcean NTLS
- 
     -  M1 TLS
     -  M1 NTLS
     -  NPO TLS
     -  NPO NTLS
-   
     -  HONG KONG TLS
     -  HONG KONG NTLS
-
     -  Oracle TLS
     -  Oracle NTLS
-  
     -  Aryaka TLS
     -  Aryaka NTLS
- 
     -  First TLS
     -  First NTLS
-  
     -  Amazon TLS
     -  Amazon NTLS
     -  VLESS DO LOTUS
@@ -1774,7 +1766,7 @@ proxy-groups:
     -  VMESS 3 NTLS
     -  VMESS 4 NTLS
   url: 'http://www.gstatic.com/generate_204'
-  interval: 300
+  interval: 60
  #⬜⬜
 - name: "WHATSAPP"
   type: select #PILIIH SALAH SATU : SELECT,LOAD-BALANCE,FALLBACK,URL-TEST
@@ -1787,7 +1779,7 @@ proxy-groups:
     -  LOAD-BALANCE
     -  DIRECT
   url: 'http://www.gstatic.com/generate_204'
-  interval: 300
+  interval: 60
 #⬜⬜
 #Koneksi Sosmed
 - name: "FACEBOOK"
@@ -1801,7 +1793,7 @@ proxy-groups:
     -  LOAD-BALANCE
     -  DIRECT
   url: 'http://www.gstatic.com/generate_204'
-  interval: 300
+  interval: 60
 #Koneksi Sosmed
 - name: "LOBBY GAME"
   type: url-test #PILIIH SALAH SATU : SELECT,LOAD-BALANCE,FALLBACK,URL-TEST
@@ -1823,7 +1815,7 @@ proxy-groups:
     -  INDO VPN NTLS
     -  TROJAN TARIK
   url: 'http://www.gstatic.com/generate_204'
-  interval: 300
+  interval: 60
 #Koneksi Sosmed
 - name: "PLAY GAME"
   type: select #PILIIH SALAH SATU : SELECT,LOAD-BALANCE,FALLBACK,URL-TEST
@@ -1834,7 +1826,7 @@ proxy-groups:
     -  LOBBY GAME
     -  BEST PING
   url: 'http://www.gstatic.com/generate_204'
-  interval: 300
+  interval: 60
 #⬜⬜
 #Koneksi Sosmed
 - name: "SOSMED"
@@ -1848,7 +1840,7 @@ proxy-groups:
     -  BEST PING
     -  DIRECT
   url: 'http://www.gstatic.com/generate_204'
-  interval: 300
+  interval: 60
 #⬜⬜
 #koneksi untuk YOUTUBE,
 - name: "YOUTUBE"
@@ -1863,7 +1855,7 @@ proxy-groups:
     -  DIRECT
     -  REJECT
   url: 'http://www.gstatic.com/generate_204'
-  interval: 300
+  interval: 60
  #⬜⬜
 #koneksi nonton video
 - name: "STREAMING"
@@ -1878,7 +1870,7 @@ proxy-groups:
     -  DIRECT
     -  REJECT
   url: 'http://www.gstatic.com/generate_204'
-  interval: 300
+  interval: 60
  #⬜⬜
  #koneksi untuk Bank,
 - name: "AKUN BANK"
@@ -1891,7 +1883,7 @@ proxy-groups:
     -  DIRECT
     -  REJECT
   url: 'http://www.gstatic.com/generate_204'
-  interval: 300
+  interval: 60
  #⬜⬜
  #koneksi untuk BELANJA,
 - name: "MARKETPLACE"
@@ -1902,7 +1894,7 @@ proxy-groups:
     -  BEST PING
     -  FALLBACK
   url: 'http://www.gstatic.com/generate_204'
-  interval: 300
+  interval: 60
  #⬜⬜
  #koneksi untuk iklan,
 - name: "IKLAN"
@@ -1913,7 +1905,7 @@ proxy-groups:
     -  LOAD-BALANCE
     -  FALLBACK
   url: 'http://www.gstatic.com/generate_204'
-  interval: 300
+  interval: 60
  #⬜⬜
 - name: "Adult🔞"
   type: select
@@ -1923,7 +1915,7 @@ proxy-groups:
     -  DIRECT
     -  PREMIUM
   url: 'http://www.gstatic.com/generate_204'
-  interval: 300
+  interval: 60
  #⬜⬜
 - name: "FALLBACK"
   type: fallback
@@ -1957,12 +1949,9 @@ proxy-groups:
     -  Google ID NTLS
     -  VPSMALAYSIA1 TLS
     -  VPSMALAYSIA1 NTLS
-  
     -  ADSL TLS
     -  ADSL NTLS
-    
     -  Aofei TLS
-
     -  Aofei NTLS
     -  Capitalonline TLS
     -  Capitalonline NTLS
@@ -1970,24 +1959,18 @@ proxy-groups:
     -  OVH SAS NTLS
     -  DigitalOcean TLS
     -  DigitalOcean NTLS
- 
     -  M1 TLS
     -  M1 NTLS
     -  NPO TLS
     -  NPO NTLS
-   
     -  HONG KONG TLS
     -  HONG KONG NTLS
-
     -  Oracle TLS
     -  Oracle NTLS
-  
     -  Aryaka TLS
     -  Aryaka NTLS
- 
     -  First TLS
     -  First NTLS
-  
     -  Amazon TLS
     -  Amazon NTLS
     -  VLESS KNC 80
@@ -2038,7 +2021,7 @@ proxy-groups:
     -  VLESS SG ALIBABA TLS
     -  VLESS SG ALIBABA NTLS
   url: 'http://www.gstatic.com/generate_204'
-  interval: 300
+  interval: 60
   #koneksi untuk iklan,
 - name: "BEST PING"
   type: url-test
@@ -2073,37 +2056,28 @@ proxy-groups:
     -  Google ID NTLS
     -  VPSMALAYSIA1 TLS
     -  VPSMALAYSIA1 NTLS
-  
     -  ADSL TLS
-    -  ADSL NTLS
-    
+    -  ADSL NTLS  
     -  Aofei TLS
-
     -  Aofei NTLS
     -  Capitalonline TLS
     -  Capitalonline NTLS
     -  OVH SAS TLS
     -  OVH SAS NTLS
     -  DigitalOcean TLS
-    -  DigitalOcean NTLS
- 
+    -  DigitalOcean NTLS 
     -  M1 TLS
     -  M1 NTLS
     -  NPO TLS
-    -  NPO NTLS
-   
+    -  NPO NTLS  
     -  HONG KONG TLS
     -  HONG KONG NTLS
-
     -  Oracle TLS
-    -  Oracle NTLS
-  
+    -  Oracle NTLS  
     -  Aryaka TLS
-    -  Aryaka NTLS
- 
+    -  Aryaka NTLS 
     -  First TLS
-    -  First NTLS
-  
+    -  First NTLS  
     -  Amazon TLS
     -  Amazon NTLS
     -  VLESS DO TLS
@@ -2151,7 +2125,7 @@ proxy-groups:
     -  VLESS SG ALIBABA TLS
     -  VLESS SG ALIBABA NTLS
   url: 'http://www.gstatic.com/generate_204'
-  interval: 300
+  interval: 60
  #⬜⬜
    #koneksi untuk iklan,
 - name: "LOAD-BALANCE"
@@ -2190,38 +2164,29 @@ proxy-groups:
     -  Google ID TLS
     -  Google ID NTLS
     -  VPSMALAYSIA1 TLS
-    -  VPSMALAYSIA1 NTLS
-  
+    -  VPSMALAYSIA1 NTLS  
     -  ADSL TLS
-    -  ADSL NTLS
-    
+    -  ADSL NTLS    
     -  Aofei TLS
-
     -  Aofei NTLS
     -  Capitalonline TLS
     -  Capitalonline NTLS
     -  OVH SAS TLS
     -  OVH SAS NTLS
     -  DigitalOcean TLS
-    -  DigitalOcean NTLS
- 
+    -  DigitalOcean NTLS 
     -  M1 TLS
     -  M1 NTLS
     -  NPO TLS
-    -  NPO NTLS
-   
+    -  NPO NTLS   
     -  HONG KONG TLS
     -  HONG KONG NTLS
-
     -  Oracle TLS
-    -  Oracle NTLS
-  
+    -  Oracle NTLS  
     -  Aryaka TLS
-    -  Aryaka NTLS
- 
+    -  Aryaka NTLS 
     -  First TLS
-    -  First NTLS
-  
+    -  First NTLS  
     -  Amazon TLS
     -  Amazon NTLS
     -  Akari TLS
@@ -2267,7 +2232,7 @@ proxy-groups:
     -  VLESS SG ALIBABA TLS
     -  VLESS SG ALIBABA NTLS
   url: 'http://www.gstatic.com/generate_204'
-  interval: 300
+  interval: 60
  #⬜⬜
  #Koneksi Premium
 - name: "PREMIUM"
@@ -2279,7 +2244,7 @@ proxy-groups:
     -  SG DO TLS
     -  SG DO NTLS
   url: 'http://www.gstatic.com/generate_204'
-  interval: 30
+  interval: 60
 #🟡_________________________________PROCY-GROUP__________________________________🟡
 # Clash for Windows
 cfw-bypass:
@@ -2308,121 +2273,142 @@ cfw-bypass:
   - 192.168.*
   - <local>
 cfw-latency-timeout: 5000
-
 rule-providers:
   Portgames:
     type: http
     behavior: classical
     path: "./rule_provider/portgames.yaml"
     url: "https://raw.githubusercontent.com/ekosupry/CONFIG/main/portgame.yaml"
+    interval: 60
   Gaming:
     type: http
     behavior: classical
     path: "./rule_provider/gaming.yaml"
     url: "https://raw.githubusercontent.com/ekosupry/CONFIG/main/gaming.yaml"
+    interval: 60
   Game-TCP:
     type: http
     behavior: classical
     path: "./rule_provider/gametcp.yaml"
     url: "https://raw.githubusercontent.com/ekosupry/CONFIG/main/gametcp.yaml"
+    interval: 60
   Sosmed:
     type: http
     behavior: classical
     path: "./rule_provider/fl-sosmed.yaml"
     url: "https://raw.githubusercontent.com/ekosupry/CONFIG/main/sosmed.yaml"
+    interval: 60
   Nonton:
     type: http
     behavior: classical
     path: "./rule_provider/fl-streaming.yaml"
     url: "https://raw.githubusercontent.com/ekosupry/CONFIG/main/nonton.yaml"
+    interval: 60
   YouTube:
     type: http
     behavior: domain
     path: "./rule_provider/youtube.yaml"
     url: "https://raw.githubusercontent.com/ekosupry/CONFIG/main/youtube.yaml"
+    interval: 60
   WA:
     type: http
     behavior: classical
     path: "./rule_provider/whatsapp.yaml"
     url: "https://raw.githubusercontent.com/ekosupry/CONFIG/main/whatsapp.yaml"  
+    interval: 60
   Facebook:
     type: http
     behavior: classical
     path: "./rule_provider/wafb.yaml"
     url: "https://raw.githubusercontent.com/ekosupry/CONFIG/main/facebook.yaml"  
+    interval: 60
   Zero:
     type: http
     behavior: classical
     path: "./rule_provider/zerotier.yaml"
     url: "https://raw.githubusercontent.com/ekosupry/CONFIG/main/zerotier.yaml"
+    interval: 60
 #rulindo
   Indo:
     type: http
     behavior: classical
     path: "./rule_provider/indo.yaml"
     url: "https://raw.githubusercontent.com/ekosupry/CONFIG/main/ruleindo.yaml"
+    interval: 60
   Bank:
     type: http
     behavior: classical
     path: "./rule_provider/banking.yaml"
     url: "https://raw.githubusercontent.com/ekosupry/CONFIG/main/banking.yaml"
+    interval: 60
   rule_disneyplus:
     type: http
     behavior: classical
     path: "./rule_provider/rule_disneyplus.yaml"
     url: "https://raw.githubusercontent.com/ekosupry/CONFIG/main/rule_disney.yaml"
+    interval: 60
   rule_netflix:
     type: http
     behavior: domain
-    path: "./rule_provider/rule_netflix.yaml"
+    path: "./rule_provider/rule_netflix.yaml" 
     url: "https://raw.githubusercontent.com/ekosupry/CONFIG/main/rule_netflix.yaml"
+    interval: 60
 #iklan&18+
   Nsfw:
     type: http
     behavior: domain
     path: "./rule_provider/nsfw.yaml"
     url: "https://raw.githubusercontent.com/ekosupry/CONFIG/main/nsfw.yaml"
+    interval: 60
   18+:
     type: http
     behavior: domain
     path: "./rule_provider/18+.yaml"
     url: "https://raw.githubusercontent.com/ekosupry/CONFIG/main/porn1.yaml"
+    interval: 60
   Basicads:
     type: http
     behavior: domain
     path: "./rule_provider/basicads.yaml"
     url: "https://raw.githubusercontent.com/ekosupry/CONFIG/main/basicads.yaml"
+    interval: 60
   Personalads:
     type: http
     behavior: classical
     path: "./rule_provider/personalads.yaml"
     url: "https://raw.githubusercontent.com/ekosupry/CONFIG/main/personalads.yaml"
+    interval: 60
 #Belanja
   Market:
     type: http
     behavior: classical
     path: "./rule_provider/marketplace.yaml"
     url: "https://raw.githubusercontent.com/ekosupry/CONFIG/main/marketplace.yaml"
+    interval: 60
   Bukalapak:
     type: http
     behavior: classical
     path: "./rule_provider/bukalapak.yaml"
     url: "https://raw.githubusercontent.com/ekosupry/CONFIG/main/bukalapak.yaml"
+     interval: 60
   Tokopedia:
     type: http
     behavior: classical
     path: "./rule_provider/tokopedia.yaml"
     url: "https://raw.githubusercontent.com/ekosupry/CONFIG/main/tokopedia.yaml"
+    interval: 60
   Shopee:
     type: http
     behavior: classical
     path: "./rule_provider/shopee.yaml"
     url: "https://raw.githubusercontent.com/ekosupry/CONFIG/main/shopee.yaml"
+    interval: 60
   Speed:
     type: http
     behavior: classical
     path: "./rule_provider/speed.yaml"
     url: "https://raw.githubusercontent.com/ekosupry/CONFIG/main/speed.yaml"
+    interval: 60
   Judol:
     type: http
     behavior: classical

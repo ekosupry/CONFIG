@@ -1,234 +1,6 @@
 proxies:
-  - name: INDO VPN 443
-    server: 104.17.3.81
-    port: 443
-    type: vmess
-    uuid: 59c00424-7413-4107-8c98-085ed4f7fe6c
-    alterId: 0
-    cipher: auto
-    tls: true
-    skip-cert-verify: true
-    servername: indo.vpnpremium.id
-    network: ws
-    ws-opts:
-      path: /vmess
-      headers:
-        Host: indo.vpnpremium.id
-    udp: true
 
-  - name: INDO VPN NTLS
-    server: 104.17.3.81
-    port: 80
-    type: vmess
-    uuid: 59c00424-7413-4107-8c98-085ed4f7fe6c
-    alterId: 0
-    cipher: auto
-    tls: false
-    skip-cert-verify: true
-    servername: indo.vpnpremium.id
-    network: ws
-    ws-opts:
-      path: /vmess
-      headers:
-        Host: indo.vpnpremium.id
-    udp: true
-
-  - name: TROJAN TARIK
-    server: 104.17.3.81
-    port: 443
-    type: trojan
-    password: KCSiYoDzwlLc8o6m4qbKsg
-    skip-cert-verify: true
-    sni: indo.vpnpremium.id
-    network: ws
-    ws-opts:
-      path: /trojan
-      headers:
-        Host: indo.vpnpremium.id
-    udp: true
-
-  - name: INDOXRAY GRPC
-    server: 104.17.3.81
-    port: 443
-    type: vmess
-    uuid: b809ba19-00e2-483d-b1bc-bd7633a678ff
-    alterId: 0
-    cipher: auto
-    network: grpc
-    tls: true
-    servername: indoxray.me
-    skip-cert-verify: true
-    grpc-opts:
-      grpc-service-name: vmess-grpc
-
-  - name: IDL TLS
-    server: 104.17.3.81
-    port: 443
-    type: vmess
-    uuid: cedf07b8-2f39-4c29-828d-c5f1911573e1
-    alterId: 0
-    cipher: auto
-    tls: true
-    skip-cert-verify: true
-    servername: vvipp.klmpk.me
-    network: ws
-    ws-opts:
-      path: /vmess
-      headers:
-        Host: vvipp.klmpk.me
-    udp: true
-
-  - name: IDL NTLS
-    server: 104.17.3.81
-    port: 80
-    type: vmess
-    uuid: cedf07b8-2f39-4c29-828d-c5f1911573e1
-    alterId: 0
-    cipher: auto
-    tls: false
-    skip-cert-verify: true
-    servername: vvipp.klmpk.me
-    network: ws
-    ws-opts:
-      path: /vmess
-      headers:
-        Host: vvipp.klmpk.me
-    udp: true
-
-  - name: VLESS ARIS TLS
-    server: 104.17.3.81
-    port: 443
-    type: vless
-    uuid: 1b6c1745-992e-4aac-8685-266c090e50ea
-    alterId: 0
-    cipher: auto
-    tls: true
-    skip-cert-verify: true
-    servername: server.arisctunnel.me
-    network: ws
-    ws-opts:
-      path: /?ed=2048
-      headers:
-        Host: server.arisctunnel.me
-    udp: true
-
-  - name: VLESS KNC 80
-    server: 104.17.3.81
-    port: 80
-    type: vless
-    uuid: 80510fd1-7a7d-4b83-a3db-05fb7f23dea5
-    alterId: 0
-    cipher: auto
-    tls: false
-    skip-cert-verify: true
-    servername: id.knc.my.id
-    network: ws
-    ws-opts:
-      path: /?ed=2048
-      headers:
-        Host: id.knc.my.id
-    udp: true
-
-  - name: VLESS DO LOTUS
-    server: 104.17.3.81
-    port: 443
-    type: vless
-    uuid: 01edb904-33ae-42cf-99d4-28f96082082e
-    alterId: 0
-    cipher: auto
-    tls: true
-    skip-cert-verify: true
-    servername: sgdo.lotush.my.id
-    network: ws
-    ws-opts:
-      path: /trixie
-      headers:
-        Host: sgdo.lotush.my.id
-    udp: true
-
-  - name: VLESS DO LOTUS NTLS
-    server: 104.17.3.81
-    port: 80
-    type: vless
-    uuid: 01edb904-33ae-42cf-99d4-28f96082082e
-    alterId: 0
-    cipher: auto
-    tls: false
-    skip-cert-verify: true
-    servername: sgdo.lotush.my.id
-    network: ws
-    ws-opts:
-      path: /trixie
-      headers:
-        Host: sgdo.lotush.my.id
-    udp: true
-    
-  - name: VLESS RIO BIZ
-    server: 104.17.3.81
-    port: 443
-    type: vless
-    uuid: 9afa7e48-1af0-418f-b063-04bc7776b70e
-    alterId: 0
-    cipher: auto
-    tls: true
-    skip-cert-verify: true
-    servername: sg.ryo.biz.id
-    network: ws
-    ws-opts:
-      path: /vless-ws
-      headers:
-        Host: sg.ryo.biz.id
-    udp: true
-
-  - name: VLESS RIO BIZ NTLS
-    server: 104.17.3.81
-    port: 80
-    type: vless
-    uuid: 9afa7e48-1af0-418f-b063-04bc7776b70e
-    alterId: 0
-    cipher: auto
-    tls: false
-    skip-cert-verify: true
-    servername: sg.ryo.biz.id
-    network: ws
-    ws-opts:
-      path: /vless-ws
-      headers:
-        Host: sg.ryo.biz.id
-    udp: true
-
-  - name: WORKER GAME
-    server: 104.17.3.81
-    port: 443
-    type: vless
-    uuid: 1e6611ce-aec7-4a64-8699-d7d731659f05
-    cipher: auto
-    tls: true
-    skip-cert-verify: true
-    servername: NS-stoRE.NSiDIK685.WorkerS.DEV
-    network: ws
-    ws-opts:
-      path: /4oZzyMSMxWn395MA/dGVuY2VudC5yaW4tdG9oc2FrYWdhbmdiYW5nLmZpbGVnZWFyLXNnLm1l?ed=2560
-      headers:
-        Host: Ns-stOrE.NSIDIk685.WORkeRs.DEv
-    udp: true
-
-  - name: UWU FF
-    server: 104.17.3.81
-    port: 443
-    type: vless
-    uuid: bcf50589-9654-4331-93a6-da896914ec47
-    cipher: auto
-    tls: true
-    skip-cert-verify: true
-    servername: de4ecf6b.isvphp-4g8.pages.dev
-    network: ws
-    ws-opts:
-      path: /?ed=2048
-      headers:
-        Host: de4ecf6b.isvphp-4g8.pages.dev
-    udp: true
-
+# Akun INDO port 443
   - name: VLESS KNC 443
     server: 104.17.3.81
     port: 443
@@ -263,91 +35,40 @@ proxies:
         Host: id2.knc.my.id
     udp: true
 
-  - name: VLESS KNC KR 443
+  - name: VMESS ID
     server: 104.17.3.81
-    port: 443
-    type: vless
-    uuid: 4994c6a3-3242-45b8-a3e3-7d0fb82b0ece
+    port: 80
+    type: vmess
+    uuid: 97cdf301-49a0-4cec-85d4-894bb84d86ab
     alterId: 0
     cipher: auto
-    tls: true
+    tls: false
     skip-cert-verify: true
-    servername: kr.free.knc.my.id
+    servername: id-5.rzs.my.id
+    network: ws
+    ws-opts:
+      path: /vmess
+      headers:
+        Host: id-5.rzs.my.id
+    udp: true
+
+  - name: VLESS KNC 80
+    server: 104.17.3.81
+    port: 80
+    type: vless
+    uuid: 80510fd1-7a7d-4b83-a3db-05fb7f23dea5
+    alterId: 0
+    cipher: auto
+    tls: false
+    skip-cert-verify: true
+    servername: id.knc.my.id
     network: ws
     ws-opts:
       path: /?ed=2048
       headers:
-        Host: kr.free.knc.my.id
+        Host: id.knc.my.id
     udp: true
 
-  - name: VLESS DO TLS
-    server: 104.17.3.81
-    port: 443
-    type: vless
-    uuid: b0cb1b0b-f5ba-4ca4-a587-cfe48126bff7
-    alterId: 0
-    cipher: auto
-    tls: true
-    skip-cert-verify: true
-    servername: sgdo1.aframdani.cloud
-    network: ws
-    ws-opts:
-      path: /vless-ws
-      headers:
-        Host: sgdo1.aframdani.cloud
-    udp: true 
-
-  - name: VLESS DO NTLS
-    server: 104.17.3.81
-    port: 80
-    type: vless
-    uuid: b0cb1b0b-f5ba-4ca4-a587-cfe48126bff7
-    alterId: 0
-    cipher: auto
-    tls: false
-    skip-cert-verify: true
-    servername: sgdo1.aframdani.cloud
-    network: ws
-    ws-opts:
-      path: /vless-ws
-      headers:
-        Host: sgdo1.aframdani.cloud
-    udp: true 
-
-  - name: VLESS DO 443
-    server: 104.17.3.81
-    port: 443
-    type: vless
-    uuid: b0cb1b0b-f5ba-4ca4-a587-cfe48126bff7
-    alterId: 0
-    cipher: auto
-    tls: true
-    skip-cert-verify: true
-    servername: xcl.aframdani.cloud
-    network: ws
-    ws-opts:
-      path: /vless-ws
-      headers:
-        Host: xcl.aframdani.cloud
-    udp: true 
-
-  - name: VLESS DO 80
-    server: 104.17.3.81
-    port: 80
-    type: vless
-    uuid: b0cb1b0b-f5ba-4ca4-a587-cfe48126bff7
-    alterId: 0
-    cipher: auto
-    tls: false
-    skip-cert-verify: true
-    servername: xcl.aframdani.cloud
-    network: ws
-    ws-opts:
-      path: /vless-ws
-      headers:
-        Host: xcl.aframdani.cloud
-    udp: true 
-    
   - name: VLESS ID MAHAL
     server: 104.17.3.81
     port: 443
@@ -363,57 +84,6 @@ proxies:
       path: /vless
       headers:
         Host: id.jam.mahal.filegear-sg.me
-    udp: true
-    
-  - name: VLESS ORACLE MAHAL
-    server: 104.17.3.81
-    port: 443
-    type: vless
-    uuid: 6e6cb97e-57ac-4e8f-ad90-2b2fbb21bc45
-    alterId: 0
-    cipher: auto
-    tls: true
-    skip-cert-verify: true
-    servername: oracle.jam.mahal.filegear-sg.me
-    network: ws
-    ws-opts:
-      path: /vless
-      headers:
-        Host: oracle.jam.mahal.filegear-sg.me
-    udp: true
-
-  - name: VLESS ALIBABA MAHAL
-    server: 104.17.3.81
-    port: 443
-    type: vless
-    uuid: 6e6cb97e-57ac-4e8f-ad90-2b2fbb21bc45
-    alterId: 0
-    cipher: auto
-    tls: true
-    skip-cert-verify: true
-    servername: alibaba.jam.mahal.filegear-sg.me
-    network: ws
-    ws-opts:
-      path: /vless
-      headers:
-        Host: alibaba.jam.mahal.filegear-sg.me
-    udp: true
-
-  - name: VLESS SG SERVLESS
-    server: 104.17.3.81
-    port: 443
-    type: vless
-    uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
-    alterId: 0
-    cipher: auto
-    tls: true
-    skip-cert-verify: true
-    servername: sg.servless.us.to
-    network: ws
-    ws-opts:
-      path: /vlesscf
-      headers:
-        Host: sg.servless.us.to
     udp: true
 
   - name: VLESS ID SERVLESS
@@ -450,172 +120,64 @@ proxies:
         Host: id.vlcfpages.my.id
     udp: true
 
-  - name: VLESS SG VLCFPAGE
+  - name: Akamai ID TLS
     server: 104.17.3.81
     port: 443
     type: vless
-    uuid: f69a85fe-4a6e-40f3-bcd0-f3c800388b58
-    alterId: 0
+    uuid: e38568b2-41b1-4082-81e9-91a1a6c719b7
     cipher: auto
     tls: true
+    udp: true
     skip-cert-verify: true
-    servername: sg.vlcfpages.my.id
+    network: ws
+    servername: mmx.vpnoir9r.us.kg
+    ws-opts:
+      path: /idakamai
+      headers:
+        Host: mmx.vpnoir9r.us.kg
+
+  - name: Akamai ID NTLS
+    server: mmx.vpnoir9r.us.kg
+    port: 80
+    type: vless
+    uuid: 7967a40e-c229-4f23-b5a7-9b2f49a3b72b
+    cipher: auto
+    tls: false
+    udp: true
+    skip-cert-verify: true
     network: ws
     ws-opts:
-      path: /?ed=2048
+      path: /idakamai
       headers:
-        Host: sg.vlcfpages.my.id
-    udp: true
-
-  - name: VLESS SG ALIBABA 235
+        Host: mmx.vpnoir9r.us.kg
+        
+  - name: Google ID TLS
     server: 104.17.3.81
     port: 443
     type: vless
-    uuid: 89b2cbba-e6ac-487a-9481-976a0415eab9
-    alterId: 0
+    uuid: 4ea53b3b-ce7b-40db-ad47-b61f9e62fe34
     cipher: auto
     tls: true
-    skip-cert-verify: true
-    servername: EsETSecURityLIcensE.vUhbGOL.wORkERs.dEV
-    network: ws
-    ws-opts:
-      path: /
-      headers:
-        Host: EsETSecURityLIcensE.vUhbGOL.wORkERs.dEV
     udp: true
-
-  - name: VLESS SG ALIBABA 400
-    server: 104.17.3.81
-    port: 443
-    type: vless
-    uuid: 34b3cbba-e6ac-495a-9481-976a0419eab9
-    alterId: 0
-    cipher: auto
-    tls: true
     skip-cert-verify: true
-    servername: EseTSeCURITylICense.pudmnquF.worKErS.dev
     network: ws
+    servername: mmx.vpnoir9r.us.kg
     ws-opts:
-      path: /
+      path: /GCPID
       headers:
-        Host: EseTSeCURITylICense.pudmnquF.worKErS.dev
-    udp: true
+        Host: mmx.vpnoir9r.us.kg
 
-  - name: VLESS SG ALIBABA 262
-    server: 104.17.3.81
-    port: 443
-    type: vless
-    uuid: 89b3cbba-e6ac-485a-9481-976a0415eab9
-    alterId: 0
-    cipher: auto
-    tls: true
-    skip-cert-verify: true
-    servername: miumiUMadReKoSE.pAgES.dEv
-    network: ws
-    ws-opts:
-      path: /oyafdnkpgfcx0bjg?ed
-      headers:
-        Host: miumiUMadReKoSE.pAgES.dEv
-    udp: true
-
-  - name: VLESS SG ALIBABA 502
-    server: 104.17.3.81
-    port: 443
-    type: vless
-    uuid: e4e7b149-8bd8-4266-8cbb-0987604dbc87
-    alterId: 0
-    cipher: auto
-    tls: true
-    skip-cert-verify: true
-    servername: toujiediansigema.5112233.xyz
-    network: ws
-    ws-opts:
-      path: /TG@juzibaipiao偷节点死吗
-      headers:
-        Host: toujiediansigema.5112233.xyz
-    udp: true
-
-  - name: VLESS SG ALIBABA 619
-    server: 104.17.3.81
-    port: 443
-    type: vless
-    uuid: 89b3cbba-e6ac-485a-9481-976a0415eab9
-    alterId: 0
-    cipher: auto
-    tls: true
-    skip-cert-verify: true
-    servername: V2FiVeTeL.pAges.Dev
-    network: ws
-    ws-opts:
-      path: /
-      headers:
-        Host: V2FiVeTeL.pAges.Dev
-    udp: true
-
-  - name: VLESS SG ALIBABA 457
-    server: 104.17.3.81
-    port: 443
-    type: vless
-    uuid: a64f0cea-ca89-40e6-b316-b3badff1eb90
-    alterId: 0
-    cipher: auto
-    tls: true
-    skip-cert-verify: true
-    servername: iSAA1.paGEs.DEV
-    network: ws
-    ws-opts:
-      path: /BDwnEtVwG7BS0S9f?ed
-      headers:
-        Host: iSAA1.paGEs.DEV
-    udp: true
-
-  - name: VLESS SG ALIBABA 189
-    server: 104.17.3.81
-    port: 443
-    type: vless
-    uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
-    alterId: 0
-    cipher: auto
-    tls: true
-    skip-cert-verify: true
-    servername: xn--4s9h.pages.dev.
-    network: ws
-    ws-opts:
-      path: /?ed
-      headers:
-        Host: xn--4s9h.pages.dev.
-    udp: true
-
-  - name: VLESS SG ALIBABA TLS
-    server: 104.17.3.81
-    port: 443
-    type: vless
-    uuid: f9021b31-e8bd-4b4d-a1d3-c9b0c1476c44
-    alterId: 0
-    cipher: auto
-    tls: true
-    skip-cert-verify: true
-    servername: sg-alibaba.tingkehvpn.my.id
-    network: ws
-    ws-opts:
-      path: /vlesscf
-      headers:
-        Host: sg-alibaba.tingkehvpn.my.id
-    udp: true
-
-  - name: VLESS SG ALIBABA NTLS
+  - name: Google ID NTLS
     server: 104.17.3.81
     port: 80
     type: vless
-    uuid: f9021b31-e8bd-4b4d-a1d3-c9b0c1476c44
-    alterId: 0
+    uuid: 6977baaf-b4d4-4545-ad3b-7f476e3c7a5d
     cipher: auto
     tls: false
+    udp: true
     skip-cert-verify: true
-    servername: sg-alibaba.tingkehvpn.my.id
     network: ws
     ws-opts:
-      path: /vlesscf
+      path: /GCPID
       headers:
-        Host: sg-alibaba.tingkehvpn.my.id
-    udp: true
+        Host: mmx.vpnoir9r.us.kg  

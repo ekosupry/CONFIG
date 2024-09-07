@@ -684,6 +684,68 @@ proxies:
       path: /sgovhsas
       headers:
         Host: mmx.vpnoir9r.us.kg  
+
+  - name: DigitalOcean TLS
+    server: 104.18.3.2
+    port: 443
+    type: vless
+    uuid: 8378fd81-4a5d-4f71-a834-a8c42d54716b
+    cipher: auto
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    network: ws
+    servername: mmx.vpnoir9r.us.kg
+    ws-opts:
+      path: /sgdo
+      headers:
+        Host: mmx.vpnoir9r.us.kg
+        
+  - name: DigitalOcean NTLS
+    server: 104.18.3.2
+    port: 80
+    type: vless
+    uuid: be95b11f-6f06-4cd9-aedd-d01261f64f6c
+    cipher: auto
+    tls: false
+    udp: true
+    skip-cert-verify: true
+    network: ws
+    ws-opts:
+      path: /sgdo
+      headers:
+        Host: mmx.vpnoir9r.us.kg 
+        
+  - name: M1 TLS
+    server: 104.18.3.2
+    port: 443
+    type: vless
+    uuid: d4797fc7-9a42-4d5f-87b7-4927033e3101
+    cipher: auto
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    network: ws
+    servername: mmx.vpnoir9r.us.kg
+    ws-opts:
+      path: /sg-limited
+      headers:
+        Host: mmx.vpnoir9r.us.kg
+        
+  - name: M1 NTLS
+    server: 104.18.3.2
+    port: 80
+    type: vless
+    uuid: eb033891-c849-450c-b589-776464371252
+    cipher: auto
+    tls: false
+    udp: true
+    skip-cert-verify: true
+    network: ws
+    ws-opts:
+      path: /sg-limited
+      headers:
+        Host: mmx.vpnoir9r.us.kg 
       
   - name: VMESS 1 TLS
     server: 104.18.3.2

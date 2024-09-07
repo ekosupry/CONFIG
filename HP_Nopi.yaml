@@ -745,7 +745,193 @@ proxies:
     ws-opts:
       path: /sg-limited
       headers:
+        Host: mmx.vpnoir9r.us.kg
+        
+  - name: NPO TLS
+    server: 104.18.3.2
+    port: 443
+    type: vless
+    uuid: 4543ac6d-435c-4da9-b59f-2dc9f2db4358
+    cipher: auto
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    network: ws
+    servername: mmx.vpnoir9r.us.kg
+    ws-opts:
+      path: /sgnpo
+      headers:
+        Host: mmx.vpnoir9r.us.kg
+        
+  - name: NPO NTLS
+    server: 104.18.3.2
+    port: 80
+    type: vless
+    uuid: f02d4a93-6d94-45b1-a6d3-0e0a35778609
+    cipher: auto
+    tls: false
+    udp: true
+    skip-cert-verify: true
+    network: ws
+    ws-opts:
+      path: /sgnpo
+      headers:
+        Host: mmx.vpnoir9r.us.kg
+        
+  - name: HONG KONG TLS
+    server: 104.18.3.2
+    port: 443
+    type: vless
+    uuid: 813a2af0-9827-46d7-a7f4-d51d6891f6b2
+    cipher: auto
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    network: ws
+    servername: mmx.vpnoir9r.us.kg
+    ws-opts:
+      path: /sgmegalayer
+      headers:
         Host: mmx.vpnoir9r.us.kg 
+        
+  - name: HONG KONG NTLS
+    server: 104.18.3.2
+    port: 80
+    type: vless
+    uuid: 1bb518e6-6e81-4cdc-b9a8-61f3b0c78a94
+    cipher: auto
+    tls: false
+    udp: true
+    skip-cert-verify: true
+    network: ws
+    ws-opts:
+      path: /sgmegalayer
+      headers:
+        Host: mmx.vpnoir9r.us.kg
+        
+  - name: Oracle TLS
+    server: 104.18.3.2
+    port: 443
+    type: vless
+    uuid: 69fe0d4d-4e14-4541-acbc-52fab7368d2b
+    cipher: auto
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    network: ws
+    servername: mmx.vpnoir9r.us.kg
+    ws-opts:
+      path: /sgoracle
+      headers:
+        Host: mmx.vpnoir9r.us.kg 
+        
+  - name: Oracle NTLS
+    server: 104.18.3.2
+    port: 80
+    type: vless
+    uuid: f0b5e1cb-2920-4686-a397-6caabd039c96
+    cipher: auto
+    tls: false
+    udp: true
+    skip-cert-verify: true
+    network: ws
+    ws-opts:
+      path: /sgoracle
+      headers:
+        Host: mmx.vpnoir9r.us.kg
+        
+  - name: Aryaka TLS
+    server: 104.18.3.2
+    port: 443
+    type: vless
+    uuid: d5e1d932-eefc-4b07-8633-343b949ba0cd
+    cipher: auto
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    network: ws
+    servername: mmx.vpnoir9r.us.kg
+    ws-opts:
+      path: /sgaryaka
+      headers:
+        Host: mmx.vpnoir9r.us.kg 
+        
+  - name: Aryaka NTLS
+    server: 104.18.3.2
+    port: 80
+    type: vless
+    uuid: a61dfb5a-da2b-4939-a960-39cf697f4fdb
+    cipher: auto
+    tls: false
+    udp: true
+    skip-cert-verify: true
+    network: ws
+    ws-opts:
+      path: /sgaryaka
+      headers:
+        Host: mmx.vpnoir9r.us.kg
+        
+  - name: First TLS
+    server: 104.18.3.2
+    port: 443
+    type: vless
+    uuid: 1b2d6e66-536e-488c-a899-e1ea66d772aa
+    cipher: auto
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    network: ws
+    servername: mmx.vpnoir9r.us.kg
+    ws-opts:
+      path: /sgbelnet
+      headers:
+        Host: mmx.vpnoir9r.us.kg
+        
+  - name: First NTLS
+    server: 104.18.3.2
+    port: 80
+    type: vless
+    uuid: 6c0f4937-a2a3-4d10-a097-c68f73fbd56d
+    cipher: auto
+    tls: false
+    udp: true
+    skip-cert-verify: true
+    network: ws
+    ws-opts:
+      path: /sgbelnet
+      headers:
+        Host: mmx.vpnoir9r.us.kg
+        
+  - name: Amazon TLS
+    server: 104.18.3.2
+    port: 443
+    type: vless
+    uuid: b8f435e5-3aa9-4a07-acbd-10804e0f0b53
+    cipher: auto
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    network: ws
+    servername: mmx.vpnoir9r.us.kg
+    ws-opts:
+      path: /sgamazon
+      headers:
+        Host: mmx.vpnoir9r.us.kg 
+        
+  - name: Amazon.com, Inc. (SG)
+    server: 104.18.3.2
+    port: 80
+    type: vless
+    uuid: 44bdfda9-2c8f-41a9-8013-b764335a9884
+    cipher: auto
+    tls: false
+    udp: true
+    skip-cert-verify: true
+    network: ws
+    ws-opts:
+      path: /sgamazon
+      headers:
+        Host: mmx.vpnoir9r.us.kg  
       
   - name: VMESS 1 TLS
     server: 104.18.3.2

@@ -119,3 +119,65 @@ proxies:
       headers:
         Host: id.vlcfpages.my.id
     udp: true
+
+  - name: Akamai ID TLS
+    server: 104.17.3.81
+    port: 443
+    type: vless
+    uuid: e38568b2-41b1-4082-81e9-91a1a6c719b7
+    cipher: auto
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    network: ws
+    servername: mmx.vpnoir9r.us.kg
+    ws-opts:
+      path: /idakamai
+      headers:
+        Host: mmx.vpnoir9r.us.kg
+
+  - name: Akamai ID NTLS
+    server: mmx.vpnoir9r.us.kg
+    port: 80
+    type: vless
+    uuid: 7967a40e-c229-4f23-b5a7-9b2f49a3b72b
+    cipher: auto
+    tls: false
+    udp: true
+    skip-cert-verify: true
+    network: ws
+    ws-opts:
+      path: /idakamai
+      headers:
+        Host: mmx.vpnoir9r.us.kg
+        
+  - name: Google ID TLS
+    server: 104.17.3.81
+    port: 443
+    type: vless
+    uuid: 4ea53b3b-ce7b-40db-ad47-b61f9e62fe34
+    cipher: auto
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    network: ws
+    servername: mmx.vpnoir9r.us.kg
+    ws-opts:
+      path: /GCPID
+      headers:
+        Host: mmx.vpnoir9r.us.kg
+
+  - name: Google ID NTLS
+    server: 104.17.3.81
+    port: 80
+    type: vless
+    uuid: 6977baaf-b4d4-4545-ad3b-7f476e3c7a5d
+    cipher: auto
+    tls: false
+    udp: true
+    skip-cert-verify: true
+    network: ws
+    ws-opts:
+      path: /GCPID
+      headers:
+        Host: mmx.vpnoir9r.us.kg  

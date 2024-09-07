@@ -560,7 +560,7 @@ proxies:
       path: /my1
       headers:
         Host: mmx.vpnoir9r.us.kg 
-        
+
   - name: ADSL TLS
     server: 104.18.3.2
     port: 443
@@ -591,7 +591,7 @@ proxies:
       path: /my2
       headers:
         Host: mmx.vpnoir9r.us.kg 
-        
+
   - name: Aofei TLS
     server: 104.18.3.2
     port: 443
@@ -622,7 +622,7 @@ proxies:
       path: /AOFEI
       headers:
         Host: mmx.vpnoir9r.us.kg
-      
+ 
   - name: Capitalonline TLS
     server: 104.18.3.2
     port: 443
@@ -715,7 +715,7 @@ proxies:
       path: /sgdo
       headers:
         Host: mmx.vpnoir9r.us.kg 
-        
+       
   - name: M1 TLS
     server: 104.18.3.2
     port: 443
@@ -746,7 +746,7 @@ proxies:
       path: /sg-limited
       headers:
         Host: mmx.vpnoir9r.us.kg
-        
+ 
   - name: NPO TLS
     server: 104.18.3.2
     port: 443
@@ -777,7 +777,7 @@ proxies:
       path: /sgnpo
       headers:
         Host: mmx.vpnoir9r.us.kg
-        
+     
   - name: HONG KONG TLS
     server: 104.18.3.2
     port: 443
@@ -839,7 +839,7 @@ proxies:
       path: /sgoracle
       headers:
         Host: mmx.vpnoir9r.us.kg
-        
+      
   - name: Aryaka TLS
     server: 104.18.3.2
     port: 443
@@ -870,7 +870,7 @@ proxies:
       path: /sgaryaka
       headers:
         Host: mmx.vpnoir9r.us.kg
-        
+       
   - name: First TLS
     server: 104.18.3.2
     port: 443
@@ -901,7 +901,7 @@ proxies:
       path: /sgbelnet
       headers:
         Host: mmx.vpnoir9r.us.kg
-        
+
   - name: Amazon TLS
     server: 104.18.3.2
     port: 443
@@ -918,7 +918,7 @@ proxies:
       headers:
         Host: mmx.vpnoir9r.us.kg 
         
-  - name: Amazon.com, Inc. (SG)
+  - name: Amazon NTLS
     server: 104.18.3.2
     port: 80
     type: vless
@@ -1678,6 +1678,61 @@ proxy-groups:
     -  Stark NTLS
     -  Constant TLS
     -  Constant NTLS
+    -  Shenzhen TLS
+    -  Shenzhen NTLS
+    -  Datacamp TLS
+    -  Datacamp NTLS
+    -  iFog TLS
+    -  iFog NTLS
+    -  Ipxo TLS
+    -  Ipxo NTLS
+    -  Contabo TLS
+    -  Contabo NTLS
+    -  Alibaba TLS
+    -  Alibaba NTLS
+    -  Akamai TLS
+    -  Akamai NTLS
+    -  Akamai ID TLS
+    -  Akamai ID NTLS
+    -  Hetzner TLS
+    -  Hetzner NTLS
+    -  Google ID TLS
+    -  Google ID NTLS
+    -  VPSMALAYSIA1 TLS
+    -  VPSMALAYSIA1 NTLS
+  
+    -  ADSL TLS
+    -  ADSL NTLS
+    
+    -  Aofei TLS
+
+    -  Aofei NTLS
+    -  Capitalonline TLS
+    -  Capitalonline NTLS
+    -  OVH SAS TLS
+    -  OVH SAS NTLS
+    -  DigitalOcean TLS
+    -  DigitalOcean NTLS
+ 
+    -  M1 TLS
+    -  M1 NTLS
+    -  NPO TLS
+    -  NPO NTLS
+   
+    -  HONG KONG TLS
+    -  HONG KONG NTLS
+
+    -  Oracle TLS
+    -  Oracle NTLS
+  
+    -  Aryaka TLS
+    -  Aryaka NTLS
+ 
+    -  First TLS
+    -  First NTLS
+  
+    -  Amazon TLS
+    -  Amazon NTLS
     -  VLESS DO LOTUS
     -  VLESS DO LOTUS NTLS
     -  VLESS DO TLS
@@ -1760,6 +1815,10 @@ proxy-groups:
     -  VLESS ID MAHAL
     -  VLESS ID SERVLESS
     -  VLESS ID VLCFPAGE
+    -  Google ID TLS
+    -  Google ID NTLS
+    -  Akamai ID TLS
+    -  Akamai ID NTLS
     -  INDO VPN 443
     -  INDO VPN NTLS
     -  TROJAN TARIK
@@ -1876,6 +1935,61 @@ proxy-groups:
     -  SG DO NTLS
     -  VLESS KNC 443
     -  VLESS KNC2 443
+    -  Shenzhen TLS
+    -  Shenzhen NTLS
+    -  Datacamp TLS
+    -  Datacamp NTLS
+    -  iFog TLS
+    -  iFog NTLS
+    -  Ipxo TLS
+    -  Ipxo NTLS
+    -  Contabo TLS
+    -  Contabo NTLS
+    -  Alibaba TLS
+    -  Alibaba NTLS
+    -  Akamai TLS
+    -  Akamai NTLS
+    -  Akamai ID TLS
+    -  Akamai ID NTLS
+    -  Hetzner TLS
+    -  Hetzner NTLS
+    -  Google ID TLS
+    -  Google ID NTLS
+    -  VPSMALAYSIA1 TLS
+    -  VPSMALAYSIA1 NTLS
+  
+    -  ADSL TLS
+    -  ADSL NTLS
+    
+    -  Aofei TLS
+
+    -  Aofei NTLS
+    -  Capitalonline TLS
+    -  Capitalonline NTLS
+    -  OVH SAS TLS
+    -  OVH SAS NTLS
+    -  DigitalOcean TLS
+    -  DigitalOcean NTLS
+ 
+    -  M1 TLS
+    -  M1 NTLS
+    -  NPO TLS
+    -  NPO NTLS
+   
+    -  HONG KONG TLS
+    -  HONG KONG NTLS
+
+    -  Oracle TLS
+    -  Oracle NTLS
+  
+    -  Aryaka TLS
+    -  Aryaka NTLS
+ 
+    -  First TLS
+    -  First NTLS
+  
+    -  Amazon TLS
+    -  Amazon NTLS
     -  VLESS KNC 80
     -  VLESS KNC2 80
     -  VLESS DO LOTUS
@@ -1937,6 +2051,61 @@ proxy-groups:
     -  VLESS KNC 443
     -  VLESS KNC2 443
     -  VLESS KNC KR 443
+    -  Shenzhen TLS
+    -  Shenzhen NTLS
+    -  Datacamp TLS
+    -  Datacamp NTLS
+    -  iFog TLS
+    -  iFog NTLS
+    -  Ipxo TLS
+    -  Ipxo NTLS
+    -  Contabo TLS
+    -  Contabo NTLS
+    -  Alibaba TLS
+    -  Alibaba NTLS
+    -  Akamai TLS
+    -  Akamai NTLS
+    -  Akamai ID TLS
+    -  Akamai ID NTLS
+    -  Hetzner TLS
+    -  Hetzner NTLS
+    -  Google ID TLS
+    -  Google ID NTLS
+    -  VPSMALAYSIA1 TLS
+    -  VPSMALAYSIA1 NTLS
+  
+    -  ADSL TLS
+    -  ADSL NTLS
+    
+    -  Aofei TLS
+
+    -  Aofei NTLS
+    -  Capitalonline TLS
+    -  Capitalonline NTLS
+    -  OVH SAS TLS
+    -  OVH SAS NTLS
+    -  DigitalOcean TLS
+    -  DigitalOcean NTLS
+ 
+    -  M1 TLS
+    -  M1 NTLS
+    -  NPO TLS
+    -  NPO NTLS
+   
+    -  HONG KONG TLS
+    -  HONG KONG NTLS
+
+    -  Oracle TLS
+    -  Oracle NTLS
+  
+    -  Aryaka TLS
+    -  Aryaka NTLS
+ 
+    -  First TLS
+    -  First NTLS
+  
+    -  Amazon TLS
+    -  Amazon NTLS
     -  VLESS DO TLS
     -  VLESS DO NTLS
     -  VLESS DO 443
@@ -2000,6 +2169,61 @@ proxy-groups:
     -  VMESS 3 TLS
     -  VMESS 3 NTLS
     -  VMESS 4 NTLS
+    -  Shenzhen TLS
+    -  Shenzhen NTLS
+    -  Datacamp TLS
+    -  Datacamp NTLS
+    -  iFog TLS
+    -  iFog NTLS
+    -  Ipxo TLS
+    -  Ipxo NTLS
+    -  Contabo TLS
+    -  Contabo NTLS
+    -  Alibaba TLS
+    -  Alibaba NTLS
+    -  Akamai TLS
+    -  Akamai NTLS
+    -  Akamai ID TLS
+    -  Akamai ID NTLS
+    -  Hetzner TLS
+    -  Hetzner NTLS
+    -  Google ID TLS
+    -  Google ID NTLS
+    -  VPSMALAYSIA1 TLS
+    -  VPSMALAYSIA1 NTLS
+  
+    -  ADSL TLS
+    -  ADSL NTLS
+    
+    -  Aofei TLS
+
+    -  Aofei NTLS
+    -  Capitalonline TLS
+    -  Capitalonline NTLS
+    -  OVH SAS TLS
+    -  OVH SAS NTLS
+    -  DigitalOcean TLS
+    -  DigitalOcean NTLS
+ 
+    -  M1 TLS
+    -  M1 NTLS
+    -  NPO TLS
+    -  NPO NTLS
+   
+    -  HONG KONG TLS
+    -  HONG KONG NTLS
+
+    -  Oracle TLS
+    -  Oracle NTLS
+  
+    -  Aryaka TLS
+    -  Aryaka NTLS
+ 
+    -  First TLS
+    -  First NTLS
+  
+    -  Amazon TLS
+    -  Amazon NTLS
     -  Akari TLS
     -  Akari NTLS
     -  Stark TLS
@@ -2045,7 +2269,7 @@ proxy-groups:
   url: 'http://www.gstatic.com/generate_204'
   interval: 300
  #⬜⬜
- #Koneksi Sosmed
+ #Koneksi Premium
 - name: "PREMIUM"
   type: fallback #PILIIH SALAH SATU : SELECT,LOAD-BALANCE,FALLBACK,URL-TEST
   strategy: round-robin

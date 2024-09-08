@@ -79,37 +79,6 @@ tproxy-port: 9898
 mixed-port: 7890
 # ================= PG ==========
 proxies: 
-  - name: SG DO TLS
-    server: wc.vanillicon.com
-    port: 443
-    type: vmess
-    uuid: 99f4b372-865d-4bf5-a9ad-f9afd7d786a8
-    alterId: 0
-    cipher: auto
-    tls: true
-    skip-cert-verify: true
-    servername: kuhaku.zerossh.my.id
-    network: ws
-    ws-opts:
-      path: /vmess
-      headers:
-        Host: kuhaku.zerossh.my.id
-    udp: true
-
-  - name: SG DO GRPC
-    server: wc.vanillicon.com
-    port: 443
-    type: vmess
-    uuid: 99f4b372-865d-4bf5-a9ad-f9afd7d786a8
-    alterId: 0
-    cipher: auto
-    network: grpc
-    tls: true
-    servername: kuhaku.zerossh.my.id
-    skip-cert-verify: true
-    grpc-opts:
-      grpc-service-name: vmess-grpc
-
   - name: Akari TLS
     server: wc.vanillicon.com
     port: 443

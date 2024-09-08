@@ -1699,38 +1699,29 @@ proxy-groups:
     -  Google ID TLS
     -  Google ID NTLS
     -  VPSMALAYSIA1 TLS
-    -  VPSMALAYSIA1 NTLS
-  
+    -  VPSMALAYSIA1 NTLS  
     -  ADSL TLS
-    -  ADSL NTLS
-    
+    -  ADSL NTLS    
     -  Aofei TLS
-
     -  Aofei NTLS
     -  Capitalonline TLS
     -  Capitalonline NTLS
     -  OVH SAS TLS
     -  OVH SAS NTLS
     -  DigitalOcean TLS
-    -  DigitalOcean NTLS
- 
+    -  DigitalOcean NTLS 
     -  M1 TLS
     -  M1 NTLS
     -  NPO TLS
-    -  NPO NTLS
-   
+    -  NPO NTLS   
     -  HONG KONG TLS
     -  HONG KONG NTLS
-
     -  Oracle TLS
-    -  Oracle NTLS
-  
+    -  Oracle NTLS 
     -  Aryaka TLS
-    -  Aryaka NTLS
- 
+    -  Aryaka NTLS 
     -  First TLS
-    -  First NTLS
-  
+    -  First NTLS  
     -  Amazon TLS
     -  Amazon NTLS
     -  VLESS DO LOTUS
@@ -1956,38 +1947,29 @@ proxy-groups:
     -  Google ID TLS
     -  Google ID NTLS
     -  VPSMALAYSIA1 TLS
-    -  VPSMALAYSIA1 NTLS
-  
+    -  VPSMALAYSIA1 NTLS 
     -  ADSL TLS
-    -  ADSL NTLS
-    
+    -  ADSL NTLS    
     -  Aofei TLS
-
     -  Aofei NTLS
     -  Capitalonline TLS
     -  Capitalonline NTLS
     -  OVH SAS TLS
     -  OVH SAS NTLS
     -  DigitalOcean TLS
-    -  DigitalOcean NTLS
- 
+    -  DigitalOcean NTLS 
     -  M1 TLS
     -  M1 NTLS
     -  NPO TLS
-    -  NPO NTLS
-   
+    -  NPO NTLS   
     -  HONG KONG TLS
     -  HONG KONG NTLS
-
     -  Oracle TLS
-    -  Oracle NTLS
-  
+    -  Oracle NTLS  
     -  Aryaka TLS
-    -  Aryaka NTLS
- 
+    -  Aryaka NTLS 
     -  First TLS
-    -  First NTLS
-  
+    -  First NTLS  
     -  Amazon TLS
     -  Amazon NTLS
     -  VLESS KNC 80
@@ -2073,12 +2055,9 @@ proxy-groups:
     -  Google ID NTLS
     -  VPSMALAYSIA1 TLS
     -  VPSMALAYSIA1 NTLS
-  
     -  ADSL TLS
-    -  ADSL NTLS
-    
+    -  ADSL NTLS    
     -  Aofei TLS
-
     -  Aofei NTLS
     -  Capitalonline TLS
     -  Capitalonline NTLS
@@ -2086,24 +2065,18 @@ proxy-groups:
     -  OVH SAS NTLS
     -  DigitalOcean TLS
     -  DigitalOcean NTLS
- 
     -  M1 TLS
     -  M1 NTLS
     -  NPO TLS
-    -  NPO NTLS
-   
+    -  NPO NTLS   
     -  HONG KONG TLS
     -  HONG KONG NTLS
-
     -  Oracle TLS
-    -  Oracle NTLS
-  
+    -  Oracle NTLS 
     -  Aryaka TLS
-    -  Aryaka NTLS
- 
+    -  Aryaka NTLS 
     -  First TLS
-    -  First NTLS
-  
+    -  First NTLS 
     -  Amazon TLS
     -  Amazon NTLS
     -  VLESS DO TLS
@@ -2190,38 +2163,29 @@ proxy-groups:
     -  Google ID TLS
     -  Google ID NTLS
     -  VPSMALAYSIA1 TLS
-    -  VPSMALAYSIA1 NTLS
-  
+    -  VPSMALAYSIA1 NTLS  
     -  ADSL TLS
-    -  ADSL NTLS
-    
+    -  ADSL NTLS    
     -  Aofei TLS
-
     -  Aofei NTLS
     -  Capitalonline TLS
     -  Capitalonline NTLS
     -  OVH SAS TLS
     -  OVH SAS NTLS
     -  DigitalOcean TLS
-    -  DigitalOcean NTLS
- 
+    -  DigitalOcean NTLS 
     -  M1 TLS
     -  M1 NTLS
     -  NPO TLS
-    -  NPO NTLS
-   
+    -  NPO NTLS   
     -  HONG KONG TLS
     -  HONG KONG NTLS
-
     -  Oracle TLS
-    -  Oracle NTLS
-  
+    -  Oracle NTLS  
     -  Aryaka TLS
     -  Aryaka NTLS
- 
     -  First TLS
-    -  First NTLS
-  
+    -  First NTLS  
     -  Amazon TLS
     -  Amazon NTLS
     -  Akari TLS

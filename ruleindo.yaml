@@ -20,11 +20,13 @@ payload:
 - DOMAIN-SUFFIX,tri.co.id
 - DOMAIN-SUFFIX,smartfren.com
 - DOMAIN-KEYWORD,smartfren
-#pribadi
+#media editor
 - DOMAIN-SUFFIX,huggingface.co
 - DOMAIN-SUFFIX,vidu.studio
 - DOMAIN-SUFFIX,voicemaker.in
 - DOMAIN-SUFFIX,huggingface.co
+- DOMAIN-SUFFIX,remove.bg
+#pribadi
 - DOMAIN-SUFFIX,zello.com
 - DOMAIN-SUFFIX,yandex.com
 - DOMAIN-SUFFIX,yandex.net

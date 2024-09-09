@@ -39,6 +39,9 @@ payload:
 - DOMAIN-SUFFIX,howdy.id
 - DOMAIN-SUFFIX,detik.com
 - DOMAIN-SUFFIX,saweria.co
+- IP-CIDR,8.8.8.8/24
+- IP-CIDR,1.1.1.1/24
+
 #mini market
 - DOMAIN-KEYWORD,alfa
 - DOMAIN-SUFFIX,alfamart.co.id

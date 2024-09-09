@@ -22,6 +22,7 @@ payload:
 - DOMAIN-KEYWORD,smartfren
 #pribadi
 - DOMAIN-SUFFIX,isipulsa.web.id
+- DOMAIN-SUFFIX,huggingface.co
 - DOMAIN-SUFFIX,vidu.studio
 - DOMAIN-SUFFIX,zello.com
 - DOMAIN-SUFFIX,yandex.com

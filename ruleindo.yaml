@@ -21,10 +21,10 @@ payload:
 - DOMAIN-SUFFIX,smartfren.com
 - DOMAIN-KEYWORD,smartfren
 #pribadi
-- DOMAIN-SUFFIX,isipulsa.web.id
 - DOMAIN-SUFFIX,huggingface.co
 - DOMAIN-SUFFIX,vidu.studio
 - DOMAIN-SUFFIX,voicemaker.in
+- DOMAIN-SUFFIX,huggingface.co
 - DOMAIN-SUFFIX,zello.com
 - DOMAIN-SUFFIX,yandex.com
 - DOMAIN-SUFFIX,yandex.net
@@ -46,6 +46,7 @@ payload:
 - DOMAIN-SUFFIX,alfamidiku.com
 - DOMAIN-SUFFIX,aksesmu.id
 - DOMAIN-KEYWORD,aksesmu
+- DOMAIN-SUFFIX,isipulsa.web.id
 # &gt; MOLA TV
 - DOMAIN-SUFFIX,mola.tv
 - DOMAIN-SUFFIX,ws.mola.tv

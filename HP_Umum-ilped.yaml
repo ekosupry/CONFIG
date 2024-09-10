@@ -406,7 +406,7 @@ proxies:
         Host: mmx.vpnoir9r.us.kg
 
   - name: Akamai ID NTLS
-    server: mmx.vpnoir9r.us.kg
+    server: 104.18.3.2
     port: 80
     type: vless
     uuid: 7967a40e-c229-4f23-b5a7-9b2f49a3b72b

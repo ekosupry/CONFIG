@@ -1,3 +1,4 @@
+
 # AKUN PREMIUM SINGAPURA DIGITAL OCEAN AKTIF SAMPAI 27 September 2024
 # Gass PREMIUM 10rb/device aktif 1 bulan,2 device 15rb
 # ==== Paket ILMUPEDIA ======
@@ -454,7 +455,7 @@ proxies:
         Host: mmx.vpnoir9r.us.kg
 
   - name: Akamai ID NTLS
-    server: mmx.vpnoir9r.us.kg
+    server: 104.18.3.2
     port: 80
     type: vless
     uuid: 7967a40e-c229-4f23-b5a7-9b2f49a3b72b

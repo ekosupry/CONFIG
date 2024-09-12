@@ -27,6 +27,7 @@ payload:
 - DOMAIN-SUFFIX,huggingface.co
 - DOMAIN-SUFFIX,remove.bg
 - DOMAIN-SUFFIX,cleanup.pictures
+- DOMAIN-SUFFIX,cutout.pro
 #pribadi
 - DOMAIN-SUFFIX,zello.com
 - DOMAIN-SUFFIX,yandex.com

@@ -28,6 +28,7 @@ payload:
 - DOMAIN-SUFFIX,remove.bg
 - DOMAIN-SUFFIX,cleanup.pictures
 - DOMAIN-SUFFIX,cutout.pro
+- DOMAIN-SUFFIX,firefly.adobe.com
 #pribadi
 - DOMAIN-SUFFIX,zello.com
 - DOMAIN-SUFFIX,yandex.com

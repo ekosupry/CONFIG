@@ -1137,10 +1137,10 @@ proxy-groups:
   strategy: round-robin
   disable-udp: false
   proxies:
+    -  LOAD-BALANCE
     -  BEST PING
     -  PREMIUM
     -  FALLBACK
-    -  LOAD-BALANCE
     -  DIRECT
   url: 'http://www.gstatic.com/generate_204'
   interval: 300
@@ -1179,10 +1179,10 @@ proxy-groups:
   strategy: round-robin
   disable-udp: false
   proxies:
+    -  BEST PING
     -  LOAD-BALANCE
     -  FALLBACK
     -  PREMIUM
-    -  BEST PING
     -  DIRECT
   url: 'http://www.gstatic.com/generate_204'
   interval: 300
@@ -1193,9 +1193,9 @@ proxy-groups:
   strategy: round-robin
   disable-udp: false
   proxies:
+    -  PREMIUM
     -  FALLBACK
     -  BEST PING
-    -  PREMIUM
     -  LOAD-BALANCE
     -  DIRECT
     -  REJECT

@@ -1,0 +1,180 @@
+  - name: VLESS KNC 443
+    server: 104.17.3.81
+    port: 443
+    type: vless
+    uuid: 80510fd1-7a7d-4b83-a3db-05fb7f23dea5
+    alterId: 0
+    cipher: auto
+    tls: true
+    skip-cert-verify: true
+    servername: id.knc.my.id
+    network: ws
+    ws-opts:
+      path: /?ed=2048
+      headers:
+        Host: id.knc.my.id
+    udp: true
+    
+  - name: VLESS KNC2 443
+    server: 104.17.3.81
+    port: 443
+    type: vless
+    uuid: 80510fd1-7a7d-4b83-a3db-05fb7f23dea5
+    alterId: 0
+    cipher: auto
+    tls: true
+    skip-cert-verify: true
+    servername: id2.knc.my.id
+    network: ws
+    ws-opts:
+      path: /?ed=2048
+      headers:
+        Host: id2.knc.my.id
+    udp: true
+
+  - name: VMESS ID
+    server: 104.17.3.81
+    port: 80
+    type: vmess
+    uuid: 97cdf301-49a0-4cec-85d4-894bb84d86ab
+    alterId: 0
+    cipher: auto
+    tls: false
+    skip-cert-verify: true
+    servername: id-5.rzs.my.id
+    network: ws
+    ws-opts:
+      path: /vmess
+      headers:
+        Host: id-5.rzs.my.id
+    udp: true
+
+  - name: VLESS KNC 80
+    server: 104.17.3.81
+    port: 80
+    type: vless
+    uuid: 80510fd1-7a7d-4b83-a3db-05fb7f23dea5
+    alterId: 0
+    cipher: auto
+    tls: false
+    skip-cert-verify: true
+    servername: id.knc.my.id
+    network: ws
+    ws-opts:
+      path: /?ed=2048
+      headers:
+        Host: id.knc.my.id
+    udp: true
+
+  - name: VLESS ID MAHAL
+    server: 104.17.3.81
+    port: 443
+    type: vless
+    uuid: 6e6cb97e-57ac-4e8f-ad90-2b2fbb21bc45
+    alterId: 0
+    cipher: auto
+    tls: true
+    skip-cert-verify: true
+    servername: id.jam.mahal.filegear-sg.me
+    network: ws
+    ws-opts:
+      path: /vless
+      headers:
+        Host: id.jam.mahal.filegear-sg.me
+    udp: true
+
+  - name: VLESS ID SERVLESS
+    server: 104.17.3.81
+    port: 443
+    type: vless
+    uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+    alterId: 0
+    cipher: auto
+    tls: true
+    skip-cert-verify: true
+    servername: id.servless.us.to
+    network: ws
+    ws-opts:
+      path: /vlesscf
+      headers:
+        Host: id.servless.us.to
+    udp: true
+
+  - name: VLESS ID VLCFPAGE
+    server: 104.17.3.81
+    port: 443
+    type: vless
+    uuid: 0bc51b14-02aa-40db-aeba-8a9569a7244d
+    alterId: 0
+    cipher: auto
+    tls: true
+    skip-cert-verify: true
+    servername: id.vlcfpages.my.id
+    network: ws
+    ws-opts:
+      path: /?ed=2048
+      headers:
+        Host: id.vlcfpages.my.id
+    udp: true
+
+  - name: Akamai ID TLS
+    server: 104.17.3.81
+    port: 443
+    type: vless
+    uuid: e38568b2-41b1-4082-81e9-91a1a6c719b7
+    cipher: auto
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    network: ws
+    servername: mmx.vpnoir9r.us.kg
+    ws-opts:
+      path: /idakamai
+      headers:
+        Host: mmx.vpnoir9r.us.kg
+
+  - name: Akamai ID NTLS
+    server: mmx.vpnoir9r.us.kg
+    port: 80
+    type: vless
+    uuid: 7967a40e-c229-4f23-b5a7-9b2f49a3b72b
+    cipher: auto
+    tls: false
+    udp: true
+    skip-cert-verify: true
+    network: ws
+    ws-opts:
+      path: /idakamai
+      headers:
+        Host: mmx.vpnoir9r.us.kg
+        
+  - name: Google ID TLS
+    server: 104.17.3.81
+    port: 443
+    type: vless
+    uuid: 4ea53b3b-ce7b-40db-ad47-b61f9e62fe34
+    cipher: auto
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    network: ws
+    servername: mmx.vpnoir9r.us.kg
+    ws-opts:
+      path: /GCPID
+      headers:
+        Host: mmx.vpnoir9r.us.kg
+
+  - name: Google ID NTLS
+    server: 104.17.3.81
+    port: 80
+    type: vless
+    uuid: 6977baaf-b4d4-4545-ad3b-7f476e3c7a5d
+    cipher: auto
+    tls: false
+    udp: true
+    skip-cert-verify: true
+    network: ws
+    ws-opts:
+      path: /GCPID
+      headers:
+        Host: mmx.vpnoir9r.us.kg  

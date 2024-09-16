@@ -1814,7 +1814,7 @@ proxy-groups:
   interval: 300
 #Koneksi Sosmed
 - name: "LOBBY GAME"
-  type: fallback #PILIIH SALAH SATU : SELECT,LOAD-BALANCE,FALLBACK,URL-TEST
+  type: url-test #PILIIH SALAH SATU : SELECT,LOAD-BALANCE,FALLBACK,URL-TEST
   strategy: round-robin
   disable-udp: false
   proxies:

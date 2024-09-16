@@ -1814,14 +1814,15 @@ proxy-groups:
   interval: 300
 #Koneksi Sosmed
 - name: "LOBBY GAME"
-  type: url-test #PILIIH SALAH SATU : SELECT,LOAD-BALANCE,FALLBACK,URL-TEST
+  type: fallback #PILIIH SALAH SATU : SELECT,LOAD-BALANCE,FALLBACK,URL-TEST
   strategy: round-robin
   disable-udp: false
   proxies:
+    -  VLESS GAME
     -  VLESS KNC 443
+    -  VLESS KNC2 443
     -  VLESS KNC 80
     -  VLESS KNC2 80
-    -  VLESS KNC2 443
     -  VLESS ID MAHAL
     -  VLESS ID SERVLESS
     -  VLESS ID VLCFPAGE
@@ -1832,7 +1833,6 @@ proxy-groups:
     -  INDO VPN 443
     -  INDO VPN NTLS
     -  TROJAN TARIK
-    -  VLESS GAME
   url: 'http://www.gstatic.com/generate_204'
   interval: 300
 #Koneksi Sosmed

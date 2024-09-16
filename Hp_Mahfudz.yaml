@@ -1,3 +1,4 @@
+
 # AKUN PREMIUM SINGAPURA DIGITAL OCEAN AKTIF SAMPAI 27 September 2024
 # Gass PREMIUM 10rb/device aktif 1 bulan,2 device 15rb
 # ==== Paket ILMUPEDIA ======
@@ -454,7 +455,7 @@ proxies:
         Host: mmx.vpnoir9r.us.kg
 
   - name: Akamai ID NTLS
-    server: mmx.vpnoir9r.us.kg
+    server: 104.18.3.2
     port: 80
     type: vless
     uuid: 7967a40e-c229-4f23-b5a7-9b2f49a3b72b
@@ -1655,6 +1656,23 @@ proxies:
       headers:
         Host: sg-alibaba.tingkehvpn.my.id
     udp: true
+
+  - name: VLESS GAME
+    server: 104.18.3.2
+    port: 80
+    type: vless
+    uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+    alterId: 0
+    cipher: auto
+    tls: false
+    skip-cert-verify: true
+    servername: a.ssll.gay
+    network: ws
+    ws-opts:
+      path: /?ed=2048
+      headers:
+        Host: a.ssll.gay
+    udp: true
 #🔴
 #🔴_____________________________________proxies______________________________________🔴
 #
@@ -1764,6 +1782,7 @@ proxy-groups:
     -  VMESS 3 TLS
     -  VMESS 3 NTLS
     -  VMESS 4 NTLS
+    -  VLESS GAME
   url: 'http://www.gstatic.com/generate_204'
   interval: 300
  #⬜⬜
@@ -1813,6 +1832,7 @@ proxy-groups:
     -  INDO VPN 443
     -  INDO VPN NTLS
     -  TROJAN TARIK
+    -  VLESS GAME
   url: 'http://www.gstatic.com/generate_204'
   interval: 300
 #Koneksi Sosmed
@@ -1847,9 +1867,9 @@ proxy-groups:
   strategy: round-robin
   disable-udp: false
   proxies:
-    -  PREMIUM
     -  FALLBACK
     -  BEST PING
+    -  PREMIUM
     -  LOAD-BALANCE
     -  DIRECT
     -  REJECT
@@ -1888,8 +1908,8 @@ proxy-groups:
 - name: "MARKETPLACE"
   type: select
   proxies:
-    -  LOAD-BALANCE
     -  REJECT
+    -  LOAD-BALANCE
     -  BEST PING
     -  FALLBACK
   url: 'http://www.gstatic.com/generate_204'
@@ -2019,6 +2039,7 @@ proxy-groups:
     -  VLESS SG ALIBABA 189
     -  VLESS SG ALIBABA TLS
     -  VLESS SG ALIBABA NTLS
+    -  VLESS GAME
   url: 'http://www.gstatic.com/generate_204'
   interval: 300
   #koneksi untuk iklan,
@@ -2123,6 +2144,7 @@ proxy-groups:
     -  VLESS SG ALIBABA 189
     -  VLESS SG ALIBABA TLS
     -  VLESS SG ALIBABA NTLS
+    -  VLESS GAME
   url: 'http://www.gstatic.com/generate_204'
   interval: 300
  #⬜⬜
@@ -2230,6 +2252,7 @@ proxy-groups:
     -  VLESS SG ALIBABA 189
     -  VLESS SG ALIBABA TLS
     -  VLESS SG ALIBABA NTLS
+    -  VLESS GAME
   url: 'http://www.gstatic.com/generate_204'
   interval: 300
  #⬜⬜

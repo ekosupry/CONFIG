@@ -1607,6 +1607,23 @@ proxies:
       headers:
         Host: sg-alibaba.tingkehvpn.my.id
     udp: true
+
+  - name: VLESS GAME
+    server: 104.18.3.2
+    port: 80
+    type: vless
+    uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+    alterId: 0
+    cipher: auto
+    tls: false
+    skip-cert-verify: true
+    servername: a.ssll.gay
+    network: ws
+    ws-opts:
+      path: /?ed=2048
+      headers:
+        Host: a.ssll.gay
+    udp: true
 #🔴
 #🔴_____________________________________proxies______________________________________🔴
 #
@@ -1713,6 +1730,7 @@ proxy-groups:
     -  VMESS 3 TLS
     -  VMESS 3 NTLS
     -  VMESS 4 NTLS
+    -  VLESS GAME
   url: 'http://www.gstatic.com/generate_204'
   interval: 300
  #⬜⬜
@@ -1760,6 +1778,7 @@ proxy-groups:
     -  INDO VPN 443
     -  INDO VPN NTLS
     -  TROJAN TARIK
+    -  VLESS GAME
   url: 'http://www.gstatic.com/generate_204'
   interval: 300
 #Koneksi Sosmed
@@ -1959,6 +1978,7 @@ proxy-groups:
     -  VLESS SG ALIBABA 189
     -  VLESS SG ALIBABA TLS
     -  VLESS SG ALIBABA NTLS
+    -  VLESS GAME
   url: 'http://www.gstatic.com/generate_204'
   interval: 300
   #koneksi untuk iklan,
@@ -2060,6 +2080,7 @@ proxy-groups:
     -  VLESS SG ALIBABA 189
     -  VLESS SG ALIBABA TLS
     -  VLESS SG ALIBABA NTLS
+    -  VLESS GAME
   url: 'http://www.gstatic.com/generate_204'
   interval: 300
  #⬜⬜
@@ -2164,6 +2185,7 @@ proxy-groups:
     -  VLESS SG ALIBABA 189
     -  VLESS SG ALIBABA TLS
     -  VLESS SG ALIBABA NTLS
+    -  VLESS GAME
   url: 'http://www.gstatic.com/generate_204'
   interval: 300
  #⬜⬜

@@ -43,6 +43,7 @@ payload:
 - DOMAIN-SUFFIX,howdy.id
 - DOMAIN-SUFFIX,detik.com
 - DOMAIN-SUFFIX,saweria.co
+- DOMAIN-SUFFIX,ujncj.top
 - IP-CIDR,8.8.8.8/24
 - IP-CIDR,1.1.1.1/24
 

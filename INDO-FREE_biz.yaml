@@ -180,4 +180,89 @@ proxies:
     ws-opts:
       path: /GCPID
       headers:
-        Host: mmx.vpnoir9r.us.kg  
+        Host: mmx.vpnoir9r.us.kg 
+
+  - name: VLESS ANGGA ID1
+    server: 104.17.3.81
+    port: 443
+    type: vless
+    uuid: 1a225732-bf40-4bdc-bc3a-1fcb6bdd5ddd
+    alterId: 0
+    cipher: auto
+    tls: true
+    skip-cert-verify: true
+    servername: aio.angga.us.kg
+    network: ws
+    ws-opts:
+      path: /id1
+      headers:
+        Host: aio.angga.us.kg
+    udp: true
+
+  - name: VLESS ANGGA ID2
+    server: 104.17.3.81
+    port: 443
+    type: vless
+    uuid: 1a225732-bf40-4bdc-bc3a-1fcb6bdd5ddd
+    alterId: 0
+    cipher: auto
+    tls: true
+    skip-cert-verify: true
+    servername: aio.angga.us.kg
+    network: ws
+    ws-opts:
+      path: /id2
+      headers:
+        Host: aio.angga.us.kg
+    udp: true
+
+  - name: VLESS ANGGA ID3
+    server: 104.17.3.81
+    port: 443
+    type: vless
+    uuid: 1a225732-bf40-4bdc-bc3a-1fcb6bdd5ddd
+    alterId: 0
+    cipher: auto
+    tls: true
+    skip-cert-verify: true
+    servername: aio.angga.us.kg
+    network: ws
+    ws-opts:
+      path: /id3
+      headers:
+        Host: aio.angga.us.kg
+    udp: true
+
+  - name: VLESS ANGGA ID4
+    server: 104.17.3.81
+    port: 443
+    type: vless
+    uuid: 1a225732-bf40-4bdc-bc3a-1fcb6bdd5ddd
+    alterId: 0
+    cipher: auto
+    tls: true
+    skip-cert-verify: true
+    servername: aio.angga.us.kg
+    network: ws
+    ws-opts:
+      path: /id4
+      headers:
+        Host: aio.angga.us.kg
+    udp: true
+
+  - name: VLESS ANGGA ID5
+    server: 104.17.3.81
+    port: 443
+    type: vless
+    uuid: 1a225732-bf40-4bdc-bc3a-1fcb6bdd5ddd
+    alterId: 0
+    cipher: auto
+    tls: true
+    skip-cert-verify: true
+    servername: aio.angga.us.kg
+    network: ws
+    ws-opts:
+      path: /id5
+      headers:
+        Host: aio.angga.us.kg
+    udp: true

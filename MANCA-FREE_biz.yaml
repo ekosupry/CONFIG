@@ -1320,3 +1320,276 @@ proxies:
       headers:
         Host: sg-alibaba.tingkehvpn.my.id
     udp: true
+
+  - name: VLESS ANGGA SG1
+    server: 104.17.3.81
+    port: 443
+    type: vless
+    uuid: 1a225732-bf40-4bdc-bc3a-1fcb6bdd5ddd
+    alterId: 0
+    cipher: auto
+    tls: true
+    skip-cert-verify: true
+    servername: aio.angga.us.kg
+    network: ws
+    ws-opts:
+      path: /sg1
+      headers:
+        Host: aio.angga.us.kg
+    udp: true
+  
+  - name: VLESS ANGGA SG2
+    server: 104.17.3.81
+    port: 443
+    type: vless
+    uuid: 1a225732-bf40-4bdc-bc3a-1fcb6bdd5ddd
+    alterId: 0
+    cipher: auto
+    tls: true
+    skip-cert-verify: true
+    servername: aio.angga.us.kg
+    network: ws
+    ws-opts:
+      path: /sg2
+      headers:
+        Host: aio.angga.us.kg
+    udp: true
+
+  - name: VLESS ANGGA SG3
+    server: 104.17.3.81
+    port: 443
+    type: vless
+    uuid: 1a225732-bf40-4bdc-bc3a-1fcb6bdd5ddd
+    alterId: 0
+    cipher: auto
+    tls: true
+    skip-cert-verify: true
+    servername: aio.angga.us.kg
+    network: ws
+    ws-opts:
+      path: /sg3
+      headers:
+        Host: aio.angga.us.kg
+    udp: true
+
+  - name: VLESS ANGGA SG4
+    server: 104.17.3.81
+    port: 443
+    type: vless
+    uuid: 1a225732-bf40-4bdc-bc3a-1fcb6bdd5ddd
+    alterId: 0
+    cipher: auto
+    tls: true
+    skip-cert-verify: true
+    servername: aio.angga.us.kg
+    network: ws
+    ws-opts:
+      path: /sg4
+      headers:
+        Host: aio.angga.us.kg
+    udp: true
+
+  - name: VLESS ANGGA SG5
+    server: 104.17.3.81
+    port: 443
+    type: vless
+    uuid: 1a225732-bf40-4bdc-bc3a-1fcb6bdd5ddd
+    alterId: 0
+    cipher: auto
+    tls: true
+    skip-cert-verify: true
+    servername: aio.angga.us.kg
+    network: ws
+    ws-opts:
+      path: /sg5
+      headers:
+        Host: aio.angga.us.kg
+    udp: true
+
+  - name: VLESS ANGGA US1
+    server: 104.17.3.81
+    port: 443
+    type: vless
+    uuid: 1a225732-bf40-4bdc-bc3a-1fcb6bdd5ddd
+    alterId: 0
+    cipher: auto
+    tls: true
+    skip-cert-verify: true
+    servername: aio.angga.us.kg
+    network: ws
+    ws-opts:
+      path: /us1
+      headers:
+        Host: aio.angga.us.kg
+    udp: true
+
+  - name: VLESS ANGGA US2
+    server: 104.17.3.81
+    port: 443
+    type: vless
+    uuid: 1a225732-bf40-4bdc-bc3a-1fcb6bdd5ddd
+    alterId: 0
+    cipher: auto
+    tls: true
+    skip-cert-verify: true
+    servername: aio.angga.us.kg
+    network: ws
+    ws-opts:
+      path: /us2
+      headers:
+        Host: aio.angga.us.kg
+    udp: true
+
+  - name: VLESS ANGGA US3
+    server: 104.17.3.81
+    port: 443
+    type: vless
+    uuid: 1a225732-bf40-4bdc-bc3a-1fcb6bdd5ddd
+    alterId: 0
+    cipher: auto
+    tls: true
+    skip-cert-verify: true
+    servername: aio.angga.us.kg
+    network: ws
+    ws-opts:
+      path: /us3
+      headers:
+        Host: aio.angga.us.kg
+    udp: true
+
+  - name: VLESS ANGGA JP1
+    server: 104.17.3.81
+    port: 443
+    type: vless
+    uuid: 1a225732-bf40-4bdc-bc3a-1fcb6bdd5ddd
+    alterId: 0
+    cipher: auto
+    tls: true
+    skip-cert-verify: true
+    servername: aio.angga.us.kg
+    network: ws
+    ws-opts:
+      path: /jp1
+      headers:
+        Host: aio.angga.us.kg
+    udp: true
+
+  - name: VLESS ANGGA JP2
+    server: 104.17.3.81
+    port: 443
+    type: vless
+    uuid: 1a225732-bf40-4bdc-bc3a-1fcb6bdd5ddd
+    alterId: 0
+    cipher: auto
+    tls: true
+    skip-cert-verify: true
+    servername: aio.angga.us.kg
+    network: ws
+    ws-opts:
+      path: /jp2
+      headers:
+        Host: aio.angga.us.kg
+    udp: true
+
+  - name: VLESS ANGGA JP3
+    server: 104.17.3.81
+    port: 443
+    type: vless
+    uuid: 1a225732-bf40-4bdc-bc3a-1fcb6bdd5ddd
+    alterId: 0
+    cipher: auto
+    tls: true
+    skip-cert-verify: true
+    servername: aio.angga.us.kg
+    network: ws
+    ws-opts:
+      path: /jp3
+      headers:
+        Host: aio.angga.us.kg
+    udp: true
+
+  - name: VLESS ANGGA KR1
+    server: 104.17.3.81
+    port: 443
+    type: vless
+    uuid: 1a225732-bf40-4bdc-bc3a-1fcb6bdd5ddd
+    alterId: 0
+    cipher: auto
+    tls: true
+    skip-cert-verify: true
+    servername: aio.angga.us.kg
+    network: ws
+    ws-opts:
+      path: /kr1
+      headers:
+        Host: aio.angga.us.kg
+    udp: true
+
+  - name: VLESS ANGGA KR2
+    server: 104.17.3.81
+    port: 443
+    type: vless
+    uuid: 1a225732-bf40-4bdc-bc3a-1fcb6bdd5ddd
+    alterId: 0
+    cipher: auto
+    tls: true
+    skip-cert-verify: true
+    servername: aio.angga.us.kg
+    network: ws
+    ws-opts:
+      path: /kr2
+      headers:
+        Host: aio.angga.us.kg
+    udp: true
+
+  - name: VLESS ANGGA UK1
+    server: 104.17.3.81
+    port: 443
+    type: vless
+    uuid: 1a225732-bf40-4bdc-bc3a-1fcb6bdd5ddd
+    alterId: 0
+    cipher: auto
+    tls: true
+    skip-cert-verify: true
+    servername: aio.angga.us.kg
+    network: ws
+    ws-opts:
+      path: /uk1
+      headers:
+        Host: aio.angga.us.kg
+    udp: true
+
+  - name: VLESS ANGGA AUS1
+    server: 104.17.3.81
+    port: 443
+    type: vless
+    uuid: 1a225732-bf40-4bdc-bc3a-1fcb6bdd5ddd
+    alterId: 0
+    cipher: auto
+    tls: true
+    skip-cert-verify: true
+    servername: aio.angga.us.kg
+    network: ws
+    ws-opts:
+      path: /aus1
+      headers:
+        Host: aio.angga.us.kg
+    udp: true
+
+  - name: VLESS ANGGA GER1
+    server: 104.17.3.81
+    port: 443
+    type: vless
+    uuid: 1a225732-bf40-4bdc-bc3a-1fcb6bdd5ddd
+    alterId: 0
+    cipher: auto
+    tls: true
+    skip-cert-verify: true
+    servername: aio.angga.us.kg
+    network: ws
+    ws-opts:
+      path: /ger1
+      headers:
+        Host: aio.angga.us.kg
+    udp: true
+

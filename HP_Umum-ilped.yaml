@@ -1794,6 +1794,193 @@ proxies:
       headers:
         Host: aio.angga.us.kg
     udp: true
+
+  - name: VLESS ANGGA US1
+    server: 104.18.3.2
+    port: 443
+    type: vless
+    uuid: 1a225732-bf40-4bdc-bc3a-1fcb6bdd5ddd
+    alterId: 0
+    cipher: auto
+    tls: true
+    skip-cert-verify: true
+    servername: aio.angga.us.kg
+    network: ws
+    ws-opts:
+      path: /us1
+      headers:
+        Host: aio.angga.us.kg
+    udp: true
+
+  - name: VLESS ANGGA US2
+    server: 104.18.3.2
+    port: 443
+    type: vless
+    uuid: 1a225732-bf40-4bdc-bc3a-1fcb6bdd5ddd
+    alterId: 0
+    cipher: auto
+    tls: true
+    skip-cert-verify: true
+    servername: aio.angga.us.kg
+    network: ws
+    ws-opts:
+      path: /us2
+      headers:
+        Host: aio.angga.us.kg
+    udp: true
+
+  - name: VLESS ANGGA US3
+    server: 104.18.3.2
+    port: 443
+    type: vless
+    uuid: 1a225732-bf40-4bdc-bc3a-1fcb6bdd5ddd
+    alterId: 0
+    cipher: auto
+    tls: true
+    skip-cert-verify: true
+    servername: aio.angga.us.kg
+    network: ws
+    ws-opts:
+      path: /us3
+      headers:
+        Host: aio.angga.us.kg
+    udp: true
+
+  - name: VLESS ANGGA JP1
+    server: 104.18.3.2
+    port: 443
+    type: vless
+    uuid: 1a225732-bf40-4bdc-bc3a-1fcb6bdd5ddd
+    alterId: 0
+    cipher: auto
+    tls: true
+    skip-cert-verify: true
+    servername: aio.angga.us.kg
+    network: ws
+    ws-opts:
+      path: /jp1
+      headers:
+        Host: aio.angga.us.kg
+    udp: true
+
+  - name: VLESS ANGGA JP2
+    server: 104.18.3.2
+    port: 443
+    type: vless
+    uuid: 1a225732-bf40-4bdc-bc3a-1fcb6bdd5ddd
+    alterId: 0
+    cipher: auto
+    tls: true
+    skip-cert-verify: true
+    servername: aio.angga.us.kg
+    network: ws
+    ws-opts:
+      path: /jp2
+      headers:
+        Host: aio.angga.us.kg
+    udp: true
+
+  - name: VLESS ANGGA JP3
+    server: 104.18.3.2
+    port: 443
+    type: vless
+    uuid: 1a225732-bf40-4bdc-bc3a-1fcb6bdd5ddd
+    alterId: 0
+    cipher: auto
+    tls: true
+    skip-cert-verify: true
+    servername: aio.angga.us.kg
+    network: ws
+    ws-opts:
+      path: /jp3
+      headers:
+        Host: aio.angga.us.kg
+    udp: true
+
+  - name: VLESS ANGGA KR1
+    server: 104.18.3.2
+    port: 443
+    type: vless
+    uuid: 1a225732-bf40-4bdc-bc3a-1fcb6bdd5ddd
+    alterId: 0
+    cipher: auto
+    tls: true
+    skip-cert-verify: true
+    servername: aio.angga.us.kg
+    network: ws
+    ws-opts:
+      path: /kr1
+      headers:
+        Host: aio.angga.us.kg
+    udp: true
+
+  - name: VLESS ANGGA KR2
+    server: 104.18.3.2
+    port: 443
+    type: vless
+    uuid: 1a225732-bf40-4bdc-bc3a-1fcb6bdd5ddd
+    alterId: 0
+    cipher: auto
+    tls: true
+    skip-cert-verify: true
+    servername: aio.angga.us.kg
+    network: ws
+    ws-opts:
+      path: /kr2
+      headers:
+        Host: aio.angga.us.kg
+    udp: true
+
+  - name: VLESS ANGGA UK1
+    server: 104.18.3.2
+    port: 443
+    type: vless
+    uuid: 1a225732-bf40-4bdc-bc3a-1fcb6bdd5ddd
+    alterId: 0
+    cipher: auto
+    tls: true
+    skip-cert-verify: true
+    servername: aio.angga.us.kg
+    network: ws
+    ws-opts:
+      path: /uk1
+      headers:
+        Host: aio.angga.us.kg
+    udp: true
+
+  - name: VLESS ANGGA AUS1
+    server: 104.18.3.2
+    port: 443
+    type: vless
+    uuid: 1a225732-bf40-4bdc-bc3a-1fcb6bdd5ddd
+    alterId: 0
+    cipher: auto
+    tls: true
+    skip-cert-verify: true
+    servername: aio.angga.us.kg
+    network: ws
+    ws-opts:
+      path: /aus1
+      headers:
+        Host: aio.angga.us.kg
+    udp: true
+
+  - name: VLESS ANGGA GER1
+    server: 104.18.3.2
+    port: 443
+    type: vless
+    uuid: 1a225732-bf40-4bdc-bc3a-1fcb6bdd5ddd
+    alterId: 0
+    cipher: auto
+    tls: true
+    skip-cert-verify: true
+    servername: aio.angga.us.kg
+    network: ws
+    ws-opts:
+      path: /ger1
+      headers:
+        Host: aio.angga.us.kg
+    udp: true
 #🔴
 #🔴_____________________________________proxies______________________________________🔴
 #
@@ -1911,6 +2098,17 @@ proxy-groups:
     -  VLESS ANGGA SG3
     -  VLESS ANGGA SG4
     -  VLESS ANGGA SG5
+    -  VLESS ANGGA US1
+    -  VLESS ANGGA US2
+    -  VLESS ANGGA US3
+    -  VLESS ANGGA JP1
+    -  VLESS ANGGA JP2
+    -  VLESS ANGGA JP3
+    -  VLESS ANGGA KR1
+    -  VLESS ANGGA KR2
+    -  VLESS ANGGA UK1
+    -  VLESS ANGGA AUS1
+    -  VLESS ANGGA GER1
   url: 'http://www.gstatic.com/generate_204'
   interval: 300
  #⬜⬜
@@ -2174,6 +2372,17 @@ proxy-groups:
     -  VLESS ANGGA SG3
     -  VLESS ANGGA SG4
     -  VLESS ANGGA SG5
+    -  VLESS ANGGA US1
+    -  VLESS ANGGA US2
+    -  VLESS ANGGA US3
+    -  VLESS ANGGA JP1
+    -  VLESS ANGGA JP2
+    -  VLESS ANGGA JP3
+    -  VLESS ANGGA KR1
+    -  VLESS ANGGA KR2
+    -  VLESS ANGGA UK1
+    -  VLESS ANGGA AUS1
+    -  VLESS ANGGA GER1
   url: 'http://www.gstatic.com/generate_204'
   interval: 300
   #koneksi untuk iklan,
@@ -2286,6 +2495,17 @@ proxy-groups:
     -  VLESS ANGGA SG3
     -  VLESS ANGGA SG4
     -  VLESS ANGGA SG5
+    -  VLESS ANGGA US1
+    -  VLESS ANGGA US2
+    -  VLESS ANGGA US3
+    -  VLESS ANGGA JP1
+    -  VLESS ANGGA JP2
+    -  VLESS ANGGA JP3
+    -  VLESS ANGGA KR1
+    -  VLESS ANGGA KR2
+    -  VLESS ANGGA UK1
+    -  VLESS ANGGA AUS1
+    -  VLESS ANGGA GER1
   url: 'http://www.gstatic.com/generate_204'
   interval: 300
  #⬜⬜
@@ -2401,6 +2621,17 @@ proxy-groups:
     -  VLESS ANGGA SG3
     -  VLESS ANGGA SG4
     -  VLESS ANGGA SG5
+    -  VLESS ANGGA US1
+    -  VLESS ANGGA US2
+    -  VLESS ANGGA US3
+    -  VLESS ANGGA JP1
+    -  VLESS ANGGA JP2
+    -  VLESS ANGGA JP3
+    -  VLESS ANGGA KR1
+    -  VLESS ANGGA KR2
+    -  VLESS ANGGA UK1
+    -  VLESS ANGGA AUS1
+    -  VLESS ANGGA GER1
   url: 'http://www.gstatic.com/generate_204'
   interval: 300
  #⬜⬜

@@ -1624,6 +1624,91 @@ proxies:
       headers:
         Host: a.ssll.gay
     udp: true
+
+  - name: VLESS ANGGA ID1
+    server: 104.18.3.2
+    port: 443
+    type: vless
+    uuid: 1a225732-bf40-4bdc-bc3a-1fcb6bdd5ddd
+    alterId: 0
+    cipher: auto
+    tls: true
+    skip-cert-verify: true
+    servername: aio.angga.us.kg
+    network: ws
+    ws-opts:
+      path: /id1
+      headers:
+        Host: aio.angga.us.kg
+    udp: true
+
+  - name: VLESS ANGGA ID2
+    server: 104.18.3.2
+    port: 443
+    type: vless
+    uuid: 1a225732-bf40-4bdc-bc3a-1fcb6bdd5ddd
+    alterId: 0
+    cipher: auto
+    tls: true
+    skip-cert-verify: true
+    servername: aio.angga.us.kg
+    network: ws
+    ws-opts:
+      path: /id2
+      headers:
+        Host: aio.angga.us.kg
+    udp: true
+
+  - name: VLESS ANGGA ID3
+    server: 104.18.3.2
+    port: 443
+    type: vless
+    uuid: 1a225732-bf40-4bdc-bc3a-1fcb6bdd5ddd
+    alterId: 0
+    cipher: auto
+    tls: true
+    skip-cert-verify: true
+    servername: aio.angga.us.kg
+    network: ws
+    ws-opts:
+      path: /id3
+      headers:
+        Host: aio.angga.us.kg
+    udp: true
+
+  - name: VLESS ANGGA ID4
+    server: 104.18.3.2
+    port: 443
+    type: vless
+    uuid: 1a225732-bf40-4bdc-bc3a-1fcb6bdd5ddd
+    alterId: 0
+    cipher: auto
+    tls: true
+    skip-cert-verify: true
+    servername: aio.angga.us.kg
+    network: ws
+    ws-opts:
+      path: /id4
+      headers:
+        Host: aio.angga.us.kg
+    udp: true
+
+  - name: VLESS ANGGA ID5
+    server: 104.18.3.2
+    port: 443
+    type: vless
+    uuid: 1a225732-bf40-4bdc-bc3a-1fcb6bdd5ddd
+    alterId: 0
+    cipher: auto
+    tls: true
+    skip-cert-verify: true
+    servername: aio.angga.us.kg
+    network: ws
+    ws-opts:
+      path: /id5
+      headers:
+        Host: aio.angga.us.kg
+    udp: true
 #🔴
 #🔴_____________________________________proxies______________________________________🔴
 #
@@ -1731,6 +1816,11 @@ proxy-groups:
     -  VMESS 3 NTLS
     -  VMESS 4 NTLS
     -  VLESS GAME
+    -  VLESS ANGGA ID1
+    -  VLESS ANGGA ID2
+    -  VLESS ANGGA ID3
+    -  VLESS ANGGA ID4
+    -  VLESS ANGGA ID5
   url: 'http://www.gstatic.com/generate_204'
   interval: 300
  #⬜⬜
@@ -1779,6 +1869,11 @@ proxy-groups:
     -  INDO VPN NTLS
     -  TROJAN TARIK
     -  VLESS GAME
+    -  VLESS ANGGA ID1
+    -  VLESS ANGGA ID2
+    -  VLESS ANGGA ID3
+    -  VLESS ANGGA ID4
+    -  VLESS ANGGA ID5
   url: 'http://www.gstatic.com/generate_204'
   interval: 300
 #Koneksi Sosmed
@@ -1979,6 +2074,11 @@ proxy-groups:
     -  VLESS SG ALIBABA TLS
     -  VLESS SG ALIBABA NTLS
     -  VLESS GAME
+    -  VLESS ANGGA ID1
+    -  VLESS ANGGA ID2
+    -  VLESS ANGGA ID3
+    -  VLESS ANGGA ID4
+    -  VLESS ANGGA ID5
   url: 'http://www.gstatic.com/generate_204'
   interval: 300
   #koneksi untuk iklan,
@@ -2081,6 +2181,11 @@ proxy-groups:
     -  VLESS SG ALIBABA TLS
     -  VLESS SG ALIBABA NTLS
     -  VLESS GAME
+    -  VLESS ANGGA ID1
+    -  VLESS ANGGA ID2
+    -  VLESS ANGGA ID3
+    -  VLESS ANGGA ID4
+    -  VLESS ANGGA ID5
   url: 'http://www.gstatic.com/generate_204'
   interval: 300
  #⬜⬜
@@ -2186,6 +2291,11 @@ proxy-groups:
     -  VLESS SG ALIBABA TLS
     -  VLESS SG ALIBABA NTLS
     -  VLESS GAME
+    -  VLESS ANGGA ID1
+    -  VLESS ANGGA ID2
+    -  VLESS ANGGA ID3
+    -  VLESS ANGGA ID4
+    -  VLESS ANGGA ID5
   url: 'http://www.gstatic.com/generate_204'
   interval: 300
  #⬜⬜

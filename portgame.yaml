@@ -1,5 +1,7 @@
 payload:
 #https://dedupelist.com/ to remove dupilcate lines
+#CastleVille
+- DST-PORT,8890
 #Booya Domino QiuQiu
 - DST-PORT,7020
 - DST-PORT,7021

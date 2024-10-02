@@ -1,5 +1,7 @@
 payload:
 #https://dedupelist.com/ to remove dupilcate lines
+#Wild Ones 
+- DST-PORT,8000
 #8 Ball Pool
 - DST-PORT,4000
 #eadshot

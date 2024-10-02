@@ -1,5 +1,7 @@
 payload:
 #https://dedupelist.com/ to remove dupilcate lines
+#DRAGON NEST MOBILE
+- DST-PORT,10514
 #roblox
 - DST-PORT,49152
 - DST-PORT,49153

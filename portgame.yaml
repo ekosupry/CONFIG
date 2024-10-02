@@ -1,5 +1,17 @@
 payload:
 #https://dedupelist.com/ to remove dupilcate lines
+#Booya Domino QiuQiu
+- DST-PORT,7020
+- DST-PORT,7021
+- DST-PORT,7022
+- DST-PORT,7023
+- DST-PORT,7024
+- DST-PORT,7025
+- DST-PORT,7026
+- DST-PORT,7027
+- DST-PORT,7028
+- DST-PORT,7029
+- DST-PORT,7030
 #SEVEN KNIGHTS 
 - DST-PORT,12000
 - DST-PORT,12001

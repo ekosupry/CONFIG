@@ -83,7 +83,7 @@ proxies:
     server: wc.vanillicon.com
     port: 443
     type: vmess
-    uuid: 99f4b372-865d-4bf5-a9ad-f9afd7d786a8
+    uuid: 808bab86-4733-4611-ab2f-9efe167c5515
     alterId: 0
     cipher: auto
     tls: true
@@ -100,7 +100,7 @@ proxies:
     server: wc.vanillicon.com
     port: 443
     type: vmess
-    uuid: 99f4b372-865d-4bf5-a9ad-f9afd7d786a8
+    uuid: 808bab86-4733-4611-ab2f-9efe167c5515
     alterId: 0
     cipher: auto
     network: grpc

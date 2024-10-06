@@ -1,4 +1,3 @@
-# Whatsapp
 payload:
   # > WHATSAPP
   - DOMAIN-KEYWORD,whatsapp.com
@@ -39,6 +38,7 @@ payload:
   - DOMAIN-SUFFIX,rocksdb.org
   - DOMAIN-SUFFIX,whatsapp.com
   - DOMAIN-SUFFIX,whatsapp.net
+  - DST-PORT,587
   - DST-PORT,3478
   - DST-PORT,4244
   - DST-PORT,5222
@@ -47,6 +47,7 @@ payload:
   - DST-PORT,5288
   - DST-PORT,5242
   - DST-PORT,5349
+  - DST-PORT,7777
   - DST-PORT,34784
   - DST-PORT,45395
   - DST-PORT,50318

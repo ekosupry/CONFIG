@@ -526,57 +526,6 @@ proxies:
       headers:
         Host: mmx.vpnoir9r.us.kg 
         
-  - name: VMESS 1 TLS
-    server: wc.vanillicon.com
-    port: 443
-    type: vmess
-    uuid: 81eb0b22-396a-43a7-8646-1b9d1e6b51fd
-    alterId: 0
-    cipher: auto
-    tls: true
-    skip-cert-verify: true
-    servername: mzvpn.my.id
-    network: ws
-    ws-opts:
-      path: /vmess
-      headers:
-        Host: mzvpn.my.id
-    udp: true
-
-  - name: VMESS 2 TLS
-    server: wc.vanillicon.com
-    port: 443
-    type: vmess
-    uuid: a1655f51-1e20-4a92-8a11-b7ca30a7a353
-    alterId: 0
-    cipher: auto
-    tls: true
-    skip-cert-verify: true
-    servername: afrhms07.xfixedfloat.cfd
-    network: ws
-    ws-opts:
-      path: /linkws
-      headers:
-        Host: afrhms07.xfixedfloat.cfd
-    udp: true
-
-  - name: VMESS 3 TLS
-    server: wc.vanillicon.com
-    port: 443
-    type: vmess
-    uuid: edbb1059-1633-4271-b66e-ed4fba47a1bf
-    alterId: 0
-    cipher: auto
-    tls: true
-    skip-cert-verify: true
-    servername: linde06.indiavideo.sbs
-    network: ws
-    ws-opts:
-      path: /linkws
-      headers:
-        Host: linde06.indiavideo.sbs
-    udp: true
-
   - name: INDO VPN 443
     server: wc.vanillicon.com
     port: 443
@@ -1469,9 +1418,6 @@ proxy-groups:
     -  INDO VPN 443
     -  TROJAN TARIK
     -  INDOXRAY GRPC
-    -  VMESS 1 TLS
-    -  VMESS 2 TLS
-    -  VMESS 3 TLS
     -  VLESS ANGGA ID1
     -  VLESS ANGGA ID2
     -  VLESS ANGGA ID3
@@ -1688,9 +1634,6 @@ proxy-groups:
     -  INDO VPN 443
     -  TROJAN TARIK
     -  INDOXRAY GRPC
-    -  VMESS 1 TLS
-    -  VMESS 2 TLS
-    -  VMESS 3 TLS
     -  VLESS ARIS TLS
     -  WORKER GAME
     -  UWU FF
@@ -1774,9 +1717,6 @@ proxy-groups:
     -  TROJAN TARIK
     -  INDO VPN 443
     -  INDOXRAY GRPC
-    -  VMESS 1 TLS
-    -  VMESS 2 TLS
-    -  VMESS 3 TLS
     -  Akari TLS
     -  Stark TLS
     -  Constant TLS
@@ -1861,9 +1801,6 @@ proxy-groups:
     -  TROJAN TARIK
     -  INDO VPN 443
     -  INDOXRAY GRPC
-    -  VMESS 1 TLS
-    -  VMESS 2 TLS
-    -  VMESS 3 TLS
     -  Akari TLS
     -  Stark TLS
     -  Constant TLS

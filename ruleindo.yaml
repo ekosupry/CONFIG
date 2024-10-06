@@ -34,6 +34,7 @@ payload:
 - DOMAIN-SUFFIX,cobalt.tools
 #pribadi
 - DOMAIN-SUFFIX,zello.com
+- DST-PORT,28225
 - DOMAIN-SUFFIX,yandex.com
 - DOMAIN-SUFFIX,yandex.net
 - DOMAIN-SUFFIX,yandex.ru

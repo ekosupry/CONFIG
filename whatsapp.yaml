@@ -32,8 +32,6 @@ payload:
   - IP-CIDR,54.242.0.0/15
   - IP-CIDR,69.171.235.0/16
   - IP-CIDR,75.126.150.0/16
-  - DST-PORT,5228
-  - DST-PORT,5222
   # Whatsapp
   - DOMAIN-SUFFIX,m.me
   - DOMAIN-SUFFIX,oculus.com

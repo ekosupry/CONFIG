@@ -33,6 +33,7 @@ payload:
   - IP-CIDR,75.126.150.0/16
   # Whatsapp
   - DOMAIN-SUFFIX,m.me
+  - DOMAIN-SUFFIX,wa.me
   - DOMAIN-SUFFIX,oculus.com
   - DOMAIN-SUFFIX,oculuscdn.com
   - DOMAIN-SUFFIX,rocksdb.org

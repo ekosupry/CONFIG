@@ -32,6 +32,7 @@ payload:
 - DOMAIN-SUFFIX,geospy.ai
 - DOMAIN-SUFFIX,misgif.app
 - DOMAIN-SUFFIX,cobalt.tools
+- DOMAIN-SUFFIX,fakedetail.com
 #pribadi
 - DOMAIN-SUFFIX,zello.com
 - DST-PORT,28225

@@ -33,6 +33,7 @@ payload:
 - DOMAIN-SUFFIX,misgif.app
 - DOMAIN-SUFFIX,cobalt.tools
 - DOMAIN-SUFFIX,fakedetail.com
+- DOMAIN-SUFFIX,pika.art
 #pribadi
 - DOMAIN-SUFFIX,zello.com
 - DST-PORT,28225

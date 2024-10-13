@@ -50,6 +50,7 @@ payload:
 - DOMAIN-SUFFIX,detik.com
 - DOMAIN-SUFFIX,saweria.co
 - DOMAIN-SUFFIX,ujncj.top
+- DOMAIN-SUFFIX,dedupelist.com
 - IP-CIDR,8.8.8.8/24
 - IP-CIDR,1.1.1.1/24
 

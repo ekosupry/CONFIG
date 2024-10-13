@@ -34,6 +34,7 @@ payload:
 - DOMAIN-SUFFIX,cobalt.tools
 - DOMAIN-SUFFIX,fakedetail.com
 - DOMAIN-SUFFIX,pika.art
+- DOMAIN-SUFFIX,cekat.ai
 #pribadi
 - DOMAIN-SUFFIX,zello.com
 - DST-PORT,28225

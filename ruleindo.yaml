@@ -24,7 +24,6 @@ payload:
 - DOMAIN-SUFFIX,huggingface.co
 - DOMAIN-SUFFIX,vidu.studio
 - DOMAIN-SUFFIX,voicemaker.in
-- DOMAIN-SUFFIX,huggingface.co
 - DOMAIN-SUFFIX,remove.bg
 - DOMAIN-SUFFIX,cleanup.pictures
 - DOMAIN-SUFFIX,cutout.pro
@@ -35,6 +34,7 @@ payload:
 - DOMAIN-SUFFIX,fakedetail.com
 - DOMAIN-SUFFIX,pika.art
 - DOMAIN-SUFFIX,cekat.ai
+- DOMAIN-SUFFIX,klingai.com
 #pribadi
 - DOMAIN-SUFFIX,zello.com
 - DST-PORT,28225

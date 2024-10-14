@@ -249,10 +249,11 @@ proxy-groups:
   strategy: round-robin
   disable-udp: false
   proxies:
-  - NUSANTARA
   - SINGA
   - FREE
+  - NUSANTARA
   - DIRECT
+  - REJECT
   url: 'http://www.gstatic.com/generate_204'
   interval: 60
 - name: BANK 🏧

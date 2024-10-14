@@ -117,12 +117,12 @@ proxy-groups:
   type: select
   disable-udp: false
   proxies:
-  - BALANCE
-  - FALLBACK
   - BEST-PING
+  - FREE
   - NUSANTARA
   - SINGA
-  - FREE
+  - BALANCE
+  - FALLBACK
   - DIRECT
   url: 'http://www.gstatic.com/generate_204'
   interval: 60
@@ -131,25 +131,27 @@ proxy-groups:
   strategy: round-robin
   disable-udp: false
   proxies:
-  - BALANCE
+  - SINGA
   - FALLBACK
+  - BALANCE
   - BEST-PING
   - NUSANTARA
-  - SINGA
+  - FREE
   - DIRECT
   - REJECT
   url: 'http://www.gstatic.com/generate_204'
   interval: 60
-- name: WHATSAPP
+- name: WHATSAPP 📨
   type: select
   strategy: round-robin
   disable-udp: false
   proxies:
-  - BALANCE
   - FALLBACK
-  - BEST-PING
-  - NUSANTARA
   - SINGA
+  - BEST-PING
+  - BALANCE
+  - NUSANTARA
+  - FREE
   - DIRECT
   - REJECT
   url: 'http://www.gstatic.com/generate_204'
@@ -178,6 +180,7 @@ proxy-groups:
   - BEST-PING
   - NUSANTARA
   - SINGA
+  - FREE
   - DIRECT
   - REJECT
   url: 'http://www.gstatic.com/generate_204'
@@ -186,11 +189,12 @@ proxy-groups:
   type: select
   disable-udp: false
   proxies:
+  - SINGA
   - BALANCE
   - FALLBACK
   - BEST-PING
   - NUSANTARA
-  - SINGA
+  - FREE
   - DIRECT
   - REJECT
   url: 'http://www.gstatic.com/generate_204'
@@ -215,10 +219,8 @@ proxy-groups:
   proxies:
   - NUSANTARA
   - SINGA
+  - FREE
   - DIRECT
-  use:
-  - SG
-  - ID
   url: 'http://www.gstatic.com/generate_204'
   interval: 60
 - name: GAMING - MATCH 🎮
@@ -227,9 +229,8 @@ proxy-groups:
   proxies:
   - DIRECT
   - NUSANTARA
-  use:
-  - SG
-  - ID
+  - SINGA
+  - FREE
   url: 'http://www.gstatic.com/generate_204'
   interval: 60
 - name: TRAFIK-AKUN-INDO 🛑
@@ -238,9 +239,20 @@ proxy-groups:
   disable-udp: false
   proxies:
   - NUSANTARA
+  - SINGA
+  - FREE
   - DIRECT
-  use:
-  - ID
+  url: 'http://www.gstatic.com/generate_204'
+  interval: 60
+- name: TRAFIK-AKUN-MANCA
+  type: select
+  strategy: round-robin
+  disable-udp: false
+  proxies:
+  - NUSANTARA
+  - SINGA
+  - FREE
+  - DIRECT
   url: 'http://www.gstatic.com/generate_204'
   interval: 60
 - name: BANK 🏧
@@ -261,6 +273,7 @@ proxy-groups:
   proxies:
   - NUSANTARA
   - SINGA
+  - FREE
   - DIRECT
   url: 'http://www.gstatic.com/generate_204'
   interval: 60
@@ -269,25 +282,19 @@ proxy-groups:
   strategy: round-robin
   disable-udp: false
   proxies:
-  - BALANCE
-  - NUSANTARA
-  - SINGA
-  - FREE
-  - DIRECT
   - REJECT
+  - BALANCE
+  - FREE
   url: 'http://www.gstatic.com/generate_204'
   interval: 60
-- name: 18+ ❌
+- name: Adult 🔞
   type: select
   strategy: round-robin
   disable-udp: false
   proxies:
-  - BALANCE
-  - NUSANTARA
-  - SINGA
-  - FREE
-  - DIRECT
   - REJECT
+  - DIRECT
+  - BEST-PING
   url: 'http://www.gstatic.com/generate_204'
   interval: 60
 - name: BALANCE
@@ -299,7 +306,6 @@ proxy-groups:
   - ID
   url: http://www.gstatic.com/generate_204
   interval: 30
-
 - name: FALLBACK
   type: fallback
   strategy: round-robin
@@ -307,9 +313,9 @@ proxy-groups:
   use:
   - SG
   - ID
+  - FR
   url: http://www.gstatic.com/generate_204
   interval: 60
-
 - name: BEST-PING
   type: url-test
   strategy: round-robin
@@ -319,7 +325,6 @@ proxy-groups:
   - ID
   url: http://www.gstatic.com/generate_204
   interval: 60
-
 - name: NUSANTARA
   type: url-test
   strategy: round-robin
@@ -328,7 +333,6 @@ proxy-groups:
   - ID
   url: http://www.gstatic.com/generate_204
   interval: 50
-
 - name: SINGA
   type: url-test
   strategy: round-robin
@@ -337,7 +341,6 @@ proxy-groups:
   - SG
   url: http://www.gstatic.com/generate_204
   interval: 50
-
 - name: FREE
   type: url-test
   strategy: round-robin
@@ -347,122 +350,156 @@ proxy-groups:
   url: http://www.gstatic.com/generate_204
   interval: 50
 
-# ================= RP  ==================
+# ==> Created By Ekombelgedez <<==
+#Bawah ini baris Pisah Trafik
 rule-providers:
   Portgames:
     type: http
     behavior: classical
     path: "./rule_provider/portgames.yaml"
     url: "https://raw.githubusercontent.com/ekosupry/CONFIG/main/portgame.yaml"
+    interval: 14400 # Update rules every 4 hours
   Gaming:
     type: http
     behavior: classical
     path: "./rule_provider/gaming.yaml"
     url: "https://raw.githubusercontent.com/ekosupry/CONFIG/main/gaming.yaml"
+    interval: 14400 # Update rules every 4 hours
   Game-TCP:
     type: http
     behavior: classical
     path: "./rule_provider/gametcp.yaml"
     url: "https://raw.githubusercontent.com/ekosupry/CONFIG/main/gametcp.yaml"
+    interval: 14400 # Update rules every 4 hours
   Sosmed:
     type: http
     behavior: classical
     path: "./rule_provider/fl-sosmed.yaml"
     url: "https://raw.githubusercontent.com/ekosupry/CONFIG/main/sosmed.yaml"
+    interval: 14400 # Update rules every 4 hours
   Nonton:
     type: http
     behavior: classical
     path: "./rule_provider/fl-streaming.yaml"
     url: "https://raw.githubusercontent.com/ekosupry/CONFIG/main/nonton.yaml"
+    interval: 14400 # Update rules every 4 hours
   YouTube:
     type: http
     behavior: domain
     path: "./rule_provider/youtube.yaml"
     url: "https://raw.githubusercontent.com/ekosupry/CONFIG/main/youtube.yaml"
+    interval: 14400 # Update rules every 4 hours
   WA:
     type: http
     behavior: classical
     path: "./rule_provider/whatsapp.yaml"
     url: "https://raw.githubusercontent.com/ekosupry/CONFIG/main/whatsapp.yaml"  
+    interval: 14400 # Update rules every 4 hours
   Facebook:
     type: http
     behavior: classical
     path: "./rule_provider/wafb.yaml"
     url: "https://raw.githubusercontent.com/ekosupry/CONFIG/main/facebook.yaml"  
+    interval: 14400 # Update rules every 4 hours
   Zero:
     type: http
     behavior: classical
     path: "./rule_provider/zerotier.yaml"
     url: "https://raw.githubusercontent.com/ekosupry/CONFIG/main/zerotier.yaml"
+    interval: 14400 # Update rules every 4 hours
 #rulindo
   Indo:
     type: http
     behavior: classical
     path: "./rule_provider/indo.yaml"
     url: "https://raw.githubusercontent.com/ekosupry/CONFIG/main/ruleindo.yaml"
+    interval: 14400 # Update rules every 4 hours
+  Manca:
+    type: http
+    behavior: classical
+    path: "./rule_provider/indo.yaml"
+    url: "https://raw.githubusercontent.com/ekosupry/CONFIG/main/rulemanca.yaml"
+    interval: 14400 # Update rules every 4 hours
   Bank:
     type: http
     behavior: classical
     path: "./rule_provider/banking.yaml"
     url: "https://raw.githubusercontent.com/ekosupry/CONFIG/main/banking.yaml"
+    interval: 14400 # Update rules every 4 hours
   rule_disneyplus:
     type: http
     behavior: classical
     path: "./rule_provider/rule_disneyplus.yaml"
     url: "https://raw.githubusercontent.com/ekosupry/CONFIG/main/rule_disney.yaml"
+    interval: 14400 # Update rules every 4 hours
   rule_netflix:
     type: http
     behavior: domain
     path: "./rule_provider/rule_netflix.yaml"
     url: "https://raw.githubusercontent.com/ekosupry/CONFIG/main/rule_netflix.yaml"
+    interval: 14400 # Update rules every 4 hours
 #iklan&18+
   Nsfw:
     type: http
     behavior: domain
     path: "./rule_provider/nsfw.yaml"
     url: "https://raw.githubusercontent.com/ekosupry/CONFIG/main/nsfw.yaml"
+    interval: 14400 # Update rules every 4 hours
   18+:
     type: http
     behavior: domain
     path: "./rule_provider/18+.yaml"
     url: "https://raw.githubusercontent.com/ekosupry/CONFIG/main/porn1.yaml"
+    interval: 14400 # Update rules every 4 hours
   Basicads:
     type: http
     behavior: domain
     path: "./rule_provider/basicads.yaml"
     url: "https://raw.githubusercontent.com/ekosupry/CONFIG/main/basicads.yaml"
+    interval: 14400 # Update rules every 4 hours
   Personalads:
     type: http
     behavior: classical
     path: "./rule_provider/personalads.yaml"
     url: "https://raw.githubusercontent.com/ekosupry/CONFIG/main/personalads.yaml"
+    interval: 14400 # Update rules every 4 hours
 #Belanja
   Market:
     type: http
     behavior: classical
     path: "./rule_provider/marketplace.yaml"
     url: "https://raw.githubusercontent.com/ekosupry/CONFIG/main/marketplace.yaml"
+    interval: 14400 # Update rules every 4 hours
   Bukalapak:
     type: http
     behavior: classical
     path: "./rule_provider/bukalapak.yaml"
     url: "https://raw.githubusercontent.com/ekosupry/CONFIG/main/bukalapak.yaml"
+    interval: 14400 # Update rules every 4 hours
   Tokopedia:
     type: http
     behavior: classical
     path: "./rule_provider/tokopedia.yaml"
     url: "https://raw.githubusercontent.com/ekosupry/CONFIG/main/tokopedia.yaml"
+    interval: 14400 # Update rules every 4 hours
   Shopee:
     type: http
     behavior: classical
     path: "./rule_provider/shopee.yaml"
     url: "https://raw.githubusercontent.com/ekosupry/CONFIG/main/shopee.yaml"
+    interval: 14400 # Update rules every 4 hours
   Speed:
     type: http
     behavior: classical
     path: "./rule_provider/speed.yaml"
     url: "https://raw.githubusercontent.com/ekosupry/CONFIG/main/speed.yaml"
-
+    interval: 14400 # Update rules every 4 hours
+  Judol:
+    type: http
+    behavior: classical
+    path: "./rule_provider/Judol.yaml"
+    url: "https://raw.githubusercontent.com/ekosupry/CONFIG/main/Judi_Online.yaml"
+    interval: 14400 # Update rules every 4 hours
 # ================= RULES  ==================
 rules:
 - IP-CIDR,198.18.0.1/16,REJECT,no-resolve
@@ -473,16 +510,18 @@ rules:
 - RULE-SET,Shopee,SHOPPING 🛒
 - RULE-SET,Nonton,STREAMING 📽️
 - RULE-SET,Indo,TRAFIK-AKUN-INDO 🛑
+- RULE-SET,Manca,TRAFIK-AKUN-MANCA
 - RULE-SET,Bank,BANK 🏧
 - RULE-SET,Portgames,GAMING - MATCH 🎮
 - RULE-SET,Gaming,GAMING - ROOM 🕹️
 - RULE-SET,Game-TCP,GAMING - ROOM 🕹️
-- RULE-SET,WA,WHATSAPP
+- RULE-SET,WA,WHATSAPP 📨
 - RULE-SET,Facebook,FACEBOOK
 - RULE-SET,Personalads,IKLAN 🛡
 - RULE-SET,Basicads,IKLAN 🛡
-- RULE-SET,18+,18+ ❌
-- RULE-SET,Nsfw,18+ ❌
+- RULE-SET,18+,Adult 🔞
+- RULE-SET,Nsfw,Adult 🔞
+- RULE-SET,Judol,Adult 🔞
 - RULE-SET,YouTube,YOUTUBE 🎦
 - RULE-SET,Speed,SPEEDTEST ⚡
 - RULE-SET,Zero,ZEROTIER ⚠️

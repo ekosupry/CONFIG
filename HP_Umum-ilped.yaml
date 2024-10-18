@@ -1875,115 +1875,114 @@ proxy-groups:
   proxies:
     -  Afkar 1
     -  Afkar 2
-    -  Afkar
-    -  Afkar
-    -  Afkar
-    -  Afkar
-    -  Afkar
-    -  Afkar
-    -  Afkar
-    -  Afkar
-    -  Afkar
-    -  Afkar
-    -  Afkar
-    -  Afkar
-    -  Afkar
-    -  Afkar
-    -  Afkar
-    -  Afkar
-    -  Afkar
-    -  Afkar
-    -  Afkar
-    -  Afkar
-    -  Afkar
-    -  Afkar
-    -  Afkar
-    -  Afkar
-    -  Afkar
-    -  Afkar
-    -  Afkar
-    -  Afkar
-    -  Afkar
-    -  Afkar
-    -  Afkar
-    -  Afkar
-    -  Afkar
-    -  Afkar
-    -  Afkar
-    -  Afkar
-    -  Afkar
-    -  Afkar
-    -  Afkar
-    -  Afkar
-    -  Afkar
-    -  Afkar
-    -  Afkar   
-    -  Afkar
-    -  Afkar
-    -  Afkar
-    -  Afkar 
-    -  Afkar
-    -  Afkar 
-    -  Afkar
-    -  Afkar  
-    -  Afkar
-    -  Afkar
-    -  Afkar
-    -  Afkar
-    -  Afkar
-    -  Afkar
-    -  Afkar
-    -  Afkar
-    -  Afkar
-    -  Afkar
-    -  Afkar
-    -  Afkar
-    -  Afkar
-    -  Afkar
-    -  Afkar
-    -  Afkar
-    -  Afkar
-    -  Afkar
-    -  Afkar
-    -  Afkar
-    -  Afkar
-    -  Afkar
-    -  Afkar
-    -  Afkar
-    -  Afkar
-    -  Afkar
-    -  Afkar
-    -  Afkar
-    -  Afkar
-    -  Afkar
-    -  Afkar
-    -  Afkar
-    -  Afkar
-    -  Afkar
-    -  Afkar
-    -  VLESS GAME
-    -  VLESS ANGGA ID1
-    -  VLESS ANGGA ID2
-    -  VLESS ANGGA ID3
-    -  VLESS ANGGA ID4
-    -  VLESS ANGGA ID5
-    -  VLESS ANGGA SG1
-    -  VLESS ANGGA SG2
-    -  VLESS ANGGA SG3
-    -  VLESS ANGGA SG4
-    -  VLESS ANGGA SG5
-    -  VLESS ANGGA US1
-    -  VLESS ANGGA US2
-    -  VLESS ANGGA US3
-    -  VLESS ANGGA JP1
-    -  VLESS ANGGA JP2
-    -  VLESS ANGGA JP3
-    -  VLESS ANGGA KR1
-    -  VLESS ANGGA KR2
-    -  VLESS ANGGA UK1
-    -  VLESS ANGGA AUS1
-    -  VLESS ANGGA GER1
-  url: 'http://www.gstatic.com/generate_204'
+    -  Afkar 3
+    -  Afkar 4
+    -  Afkar 5
+    -  Afkar 6
+    -  Afkar 7
+    -  Afkar 8
+    -  Afkar 9
+    -  Afkar 10
+    -  Afkar 11
+    -  Afkar 12
+    -  Afkar 13
+    -  Afkar 14
+    -  Afkar 15
+    -  Afkar 16
+    -  Afkar 17
+    -  Afkar 18
+    -  Afkar 19
+    -  Afkar 20
+    -  Afkar 21
+    -  Afkar 22
+    -  Afkar 23
+    -  Afkar 24
+    -  Afkar 25
+    -  Afkar 26
+    -  Afkar 27
+    -  Afkar 28
+    -  Afkar 29
+    -  Afkar 30
+    -  Afkar 31
+    -  Afkar 32
+    -  Afkar 33
+    -  Afkar 34
+    -  Afkar 35
+    -  Afkar 36
+    -  Afkar 37
+    -  Afkar 38
+    -  Afkar 39
+    -  Afkar 40
+    -  Afkar 41
+    -  Afkar 42
+    -  Afkar 43
+    -  Afkar 44
+    -  Afkar 45
+    -  Afkar 46
+    -  Afkar 47
+    -  Afkar 48
+    -  Afkar 49
+    -  Afkar 50
+    -  Afkar 51
+    -  Afkar 52
+    -  Afkar 53
+    -  Afkar 54
+    -  Afkar 55
+    -  Afkar 56
+    -  Afkar 57
+    -  Afkar 58
+    -  Afkar 59
+    -  Afkar 60
+    -  Afkar 61
+    -  Afkar 62
+    -  Afkar 63
+    -  Afkar 64
+    -  Afkar 65
+    -  Afkar 66
+    -  Afkar 67
+    -  Afkar 68
+    -  Afkar 69
+    -  Afkar 70
+    -  Afkar 71
+    -  Afkar 72
+    -  Afkar 73
+    -  Afkar 74
+    -  Afkar 75
+    -  Afkar 76
+    -  Afkar 77
+    -  Afkar 78
+    -  Afkar 79
+    -  Afkar 80
+    -  Afkar 81
+    -  Afkar 82
+    -  Afkar 83
+    -  Afkar 84
+    -  Afkar 85
+    -  Afkar 86
+    -  Afkar 87
+    -  Afkar 88
+    -  Afkar 89
+    -  Afkar 90
+    -  Afkar 91
+    -  Afkar 92
+    -  Afkar 93
+    -  Afkar 94
+    -  Afkar 95
+    -  Afkar 96
+    -  Afkar 97
+    -  Afkar 98
+    -  Afkar 99
+    -  Afkar 100
+    -  Afkar 101
+    -  Afkar 102
+    -  Afkar 103
+    -  Afkar 104
+    -  Afkar 105
+    -  Afkar 106
+    -  Afkar 107
+    -  Afkar 108
+    -  Afkar 109
+    url: 'http://www.gstatic.com/generate_204'
   interval: 300
  #⬜⬜
 - name: "WHATSAPP"
@@ -2016,26 +2015,23 @@ proxy-groups:
   strategy: round-robin
   disable-udp: false
   proxies:
-    -  VLESS KNC 443
-    -  VLESS KNC 80
-    -  VLESS KNC2 80
-    -  VLESS KNC2 443
-    -  VLESS ID MAHAL
-    -  VLESS ID SERVLESS
-    -  VLESS ID VLCFPAGE
-    -  Google ID TLS
-    -  Google ID NTLS
-    -  Akamai ID TLS
-    -  Akamai ID NTLS
-    -  INDO VPN 443
-    -  INDO VPN NTLS
-    -  TROJAN TARIK
-    -  VLESS GAME
-    -  VLESS ANGGA ID1
-    -  VLESS ANGGA ID2
-    -  VLESS ANGGA ID3
-    -  VLESS ANGGA ID4
-    -  VLESS ANGGA ID5
+    -  Afkar 75
+    -  Afkar 76
+    -  Afkar 77
+    -  Afkar 78
+    -  Afkar 53
+    -  Afkar 54
+    -  Afkar 55
+    -  Afkar 56
+    -  Afkar 58
+    -  Afkar 73
+    -  Afkar 67
+    -  Afkar 68
+    -  Afkar 90
+    -  Afkar 91
+    -  Afkar 92
+    -  Afkar 93
+    -  Afkar 94
   url: 'http://www.gstatic.com/generate_204'
   interval: 300
 #Koneksi Sosmed
@@ -2140,116 +2136,115 @@ proxy-groups:
   strategy: round-robin
   disable-udp: false
   proxies:
-    -  VLESS KNC 443
-    -  VLESS KNC2 443
-    -  Shenzhen TLS
-    -  Shenzhen NTLS
-    -  Datacamp TLS
-    -  Datacamp NTLS
-    -  iFog TLS
-    -  iFog NTLS
-    -  Ipxo TLS
-    -  Ipxo NTLS
-    -  Contabo TLS
-    -  Contabo NTLS
-    -  Alibaba TLS
-    -  Alibaba NTLS
-    -  Akamai TLS
-    -  Akamai NTLS
-    -  Akamai ID TLS
-    -  Akamai ID NTLS
-    -  Hetzner TLS
-    -  Hetzner NTLS
-    -  Google ID TLS
-    -  Google ID NTLS
-    -  VPSMALAYSIA1 TLS
-    -  VPSMALAYSIA1 NTLS 
-    -  ADSL TLS
-    -  ADSL NTLS    
-    -  Aofei TLS
-    -  Aofei NTLS
-    -  Capitalonline TLS
-    -  Capitalonline NTLS
-    -  OVH SAS TLS
-    -  OVH SAS NTLS
-    -  DigitalOcean TLS
-    -  DigitalOcean NTLS 
-    -  M1 TLS
-    -  M1 NTLS
-    -  NPO TLS
-    -  NPO NTLS   
-    -  HONG KONG TLS
-    -  HONG KONG NTLS
-    -  Oracle TLS
-    -  Oracle NTLS  
-    -  Aryaka TLS
-    -  Aryaka NTLS 
-    -  First TLS
-    -  First NTLS  
-    -  Amazon TLS
-    -  Amazon NTLS
-    -  VLESS KNC 80
-    -  VLESS KNC2 80
-    -  VLESS DO LOTUS
-    -  VLESS DO LOTUS NTLS
-    -  VLESS DO TLS
-    -  VLESS DO NTLS
-    -  VLESS DO 443
-    -  VLESS DO 80
-    -  VLESS RIO BIZ
-    -  VLESS RIO BIZ NTLS
-    -  Akari TLS
-    -  Akari NTLS
-    -  Stark TLS
-    -  Stark NTLS
-    -  Constant TLS
-    -  Constant NTLS
-    -  VLESS KNC KR 443
-    -  INDO VPN 443
-    -  INDO VPN NTLS
-    -  TROJAN TARIK
-    -  INDOXRAY GRPC
-    -  VLESS ARIS TLS
-    -  WORKER GAME
-    -  UWU FF
-    -  VLESS ID MAHAL
-    -  VLESS ORACLE MAHAL
-    -  VLESS ALIBABA MAHAL
-    -  VLESS SG SERVLESS
-    -  VLESS ID SERVLESS
-    -  VLESS ID VLCFPAGE
-    -  VLESS SG VLCFPAGE
-    -  VLESS SG ALIBABA 235
-    -  VLESS SG ALIBABA 400
-    -  VLESS SG ALIBABA 262
-    -  VLESS SG ALIBABA 502
-    -  VLESS SG ALIBABA 619
-    -  VLESS SG ALIBABA 457
-    -  VLESS SG ALIBABA 189
-    -  VLESS SG ALIBABA TLS
-    -  VLESS SG ALIBABA NTLS
-    -  VLESS GAME
-    -  VLESS ANGGA ID1
-    -  VLESS ANGGA ID2
-    -  VLESS ANGGA ID3
-    -  VLESS ANGGA ID4
-    -  VLESS ANGGA ID5
-    -  VLESS ANGGA SG1
-    -  VLESS ANGGA SG2
-    -  VLESS ANGGA SG3
-    -  VLESS ANGGA SG4
-    -  VLESS ANGGA SG5
-    -  VLESS ANGGA US1
-    -  VLESS ANGGA US2
-    -  VLESS ANGGA US3
-    -  VLESS ANGGA JP1
-    -  VLESS ANGGA JP2
-    -  VLESS ANGGA JP3
-    -  VLESS ANGGA KR1
-    -  VLESS ANGGA KR2
-    -  VLESS ANGGA UK1
-    -  VLESS ANGGA AUS1
-    -  VLESS ANGGA GER1
+    -  Afkar 75
+    -  Afkar 76
+    -  Afkar 77
+    -  Afkar 78
+    -  Afkar 1
+    -  Afkar 2
+    -  Afkar 3
+    -  Afkar 4
+    -  Afkar 5
+    -  Afkar 6
+    -  Afkar 7
+    -  Afkar 8
+    -  Afkar 9
+    -  Afkar 10
+    -  Afkar 11
+    -  Afkar 12
+    -  Afkar 13
+    -  Afkar 14
+    -  Afkar 15
+    -  Afkar 16
+    -  Afkar 17
+    -  Afkar 18
+    -  Afkar 19
+    -  Afkar 20
+    -  Afkar 21
+    -  Afkar 22
+    -  Afkar 23
+    -  Afkar 24
+    -  Afkar 25
+    -  Afkar 26
+    -  Afkar 27
+    -  Afkar 28
+    -  Afkar 29
+    -  Afkar 30
+    -  Afkar 31
+    -  Afkar 32
+    -  Afkar 33
+    -  Afkar 34
+    -  Afkar 35
+    -  Afkar 36
+    -  Afkar 37
+    -  Afkar 38
+    -  Afkar 39
+    -  Afkar 40
+    -  Afkar 41
+    -  Afkar 42
+    -  Afkar 43
+    -  Afkar 44
+    -  Afkar 45
+    -  Afkar 46
+    -  Afkar 47
+    -  Afkar 48
+    -  Afkar 49
+    -  Afkar 50
+    -  Afkar 51
+    -  Afkar 52
+    -  Afkar 53
+    -  Afkar 54
+    -  Afkar 55
+    -  Afkar 56
+    -  Afkar 57
+    -  Afkar 58
+    -  Afkar 59
+    -  Afkar 60
+    -  Afkar 61
+    -  Afkar 62
+    -  Afkar 63
+    -  Afkar 64
+    -  Afkar 65
+    -  Afkar 66
+    -  Afkar 67
+    -  Afkar 68
+    -  Afkar 69
+    -  Afkar 70
+    -  Afkar 71
+    -  Afkar 72
+    -  Afkar 73
+    -  Afkar 74
+    -  Afkar 79
+    -  Afkar 80
+    -  Afkar 81
+    -  Afkar 82
+    -  Afkar 83
+    -  Afkar 84
+    -  Afkar 85
+    -  Afkar 86
+    -  Afkar 87
+    -  Afkar 88
+    -  Afkar 89
+    -  Afkar 90
+    -  Afkar 91
+    -  Afkar 92
+    -  Afkar 93
+    -  Afkar 94
+    -  Afkar 95
+    -  Afkar 96
+    -  Afkar 97
+    -  Afkar 98
+    -  Afkar 99
+    -  Afkar 100
+    -  Afkar 101
+    -  Afkar 102
+    -  Afkar 103
+    -  Afkar 104
+    -  Afkar 105
+    -  Afkar 106
+    -  Afkar 107
+    -  Afkar 108
+    -  Afkar 109
   url: 'http://www.gstatic.com/generate_204'
   interval: 300
   #koneksi untuk iklan,
@@ -2258,114 +2253,115 @@ proxy-groups:
   strategy: round-robin
   disable-udp: false
   proxies:
-    -  VLESS KNC 443
-    -  VLESS KNC2 443
-    -  VLESS KNC KR 443
-    -  Shenzhen TLS
-    -  Shenzhen NTLS
-    -  Datacamp TLS
-    -  Datacamp NTLS
-    -  iFog TLS
-    -  iFog NTLS
-    -  Ipxo TLS
-    -  Ipxo NTLS
-    -  Contabo TLS
-    -  Contabo NTLS
-    -  Alibaba TLS
-    -  Alibaba NTLS
-    -  Akamai TLS
-    -  Akamai NTLS
-    -  Akamai ID TLS
-    -  Akamai ID NTLS
-    -  Hetzner TLS
-    -  Hetzner NTLS
-    -  Google ID TLS
-    -  Google ID NTLS
-    -  VPSMALAYSIA1 TLS
-    -  VPSMALAYSIA1 NTLS
-    -  ADSL TLS
-    -  ADSL NTLS    
-    -  Aofei TLS
-    -  Aofei NTLS
-    -  Capitalonline TLS
-    -  Capitalonline NTLS
-    -  OVH SAS TLS
-    -  OVH SAS NTLS
-    -  DigitalOcean TLS
-    -  DigitalOcean NTLS
-    -  M1 TLS
-    -  M1 NTLS
-    -  NPO TLS
-    -  NPO NTLS   
-    -  HONG KONG TLS
-    -  HONG KONG NTLS
-    -  Oracle TLS
-    -  Oracle NTLS 
-    -  Aryaka TLS
-    -  Aryaka NTLS 
-    -  First TLS
-    -  First NTLS 
-    -  Amazon TLS
-    -  Amazon NTLS
-    -  VLESS DO TLS
-    -  VLESS DO NTLS
-    -  VLESS DO 443
-    -  VLESS DO 80
-    -  VLESS DO LOTUS
-    -  VLESS DO LOTUS NTLS
-    -  VLESS RIO BIZ
-    -  VLESS RIO BIZ NTLS
-    -  VLESS ARIS TLS
-    -  VLESS KNC 80
-    -  VLESS KNC2 80
-    -  TROJAN TARIK
-    -  INDO VPN 443
-    -  INDO VPN NTLS
-    -  INDOXRAY GRPC
-    -  Akari TLS
-    -  Akari NTLS
-    -  Stark TLS
-    -  Stark NTLS
-    -  Constant TLS
-    -  Constant NTLS
-    -  VLESS ID MAHAL
-    -  VLESS ORACLE MAHAL
-    -  VLESS ALIBABA MAHAL
-    -  VLESS SG SERVLESS
-    -  VLESS ID SERVLESS
-    -  VLESS ID VLCFPAGE
-    -  VLESS SG VLCFPAGE
-    -  VLESS SG ALIBABA 235
-    -  VLESS SG ALIBABA 400
-    -  VLESS SG ALIBABA 262
-    -  VLESS SG ALIBABA 502
-    -  VLESS SG ALIBABA 619
-    -  VLESS SG ALIBABA 457
-    -  VLESS SG ALIBABA 189
-    -  VLESS SG ALIBABA TLS
-    -  VLESS SG ALIBABA NTLS
-    -  VLESS GAME
-    -  VLESS ANGGA ID1
-    -  VLESS ANGGA ID2
-    -  VLESS ANGGA ID3
-    -  VLESS ANGGA ID4
-    -  VLESS ANGGA ID5
-    -  VLESS ANGGA SG1
-    -  VLESS ANGGA SG2
-    -  VLESS ANGGA SG3
-    -  VLESS ANGGA SG4
-    -  VLESS ANGGA SG5
-    -  VLESS ANGGA US1
-    -  VLESS ANGGA US2
-    -  VLESS ANGGA US3
-    -  VLESS ANGGA JP1
-    -  VLESS ANGGA JP2
-    -  VLESS ANGGA JP3
-    -  VLESS ANGGA KR1
-    -  VLESS ANGGA KR2
-    -  VLESS ANGGA UK1
-    -  VLESS ANGGA AUS1
-    -  VLESS ANGGA GER1
+    -  Afkar 1
+    -  Afkar 2
+    -  Afkar 3
+    -  Afkar 4
+    -  Afkar 5
+    -  Afkar 6
+    -  Afkar 7
+    -  Afkar 8
+    -  Afkar 9
+    -  Afkar 10
+    -  Afkar 11
+    -  Afkar 12
+    -  Afkar 13
+    -  Afkar 14
+    -  Afkar 15
+    -  Afkar 16
+    -  Afkar 17
+    -  Afkar 18
+    -  Afkar 19
+    -  Afkar 20
+    -  Afkar 21
+    -  Afkar 22
+    -  Afkar 23
+    -  Afkar 24
+    -  Afkar 25
+    -  Afkar 26
+    -  Afkar 27
+    -  Afkar 28
+    -  Afkar 29
+    -  Afkar 30
+    -  Afkar 31
+    -  Afkar 32
+    -  Afkar 33
+    -  Afkar 34
+    -  Afkar 35
+    -  Afkar 36
+    -  Afkar 37
+    -  Afkar 38
+    -  Afkar 39
+    -  Afkar 40
+    -  Afkar 41
+    -  Afkar 42
+    -  Afkar 43
+    -  Afkar 44
+    -  Afkar 45
+    -  Afkar 46
+    -  Afkar 47
+    -  Afkar 48
+    -  Afkar 49
+    -  Afkar 50
+    -  Afkar 51
+    -  Afkar 52
+    -  Afkar 53
+    -  Afkar 54
+    -  Afkar 55
+    -  Afkar 56
+    -  Afkar 57
+    -  Afkar 58
+    -  Afkar 59
+    -  Afkar 60
+    -  Afkar 61
+    -  Afkar 62
+    -  Afkar 63
+    -  Afkar 64
+    -  Afkar 65
+    -  Afkar 66
+    -  Afkar 67
+    -  Afkar 68
+    -  Afkar 69
+    -  Afkar 70
+    -  Afkar 71
+    -  Afkar 72
+    -  Afkar 73
+    -  Afkar 74
+    -  Afkar 75
+    -  Afkar 76
+    -  Afkar 77
+    -  Afkar 78
+    -  Afkar 79
+    -  Afkar 80
+    -  Afkar 81
+    -  Afkar 82
+    -  Afkar 83
+    -  Afkar 84
+    -  Afkar 85
+    -  Afkar 86
+    -  Afkar 87
+    -  Afkar 88
+    -  Afkar 89
+    -  Afkar 90
+    -  Afkar 91
+    -  Afkar 92
+    -  Afkar 93
+    -  Afkar 94
+    -  Afkar 95
+    -  Afkar 96
+    -  Afkar 97
+    -  Afkar 98
+    -  Afkar 99
+    -  Afkar 100
+    -  Afkar 101
+    -  Afkar 102
+    -  Afkar 103
+    -  Afkar 104
+    -  Afkar 105
+    -  Afkar 106
+    -  Afkar 107
+    -  Afkar 108
+    -  Afkar 109
   url: 'http://www.gstatic.com/generate_204'
   interval: 300
  #⬜⬜
@@ -2375,116 +2371,115 @@ proxy-groups:
   strategy: round-robin
   disable-udp: false
   proxies:
-    -  Shenzhen TLS
-    -  Shenzhen NTLS
-    -  Datacamp TLS
-    -  Datacamp NTLS
-    -  iFog TLS
-    -  iFog NTLS
-    -  Ipxo TLS
-    -  Ipxo NTLS
-    -  Contabo TLS
-    -  Contabo NTLS
-    -  Alibaba TLS
-    -  Alibaba NTLS
-    -  Akamai TLS
-    -  Akamai NTLS
-    -  Akamai ID TLS
-    -  Akamai ID NTLS
-    -  Hetzner TLS
-    -  Hetzner NTLS
-    -  Google ID TLS
-    -  Google ID NTLS
-    -  VPSMALAYSIA1 TLS
-    -  VPSMALAYSIA1 NTLS  
-    -  ADSL TLS
-    -  ADSL NTLS    
-    -  Aofei TLS
-    -  Aofei NTLS
-    -  Capitalonline TLS
-    -  Capitalonline NTLS
-    -  OVH SAS TLS
-    -  OVH SAS NTLS
-    -  DigitalOcean TLS
-    -  DigitalOcean NTLS 
-    -  M1 TLS
-    -  M1 NTLS
-    -  NPO TLS
-    -  NPO NTLS   
-    -  HONG KONG TLS
-    -  HONG KONG NTLS
-    -  Oracle TLS
-    -  Oracle NTLS  
-    -  Aryaka TLS
-    -  Aryaka NTLS
-    -  First TLS
-    -  First NTLS  
-    -  Amazon TLS
-    -  Amazon NTLS
-    -  Akari TLS
-    -  Akari NTLS
-    -  Stark TLS
-    -  Stark NTLS
-    -  Constant TLS
-    -  Constant NTLS
-    -  INDO VPN 443
-    -  INDO VPN NTLS
-    -  INDOXRAY GRPC
-    -  VLESS ARIS TLS
-    -  VLESS KNC 80
-    -  VLESS KNC2 80
-    -  VLESS RIO BIZ
-    -  VLESS RIO BIZ NTLS
-    -  WORKER GAME
-    -  UWU FF
-    -  VLESS KNC 443
-    -  VLESS KNC2 443
-    -  VLESS KNC KR 443
-    -  VLESS DO TLS
-    -  VLESS DO NTLS
-    -  VLESS DO 443
-    -  VLESS DO 80
-    -  VLESS DO LOTUS
-    -  VLESS DO LOTUS NTLS
-    -  TROJAN TARIK
-    -  VLESS ID MAHAL
-    -  VLESS ORACLE MAHAL
-    -  VLESS ALIBABA MAHAL
-    -  VLESS SG SERVLESS
-    -  VLESS ID SERVLESS
-    -  VLESS ID VLCFPAGE
-    -  VLESS SG VLCFPAGE
-    -  VLESS SG ALIBABA 235
-    -  VLESS SG ALIBABA 400
-    -  VLESS SG ALIBABA 262
-    -  VLESS SG ALIBABA 502
-    -  VLESS SG ALIBABA 619
-    -  VLESS SG ALIBABA 457
-    -  VLESS SG ALIBABA 189
-    -  VLESS SG ALIBABA TLS
-    -  VLESS SG ALIBABA NTLS
-    -  VLESS GAME
-    -  VLESS ANGGA ID1
-    -  VLESS ANGGA ID2
-    -  VLESS ANGGA ID3
-    -  VLESS ANGGA ID4
-    -  VLESS ANGGA ID5
-    -  VLESS ANGGA SG1
-    -  VLESS ANGGA SG2
-    -  VLESS ANGGA SG3
-    -  VLESS ANGGA SG4
-    -  VLESS ANGGA SG5
-    -  VLESS ANGGA US1
-    -  VLESS ANGGA US2
-    -  VLESS ANGGA US3
-    -  VLESS ANGGA JP1
-    -  VLESS ANGGA JP2
-    -  VLESS ANGGA JP3
-    -  VLESS ANGGA KR1
-    -  VLESS ANGGA KR2
-    -  VLESS ANGGA UK1
-    -  VLESS ANGGA AUS1
-    -  VLESS ANGGA GER1
+    -  Afkar 1
+    -  Afkar 2
+    -  Afkar 3
+    -  Afkar 4
+    -  Afkar 5
+    -  Afkar 6
+    -  Afkar 7
+    -  Afkar 8
+    -  Afkar 9
+    -  Afkar 10
+    -  Afkar 11
+    -  Afkar 12
+    -  Afkar 13
+    -  Afkar 14
+    -  Afkar 15
+    -  Afkar 16
+    -  Afkar 17
+    -  Afkar 18
+    -  Afkar 19
+    -  Afkar 20
+    -  Afkar 21
+    -  Afkar 22
+    -  Afkar 23
+    -  Afkar 24
+    -  Afkar 25
+    -  Afkar 26
+    -  Afkar 27
+    -  Afkar 28
+    -  Afkar 29
+    -  Afkar 30
+    -  Afkar 31
+    -  Afkar 32
+    -  Afkar 33
+    -  Afkar 34
+    -  Afkar 35
+    -  Afkar 36
+    -  Afkar 37
+    -  Afkar 38
+    -  Afkar 39
+    -  Afkar 40
+    -  Afkar 41
+    -  Afkar 42
+    -  Afkar 43
+    -  Afkar 44
+    -  Afkar 45
+    -  Afkar 46
+    -  Afkar 47
+    -  Afkar 48
+    -  Afkar 49
+    -  Afkar 50
+    -  Afkar 51
+    -  Afkar 52
+    -  Afkar 53
+    -  Afkar 54
+    -  Afkar 55
+    -  Afkar 56
+    -  Afkar 57
+    -  Afkar 58
+    -  Afkar 59
+    -  Afkar 60
+    -  Afkar 61
+    -  Afkar 62
+    -  Afkar 63
+    -  Afkar 64
+    -  Afkar 65
+    -  Afkar 66
+    -  Afkar 67
+    -  Afkar 68
+    -  Afkar 69
+    -  Afkar 70
+    -  Afkar 71
+    -  Afkar 72
+    -  Afkar 73
+    -  Afkar 74
+    -  Afkar 75
+    -  Afkar 76
+    -  Afkar 77
+    -  Afkar 78
+    -  Afkar 79
+    -  Afkar 80
+    -  Afkar 81
+    -  Afkar 82
+    -  Afkar 83
+    -  Afkar 84
+    -  Afkar 85
+    -  Afkar 86
+    -  Afkar 87
+    -  Afkar 88
+    -  Afkar 89
+    -  Afkar 90
+    -  Afkar 91
+    -  Afkar 92
+    -  Afkar 93
+    -  Afkar 94
+    -  Afkar 95
+    -  Afkar 96
+    -  Afkar 97
+    -  Afkar 98
+    -  Afkar 99
+    -  Afkar 100
+    -  Afkar 101
+    -  Afkar 102
+    -  Afkar 103
+    -  Afkar 104
+    -  Afkar 105
+    -  Afkar 106
+    -  Afkar 107
+    -  Afkar 108
+    -  Afkar 109
   url: 'http://www.gstatic.com/generate_204'
   interval: 300
  #⬜⬜
@@ -2516,7 +2511,6 @@ cfw-bypass:
   - 192.168.*
   - <local>
 cfw-latency-timeout: 5000
-
 rule-providers:
   Portgames:
     type: http
@@ -2569,6 +2563,11 @@ rule-providers:
     behavior: classical
     path: "./rule_provider/indo.yaml"
     url: "https://raw.githubusercontent.com/ekosupry/CONFIG/main/ruleindo.yaml"
+  Manca:
+    type: http
+    behavior: classical
+    path: "./rule_provider/indo.yaml"
+    url: "https://raw.githubusercontent.com/ekosupry/CONFIG/main/rulemanca.yaml"
   Bank:
     type: http
     behavior: classical
@@ -2646,6 +2645,7 @@ rules:
 - RULE-SET,Shopee,MARKETPLACE
 - RULE-SET,Nonton,STREAMING
 - RULE-SET,Indo,AKUN BANK
+- RULE-SET,Manca,IKLAN
 - RULE-SET,Bank,AKUN BANK
 - RULE-SET,Portgames,PLAY GAME
 - RULE-SET,Gaming,LOBBY GAME

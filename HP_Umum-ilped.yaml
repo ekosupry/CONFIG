@@ -1761,7 +1761,7 @@ proxies:
         Host: aio.angga.us.kg
     udp: true
 
-  - name: Afkar 104
+  - name: Afkar 105
     server: 104.18.3.2
     port: 443
     type: vless
@@ -1778,7 +1778,7 @@ proxies:
         Host: aio.angga.us.kg
     udp: true
 
-  - name: Afkar 105
+  - name: Afkar 106
     server: 104.18.3.2
     port: 443
     type: vless
@@ -1795,7 +1795,7 @@ proxies:
         Host: aio.angga.us.kg
     udp: true
 
-  - name: Afkar 106
+  - name: Afkar 107
     server: 104.18.3.2
     port: 443
     type: vless
@@ -1812,7 +1812,7 @@ proxies:
         Host: aio.angga.us.kg
     udp: true
 
-  - name: Afkar 107
+  - name: Afkar 108
     server: 104.18.3.2
     port: 443
     type: vless
@@ -1829,7 +1829,7 @@ proxies:
         Host: aio.angga.us.kg
     udp: true
 
-  - name: Afkar 108
+  - name: Afkar 110
     server: 104.18.3.2
     port: 443
     type: vless
@@ -1982,6 +1982,7 @@ proxy-groups:
     -  Afkar 107
     -  Afkar 108
     -  Afkar 109
+    -  Afkar 110
   url: 'http://www.gstatic.com/generate_204'
   interval: 300
  #⬜⬜
@@ -2245,6 +2246,7 @@ proxy-groups:
     -  Afkar 107
     -  Afkar 108
     -  Afkar 109
+    -  Afkar 110
   url: 'http://www.gstatic.com/generate_204'
   interval: 300
   #koneksi untuk iklan,
@@ -2362,6 +2364,7 @@ proxy-groups:
     -  Afkar 107
     -  Afkar 108
     -  Afkar 109
+    -  Afkar 110
   url: 'http://www.gstatic.com/generate_204'
   interval: 300
  #⬜⬜
@@ -2480,6 +2483,7 @@ proxy-groups:
     -  Afkar 107
     -  Afkar 108
     -  Afkar 109
+    -  Afkar 110
   url: 'http://www.gstatic.com/generate_204'
   interval: 300
  #⬜⬜

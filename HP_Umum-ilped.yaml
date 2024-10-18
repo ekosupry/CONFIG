@@ -1982,7 +1982,7 @@ proxy-groups:
     -  Afkar 107
     -  Afkar 108
     -  Afkar 109
-    url: 'http://www.gstatic.com/generate_204'
+  url: 'http://www.gstatic.com/generate_204'
   interval: 300
  #⬜⬜
 - name: "WHATSAPP"

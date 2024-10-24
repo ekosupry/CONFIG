@@ -1,5 +1,4 @@
-
-# AKUN PREMIUM SINGAPURA DIGITAL OCEAN AKTIF SAMPAI 27 September 2024
+# AKUN Gratis dari ekombelgedez ( wa +6585761406 )
 # Gass PREMIUM 10rb/device aktif 1 bulan,2 device 15rb
 # ==== Paket ILMUPEDIA ======
 # Buy paket TSEL dial *363*844# / *363*555#
@@ -80,55 +79,7 @@ tproxy-port: 9898
 mixed-port: 7890
 # ================= PG ==========
 proxies: 
-  - name: SG DO TLS
-    server: 104.18.3.2
-    port: 443
-    type: vmess
-    uuid: 99f4b372-865d-4bf5-a9ad-f9afd7d786a8
-    alterId: 0
-    cipher: auto
-    tls: true
-    skip-cert-verify: true
-    servername: kuhaku.zerossh.my.id
-    network: ws
-    ws-opts:
-      path: /vmess
-      headers:
-        Host: kuhaku.zerossh.my.id
-    udp: true
-
-  - name: SG DO NTLS
-    server: 104.18.3.2
-    port: 80
-    type: vmess
-    uuid: 99f4b372-865d-4bf5-a9ad-f9afd7d786a8
-    alterId: 0
-    cipher: auto
-    tls: false
-    skip-cert-verify: true
-    servername: kuhaku.zerossh.my.id
-    network: ws
-    ws-opts:
-      path: /vmess
-      headers:
-        Host: kuhaku.zerossh.my.id
-    udp: true
-
-  - name: SG DO GRPC
-    server: 104.18.3.2
-    port: 443
-    type: vmess
-    uuid: 99f4b372-865d-4bf5-a9ad-f9afd7d786a8
-    alterId: 0
-    cipher: auto
-    network: grpc
-    tls: true
-    servername: kuhaku.zerossh.my.id
-    skip-cert-verify: true
-    grpc-opts:
-      grpc-service-name: vmess-grpc
-
-  - name: Akari TLS
+  - name: Afkar 1
     server: 104.18.3.2
     port: 443
     type: vless
@@ -144,7 +95,7 @@ proxies:
       headers:
         Host: mmx.vpnoir9r.us.kg
 
-  - name: Akari NTLS
+  - name: Afkar 2
     server: 104.18.3.2
     port: 80
     type: vless
@@ -159,7 +110,7 @@ proxies:
       headers:
         Host: mmx.vpnoir9r.us.kg
 
-  - name: Stark TLS
+  - name: Afkar 3
     server: 104.18.3.2
     port: 443
     type: vless
@@ -175,7 +126,7 @@ proxies:
       headers:
         Host: mmx.vpnoir9r.us.kg
 
-  - name: Stark NTLS
+  - name: Afkar 4
     server: 104.18.3.2
     port: 80
     type: vless
@@ -190,7 +141,7 @@ proxies:
       headers:
         Host: mmx.vpnoir9r.us.kg
 
-  - name: Constant TLS
+  - name: Afkar 5
     server: 104.18.3.2
     port: 443
     type: vless
@@ -206,7 +157,7 @@ proxies:
       headers:
         Host: mmx.vpnoir9r.us.kg
 
-  - name: Constant NTLS
+  - name: Afkar 6
     server: 104.18.3.2
     port: 80
     type: vless
@@ -221,7 +172,7 @@ proxies:
       headers:
         Host: mmx.vpnoir9r.us.kg
 
-  - name: Shenzhen TLS
+  - name: Afkar 7
     server: 104.18.3.2
     port: 443
     type: vless
@@ -237,7 +188,7 @@ proxies:
       headers:
         Host: mmx.vpnoir9r.us.kg
 
-  - name: Shenzhen NTLS
+  - name: Afkar 8
     server: 104.18.3.2
     port: 80
     type: vless
@@ -252,7 +203,7 @@ proxies:
       headers:
         Host: mmx.vpnoir9r.us.kg
 
-  - name: Datacamp TLS
+  - name: Afkar 9
     server: 104.18.3.2
     port: 443
     type: vless
@@ -268,7 +219,7 @@ proxies:
       headers:
         Host: mmx.vpnoir9r.us.kg
 
-  - name: Datacamp NTLS
+  - name: Afkar 10
     server: 104.18.3.2
     port: 80
     type: vless
@@ -283,7 +234,7 @@ proxies:
       headers:
         Host: mmx.vpnoir9r.us.kg
 
-  - name: iFog TLS
+  - name: Afkar 11
     server: 104.18.3.2
     port: 443
     type: vless
@@ -299,7 +250,7 @@ proxies:
       headers:
         Host: mmx.vpnoir9r.us.kg
 
-  - name: iFog NTLS
+  - name: Afkar 12
     server: 104.18.3.2
     port: 80
     type: vless
@@ -314,7 +265,7 @@ proxies:
       headers:
         Host: mmx.vpnoir9r.us.kg
 
-  - name: Ipxo TLS
+  - name: Afkar 13
     server: 104.18.3.2
     port: 443
     type: vless
@@ -330,7 +281,7 @@ proxies:
       headers:
         Host: mmx.vpnoir9r.us.kg
 
-  - name: Ipxo NTLS
+  - name: Afkar 14
     server: 104.18.3.2
     port: 80
     type: vless
@@ -345,7 +296,7 @@ proxies:
       headers:
         Host: mmx.vpnoir9r.us.kg
 
-  - name: Contabo TLS
+  - name: Afkar 15
     server: 104.18.3.2
     port: 443
     type: vless
@@ -361,7 +312,7 @@ proxies:
       headers:
         Host: mmx.vpnoir9r.us.kg
 
-  - name: Contabo NTLS
+  - name: Afkar 16
     server: 104.18.3.2
     port: 80
     type: vless
@@ -376,7 +327,7 @@ proxies:
       headers:
         Host: mmx.vpnoir9r.us.kg
 
-  - name: Alibaba TLS
+  - name: Afkar 17
     server: 104.18.3.2
     port: 443
     type: vless
@@ -392,7 +343,7 @@ proxies:
       headers:
         Host: mmx.vpnoir9r.us.kg
 
-  - name: Alibaba NTLS
+  - name: Afkar 18
     server: 104.18.3.2
     port: 80
     type: vless
@@ -407,7 +358,7 @@ proxies:
       headers:
         Host: mmx.vpnoir9r.us.kg
 
-  - name: Akamai TLS
+  - name: Afkar 19
     server: 104.18.3.2
     port: 443
     type: vless
@@ -423,7 +374,7 @@ proxies:
       headers:
         Host: mmx.vpnoir9r.us.kg
 
-  - name: Akamai NTLS
+  - name: Afkar 20
     server: 104.18.3.2
     port: 80
     type: vless
@@ -438,7 +389,7 @@ proxies:
       headers:
         Host: mmx.vpnoir9r.us.kg
 
-  - name: Akamai ID TLS
+  - name: Afkar 21
     server: 104.18.3.2
     port: 443
     type: vless
@@ -454,7 +405,7 @@ proxies:
       headers:
         Host: mmx.vpnoir9r.us.kg
 
-  - name: Akamai ID NTLS
+  - name: Afkar 22
     server: 104.18.3.2
     port: 80
     type: vless
@@ -469,7 +420,7 @@ proxies:
       headers:
         Host: mmx.vpnoir9r.us.kg
 
-  - name: Hetzner TLS
+  - name: Afkar 23
     server: 104.18.3.2
     port: 443
     type: vless
@@ -485,7 +436,7 @@ proxies:
       headers:
         Host: mmx.vpnoir9r.us.kg
 
-  - name: Hetzner NTLS
+  - name: Afkar 24
     server: 104.18.3.2
     port: 80
     type: vless
@@ -500,7 +451,7 @@ proxies:
       headers:
         Host: mmx.vpnoir9r.us.kg
 
-  - name: Google ID TLS
+  - name: Afkar 25
     server: 104.18.3.2
     port: 443
     type: vless
@@ -516,7 +467,7 @@ proxies:
       headers:
         Host: mmx.vpnoir9r.us.kg
 
-  - name: Google ID NTLS
+  - name: Afkar 26
     server: 104.18.3.2
     port: 80
     type: vless
@@ -531,7 +482,7 @@ proxies:
       headers:
         Host: mmx.vpnoir9r.us.kg  
 
-  - name: VPSMALAYSIA1 TLS
+  - name: Afkar 27
     server: 104.18.3.2
     port: 443
     type: vless
@@ -547,7 +498,7 @@ proxies:
       headers:
         Host: mmx.vpnoir9r.us.kg      
 
-  - name: VPSMALAYSIA1 NTLS
+  - name: Afkar 28
     server: 104.18.3.2
     port: 80
     type: vless
@@ -562,7 +513,7 @@ proxies:
       headers:
         Host: mmx.vpnoir9r.us.kg 
 
-  - name: ADSL TLS
+  - name: Afkar 29
     server: 104.18.3.2
     port: 443
     type: vless
@@ -578,7 +529,7 @@ proxies:
       headers:
         Host: mmx.vpnoir9r.us.kg
         
-  - name: ADSL NTLS
+  - name: Afkar 30
     server: 104.18.3.2
     port: 80
     type: vless
@@ -593,7 +544,7 @@ proxies:
       headers:
         Host: mmx.vpnoir9r.us.kg 
 
-  - name: Aofei TLS
+  - name: Afkar 31
     server: 104.18.3.2
     port: 443
     type: vless
@@ -609,7 +560,7 @@ proxies:
       headers:
         Host: mmx.vpnoir9r.us.kg 
         
-  - name: Aofei NTLS
+  - name: Afkar 32
     server: 104.18.3.2
     port: 80
     type: vless
@@ -624,7 +575,7 @@ proxies:
       headers:
         Host: mmx.vpnoir9r.us.kg
  
-  - name: Capitalonline TLS
+  - name: Afkar 33
     server: 104.18.3.2
     port: 443
     type: vless
@@ -640,7 +591,7 @@ proxies:
       headers:
         Host: mmx.vpnoir9r.us.kg 
         
-  - name: Capitalonline NTLS
+  - name: Afkar 34
     server: 104.18.3.2
     port: 80
     type: vless
@@ -655,7 +606,7 @@ proxies:
       headers:
         Host: mmx.vpnoir9r.us.kg 
 
-  - name: OVH SAS TLS
+  - name: Afkar 35
     server: 104.18.3.2
     port: 443
     type: vless
@@ -671,7 +622,7 @@ proxies:
       headers:
         Host: mmx.vpnoir9r.us.kg
         
-  - name: OVH SAS NTLS
+  - name: Afkar 36
     server: 104.18.3.2
     port: 80
     type: vless
@@ -686,7 +637,7 @@ proxies:
       headers:
         Host: mmx.vpnoir9r.us.kg  
 
-  - name: DigitalOcean TLS
+  - name: Afkar 37
     server: 104.18.3.2
     port: 443
     type: vless
@@ -702,7 +653,7 @@ proxies:
       headers:
         Host: mmx.vpnoir9r.us.kg
         
-  - name: DigitalOcean NTLS
+  - name: Afkar 38
     server: 104.18.3.2
     port: 80
     type: vless
@@ -717,7 +668,7 @@ proxies:
       headers:
         Host: mmx.vpnoir9r.us.kg 
        
-  - name: M1 TLS
+  - name: Afkar 39
     server: 104.18.3.2
     port: 443
     type: vless
@@ -733,7 +684,7 @@ proxies:
       headers:
         Host: mmx.vpnoir9r.us.kg
         
-  - name: M1 NTLS
+  - name: Afkar 40
     server: 104.18.3.2
     port: 80
     type: vless
@@ -748,7 +699,7 @@ proxies:
       headers:
         Host: mmx.vpnoir9r.us.kg
  
-  - name: NPO TLS
+  - name: Afkar 41
     server: 104.18.3.2
     port: 443
     type: vless
@@ -764,7 +715,7 @@ proxies:
       headers:
         Host: mmx.vpnoir9r.us.kg
         
-  - name: NPO NTLS
+  - name: Afkar 42
     server: 104.18.3.2
     port: 80
     type: vless
@@ -779,7 +730,7 @@ proxies:
       headers:
         Host: mmx.vpnoir9r.us.kg
      
-  - name: HONG KONG TLS
+  - name: Afkar 43
     server: 104.18.3.2
     port: 443
     type: vless
@@ -795,7 +746,7 @@ proxies:
       headers:
         Host: mmx.vpnoir9r.us.kg 
         
-  - name: HONG KONG NTLS
+  - name: Afkar 44
     server: 104.18.3.2
     port: 80
     type: vless
@@ -810,7 +761,7 @@ proxies:
       headers:
         Host: mmx.vpnoir9r.us.kg
         
-  - name: Oracle TLS
+  - name: Afkar 45
     server: 104.18.3.2
     port: 443
     type: vless
@@ -826,7 +777,7 @@ proxies:
       headers:
         Host: mmx.vpnoir9r.us.kg 
         
-  - name: Oracle NTLS
+  - name: Afkar 46
     server: 104.18.3.2
     port: 80
     type: vless
@@ -841,7 +792,7 @@ proxies:
       headers:
         Host: mmx.vpnoir9r.us.kg
       
-  - name: Aryaka TLS
+  - name: Afkar 47
     server: 104.18.3.2
     port: 443
     type: vless
@@ -857,7 +808,7 @@ proxies:
       headers:
         Host: mmx.vpnoir9r.us.kg 
         
-  - name: Aryaka NTLS
+  - name: Afkar 48
     server: 104.18.3.2
     port: 80
     type: vless
@@ -872,7 +823,7 @@ proxies:
       headers:
         Host: mmx.vpnoir9r.us.kg
        
-  - name: First TLS
+  - name: Afkar 49
     server: 104.18.3.2
     port: 443
     type: vless
@@ -888,7 +839,7 @@ proxies:
       headers:
         Host: mmx.vpnoir9r.us.kg
         
-  - name: First NTLS
+  - name: Afkar 50
     server: 104.18.3.2
     port: 80
     type: vless
@@ -903,7 +854,7 @@ proxies:
       headers:
         Host: mmx.vpnoir9r.us.kg
 
-  - name: Amazon TLS
+  - name: Afkar 51
     server: 104.18.3.2
     port: 443
     type: vless
@@ -919,7 +870,7 @@ proxies:
       headers:
         Host: mmx.vpnoir9r.us.kg 
         
-  - name: Amazon NTLS
+  - name: Afkar 52
     server: 104.18.3.2
     port: 80
     type: vless
@@ -934,126 +885,7 @@ proxies:
       headers:
         Host: mmx.vpnoir9r.us.kg  
       
-  - name: VMESS 1 TLS
-    server: 104.18.3.2
-    port: 443
-    type: vmess
-    uuid: 81eb0b22-396a-43a7-8646-1b9d1e6b51fd
-    alterId: 0
-    cipher: auto
-    tls: true
-    skip-cert-verify: true
-    servername: mzvpn.my.id
-    network: ws
-    ws-opts:
-      path: /vmess
-      headers:
-        Host: mzvpn.my.id
-    udp: true
-
-  - name: VMESS 1 NTLS
-    server: 104.18.3.2
-    port: 80
-    type: vmess
-    uuid: 81eb0b22-396a-43a7-8646-1b9d1e6b51fd
-    alterId: 0
-    cipher: auto
-    tls: false
-    skip-cert-verify: true
-    servername: mzvpn.my.id
-    network: ws
-    ws-opts:
-      path: /vmess
-      headers:
-        Host: mzvpn.my.id
-    udp: true
-
-  - name: VMESS 2 TLS
-    server: 104.18.3.2
-    port: 443
-    type: vmess
-    uuid: a1655f51-1e20-4a92-8a11-b7ca30a7a353
-    alterId: 0
-    cipher: auto
-    tls: true
-    skip-cert-verify: true
-    servername: afrhms07.xfixedfloat.cfd
-    network: ws
-    ws-opts:
-      path: /linkws
-      headers:
-        Host: afrhms07.xfixedfloat.cfd
-    udp: true
-
-  - name: VMESS 2 NTLS
-    server: 104.18.3.2
-    port: 80
-    type: vmess
-    uuid: 63911f91-bc91-4b71-8d40-9ba99e7043e0
-    alterId: 0
-    cipher: auto
-    tls: false
-    skip-cert-verify: true
-    servername: GWYp69Yujp2.yofnhkfc.xyz
-    network: ws
-    ws-opts:
-      path: /video/VDXcaM7r
-      headers:
-        Host: GWYp69Yujp2.yofnhkfc.xyz
-    udp: true
-
-  - name: VMESS 3 TLS
-    server: 104.18.3.2
-    port: 443
-    type: vmess
-    uuid: edbb1059-1633-4271-b66e-ed4fba47a1bf
-    alterId: 0
-    cipher: auto
-    tls: true
-    skip-cert-verify: true
-    servername: linde06.indiavideo.sbs
-    network: ws
-    ws-opts:
-      path: /linkws
-      headers:
-        Host: linde06.indiavideo.sbs
-    udp: true
-
-  - name: VMESS 3 NTLS
-    server: 104.18.3.2
-    port: 80
-    type: vmess
-    uuid: 2c4d6f66-2966-49c1-93aa-a7192ba8f8fc
-    alterId: 0
-    cipher: auto
-    tls: false
-    skip-cert-verify: true
-    servername: 73012792103530616183052842717949.chrsjfklsdjfkljoierfdjklfjlkefeojsdlkfjeoifjsdlkfjweoifjlsdchrs.cyou
-    network: ws
-    ws-opts:
-      path: /V2LINE-TELEGRAM-CHANNEL-VMESS-WS
-      headers:
-        Host: 73012792103530616183052842717949.chrsjfklsdjfkljoierfdjklfjlkefeojsdlkfjeoifjsdlkfjweoifjlsdchrs.cyou
-    udp: true
-
-  - name: VMESS 4 NTLS
-    server: 104.18.3.2
-    port: 80
-    type: vmess
-    uuid: 0cb7b3c3-3c08-4391-af4d-3fc410c9c146
-    alterId: 0
-    cipher: auto
-    tls: false
-    skip-cert-verify: true
-    servername: 68690907783461163508239105253758.chrsjfklsdjfkljoierfdjklfjlkefeojsdlkfjeoifjsdlkfjweoifjlsdchrs.cyou
-    network: ws
-    ws-opts:
-      path: /V2LINE-TELEGRAM-CHANNEL-VMESS-WS
-      headers:
-        Host: 68690907783461163508239105253758.chrsjfklsdjfkljoierfdjklfjlkefeojsdlkfjeoifjsdlkfjweoifjlsdchrs.cyou
-    udp: true
-
-  - name: INDO VPN 443
+  - name: Afkar 53
     server: 104.18.3.2
     port: 443
     type: vmess
@@ -1070,7 +902,7 @@ proxies:
         Host: indo.vpnpremium.id
     udp: true
 
-  - name: INDO VPN NTLS
+  - name: Afkar 54
     server: 104.18.3.2
     port: 80
     type: vmess
@@ -1087,7 +919,7 @@ proxies:
         Host: indo.vpnpremium.id
     udp: true
 
-  - name: TROJAN TARIK
+  - name: Afkar 55
     server: 104.18.3.2
     port: 443
     type: trojan
@@ -1101,7 +933,7 @@ proxies:
         Host: indo.vpnpremium.id
     udp: true
 
-  - name: INDOXRAY GRPC
+  - name: Afkar 56
     server: 104.18.3.2
     port: 443
     type: vmess
@@ -1115,7 +947,7 @@ proxies:
     grpc-opts:
       grpc-service-name: vmess-grpc
 
-  - name: VLESS ARIS TLS
+  - name: Afkar 57
     server: 104.18.3.2
     port: 443
     type: vless
@@ -1132,7 +964,7 @@ proxies:
         Host: server.arisctunnel.me
     udp: true
 
-  - name: VLESS KNC 80
+  - name: Afkar 58
     server: 104.18.3.2
     port: 80
     type: vless
@@ -1149,7 +981,7 @@ proxies:
         Host: id.knc.my.id
     udp: true
 
-  - name: VLESS DO LOTUS
+  - name: Afkar 59
     server: 104.18.3.2
     port: 443
     type: vless
@@ -1166,7 +998,7 @@ proxies:
         Host: sgdo.lotush.my.id
     udp: true
 
-  - name: VLESS DO LOTUS NTLS
+  - name: Afkar 60
     server: 104.18.3.2
     port: 80
     type: vless
@@ -1183,7 +1015,7 @@ proxies:
         Host: sgdo.lotush.my.id
     udp: true
     
-  - name: VLESS RIO BIZ
+  - name: Afkar 61
     server: 104.18.3.2
     port: 443
     type: vless
@@ -1200,7 +1032,7 @@ proxies:
         Host: sg.ryo.biz.id
     udp: true
 
-  - name: VLESS RIO BIZ NTLS
+  - name: Afkar 62
     server: 104.18.3.2
     port: 80
     type: vless
@@ -1217,7 +1049,7 @@ proxies:
         Host: sg.ryo.biz.id
     udp: true
 
-  - name: WORKER GAME
+  - name: Afkar 63
     server: 104.18.3.2
     port: 443
     type: vless
@@ -1233,7 +1065,7 @@ proxies:
         Host: Ns-stOrE.NSIDIk685.WORkeRs.DEv
     udp: true
 
-  - name: UWU FF
+  - name: Afkar 64
     server: 104.18.3.2
     port: 443
     type: vless
@@ -1249,7 +1081,7 @@ proxies:
         Host: de4ecf6b.isvphp-4g8.pages.dev
     udp: true
 
-  - name: VLESS KNC 443
+  - name: Afkar 75
     server: 104.18.3.2
     port: 443
     type: vless
@@ -1266,7 +1098,7 @@ proxies:
         Host: id.knc.my.id
     udp: true
 
-  - name: VLESS KNC2 443
+  - name: Afkar 76
     server: 104.18.3.2
     port: 443
     type: vless
@@ -1283,7 +1115,7 @@ proxies:
         Host: id2.knc.my.id
     udp: true
 
-  - name: VLESS KNC2 80
+  - name: Afkar 77
     server: 104.18.3.2
     port: 80
     type: vless
@@ -1300,7 +1132,7 @@ proxies:
         Host: id2.knc.my.id
     udp: true
 
-  - name: VLESS KNC KR 443
+  - name: Afkar 78
     server: 104.18.3.2
     port: 443
     type: vless
@@ -1317,7 +1149,7 @@ proxies:
         Host: kr.free.knc.my.id
     udp: true
 
-  - name: VLESS DO TLS
+  - name: Afkar 69
     server: 104.18.3.2
     port: 443
     type: vless
@@ -1334,7 +1166,7 @@ proxies:
         Host: sgdo1.aframdani.cloud
     udp: true 
 
-  - name: VLESS DO NTLS
+  - name: Afkar 70
     server: 104.18.3.2
     port: 80
     type: vless
@@ -1351,7 +1183,7 @@ proxies:
         Host: sgdo1.aframdani.cloud
     udp: true 
 
-  - name: VLESS DO 443
+  - name: Afkar 71
     server: 104.18.3.2
     port: 443
     type: vless
@@ -1368,7 +1200,7 @@ proxies:
         Host: xcl.aframdani.cloud
     udp: true 
 
-  - name: VLESS DO 80
+  - name: Afkar 72
     server: 104.18.3.2
     port: 80
     type: vless
@@ -1385,7 +1217,7 @@ proxies:
         Host: xcl.aframdani.cloud
     udp: true 
     
-  - name: VLESS ID MAHAL
+  - name: Afkar 73
     server: 104.18.3.2
     port: 443
     type: vless
@@ -1402,7 +1234,7 @@ proxies:
         Host: id.jam.mahal.filegear-sg.me
     udp: true
     
-  - name: VLESS ORACLE MAHAL
+  - name: Afkar 74
     server: 104.18.3.2
     port: 443
     type: vless
@@ -1419,7 +1251,7 @@ proxies:
         Host: oracle.jam.mahal.filegear-sg.me
     udp: true
 
-  - name: VLESS ALIBABA MAHAL
+  - name: Afkar 65
     server: 104.18.3.2
     port: 443
     type: vless
@@ -1436,7 +1268,7 @@ proxies:
         Host: alibaba.jam.mahal.filegear-sg.me
     udp: true
 
-  - name: VLESS SG SERVLESS
+  - name: Afkar 66
     server: 104.18.3.2
     port: 443
     type: vless
@@ -1453,7 +1285,7 @@ proxies:
         Host: sg.servless.us.to
     udp: true
 
-  - name: VLESS ID SERVLESS
+  - name: Afkar 67
     server: 104.18.3.2
     port: 443
     type: vless
@@ -1470,7 +1302,7 @@ proxies:
         Host: id.servless.us.to
     udp: true
 
-  - name: VLESS ID VLCFPAGE
+  - name: Afkar 68
     server: 104.18.3.2
     port: 443
     type: vless
@@ -1487,7 +1319,7 @@ proxies:
         Host: id.vlcfpages.my.id
     udp: true
 
-  - name: VLESS SG VLCFPAGE
+  - name: Afkar 79
     server: 104.18.3.2
     port: 443
     type: vless
@@ -1504,7 +1336,7 @@ proxies:
         Host: sg.vlcfpages.my.id
     udp: true
 
-  - name: VLESS SG ALIBABA 235
+  - name: Afkar 80
     server: 104.18.3.2
     port: 443
     type: vless
@@ -1521,7 +1353,7 @@ proxies:
         Host: EsETSecURityLIcensE.vUhbGOL.wORkERs.dEV
     udp: true
 
-  - name: VLESS SG ALIBABA 400
+  - name: Afkar 81
     server: 104.18.3.2
     port: 443
     type: vless
@@ -1538,7 +1370,7 @@ proxies:
         Host: EseTSeCURITylICense.pudmnquF.worKErS.dev
     udp: true
 
-  - name: VLESS SG ALIBABA 262
+  - name: Afkar 82
     server: 104.18.3.2
     port: 443
     type: vless
@@ -1555,7 +1387,7 @@ proxies:
         Host: miumiUMadReKoSE.pAgES.dEv
     udp: true
 
-  - name: VLESS SG ALIBABA 502
+  - name: Afkar 83
     server: 104.18.3.2
     port: 443
     type: vless
@@ -1572,7 +1404,7 @@ proxies:
         Host: toujiediansigema.5112233.xyz
     udp: true
 
-  - name: VLESS SG ALIBABA 619
+  - name: Afkar 84
     server: 104.18.3.2
     port: 443
     type: vless
@@ -1589,7 +1421,7 @@ proxies:
         Host: V2FiVeTeL.pAges.Dev
     udp: true
 
-  - name: VLESS SG ALIBABA 457
+  - name: Afkar 85
     server: 104.18.3.2
     port: 443
     type: vless
@@ -1606,7 +1438,7 @@ proxies:
         Host: iSAA1.paGEs.DEV
     udp: true
 
-  - name: VLESS SG ALIBABA 189
+  - name: Afkar 86
     server: 104.18.3.2
     port: 443
     type: vless
@@ -1623,7 +1455,7 @@ proxies:
         Host: xn--4s9h.pages.dev.
     udp: true
 
-  - name: VLESS SG ALIBABA TLS
+  - name: Afkar 87
     server: 104.18.3.2
     port: 443
     type: vless
@@ -1640,7 +1472,7 @@ proxies:
         Host: sg-alibaba.tingkehvpn.my.id
     udp: true
 
-  - name: VLESS SG ALIBABA NTLS
+  - name: Afkar 88
     server: 104.18.3.2
     port: 80
     type: vless
@@ -1657,7 +1489,7 @@ proxies:
         Host: sg-alibaba.tingkehvpn.my.id
     udp: true
 
-  - name: VLESS GAME
+  - name: Afkar 89
     server: 104.18.3.2
     port: 80
     type: vless
@@ -1674,7 +1506,7 @@ proxies:
         Host: a.ssll.gay
     udp: true
 
-  - name: VLESS ANGGA ID1
+  - name: Afkar 90
     server: 104.18.3.2
     port: 443
     type: vless
@@ -1691,7 +1523,7 @@ proxies:
         Host: aio.angga.us.kg
     udp: true
 
-  - name: VLESS ANGGA ID2
+  - name: Afkar 91
     server: 104.18.3.2
     port: 443
     type: vless
@@ -1708,7 +1540,7 @@ proxies:
         Host: aio.angga.us.kg
     udp: true
 
-  - name: VLESS ANGGA ID3
+  - name: Afkar 92
     server: 104.18.3.2
     port: 443
     type: vless
@@ -1725,7 +1557,7 @@ proxies:
         Host: aio.angga.us.kg
     udp: true
 
-  - name: VLESS ANGGA ID4
+  - name: Afkar 93
     server: 104.18.3.2
     port: 443
     type: vless
@@ -1742,7 +1574,7 @@ proxies:
         Host: aio.angga.us.kg
     udp: true
 
-  - name: VLESS ANGGA ID5
+  - name: Afkar 94
     server: 104.18.3.2
     port: 443
     type: vless
@@ -1759,7 +1591,7 @@ proxies:
         Host: aio.angga.us.kg
     udp: true
 
-  - name: VLESS ANGGA SG1
+  - name: Afkar 95
     server: 104.18.3.2
     port: 443
     type: vless
@@ -1776,7 +1608,7 @@ proxies:
         Host: aio.angga.us.kg
     udp: true
   
-  - name: VLESS ANGGA SG2
+  - name: Afkar 96
     server: 104.18.3.2
     port: 443
     type: vless
@@ -1793,7 +1625,7 @@ proxies:
         Host: aio.angga.us.kg
     udp: true
 
-  - name: VLESS ANGGA SG3
+  - name: Afkar 97
     server: 104.18.3.2
     port: 443
     type: vless
@@ -1810,7 +1642,7 @@ proxies:
         Host: aio.angga.us.kg
     udp: true
 
-  - name: VLESS ANGGA SG4
+  - name: Afkar 98
     server: 104.18.3.2
     port: 443
     type: vless
@@ -1827,7 +1659,7 @@ proxies:
         Host: aio.angga.us.kg
     udp: true
 
-  - name: VLESS ANGGA SG5
+  - name: Afkar 99
     server: 104.18.3.2
     port: 443
     type: vless
@@ -1844,7 +1676,7 @@ proxies:
         Host: aio.angga.us.kg
     udp: true
 
-  - name: VLESS ANGGA US1
+  - name: Afkar 100
     server: 104.18.3.2
     port: 443
     type: vless
@@ -1861,7 +1693,7 @@ proxies:
         Host: aio.angga.us.kg
     udp: true
 
-  - name: VLESS ANGGA US2
+  - name: Afkar 101
     server: 104.18.3.2
     port: 443
     type: vless
@@ -1878,7 +1710,7 @@ proxies:
         Host: aio.angga.us.kg
     udp: true
 
-  - name: VLESS ANGGA US3
+  - name: Afkar 102
     server: 104.18.3.2
     port: 443
     type: vless
@@ -1895,7 +1727,7 @@ proxies:
         Host: aio.angga.us.kg
     udp: true
 
-  - name: VLESS ANGGA JP1
+  - name: Afkar 103
     server: 104.18.3.2
     port: 443
     type: vless
@@ -1912,7 +1744,7 @@ proxies:
         Host: aio.angga.us.kg
     udp: true
 
-  - name: VLESS ANGGA JP2
+  - name: Afkar 104
     server: 104.18.3.2
     port: 443
     type: vless
@@ -1929,7 +1761,7 @@ proxies:
         Host: aio.angga.us.kg
     udp: true
 
-  - name: VLESS ANGGA JP3
+  - name: Afkar 105
     server: 104.18.3.2
     port: 443
     type: vless
@@ -1946,7 +1778,7 @@ proxies:
         Host: aio.angga.us.kg
     udp: true
 
-  - name: VLESS ANGGA KR1
+  - name: Afkar 106
     server: 104.18.3.2
     port: 443
     type: vless
@@ -1963,7 +1795,7 @@ proxies:
         Host: aio.angga.us.kg
     udp: true
 
-  - name: VLESS ANGGA KR2
+  - name: Afkar 107
     server: 104.18.3.2
     port: 443
     type: vless
@@ -1980,7 +1812,7 @@ proxies:
         Host: aio.angga.us.kg
     udp: true
 
-  - name: VLESS ANGGA UK1
+  - name: Afkar 108
     server: 104.18.3.2
     port: 443
     type: vless
@@ -1997,7 +1829,7 @@ proxies:
         Host: aio.angga.us.kg
     udp: true
 
-  - name: VLESS ANGGA AUS1
+  - name: Afkar 110
     server: 104.18.3.2
     port: 443
     type: vless
@@ -2014,7 +1846,7 @@ proxies:
         Host: aio.angga.us.kg
     udp: true
 
-  - name: VLESS ANGGA GER1
+  - name: Afkar 109
     server: 104.18.3.2
     port: 443
     type: vless
@@ -2030,6 +1862,75 @@ proxies:
       headers:
         Host: aio.angga.us.kg
     udp: true
+
+  - name: Afkar Pro 1
+    server: 104.18.3.2
+    port: 655
+    type: vless
+    uuid: 80510fd1-7a7d-4b83-a3db-05fb7f23dea5
+    alterId: 0
+    cipher: auto
+    tls: true
+    skip-cert-verify: true
+    servername: id.knc.my.id
+    network: ws
+    ws-opts:
+      path: /?ed=2048
+      headers:
+        Host: id.knc.my.id
+    udp: true
+
+  - name: Afkar Pro 2
+    server: 104.18.3.2
+    port: 655
+    type: vless
+    uuid: 80510fd1-7a7d-4b83-a3db-05fb7f23dea5
+    alterId: 0
+    cipher: auto
+    tls: true
+    skip-cert-verify: true
+    servername: id2.knc.my.id
+    network: ws
+    ws-opts:
+      path: /?ed=2048
+      headers:
+        Host: id2.knc.my.id
+    udp: true
+
+  - name: Afkar Pro 3
+    server: 104.18.3.2
+    port: 655
+    type: vless
+    uuid: 80510fd1-7a7d-4b83-a3db-05fb7f23dea5
+    alterId: 0
+    cipher: auto
+    tls: false
+    skip-cert-verify: true
+    servername: id2.knc.my.id
+    network: ws
+    ws-opts:
+      path: /?ed=2048
+      headers:
+        Host: id2.knc.my.id
+    udp: true
+
+  - name: Afkar Pro 4
+    server: 104.18.3.2
+    port: 655
+    type: vless
+    uuid: 4994c6a3-3242-45b8-a3e3-7d0fb82b0ece
+    alterId: 0
+    cipher: auto
+    tls: true
+    skip-cert-verify: true
+    servername: kr.free.knc.my.id
+    network: ws
+    ws-opts:
+      path: /?ed=2048
+      headers:
+        Host: kr.free.knc.my.id
+    udp: true
+
 #🔴
 #🔴_____________________________________proxies______________________________________🔴
 #
@@ -2037,130 +1938,120 @@ proxies:
 proxy-groups:
 # Global kita gunakan untuk koneksi UMUM
 - name: "Global✅"
-  type: fallback
+  type: url-test
   strategy: round-robin
   disable-udp: false
   proxies:
-    -  SG DO GRPC
-    -  SG DO TLS
-    -  SG DO NTLS
-    -  VLESS ARIS TLS
-    -  VLESS KNC 80
-    -  VLESS KNC2 80
-    -  Akari TLS
-    -  Akari NTLS
-    -  Stark TLS
-    -  Stark NTLS
-    -  Constant TLS
-    -  Constant NTLS
-    -  Shenzhen TLS
-    -  Shenzhen NTLS
-    -  Datacamp TLS
-    -  Datacamp NTLS
-    -  iFog TLS
-    -  iFog NTLS
-    -  Ipxo TLS
-    -  Ipxo NTLS
-    -  Contabo TLS
-    -  Contabo NTLS
-    -  Alibaba TLS
-    -  Alibaba NTLS
-    -  Akamai TLS
-    -  Akamai NTLS
-    -  Akamai ID TLS
-    -  Akamai ID NTLS
-    -  Hetzner TLS
-    -  Hetzner NTLS
-    -  Google ID TLS
-    -  Google ID NTLS
-    -  VPSMALAYSIA1 TLS
-    -  VPSMALAYSIA1 NTLS  
-    -  ADSL TLS
-    -  ADSL NTLS    
-    -  Aofei TLS
-    -  Aofei NTLS
-    -  Capitalonline TLS
-    -  Capitalonline NTLS
-    -  OVH SAS TLS
-    -  OVH SAS NTLS
-    -  DigitalOcean TLS
-    -  DigitalOcean NTLS 
-    -  M1 TLS
-    -  M1 NTLS
-    -  NPO TLS
-    -  NPO NTLS   
-    -  HONG KONG TLS
-    -  HONG KONG NTLS
-    -  Oracle TLS
-    -  Oracle NTLS 
-    -  Aryaka TLS
-    -  Aryaka NTLS 
-    -  First TLS
-    -  First NTLS  
-    -  Amazon TLS
-    -  Amazon NTLS
-    -  VLESS DO LOTUS
-    -  VLESS DO LOTUS NTLS
-    -  VLESS DO TLS
-    -  VLESS DO NTLS
-    -  VLESS DO 443
-    -  VLESS DO 80
-    -  WORKER GAME
-    -  UWU FF
-    -  VLESS RIO BIZ
-    -  VLESS RIO BIZ NTLS
-    -  VLESS KNC 443
-    -  VLESS KNC2 443
-    -  VLESS KNC KR 443
-    -  VLESS ID MAHAL
-    -  VLESS ORACLE MAHAL
-    -  VLESS ALIBABA MAHAL
-    -  VLESS SG SERVLESS
-    -  VLESS ID SERVLESS
-    -  VLESS ID VLCFPAGE
-    -  VLESS SG VLCFPAGE
-    -  VLESS SG ALIBABA 235
-    -  VLESS SG ALIBABA 400
-    -  VLESS SG ALIBABA 262
-    -  VLESS SG ALIBABA 502
-    -  VLESS SG ALIBABA 619
-    -  VLESS SG ALIBABA 457
-    -  VLESS SG ALIBABA 189
-    -  VLESS SG ALIBABA TLS
-    -  VLESS SG ALIBABA NTLS
-    -  INDO VPN 443
-    -  INDO VPN NTLS
-    -  TROJAN TARIK
-    -  INDOXRAY GRPC
-    -  VMESS 1 TLS
-    -  VMESS 1 NTLS
-    -  VMESS 2 TLS
-    -  VMESS 2 NTLS
-    -  VMESS 3 TLS
-    -  VMESS 3 NTLS
-    -  VMESS 4 NTLS
-    -  VLESS GAME
-    -  VLESS ANGGA ID1
-    -  VLESS ANGGA ID2
-    -  VLESS ANGGA ID3
-    -  VLESS ANGGA ID4
-    -  VLESS ANGGA ID5
-    -  VLESS ANGGA SG1
-    -  VLESS ANGGA SG2
-    -  VLESS ANGGA SG3
-    -  VLESS ANGGA SG4
-    -  VLESS ANGGA SG5
-    -  VLESS ANGGA US1
-    -  VLESS ANGGA US2
-    -  VLESS ANGGA US3
-    -  VLESS ANGGA JP1
-    -  VLESS ANGGA JP2
-    -  VLESS ANGGA JP3
-    -  VLESS ANGGA KR1
-    -  VLESS ANGGA KR2
-    -  VLESS ANGGA UK1
-    -  VLESS ANGGA AUS1
-    -  VLESS ANGGA GER1
+    -  Afkar 1
+    -  Afkar 2
+    -  Afkar 3
+    -  Afkar 4
+    -  Afkar 5
+    -  Afkar 6
+    -  Afkar 7
+    -  Afkar 8
+    -  Afkar 9
+    -  Afkar 10
+    -  Afkar 11
+    -  Afkar 12
+    -  Afkar 13
+    -  Afkar 14
+    -  Afkar 15
+    -  Afkar 16
+    -  Afkar 17
+    -  Afkar 18
+    -  Afkar 19
+    -  Afkar 20
+    -  Afkar 21
+    -  Afkar 22
+    -  Afkar 23
+    -  Afkar 24
+    -  Afkar 25
+    -  Afkar 26
+    -  Afkar 27
+    -  Afkar 28
+    -  Afkar 29
+    -  Afkar 30
+    -  Afkar 31
+    -  Afkar 32
+    -  Afkar 33
+    -  Afkar 34
+    -  Afkar 35
+    -  Afkar 36
+    -  Afkar 37
+    -  Afkar 38
+    -  Afkar 39
+    -  Afkar 40
+    -  Afkar 41
+    -  Afkar 42
+    -  Afkar 43
+    -  Afkar 44
+    -  Afkar 45
+    -  Afkar 46
+    -  Afkar 47
+    -  Afkar 48
+    -  Afkar 49
+    -  Afkar 50
+    -  Afkar 51
+    -  Afkar 52
+    -  Afkar 53
+    -  Afkar 54
+    -  Afkar 55
+    -  Afkar 56
+    -  Afkar 57
+    -  Afkar 58
+    -  Afkar 59
+    -  Afkar 60
+    -  Afkar 61
+    -  Afkar 62
+    -  Afkar 63
+    -  Afkar 64
+    -  Afkar 65
+    -  Afkar 66
+    -  Afkar 67
+    -  Afkar 68
+    -  Afkar 69
+    -  Afkar 70
+    -  Afkar 71
+    -  Afkar 72
+    -  Afkar 73
+    -  Afkar 74
+    -  Afkar 75
+    -  Afkar 76
+    -  Afkar 77
+    -  Afkar 78
+    -  Afkar 79
+    -  Afkar 80
+    -  Afkar 81
+    -  Afkar 82
+    -  Afkar 83
+    -  Afkar 84
+    -  Afkar 85
+    -  Afkar 86
+    -  Afkar 87
+    -  Afkar 88
+    -  Afkar 89
+    -  Afkar 90
+    -  Afkar 91
+    -  Afkar 92
+    -  Afkar 93
+    -  Afkar 94
+    -  Afkar 95
+    -  Afkar 96
+    -  Afkar 97
+    -  Afkar 98
+    -  Afkar 99
+    -  Afkar 100
+    -  Afkar 101
+    -  Afkar 102
+    -  Afkar 103
+    -  Afkar 104
+    -  Afkar 105
+    -  Afkar 106
+    -  Afkar 107
+    -  Afkar 108
+    -  Afkar 109
+    -  Afkar 110
   url: 'http://www.gstatic.com/generate_204'
   interval: 300
  #⬜⬜
@@ -2170,7 +2061,6 @@ proxy-groups:
   disable-udp: false
   proxies:
     -  FALLBACK
-    -  PREMIUM
     -  BEST PING
     -  LOAD-BALANCE
     -  DIRECT
@@ -2184,7 +2074,6 @@ proxy-groups:
   disable-udp: false
   proxies:
     -  BEST PING
-    -  PREMIUM
     -  FALLBACK
     -  LOAD-BALANCE
     -  DIRECT
@@ -2196,21 +2085,23 @@ proxy-groups:
   strategy: round-robin
   disable-udp: false
   proxies:
-    -  VLESS GAME
-    -  VLESS KNC 443
-    -  VLESS KNC2 443
-    -  VLESS KNC 80
-    -  VLESS KNC2 80
-    -  VLESS ID MAHAL
-    -  VLESS ID SERVLESS
-    -  VLESS ID VLCFPAGE
-    -  Google ID TLS
-    -  Google ID NTLS
-    -  Akamai ID TLS
-    -  Akamai ID NTLS
-    -  INDO VPN 443
-    -  INDO VPN NTLS
-    -  TROJAN TARIK
+    -  Afkar 75
+    -  Afkar 76
+    -  Afkar 77
+    -  Afkar 78
+    -  Afkar 53
+    -  Afkar 54
+    -  Afkar 55
+    -  Afkar 56
+    -  Afkar 58
+    -  Afkar 73
+    -  Afkar 67
+    -  Afkar 68
+    -  Afkar 90
+    -  Afkar 91
+    -  Afkar 92
+    -  Afkar 93
+    -  Afkar 94
   url: 'http://www.gstatic.com/generate_204'
   interval: 300
 #Koneksi Sosmed
@@ -2233,7 +2124,6 @@ proxy-groups:
   proxies:
     -  LOAD-BALANCE
     -  FALLBACK
-    -  PREMIUM
     -  BEST PING
     -  DIRECT
   url: 'http://www.gstatic.com/generate_204'
@@ -2245,10 +2135,7 @@ proxy-groups:
   strategy: round-robin
   disable-udp: false
   proxies:
-    -  FALLBACK
-    -  BEST PING
-    -  PREMIUM
-    -  LOAD-BALANCE
+    -  SERVER PRO
     -  DIRECT
     -  REJECT
   url: 'http://www.gstatic.com/generate_204'
@@ -2260,10 +2147,7 @@ proxy-groups:
   strategy: round-robin
   disable-udp: false
   proxies:
-    -  FALLBACK
-    -  BEST PING
-    -  PREMIUM
-    -  LOAD-BALANCE
+    -  SERVER PRO
     -  DIRECT
     -  REJECT
   url: 'http://www.gstatic.com/generate_204'
@@ -2308,9 +2192,9 @@ proxy-groups:
   type: select
   disable-udp: false
   proxies:
+    -  SERVER PRO
     -  REJECT
     -  DIRECT
-    -  PREMIUM
   url: 'http://www.gstatic.com/generate_204'
   interval: 300
  #⬜⬜
@@ -2319,126 +2203,116 @@ proxy-groups:
   strategy: round-robin
   disable-udp: false
   proxies:
-    -  SG DO GRPC
-    -  SG DO TLS
-    -  SG DO NTLS
-    -  VLESS KNC 443
-    -  VLESS KNC2 443
-    -  Shenzhen TLS
-    -  Shenzhen NTLS
-    -  Datacamp TLS
-    -  Datacamp NTLS
-    -  iFog TLS
-    -  iFog NTLS
-    -  Ipxo TLS
-    -  Ipxo NTLS
-    -  Contabo TLS
-    -  Contabo NTLS
-    -  Alibaba TLS
-    -  Alibaba NTLS
-    -  Akamai TLS
-    -  Akamai NTLS
-    -  Akamai ID TLS
-    -  Akamai ID NTLS
-    -  Hetzner TLS
-    -  Hetzner NTLS
-    -  Google ID TLS
-    -  Google ID NTLS
-    -  VPSMALAYSIA1 TLS
-    -  VPSMALAYSIA1 NTLS 
-    -  ADSL TLS
-    -  ADSL NTLS    
-    -  Aofei TLS
-    -  Aofei NTLS
-    -  Capitalonline TLS
-    -  Capitalonline NTLS
-    -  OVH SAS TLS
-    -  OVH SAS NTLS
-    -  DigitalOcean TLS
-    -  DigitalOcean NTLS 
-    -  M1 TLS
-    -  M1 NTLS
-    -  NPO TLS
-    -  NPO NTLS   
-    -  HONG KONG TLS
-    -  HONG KONG NTLS
-    -  Oracle TLS
-    -  Oracle NTLS  
-    -  Aryaka TLS
-    -  Aryaka NTLS 
-    -  First TLS
-    -  First NTLS  
-    -  Amazon TLS
-    -  Amazon NTLS
-    -  VLESS KNC 80
-    -  VLESS KNC2 80
-    -  VLESS DO LOTUS
-    -  VLESS DO LOTUS NTLS
-    -  VLESS DO TLS
-    -  VLESS DO NTLS
-    -  VLESS DO 443
-    -  VLESS DO 80
-    -  VLESS RIO BIZ
-    -  VLESS RIO BIZ NTLS
-    -  Akari TLS
-    -  Akari NTLS
-    -  Stark TLS
-    -  Stark NTLS
-    -  Constant TLS
-    -  Constant NTLS
-    -  VLESS KNC KR 443
-    -  INDO VPN 443
-    -  INDO VPN NTLS
-    -  TROJAN TARIK
-    -  INDOXRAY GRPC
-    -  VMESS 1 TLS
-    -  VMESS 1 NTLS
-    -  VMESS 2 TLS
-    -  VMESS 2 NTLS
-    -  VMESS 3 TLS
-    -  VMESS 3 NTLS
-    -  VMESS 4 NTLS
-    -  VLESS ARIS TLS
-    -  WORKER GAME
-    -  UWU FF
-    -  VLESS ID MAHAL
-    -  VLESS ORACLE MAHAL
-    -  VLESS ALIBABA MAHAL
-    -  VLESS SG SERVLESS
-    -  VLESS ID SERVLESS
-    -  VLESS ID VLCFPAGE
-    -  VLESS SG VLCFPAGE
-    -  VLESS SG ALIBABA 235
-    -  VLESS SG ALIBABA 400
-    -  VLESS SG ALIBABA 262
-    -  VLESS SG ALIBABA 502
-    -  VLESS SG ALIBABA 619
-    -  VLESS SG ALIBABA 457
-    -  VLESS SG ALIBABA 189
-    -  VLESS SG ALIBABA TLS
-    -  VLESS SG ALIBABA NTLS
-    -  VLESS GAME
-    -  VLESS ANGGA ID1
-    -  VLESS ANGGA ID2
-    -  VLESS ANGGA ID3
-    -  VLESS ANGGA ID4
-    -  VLESS ANGGA ID5
-    -  VLESS ANGGA SG1
-    -  VLESS ANGGA SG2
-    -  VLESS ANGGA SG3
-    -  VLESS ANGGA SG4
-    -  VLESS ANGGA SG5
-    -  VLESS ANGGA US1
-    -  VLESS ANGGA US2
-    -  VLESS ANGGA US3
-    -  VLESS ANGGA JP1
-    -  VLESS ANGGA JP2
-    -  VLESS ANGGA JP3
-    -  VLESS ANGGA KR1
-    -  VLESS ANGGA KR2
-    -  VLESS ANGGA UK1
-    -  VLESS ANGGA AUS1
-    -  VLESS ANGGA GER1
+    -  Afkar 75
+    -  Afkar 76
+    -  Afkar 77
+    -  Afkar 78
+    -  Afkar 1
+    -  Afkar 2
+    -  Afkar 3
+    -  Afkar 4
+    -  Afkar 5
+    -  Afkar 6
+    -  Afkar 7
+    -  Afkar 8
+    -  Afkar 9
+    -  Afkar 10
+    -  Afkar 11
+    -  Afkar 12
+    -  Afkar 13
+    -  Afkar 14
+    -  Afkar 15
+    -  Afkar 16
+    -  Afkar 17
+    -  Afkar 18
+    -  Afkar 19
+    -  Afkar 20
+    -  Afkar 21
+    -  Afkar 22
+    -  Afkar 23
+    -  Afkar 24
+    -  Afkar 25
+    -  Afkar 26
+    -  Afkar 27
+    -  Afkar 28
+    -  Afkar 29
+    -  Afkar 30
+    -  Afkar 31
+    -  Afkar 32
+    -  Afkar 33
+    -  Afkar 34
+    -  Afkar 35
+    -  Afkar 36
+    -  Afkar 37
+    -  Afkar 38
+    -  Afkar 39
+    -  Afkar 40
+    -  Afkar 41
+    -  Afkar 42
+    -  Afkar 43
+    -  Afkar 44
+    -  Afkar 45
+    -  Afkar 46
+    -  Afkar 47
+    -  Afkar 48
+    -  Afkar 49
+    -  Afkar 50
+    -  Afkar 51
+    -  Afkar 52
+    -  Afkar 53
+    -  Afkar 54
+    -  Afkar 55
+    -  Afkar 56
+    -  Afkar 57
+    -  Afkar 58
+    -  Afkar 59
+    -  Afkar 60
+    -  Afkar 61
+    -  Afkar 62
+    -  Afkar 63
+    -  Afkar 64
+    -  Afkar 65
+    -  Afkar 66
+    -  Afkar 67
+    -  Afkar 68
+    -  Afkar 69
+    -  Afkar 70
+    -  Afkar 71
+    -  Afkar 72
+    -  Afkar 73
+    -  Afkar 74
+    -  Afkar 79
+    -  Afkar 80
+    -  Afkar 81
+    -  Afkar 82
+    -  Afkar 83
+    -  Afkar 84
+    -  Afkar 85
+    -  Afkar 86
+    -  Afkar 87
+    -  Afkar 88
+    -  Afkar 89
+    -  Afkar 90
+    -  Afkar 91
+    -  Afkar 92
+    -  Afkar 93
+    -  Afkar 94
+    -  Afkar 95
+    -  Afkar 96
+    -  Afkar 97
+    -  Afkar 98
+    -  Afkar 99
+    -  Afkar 100
+    -  Afkar 101
+    -  Afkar 102
+    -  Afkar 103
+    -  Afkar 104
+    -  Afkar 105
+    -  Afkar 106
+    -  Afkar 107
+    -  Afkar 108
+    -  Afkar 109
+    -  Afkar 110
   url: 'http://www.gstatic.com/generate_204'
   interval: 300
   #koneksi untuk iklan,
@@ -2447,124 +2321,116 @@ proxy-groups:
   strategy: round-robin
   disable-udp: false
   proxies:
-    -  SG DO GRPC
-    -  SG DO TLS
-    -  SG DO NTLS
-    -  VLESS KNC 443
-    -  VLESS KNC2 443
-    -  VLESS KNC KR 443
-    -  Shenzhen TLS
-    -  Shenzhen NTLS
-    -  Datacamp TLS
-    -  Datacamp NTLS
-    -  iFog TLS
-    -  iFog NTLS
-    -  Ipxo TLS
-    -  Ipxo NTLS
-    -  Contabo TLS
-    -  Contabo NTLS
-    -  Alibaba TLS
-    -  Alibaba NTLS
-    -  Akamai TLS
-    -  Akamai NTLS
-    -  Akamai ID TLS
-    -  Akamai ID NTLS
-    -  Hetzner TLS
-    -  Hetzner NTLS
-    -  Google ID TLS
-    -  Google ID NTLS
-    -  VPSMALAYSIA1 TLS
-    -  VPSMALAYSIA1 NTLS
-    -  ADSL TLS
-    -  ADSL NTLS    
-    -  Aofei TLS
-    -  Aofei NTLS
-    -  Capitalonline TLS
-    -  Capitalonline NTLS
-    -  OVH SAS TLS
-    -  OVH SAS NTLS
-    -  DigitalOcean TLS
-    -  DigitalOcean NTLS
-    -  M1 TLS
-    -  M1 NTLS
-    -  NPO TLS
-    -  NPO NTLS   
-    -  HONG KONG TLS
-    -  HONG KONG NTLS
-    -  Oracle TLS
-    -  Oracle NTLS 
-    -  Aryaka TLS
-    -  Aryaka NTLS 
-    -  First TLS
-    -  First NTLS 
-    -  Amazon TLS
-    -  Amazon NTLS
-    -  VLESS DO TLS
-    -  VLESS DO NTLS
-    -  VLESS DO 443
-    -  VLESS DO 80
-    -  VLESS DO LOTUS
-    -  VLESS DO LOTUS NTLS
-    -  VLESS RIO BIZ
-    -  VLESS RIO BIZ NTLS
-    -  VLESS ARIS TLS
-    -  VLESS KNC 80
-    -  VLESS KNC2 80
-    -  TROJAN TARIK
-    -  INDO VPN 443
-    -  INDO VPN NTLS
-    -  INDOXRAY GRPC
-    -  VMESS 1 TLS
-    -  VMESS 1 NTLS
-    -  VMESS 2 TLS
-    -  VMESS 2 NTLS
-    -  VMESS 3 TLS
-    -  VMESS 3 NTLS
-    -  VMESS 4 NTLS
-    -  Akari TLS
-    -  Akari NTLS
-    -  Stark TLS
-    -  Stark NTLS
-    -  Constant TLS
-    -  Constant NTLS
-    -  VLESS ID MAHAL
-    -  VLESS ORACLE MAHAL
-    -  VLESS ALIBABA MAHAL
-    -  VLESS SG SERVLESS
-    -  VLESS ID SERVLESS
-    -  VLESS ID VLCFPAGE
-    -  VLESS SG VLCFPAGE
-    -  VLESS SG ALIBABA 235
-    -  VLESS SG ALIBABA 400
-    -  VLESS SG ALIBABA 262
-    -  VLESS SG ALIBABA 502
-    -  VLESS SG ALIBABA 619
-    -  VLESS SG ALIBABA 457
-    -  VLESS SG ALIBABA 189
-    -  VLESS SG ALIBABA TLS
-    -  VLESS SG ALIBABA NTLS
-    -  VLESS GAME
-    -  VLESS ANGGA ID1
-    -  VLESS ANGGA ID2
-    -  VLESS ANGGA ID3
-    -  VLESS ANGGA ID4
-    -  VLESS ANGGA ID5
-    -  VLESS ANGGA SG1
-    -  VLESS ANGGA SG2
-    -  VLESS ANGGA SG3
-    -  VLESS ANGGA SG4
-    -  VLESS ANGGA SG5
-    -  VLESS ANGGA US1
-    -  VLESS ANGGA US2
-    -  VLESS ANGGA US3
-    -  VLESS ANGGA JP1
-    -  VLESS ANGGA JP2
-    -  VLESS ANGGA JP3
-    -  VLESS ANGGA KR1
-    -  VLESS ANGGA KR2
-    -  VLESS ANGGA UK1
-    -  VLESS ANGGA AUS1
-    -  VLESS ANGGA GER1
+    -  Afkar 1
+    -  Afkar 2
+    -  Afkar 3
+    -  Afkar 4
+    -  Afkar 5
+    -  Afkar 6
+    -  Afkar 7
+    -  Afkar 8
+    -  Afkar 9
+    -  Afkar 10
+    -  Afkar 11
+    -  Afkar 12
+    -  Afkar 13
+    -  Afkar 14
+    -  Afkar 15
+    -  Afkar 16
+    -  Afkar 17
+    -  Afkar 18
+    -  Afkar 19
+    -  Afkar 20
+    -  Afkar 21
+    -  Afkar 22
+    -  Afkar 23
+    -  Afkar 24
+    -  Afkar 25
+    -  Afkar 26
+    -  Afkar 27
+    -  Afkar 28
+    -  Afkar 29
+    -  Afkar 30
+    -  Afkar 31
+    -  Afkar 32
+    -  Afkar 33
+    -  Afkar 34
+    -  Afkar 35
+    -  Afkar 36
+    -  Afkar 37
+    -  Afkar 38
+    -  Afkar 39
+    -  Afkar 40
+    -  Afkar 41
+    -  Afkar 42
+    -  Afkar 43
+    -  Afkar 44
+    -  Afkar 45
+    -  Afkar 46
+    -  Afkar 47
+    -  Afkar 48
+    -  Afkar 49
+    -  Afkar 50
+    -  Afkar 51
+    -  Afkar 52
+    -  Afkar 53
+    -  Afkar 54
+    -  Afkar 55
+    -  Afkar 56
+    -  Afkar 57
+    -  Afkar 58
+    -  Afkar 59
+    -  Afkar 60
+    -  Afkar 61
+    -  Afkar 62
+    -  Afkar 63
+    -  Afkar 64
+    -  Afkar 65
+    -  Afkar 66
+    -  Afkar 67
+    -  Afkar 68
+    -  Afkar 69
+    -  Afkar 70
+    -  Afkar 71
+    -  Afkar 72
+    -  Afkar 73
+    -  Afkar 74
+    -  Afkar 75
+    -  Afkar 76
+    -  Afkar 77
+    -  Afkar 78
+    -  Afkar 79
+    -  Afkar 80
+    -  Afkar 81
+    -  Afkar 82
+    -  Afkar 83
+    -  Afkar 84
+    -  Afkar 85
+    -  Afkar 86
+    -  Afkar 87
+    -  Afkar 88
+    -  Afkar 89
+    -  Afkar 90
+    -  Afkar 91
+    -  Afkar 92
+    -  Afkar 93
+    -  Afkar 94
+    -  Afkar 95
+    -  Afkar 96
+    -  Afkar 97
+    -  Afkar 98
+    -  Afkar 99
+    -  Afkar 100
+    -  Afkar 101
+    -  Afkar 102
+    -  Afkar 103
+    -  Afkar 104
+    -  Afkar 105
+    -  Afkar 106
+    -  Afkar 107
+    -  Afkar 108
+    -  Afkar 109
+    -  Afkar 110
   url: 'http://www.gstatic.com/generate_204'
   interval: 300
  #⬜⬜
@@ -2574,140 +2440,131 @@ proxy-groups:
   strategy: round-robin
   disable-udp: false
   proxies:
-    -  SG DO GRPC
-    -  SG DO TLS
-    -  SG DO NTLS
-    -  VMESS 1 TLS
-    -  VMESS 1 NTLS
-    -  VMESS 2 TLS
-    -  VMESS 2 NTLS
-    -  VMESS 3 TLS
-    -  VMESS 3 NTLS
-    -  VMESS 4 NTLS
-    -  Shenzhen TLS
-    -  Shenzhen NTLS
-    -  Datacamp TLS
-    -  Datacamp NTLS
-    -  iFog TLS
-    -  iFog NTLS
-    -  Ipxo TLS
-    -  Ipxo NTLS
-    -  Contabo TLS
-    -  Contabo NTLS
-    -  Alibaba TLS
-    -  Alibaba NTLS
-    -  Akamai TLS
-    -  Akamai NTLS
-    -  Akamai ID TLS
-    -  Akamai ID NTLS
-    -  Hetzner TLS
-    -  Hetzner NTLS
-    -  Google ID TLS
-    -  Google ID NTLS
-    -  VPSMALAYSIA1 TLS
-    -  VPSMALAYSIA1 NTLS  
-    -  ADSL TLS
-    -  ADSL NTLS    
-    -  Aofei TLS
-    -  Aofei NTLS
-    -  Capitalonline TLS
-    -  Capitalonline NTLS
-    -  OVH SAS TLS
-    -  OVH SAS NTLS
-    -  DigitalOcean TLS
-    -  DigitalOcean NTLS 
-    -  M1 TLS
-    -  M1 NTLS
-    -  NPO TLS
-    -  NPO NTLS   
-    -  HONG KONG TLS
-    -  HONG KONG NTLS
-    -  Oracle TLS
-    -  Oracle NTLS  
-    -  Aryaka TLS
-    -  Aryaka NTLS
-    -  First TLS
-    -  First NTLS  
-    -  Amazon TLS
-    -  Amazon NTLS
-    -  Akari TLS
-    -  Akari NTLS
-    -  Stark TLS
-    -  Stark NTLS
-    -  Constant TLS
-    -  Constant NTLS
-    -  INDO VPN 443
-    -  INDO VPN NTLS
-    -  INDOXRAY GRPC
-    -  VLESS ARIS TLS
-    -  VLESS KNC 80
-    -  VLESS KNC2 80
-    -  VLESS RIO BIZ
-    -  VLESS RIO BIZ NTLS
-    -  WORKER GAME
-    -  UWU FF
-    -  VLESS KNC 443
-    -  VLESS KNC2 443
-    -  VLESS KNC KR 443
-    -  VLESS DO TLS
-    -  VLESS DO NTLS
-    -  VLESS DO 443
-    -  VLESS DO 80
-    -  VLESS DO LOTUS
-    -  VLESS DO LOTUS NTLS
-    -  TROJAN TARIK
-    -  VLESS ID MAHAL
-    -  VLESS ORACLE MAHAL
-    -  VLESS ALIBABA MAHAL
-    -  VLESS SG SERVLESS
-    -  VLESS ID SERVLESS
-    -  VLESS ID VLCFPAGE
-    -  VLESS SG VLCFPAGE
-    -  VLESS SG ALIBABA 235
-    -  VLESS SG ALIBABA 400
-    -  VLESS SG ALIBABA 262
-    -  VLESS SG ALIBABA 502
-    -  VLESS SG ALIBABA 619
-    -  VLESS SG ALIBABA 457
-    -  VLESS SG ALIBABA 189
-    -  VLESS SG ALIBABA TLS
-    -  VLESS SG ALIBABA NTLS
-    -  VLESS GAME
-    -  VLESS ANGGA ID1
-    -  VLESS ANGGA ID2
-    -  VLESS ANGGA ID3
-    -  VLESS ANGGA ID4
-    -  VLESS ANGGA ID5
-    -  VLESS ANGGA SG1
-    -  VLESS ANGGA SG2
-    -  VLESS ANGGA SG3
-    -  VLESS ANGGA SG4
-    -  VLESS ANGGA SG5
-    -  VLESS ANGGA US1
-    -  VLESS ANGGA US2
-    -  VLESS ANGGA US3
-    -  VLESS ANGGA JP1
-    -  VLESS ANGGA JP2
-    -  VLESS ANGGA JP3
-    -  VLESS ANGGA KR1
-    -  VLESS ANGGA KR2
-    -  VLESS ANGGA UK1
-    -  VLESS ANGGA AUS1
-    -  VLESS ANGGA GER1
+    -  Afkar 1
+    -  Afkar 2
+    -  Afkar 3
+    -  Afkar 4
+    -  Afkar 5
+    -  Afkar 6
+    -  Afkar 7
+    -  Afkar 8
+    -  Afkar 9
+    -  Afkar 10
+    -  Afkar 11
+    -  Afkar 12
+    -  Afkar 13
+    -  Afkar 14
+    -  Afkar 15
+    -  Afkar 16
+    -  Afkar 17
+    -  Afkar 18
+    -  Afkar 19
+    -  Afkar 20
+    -  Afkar 21
+    -  Afkar 22
+    -  Afkar 23
+    -  Afkar 24
+    -  Afkar 25
+    -  Afkar 26
+    -  Afkar 27
+    -  Afkar 28
+    -  Afkar 29
+    -  Afkar 30
+    -  Afkar 31
+    -  Afkar 32
+    -  Afkar 33
+    -  Afkar 34
+    -  Afkar 35
+    -  Afkar 36
+    -  Afkar 37
+    -  Afkar 38
+    -  Afkar 39
+    -  Afkar 40
+    -  Afkar 41
+    -  Afkar 42
+    -  Afkar 43
+    -  Afkar 44
+    -  Afkar 45
+    -  Afkar 46
+    -  Afkar 47
+    -  Afkar 48
+    -  Afkar 49
+    -  Afkar 50
+    -  Afkar 51
+    -  Afkar 52
+    -  Afkar 53
+    -  Afkar 54
+    -  Afkar 55
+    -  Afkar 56
+    -  Afkar 57
+    -  Afkar 58
+    -  Afkar 59
+    -  Afkar 60
+    -  Afkar 61
+    -  Afkar 62
+    -  Afkar 63
+    -  Afkar 64
+    -  Afkar 65
+    -  Afkar 66
+    -  Afkar 67
+    -  Afkar 68
+    -  Afkar 69
+    -  Afkar 70
+    -  Afkar 71
+    -  Afkar 72
+    -  Afkar 73
+    -  Afkar 74
+    -  Afkar 75
+    -  Afkar 76
+    -  Afkar 77
+    -  Afkar 78
+    -  Afkar 79
+    -  Afkar 80
+    -  Afkar 81
+    -  Afkar 82
+    -  Afkar 83
+    -  Afkar 84
+    -  Afkar 85
+    -  Afkar 86
+    -  Afkar 87
+    -  Afkar 88
+    -  Afkar 89
+    -  Afkar 90
+    -  Afkar 91
+    -  Afkar 92
+    -  Afkar 93
+    -  Afkar 94
+    -  Afkar 95
+    -  Afkar 96
+    -  Afkar 97
+    -  Afkar 98
+    -  Afkar 99
+    -  Afkar 100
+    -  Afkar 101
+    -  Afkar 102
+    -  Afkar 103
+    -  Afkar 104
+    -  Afkar 105
+    -  Afkar 106
+    -  Afkar 107
+    -  Afkar 108
+    -  Afkar 109
+    -  Afkar 110
   url: 'http://www.gstatic.com/generate_204'
   interval: 300
  #⬜⬜
- #Koneksi Premium
-- name: "PREMIUM"
-  type: fallback #PILIIH SALAH SATU : SELECT,LOAD-BALANCE,FALLBACK,URL-TEST
-  strategy: round-robin
+- name: "SERVER PRO"
+  type: fallback
   disable-udp: false
   proxies:
-    -  SG DO GRPC
-    -  SG DO TLS
-    -  SG DO NTLS
+    -  Afkar Pro 1
+    -  Afkar Pro 2
+    -  Afkar Pro 3
+    -  Afkar Pro 4
   url: 'http://www.gstatic.com/generate_204'
-  interval: 30
+  interval: 300
+ #⬜⬜
+
 #🟡_________________________________PROCY-GROUP__________________________________🟡
 # Clash for Windows
 cfw-bypass:
@@ -2736,7 +2593,6 @@ cfw-bypass:
   - 192.168.*
   - <local>
 cfw-latency-timeout: 5000
-
 rule-providers:
   Portgames:
     type: http
@@ -2789,6 +2645,11 @@ rule-providers:
     behavior: classical
     path: "./rule_provider/indo.yaml"
     url: "https://raw.githubusercontent.com/ekosupry/CONFIG/main/ruleindo.yaml"
+  Manca:
+    type: http
+    behavior: classical
+    path: "./rule_provider/indo.yaml"
+    url: "https://raw.githubusercontent.com/ekosupry/CONFIG/main/rulemanca.yaml"
   Bank:
     type: http
     behavior: classical
@@ -2866,6 +2727,7 @@ rules:
 - RULE-SET,Shopee,MARKETPLACE
 - RULE-SET,Nonton,STREAMING
 - RULE-SET,Indo,AKUN BANK
+- RULE-SET,Manca,IKLAN
 - RULE-SET,Bank,AKUN BANK
 - RULE-SET,Portgames,PLAY GAME
 - RULE-SET,Gaming,LOBBY GAME

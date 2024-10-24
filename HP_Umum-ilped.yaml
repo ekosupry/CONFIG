@@ -1862,6 +1862,75 @@ proxies:
       headers:
         Host: aio.angga.us.kg
     udp: true
+
+  - name: Afkar Pro 1
+    server: 104.18.3.2
+    port: 655
+    type: vless
+    uuid: 80510fd1-7a7d-4b83-a3db-05fb7f23dea5
+    alterId: 0
+    cipher: auto
+    tls: true
+    skip-cert-verify: true
+    servername: id.knc.my.id
+    network: ws
+    ws-opts:
+      path: /?ed=2048
+      headers:
+        Host: id.knc.my.id
+    udp: true
+
+  - name: Afkar Pro 2
+    server: 104.18.3.2
+    port: 655
+    type: vless
+    uuid: 80510fd1-7a7d-4b83-a3db-05fb7f23dea5
+    alterId: 0
+    cipher: auto
+    tls: true
+    skip-cert-verify: true
+    servername: id2.knc.my.id
+    network: ws
+    ws-opts:
+      path: /?ed=2048
+      headers:
+        Host: id2.knc.my.id
+    udp: true
+
+  - name: Afkar Pro 3
+    server: 104.18.3.2
+    port: 655
+    type: vless
+    uuid: 80510fd1-7a7d-4b83-a3db-05fb7f23dea5
+    alterId: 0
+    cipher: auto
+    tls: false
+    skip-cert-verify: true
+    servername: id2.knc.my.id
+    network: ws
+    ws-opts:
+      path: /?ed=2048
+      headers:
+        Host: id2.knc.my.id
+    udp: true
+
+  - name: Afkar Pro 4
+    server: 104.18.3.2
+    port: 655
+    type: vless
+    uuid: 4994c6a3-3242-45b8-a3e3-7d0fb82b0ece
+    alterId: 0
+    cipher: auto
+    tls: true
+    skip-cert-verify: true
+    servername: kr.free.knc.my.id
+    network: ws
+    ws-opts:
+      path: /?ed=2048
+      headers:
+        Host: kr.free.knc.my.id
+    udp: true
+
 #🔴
 #🔴_____________________________________proxies______________________________________🔴
 #
@@ -2066,9 +2135,7 @@ proxy-groups:
   strategy: round-robin
   disable-udp: false
   proxies:
-    -  FALLBACK
-    -  BEST PING
-    -  LOAD-BALANCE
+    -  SERVER PRO
     -  DIRECT
     -  REJECT
   url: 'http://www.gstatic.com/generate_204'
@@ -2080,9 +2147,7 @@ proxy-groups:
   strategy: round-robin
   disable-udp: false
   proxies:
-    -  FALLBACK
-    -  BEST PING
-    -  LOAD-BALANCE
+    -  SERVER PRO
     -  DIRECT
     -  REJECT
   url: 'http://www.gstatic.com/generate_204'
@@ -2127,6 +2192,7 @@ proxy-groups:
   type: select
   disable-udp: false
   proxies:
+    -  SERVER PRO
     -  REJECT
     -  DIRECT
   url: 'http://www.gstatic.com/generate_204'
@@ -2487,6 +2553,18 @@ proxy-groups:
   url: 'http://www.gstatic.com/generate_204'
   interval: 300
  #⬜⬜
+- name: "SERVER PRO"
+  type: fallback
+  disable-udp: false
+  proxies:
+    -  Afkar Pro 1
+    -  Afkar Pro 2
+    -  Afkar Pro 3
+    -  Afkar Pro 4
+  url: 'http://www.gstatic.com/generate_204'
+  interval: 300
+ #⬜⬜
+
 #🟡_________________________________PROCY-GROUP__________________________________🟡
 # Clash for Windows
 cfw-bypass:

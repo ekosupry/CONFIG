@@ -37,6 +37,7 @@ payload:
 - DOMAIN-SUFFIX,klingai.com
 - DOMAIN-SUFFIX,jpg2pdf.com
 - DOMAIN-SUFFIX,shrinkpdf.com
+- DOMAIN-SUFFIX,topview.ai
 #pribadi
 - DOMAIN-SUFFIX,zello.com
 - DST-PORT,28225

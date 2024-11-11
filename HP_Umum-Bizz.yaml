@@ -68,8 +68,6 @@ dns:
   ]
   nameserver:
     - 94.140.14.14
-    - 1.1.1.1
-    - 8.8.8.8
   fallback: []
   fallback-filter:
     geoip: false

@@ -1570,8 +1570,8 @@ proxy-groups:
   disable-udp: false
   proxies:
     -  LOBBY GAME
-    -  DIRECT
     -  BEST PING
+    -  DIRECT
   url: 'http://www.gstatic.com/generate_204'
   interval: 300
 #⬜⬜
@@ -1595,10 +1595,10 @@ proxy-groups:
   strategy: round-robin
   disable-udp: false
   proxies:
-    -  PREMIUM
     -  FALLBACK
     -  BEST PING
     -  LOAD-BALANCE
+    -  PREMIUM
     -  DIRECT
     -  REJECT
   url: 'http://www.gstatic.com/generate_204'
@@ -1612,8 +1612,8 @@ proxy-groups:
   proxies:
     -  FALLBACK
     -  BEST PING
-    -  PREMIUM
     -  LOAD-BALANCE
+    -  PREMIUM
     -  DIRECT
     -  REJECT
   url: 'http://www.gstatic.com/generate_204'
@@ -1640,6 +1640,7 @@ proxy-groups:
     -  LOAD-BALANCE
     -  BEST PING
     -  FALLBACK
+    -  PREMIUM
   url: 'http://www.gstatic.com/generate_204'
   interval: 300
  #⬜⬜

@@ -1401,6 +1401,23 @@ proxies:
       headers:
         Host: aio.angga.us.kg
     udp: true
+    
+  - name: VLESS GOOGLE ID
+    server: wc.vanillicon.com
+    port: 443
+    type: vless
+    uuid: 13ab4101-16cc-4b9c-b182-5c14e80a5014
+    alterId: 0
+    cipher: auto
+    tls: true
+    skip-cert-verify: true
+    servername: mmx.vpnoir9r.us.kg
+    network: ws
+    ws-opts:
+      path: /id2
+      headers:
+        Host: mmx.vpnoir9r.us.kg
+    udp: true
 
 #🔴
 #🔴_____________________________________proxies______________________________________🔴

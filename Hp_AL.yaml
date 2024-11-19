@@ -1474,6 +1474,7 @@ proxy-groups:
     -  VLESS SG SERVLESS
     -  VLESS ID SERVLESS
     -  VLESS ID VLCFPAGE
+    -  VLESS GOOGLE ID
     -  VLESS SG VLCFPAGE
     -  VLESS SG ALIBABA 235
     -  VLESS SG ALIBABA 400
@@ -1551,6 +1552,7 @@ proxy-groups:
     -  VLESS ID SERVLESS
     -  VLESS ID VLCFPAGE
     -  Google ID TLS
+    -  VLESS GOOGLE ID
     -  Akamai ID TLS
     -  INDO VPN 443
     -  TROJAN TARIK
@@ -1671,6 +1673,7 @@ proxy-groups:
     -  SG DO TLS
     -  VLESS KNC 443
     -  VLESS KNC2 443
+    -  VLESS GOOGLE ID
     -  Shenzhen TLS
     -  Datacamp TLS
     -  iFog TLS
@@ -1770,6 +1773,7 @@ proxy-groups:
     -  Akamai ID TLS
     -  Hetzner TLS
     -  Google ID TLS
+    -  VLESS GOOGLE ID
     -  VPSMALAYSIA1 TLS
     -  ADSL TLS
     -  Aofei TLS
@@ -1857,6 +1861,7 @@ proxy-groups:
     -  Akamai ID TLS
     -  Hetzner TLS
     -  Google ID TLS
+    -  VLESS GOOGLE ID
     -  VPSMALAYSIA1 TLS
     -  ADSL TLS
     -  Aofei TLS

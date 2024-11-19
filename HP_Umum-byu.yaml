@@ -1,5 +1,5 @@
-# AKUN PREMIUM SINGAPURA DIGITAL OCEAN AKTIF SAMPAI 27 September 2024
-# Gass PREMIUM 10rb/device aktif 1 bulan,2 device 15rb
+# AKUN PREMIUM SINGAPURA DIGITAL OCEAN AKTIF SAMPAI 01 November 2024 23:59 WIB
+# PREMIUM 10rb/device aktif 1 bulan,2 device 15rb
 # ==== Paket ILMUPEDIA ======
 # Buy paket TSEL dial *363*844# / *363*555#
 #===========================================
@@ -79,6 +79,37 @@ tproxy-port: 9898
 mixed-port: 7890
 # ================= PG ==========
 proxies: 
+  - name: SG DO TLS
+    server: wc.vanillicon.com
+    port: 443
+    type: vmess
+    uuid: 808bab86-4733-4611-ab2f-9efe167c5515
+    alterId: 0
+    cipher: auto
+    tls: true
+    skip-cert-verify: true
+    servername: kuhaku.zerossh.my.id
+    network: ws
+    ws-opts:
+      path: /vmess
+      headers:
+        Host: kuhaku.zerossh.my.id
+    udp: true
+
+  - name: SG DO GRPC
+    server: wc.vanillicon.com
+    port: 443
+    type: vmess
+    uuid: 808bab86-4733-4611-ab2f-9efe167c5515
+    alterId: 0
+    cipher: auto
+    network: grpc
+    tls: true
+    servername: kuhaku.zerossh.my.id
+    skip-cert-verify: true
+    grpc-opts:
+      grpc-service-name: vmess-grpc
+
   - name: Akari TLS
     server: wc.vanillicon.com
     port: 443
@@ -495,6 +526,57 @@ proxies:
       headers:
         Host: mmx.vpnoir9r.us.kg 
         
+  - name: VMESS 1 TLS
+    server: wc.vanillicon.com
+    port: 443
+    type: vmess
+    uuid: 81eb0b22-396a-43a7-8646-1b9d1e6b51fd
+    alterId: 0
+    cipher: auto
+    tls: true
+    skip-cert-verify: true
+    servername: mzvpn.my.id
+    network: ws
+    ws-opts:
+      path: /vmess
+      headers:
+        Host: mzvpn.my.id
+    udp: true
+
+  - name: VMESS 2 TLS
+    server: wc.vanillicon.com
+    port: 443
+    type: vmess
+    uuid: a1655f51-1e20-4a92-8a11-b7ca30a7a353
+    alterId: 0
+    cipher: auto
+    tls: true
+    skip-cert-verify: true
+    servername: afrhms07.xfixedfloat.cfd
+    network: ws
+    ws-opts:
+      path: /linkws
+      headers:
+        Host: afrhms07.xfixedfloat.cfd
+    udp: true
+
+  - name: VMESS 3 TLS
+    server: wc.vanillicon.com
+    port: 443
+    type: vmess
+    uuid: edbb1059-1633-4271-b66e-ed4fba47a1bf
+    alterId: 0
+    cipher: auto
+    tls: true
+    skip-cert-verify: true
+    servername: linde06.indiavideo.sbs
+    network: ws
+    ws-opts:
+      path: /linkws
+      headers:
+        Host: linde06.indiavideo.sbs
+    udp: true
+
   - name: INDO VPN 443
     server: wc.vanillicon.com
     port: 443
@@ -1319,6 +1401,23 @@ proxies:
       headers:
         Host: aio.angga.us.kg
     udp: true
+    
+  - name: VLESS GOOGLE ID
+    server: wc.vanillicon.com
+    port: 443
+    type: vless
+    uuid: 13ab4101-16cc-4b9c-b182-5c14e80a5014
+    alterId: 0
+    cipher: auto
+    tls: true
+    skip-cert-verify: true
+    servername: mmx.vpnoir9r.us.kg
+    network: ws
+    ws-opts:
+      path: /id2
+      headers:
+        Host: mmx.vpnoir9r.us.kg
+    udp: true
 
 #🔴
 #🔴_____________________________________proxies______________________________________🔴
@@ -1331,6 +1430,8 @@ proxy-groups:
   strategy: round-robin
   disable-udp: false
   proxies:
+    -  SG DO GRPC
+    -  SG DO TLS
     -  VLESS ARIS TLS
     -  Akari TLS
     -  Stark TLS
@@ -1373,6 +1474,7 @@ proxy-groups:
     -  VLESS SG SERVLESS
     -  VLESS ID SERVLESS
     -  VLESS ID VLCFPAGE
+    -  VLESS GOOGLE ID
     -  VLESS SG VLCFPAGE
     -  VLESS SG ALIBABA 235
     -  VLESS SG ALIBABA 400
@@ -1385,6 +1487,9 @@ proxy-groups:
     -  INDO VPN 443
     -  TROJAN TARIK
     -  INDOXRAY GRPC
+    -  VMESS 1 TLS
+    -  VMESS 2 TLS
+    -  VMESS 3 TLS
     -  VLESS ANGGA ID1
     -  VLESS ANGGA ID2
     -  VLESS ANGGA ID3
@@ -1406,7 +1511,6 @@ proxy-groups:
     -  VLESS ANGGA UK1
     -  VLESS ANGGA AUS1
     -  VLESS ANGGA GER1
-
   url: 'http://www.gstatic.com/generate_204'
   interval: 300
  #⬜⬜
@@ -1416,6 +1520,7 @@ proxy-groups:
   disable-udp: false
   proxies:
     -  FALLBACK
+    -  PREMIUM
     -  BEST PING
     -  LOAD-BALANCE
     -  DIRECT
@@ -1428,12 +1533,13 @@ proxy-groups:
   strategy: round-robin
   disable-udp: false
   proxies:
-    -  BEST PING
-    -  FALLBACK
     -  LOAD-BALANCE
+    -  BEST PING
+    -  PREMIUM
+    -  FALLBACK
     -  DIRECT
   url: 'http://www.gstatic.com/generate_204'
-  interval: 60
+  interval: 300
 #Koneksi Sosmed
 - name: "LOBBY GAME"
   type: url-test #PILIIH SALAH SATU : SELECT,LOAD-BALANCE,FALLBACK,URL-TEST
@@ -1446,11 +1552,17 @@ proxy-groups:
     -  VLESS ID SERVLESS
     -  VLESS ID VLCFPAGE
     -  Google ID TLS
+    -  VLESS GOOGLE ID
     -  Akamai ID TLS
     -  INDO VPN 443
     -  TROJAN TARIK
+    -  VLESS ANGGA ID1
+    -  VLESS ANGGA ID2
+    -  VLESS ANGGA ID3
+    -  VLESS ANGGA ID4
+    -  VLESS ANGGA ID5
   url: 'http://www.gstatic.com/generate_204'
-  interval: 60
+  interval: 300
 #Koneksi Sosmed
 - name: "PLAY GAME"
   type: select #PILIIH SALAH SATU : SELECT,LOAD-BALANCE,FALLBACK,URL-TEST
@@ -1461,7 +1573,7 @@ proxy-groups:
     -  LOBBY GAME
     -  BEST PING
   url: 'http://www.gstatic.com/generate_204'
-  interval: 60
+  interval: 300
 #⬜⬜
 #Koneksi Sosmed
 - name: "SOSMED"
@@ -1469,12 +1581,13 @@ proxy-groups:
   strategy: round-robin
   disable-udp: false
   proxies:
+    -  BEST PING
     -  LOAD-BALANCE
     -  FALLBACK
-    -  BEST PING
+    -  PREMIUM
     -  DIRECT
   url: 'http://www.gstatic.com/generate_204'
-  interval: 60
+  interval: 300
 #⬜⬜
 #koneksi untuk YOUTUBE,
 - name: "YOUTUBE"
@@ -1482,13 +1595,14 @@ proxy-groups:
   strategy: round-robin
   disable-udp: false
   proxies:
+    -  PREMIUM
     -  FALLBACK
     -  BEST PING
     -  LOAD-BALANCE
     -  DIRECT
     -  REJECT
   url: 'http://www.gstatic.com/generate_204'
-  interval: 60
+  interval: 300
  #⬜⬜
 #koneksi nonton video
 - name: "STREAMING"
@@ -1498,11 +1612,12 @@ proxy-groups:
   proxies:
     -  FALLBACK
     -  BEST PING
+    -  PREMIUM
     -  LOAD-BALANCE
     -  DIRECT
     -  REJECT
   url: 'http://www.gstatic.com/generate_204'
-  interval: 60
+  interval: 300
  #⬜⬜
  #koneksi untuk Bank,
 - name: "AKUN BANK"
@@ -1515,7 +1630,7 @@ proxy-groups:
     -  DIRECT
     -  REJECT
   url: 'http://www.gstatic.com/generate_204'
-  interval: 60
+  interval: 300
  #⬜⬜
  #koneksi untuk BELANJA,
 - name: "MARKETPLACE"
@@ -1526,7 +1641,7 @@ proxy-groups:
     -  BEST PING
     -  FALLBACK
   url: 'http://www.gstatic.com/generate_204'
-  interval: 60
+  interval: 300
  #⬜⬜
  #koneksi untuk iklan,
 - name: "IKLAN"
@@ -1537,7 +1652,7 @@ proxy-groups:
     -  LOAD-BALANCE
     -  FALLBACK
   url: 'http://www.gstatic.com/generate_204'
-  interval: 60
+  interval: 300
  #⬜⬜
 - name: "Adult🔞"
   type: select
@@ -1545,16 +1660,20 @@ proxy-groups:
   proxies:
     -  REJECT
     -  DIRECT
+    -  PREMIUM
   url: 'http://www.gstatic.com/generate_204'
-  interval: 60
+  interval: 300
  #⬜⬜
 - name: "FALLBACK"
   type: fallback
   strategy: round-robin
   disable-udp: false
   proxies:
+    -  SG DO GRPC
+    -  SG DO TLS
     -  VLESS KNC 443
     -  VLESS KNC2 443
+    -  VLESS GOOGLE ID
     -  Shenzhen TLS
     -  Datacamp TLS
     -  iFog TLS
@@ -1589,6 +1708,9 @@ proxy-groups:
     -  INDO VPN 443
     -  TROJAN TARIK
     -  INDOXRAY GRPC
+    -  VMESS 1 TLS
+    -  VMESS 2 TLS
+    -  VMESS 3 TLS
     -  VLESS ARIS TLS
     -  WORKER GAME
     -  UWU FF
@@ -1628,15 +1750,16 @@ proxy-groups:
     -  VLESS ANGGA UK1
     -  VLESS ANGGA AUS1
     -  VLESS ANGGA GER1
-
   url: 'http://www.gstatic.com/generate_204'
-  interval: 60
+  interval: 300
   #koneksi untuk iklan,
 - name: "BEST PING"
   type: url-test
   strategy: round-robin
   disable-udp: false
   proxies:
+    -  SG DO GRPC
+    -  SG DO TLS
     -  VLESS KNC 443
     -  VLESS KNC2 443
     -  VLESS KNC KR 443
@@ -1650,6 +1773,7 @@ proxy-groups:
     -  Akamai ID TLS
     -  Hetzner TLS
     -  Google ID TLS
+    -  VLESS GOOGLE ID
     -  VPSMALAYSIA1 TLS
     -  ADSL TLS
     -  Aofei TLS
@@ -1671,6 +1795,9 @@ proxy-groups:
     -  TROJAN TARIK
     -  INDO VPN 443
     -  INDOXRAY GRPC
+    -  VMESS 1 TLS
+    -  VMESS 2 TLS
+    -  VMESS 3 TLS
     -  Akari TLS
     -  Stark TLS
     -  Constant TLS
@@ -1710,9 +1837,8 @@ proxy-groups:
     -  VLESS ANGGA UK1
     -  VLESS ANGGA AUS1
     -  VLESS ANGGA GER1
-
   url: 'http://www.gstatic.com/generate_204'
-  interval: 60
+  interval: 300
  #⬜⬜
    #koneksi untuk iklan,
 - name: "LOAD-BALANCE"
@@ -1720,6 +1846,8 @@ proxy-groups:
   strategy: round-robin
   disable-udp: false
   proxies:
+    -  SG DO GRPC
+    -  SG DO TLS
     -  VLESS KNC 443
     -  VLESS KNC2 443
     -  VLESS KNC KR 443
@@ -1733,6 +1861,7 @@ proxy-groups:
     -  Akamai ID TLS
     -  Hetzner TLS
     -  Google ID TLS
+    -  VLESS GOOGLE ID
     -  VPSMALAYSIA1 TLS
     -  ADSL TLS
     -  Aofei TLS
@@ -1754,6 +1883,9 @@ proxy-groups:
     -  TROJAN TARIK
     -  INDO VPN 443
     -  INDOXRAY GRPC
+    -  VMESS 1 TLS
+    -  VMESS 2 TLS
+    -  VMESS 3 TLS
     -  Akari TLS
     -  Stark TLS
     -  Constant TLS
@@ -1794,8 +1926,18 @@ proxy-groups:
     -  VLESS ANGGA AUS1
     -  VLESS ANGGA GER1
   url: 'http://www.gstatic.com/generate_204'
-  interval: 60
+  interval: 300
  #⬜⬜
+ #Koneksi Premium
+- name: "PREMIUM"
+  type: fallback #PILIIH SALAH SATU : SELECT,LOAD-BALANCE,FALLBACK,URL-TEST
+  strategy: round-robin
+  disable-udp: false
+  proxies:
+    -  SG DO GRPC
+    -  SG DO TLS
+  url: 'http://www.gstatic.com/generate_204'
+  interval: 30
 #🟡_________________________________PROCY-GROUP__________________________________🟡
 # Clash for Windows
 cfw-bypass:

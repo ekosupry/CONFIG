@@ -1569,8 +1569,8 @@ proxy-groups:
   strategy: round-robin
   disable-udp: false
   proxies:
-    -  DIRECT
     -  LOBBY GAME
+    -  DIRECT
     -  BEST PING
   url: 'http://www.gstatic.com/generate_204'
   interval: 300

@@ -163,7 +163,6 @@ proxy-groups:
   strategy: round-robin
   disable-udp: false
   proxies:
-  - BALANCE
   - NUSANTARA
   - SINGA
   - DIRECT

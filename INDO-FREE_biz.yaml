@@ -2,7 +2,7 @@ proxies:
 
 # Akun INDO port 443
   - name: VLESS KNC 443
-    server: 104.17.3.81
+    server: quiz.staging.vidio.com
     port: 443
     type: vless
     uuid: 80510fd1-7a7d-4b83-a3db-05fb7f23dea5
@@ -19,7 +19,7 @@ proxies:
     udp: true
 
   - name: VLESS KNC2 443
-    server: 104.17.3.81
+    server: quiz.staging.vidio.com
     port: 443
     type: vless
     uuid: 80510fd1-7a7d-4b83-a3db-05fb7f23dea5
@@ -36,7 +36,7 @@ proxies:
     udp: true
 
   - name: VMESS ID
-    server: 104.17.3.81
+    server: quiz.staging.vidio.com
     port: 80
     type: vmess
     uuid: 97cdf301-49a0-4cec-85d4-894bb84d86ab
@@ -53,7 +53,7 @@ proxies:
     udp: true
 
   - name: VLESS KNC 80
-    server: 104.17.3.81
+    server: quiz.staging.vidio.com
     port: 80
     type: vless
     uuid: 80510fd1-7a7d-4b83-a3db-05fb7f23dea5
@@ -70,7 +70,7 @@ proxies:
     udp: true
 
   - name: VLESS ID MAHAL
-    server: 104.17.3.81
+    server: quiz.staging.vidio.com
     port: 443
     type: vless
     uuid: 6e6cb97e-57ac-4e8f-ad90-2b2fbb21bc45
@@ -87,7 +87,7 @@ proxies:
     udp: true
 
   - name: VLESS ID SERVLESS
-    server: 104.17.3.81
+    server: quiz.staging.vidio.com
     port: 443
     type: vless
     uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
@@ -104,7 +104,7 @@ proxies:
     udp: true
 
   - name: VLESS ID VLCFPAGE
-    server: 104.17.3.81
+    server: quiz.staging.vidio.com
     port: 443
     type: vless
     uuid: 0bc51b14-02aa-40db-aeba-8a9569a7244d
@@ -121,7 +121,7 @@ proxies:
     udp: true
 
   - name: Akamai ID TLS
-    server: 104.17.3.81
+    server: quiz.staging.vidio.com
     port: 443
     type: vless
     uuid: e38568b2-41b1-4082-81e9-91a1a6c719b7
@@ -152,7 +152,7 @@ proxies:
         Host: mmx.vpnoir9r.us.kg
         
   - name: Google ID TLS
-    server: 104.17.3.81
+    server: quiz.staging.vidio.com
     port: 443
     type: vless
     uuid: 4ea53b3b-ce7b-40db-ad47-b61f9e62fe34
@@ -168,7 +168,7 @@ proxies:
         Host: mmx.vpnoir9r.us.kg
 
   - name: Google ID NTLS
-    server: 104.17.3.81
+    server: quiz.staging.vidio.com
     port: 80
     type: vless
     uuid: 6977baaf-b4d4-4545-ad3b-7f476e3c7a5d
@@ -183,7 +183,7 @@ proxies:
         Host: mmx.vpnoir9r.us.kg 
 
   - name: VLESS ANGGA ID1
-    server: 104.17.3.81
+    server: quiz.staging.vidio.com
     port: 443
     type: vless
     uuid: 1a225732-bf40-4bdc-bc3a-1fcb6bdd5ddd
@@ -200,7 +200,7 @@ proxies:
     udp: true
 
   - name: VLESS ANGGA ID2
-    server: 104.17.3.81
+    server: quiz.staging.vidio.com
     port: 443
     type: vless
     uuid: 1a225732-bf40-4bdc-bc3a-1fcb6bdd5ddd
@@ -217,7 +217,7 @@ proxies:
     udp: true
 
   - name: VLESS ANGGA ID3
-    server: 104.17.3.81
+    server: quiz.staging.vidio.com
     port: 443
     type: vless
     uuid: 1a225732-bf40-4bdc-bc3a-1fcb6bdd5ddd
@@ -234,7 +234,7 @@ proxies:
     udp: true
 
   - name: VLESS ANGGA ID4
-    server: 104.17.3.81
+    server: quiz.staging.vidio.com
     port: 443
     type: vless
     uuid: 1a225732-bf40-4bdc-bc3a-1fcb6bdd5ddd
@@ -251,7 +251,7 @@ proxies:
     udp: true
 
   - name: VLESS ANGGA ID5
-    server: 104.17.3.81
+    server: quiz.staging.vidio.com
     port: 443
     type: vless
     uuid: 1a225732-bf40-4bdc-bc3a-1fcb6bdd5ddd

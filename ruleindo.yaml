@@ -20,6 +20,7 @@ payload:
 - DOMAIN-SUFFIX,tri.co.id
 - DOMAIN-SUFFIX,smartfren.com
 - DOMAIN-KEYWORD,smartfren
+- DOMAIN-KEYWORD,pajak
 #media editor
 - DOMAIN-SUFFIX,huggingface.co
 - DOMAIN-SUFFIX,vidu.studio

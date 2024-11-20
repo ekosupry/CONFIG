@@ -96,7 +96,7 @@ proxy-providers:
   
 # ================= PG ==================
 proxy-groups:
-- name: SPEEDTEST ⚡
+- name: SPEEDTEST
   type: select
   strategy: round-robin
   disable-udp: false

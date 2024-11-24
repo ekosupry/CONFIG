@@ -39,6 +39,7 @@ payload:
 - DOMAIN-SUFFIX,jpg2pdf.com
 - DOMAIN-SUFFIX,shrinkpdf.com
 - DOMAIN-SUFFIX,topview.ai
+- DOMAIN-SUFFIX,snapedit.app
 #pribadi
 - DOMAIN-SUFFIX,zello.com
 - DST-PORT,28225

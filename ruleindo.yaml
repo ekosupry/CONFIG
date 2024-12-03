@@ -21,6 +21,7 @@ payload:
 - DOMAIN-SUFFIX,smartfren.com
 - DOMAIN-KEYWORD,smartfren
 - DOMAIN-KEYWORD,pajak
+- DOMAIN-SUFFIX,booking.kai.id
 #media editor
 - DOMAIN-SUFFIX,huggingface.co
 - DOMAIN-SUFFIX,vidu.studio

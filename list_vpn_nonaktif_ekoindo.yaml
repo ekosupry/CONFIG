@@ -6,12 +6,12 @@ proxies:
     type: trojan
     password: 304030a0-2349-11ef-bbed-1577c1651679
     skip-cert-verify: true
-    sni: 4-lowh.why-always.me
+    sni: 4-lowh.rimuru.My.id
     network: ws
     ws-opts:
       path: /welcome
       headers:
-        Host: 4-lowh.why-always.me
+        Host: 4-lowh.rimuru.My.id
     udp: true
 
   - name: TROJAN Biznet 443
@@ -20,12 +20,12 @@ proxies:
     type: trojan
     password: 430689a0-05fb-11ef-9733-1577c1651679
     skip-cert-verify: true
-    sni: biznet.why-always.me
+    sni: id-biznet2.rimuru.My.id
     network: ws
     ws-opts:
       path: /welcome
       headers:
-        Host: biznet.why-always.me
+        Host: id-biznet2.rimuru.My.id
     udp: true
 
   - name: VMESS SANGGORO 443
@@ -37,12 +37,12 @@ proxies:
     cipher: auto
     tls: true
     skip-cert-verify: true
-    servername: 5-lowh.why-always.me
+    servername: 5-lowh.rimuru.My.id
     network: ws
     ws-opts:
       path: /hello
       headers:
-        Host: 5-lowh.why-always.me
+        Host: 5-lowh.rimuru.My.id
     udp: true
 
   - name: VMESS ID HSP 443
@@ -54,12 +54,12 @@ proxies:
     cipher: auto
     tls: true
     skip-cert-verify: true
-    servername: hsp1.why-always.me
+    servername: hsp1.rimuru.My.id
     network: ws
     ws-opts:
       path: /hello
       headers:
-        Host: hsp1.why-always.me
+        Host: hsp1.rimuru.My.id
     udp: true
 
   - name: TROJAN ID HSP 443
@@ -68,12 +68,12 @@ proxies:
     type: trojan
     password: 90d1ddc0-4719-11ef-9f4e-1577c1651679
     skip-cert-verify: true
-    sni: hsp2.why-always.me
+    sni: hsp2.rimuru.My.id
     network: ws
     ws-opts:
       path: /welcome
       headers:
-        Host: hsp2.why-always.me
+        Host: hsp2.rimuru.My.id
     udp: true
 
 #port 80
@@ -83,12 +83,12 @@ proxies:
     type: trojan
     password: 84941e50-4717-11ef-8718-1577c1651679
     skip-cert-verify: true
-    sni: 4-lowh.why-always.me
+    sni: 4-lowh.rimuru.My.id
     network: ws
     ws-opts:
       path: /worryfree
       headers:
-        Host: 4-lowh.why-always.me
+        Host: 4-lowh.rimuru.My.id
     udp: true
 
   - name: TROJAN ID HSP 80
@@ -97,12 +97,12 @@ proxies:
     type: trojan
     password: de15ba10-4719-11ef-b018-1577c1651679
     skip-cert-verify: true
-    sni: hsp2.why-always.me
+    sni: hsp2.rimuru.My.id
     network: ws
     ws-opts:
       path: /worryfree
       headers:
-        Host: hsp2.why-always.me
+        Host: hsp2.rimuru.My.id
     udp: true
 
   - name: VMESS SANGGORO 80
@@ -114,10 +114,10 @@ proxies:
     cipher: auto
     tls: false
     skip-cert-verify: true
-    servername: 5-lowh.why-always.me
+    servername: 5-lowh.rimuru.My.id
     network: ws
     ws-opts:
       path: /worryfree
       headers:
-        Host: 5-lowh.why-always.me
+        Host: 5-lowh.rimuru.My.id
     udp: true

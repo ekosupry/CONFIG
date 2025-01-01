@@ -6,12 +6,12 @@ proxies:
     type: trojan
     password: c0367ce0-62f1-11ef-86f4-1577c1651679
     skip-cert-verify: true
-    sni: he-tj.why-always.me
+    sni: he-tj.rimuru.My.id
     network: ws
     ws-opts:
       path: /welcome
       headers:
-        Host: he-tj.why-always.me
+        Host: he-tj.rimuru.My.id
     udp: true
 
   - name: VLESS SG HE 443
@@ -23,12 +23,12 @@ proxies:
     cipher: auto
     tls: true
     skip-cert-verify: true
-    servername: he-vlws.why-always.me
+    servername: he-vlws.rimuru.My.id
     network: ws
     ws-opts:
       path: /hello
       headers:
-        Host: he-vlws.why-always.me
+        Host: he-vlws.rimuru.My.id
     udp: true
 
   - name: VLESS SG Bypass 80
@@ -40,12 +40,12 @@ proxies:
     cipher: auto
     tls: false
     skip-cert-verify: true
-    servername: he-vlws.why-always.me
+    servername: he-vlws.rimuru.My.id
     network: ws
     ws-opts:
       path: /worryfree
       headers:
-        Host: he-vlws.why-always.me
+        Host: he-vlws.rimuru.My.id
     udp: true
 
   - name: TROJAN SG HERZA 443
@@ -54,12 +54,12 @@ proxies:
     type: trojan
     password: 231f1a50-05fb-11ef-92ec-1577c1651679
     skip-cert-verify: true
-    sni: 11-lowh.why-always.me
+    sni: 11-lowh.rimuru.My.id
     network: ws
     ws-opts:
       path: /welcome
       headers:
-        Host: 11-lowh.why-always.me
+        Host: 11-lowh.rimuru.My.id
     udp: true
 
   - name: TROJAN SG Path 443
@@ -68,12 +68,12 @@ proxies:
     type: trojan
     password: 2c8085e0-234b-11ef-bfbc-1577c1651679
     skip-cert-verify: true
-    sni: path.why-always.me
+    sni: path.rimuru.My.id
     network: ws
     ws-opts:
       path: /welcome
       headers:
-        Host: path.why-always.me
+        Host: path.rimuru.My.id
     udp: true
 
   - name: VMESS SG3 HE 443
@@ -85,12 +85,12 @@ proxies:
     cipher: auto
     tls: true
     skip-cert-verify: true
-    servername: 2-htmlcdn.why-always.me
+    servername: 2-htmlcdn.rimuru.My.id
     network: ws
     ws-opts:
       path: /hello
       headers:
-        Host: 2-htmlcdn.why-always.me
+        Host: 2-htmlcdn.rimuru.My.id
     udp: true
 
   - name: VMESS XMMB+Biznet 443
@@ -119,12 +119,12 @@ proxies:
     cipher: auto
     tls: true
     skip-cert-verify: true
-    servername: 10-lowh.why-always.me
+    servername: 10-lowh.rimuru.My.id
     network: ws
     ws-opts:
       path: /hello
       headers:
-        Host: 10-lowh.why-always.me
+        Host: 10-lowh.rimuru.My.id
     udp: true
 
 # port 80
@@ -137,12 +137,12 @@ proxies:
     cipher: auto
     tls: false
     skip-cert-verify: true
-    servername: 10-lowh.why-always.me
+    servername: 10-lowh.rimuru.My.id
     network: ws
     ws-opts:
       path: /hello
       headers:
-        Host: 10-lowh.why-always.me
+        Host: 10-lowh.rimuru.My.id
     udp: true
 
   - name: VMESS SGS 80
@@ -154,12 +154,12 @@ proxies:
     cipher: auto
     tls: false
     skip-cert-verify: true
-    servername: 2-htmlcdn.why-always.me
+    servername: 2-htmlcdn.rimuru.My.id
     network: ws
     ws-opts:
       path: /worryfree
       headers:
-        Host: 2-htmlcdn.why-always.me
+        Host: 2-htmlcdn.rimuru.My.id
     udp: true
 
   - name: VMESS SG XMMB 80
@@ -185,10 +185,10 @@ proxies:
     type: trojan
     password: 7479cad0-62f5-11ef-acec-1577c1651679
     skip-cert-verify: true
-    sni: 3-lowh.why-always.me
+    sni: 3-lowh.rimuru.My.id
     network: ws
     ws-opts:
       path: /welcome
       headers:
-        Host: 3-lowh.why-always.me
+        Host: 3-lowh.rimuru.My.id
     udp: true

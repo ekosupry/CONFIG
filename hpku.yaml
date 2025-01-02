@@ -145,6 +145,7 @@ proxies:
       path: /vmessws
       headers:
         Host: do3.srpcom.online
+    udp: true
 
   - name: Afkar 1
     server: wc.vanillicon.com

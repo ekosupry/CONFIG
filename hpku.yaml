@@ -230,10 +230,6 @@ proxy-groups:
   proxies:
     -  Afkar Pro 1
     -  Afkar Pro 2
-    -  Afkar Pro 3
-    -  Afkar Pro 4
-    -  Afkar Pro 5
-    -  Afkar Pro 6
   url: 'http://www.gstatic.com/generate_204'
   interval: 300
 #Koneksi Sosmed
@@ -291,8 +287,8 @@ proxy-groups:
 - name: "AKUN BANK"
   type: select
   proxies:
-    -  BEST PING
     -  LOBBY GAME
+    -  BEST PING
     -  LOAD-BALANCE
     -  FALLBACK
     -  DIRECT

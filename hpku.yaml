@@ -116,36 +116,35 @@ proxies:
   - name: Afkar Pro 3
     server: wc.vanillicon.com
     port: 443
-    type: vless
-    uuid: 89b2cbba-e6ac-487a-9481-976a0415eab9
+    type: vmess
+    uuid: dcf43199-ff92-4224-b7cb-114a935e6925
     alterId: 0
     cipher: auto
     tls: true
     skip-cert-verify: true
-    servername: EsETSecURityLIcensE.vUhbGOL.wORkERs.dEV
+    servername: do3.srpcom.online
     network: ws
     ws-opts:
-      path: /
+      path: /vmessws
       headers:
-        Host: EsETSecURityLIcensE.vUhbGOL.wORkERs.dEV
+        Host: do3.srpcom.online
     udp: true
 
-  - name: Afkar Pro 3
+  - name: Afkar Pro 4
     server: wc.vanillicon.com
-    port: 443
-    type: vless
-    uuid: 89b2cbba-e6ac-487a-9481-976a0415eab9
+    port: 80
+    type: vmess
+    uuid: dcf43199-ff92-4224-b7cb-114a935e6925
     alterId: 0
     cipher: auto
-    tls: true
+    tls: false
     skip-cert-verify: true
-    servername: EsETSecURityLIcensE.vUhbGOL.wORkERs.dEV
+    servername: do3.srpcom.online
     network: ws
     ws-opts:
-      path: /
+      path: /vmessws
       headers:
-        Host: EsETSecURityLIcensE.vUhbGOL.wORkERs.dEV
-    udp: true
+        Host: do3.srpcom.online
 
   - name: Afkar 1
     server: wc.vanillicon.com

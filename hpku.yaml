@@ -219,7 +219,7 @@ proxies:
 proxy-groups:
 # Global kita gunakan untuk koneksi UMUM
 - name: "Global✅"
-  type: fallback
+  type: url-test
   strategy: round-robin
   disable-udp: false
   proxies:
@@ -422,7 +422,7 @@ proxy-groups:
   interval: 300
  #⬜⬜
 - name: "SERVER PRO"
-  type: fallback
+  type: url-test
   disable-udp: false
   proxies:
     -  Afkar Pro 1

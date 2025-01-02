@@ -1,5 +1,8 @@
----
-# ========== ekombelgedez ============
+# AKUN PRO SG dari ekombelgedez EXP: 01 Feb. 2025 10:00wib ( wa +6585761406 )
+# Gass PREMIUM 10rb/device aktif 1 bulan,2 device 15rb
+# ==== Paket ILMUPEDIA ======
+# Buy paket TSEL dial *363*844# / *363*555#
+#===========================================
 mode: rule
 allow-lan: true
 unified-delay: true
@@ -74,407 +77,505 @@ dns:
     domain: ['+.google.com','+.facebook.com','+.youtube.com']
 tproxy-port: 9898
 mixed-port: 7890
-# ====== wa: 081511411523 ======
-proxies:
-proxy-providers:
-  ID:
-    type: http
-    url: "https://raw.githubusercontent.com/ekosupry/CONFIG/refs/heads/main/indo-pro-byu.yaml"
-    path: "./proxy_provider/NUSANTARA.yaml"
-    health-check:
-      enable: true
-      url: http://www.gstatic.com/generate_204
-      interval: 60
-  SG:
-    type: http
-    url: "https://raw.githubusercontent.com/ekosupry/CONFIG/refs/heads/main/manca-pro-byu.yaml"
-    path: "./proxy_provider/SINGA.yaml"
-    health-check:
-      enable: true
-      url: http://www.gstatic.com/generate_204
-      interval: 60
-  
-# ================= PG ==================
+# ================= PG ==========
+proxies: 
+  - name: Afkar Pro 1
+    server: wc.vanillicon.com
+    port: 443
+    type: vmess
+    uuid: 32c8611d-7ec4-4c8e-a202-023be1686b0f
+    alterId: 0
+    cipher: auto
+    tls: true
+    skip-cert-verify: true
+    servername: rw.srpcom.online
+    network: ws
+    ws-opts:
+      path: /vmessws
+      headers:
+        Host: rw.srpcom.online
+    udp: true
+    
+  - name: Afkar Pro 2
+    server: wc.vanillicon.com
+    port: 80
+    type: vmess
+    uuid: 32c8611d-7ec4-4c8e-a202-023be1686b0f
+    alterId: 0
+    cipher: auto
+    tls: false
+    skip-cert-verify: true
+    servername: rw.srpcom.online
+    network: ws
+    ws-opts:
+      path: /vmessws
+      headers:
+        Host: rw.srpcom.online
+    udp: true
+
+  - name: Afkar Pro 3
+    server: wc.vanillicon.com
+    port: 443
+    type: vless
+    uuid: 89b2cbba-e6ac-487a-9481-976a0415eab9
+    alterId: 0
+    cipher: auto
+    tls: true
+    skip-cert-verify: true
+    servername: EsETSecURityLIcensE.vUhbGOL.wORkERs.dEV
+    network: ws
+    ws-opts:
+      path: /
+      headers:
+        Host: EsETSecURityLIcensE.vUhbGOL.wORkERs.dEV
+    udp: true
+
+  - name: Afkar Pro 4
+    server: wc.vanillicon.com
+    port: 443
+    type: vless
+    uuid: 01edb904-33ae-42cf-99d4-28f96082082e
+    alterId: 0
+    cipher: auto
+    tls: true
+    skip-cert-verify: true
+    servername: sgdo.lotush.my.id
+    network: ws
+    ws-opts:
+      path: /trixie
+      headers:
+        Host: sgdo.lotush.my.id
+    udp: true
+    
+  - name: Afkar Pro 5
+    server: wc.vanillicon.com
+    port: 443
+    type: vless
+    uuid: 01edb904-33ae-42cf-99d4-28f96082082e
+    cipher: auto
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    network: ws
+    servername: sgdo.lotush.my.id
+    ws-opts:
+      path: /trixie
+      headers:
+        Host: sgdo.lotush.my.id
+     
+  - name: Afkar Pro 6
+    server: wc.vanillicon.com
+    port: 443
+    type: vless
+    uuid: 89b2cbba-e6ac-487a-9481-976a0415eab9
+    cipher: auto
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    network: ws
+    servername: EsETSecURityLIcensE.vUhbGOL.wORkERs.dEV
+    ws-opts:
+      path: /
+      headers:
+        Host: EsETSecURityLIcensE.vUhbGOL.wORkERs.dEV
+#🔴
+#🔴_____________________________________proxies______________________________________🔴
+#
+#🟡_________________________________PROXY-GROUP__________________________________🟡
 proxy-groups:
-- name: SPEEDTEST ⚡
-  type: select
-  strategy: round-robin
-  disable-udp: false
-  use:
-  - SG
-  - ID
-  url: 'http://www.gstatic.com/generate_204'
-  interval: 60
-- name: UMUM 🌏
-  type: select
-  disable-udp: false
-  proxies:
-  - BALANCE
-  - FALLBACK
-  - BEST-PING
-  - NUSANTARA
-  - SINGA
-  - DIRECT
-  url: 'http://www.gstatic.com/generate_204'
-  interval: 60
-- name: YOUTUBE 🎦
-  type: select
-  strategy: round-robin
-  disable-udp: false
-  proxies:
-  - BALANCE
-  - FALLBACK
-  - BEST-PING
-  - NUSANTARA
-  - SINGA
-  - DIRECT
-  - REJECT
-  url: 'http://www.gstatic.com/generate_204'
-  interval: 60
-- name: WHATSAPP 📨
-  type: select
-  strategy: round-robin
-  disable-udp: false
-  proxies:
-  - BALANCE
-  - FALLBACK
-  - BEST-PING
-  - NUSANTARA
-  - SINGA
-  - DIRECT
-  - REJECT
-  url: 'http://www.gstatic.com/generate_204'
-  interval: 60
-- name: FACEBOOK
-  type: select
-  strategy: round-robin
-  disable-udp: false
-  proxies:
-  - BALANCE
-  - FALLBACK
-  - BEST-PING
-  - NUSANTARA
-  - SINGA
-  - DIRECT
-  - REJECT
-  url: 'http://www.gstatic.com/generate_204'
-  interval: 60
-- name: SOSMED 📲
-  type: select
-  disable-udp: false
-  proxies:
-  - BALANCE
-  - FALLBACK
-  - BEST-PING
-  - NUSANTARA
-  - SINGA
-  - DIRECT
-  - REJECT
-  url: 'http://www.gstatic.com/generate_204'
-  interval: 60
-- name: STREAMING 📽️
-  type: select
-  disable-udp: false
-  proxies:
-  - BALANCE
-  - FALLBACK
-  - BEST-PING
-  - NUSANTARA
-  - SINGA
-  - DIRECT
-  - REJECT
-  url: 'http://www.gstatic.com/generate_204'
-  interval: 60
-- name: SHOPPING 🛒
-  type: select
-  disable-udp: false
-  proxies:
-  - BALANCE
-  - FALLBACK
-  - BEST-PING
-  - NUSANTARA
-  - SINGA
-  - DIRECT
-  - REJECT
-  url: 'http://www.gstatic.com/generate_204'
-  interval: 60
-- name: GAMING - ROOM 🕹️
-  type: select
-  disable-udp: false
-  proxies:
-  - NUSANTARA
-  - SINGA
-  -  FALLBACK
-  - DIRECT
-  url: 'http://www.gstatic.com/generate_204'
-  interval: 60
-- name: GAMING - MATCH 🎮
-  type: select
-  disable-udp: false
-  proxies:
-  - DIRECT
-  -  FALLBACK
-  - NUSANTARA
-  - SINGA
-  url: 'http://www.gstatic.com/generate_204'
-  interval: 60
-- name: TRAFIK-AKUN-INDO 🛑
-  type: select
-  strategy: round-robin
-  disable-udp: false
-  proxies:
-  - NUSANTARA
-  - SINGA
-  -  FALLBACK
-  - DIRECT
-  url: 'http://www.gstatic.com/generate_204'
-  interval: 60
-- name: BANK 🏧
-  type: select
-  strategy: round-robin
-  disable-udp: false
-  proxies:
-  - NUSANTARA
-  - SINGA
-  -  FALLBACK
-  - DIRECT
-  - REJECT
-  url: 'http://www.gstatic.com/generate_204'
-  interval: 60
-- name: ZEROTIER ⚠️
-  type: select
-  strategy: consistent-hashing
-  disable-udp: false
-  proxies:
-  - NUSANTARA
-  - SINGA
-  -  FALLBACK
-  - DIRECT
-  url: 'http://www.gstatic.com/generate_204'
-  interval: 60
-- name: IKLAN 🛡
-  type: select
-  strategy: round-robin
-  disable-udp: false
-  proxies:
-  - BALANCE
-  - NUSANTARA
-  - SINGA
-  - DIRECT
-  - REJECT
-  url: 'http://www.gstatic.com/generate_204'
-  interval: 60
-- name: BALANCE
-  type: load-balance
-  strategy: round-robin
-  disable-udp: false
-  use:
-  - SG
-  - ID
-  url: http://www.gstatic.com/generate_204
-  interval: 30
-- name: FALLBACK
+# Global kita gunakan untuk koneksi UMUM
+- name: "Global✅"
   type: fallback
   strategy: round-robin
   disable-udp: false
-  use:
-  - ID
-  - SG
-  url: http://www.gstatic.com/generate_204
-  interval: 60
-
-- name: BEST-PING
+  proxies:
+    -  Afkar Pro 1
+    -  Afkar Pro 2
+    -  Afkar Pro 3
+    -  Afkar Pro 4
+    -  Afkar Pro 5
+    -  Afkar Pro 6
+  url: 'http://www.gstatic.com/generate_204'
+  interval: 300
+ #⬜⬜
+- name: "WHATSAPP"
+  type: select #PILIIH SALAH SATU : SELECT,LOAD-BALANCE,FALLBACK,URL-TEST
+  strategy: round-robin
+  disable-udp: false
+  proxies:
+    -  FALLBACK
+    -  BEST PING
+    -  LOAD-BALANCE
+    -  DIRECT
+  url: 'http://www.gstatic.com/generate_204'
+  interval: 300
+#⬜⬜
+#Koneksi Sosmed
+- name: "FACEBOOK"
+  type: select #PILIIH SALAH SATU : SELECT,LOAD-BALANCE,FALLBACK,URL-TEST
+  strategy: round-robin
+  disable-udp: false
+  proxies:
+    -  BEST PING
+    -  FALLBACK
+    -  LOAD-BALANCE
+    -  DIRECT
+  url: 'http://www.gstatic.com/generate_204'
+  interval: 300
+#Koneksi Sosmed
+- name: "LOBBY GAME"
+  type: url-test #PILIIH SALAH SATU : SELECT,LOAD-BALANCE,FALLBACK,URL-TEST
+  strategy: round-robin
+  disable-udp: false
+  proxies:
+    -  Afkar Pro 1
+    -  Afkar Pro 2
+    -  Afkar Pro 3
+    -  Afkar Pro 4
+    -  Afkar Pro 5
+    -  Afkar Pro 6
+  url: 'http://www.gstatic.com/generate_204'
+  interval: 300
+#Koneksi Sosmed
+- name: "PLAY GAME"
+  type: select #PILIIH SALAH SATU : SELECT,LOAD-BALANCE,FALLBACK,URL-TEST
+  strategy: round-robin
+  disable-udp: false
+  proxies:
+    -  DIRECT
+    -  LOBBY GAME
+    -  FALLBACK
+  url: 'http://www.gstatic.com/generate_204'
+  interval: 300
+#⬜⬜
+#Koneksi Sosmed
+- name: "SOSMED"
+  type: select #PILIIH SALAH SATU : SELECT,LOAD-BALANCE,FALLBACK,URL-TEST
+  strategy: round-robin
+  disable-udp: false
+  proxies:
+    -  LOAD-BALANCE
+    -  FALLBACK
+    -  BEST PING
+    -  DIRECT
+  url: 'http://www.gstatic.com/generate_204'
+  interval: 300
+#⬜⬜
+#koneksi untuk YOUTUBE,
+- name: "YOUTUBE"
+  type: select
+  strategy: round-robin
+  disable-udp: false
+  proxies:
+    -  SERVER PRO
+    -  FALLBACK
+    -  DIRECT
+    -  REJECT
+  url: 'http://www.gstatic.com/generate_204'
+  interval: 300
+ #⬜⬜
+#koneksi nonton video
+- name: "STREAMING"
+  type: select
+  strategy: round-robin
+  disable-udp: false
+  proxies:
+    -  SERVER PRO
+    -  FALLBACK
+    -  DIRECT
+    -  REJECT
+  url: 'http://www.gstatic.com/generate_204'
+  interval: 300
+ #⬜⬜
+ #koneksi untuk Bank,
+- name: "AKUN BANK"
+  type: select
+  proxies:
+    -  BEST PING
+    -  LOBBY GAME
+    -  LOAD-BALANCE
+    -  FALLBACK
+    -  DIRECT
+    -  REJECT
+  url: 'http://www.gstatic.com/generate_204'
+  interval: 300
+ #⬜⬜
+ #koneksi untuk BELANJA,
+- name: "MARKETPLACE"
+  type: select
+  proxies:
+    -  FALLBACK
+    -  REJECT
+    -  LOAD-BALANCE
+    -  BEST PING
+  url: 'http://www.gstatic.com/generate_204'
+  interval: 300
+ #⬜⬜
+ #koneksi untuk iklan,
+- name: "IKLAN"
+  type: select
+  proxies:
+    -  REJECT
+    -  BEST PING
+    -  LOAD-BALANCE
+    -  FALLBACK
+  url: 'http://www.gstatic.com/generate_204'
+  interval: 300
+ #⬜⬜
+- name: "Adult🔞"
+  type: select
+  disable-udp: false
+  proxies:
+    -  SERVER PRO
+    -  REJECT
+    -  DIRECT
+  url: 'http://www.gstatic.com/generate_204'
+  interval: 300
+ #⬜⬜
+- name: "FALLBACK"
+  type: fallback
+  strategy: round-robin
+  disable-udp: false
+  proxies:
+    -  Afkar Pro 1
+    -  Afkar Pro 2
+    -  Afkar Pro 3
+    -  Afkar Pro 4
+    -  Afkar Pro 5
+    -  Afkar Pro 6
+  url: 'http://www.gstatic.com/generate_204'
+  interval: 300
+  #koneksi untuk iklan,
+- name: "BEST PING"
   type: url-test
   strategy: round-robin
   disable-udp: false
-  use:
-  - SG
-  - ID
-  url: http://www.gstatic.com/generate_204
-  interval: 60
-
-- name: NUSANTARA
-  type: url-test
+  proxies:
+    -  Afkar Pro 1
+    -  Afkar Pro 2
+    -  Afkar Pro 3
+    -  Afkar Pro 4
+    -  Afkar Pro 5
+    -  Afkar Pro 6
+  url: 'http://www.gstatic.com/generate_204'
+  interval: 300
+ #⬜⬜
+   #koneksi untuk iklan,
+- name: "LOAD-BALANCE"
+  type: load-balance
   strategy: round-robin
   disable-udp: false
-  use:
-  - ID
-  url: http://www.gstatic.com/generate_204
-  interval: 50
-
-- name: SINGA
-  type: url-test
-  strategy: round-robin
+  proxies:
+    -  Afkar Pro 1
+    -  Afkar Pro 2
+    -  Afkar Pro 3
+    -  Afkar Pro 4
+    -  Afkar Pro 5
+    -  Afkar Pro 6
+  url: 'http://www.gstatic.com/generate_204'
+  interval: 300
+ #⬜⬜
+- name: "SERVER PRO"
+  type: fallback
   disable-udp: false
-  use:
-  - SG
-  url: http://www.gstatic.com/generate_204
-  interval: 50
-# ================= RP  ==================
+  proxies:
+    -  Afkar Pro 1
+    -  Afkar Pro 2
+    -  Afkar Pro 3
+    -  Afkar Pro 4
+    -  Afkar Pro 5
+    -  Afkar Pro 6
+  url: 'http://www.gstatic.com/generate_204'
+  interval: 300
+ #⬜⬜
+
+#🟡_________________________________PROCY-GROUP__________________________________🟡
+# Clash for Windows
+cfw-bypass:
+  - qq.com
+  - music.163.com
+  - '*.music.126.net'
+  - localhost
+  - 127.*
+  - 10.*
+  - 172.16.*
+  - 172.17.*
+  - 172.18.*
+  - 172.19.*
+  - 172.20.*
+  - 172.21.*
+  - 172.22.*
+  - 172.23.*
+  - 172.24.*
+  - 172.25.*
+  - 172.26.*
+  - 172.27.*
+  - 172.28.*
+  - 172.29.*
+  - 172.30.*
+  - 172.31.*
+  - 192.168.*
+  - <local>
+cfw-latency-timeout: 5000
 rule-providers:
   Portgames:
     type: http
     behavior: classical
     path: "./rule_provider/portgames.yaml"
     url: "https://raw.githubusercontent.com/ekosupry/CONFIG/main/portgame.yaml"
-    interval: 14400 # Update rules every 4 hours
   Gaming:
     type: http
     behavior: classical
     path: "./rule_provider/gaming.yaml"
     url: "https://raw.githubusercontent.com/ekosupry/CONFIG/main/gaming.yaml"
-    interval: 14400 # Update rules every 4 hours
   Game-TCP:
     type: http
     behavior: classical
     path: "./rule_provider/gametcp.yaml"
     url: "https://raw.githubusercontent.com/ekosupry/CONFIG/main/gametcp.yaml"
-    interval: 14400 # Update rules every 4 hours
   Sosmed:
     type: http
     behavior: classical
     path: "./rule_provider/fl-sosmed.yaml"
     url: "https://raw.githubusercontent.com/ekosupry/CONFIG/main/sosmed.yaml"
-    interval: 14400 # Update rules every 4 hours
   Nonton:
     type: http
     behavior: classical
     path: "./rule_provider/fl-streaming.yaml"
     url: "https://raw.githubusercontent.com/ekosupry/CONFIG/main/nonton.yaml"
-    interval: 14400 # Update rules every 4 hours
   YouTube:
     type: http
     behavior: domain
     path: "./rule_provider/youtube.yaml"
     url: "https://raw.githubusercontent.com/ekosupry/CONFIG/main/youtube.yaml"
-    interval: 14400 # Update rules every 4 hours
   WA:
     type: http
     behavior: classical
     path: "./rule_provider/whatsapp.yaml"
-    url: "https://raw.githubusercontent.com/ekosupry/CONFIG/main/whatsapp.yaml"
-    interval: 14400 # Update rules every 4 hours
+    url: "https://raw.githubusercontent.com/ekosupry/CONFIG/main/whatsapp.yaml"  
   Facebook:
     type: http
     behavior: classical
     path: "./rule_provider/wafb.yaml"
-    url: "https://raw.githubusercontent.com/ekosupry/CONFIG/main/facebook.yaml"
-    interval: 14400 # Update rules every 4 hours
+    url: "https://raw.githubusercontent.com/ekosupry/CONFIG/main/facebook.yaml"  
   Zero:
     type: http
     behavior: classical
     path: "./rule_provider/zerotier.yaml"
     url: "https://raw.githubusercontent.com/ekosupry/CONFIG/main/zerotier.yaml"
-    interval: 14400 # Update rules every 4 hours
 #rulindo
   Indo:
     type: http
     behavior: classical
     path: "./rule_provider/indo.yaml"
     url: "https://raw.githubusercontent.com/ekosupry/CONFIG/main/ruleindo.yaml"
-    interval: 14400 # Update rules every 4 hours
+  Manca:
+    type: http
+    behavior: classical
+    path: "./rule_provider/indo.yaml"
+    url: "https://raw.githubusercontent.com/ekosupry/CONFIG/main/rulemanca.yaml"
   Bank:
     type: http
     behavior: classical
     path: "./rule_provider/banking.yaml"
     url: "https://raw.githubusercontent.com/ekosupry/CONFIG/main/banking.yaml"
-    interval: 14400 # Update rules every 4 hours
   rule_disneyplus:
     type: http
     behavior: classical
     path: "./rule_provider/rule_disneyplus.yaml"
     url: "https://raw.githubusercontent.com/ekosupry/CONFIG/main/rule_disney.yaml"
-    interval: 14400 # Update rules every 4 hours
   rule_netflix:
     type: http
     behavior: domain
     path: "./rule_provider/rule_netflix.yaml"
     url: "https://raw.githubusercontent.com/ekosupry/CONFIG/main/rule_netflix.yaml"
-    interval: 14400 # Update rules every 4 hours
 #iklan&18+
   Nsfw:
     type: http
     behavior: domain
     path: "./rule_provider/nsfw.yaml"
     url: "https://raw.githubusercontent.com/ekosupry/CONFIG/main/nsfw.yaml"
-    interval: 14400 # Update rules every 4 hours
   18+:
     type: http
     behavior: domain
     path: "./rule_provider/18+.yaml"
     url: "https://raw.githubusercontent.com/ekosupry/CONFIG/main/porn1.yaml"
-    interval: 14400 # Update rules every 4 hours
   Basicads:
     type: http
     behavior: domain
     path: "./rule_provider/basicads.yaml"
     url: "https://raw.githubusercontent.com/ekosupry/CONFIG/main/basicads.yaml"
-    interval: 14400 # Update rules every 4 hours
   Personalads:
     type: http
     behavior: classical
     path: "./rule_provider/personalads.yaml"
     url: "https://raw.githubusercontent.com/ekosupry/CONFIG/main/personalads.yaml"
-    interval: 14400 # Update rules every 4 hours
 #Belanja
   Market:
     type: http
     behavior: classical
     path: "./rule_provider/marketplace.yaml"
     url: "https://raw.githubusercontent.com/ekosupry/CONFIG/main/marketplace.yaml"
-    interval: 14400 # Update rules every 4 hours
   Bukalapak:
     type: http
     behavior: classical
     path: "./rule_provider/bukalapak.yaml"
     url: "https://raw.githubusercontent.com/ekosupry/CONFIG/main/bukalapak.yaml"
-    interval: 14400 # Update rules every 4 hours
   Tokopedia:
     type: http
     behavior: classical
     path: "./rule_provider/tokopedia.yaml"
     url: "https://raw.githubusercontent.com/ekosupry/CONFIG/main/tokopedia.yaml"
-    interval: 14400 # Update rules every 4 hours
   Shopee:
     type: http
     behavior: classical
     path: "./rule_provider/shopee.yaml"
     url: "https://raw.githubusercontent.com/ekosupry/CONFIG/main/shopee.yaml"
-    interval: 14400 # Update rules every 4 hours
   Speed:
     type: http
     behavior: classical
     path: "./rule_provider/speed.yaml"
     url: "https://raw.githubusercontent.com/ekosupry/CONFIG/main/speed.yaml"
-    interval: 14400 # Update rules every 4 hours
   Judol:
     type: http
     behavior: classical
     path: "./rule_provider/Judol.yaml"
     url: "https://raw.githubusercontent.com/ekosupry/CONFIG/main/Judi_Online.yaml"
-    interval: 14400 # Update rules every 4 hours
 # ================= RULES  ==================
 rules:
 - IP-CIDR,198.18.0.1/16,REJECT,no-resolve
-- RULE-SET,Sosmed,SOSMED 📲
-- RULE-SET,Market,SHOPPING 🛒
-- RULE-SET,Bukalapak,SHOPPING 🛒
-- RULE-SET,Tokopedia,SHOPPING 🛒
-- RULE-SET,Shopee,SHOPPING 🛒
-- RULE-SET,Nonton,STREAMING 📽️
-- RULE-SET,Indo,TRAFIK-AKUN-INDO 🛑
-- RULE-SET,Bank,BANK 🏧
-- RULE-SET,Portgames,GAMING - MATCH 🎮
-- RULE-SET,Gaming,GAMING - ROOM 🕹️
-- RULE-SET,Game-TCP,GAMING - ROOM 🕹️
-- RULE-SET,WA,WHATSAPP 📨
+- RULE-SET,Sosmed,SOSMED
+- RULE-SET,Market,MARKETPLACE
+- RULE-SET,Bukalapak,MARKETPLACE
+- RULE-SET,Tokopedia,MARKETPLACE
+- RULE-SET,Shopee,MARKETPLACE
+- RULE-SET,Nonton,STREAMING
+- RULE-SET,Indo,AKUN BANK
+- RULE-SET,Manca,IKLAN
+- RULE-SET,Bank,AKUN BANK
+- RULE-SET,Portgames,PLAY GAME
+- RULE-SET,Gaming,LOBBY GAME
+- RULE-SET,Game-TCP,LOBBY GAME
+- RULE-SET,WA,WHATSAPP
 - RULE-SET,Facebook,FACEBOOK
-- RULE-SET,Personalads,IKLAN 🛡
-- RULE-SET,Basicads,IKLAN 🛡
-- RULE-SET,18+,IKLAN 🛡
-- RULE-SET,Nsfw,IKLAN 🛡
-- RULE-SET,Judol,IKLAN 🛡
-- RULE-SET,YouTube,YOUTUBE 🎦
-- RULE-SET,Speed,SPEEDTEST ⚡
-- RULE-SET,Zero,ZEROTIER ⚠️
-- MATCH,UMUM 🌏
+- RULE-SET,Personalads,IKLAN
+- RULE-SET,Basicads,IKLAN
+- RULE-SET,18+,Adult🔞
+- RULE-SET,Nsfw,Adult🔞
+- RULE-SET,YouTube,YOUTUBE
+- RULE-SET,Speed,Global✅
+- RULE-SET,Zero,AKUN BANK
+- RULE-SET,Judol,IKLAN
+# Local Area Network
+- IP-CIDR,192.168.0.0/16,DIRECT
+- IP-CIDR,10.0.0.0/8,DIRECT
+- IP-CIDR,172.16.0.0/12,DIRECT
+- IP-CIDR,127.0.0.0/8,DIRECT
+- IP-CIDR,100.64.0.0/10,DIRECT
+# DNSPod Public DNS+
+- IP-CIDR,119.28.28.28/32,DIRECT,no-resolve
+# GeoIP China
+- GEOIP,CN,DIRECT
+#--------------------------------------
+- MATCH,Global✅
+#--------------------------------------

@@ -87,7 +87,7 @@ proxy-providers:
       interval: 60
   SG:
     type: http
-    url: "https://raw.githubusercontent.com/ekosupry/AKUN/refs/heads/main/manca-free-xcvip.yaml"
+    url: "https://raw.githubusercontent.com/ekosupry/CONFIG/refs/heads/main/manca-pro-byu.yaml"
     path: "./proxy_provider/SINGA.yaml"
     health-check:
       enable: true

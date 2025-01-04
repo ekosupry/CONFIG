@@ -79,7 +79,7 @@ proxies:
 proxy-providers:
   SG:
     type: http
-    url: "https://raw.githubusercontent.com/ekosupry/CONFIG/main/list_vpn_nonaktif_ekosinga.yaml"
+    url: "https://raw.githubusercontent.com/ekosupry/CONFIG/refs/heads/main/manca-pro-byu.yaml"
     path: "./proxy_provider/SINGA.yaml"
     health-check:
       enable: true
@@ -87,7 +87,7 @@ proxy-providers:
       interval: 60
   ID:
     type: http
-    url: "https://raw.githubusercontent.com/ekosupry/CONFIG/main/list_vpn_nonaktif_ekoindo.yaml"
+    url: "https://raw.githubusercontent.com/ekosupry/CONFIG/refs/heads/main/indo-pro-byu.yaml"
     path: "./proxy_provider/NUSANTARA.yaml"
     health-check:
       enable: true

@@ -1,6 +1,40 @@
 proxies:
+  - name: SG Pro 3
+    server: 104.17.3.81
+    port: 443
+    type: vmess
+    uuid: dcf43199-ff92-4224-b7cb-114a935e6925
+    alterId: 0
+    cipher: auto
+    tls: true
+    skip-cert-verify: true
+    servername: do3.srpcom.online
+    network: ws
+    ws-opts:
+      path: /vmessws
+      headers:
+        Host: do3.srpcom.online
+    udp: true
+
+  - name: SG Pro 4
+    server: 104.17.3.81
+    port: 80
+    type: vmess
+    uuid: dcf43199-ff92-4224-b7cb-114a935e6925
+    alterId: 0
+    cipher: auto
+    tls: false
+    skip-cert-verify: true
+    servername: do3.srpcom.online
+    network: ws
+    ws-opts:
+      path: /vmessws
+      headers:
+        Host: do3.srpcom.online
+    udp: true
+    
   - name: VLESS SG ALIBABA 235
-    server: wc.vanillicon.com
+    server: 104.17.3.81
     port: 443
     type: vless
     uuid: 89b2cbba-e6ac-487a-9481-976a0415eab9
@@ -17,7 +51,7 @@ proxies:
     udp: true
 
   - name: VLESS SG GOOGLE
-    server: wc.vanillicon.com
+    server: 104.17.3.81
     port: 443
     type: vless
     uuid: 01edb904-33ae-42cf-99d4-28f96082082e

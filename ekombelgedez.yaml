@@ -95,7 +95,7 @@ proxy-providers:
       interval: 60
   FR:
     type: http
-    url: "https://raw.githubusercontent.com/ekosupry/CONFIG/main/freeVPN.yaml"
+    url: "https://raw.githubusercontent.com/ekosupry/AKUN/main/free-BYU.yaml"
     path: "./proxy_provider/FREE.yaml"
     health-check:
       enable: true

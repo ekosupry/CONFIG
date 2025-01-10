@@ -80,7 +80,7 @@ mixed-port: 7890
 # ================= PG ==========
 proxies: 
   - name: Afkar Pro 1
-    server: wc.vanillicon.com
+    server: openconnect.netflix.com
     port: 443
     type: vmess
     uuid: 32c8611d-7ec4-4c8e-a202-023be1686b0f
@@ -97,7 +97,7 @@ proxies:
     udp: true
     
   - name: Afkar Pro 2
-    server: wc.vanillicon.com
+    server: openconnect.netflix.com
     port: 80
     type: vmess
     uuid: 32c8611d-7ec4-4c8e-a202-023be1686b0f
@@ -114,7 +114,7 @@ proxies:
     udp: true
 
   - name: Afkar Pro 3
-    server: wc.vanillicon.com
+    server: openconnect.netflix.com
     port: 443
     type: vmess
     uuid: dcf43199-ff92-4224-b7cb-114a935e6925
@@ -131,7 +131,7 @@ proxies:
     udp: true
 
   - name: Afkar Pro 4
-    server: wc.vanillicon.com
+    server: openconnect.netflix.com
     port: 80
     type: vmess
     uuid: dcf43199-ff92-4224-b7cb-114a935e6925
@@ -148,7 +148,7 @@ proxies:
     udp: true
 
   - name: Afkar 1
-    server: wc.vanillicon.com
+    server: openconnect.netflix.com
     port: 443
     type: vless
     uuid: 89b2cbba-e6ac-487a-9481-976a0415eab9
@@ -165,7 +165,7 @@ proxies:
     udp: true
 
   - name: Afkar 2
-    server: wc.vanillicon.com
+    server: openconnect.netflix.com
     port: 443
     type: vless
     uuid: 01edb904-33ae-42cf-99d4-28f96082082e
@@ -182,7 +182,7 @@ proxies:
     udp: true
     
   - name: Afkar 3
-    server: wc.vanillicon.com
+    server: openconnect.netflix.com
     port: 443
     type: vless
     uuid: 01edb904-33ae-42cf-99d4-28f96082082e
@@ -198,7 +198,7 @@ proxies:
         Host: sgdo.lotush.my.id
      
   - name: Afkar 4
-    server: wc.vanillicon.com
+    server: openconnect.netflix.com
     port: 443
     type: vless
     uuid: 89b2cbba-e6ac-487a-9481-976a0415eab9

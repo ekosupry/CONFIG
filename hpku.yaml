@@ -1,4 +1,4 @@
-# AKUN PRO SG dari ekombelgedez EXP: 01 Feb. 2025 10:00wib ( wa +6585761406 )
+# AKUN PRO SG dari ekombelgedez EXP: 04 Maret 2025 07:42wib ( wa +6585761406 )
 # Gass PREMIUM 10rb/device aktif 1 bulan,2 device 15rb
 # ==== Paket ILMUPEDIA ======
 # Buy paket TSEL dial *363*844# / *363*555#
@@ -83,68 +83,68 @@ proxies:
     server: 104.17.3.81
     port: 443
     type: vmess
-    uuid: 32c8611d-7ec4-4c8e-a202-023be1686b0f
+    uuid: ac5564cb-e1ac-4953-92f9-252013f89796
     alterId: 0
     cipher: auto
     tls: true
     skip-cert-verify: true
-    servername: rw.srpcom.online
+    servername: ca.srpcom.online
     network: ws
     ws-opts:
       path: /vmessws
       headers:
-        Host: rw.srpcom.online
+        Host: ca.srpcom.online
     udp: true
     
   - name: Afkar Pro 2
     server: 104.17.3.81
     port: 80
     type: vmess
-    uuid: 32c8611d-7ec4-4c8e-a202-023be1686b0f
+    uuid: ac5564cb-e1ac-4953-92f9-252013f89796
     alterId: 0
     cipher: auto
     tls: false
     skip-cert-verify: true
-    servername: rw.srpcom.online
+    servername: ca.srpcom.online
     network: ws
     ws-opts:
       path: /vmessws
       headers:
-        Host: rw.srpcom.online
+        Host: ca.srpcom.online
     udp: true
 
   - name: Afkar Pro 3
-    server: 104.17.3.81
+    server: 104.18.3.2
     port: 443
     type: vmess
-    uuid: dcf43199-ff92-4224-b7cb-114a935e6925
+    uuid: ac5564cb-e1ac-4953-92f9-252013f89796
     alterId: 0
     cipher: auto
     tls: true
     skip-cert-verify: true
-    servername: do3.srpcom.online
+    servername: ca.srpcom.online
     network: ws
     ws-opts:
       path: /vmessws
       headers:
-        Host: do3.srpcom.online
+        Host: ca.srpcom.online
     udp: true
 
   - name: Afkar Pro 4
     server: 104.17.3.81
     port: 80
     type: vmess
-    uuid: dcf43199-ff92-4224-b7cb-114a935e6925
+    uuid: ac5564cb-e1ac-4953-92f9-252013f89796
     alterId: 0
     cipher: auto
     tls: false
     skip-cert-verify: true
-    servername: do3.srpcom.online
+    servername: ca.srpcom.online
     network: ws
     ws-opts:
       path: /vmessws
       headers:
-        Host: do3.srpcom.online
+        Host: ca.srpcom.online
     udp: true
 
   - name: Afkar 1
@@ -182,7 +182,7 @@ proxies:
     udp: true
     
   - name: Afkar 3
-    server: 104.17.3.81
+    server: 104.18.3.2
     port: 443
     type: vless
     uuid: 01edb904-33ae-42cf-99d4-28f96082082e
@@ -212,6 +212,38 @@ proxies:
       path: /
       headers:
         Host: EsETSecURityLIcensE.vUhbGOL.wORkERs.dEV
+
+  - name: Afkar 5
+    server: 104.18.3.2
+    port: 443
+    type: vless
+    uuid: 80510fd1-7a7d-4b83-a3db-05fb7f23dea5
+    cipher: auto
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    network: ws
+    servername: id.knc.my.id
+    ws-opts:
+      path: /?ed=2048
+      headers:
+        Host: id.knc.my.id
+
+  - name: Afkar 6
+    server: 104.18.3.2
+    port: 80
+    type: vless
+    uuid: 80510fd1-7a7d-4b83-a3db-05fb7f23dea5
+    cipher: auto
+    tls: false
+    udp: true
+    skip-cert-verify: true
+    network: ws
+    servername: id.knc.my.id
+    ws-opts:
+      path: /?ed=2048
+      headers:
+        Host: id.knc.my.id
 #🔴
 #🔴_____________________________________proxies______________________________________🔴
 #
@@ -219,7 +251,7 @@ proxies:
 proxy-groups:
 # Global kita gunakan untuk koneksi UMUM
 - name: "Global✅"
-  type: url-test
+  type: fallback
   strategy: round-robin
   disable-udp: false
   proxies:
@@ -231,6 +263,8 @@ proxy-groups:
     -  Afkar 2
     -  Afkar 3
     -  Afkar 4
+    -  Afkar 5
+    -  Afkar 6
   url: 'http://www.gstatic.com/generate_204'
   interval: 300
  #⬜⬜
@@ -239,8 +273,8 @@ proxy-groups:
   strategy: round-robin
   disable-udp: false
   proxies:
-    -  SERVER PRO
     -  FALLBACK
+    -  SERVER PRO
     -  BEST PING
     -  LOAD-BALANCE
     -  DIRECT
@@ -268,6 +302,8 @@ proxy-groups:
   proxies:
     -  Afkar Pro 1
     -  Afkar Pro 2
+    -  Afkar Pro 3
+    -  Afkar Pro 4
   url: 'http://www.gstatic.com/generate_204'
   interval: 300
 #Koneksi Sosmed
@@ -303,8 +339,8 @@ proxy-groups:
   strategy: round-robin
   disable-udp: false
   proxies:
-    -  SERVER PRO
     -  FALLBACK
+    -  SERVER PRO
     -  BEST PING
     -  DIRECT
     -  REJECT
@@ -317,8 +353,8 @@ proxy-groups:
   strategy: round-robin
   disable-udp: false
   proxies:
-    -  SERVER PRO
     -  FALLBACK
+    -  SERVER PRO
     -  BEST PING
     -  DIRECT
     -  REJECT
@@ -343,11 +379,12 @@ proxy-groups:
 - name: "MARKETPLACE"
   type: select
   proxies:
-    -  REJECT
     -  FALLBACK
     -  LOAD-BALANCE
     -  BEST PING
     -  SERVER PRO
+    -  REJECT
+    -  DIRECT
   url: 'http://www.gstatic.com/generate_204'
   interval: 300
  #⬜⬜
@@ -385,6 +422,8 @@ proxy-groups:
     -  Afkar 2
     -  Afkar 3
     -  Afkar 4
+    -  Afkar 5
+    -  Afkar 6
   url: 'http://www.gstatic.com/generate_204'
   interval: 300
   #koneksi untuk iklan,
@@ -401,6 +440,8 @@ proxy-groups:
     -  Afkar 2
     -  Afkar 3
     -  Afkar 4
+    -  Afkar 5
+    -  Afkar 6
   url: 'http://www.gstatic.com/generate_204'
   interval: 300
  #⬜⬜
@@ -418,6 +459,8 @@ proxy-groups:
     -  Afkar 2
     -  Afkar 3
     -  Afkar 4
+    -  Afkar 5
+    -  Afkar 6
   url: 'http://www.gstatic.com/generate_204'
   interval: 300
  #⬜⬜

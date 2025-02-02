@@ -1,4 +1,4 @@
-# AKUN PRO ID dari ekombelgedez EXP: 04 Maret. 2025 07:43:11wib ( wa +6585761406 )
+# AKUN PRO SG dari ekombelgedez EXP: 04 Maret 2025 07:43:11 wib ( wa +6585761406 )
 # Gass PREMIUM 10rb/device aktif 1 bulan,2 device 15rb
 # ==== Paket ILMUPEDIA ======
 # Buy paket TSEL dial *363*844# / *363*555#
@@ -57,7 +57,7 @@ dns:
   ipv6: true
   prefer-h3: false
   default-nameserver:
-    - 1.1.1.1
+    - 94.140.14.14
   listen: 0.0.0.0:1053
   use-hosts: true
   enhanced-mode: fake-ip
@@ -67,7 +67,7 @@ dns:
     "*.localhost",
   ]
   nameserver:
-    - 1.0.0.1
+    - 94.140.14.14
   fallback: []
   fallback-filter:
     geoip: false
@@ -84,62 +84,104 @@ proxies:
     port: 443
     type: vmess
     uuid: ac5564cb-e1ac-4953-92f9-252013f89796
+    alterId: 0
     cipher: auto
     tls: true
-    udp: true
     skip-cert-verify: true
-    network: ws
     servername: ca.srpcom.online
+    network: ws
     ws-opts:
       path: /vmessws
       headers:
         Host: ca.srpcom.online
-        
+    udp: true
+    
   - name: Afkar Pro 2
     server: space.byu.id
     port: 80
     type: vmess
     uuid: ac5564cb-e1ac-4953-92f9-252013f89796
+    alterId: 0
     cipher: auto
     tls: false
-    udp: true
     skip-cert-verify: true
-    network: ws
     servername: ca.srpcom.online
+    network: ws
     ws-opts:
       path: /vmessws
       headers:
         Host: ca.srpcom.online
-        
+    udp: true
+
   - name: Afkar Pro 3
     server: space.byu.id
     port: 443
     type: vmess
-    password: ac5564cb-e1ac-4953-92f9-252013f89796
-    network: grpc
-    sni: ca.srpcom.online
-    skip-cert-verify: true
-    udp: true
-    grpc-opts:
-      grpc-service-name: vmessws
-
-  - name: Afkar Pro 4
-    server: space.byu.id
-    port: 443
-    type: vmess
     uuid: ac5564cb-e1ac-4953-92f9-252013f89796
+    alterId: 0
     cipher: auto
     tls: true
-    udp: true
     skip-cert-verify: true
-    network: ws
     servername: ca.srpcom.online
+    network: ws
     ws-opts:
       path: /vmessws
       headers:
         Host: ca.srpcom.online
+    udp: true
+
+  - name: Afkar Pro 4
+    server: space.byu.id
+    port: 80
+    type: vmess
+    uuid: ac5564cb-e1ac-4953-92f9-252013f89796
+    alterId: 0
+    cipher: auto
+    tls: false
+    skip-cert-verify: true
+    servername: ca.srpcom.online
+    network: ws
+    ws-opts:
+      path: /vmessws
+      headers:
+        Host: ca.srpcom.online
+    udp: true
+
+  - name: Afkar 1
+    server: space.byu.id
+    port: 443
+    type: vless
+    uuid: 89b2cbba-e6ac-487a-9481-976a0415eab9
+    alterId: 0
+    cipher: auto
+    tls: true
+    skip-cert-verify: true
+    servername: EsETSecURityLIcensE.vUhbGOL.wORkERs.dEV
+    network: ws
+    ws-opts:
+      path: /
+      headers:
+        Host: EsETSecURityLIcensE.vUhbGOL.wORkERs.dEV
+    udp: true
+
+  - name: Afkar 2
+    server: space.byu.id
+    port: 443
+    type: vless
+    uuid: 01edb904-33ae-42cf-99d4-28f96082082e
+    alterId: 0
+    cipher: auto
+    tls: true
+    skip-cert-verify: true
+    servername: sgdo.lotush.my.id
+    network: ws
+    ws-opts:
+      path: /trixie
+      headers:
+        Host: sgdo.lotush.my.id
+    udp: true
     
-  - name: Afkar Pro 5
+  - name: Afkar 3
     server: space.byu.id
     port: 443
     type: vless
@@ -155,7 +197,7 @@ proxies:
       headers:
         Host: sgdo.lotush.my.id
      
-  - name: Afkar Pro 6
+  - name: Afkar 4
     server: space.byu.id
     port: 443
     type: vless
@@ -171,7 +213,7 @@ proxies:
       headers:
         Host: EsETSecURityLIcensE.vUhbGOL.wORkERs.dEV
 
-  - name: Afkar Pro 7
+  - name: Afkar 5
     server: space.byu.id
     port: 443
     type: vless
@@ -187,7 +229,7 @@ proxies:
       headers:
         Host: id.knc.my.id
 
-  - name: Afkar Pro 8
+  - name: Afkar 6
     server: space.byu.id
     port: 80
     type: vless
@@ -217,10 +259,12 @@ proxy-groups:
     -  Afkar Pro 2
     -  Afkar Pro 3
     -  Afkar Pro 4
-    -  Afkar Pro 5
-    -  Afkar Pro 6
-    -  Afkar Pro 7
-    -  Afkar Pro 8
+    -  Afkar 1
+    -  Afkar 2
+    -  Afkar 3
+    -  Afkar 4
+    -  Afkar 5
+    -  Afkar 6
   url: 'http://www.gstatic.com/generate_204'
   interval: 300
  #⬜⬜
@@ -230,9 +274,9 @@ proxy-groups:
   disable-udp: false
   proxies:
     -  FALLBACK
+    -  SERVER PRO
     -  BEST PING
     -  LOAD-BALANCE
-    -  SERVER PRO
     -  DIRECT
   url: 'http://www.gstatic.com/generate_204'
   interval: 300
@@ -243,16 +287,16 @@ proxy-groups:
   strategy: round-robin
   disable-udp: false
   proxies:
-    -  SERVER PRO
     -  BEST PING
     -  FALLBACK
     -  LOAD-BALANCE
+    -  SERVER PRO
     -  DIRECT
   url: 'http://www.gstatic.com/generate_204'
   interval: 300
 #Koneksi Sosmed
 - name: "LOBBY GAME"
-  type: fallback #PILIIH SALAH SATU : SELECT,LOAD-BALANCE,FALLBACK,URL-TEST
+  type: url-test #PILIIH SALAH SATU : SELECT,LOAD-BALANCE,FALLBACK,URL-TEST
   strategy: round-robin
   disable-udp: false
   proxies:
@@ -260,10 +304,6 @@ proxy-groups:
     -  Afkar Pro 2
     -  Afkar Pro 3
     -  Afkar Pro 4
-    -  Afkar Pro 5
-    -  Afkar Pro 6
-    -  Afkar Pro 7
-    -  Afkar Pro 8
   url: 'http://www.gstatic.com/generate_204'
   interval: 300
 #Koneksi Sosmed
@@ -274,6 +314,7 @@ proxy-groups:
   proxies:
     -  DIRECT
     -  LOBBY GAME
+    -  SERVER PRO
     -  FALLBACK
   url: 'http://www.gstatic.com/generate_204'
   interval: 300
@@ -288,7 +329,6 @@ proxy-groups:
     -  FALLBACK
     -  BEST PING
     -  SERVER PRO
-    -  FALLBACK
     -  DIRECT
   url: 'http://www.gstatic.com/generate_204'
   interval: 300
@@ -299,8 +339,9 @@ proxy-groups:
   strategy: round-robin
   disable-udp: false
   proxies:
-    -  SERVER PRO
     -  FALLBACK
+    -  SERVER PRO
+    -  BEST PING
     -  DIRECT
     -  REJECT
   url: 'http://www.gstatic.com/generate_204'
@@ -312,8 +353,9 @@ proxy-groups:
   strategy: round-robin
   disable-udp: false
   proxies:
-    -  SERVER PRO
     -  FALLBACK
+    -  SERVER PRO
+    -  BEST PING
     -  DIRECT
     -  REJECT
   url: 'http://www.gstatic.com/generate_204'
@@ -323,10 +365,11 @@ proxy-groups:
 - name: "AKUN BANK"
   type: select
   proxies:
-    -  FALLBACK
-    -  BEST PING
     -  LOBBY GAME
+    -  BEST PING
     -  LOAD-BALANCE
+    -  FALLBACK
+    -  SERVER PRO
     -  DIRECT
     -  REJECT
   url: 'http://www.gstatic.com/generate_204'
@@ -336,10 +379,12 @@ proxy-groups:
 - name: "MARKETPLACE"
   type: select
   proxies:
-    -  BEST PING
     -  FALLBACK
     -  LOAD-BALANCE
+    -  BEST PING
+    -  SERVER PRO
     -  REJECT
+    -  DIRECT
   url: 'http://www.gstatic.com/generate_204'
   interval: 300
  #⬜⬜
@@ -358,9 +403,9 @@ proxy-groups:
   type: select
   disable-udp: false
   proxies:
+    -  SERVER PRO
     -  REJECT
     -  DIRECT
-    -  SERVER PRO
   url: 'http://www.gstatic.com/generate_204'
   interval: 300
  #⬜⬜
@@ -373,10 +418,12 @@ proxy-groups:
     -  Afkar Pro 2
     -  Afkar Pro 3
     -  Afkar Pro 4
-    -  Afkar Pro 5
-    -  Afkar Pro 6
-    -  Afkar Pro 7
-    -  Afkar Pro 8
+    -  Afkar 1
+    -  Afkar 2
+    -  Afkar 3
+    -  Afkar 4
+    -  Afkar 5
+    -  Afkar 6
   url: 'http://www.gstatic.com/generate_204'
   interval: 300
   #koneksi untuk iklan,
@@ -389,10 +436,12 @@ proxy-groups:
     -  Afkar Pro 2
     -  Afkar Pro 3
     -  Afkar Pro 4
-    -  Afkar Pro 5
-    -  Afkar Pro 6
-    -  Afkar Pro 7
-    -  Afkar Pro 8
+    -  Afkar 1
+    -  Afkar 2
+    -  Afkar 3
+    -  Afkar 4
+    -  Afkar 5
+    -  Afkar 6
   url: 'http://www.gstatic.com/generate_204'
   interval: 300
  #⬜⬜
@@ -406,24 +455,26 @@ proxy-groups:
     -  Afkar Pro 2
     -  Afkar Pro 3
     -  Afkar Pro 4
-    -  Afkar Pro 5
-    -  Afkar Pro 6
-    -  Afkar Pro 7
-    -  Afkar Pro 8
+    -  Afkar 1
+    -  Afkar 2
+    -  Afkar 3
+    -  Afkar 4
+    -  Afkar 5
+    -  Afkar 6
   url: 'http://www.gstatic.com/generate_204'
   interval: 300
  #⬜⬜
 - name: "SERVER PRO"
-  type: fallback
+  type: url-test
   disable-udp: false
   proxies:
     -  Afkar Pro 1
     -  Afkar Pro 2
     -  Afkar Pro 3
+    -  Afkar Pro 4
   url: 'http://www.gstatic.com/generate_204'
   interval: 300
  #⬜⬜
-
 #🟡_________________________________PROCY-GROUP__________________________________🟡
 # Clash for Windows
 cfw-bypass:

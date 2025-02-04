@@ -80,7 +80,7 @@ mixed-port: 7890
 # ================= PG ==========
 proxies: 
   - name: Afkar Pro 1
-    server: space.byu.id
+    server: wc.vanillicon.com
     port: 443
     type: vmess
     uuid: ac5564cb-e1ac-4953-92f9-252013f89796
@@ -97,7 +97,7 @@ proxies:
     udp: true
     
   - name: Afkar Pro 2
-    server: space.byu.id
+    server: wc.vanillicon.com
     port: 80
     type: vmess
     uuid: ac5564cb-e1ac-4953-92f9-252013f89796
@@ -114,7 +114,7 @@ proxies:
     udp: true
 
   - name: Afkar Pro 3
-    server: space.byu.id
+    server: wc.vanillicon.com
     port: 443
     type: vmess
     uuid: ac5564cb-e1ac-4953-92f9-252013f89796
@@ -131,7 +131,7 @@ proxies:
     udp: true
 
   - name: Afkar Pro 4
-    server: space.byu.id
+    server: wc.vanillicon.com
     port: 80
     type: vmess
     uuid: ac5564cb-e1ac-4953-92f9-252013f89796
@@ -148,7 +148,7 @@ proxies:
     udp: true
 
   - name: Afkar 1
-    server: space.byu.id
+    server: wc.vanillicon.com
     port: 443
     type: vless
     uuid: 89b2cbba-e6ac-487a-9481-976a0415eab9
@@ -165,7 +165,7 @@ proxies:
     udp: true
 
   - name: Afkar 2
-    server: space.byu.id
+    server: wc.vanillicon.com
     port: 443
     type: vless
     uuid: 01edb904-33ae-42cf-99d4-28f96082082e
@@ -182,7 +182,7 @@ proxies:
     udp: true
     
   - name: Afkar 3
-    server: space.byu.id
+    server: wc.vanillicon.com
     port: 443
     type: vless
     uuid: 01edb904-33ae-42cf-99d4-28f96082082e
@@ -198,7 +198,7 @@ proxies:
         Host: sgdo.lotush.my.id
      
   - name: Afkar 4
-    server: space.byu.id
+    server: wc.vanillicon.com
     port: 443
     type: vless
     uuid: 89b2cbba-e6ac-487a-9481-976a0415eab9
@@ -214,7 +214,7 @@ proxies:
         Host: EsETSecURityLIcensE.vUhbGOL.wORkERs.dEV
 
   - name: Afkar 5
-    server: space.byu.id
+    server: wc.vanillicon.com
     port: 443
     type: vless
     uuid: 80510fd1-7a7d-4b83-a3db-05fb7f23dea5
@@ -230,7 +230,7 @@ proxies:
         Host: id.knc.my.id
 
   - name: Afkar 6
-    server: space.byu.id
+    server: wc.vanillicon.com
     port: 80
     type: vless
     uuid: 80510fd1-7a7d-4b83-a3db-05fb7f23dea5
@@ -244,6 +244,53 @@ proxies:
       path: /?ed=2048
       headers:
         Host: id.knc.my.id
+
+  - name: Afkar 7
+    server: wc.vanillicon.com
+    port: 443
+    type: vless
+    uuid: 9e60d8e1-ee89-4041-bb6e-ce95e6219711
+    cipher: auto
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    network: ws
+    servername: bt-be2u8.tepllovpn.eu.org
+    ws-opts:
+      path: /vmess
+      headers:
+        Host: bt-be2u8.tepllovpn.eu.org
+
+  - name: Afkar 8
+    server: wc.vanillicon.com
+    port: 80
+    type: vless
+    uuid: 9e60d8e1-ee89-4041-bb6e-ce95e6219711
+    cipher: auto
+    tls: false
+    udp: true
+    skip-cert-verify: true
+    network: ws
+    servername: bt-be2u8.tepllovpn.eu.org
+    ws-opts:
+      path: /vmess
+      headers:
+        Host: bt-be2u8.tepllovpn.eu.org
+
+  - name: Afkar 9
+    type: vmess
+    server: wc.vanillicon.com
+    port: 443
+    uuid: 9e60d8e1-ee89-4041-bb6e-ce95e6219711
+    alterId: 0
+    cipher: auto
+    udp: true
+    skip-cert-verify: true
+    tls: true
+    servername: bt-be2u8.tepllovpn.eu.org
+    network: grpc
+    grpc-opts:
+      grpc-service-name: vmess-grpc
 #🔴
 #🔴_____________________________________proxies______________________________________🔴
 #
@@ -265,6 +312,9 @@ proxy-groups:
     -  Afkar 4
     -  Afkar 5
     -  Afkar 6
+    -  Afkar 7
+    -  Afkar 8
+    -  Afkar 9
   url: 'http://www.gstatic.com/generate_204'
   interval: 300
  #⬜⬜
@@ -424,6 +474,9 @@ proxy-groups:
     -  Afkar 4
     -  Afkar 5
     -  Afkar 6
+    -  Afkar 7
+    -  Afkar 8
+    -  Afkar 9
   url: 'http://www.gstatic.com/generate_204'
   interval: 300
   #koneksi untuk iklan,
@@ -442,6 +495,9 @@ proxy-groups:
     -  Afkar 4
     -  Afkar 5
     -  Afkar 6
+    -  Afkar 7
+    -  Afkar 8
+    -  Afkar 9
   url: 'http://www.gstatic.com/generate_204'
   interval: 300
  #⬜⬜
@@ -461,6 +517,9 @@ proxy-groups:
     -  Afkar 4
     -  Afkar 5
     -  Afkar 6
+    -  Afkar 7
+    -  Afkar 8
+    -  Afkar 9
   url: 'http://www.gstatic.com/generate_204'
   interval: 300
  #⬜⬜

@@ -43,6 +43,7 @@ payload:
 - DOMAIN-SUFFIX,snapedit.app
 #pribadi
 - DOMAIN-SUFFIX,zello.com
+- DOMAIN-SUFFIX,gea.ptcri.com
 - DST-PORT,28225
 - DOMAIN-SUFFIX,yandex.com
 - DOMAIN-SUFFIX,yandex.net

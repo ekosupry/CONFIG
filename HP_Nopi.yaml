@@ -80,7 +80,7 @@ mixed-port: 7890
 # ================= PG ==========
 proxies: 
   - name: Afkar Pro 1
-    server: wc.vanillicon.com
+    server: cache.netflix.com
     port: 443
     type: vmess
     uuid: ac5564cb-e1ac-4953-92f9-252013f89796
@@ -97,7 +97,7 @@ proxies:
     udp: true
     
   - name: Afkar Pro 2
-    server: wc.vanillicon.com
+    server: cache.netflix.com
     port: 80
     type: vmess
     uuid: ac5564cb-e1ac-4953-92f9-252013f89796
@@ -114,7 +114,7 @@ proxies:
     udp: true
 
   - name: Afkar Pro 3
-    server: wc.vanillicon.com
+    server: cache.netflix.com
     port: 443
     type: vmess
     uuid: ac5564cb-e1ac-4953-92f9-252013f89796
@@ -131,7 +131,7 @@ proxies:
     udp: true
 
   - name: Afkar Pro 4
-    server: wc.vanillicon.com
+    server: cache.netflix.com
     port: 80
     type: vmess
     uuid: ac5564cb-e1ac-4953-92f9-252013f89796

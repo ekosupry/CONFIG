@@ -1,5 +1,17 @@
 proxies:
 # Akun INDO port 443
+  - name: GRPC 443
+    type: trojan
+    server: 104.17.3.81
+    port: 443
+    password: 9f8532db-b031-4c4c-89fc-8f074df1e1c7
+    udp: true
+    sni: kanggacor.vip-premium.cloud
+    skip-cert-verify: true
+    network: grpc
+    grpc-opts:
+      grpc-service-name: trojan-grpc
+
   - name: VLESS KNC 443
     server: 104.17.3.81
     port: 443

@@ -86,7 +86,7 @@ proxies:
     udp: true
 
 
-  - name: EDISI RAMADHAN
+  - name: EDISI RAMADHAN 443
     server: cache.netflix.com
     port: 443
     type: trojan

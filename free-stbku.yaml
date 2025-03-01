@@ -35,6 +35,20 @@ proxies:
         Host: id2.knc.my.id
     udp: true
 
+  - name: EDISI RAMADHAN
+    server: cache.netflix.com
+    port: 443
+    type: trojan
+    password: 9f8532db-b031-4c4c-89fc-8f074df1e1c7
+    skip-cert-verify: true
+    sni: kanggacor.vip-premium.cloud
+    network: ws
+    ws-opts:
+      path: /trojan-ws
+      headers:
+        Host: kanggacor.vip-premium.cloud
+    udp: true
+
   - name: VMESS ID
     server: 104.17.3.81
     port: 80

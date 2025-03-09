@@ -67,6 +67,8 @@ dns:
     "*.localhost",
   ]
   nameserver:
+    - 1.1.1.1
+    - 8.8.8.8
     - 94.140.14.14
   fallback: []
   fallback-filter:
@@ -80,7 +82,7 @@ mixed-port: 7890
 # ================= PG ==========
 proxies: 
   - name: Afkar Pro 1
-    server: 104.17.3.81
+    server: 104.17.237.25
     port: 443
     type: vmess
     uuid: ac5564cb-e1ac-4953-92f9-252013f89796
@@ -97,7 +99,7 @@ proxies:
     udp: true
     
   - name: Afkar Pro 2
-    server: 104.17.3.81
+    server: 104.17.237.25
     port: 80
     type: vmess
     uuid: ac5564cb-e1ac-4953-92f9-252013f89796
@@ -114,7 +116,7 @@ proxies:
     udp: true
 
   - name: Afkar Pro 3
-    server: 104.18.3.2
+    server: cache.netflix.com
     port: 443
     type: vmess
     uuid: ac5564cb-e1ac-4953-92f9-252013f89796
@@ -131,7 +133,7 @@ proxies:
     udp: true
 
   - name: Afkar Pro 4
-    server: 104.17.3.81
+    server: 104.17.237.25
     port: 80
     type: vmess
     uuid: ac5564cb-e1ac-4953-92f9-252013f89796
@@ -148,7 +150,7 @@ proxies:
     udp: true
 
   - name: Afkar 1
-    server: 104.17.3.81
+    server: 104.17.237.25
     port: 443
     type: vless
     uuid: 89b2cbba-e6ac-487a-9481-976a0415eab9
@@ -165,7 +167,7 @@ proxies:
     udp: true
 
   - name: Afkar 2
-    server: 104.17.3.81
+    server: 104.17.237.25
     port: 443
     type: vless
     uuid: 01edb904-33ae-42cf-99d4-28f96082082e
@@ -182,7 +184,7 @@ proxies:
     udp: true
     
   - name: Afkar 3
-    server: 104.18.3.2
+    server: cache.netflix.com
     port: 443
     type: vless
     uuid: 01edb904-33ae-42cf-99d4-28f96082082e
@@ -198,7 +200,7 @@ proxies:
         Host: sgdo.lotush.my.id
      
   - name: Afkar 4
-    server: 104.17.3.81
+    server: 104.17.237.25
     port: 443
     type: vless
     uuid: 89b2cbba-e6ac-487a-9481-976a0415eab9
@@ -214,7 +216,7 @@ proxies:
         Host: EsETSecURityLIcensE.vUhbGOL.wORkERs.dEV
 
   - name: Afkar 5
-    server: 104.18.3.2
+    server: cache.netflix.com
     port: 443
     type: vless
     uuid: 80510fd1-7a7d-4b83-a3db-05fb7f23dea5
@@ -230,7 +232,7 @@ proxies:
         Host: id.knc.my.id
 
   - name: Afkar 6
-    server: 104.18.3.2
+    server: cache.netflix.com
     port: 80
     type: vless
     uuid: 80510fd1-7a7d-4b83-a3db-05fb7f23dea5

@@ -41,9 +41,9 @@ payload:
 - DOMAIN-SUFFIX,shrinkpdf.com
 - DOMAIN-SUFFIX,topview.ai
 - DOMAIN-SUFFIX,snapedit.app
+- DOMAIN-SUFFIX,heygen.com
 #pribadi
 - DOMAIN-SUFFIX,zello.com
-- DOMAIN-SUFFIX,heygen.com
 - DOMAIN-SUFFIX,otp.lanciaw.biz.id/
 - DOMAIN-SUFFIX,gea.ptcri.com
 - DST-PORT,28225

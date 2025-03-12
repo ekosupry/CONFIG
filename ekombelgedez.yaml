@@ -281,7 +281,7 @@ proxy-groups:
   - REJECT
   url: 'http://www.gstatic.com/generate_204'
   interval: 60
-- name: STOP 🔞
+- name: AKSES 🔞
   type: select
   strategy: round-robin
   disable-udp: false
@@ -507,8 +507,8 @@ rules:
 - RULE-SET,Facebook,FACEBOOK
 - RULE-SET,Personalads,IKLAN 🛡
 - RULE-SET,Basicads,IKLAN 🛡
-- RULE-SET,18+,STOP 🔞
-- RULE-SET,Nsfw,STOP 🔞
+- RULE-SET,18+,AKSES 🔞
+- RULE-SET,Nsfw,AKSES 🔞
 - RULE-SET,Judol,IKLAN 🛡
 - RULE-SET,YouTube,YOUTUBE 🎦
 - RULE-SET,Speed,SPEEDTEST ⚡

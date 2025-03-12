@@ -54,7 +54,7 @@ dns:
   ipv6: true
   prefer-h3: false
   default-nameserver:
-    - 94.140.14.14
+    - 1.1.1.1
   listen: 0.0.0.0:1053
   use-hosts: true
   enhanced-mode: fake-ip
@@ -64,7 +64,7 @@ dns:
     "*.localhost",
   ]
   nameserver:
-    - 94.140.14.14
+    - 1.1.1.1
   fallback: []
   fallback-filter:
     geoip: false
@@ -77,39 +77,40 @@ mixed-port: 7890
 # ====== wa: 081511411523 ======
 proxies:
 proxy-providers:
-  SG:
+  ID:
     type: http
-    url: "https://raw.githubusercontent.com/ekosupry/CONFIG/refs/heads/main/manca-pro-byu.yaml"
-    path: "./proxy_provider/SINGA.yaml"
+    url: "https://raw.githubusercontent.com/ekosupry/AKUN/main/indo-stbku.yaml"
+    path: "./proxy_provider/NUSANTARA.yaml"
     health-check:
       enable: true
       url: http://www.gstatic.com/generate_204
       interval: 60
-  ID:
+  SG:
     type: http
-    url: "https://raw.githubusercontent.com/ekosupry/CONFIG/refs/heads/main/indo-pro-byu.yaml"
-    path: "./proxy_provider/NUSANTARA.yaml"
+    url: "https://raw.githubusercontent.com/ekosupry/AKUN/main/manca-stbku.yaml"
+    path: "./proxy_provider/SINGA.yaml"
     health-check:
       enable: true
       url: http://www.gstatic.com/generate_204
       interval: 60
   FR:
     type: http
-    url: "https://raw.githubusercontent.com/ekosupry/AKUN/main/free-BYU.yaml"
+    url: "https://raw.githubusercontent.com/ekosupry/CONFIG/main/free-stbku.yaml"
     path: "./proxy_provider/FREE.yaml"
     health-check:
       enable: true
       url: http://www.gstatic.com/generate_204
       interval: 60
+  
 # ================= PG ==================
 proxy-groups:
 - name: SPEEDTEST ⚡
-  type: select
+  type: url-test
   strategy: round-robin
   disable-udp: false
   use:
-  - SG
   - ID
+  - SG
   - FR
   url: 'http://www.gstatic.com/generate_204'
   interval: 60
@@ -117,12 +118,12 @@ proxy-groups:
   type: select
   disable-udp: false
   proxies:
-  - BEST-PING
-  - FREE
-  - NUSANTARA
-  - SINGA
   - BALANCE
   - FALLBACK
+  - BEST-PING
+  - NUSANTARA
+  - SINGA
+  - FREE
   - DIRECT
   url: 'http://www.gstatic.com/generate_204'
   interval: 60
@@ -131,11 +132,11 @@ proxy-groups:
   strategy: round-robin
   disable-udp: false
   proxies:
-  - SINGA
-  - FALLBACK
   - BALANCE
+  - FALLBACK
   - BEST-PING
   - NUSANTARA
+  - SINGA
   - FREE
   - DIRECT
   - REJECT
@@ -146,11 +147,11 @@ proxy-groups:
   strategy: round-robin
   disable-udp: false
   proxies:
-  - FALLBACK
-  - SINGA
-  - BEST-PING
   - BALANCE
+  - FALLBACK
+  - BEST-PING
   - NUSANTARA
+  - SINGA
   - FREE
   - DIRECT
   - REJECT
@@ -189,11 +190,11 @@ proxy-groups:
   type: select
   disable-udp: false
   proxies:
-  - SINGA
   - BALANCE
   - FALLBACK
   - BEST-PING
   - NUSANTARA
+  - SINGA
   - FREE
   - DIRECT
   - REJECT
@@ -219,7 +220,7 @@ proxy-groups:
   proxies:
   - NUSANTARA
   - SINGA
-  - FREE
+  - FALLBACK
   - DIRECT
   url: 'http://www.gstatic.com/generate_204'
   interval: 60
@@ -228,9 +229,9 @@ proxy-groups:
   disable-udp: false
   proxies:
   - DIRECT
+  - FALLBACK
   - NUSANTARA
   - SINGA
-  - FREE
   url: 'http://www.gstatic.com/generate_204'
   interval: 60
 - name: TRAFIK-AKUN-INDO 🛑
@@ -240,7 +241,7 @@ proxy-groups:
   proxies:
   - NUSANTARA
   - SINGA
-  - FREE
+  - FALLBACK
   - DIRECT
   url: 'http://www.gstatic.com/generate_204'
   interval: 60
@@ -251,8 +252,9 @@ proxy-groups:
   proxies:
   - NUSANTARA
   - SINGA
-  - FREE
+  - FALLBACK
   - DIRECT
+  - REJECT
   url: 'http://www.gstatic.com/generate_204'
   interval: 60
 - name: ZEROTIER ⚠️
@@ -260,9 +262,9 @@ proxy-groups:
   strategy: consistent-hashing
   disable-udp: false
   proxies:
+  - FALLBACK
   - NUSANTARA
   - SINGA
-  - FREE
   - DIRECT
   url: 'http://www.gstatic.com/generate_204'
   interval: 60
@@ -271,19 +273,12 @@ proxy-groups:
   strategy: round-robin
   disable-udp: false
   proxies:
-  - REJECT
-  - BALANCE
   - FREE
-  url: 'http://www.gstatic.com/generate_204'
-  interval: 60
-- name: Adult 🔞
-  type: select
-  strategy: round-robin
-  disable-udp: false
-  proxies:
-  - REJECT
+  - BALANCE
+  - NUSANTARA
+  - SINGA
   - DIRECT
-  - BEST-PING
+  - REJECT
   url: 'http://www.gstatic.com/generate_204'
   interval: 60
 - name: BALANCE
@@ -338,9 +333,7 @@ proxy-groups:
   - FR
   url: http://www.gstatic.com/generate_204
   interval: 50
-
-# ==> Created By Ekombelgedez <<==
-#Bawah ini baris Pisah Trafik
+# ================= RP  ==================
 rule-providers:
   Portgames:
     type: http
@@ -382,13 +375,13 @@ rule-providers:
     type: http
     behavior: classical
     path: "./rule_provider/whatsapp.yaml"
-    url: "https://raw.githubusercontent.com/ekosupry/CONFIG/main/whatsapp.yaml"  
+    url: "https://raw.githubusercontent.com/ekosupry/CONFIG/main/whatsapp.yaml"
     interval: 14400 # Update rules every 4 hours
   Facebook:
     type: http
     behavior: classical
     path: "./rule_provider/wafb.yaml"
-    url: "https://raw.githubusercontent.com/ekosupry/CONFIG/main/facebook.yaml"  
+    url: "https://raw.githubusercontent.com/ekosupry/CONFIG/main/facebook.yaml"
     interval: 14400 # Update rules every 4 hours
   Zero:
     type: http
@@ -501,9 +494,9 @@ rules:
 - RULE-SET,Facebook,FACEBOOK
 - RULE-SET,Personalads,IKLAN 🛡
 - RULE-SET,Basicads,IKLAN 🛡
-- RULE-SET,18+,Adult 🔞
-- RULE-SET,Nsfw,Adult 🔞
-- RULE-SET,Judol,Adult 🔞
+- RULE-SET,18+,IKLAN 🛡
+- RULE-SET,Nsfw,IKLAN 🛡
+- RULE-SET,Judol,IKLAN 🛡
 - RULE-SET,YouTube,YOUTUBE 🎦
 - RULE-SET,Speed,SPEEDTEST ⚡
 - RULE-SET,Zero,ZEROTIER ⚠️

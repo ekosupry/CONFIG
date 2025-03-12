@@ -281,6 +281,19 @@ proxy-groups:
   - REJECT
   url: 'http://www.gstatic.com/generate_204'
   interval: 60
+- name: STOP 🔞
+  type: select
+  strategy: round-robin
+  disable-udp: false
+  proxies:
+  - FREE
+  - BALANCE
+  - NUSANTARA
+  - SINGA
+  - DIRECT
+  - REJECT
+  url: 'http://www.gstatic.com/generate_204'
+  interval: 60
 - name: BALANCE
   type: load-balance
   strategy: round-robin
@@ -494,8 +507,8 @@ rules:
 - RULE-SET,Facebook,FACEBOOK
 - RULE-SET,Personalads,IKLAN 🛡
 - RULE-SET,Basicads,IKLAN 🛡
-- RULE-SET,18+,IKLAN 🛡
-- RULE-SET,Nsfw,IKLAN 🛡
+- RULE-SET,18+,STOP 🔞
+- RULE-SET,Nsfw,STOP 🔞
 - RULE-SET,Judol,IKLAN 🛡
 - RULE-SET,YouTube,YOUTUBE 🎦
 - RULE-SET,Speed,SPEEDTEST ⚡

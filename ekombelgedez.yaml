@@ -118,8 +118,8 @@ proxy-groups:
   type: select
   disable-udp: false
   proxies:
-  - BALANCE
   - FALLBACK
+  - BALANCE
   - BEST-PING
   - NUSANTARA
   - SINGA
@@ -147,8 +147,8 @@ proxy-groups:
   strategy: round-robin
   disable-udp: false
   proxies:
-  - BALANCE
   - FALLBACK
+  - BALANCE
   - BEST-PING
   - NUSANTARA
   - SINGA
@@ -162,9 +162,9 @@ proxy-groups:
   strategy: round-robin
   disable-udp: false
   proxies:
+  - BEST-PING
   - BALANCE
   - FALLBACK
-  - BEST-PING
   - NUSANTARA
   - SINGA
   - FREE
@@ -176,9 +176,9 @@ proxy-groups:
   type: select
   disable-udp: false
   proxies:
+  - BEST-PING
   - BALANCE
   - FALLBACK
-  - BEST-PING
   - NUSANTARA
   - SINGA
   - FREE
@@ -190,9 +190,9 @@ proxy-groups:
   type: select
   disable-udp: false
   proxies:
+  - BEST-PING
   - BALANCE
   - FALLBACK
-  - BEST-PING
   - NUSANTARA
   - SINGA
   - FREE
@@ -204,14 +204,14 @@ proxy-groups:
   type: select
   disable-udp: false
   proxies:
+  - REJECT
+  - FREE
+  - DIRECT
   - BALANCE
   - FALLBACK
   - BEST-PING
   - NUSANTARA
   - SINGA
-  - FREE
-  - DIRECT
-  - REJECT
   url: 'http://www.gstatic.com/generate_204'
   interval: 60
 - name: GAMING - ROOM 🕹️
@@ -228,8 +228,8 @@ proxy-groups:
   type: select
   disable-udp: false
   proxies:
-  - DIRECT
   - FALLBACK
+  - DIRECT
   - NUSANTARA
   - SINGA
   url: 'http://www.gstatic.com/generate_204'
@@ -286,12 +286,12 @@ proxy-groups:
   strategy: round-robin
   disable-udp: false
   proxies:
+  - REJECT
+  - DIRECT
   - FREE
   - BALANCE
   - NUSANTARA
   - SINGA
-  - DIRECT
-  - REJECT
   url: 'http://www.gstatic.com/generate_204'
   interval: 60
 - name: BALANCE

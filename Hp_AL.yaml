@@ -82,69 +82,69 @@ proxies:
   - name: Afkar Pro 1
     server: wc.vanillicon.com
     port: 443
-    type: vmess
-    uuid: ac5564cb-e1ac-4953-92f9-252013f89796
+    type: vless
+    uuid: 8de95362-d3d9-4c40-93d4-bc5c83c9b1ae
     alterId: 0
     cipher: auto
     tls: true
     skip-cert-verify: true
-    servername: ca.srpcom.online
+    servername: do3.srpcom.online
     network: ws
     ws-opts:
-      path: /vmessws
+      path: /vlessws
       headers:
-        Host: ca.srpcom.online
+        Host: do3.srpcom.online
     udp: true
     
   - name: Afkar Pro 2
     server: wc.vanillicon.com
     port: 80
-    type: vmess
-    uuid: ac5564cb-e1ac-4953-92f9-252013f89796
+    type: vless
+    uuid: 8de95362-d3d9-4c40-93d4-bc5c83c9b1ae
     alterId: 0
     cipher: auto
     tls: false
     skip-cert-verify: true
-    servername: ca.srpcom.online
+    servername: do3.srpcom.online
     network: ws
     ws-opts:
-      path: /vmessws
+      path: /vlessws
       headers:
-        Host: ca.srpcom.online
+        Host: do3.srpcom.online
     udp: true
 
   - name: Afkar Pro 3
     server: wc.vanillicon.com
     port: 443
-    type: vmess
-    uuid: ac5564cb-e1ac-4953-92f9-252013f89796
+    type: vless
+    uuid: 8de95362-d3d9-4c40-93d4-bc5c83c9b1ae
     alterId: 0
     cipher: auto
     tls: true
     skip-cert-verify: true
-    servername: ca.srpcom.online
+    servername: do3.srpcom.online
     network: ws
     ws-opts:
-      path: /vmessws
+      path: /vlessws
       headers:
-        Host: ca.srpcom.online
+        Host: do3.srpcom.online
     udp: true
 
   - name: Afkar Pro 4
     server: wc.vanillicon.com
     port: 80
-    type: vmess
-    uuid: ac5564cb-e1ac-4953-92f9-252013f89796
+    type: vless
+    uuid: 8de95362-d3d9-4c40-93d4-bc5c83c9b1ae
     alterId: 0
     cipher: auto
     tls: false
     skip-cert-verify: true
-    servername: ca.srpcom.online
+    servername: do3.srpcom.online
     network: ws
     ws-opts:
-      path: /vmessws
+      path: /vlessws
       headers:
-        Host: ca.srpcom.online
+        Host: do3.srpcom.online
     udp: true
 
   - name: Afkar 1

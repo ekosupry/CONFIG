@@ -1,4 +1,3 @@
----
 # ========== ekombelgedez ============
 mode: rule
 allow-lan: true
@@ -55,6 +54,7 @@ dns:
   prefer-h3: false
   default-nameserver:
     - 1.1.1.1
+    - 94.140.14.14
   listen: 0.0.0.0:1053
   use-hosts: true
   enhanced-mode: fake-ip
@@ -64,7 +64,9 @@ dns:
     "*.localhost",
   ]
   nameserver:
+    - 94.140.14.14
     - 1.1.1.1
+    - 8.8.8.8
   fallback: []
   fallback-filter:
     geoip: false
@@ -76,42 +78,338 @@ tproxy-port: 9898
 mixed-port: 7890
 # ====== wa: 081511411523 ======
 proxies:
+  - name: GGWP TLS
+    server: 104.19.143.108
+    port: 443
+    type: vless
+    uuid: 8de95362-d3d9-4c40-93d4-bc5c83c9b1ae
+    alterId: 0
+    cipher: auto
+    tls: true
+    skip-cert-verify: true
+    servername: do3.srpcom.online
+    network: ws
+    ws-opts:
+      path: /vlessws
+      headers:
+        Host: do3.srpcom.online
+    udp: true
+    
+  - name: GGWP NTLS
+    server: 104.19.143.108
+    port: 80
+    type: vless
+    uuid: 8de95362-d3d9-4c40-93d4-bc5c83c9b1ae
+    alterId: 0
+    cipher: auto
+    tls: false
+    skip-cert-verify: true
+    servername: do3.srpcom.online
+    network: ws
+    ws-opts:
+      path: /vlessws
+      headers:
+        Host: do3.srpcom.online
+    udp: true
+
+  - name: OPOK TLS
+    server: space.byu.id
+    port: 443
+    type: vless
+    uuid: 8de95362-d3d9-4c40-93d4-bc5c83c9b1ae
+    alterId: 0
+    cipher: auto
+    tls: true
+    skip-cert-verify: true
+    servername: do3.srpcom.online
+    network: ws
+    ws-opts:
+      path: /vlessws
+      headers:
+        Host: do3.srpcom.online
+    udp: true
+
+  - name: OPOK NTLS
+    server: space.byu.id
+    port: 80
+    type: vless
+    uuid: 8de95362-d3d9-4c40-93d4-bc5c83c9b1ae
+    alterId: 0
+    cipher: auto
+    tls: false
+    skip-cert-verify: true
+    servername: do3.srpcom.online
+    network: ws
+    ws-opts:
+      path: /vlessws
+      headers:
+        Host: do3.srpcom.online
+    udp: true
+
+  - name: GGWP 1
+    server: 104.19.143.108
+    port: 443
+    type: vless
+    uuid: 89b2cbba-e6ac-487a-9481-976a0415eab9
+    alterId: 0
+    cipher: auto
+    tls: true
+    skip-cert-verify: true
+    servername: EsETSecURityLIcensE.vUhbGOL.wORkERs.dEV
+    network: ws
+    ws-opts:
+      path: /
+      headers:
+        Host: EsETSecURityLIcensE.vUhbGOL.wORkERs.dEV
+    udp: true
+
+  - name: GGWP 2
+    server: 104.19.143.108
+    port: 443
+    type: vless
+    uuid: 01edb904-33ae-42cf-99d4-28f96082082e
+    alterId: 0
+    cipher: auto
+    tls: true
+    skip-cert-verify: true
+    servername: sgdo.lotush.my.id
+    network: ws
+    ws-opts:
+      path: /trixie
+      headers:
+        Host: sgdo.lotush.my.id
+    udp: true
+    
+  - name: GGWP 3
+    server: 104.19.143.108
+    port: 443
+    type: vless
+    uuid: 01edb904-33ae-42cf-99d4-28f96082082e
+    cipher: auto
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    network: ws
+    servername: sgdo.lotush.my.id
+    ws-opts:
+      path: /trixie
+      headers:
+        Host: sgdo.lotush.my.id
+     
+  - name: GGWP 4
+    server: 104.19.143.108
+    port: 443
+    type: vless
+    uuid: 89b2cbba-e6ac-487a-9481-976a0415eab9
+    cipher: auto
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    network: ws
+    servername: EsETSecURityLIcensE.vUhbGOL.wORkERs.dEV
+    ws-opts:
+      path: /
+      headers:
+        Host: EsETSecURityLIcensE.vUhbGOL.wORkERs.dEV
+
+  - name: GGWP 5
+    server: 104.19.143.108
+    port: 443
+    type: vless
+    uuid: 80510fd1-7a7d-4b83-a3db-05fb7f23dea5
+    cipher: auto
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    network: ws
+    servername: id.knc.my.id
+    ws-opts:
+      path: /?ed=2048
+      headers:
+        Host: id.knc.my.id
+
+  - name: GGWP 6
+    server: 104.19.143.108
+    port: 80
+    type: vless
+    uuid: 80510fd1-7a7d-4b83-a3db-05fb7f23dea5
+    cipher: auto
+    tls: false
+    udp: true
+    skip-cert-verify: true
+    network: ws
+    servername: id.knc.my.id
+    ws-opts:
+      path: /?ed=2048
+      headers:
+        Host: id.knc.my.id
+
+  - name: GGWP 7
+    server: 104.19.143.108
+    port: 443
+    type: vless
+    uuid: 9e60d8e1-ee89-4041-bb6e-ce95e6219711
+    cipher: auto
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    network: ws
+    servername: bt-be2u8.tepllovpn.eu.org
+    ws-opts:
+      path: /vmess
+      headers:
+        Host: bt-be2u8.tepllovpn.eu.org
+
+  - name: GGWP 8
+    server: 104.19.143.108
+    port: 80
+    type: vless
+    uuid: 9e60d8e1-ee89-4041-bb6e-ce95e6219711
+    cipher: auto
+    tls: false
+    udp: true
+    skip-cert-verify: true
+    network: ws
+    servername: bt-be2u8.tepllovpn.eu.org
+    ws-opts:
+      path: /vmess
+      headers:
+        Host: bt-be2u8.tepllovpn.eu.org
+
+  - name: GGWP 9
+    type: vmess
+    server: 104.19.143.108
+    port: 443
+    uuid: 9e60d8e1-ee89-4041-bb6e-ce95e6219711
+    alterId: 0
+    cipher: auto
+    udp: true
+    skip-cert-verify: true
+    tls: true
+    servername: bt-be2u8.tepllovpn.eu.org
+    network: grpc
+    grpc-opts:
+      grpc-service-name: vmess-grpc
+      
+  - name: OPOK 1
+    server: wc.vanillicon.com
+    port: 443
+    type: vless
+    uuid: 80510fd1-7a7d-4b83-a3db-05fb7f23dea5
+    cipher: auto
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    network: ws
+    servername: id.knc.my.id
+    ws-opts:
+      path: /?ed=2048
+      headers:
+        Host: id.knc.my.id
+
+  - name: OPOK 2
+    server: wc.vanillicon.com
+    port: 80
+    type: vless
+    uuid: 80510fd1-7a7d-4b83-a3db-05fb7f23dea5
+    cipher: auto
+    tls: false
+    udp: true
+    skip-cert-verify: true
+    network: ws
+    servername: id.knc.my.id
+    ws-opts:
+      path: /?ed=2048
+      headers:
+        Host: id.knc.my.id
+  - name: NETFLIX TLS
+    server: cache.netflix.com
+    port: 443
+    type: vless
+    uuid: 8de95362-d3d9-4c40-93d4-bc5c83c9b1ae
+    alterId: 0
+    cipher: auto
+    tls: true
+    skip-cert-verify: true
+    servername: do3.srpcom.online
+    network: ws
+    ws-opts:
+      path: /vlessws
+      headers:
+        Host: do3.srpcom.online
+    udp: true
+    
+  - name: NETFLIX NTLS
+    server: cache.netflix.com
+    port: 80
+    type: vless
+    uuid: 8de95362-d3d9-4c40-93d4-bc5c83c9b1ae
+    alterId: 0
+    cipher: auto
+    tls: false
+    skip-cert-verify: true
+    servername: do3.srpcom.online
+    network: ws
+    ws-opts:
+      path: /vlessws
+      headers:
+        Host: do3.srpcom.online
+    udp: true
+    
+  - name: NETFLIX 1
+    server: cache.netflix.com
+    port: 443
+    type: vless
+    uuid: 80510fd1-7a7d-4b83-a3db-05fb7f23dea5
+    cipher: auto
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    network: ws
+    servername: id.knc.my.id
+    ws-opts:
+      path: /?ed=2048
+      headers:
+        Host: id.knc.my.id
+
+  - name: NETFLIX 2
+    server: cache.netflix.com
+    port: 80
+    type: vless
+    uuid: 80510fd1-7a7d-4b83-a3db-05fb7f23dea5
+    cipher: auto
+    tls: false
+    udp: true
+    skip-cert-verify: true
+    network: ws
+    servername: id.knc.my.id
+    ws-opts:
+      path: /?ed=2048
+      headers:
+        Host: id.knc.my.id
 proxy-providers:
-  ID:
-    type: http
-    url: "https://raw.githubusercontent.com/ekosupry/AKUN/main/indo-stbku.yaml"
-    path: "./proxy_provider/NUSANTARA.yaml"
-    health-check:
-      enable: true
-      url: http://www.gstatic.com/generate_204
-      interval: 60
-  SG:
-    type: http
-    url: "https://raw.githubusercontent.com/ekosupry/AKUN/main/manca-stbku.yaml"
-    path: "./proxy_provider/SINGA.yaml"
-    health-check:
-      enable: true
-      url: http://www.gstatic.com/generate_204
-      interval: 60
-  FR:
-    type: http
-    url: "https://raw.githubusercontent.com/ekosupry/CONFIG/main/free-stbku.yaml"
-    path: "./proxy_provider/FREE.yaml"
-    health-check:
-      enable: true
-      url: http://www.gstatic.com/generate_204
-      interval: 60
-  
 # ================= PG ==================
 proxy-groups:
 - name: SPEEDTEST ⚡
-  type: url-test
+  type: select
   strategy: round-robin
   disable-udp: false
-  use:
-  - ID
-  - SG
-  - FR
+  proxies:
+  - GGWP TLS
+  - GGWP NTLS
+  - OPOK TLS
+  - OPOK NTLS
+  - GGWP 1
+  - GGWP 2
+  - GGWP 3
+  - GGWP 4
+  - GGWP 5
+  - GGWP 6
+  - GGWP 7
+  - GGWP 8
+  - GGWP 9
+  - OPOK 1
+  - OPOK 2
   url: 'http://www.gstatic.com/generate_204'
   interval: 60
 - name: UMUM 🌏
@@ -121,9 +419,9 @@ proxy-groups:
   - FALLBACK
   - BALANCE
   - BEST-PING
-  - NUSANTARA
-  - SINGA
-  - FREE
+  - GGWP
+  - OPOK
+  - NETFLIX
   - DIRECT
   url: 'http://www.gstatic.com/generate_204'
   interval: 60
@@ -132,12 +430,12 @@ proxy-groups:
   strategy: round-robin
   disable-udp: false
   proxies:
-  - BALANCE
   - FALLBACK
   - BEST-PING
-  - NUSANTARA
-  - SINGA
-  - FREE
+  - BALANCE
+  - GGWP
+  - OPOK
+  - NETFLIX
   - DIRECT
   - REJECT
   url: 'http://www.gstatic.com/generate_204'
@@ -150,9 +448,9 @@ proxy-groups:
   - FALLBACK
   - BALANCE
   - BEST-PING
-  - NUSANTARA
-  - SINGA
-  - FREE
+  - GGWP
+  - OPOK
+  - NETFLIX
   - DIRECT
   - REJECT
   url: 'http://www.gstatic.com/generate_204'
@@ -162,12 +460,12 @@ proxy-groups:
   strategy: round-robin
   disable-udp: false
   proxies:
-  - BEST-PING
   - BALANCE
   - FALLBACK
-  - NUSANTARA
-  - SINGA
-  - FREE
+  - BEST-PING
+  - GGWP
+  - OPOK
+  - NETFLIX
   - DIRECT
   - REJECT
   url: 'http://www.gstatic.com/generate_204'
@@ -176,12 +474,12 @@ proxy-groups:
   type: select
   disable-udp: false
   proxies:
-  - BEST-PING
   - BALANCE
   - FALLBACK
-  - NUSANTARA
-  - SINGA
-  - FREE
+  - BEST-PING
+  - GGWP
+  - OPOK
+  - NETFLIX
   - DIRECT
   - REJECT
   url: 'http://www.gstatic.com/generate_204'
@@ -190,12 +488,12 @@ proxy-groups:
   type: select
   disable-udp: false
   proxies:
-  - BEST-PING
   - BALANCE
   - FALLBACK
-  - NUSANTARA
-  - SINGA
-  - FREE
+  - BEST-PING
+  - GGWP
+  - OPOK
+  - NETFLIX
   - DIRECT
   - REJECT
   url: 'http://www.gstatic.com/generate_204'
@@ -204,23 +502,23 @@ proxy-groups:
   type: select
   disable-udp: false
   proxies:
-  - REJECT
-  - FREE
-  - DIRECT
-  - BALANCE
   - FALLBACK
+  - BALANCE
   - BEST-PING
-  - NUSANTARA
-  - SINGA
+  - GGWP
+  - OPOK
+  - NETFLIX
+  - DIRECT
+  - REJECT
   url: 'http://www.gstatic.com/generate_204'
   interval: 60
 - name: GAMING - ROOM 🕹️
   type: select
   disable-udp: false
   proxies:
-  - NUSANTARA
-  - SINGA
-  - FALLBACK
+  - GGWP
+  - OPOK
+  - NETFLIX
   - DIRECT
   url: 'http://www.gstatic.com/generate_204'
   interval: 60
@@ -228,10 +526,10 @@ proxy-groups:
   type: select
   disable-udp: false
   proxies:
-  - FALLBACK
   - DIRECT
-  - NUSANTARA
-  - SINGA
+  - GGWP
+  - OPOK
+  - NETFLIX
   url: 'http://www.gstatic.com/generate_204'
   interval: 60
 - name: TRAFIK-AKUN-INDO 🛑
@@ -239,20 +537,32 @@ proxy-groups:
   strategy: round-robin
   disable-udp: false
   proxies:
-  - NUSANTARA
-  - SINGA
-  - FALLBACK
+  - GGWP
+  - OPOK
+  - NETFLIX
   - DIRECT
   url: 'http://www.gstatic.com/generate_204'
   interval: 60
 - name: BANK 🏧
-  type: select
+  type: fallback
   strategy: round-robin
   disable-udp: false
   proxies:
-  - NUSANTARA
-  - SINGA
-  - FALLBACK
+  - GGWP TLS
+  - GGWP NTLS
+  - OPOK TLS
+  - OPOK NTLS
+  - GGWP 1
+  - GGWP 2
+  - GGWP 3
+  - GGWP 4
+  - GGWP 5
+  - GGWP 6
+  - GGWP 7
+  - GGWP 8
+  - GGWP 9
+  - OPOK 1
+  - OPOK 2
   - DIRECT
   - REJECT
   url: 'http://www.gstatic.com/generate_204'
@@ -262,9 +572,21 @@ proxy-groups:
   strategy: consistent-hashing
   disable-udp: false
   proxies:
-  - FALLBACK
-  - NUSANTARA
-  - SINGA
+  - GGWP TLS
+  - GGWP NTLS
+  - OPOK TLS
+  - OPOK NTLS
+  - GGWP 1
+  - GGWP 2
+  - GGWP 3
+  - GGWP 4
+  - GGWP 5
+  - GGWP 6
+  - GGWP 7
+  - GGWP 8
+  - GGWP 9
+  - OPOK 1
+  - OPOK 2
   - DIRECT
   url: 'http://www.gstatic.com/generate_204'
   interval: 60
@@ -273,79 +595,122 @@ proxy-groups:
   strategy: round-robin
   disable-udp: false
   proxies:
-  - FREE
-  - BALANCE
-  - NUSANTARA
-  - SINGA
   - DIRECT
   - REJECT
-  url: 'http://www.gstatic.com/generate_204'
-  interval: 60
-- name: AKSES 🔞
-  type: select
-  strategy: round-robin
-  disable-udp: false
-  proxies:
-  - REJECT
-  - DIRECT
-  - FREE
   - BALANCE
-  - NUSANTARA
-  - SINGA
+  - FALLBACK
+  - BEST-PING
+  - GGWP
+  - OPOK
+  - NETFLIX
   url: 'http://www.gstatic.com/generate_204'
   interval: 60
 - name: BALANCE
   type: load-balance
   strategy: round-robin
   disable-udp: false
-  use:
-  - SG
-  - ID
+  proxies:
+  - GGWP TLS
+  - GGWP NTLS
+  - OPOK TLS
+  - OPOK NTLS
+  - GGWP 1
+  - GGWP 2
+  - GGWP 3
+  - GGWP 4
+  - GGWP 5
+  - GGWP 6
+  - GGWP 7
+  - GGWP 8
+  - GGWP 9
+  - OPOK 1
+  - OPOK 2
   url: http://www.gstatic.com/generate_204
   interval: 30
 - name: FALLBACK
   type: fallback
   strategy: round-robin
   disable-udp: false
-  use:
-  - ID
-  - SG
-  - FR
+  proxies:
+  - GGWP TLS
+  - GGWP NTLS
+  - OPOK TLS
+  - OPOK NTLS
+  - GGWP 1
+  - GGWP 2
+  - GGWP 3
+  - GGWP 4
+  - GGWP 5
+  - GGWP 6
+  - GGWP 7
+  - GGWP 8
+  - GGWP 9
+  - OPOK 1
+  - OPOK 2
   url: http://www.gstatic.com/generate_204
   interval: 60
 - name: BEST-PING
   type: url-test
   strategy: round-robin
   disable-udp: false
-  use:
-  - SG
-  - ID
+  proxies:
+  - GGWP TLS
+  - GGWP NTLS
+  - OPOK TLS
+  - OPOK NTLS
+  - GGWP 1
+  - GGWP 2
+  - GGWP 3
+  - GGWP 4
+  - GGWP 5
+  - GGWP 6
+  - GGWP 7
+  - GGWP 8
+  - GGWP 9
+  - OPOK 1
+  - OPOK 2
   url: http://www.gstatic.com/generate_204
   interval: 60
-- name: NUSANTARA
+- name: OPOK
   type: url-test
   strategy: round-robin
   disable-udp: false
-  use:
-  - ID
+  proxies:
+  - OPOK TLS
+  - OPOK NTLS
+  - OPOK 1
+  - OPOK 2
   url: http://www.gstatic.com/generate_204
-  interval: 50
-- name: SINGA
+  interval: 60
+- name: GGWP
   type: url-test
   strategy: round-robin
   disable-udp: false
-  use:
-  - SG
+  proxies:
+  - GGWP TLS
+  - GGWP NTLS
+  - GGWP 1
+  - GGWP 2
+  - GGWP 3
+  - GGWP 4
+  - GGWP 5
+  - GGWP 6
+  - GGWP 7
+  - GGWP 8
+  - GGWP 9
   url: http://www.gstatic.com/generate_204
-  interval: 50
-- name: FREE
+  interval: 60
+- name: NETFLIX
   type: url-test
   strategy: round-robin
   disable-udp: false
-  use:
-  - FR
+  proxies:
+  - NETFLIX TLS
+  - NETFLIX NTLS
+  - NETFLIX 1
+  - NETFLIX 2
   url: http://www.gstatic.com/generate_204
-  interval: 50
+  interval: 60
 # ================= RP  ==================
 rule-providers:
   Portgames:
@@ -507,8 +872,8 @@ rules:
 - RULE-SET,Facebook,FACEBOOK
 - RULE-SET,Personalads,IKLAN 🛡
 - RULE-SET,Basicads,IKLAN 🛡
-- RULE-SET,18+,AKSES 🔞
-- RULE-SET,Nsfw,AKSES 🔞
+- RULE-SET,18+,IKLAN 🛡
+- RULE-SET,Nsfw,IKLAN 🛡
 - RULE-SET,Judol,IKLAN 🛡
 - RULE-SET,YouTube,YOUTUBE 🎦
 - RULE-SET,Speed,SPEEDTEST ⚡

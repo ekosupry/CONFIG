@@ -1,8 +1,4 @@
-# AKUN PRO SG dari ekombelgedez EXP: 04 Maret 2025 07:43:11 wib ( wa +6585761406 )
-# Gass PREMIUM 10rb/device aktif 1 bulan,2 device 15rb
-# ==== Paket ILMUPEDIA ======
-# Buy paket TSEL dial *363*844# / *363*555#
-#===========================================
+# ========== ekombelgedez ============
 mode: rule
 allow-lan: true
 unified-delay: true
@@ -57,6 +53,7 @@ dns:
   ipv6: true
   prefer-h3: false
   default-nameserver:
+    - 1.1.1.1
     - 94.140.14.14
   listen: 0.0.0.0:1053
   use-hosts: true
@@ -68,6 +65,8 @@ dns:
   ]
   nameserver:
     - 94.140.14.14
+    - 1.1.1.1
+    - 8.8.8.8
   fallback: []
   fallback-filter:
     geoip: false
@@ -77,10 +76,11 @@ dns:
     domain: ['+.google.com','+.facebook.com','+.youtube.com']
 tproxy-port: 9898
 mixed-port: 7890
-# ================= PG ==========
-proxies: 
-  - name: Afkar Pro 1
-    server: wc.vanillicon.com
+# ====== wa: 081511411523 ======
+proxies:
+# AKUN MAHFUD
+  - name: GGWP TLS
+    server: 104.19.143.108
     port: 443
     type: vless
     uuid: 8de95362-d3d9-4c40-93d4-bc5c83c9b1ae
@@ -96,8 +96,8 @@ proxies:
         Host: do3.srpcom.online
     udp: true
     
-  - name: Afkar Pro 2
-    server: wc.vanillicon.com
+  - name: GGWP NTLS
+    server: 104.19.143.108
     port: 80
     type: vless
     uuid: 8de95362-d3d9-4c40-93d4-bc5c83c9b1ae
@@ -113,8 +113,8 @@ proxies:
         Host: do3.srpcom.online
     udp: true
 
-  - name: Afkar Pro 3
-    server: wc.vanillicon.com
+  - name: OPOK TLS
+    server: space.byu.id
     port: 443
     type: vless
     uuid: 8de95362-d3d9-4c40-93d4-bc5c83c9b1ae
@@ -130,8 +130,8 @@ proxies:
         Host: do3.srpcom.online
     udp: true
 
-  - name: Afkar Pro 4
-    server: wc.vanillicon.com
+  - name: OPOK NTLS
+    server: space.byu.id
     port: 80
     type: vless
     uuid: 8de95362-d3d9-4c40-93d4-bc5c83c9b1ae
@@ -147,8 +147,247 @@ proxies:
         Host: do3.srpcom.online
     udp: true
 
-  - name: Afkar 1
-    server: wc.vanillicon.com
+  - name: NETFLIX TLS
+    server: cache.netflix.com
+    port: 443
+    type: vless
+    uuid: 8de95362-d3d9-4c40-93d4-bc5c83c9b1ae
+    alterId: 0
+    cipher: auto
+    tls: true
+    skip-cert-verify: true
+    servername: do3.srpcom.online
+    network: ws
+    ws-opts:
+      path: /vlessws
+      headers:
+        Host: do3.srpcom.online
+    udp: true
+    
+  - name: NETFLIX NTLS
+    server: cache.netflix.com
+    port: 80
+    type: vless
+    uuid: 8de95362-d3d9-4c40-93d4-bc5c83c9b1ae
+    alterId: 0
+    cipher: auto
+    tls: false
+    skip-cert-verify: true
+    servername: do3.srpcom.online
+    network: ws
+    ws-opts:
+      path: /vlessws
+      headers:
+        Host: do3.srpcom.online
+    udp: true
+#AKUN AFKAR
+  - name: GGWP2 TLS
+    server: 104.19.143.108
+    port: 443
+    type: vmess
+    uuid: c19a0d69-5f9f-4109-a609-aaaf91c45ff6
+    alterId: 0
+    cipher: auto
+    tls: true
+    skip-cert-verify: true
+    servername: ca.srpcom.online
+    network: ws
+    ws-opts:
+      path: /vmessws
+      headers:
+        Host: ca.srpcom.online
+    udp: true
+
+  - name: GGWP2 NTLS
+    server: 104.19.143.108
+    port: 80
+    type: vmess
+    uuid: c19a0d69-5f9f-4109-a609-aaaf91c45ff6
+    alterId: 0
+    cipher: auto
+    tls: false
+    skip-cert-verify: true
+    servername: ca.srpcom.online
+    network: ws
+    ws-opts:
+      path: /vmessws
+      headers:
+        Host: ca.srpcom.online
+    udp: true
+
+  - name: OPOK2 TLS
+    server: space.byu.id
+    port: 443
+    type: vmess
+    uuid: c19a0d69-5f9f-4109-a609-aaaf91c45ff6
+    alterId: 0
+    cipher: auto
+    tls: true
+    skip-cert-verify: true
+    servername: ca.srpcom.online
+    network: ws
+    ws-opts:
+      path: /vmessws
+      headers:
+        Host: ca.srpcom.online
+    udp: true
+
+  - name: OPOK2 NTLS
+    server: space.byu.id
+    port: 80
+    type: vmess
+    uuid: c19a0d69-5f9f-4109-a609-aaaf91c45ff6
+    alterId: 0
+    cipher: auto
+    tls: false
+    skip-cert-verify: true
+    servername: ca.srpcom.online
+    network: ws
+    ws-opts:
+      path: /vmessws
+      headers:
+        Host: ca.srpcom.online
+    udp: true
+
+  - name: NETFLIX2 TLS
+    server: cache.netflix.com
+    port: 443
+    type: vmess
+    uuid: c19a0d69-5f9f-4109-a609-aaaf91c45ff6
+    alterId: 0
+    cipher: auto
+    tls: true
+    skip-cert-verify: true
+    servername: ca.srpcom.online
+    network: ws
+    ws-opts:
+      path: /vmessws
+      headers:
+        Host: ca.srpcom.online
+    udp: true
+
+  - name: NETFLIX2 NTLS
+    server: cache.netflix.com
+    port: 80
+    type: vmess
+    uuid: c19a0d69-5f9f-4109-a609-aaaf91c45ff6
+    alterId: 0
+    cipher: auto
+    tls: false
+    skip-cert-verify: true
+    servername: ca.srpcom.online
+    network: ws
+    ws-opts:
+      path: /vmessws
+      headers:
+        Host: ca.srpcom.online
+    udp: true
+
+# AKUN RAFKA
+  - name: GGWP3 TLS
+    server: 104.19.143.108
+    port: 443
+    type: vmess
+    uuid: c19a0d69-5f9f-4109-a609-aaaf91c45ff6
+    alterId: 0
+    cipher: auto
+    tls: true
+    skip-cert-verify: true
+    servername: do4.srpcom.online
+    network: ws
+    ws-opts:
+      path: /vmessws
+      headers:
+        Host: do4.srpcom.online
+    udp: true
+
+  - name: GGWP3 NTLS
+    server: 104.19.143.108
+    port: 80
+    type: vmess
+    uuid: c19a0d69-5f9f-4109-a609-aaaf91c45ff6
+    alterId: 0
+    cipher: auto
+    tls: false
+    skip-cert-verify: true
+    servername: do4.srpcom.online
+    network: ws
+    ws-opts:
+      path: /vmessws
+      headers:
+        Host: do4.srpcom.online
+    udp: true
+
+  - name: OPOK3 TLS
+    server: space.byu.id
+    port: 443
+    type: vmess
+    uuid: c19a0d69-5f9f-4109-a609-aaaf91c45ff6
+    alterId: 0
+    cipher: auto
+    tls: true
+    skip-cert-verify: true
+    servername: do4.srpcom.online
+    network: ws
+    ws-opts:
+      path: /vmessws
+      headers:
+        Host: do4.srpcom.online
+    udp: true
+
+  - name: OPOK3 NTLS
+    server: space.byu.id
+    port: 80
+    type: vmess
+    uuid: c19a0d69-5f9f-4109-a609-aaaf91c45ff6
+    alterId: 0
+    cipher: auto
+    tls: false
+    skip-cert-verify: true
+    servername: do4.srpcom.online
+    network: ws
+    ws-opts:
+      path: /vmessws
+      headers:
+        Host: do4.srpcom.online
+    udp: true
+
+  - name: NETFLIX3 TLS
+    server: cache.netflix.com
+    port: 443
+    type: vmess
+    uuid: c19a0d69-5f9f-4109-a609-aaaf91c45ff6
+    alterId: 0
+    cipher: auto
+    tls: true
+    skip-cert-verify: true
+    servername: do4.srpcom.online
+    network: ws
+    ws-opts:
+      path: /vmessws
+      headers:
+        Host: do4.srpcom.online
+    udp: true
+
+  - name: NETFLIX3 NTLS
+    server: cache.netflix.com
+    port: 80
+    type: vmess
+    uuid: c19a0d69-5f9f-4109-a609-aaaf91c45ff6
+    alterId: 0
+    cipher: auto
+    tls: false
+    skip-cert-verify: true
+    servername: do4.srpcom.online
+    network: ws
+    ws-opts:
+      path: /vmessws
+      headers:
+        Host: do4.srpcom.online
+    udp: true
+#AKUN FREE
+  - name: GGWP 1
+    server: 104.19.143.108
     port: 443
     type: vless
     uuid: 89b2cbba-e6ac-487a-9481-976a0415eab9
@@ -164,8 +403,8 @@ proxies:
         Host: EsETSecURityLIcensE.vUhbGOL.wORkERs.dEV
     udp: true
 
-  - name: Afkar 2
-    server: wc.vanillicon.com
+  - name: GGWP 2
+    server: 104.19.143.108
     port: 443
     type: vless
     uuid: 01edb904-33ae-42cf-99d4-28f96082082e
@@ -181,8 +420,8 @@ proxies:
         Host: sgdo.lotush.my.id
     udp: true
     
-  - name: Afkar 3
-    server: wc.vanillicon.com
+  - name: GGWP 3
+    server: 104.19.143.108
     port: 443
     type: vless
     uuid: 01edb904-33ae-42cf-99d4-28f96082082e
@@ -197,8 +436,8 @@ proxies:
       headers:
         Host: sgdo.lotush.my.id
      
-  - name: Afkar 4
-    server: wc.vanillicon.com
+  - name: GGWP 4
+    server: 104.19.143.108
     port: 443
     type: vless
     uuid: 89b2cbba-e6ac-487a-9481-976a0415eab9
@@ -213,8 +452,8 @@ proxies:
       headers:
         Host: EsETSecURityLIcensE.vUhbGOL.wORkERs.dEV
 
-  - name: Afkar 5
-    server: wc.vanillicon.com
+  - name: GGWP 5
+    server: 104.19.143.108
     port: 443
     type: vless
     uuid: 80510fd1-7a7d-4b83-a3db-05fb7f23dea5
@@ -229,8 +468,8 @@ proxies:
       headers:
         Host: id.knc.my.id
 
-  - name: Afkar 6
-    server: wc.vanillicon.com
+  - name: GGWP 6
+    server: 104.19.143.108
     port: 80
     type: vless
     uuid: 80510fd1-7a7d-4b83-a3db-05fb7f23dea5
@@ -245,8 +484,8 @@ proxies:
       headers:
         Host: id.knc.my.id
 
-  - name: Afkar 7
-    server: wc.vanillicon.com
+  - name: GGWP 7
+    server: 104.19.143.108
     port: 443
     type: vless
     uuid: 9e60d8e1-ee89-4041-bb6e-ce95e6219711
@@ -261,8 +500,8 @@ proxies:
       headers:
         Host: bt-be2u8.tepllovpn.eu.org
 
-  - name: Afkar 8
-    server: wc.vanillicon.com
+  - name: GGWP 8
+    server: 104.19.143.108
     port: 80
     type: vless
     uuid: 9e60d8e1-ee89-4041-bb6e-ce95e6219711
@@ -277,9 +516,9 @@ proxies:
       headers:
         Host: bt-be2u8.tepllovpn.eu.org
 
-  - name: Afkar 9
+  - name: GGWP 9
     type: vmess
-    server: wc.vanillicon.com
+    server: 104.19.143.108
     port: 443
     uuid: 9e60d8e1-ee89-4041-bb6e-ce95e6219711
     alterId: 0
@@ -291,436 +530,631 @@ proxies:
     network: grpc
     grpc-opts:
       grpc-service-name: vmess-grpc
-#🔴
-#🔴_____________________________________proxies______________________________________🔴
-#
-#🟡_________________________________PROXY-GROUP__________________________________🟡
+      
+  - name: OPOK 1
+    server: wc.vanillicon.com
+    port: 443
+    type: vless
+    uuid: 80510fd1-7a7d-4b83-a3db-05fb7f23dea5
+    cipher: auto
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    network: ws
+    servername: id.knc.my.id
+    ws-opts:
+      path: /?ed=2048
+      headers:
+        Host: id.knc.my.id
+
+  - name: OPOK 2
+    server: wc.vanillicon.com
+    port: 80
+    type: vless
+    uuid: 80510fd1-7a7d-4b83-a3db-05fb7f23dea5
+    cipher: auto
+    tls: false
+    udp: true
+    skip-cert-verify: true
+    network: ws
+    servername: id.knc.my.id
+    ws-opts:
+      path: /?ed=2048
+      headers:
+        Host: id.knc.my.id
+    
+  - name: NETFLIX 1
+    server: cache.netflix.com
+    port: 443
+    type: vless
+    uuid: 80510fd1-7a7d-4b83-a3db-05fb7f23dea5
+    cipher: auto
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    network: ws
+    servername: id.knc.my.id
+    ws-opts:
+      path: /?ed=2048
+      headers:
+        Host: id.knc.my.id
+
+  - name: NETFLIX 2
+    server: cache.netflix.com
+    port: 80
+    type: vless
+    uuid: 80510fd1-7a7d-4b83-a3db-05fb7f23dea5
+    cipher: auto
+    tls: false
+    udp: true
+    skip-cert-verify: true
+    network: ws
+    servername: id.knc.my.id
+    ws-opts:
+      path: /?ed=2048
+      headers:
+        Host: id.knc.my.id
+proxy-providers:
+# ================= PG ==================
 proxy-groups:
-# Global kita gunakan untuk koneksi UMUM
-- name: "Global✅"
+- name: SPEEDTEST ⚡
+  type: select
+  strategy: round-robin
+  disable-udp: false
+  proxies:
+  - GGWP TLS
+  - GGWP NTLS
+  - OPOK TLS
+  - OPOK NTLS
+  - NETFLIX TLS
+  - NETFLIX NTLS
+  - GGWP2 TLS
+  - GGWP2 NTLS
+  - OPOK2 TLS
+  - OPOK2 NTLS
+  - NETFLIX2 TLS
+  - NETFLIX2 NTLS
+  - GGWP3 TLS
+  - GGWP3 NTLS
+  - OPOK3 TLS
+  - OPOK3 NTLS
+  - NETFLIX3 TLS
+  - NETFLIX3 NTLS
+  - GGWP 1
+  - GGWP 2
+  - GGWP 3
+  - GGWP 4
+  - GGWP 5
+  - GGWP 6
+  - GGWP 7
+  - GGWP 8
+  - GGWP 9
+  - OPOK 1
+  - OPOK 2
+  url: 'http://www.gstatic.com/generate_204'
+  interval: 60
+- name: UMUM 🌏
+  type: select
+  disable-udp: false
+  proxies:
+  - FALLBACK
+  - BALANCE
+  - BEST-PING
+  - GGWP
+  - OPOK
+  - NETFLIX
+  - DIRECT
+  url: 'http://www.gstatic.com/generate_204'
+  interval: 60
+- name: YOUTUBE 🎦
+  type: select
+  strategy: round-robin
+  disable-udp: false
+  proxies:
+  - FALLBACK
+  - BEST-PING
+  - BALANCE
+  - GGWP
+  - OPOK
+  - NETFLIX
+  - DIRECT
+  - REJECT
+  url: 'http://www.gstatic.com/generate_204'
+  interval: 60
+- name: WHATSAPP 📨
+  type: select
+  strategy: round-robin
+  disable-udp: false
+  proxies:
+  - FALLBACK
+  - BALANCE
+  - BEST-PING
+  - GGWP
+  - OPOK
+  - NETFLIX
+  - DIRECT
+  - REJECT
+  url: 'http://www.gstatic.com/generate_204'
+  interval: 60
+- name: FACEBOOK
+  type: select
+  strategy: round-robin
+  disable-udp: false
+  proxies:
+  - BALANCE
+  - FALLBACK
+  - BEST-PING
+  - GGWP
+  - OPOK
+  - NETFLIX
+  - DIRECT
+  - REJECT
+  url: 'http://www.gstatic.com/generate_204'
+  interval: 60
+- name: SOSMED 📲
+  type: select
+  disable-udp: false
+  proxies:
+  - BALANCE
+  - FALLBACK
+  - BEST-PING
+  - GGWP
+  - OPOK
+  - NETFLIX
+  - DIRECT
+  - REJECT
+  url: 'http://www.gstatic.com/generate_204'
+  interval: 60
+- name: STREAMING 📽️
+  type: select
+  disable-udp: false
+  proxies:
+  - BALANCE
+  - FALLBACK
+  - BEST-PING
+  - GGWP
+  - OPOK
+  - NETFLIX
+  - DIRECT
+  - REJECT
+  url: 'http://www.gstatic.com/generate_204'
+  interval: 60
+- name: SHOPPING 🛒
+  type: select
+  disable-udp: false
+  proxies:
+  - FALLBACK
+  - BALANCE
+  - BEST-PING
+  - GGWP
+  - OPOK
+  - NETFLIX
+  - DIRECT
+  - REJECT
+  url: 'http://www.gstatic.com/generate_204'
+  interval: 60
+- name: GAMING - ROOM 🕹️
+  type: select
+  disable-udp: false
+  proxies:
+  - GGWP
+  - OPOK
+  - NETFLIX
+  - DIRECT
+  url: 'http://www.gstatic.com/generate_204'
+  interval: 60
+- name: GAMING - MATCH 🎮
+  type: select
+  disable-udp: false
+  proxies:
+  - DIRECT
+  - GGWP
+  - OPOK
+  - NETFLIX
+  url: 'http://www.gstatic.com/generate_204'
+  interval: 60
+- name: TRAFIK-AKUN-INDO 🛑
+  type: select
+  strategy: round-robin
+  disable-udp: false
+  proxies:
+  - GGWP
+  - OPOK
+  - NETFLIX
+  - DIRECT
+  url: 'http://www.gstatic.com/generate_204'
+  interval: 60
+- name: BANK 🏧
   type: fallback
   strategy: round-robin
   disable-udp: false
   proxies:
-    -  Afkar Pro 1
-    -  Afkar Pro 2
-    -  Afkar Pro 3
-    -  Afkar Pro 4
-    -  Afkar 1
-    -  Afkar 2
-    -  Afkar 3
-    -  Afkar 4
-    -  Afkar 5
-    -  Afkar 6
-    -  Afkar 7
-    -  Afkar 8
-    -  Afkar 9
+  - GGWP2 TLS
+  - GGWP2 NTLS
+  - OPOK2 TLS
+  - OPOK2 NTLS
+  - NETFLIX2 TLS
+  - NETFLIX2 NTLS
+  - NETFLIX TLS
+  - NETFLIX NTLS
+  - GGWP TLS
+  - GGWP NTLS
+  - OPOK TLS
+  - OPOK NTLS
+  - GGWP 1
+  - GGWP 2
+  - GGWP 3
+  - GGWP 4
+  - GGWP 5
+  - GGWP 6
+  - GGWP 7
+  - GGWP 8
+  - GGWP 9
+  - OPOK 1
+  - OPOK 2
+  - DIRECT
+  - REJECT
   url: 'http://www.gstatic.com/generate_204'
-  interval: 300
- #⬜⬜
-- name: "WHATSAPP"
-  type: select #PILIIH SALAH SATU : SELECT,LOAD-BALANCE,FALLBACK,URL-TEST
-  strategy: round-robin
+  interval: 60
+- name: ZEROTIER ⚠️
+  type: select
+  strategy: consistent-hashing
   disable-udp: false
   proxies:
-    -  FALLBACK
-    -  SERVER PRO
-    -  BEST PING
-    -  LOAD-BALANCE
-    -  DIRECT
+  - GGWP2 TLS
+  - GGWP2 NTLS
+  - OPOK2 TLS
+  - OPOK2 NTLS
+  - NETFLIX2 TLS
+  - NETFLIX2 NTLS
+  - NETFLIX TLS
+  - NETFLIX NTLS
+  - GGWP TLS
+  - GGWP NTLS
+  - OPOK TLS
+  - OPOK NTLS
+  - GGWP 1
+  - GGWP 2
+  - GGWP 3
+  - GGWP 4
+  - GGWP 5
+  - GGWP 6
+  - GGWP 7
+  - GGWP 8
+  - GGWP 9
+  - OPOK 1
+  - OPOK 2
+  - DIRECT
   url: 'http://www.gstatic.com/generate_204'
-  interval: 300
-#⬜⬜
-#Koneksi Sosmed
-- name: "FACEBOOK"
-  type: select #PILIIH SALAH SATU : SELECT,LOAD-BALANCE,FALLBACK,URL-TEST
-  strategy: round-robin
-  disable-udp: false
-  proxies:
-    -  BEST PING
-    -  FALLBACK
-    -  LOAD-BALANCE
-    -  SERVER PRO
-    -  DIRECT
-  url: 'http://www.gstatic.com/generate_204'
-  interval: 300
-#Koneksi Sosmed
-- name: "LOBBY GAME"
-  type: url-test #PILIIH SALAH SATU : SELECT,LOAD-BALANCE,FALLBACK,URL-TEST
-  strategy: round-robin
-  disable-udp: false
-  proxies:
-    -  Afkar Pro 1
-    -  Afkar Pro 2
-    -  Afkar Pro 3
-    -  Afkar Pro 4
-  url: 'http://www.gstatic.com/generate_204'
-  interval: 300
-#Koneksi Sosmed
-- name: "PLAY GAME"
-  type: select #PILIIH SALAH SATU : SELECT,LOAD-BALANCE,FALLBACK,URL-TEST
-  strategy: round-robin
-  disable-udp: false
-  proxies:
-    -  DIRECT
-    -  LOBBY GAME
-    -  SERVER PRO
-    -  FALLBACK
-  url: 'http://www.gstatic.com/generate_204'
-  interval: 300
-#⬜⬜
-#Koneksi Sosmed
-- name: "SOSMED"
-  type: select #PILIIH SALAH SATU : SELECT,LOAD-BALANCE,FALLBACK,URL-TEST
-  strategy: round-robin
-  disable-udp: false
-  proxies:
-    -  LOAD-BALANCE
-    -  FALLBACK
-    -  BEST PING
-    -  SERVER PRO
-    -  DIRECT
-  url: 'http://www.gstatic.com/generate_204'
-  interval: 300
-#⬜⬜
-#koneksi untuk YOUTUBE,
-- name: "YOUTUBE"
+  interval: 60
+- name: IKLAN 🛡
   type: select
   strategy: round-robin
   disable-udp: false
   proxies:
-    -  FALLBACK
-    -  SERVER PRO
-    -  BEST PING
-    -  DIRECT
-    -  REJECT
+  - DIRECT
+  - REJECT
+  - BALANCE
+  - FALLBACK
+  - BEST-PING
+  - GGWP
+  - OPOK
+  - NETFLIX
   url: 'http://www.gstatic.com/generate_204'
-  interval: 300
- #⬜⬜
-#koneksi nonton video
-- name: "STREAMING"
-  type: select
-  strategy: round-robin
-  disable-udp: false
-  proxies:
-    -  FALLBACK
-    -  SERVER PRO
-    -  BEST PING
-    -  DIRECT
-    -  REJECT
-  url: 'http://www.gstatic.com/generate_204'
-  interval: 300
- #⬜⬜
- #koneksi untuk Bank,
-- name: "AKUN BANK"
-  type: select
-  proxies:
-    -  LOBBY GAME
-    -  BEST PING
-    -  LOAD-BALANCE
-    -  FALLBACK
-    -  SERVER PRO
-    -  DIRECT
-    -  REJECT
-  url: 'http://www.gstatic.com/generate_204'
-  interval: 300
- #⬜⬜
- #koneksi untuk BELANJA,
-- name: "MARKETPLACE"
-  type: select
-  proxies:
-    -  FALLBACK
-    -  LOAD-BALANCE
-    -  BEST PING
-    -  SERVER PRO
-    -  REJECT
-    -  DIRECT
-  url: 'http://www.gstatic.com/generate_204'
-  interval: 300
- #⬜⬜
- #koneksi untuk iklan,
-- name: "IKLAN"
-  type: select
-  proxies:
-    -  REJECT
-    -  BEST PING
-    -  LOAD-BALANCE
-    -  FALLBACK
-  url: 'http://www.gstatic.com/generate_204'
-  interval: 300
- #⬜⬜
-- name: "Adult🔞"
-  type: select
-  disable-udp: false
-  proxies:
-    -  SERVER PRO
-    -  REJECT
-    -  DIRECT
-  url: 'http://www.gstatic.com/generate_204'
-  interval: 300
- #⬜⬜
-- name: "FALLBACK"
-  type: fallback
-  strategy: round-robin
-  disable-udp: false
-  proxies:
-    -  Afkar Pro 1
-    -  Afkar Pro 2
-    -  Afkar Pro 3
-    -  Afkar Pro 4
-    -  Afkar 1
-    -  Afkar 2
-    -  Afkar 3
-    -  Afkar 4
-    -  Afkar 5
-    -  Afkar 6
-    -  Afkar 7
-    -  Afkar 8
-    -  Afkar 9
-  url: 'http://www.gstatic.com/generate_204'
-  interval: 300
-  #koneksi untuk iklan,
-- name: "BEST PING"
-  type: url-test
-  strategy: round-robin
-  disable-udp: false
-  proxies:
-    -  Afkar Pro 1
-    -  Afkar Pro 2
-    -  Afkar Pro 3
-    -  Afkar Pro 4
-    -  Afkar 1
-    -  Afkar 2
-    -  Afkar 3
-    -  Afkar 4
-    -  Afkar 5
-    -  Afkar 6
-    -  Afkar 7
-    -  Afkar 8
-    -  Afkar 9
-  url: 'http://www.gstatic.com/generate_204'
-  interval: 300
- #⬜⬜
-   #koneksi untuk iklan,
-- name: "LOAD-BALANCE"
+  interval: 60
+- name: BALANCE
   type: load-balance
   strategy: round-robin
   disable-udp: false
   proxies:
-    -  Afkar Pro 1
-    -  Afkar Pro 2
-    -  Afkar Pro 3
-    -  Afkar Pro 4
-    -  Afkar 1
-    -  Afkar 2
-    -  Afkar 3
-    -  Afkar 4
-    -  Afkar 5
-    -  Afkar 6
-    -  Afkar 7
-    -  Afkar 8
-    -  Afkar 9
-  url: 'http://www.gstatic.com/generate_204'
-  interval: 300
- #⬜⬜
-- name: "SERVER PRO"
-  type: url-test
+  - GGWP2 TLS
+  - GGWP2 NTLS
+  - OPOK2 TLS
+  - OPOK2 NTLS
+  - NETFLIX2 TLS
+  - NETFLIX2 NTLS
+  - NETFLIX TLS
+  - NETFLIX NTLS
+  - GGWP TLS
+  - GGWP NTLS
+  - OPOK TLS
+  - OPOK NTLS
+  - GGWP 1
+  - GGWP 2
+  - GGWP 3
+  - GGWP 4
+  - GGWP 5
+  - GGWP 6
+  - GGWP 7
+  - GGWP 8
+  - GGWP 9
+  - OPOK 1
+  - OPOK 2
+  url: http://www.gstatic.com/generate_204
+  interval: 30
+- name: FALLBACK
+  type: fallback
+  strategy: round-robin
   disable-udp: false
   proxies:
-    -  Afkar Pro 1
-    -  Afkar Pro 2
-    -  Afkar Pro 3
-    -  Afkar Pro 4
-  url: 'http://www.gstatic.com/generate_204'
-  interval: 300
- #⬜⬜
-#🟡_________________________________PROCY-GROUP__________________________________🟡
-# Clash for Windows
-cfw-bypass:
-  - qq.com
-  - music.163.com
-  - '*.music.126.net'
-  - localhost
-  - 127.*
-  - 10.*
-  - 172.16.*
-  - 172.17.*
-  - 172.18.*
-  - 172.19.*
-  - 172.20.*
-  - 172.21.*
-  - 172.22.*
-  - 172.23.*
-  - 172.24.*
-  - 172.25.*
-  - 172.26.*
-  - 172.27.*
-  - 172.28.*
-  - 172.29.*
-  - 172.30.*
-  - 172.31.*
-  - 192.168.*
-  - <local>
-cfw-latency-timeout: 5000
+  - GGWP2 TLS
+  - GGWP2 NTLS
+  - OPOK2 TLS
+  - OPOK2 NTLS
+  - NETFLIX2 TLS
+  - NETFLIX2 NTLS
+  - NETFLIX TLS
+  - NETFLIX NTLS
+  - GGWP TLS
+  - GGWP NTLS
+  - OPOK TLS
+  - OPOK NTLS
+  - GGWP 1
+  - GGWP 2
+  - GGWP 3
+  - GGWP 4
+  - GGWP 5
+  - GGWP 6
+  - GGWP 7
+  - GGWP 8
+  - GGWP 9
+  - OPOK 1
+  - OPOK 2
+  url: http://www.gstatic.com/generate_204
+  interval: 60
+- name: BEST-PING
+  type: url-test
+  strategy: round-robin
+  disable-udp: false
+  proxies:
+  - GGWP3 TLS
+  - GGWP3 NTLS
+  - OPOK3 TLS
+  - OPOK3 NTLS
+  - NETFLIX3 TLS
+  - NETFLIX3 NTLS
+  - GGWP2 TLS
+  - GGWP2 NTLS
+  - OPOK2 TLS
+  - OPOK2 NTLS
+  - NETFLIX2 TLS
+  - NETFLIX2 NTLS
+  - NETFLIX TLS
+  - NETFLIX NTLS
+  - GGWP TLS
+  - GGWP NTLS
+  - OPOK TLS
+  - OPOK NTLS
+  - GGWP 1
+  - GGWP 2
+  - GGWP 3
+  - GGWP 4
+  - GGWP 5
+  - GGWP 6
+  - GGWP 7
+  - GGWP 8
+  - GGWP 9
+  - OPOK 1
+  - OPOK 2
+  url: http://www.gstatic.com/generate_204
+  interval: 60
+- name: OPOK
+  type: url-test
+  strategy: round-robin
+  disable-udp: false
+  proxies:
+  - OPOK2 TLS
+  - OPOK2 NTLS
+  - OPOK3 TLS
+  - OPOK3 NTLS
+  - OPOK TLS
+  - OPOK NTLS
+  - OPOK 1
+  - OPOK 2
+  url: http://www.gstatic.com/generate_204
+  interval: 60
+- name: GGWP
+  type: url-test
+  strategy: round-robin
+  disable-udp: false
+  proxies:
+  - GGWP3 TLS
+  - GGWP3 NTLS
+  - GGWP2 TLS
+  - GGWP2 NTLS
+  - GGWP TLS
+  - GGWP NTLS
+  - GGWP 1
+  - GGWP 2
+  - GGWP 3
+  - GGWP 4
+  - GGWP 5
+  - GGWP 6
+  - GGWP 7
+  - GGWP 8
+  - GGWP 9
+  url: http://www.gstatic.com/generate_204
+  interval: 60
+- name: NETFLIX
+  type: url-test
+  strategy: round-robin
+  disable-udp: false
+  proxies:
+  - NETFLIX TLS
+  - NETFLIX NTLS
+  - NETFLIX2 TLS
+  - NETFLIX2 NTLS
+  - NETFLIX3 TLS
+  - NETFLIX3 NTLS
+  - NETFLIX 1
+  - NETFLIX 2
+  url: http://www.gstatic.com/generate_204
+  interval: 60
+# ================= RP  ==================
 rule-providers:
   Portgames:
     type: http
     behavior: classical
     path: "./rule_provider/portgames.yaml"
     url: "https://raw.githubusercontent.com/ekosupry/CONFIG/main/portgame.yaml"
+    interval: 14400 # Update rules every 4 hours
   Gaming:
     type: http
     behavior: classical
     path: "./rule_provider/gaming.yaml"
     url: "https://raw.githubusercontent.com/ekosupry/CONFIG/main/gaming.yaml"
+    interval: 14400 # Update rules every 4 hours
   Game-TCP:
     type: http
     behavior: classical
     path: "./rule_provider/gametcp.yaml"
     url: "https://raw.githubusercontent.com/ekosupry/CONFIG/main/gametcp.yaml"
+    interval: 14400 # Update rules every 4 hours
   Sosmed:
     type: http
     behavior: classical
     path: "./rule_provider/fl-sosmed.yaml"
     url: "https://raw.githubusercontent.com/ekosupry/CONFIG/main/sosmed.yaml"
+    interval: 14400 # Update rules every 4 hours
   Nonton:
     type: http
     behavior: classical
     path: "./rule_provider/fl-streaming.yaml"
     url: "https://raw.githubusercontent.com/ekosupry/CONFIG/main/nonton.yaml"
+    interval: 14400 # Update rules every 4 hours
   YouTube:
     type: http
     behavior: domain
     path: "./rule_provider/youtube.yaml"
     url: "https://raw.githubusercontent.com/ekosupry/CONFIG/main/youtube.yaml"
+    interval: 14400 # Update rules every 4 hours
   WA:
     type: http
     behavior: classical
     path: "./rule_provider/whatsapp.yaml"
-    url: "https://raw.githubusercontent.com/ekosupry/CONFIG/main/whatsapp.yaml"  
+    url: "https://raw.githubusercontent.com/ekosupry/CONFIG/main/whatsapp.yaml"
+    interval: 14400 # Update rules every 4 hours
   Facebook:
     type: http
     behavior: classical
     path: "./rule_provider/wafb.yaml"
-    url: "https://raw.githubusercontent.com/ekosupry/CONFIG/main/facebook.yaml"  
+    url: "https://raw.githubusercontent.com/ekosupry/CONFIG/main/facebook.yaml"
+    interval: 14400 # Update rules every 4 hours
   Zero:
     type: http
     behavior: classical
     path: "./rule_provider/zerotier.yaml"
     url: "https://raw.githubusercontent.com/ekosupry/CONFIG/main/zerotier.yaml"
+    interval: 14400 # Update rules every 4 hours
 #rulindo
   Indo:
     type: http
     behavior: classical
     path: "./rule_provider/indo.yaml"
     url: "https://raw.githubusercontent.com/ekosupry/CONFIG/main/ruleindo.yaml"
-  Manca:
-    type: http
-    behavior: classical
-    path: "./rule_provider/indo.yaml"
-    url: "https://raw.githubusercontent.com/ekosupry/CONFIG/main/rulemanca.yaml"
+    interval: 14400 # Update rules every 4 hours
   Bank:
     type: http
     behavior: classical
     path: "./rule_provider/banking.yaml"
     url: "https://raw.githubusercontent.com/ekosupry/CONFIG/main/banking.yaml"
+    interval: 14400 # Update rules every 4 hours
   rule_disneyplus:
     type: http
     behavior: classical
     path: "./rule_provider/rule_disneyplus.yaml"
     url: "https://raw.githubusercontent.com/ekosupry/CONFIG/main/rule_disney.yaml"
+    interval: 14400 # Update rules every 4 hours
   rule_netflix:
     type: http
     behavior: domain
     path: "./rule_provider/rule_netflix.yaml"
     url: "https://raw.githubusercontent.com/ekosupry/CONFIG/main/rule_netflix.yaml"
+    interval: 14400 # Update rules every 4 hours
 #iklan&18+
   Nsfw:
     type: http
     behavior: domain
     path: "./rule_provider/nsfw.yaml"
     url: "https://raw.githubusercontent.com/ekosupry/CONFIG/main/nsfw.yaml"
+    interval: 14400 # Update rules every 4 hours
   18+:
     type: http
     behavior: domain
     path: "./rule_provider/18+.yaml"
     url: "https://raw.githubusercontent.com/ekosupry/CONFIG/main/porn1.yaml"
+    interval: 14400 # Update rules every 4 hours
   Basicads:
     type: http
     behavior: domain
     path: "./rule_provider/basicads.yaml"
     url: "https://raw.githubusercontent.com/ekosupry/CONFIG/main/basicads.yaml"
+    interval: 14400 # Update rules every 4 hours
   Personalads:
     type: http
     behavior: classical
     path: "./rule_provider/personalads.yaml"
     url: "https://raw.githubusercontent.com/ekosupry/CONFIG/main/personalads.yaml"
+    interval: 14400 # Update rules every 4 hours
 #Belanja
   Market:
     type: http
     behavior: classical
     path: "./rule_provider/marketplace.yaml"
     url: "https://raw.githubusercontent.com/ekosupry/CONFIG/main/marketplace.yaml"
+    interval: 14400 # Update rules every 4 hours
   Bukalapak:
     type: http
     behavior: classical
     path: "./rule_provider/bukalapak.yaml"
     url: "https://raw.githubusercontent.com/ekosupry/CONFIG/main/bukalapak.yaml"
+    interval: 14400 # Update rules every 4 hours
   Tokopedia:
     type: http
     behavior: classical
     path: "./rule_provider/tokopedia.yaml"
     url: "https://raw.githubusercontent.com/ekosupry/CONFIG/main/tokopedia.yaml"
+    interval: 14400 # Update rules every 4 hours
   Shopee:
     type: http
     behavior: classical
     path: "./rule_provider/shopee.yaml"
     url: "https://raw.githubusercontent.com/ekosupry/CONFIG/main/shopee.yaml"
+    interval: 14400 # Update rules every 4 hours
   Speed:
     type: http
     behavior: classical
     path: "./rule_provider/speed.yaml"
     url: "https://raw.githubusercontent.com/ekosupry/CONFIG/main/speed.yaml"
+    interval: 14400 # Update rules every 4 hours
   Judol:
     type: http
     behavior: classical
     path: "./rule_provider/Judol.yaml"
     url: "https://raw.githubusercontent.com/ekosupry/CONFIG/main/Judi_Online.yaml"
+    interval: 14400 # Update rules every 4 hours
 # ================= RULES  ==================
 rules:
 - IP-CIDR,198.18.0.1/16,REJECT,no-resolve
-- RULE-SET,Sosmed,SOSMED
-- RULE-SET,Market,MARKETPLACE
-- RULE-SET,Bukalapak,MARKETPLACE
-- RULE-SET,Tokopedia,MARKETPLACE
-- RULE-SET,Shopee,MARKETPLACE
-- RULE-SET,Nonton,STREAMING
-- RULE-SET,Indo,AKUN BANK
-- RULE-SET,Manca,IKLAN
-- RULE-SET,Bank,AKUN BANK
-- RULE-SET,Portgames,PLAY GAME
-- RULE-SET,Gaming,LOBBY GAME
-- RULE-SET,Game-TCP,LOBBY GAME
-- RULE-SET,WA,WHATSAPP
+- RULE-SET,Sosmed,SOSMED 📲
+- RULE-SET,Market,SHOPPING 🛒
+- RULE-SET,Bukalapak,SHOPPING 🛒
+- RULE-SET,Tokopedia,SHOPPING 🛒
+- RULE-SET,Shopee,SHOPPING 🛒
+- RULE-SET,Nonton,STREAMING 📽️
+- RULE-SET,Indo,TRAFIK-AKUN-INDO 🛑
+- RULE-SET,Bank,BANK 🏧
+- RULE-SET,Portgames,GAMING - MATCH 🎮
+- RULE-SET,Gaming,GAMING - ROOM 🕹️
+- RULE-SET,Game-TCP,GAMING - ROOM 🕹️
+- RULE-SET,WA,WHATSAPP 📨
 - RULE-SET,Facebook,FACEBOOK
-- RULE-SET,Personalads,IKLAN
-- RULE-SET,Basicads,IKLAN
-- RULE-SET,18+,Adult🔞
-- RULE-SET,Nsfw,Adult🔞
-- RULE-SET,YouTube,YOUTUBE
-- RULE-SET,Speed,Global✅
-- RULE-SET,Zero,AKUN BANK
-- RULE-SET,Judol,IKLAN
-# Local Area Network
-- IP-CIDR,192.168.0.0/16,DIRECT
-- IP-CIDR,10.0.0.0/8,DIRECT
-- IP-CIDR,172.16.0.0/12,DIRECT
-- IP-CIDR,127.0.0.0/8,DIRECT
-- IP-CIDR,100.64.0.0/10,DIRECT
-# DNSPod Public DNS+
-- IP-CIDR,119.28.28.28/32,DIRECT,no-resolve
-# GeoIP China
-- GEOIP,CN,DIRECT
-#--------------------------------------
-- MATCH,Global✅
-#--------------------------------------
+- RULE-SET,Personalads,IKLAN 🛡
+- RULE-SET,Basicads,IKLAN 🛡
+- RULE-SET,18+,IKLAN 🛡
+- RULE-SET,Nsfw,IKLAN 🛡
+- RULE-SET,Judol,IKLAN 🛡
+- RULE-SET,YouTube,YOUTUBE 🎦
+- RULE-SET,Speed,SPEEDTEST ⚡
+- RULE-SET,Zero,ZEROTIER ⚠️
+- MATCH,UMUM 🌏

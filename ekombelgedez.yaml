@@ -78,6 +78,7 @@ tproxy-port: 9898
 mixed-port: 7890
 # ====== wa: 081511411523 ======
 proxies:
+# AKUN MAHFUD
   - name: GGWP TLS
     server: 104.19.143.108
     port: 443
@@ -146,6 +147,245 @@ proxies:
         Host: do3.srpcom.online
     udp: true
 
+  - name: NETFLIX TLS
+    server: cache.netflix.com
+    port: 443
+    type: vless
+    uuid: 8de95362-d3d9-4c40-93d4-bc5c83c9b1ae
+    alterId: 0
+    cipher: auto
+    tls: true
+    skip-cert-verify: true
+    servername: do3.srpcom.online
+    network: ws
+    ws-opts:
+      path: /vlessws
+      headers:
+        Host: do3.srpcom.online
+    udp: true
+    
+  - name: NETFLIX NTLS
+    server: cache.netflix.com
+    port: 80
+    type: vless
+    uuid: 8de95362-d3d9-4c40-93d4-bc5c83c9b1ae
+    alterId: 0
+    cipher: auto
+    tls: false
+    skip-cert-verify: true
+    servername: do3.srpcom.online
+    network: ws
+    ws-opts:
+      path: /vlessws
+      headers:
+        Host: do3.srpcom.online
+    udp: true
+#AKUN AFKAR
+  - name: GGWP2 TLS
+    server: 104.19.143.108
+    port: 443
+    type: vmess
+    uuid: c19a0d69-5f9f-4109-a609-aaaf91c45ff6
+    alterId: 0
+    cipher: auto
+    tls: true
+    skip-cert-verify: true
+    servername: ca.srpcom.online
+    network: ws
+    ws-opts:
+      path: /vmessws
+      headers:
+        Host: ca.srpcom.online
+    udp: true
+
+  - name: GGWP2 NTLS
+    server: 104.19.143.108
+    port: 80
+    type: vmess
+    uuid: c19a0d69-5f9f-4109-a609-aaaf91c45ff6
+    alterId: 0
+    cipher: auto
+    tls: false
+    skip-cert-verify: true
+    servername: ca.srpcom.online
+    network: ws
+    ws-opts:
+      path: /vmessws
+      headers:
+        Host: ca.srpcom.online
+    udp: true
+
+  - name: OPOK2 TLS
+    server: space.byu.id
+    port: 443
+    type: vmess
+    uuid: c19a0d69-5f9f-4109-a609-aaaf91c45ff6
+    alterId: 0
+    cipher: auto
+    tls: true
+    skip-cert-verify: true
+    servername: ca.srpcom.online
+    network: ws
+    ws-opts:
+      path: /vmessws
+      headers:
+        Host: ca.srpcom.online
+    udp: true
+
+  - name: OPOK2 NTLS
+    server: space.byu.id
+    port: 80
+    type: vmess
+    uuid: c19a0d69-5f9f-4109-a609-aaaf91c45ff6
+    alterId: 0
+    cipher: auto
+    tls: false
+    skip-cert-verify: true
+    servername: ca.srpcom.online
+    network: ws
+    ws-opts:
+      path: /vmessws
+      headers:
+        Host: ca.srpcom.online
+    udp: true
+
+  - name: NETFLIX2 TLS
+    server: cache.netflix.com
+    port: 443
+    type: vmess
+    uuid: c19a0d69-5f9f-4109-a609-aaaf91c45ff6
+    alterId: 0
+    cipher: auto
+    tls: true
+    skip-cert-verify: true
+    servername: ca.srpcom.online
+    network: ws
+    ws-opts:
+      path: /vmessws
+      headers:
+        Host: ca.srpcom.online
+    udp: true
+
+  - name: NETFLIX2 NTLS
+    server: cache.netflix.com
+    port: 80
+    type: vmess
+    uuid: c19a0d69-5f9f-4109-a609-aaaf91c45ff6
+    alterId: 0
+    cipher: auto
+    tls: false
+    skip-cert-verify: true
+    servername: ca.srpcom.online
+    network: ws
+    ws-opts:
+      path: /vmessws
+      headers:
+        Host: ca.srpcom.online
+    udp: true
+
+# AKUN RAFKA
+  - name: GGWP3 TLS
+    server: 104.19.143.108
+    port: 443
+    type: vmess
+    uuid: c19a0d69-5f9f-4109-a609-aaaf91c45ff6
+    alterId: 0
+    cipher: auto
+    tls: true
+    skip-cert-verify: true
+    servername: do4.srpcom.online
+    network: ws
+    ws-opts:
+      path: /vmessws
+      headers:
+        Host: do4.srpcom.online
+    udp: true
+
+  - name: GGWP3 NTLS
+    server: 104.19.143.108
+    port: 80
+    type: vmess
+    uuid: c19a0d69-5f9f-4109-a609-aaaf91c45ff6
+    alterId: 0
+    cipher: auto
+    tls: false
+    skip-cert-verify: true
+    servername: do4.srpcom.online
+    network: ws
+    ws-opts:
+      path: /vmessws
+      headers:
+        Host: do4.srpcom.online
+    udp: true
+
+  - name: OPOK3 TLS
+    server: space.byu.id
+    port: 443
+    type: vmess
+    uuid: c19a0d69-5f9f-4109-a609-aaaf91c45ff6
+    alterId: 0
+    cipher: auto
+    tls: true
+    skip-cert-verify: true
+    servername: do4.srpcom.online
+    network: ws
+    ws-opts:
+      path: /vmessws
+      headers:
+        Host: do4.srpcom.online
+    udp: true
+
+  - name: OPOK3 NTLS
+    server: space.byu.id
+    port: 80
+    type: vmess
+    uuid: c19a0d69-5f9f-4109-a609-aaaf91c45ff6
+    alterId: 0
+    cipher: auto
+    tls: false
+    skip-cert-verify: true
+    servername: do4.srpcom.online
+    network: ws
+    ws-opts:
+      path: /vmessws
+      headers:
+        Host: do4.srpcom.online
+    udp: true
+
+  - name: NETFLIX3 TLS
+    server: cache.netflix.com
+    port: 443
+    type: vmess
+    uuid: c19a0d69-5f9f-4109-a609-aaaf91c45ff6
+    alterId: 0
+    cipher: auto
+    tls: true
+    skip-cert-verify: true
+    servername: do4.srpcom.online
+    network: ws
+    ws-opts:
+      path: /vmessws
+      headers:
+        Host: do4.srpcom.online
+    udp: true
+
+  - name: NETFLIX3 NTLS
+    server: cache.netflix.com
+    port: 80
+    type: vmess
+    uuid: c19a0d69-5f9f-4109-a609-aaaf91c45ff6
+    alterId: 0
+    cipher: auto
+    tls: false
+    skip-cert-verify: true
+    servername: do4.srpcom.online
+    network: ws
+    ws-opts:
+      path: /vmessws
+      headers:
+        Host: do4.srpcom.online
+    udp: true
+#AKUN FREE
   - name: GGWP 1
     server: 104.19.143.108
     port: 443
@@ -322,39 +562,6 @@ proxies:
       path: /?ed=2048
       headers:
         Host: id.knc.my.id
-  - name: NETFLIX TLS
-    server: cache.netflix.com
-    port: 443
-    type: vless
-    uuid: 8de95362-d3d9-4c40-93d4-bc5c83c9b1ae
-    alterId: 0
-    cipher: auto
-    tls: true
-    skip-cert-verify: true
-    servername: do3.srpcom.online
-    network: ws
-    ws-opts:
-      path: /vlessws
-      headers:
-        Host: do3.srpcom.online
-    udp: true
-    
-  - name: NETFLIX NTLS
-    server: cache.netflix.com
-    port: 80
-    type: vless
-    uuid: 8de95362-d3d9-4c40-93d4-bc5c83c9b1ae
-    alterId: 0
-    cipher: auto
-    tls: false
-    skip-cert-verify: true
-    servername: do3.srpcom.online
-    network: ws
-    ws-opts:
-      path: /vlessws
-      headers:
-        Host: do3.srpcom.online
-    udp: true
     
   - name: NETFLIX 1
     server: cache.netflix.com
@@ -399,6 +606,20 @@ proxy-groups:
   - GGWP NTLS
   - OPOK TLS
   - OPOK NTLS
+  - NETFLIX TLS
+  - NETFLIX NTLS
+  - GGWP2 TLS
+  - GGWP2 NTLS
+  - OPOK2 TLS
+  - OPOK2 NTLS
+  - NETFLIX2 TLS
+  - NETFLIX2 NTLS
+  - GGWP3 TLS
+  - GGWP3 NTLS
+  - OPOK3 TLS
+  - OPOK3 NTLS
+  - NETFLIX3 TLS
+  - NETFLIX3 NTLS
   - GGWP 1
   - GGWP 2
   - GGWP 3
@@ -548,6 +769,14 @@ proxy-groups:
   strategy: round-robin
   disable-udp: false
   proxies:
+  - GGWP2 TLS
+  - GGWP2 NTLS
+  - OPOK2 TLS
+  - OPOK2 NTLS
+  - NETFLIX2 TLS
+  - NETFLIX2 NTLS
+  - NETFLIX TLS
+  - NETFLIX NTLS
   - GGWP TLS
   - GGWP NTLS
   - OPOK TLS
@@ -572,6 +801,14 @@ proxy-groups:
   strategy: consistent-hashing
   disable-udp: false
   proxies:
+  - GGWP2 TLS
+  - GGWP2 NTLS
+  - OPOK2 TLS
+  - OPOK2 NTLS
+  - NETFLIX2 TLS
+  - NETFLIX2 NTLS
+  - NETFLIX TLS
+  - NETFLIX NTLS
   - GGWP TLS
   - GGWP NTLS
   - OPOK TLS
@@ -610,6 +847,14 @@ proxy-groups:
   strategy: round-robin
   disable-udp: false
   proxies:
+  - GGWP2 TLS
+  - GGWP2 NTLS
+  - OPOK2 TLS
+  - OPOK2 NTLS
+  - NETFLIX2 TLS
+  - NETFLIX2 NTLS
+  - NETFLIX TLS
+  - NETFLIX NTLS
   - GGWP TLS
   - GGWP NTLS
   - OPOK TLS
@@ -632,6 +877,14 @@ proxy-groups:
   strategy: round-robin
   disable-udp: false
   proxies:
+  - GGWP2 TLS
+  - GGWP2 NTLS
+  - OPOK2 TLS
+  - OPOK2 NTLS
+  - NETFLIX2 TLS
+  - NETFLIX2 NTLS
+  - NETFLIX TLS
+  - NETFLIX NTLS
   - GGWP TLS
   - GGWP NTLS
   - OPOK TLS
@@ -654,6 +907,20 @@ proxy-groups:
   strategy: round-robin
   disable-udp: false
   proxies:
+  - GGWP3 TLS
+  - GGWP3 NTLS
+  - OPOK3 TLS
+  - OPOK3 NTLS
+  - NETFLIX3 TLS
+  - NETFLIX3 NTLS
+  - GGWP2 TLS
+  - GGWP2 NTLS
+  - OPOK2 TLS
+  - OPOK2 NTLS
+  - NETFLIX2 TLS
+  - NETFLIX2 NTLS
+  - NETFLIX TLS
+  - NETFLIX NTLS
   - GGWP TLS
   - GGWP NTLS
   - OPOK TLS
@@ -676,6 +943,10 @@ proxy-groups:
   strategy: round-robin
   disable-udp: false
   proxies:
+  - OPOK2 TLS
+  - OPOK2 NTLS
+  - OPOK3 TLS
+  - OPOK3 NTLS
   - OPOK TLS
   - OPOK NTLS
   - OPOK 1
@@ -687,6 +958,10 @@ proxy-groups:
   strategy: round-robin
   disable-udp: false
   proxies:
+  - GGWP3 TLS
+  - GGWP3 NTLS
+  - GGWP2 TLS
+  - GGWP2 NTLS
   - GGWP TLS
   - GGWP NTLS
   - GGWP 1
@@ -707,6 +982,10 @@ proxy-groups:
   proxies:
   - NETFLIX TLS
   - NETFLIX NTLS
+  - NETFLIX2 TLS
+  - NETFLIX2 NTLS
+  - NETFLIX3 TLS
+  - NETFLIX3 NTLS
   - NETFLIX 1
   - NETFLIX 2
   url: http://www.gstatic.com/generate_204

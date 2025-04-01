@@ -615,22 +615,23 @@ proxy-groups:
   type: select
   disable-udp: false
   proxies:
+  - REJECT
+  - DIRECT
   - FALLBACK
   - BALANCE
   - BEST-PING
   - GGWP
   - OPOK
   - NETFLIX
-  - DIRECT
-  - REJECT
   url: 'http://www.gstatic.com/generate_204'
   interval: 60
 - name: GAMING - ROOM 🕹️
   type: select
   disable-udp: false
   proxies:
-  - GGWP
+  - FALLBACK
   - OPOK
+  - GGWP
   - NETFLIX
   - DIRECT
   url: 'http://www.gstatic.com/generate_204'
@@ -639,6 +640,7 @@ proxy-groups:
   type: select
   disable-udp: false
   proxies:
+  - FALLBACK
   - DIRECT
   - GGWP
   - OPOK
@@ -650,6 +652,7 @@ proxy-groups:
   strategy: round-robin
   disable-udp: false
   proxies:
+  - FALLBACK
   - GGWP
   - OPOK
   - NETFLIX
@@ -724,6 +727,7 @@ proxy-groups:
   strategy: round-robin
   disable-udp: false
   proxies:
+  - FALLBACK
   - DIRECT
   - REJECT
   - BALANCE

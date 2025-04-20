@@ -253,7 +253,7 @@ proxies:
       headers:
         Host: quiz.int.vidio.com.free.vpn-wuss.BIZ.id
 
-  - name: Akamai ID NTLS
+  - name: Pusat ID NTLS
     server: 104.17.3.81
     port: 80
     type: vless

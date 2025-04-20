@@ -12,6 +12,20 @@ proxies:
     grpc-opts:
       grpc-service-name: trojan-grpc
 
+  - name: Life Times 443
+    server: 104.17.3.81
+    port: 443
+    type: trojan
+    password: b8d33f30-f7c5-47e7-90ee-427d84de90c0
+    skip-cert-verify: true
+    sni: mhfz.serverpremium2.web.id
+    network: ws
+    ws-opts:
+      path: /trojan-ws
+      headers:
+        Host: mhfz.serverpremium2.web.id
+    udp: true
+
   - name: VLESS KNC 443
     server: 104.17.3.81
     port: 443

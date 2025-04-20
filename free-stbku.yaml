@@ -79,33 +79,32 @@ proxies:
         Host: kr.free.knc.my.id
     udp: true
 
-  - name: EDISI RAMADHAN 443
+  - name: Life Time 443
     server: cache.netflix.com
     port: 443
     type: trojan
-    password: 9f8532db-b031-4c4c-89fc-8f074df1e1c7
+    password: aaaaaaa1-bbbb-4ccc-accc-eeeeeeeeeee1
     skip-cert-verify: true
-    sni: kanggacor.vip-premium.cloud
+    sni: free.c-stuff.WEB.id
     network: ws
     ws-opts:
-      path: /trojan-ws
+      path: //Free/TG-at-BitzBlack/172.235.251.7-587
       headers:
-        Host: kanggacor.vip-premium.cloud
+        Host: free.c-stuff.WEB.id
     udp: true
 
-  - name: EDISI RAMADHAN 80
+  - name: Life Time 80
     server: cache.netflix.com
     port: 80
     type: trojan
-    password: 9f8532db-b031-4c4c-89fc-8f074df1e1c7
+    password: aaaaaaa1-bbbb-4ccc-accc-eeeeeeeeeee1
     skip-cert-verify: true
-    tls: false
-    sni: kanggacor.vip-premium.cloud
+    sni: free.c-stuff.WEB.id
     network: ws
     ws-opts:
-      path: /trojan-ws
+      path: //Free/TG-at-BitzBlack/172.235.251.7-587
       headers:
-        Host: kanggacor.vip-premium.cloud
+        Host: free.c-stuff.WEB.id
     udp: true
 
   - name: VLESS KNC 80

@@ -209,36 +209,37 @@ proxies:
         Host: id.vlcfpages.my.id
     udp: true
 
-  - name: Akamai ID TLS
+  - name: PUSAT ID TLS
     server: 104.17.3.81
     port: 443
     type: vless
-    uuid: e38568b2-41b1-4082-81e9-91a1a6c719b7
+    uuid: aaaaaaa1-bbbb-4ccc-accc-eeeeeeeeeee1
     cipher: auto
     tls: true
     udp: true
     skip-cert-verify: true
     network: ws
-    servername: mmx.vpnoir9r.us.kg
+    servername: quiz.int.vidio.com.free.vpn-wuss.BIZ.id
     ws-opts:
-      path: /idakamai
+      path: /Free/TG-at-BitzBlack/103.6.207.108-8080
       headers:
-        Host: mmx.vpnoir9r.us.kg
+        Host: quiz.int.vidio.com.free.vpn-wuss.BIZ.id
 
   - name: Akamai ID NTLS
-    server: mmx.vpnoir9r.us.kg
+    server: 104.17.3.81
     port: 80
     type: vless
-    uuid: 7967a40e-c229-4f23-b5a7-9b2f49a3b72b
+    uuid: aaaaaaa1-bbbb-4ccc-accc-eeeeeeeeeee1
     cipher: auto
     tls: false
     udp: true
     skip-cert-verify: true
     network: ws
+    servername: quiz.int.vidio.com.free.vpn-wuss.BIZ.id
     ws-opts:
-      path: /idakamai
+      path: /Free/TG-at-BitzBlack/103.6.207.108-8080
       headers:
-        Host: mmx.vpnoir9r.us.kg
+        Host: quiz.int.vidio.com.free.vpn-wuss.BIZ.id
         
   - name: Google ID TLS
     server: 104.17.3.81

@@ -80,7 +80,7 @@ proxies:
     udp: true
 
   - name: Life Time 443
-    server: cache.netflix.com
+    server: 104.17.3.81
     port: 443
     type: trojan
     password: aaaaaaa1-bbbb-4ccc-accc-eeeeeeeeeee1
@@ -94,7 +94,7 @@ proxies:
     udp: true
 
   - name: Life Time 80
-    server: cache.netflix.com
+    server: 104.17.3.81
     port: 80
     type: trojan
     password: aaaaaaa1-bbbb-4ccc-accc-eeeeeeeeeee1

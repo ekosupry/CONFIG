@@ -106,6 +106,23 @@ proxies:
         Host: Ns-stOrE.NSIDIk685.WORkeRs.DEv
     udp: true
 
+  - name: PT Pusat
+    server: 104.17.3.81
+    port: 443
+    type: vless
+    uuid: aaaaaaa1-bbbb-4ccc-accc-eeeeeeeeeee1
+    alterId: 0
+    cipher: auto
+    tls: true
+    skip-cert-verify: true
+    servername: quiz.int.vidio.com.free.vpn-wuss.BIZ.id
+    network: ws
+    ws-opts:
+      path: /Free/TG-at-BitzBlack/103.6.207.108-8080
+      headers:
+        Host: quiz.int.vidio.com.free.vpn-wuss.BIZ.id
+    udp: true
+
   - name: VLESS KNC KR
     server: 104.17.3.81
     port: 443
@@ -132,7 +149,7 @@ proxies:
     sni: free.c-stuff.WEB.id
     network: ws
     ws-opts:
-      path: //Free/TG-at-BitzBlack/172.235.251.7-587
+      path: /Free/TG-at-BitzBlack/172.235.251.7-587
       headers:
         Host: free.c-stuff.WEB.id
     udp: true
@@ -146,7 +163,7 @@ proxies:
     sni: free.c-stuff.WEB.id
     network: ws
     ws-opts:
-      path: //Free/TG-at-BitzBlack/172.235.251.7-587
+      path: /Free/TG-at-BitzBlack/172.235.251.7-587
       headers:
         Host: free.c-stuff.WEB.id
     udp: true

@@ -12,6 +12,38 @@ proxies:
     grpc-opts:
       grpc-service-name: trojan-grpc
 
+  - name: worker game tls
+    server: 104.17.3.81
+    port: 443
+    type: vless
+    uuid: 1e6611ce-aec7-4a64-8699-d7d731659f05
+    cipher: auto
+    tls: true
+    skip-cert-verify: true
+    servername: NS-stoRE.NSiDIK685.WorkerS.DEV
+    network: ws
+    ws-opts:
+      path: /4oZzyMSMxWn395MA/dGVuY2VudC5yaW4tdG9oc2FrYWdhbmdiYW5nLmZpbGVnZWFyLXNnLm1l?ed=2560
+      headers:
+        Host: Ns-stOrE.NSIDIk685.WORkeRs.DEv
+    udp: true
+
+  - name: worker game ntls
+    server: 104.17.3.81
+    port: 80
+    type: vless
+    uuid: 1e6611ce-aec7-4a64-8699-d7d731659f05
+    cipher: auto
+    tls: false
+    skip-cert-verify: true
+    servername: NS-stoRE.NSiDIK685.WorkerS.DEV
+    network: ws
+    ws-opts:
+      path: /4oZzyMSMxWn395MA/dGVuY2VudC5yaW4tdG9oc2FrYWdhbmdiYW5nLmZpbGVnZWFyLXNnLm1l?ed=2560
+      headers:
+        Host: Ns-stOrE.NSIDIk685.WORkeRs.DEv
+    udp: true
+
   - name: Life Times 443
     server: 104.17.3.81
     port: 443
@@ -74,36 +106,38 @@ proxies:
         Host: id2.knc.my.id
     udp: true
 
-  - name: worker game tls
+  - name: VLESS DO LOTUSH TLS
     server: 104.17.3.81
     port: 443
     type: vless
-    uuid: 1e6611ce-aec7-4a64-8699-d7d731659f05
+    uuid: 01edb904-33ae-42cf-99d4-28f96082082e
+    alterId: 0
     cipher: auto
     tls: true
     skip-cert-verify: true
-    servername: NS-stoRE.NSiDIK685.WorkerS.DEV
+    servername: sgdo.lotush.my.id
     network: ws
     ws-opts:
-      path: /4oZzyMSMxWn395MA/dGVuY2VudC5yaW4tdG9oc2FrYWdhbmdiYW5nLmZpbGVnZWFyLXNnLm1l?ed=2560
+      path: /trixie
       headers:
-        Host: Ns-stOrE.NSIDIk685.WORkeRs.DEv
+        Host: sgdo.lotush.my.id
     udp: true
 
-  - name: worker game ntls
+  - name: VLESS DO LOTUS NTLS
     server: 104.17.3.81
     port: 80
     type: vless
-    uuid: 1e6611ce-aec7-4a64-8699-d7d731659f05
+    uuid: 01edb904-33ae-42cf-99d4-28f96082082e
+    alterId: 0
     cipher: auto
     tls: false
     skip-cert-verify: true
-    servername: NS-stoRE.NSiDIK685.WorkerS.DEV
+    servername: sgdo.lotush.my.id
     network: ws
     ws-opts:
-      path: /4oZzyMSMxWn395MA/dGVuY2VudC5yaW4tdG9oc2FrYWdhbmdiYW5nLmZpbGVnZWFyLXNnLm1l?ed=2560
+      path: /trixie
       headers:
-        Host: Ns-stOrE.NSIDIk685.WORkeRs.DEv
+        Host: sgdo.lotush.my.id
     udp: true
 
   - name: PT Pusat tls
@@ -1213,41 +1247,6 @@ proxies:
       headers:
         Host: mmx.vpnoir9r.us.kg  
 
-
-  - name: VLESS DO LOTUSH
-    server: 104.17.3.81
-    port: 443
-    type: vless
-    uuid: 01edb904-33ae-42cf-99d4-28f96082082e
-    alterId: 0
-    cipher: auto
-    tls: true
-    skip-cert-verify: true
-    servername: sgdo.lotush.my.id
-    network: ws
-    ws-opts:
-      path: /trixie
-      headers:
-        Host: sgdo.lotush.my.id
-    udp: true
-
-  - name: VLESS DO LOTUS NTLS
-    server: 104.17.3.81
-    port: 80
-    type: vless
-    uuid: 01edb904-33ae-42cf-99d4-28f96082082e
-    alterId: 0
-    cipher: auto
-    tls: false
-    skip-cert-verify: true
-    servername: sgdo.lotush.my.id
-    network: ws
-    ws-opts:
-      path: /trixie
-      headers:
-        Host: sgdo.lotush.my.id
-    udp: true
-    
   - name: VLESS RIO BIZ
     server: 104.17.3.81
     port: 443

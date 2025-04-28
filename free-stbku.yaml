@@ -74,7 +74,7 @@ proxies:
         Host: id2.knc.my.id
     udp: true
 
-  - name: worker game
+  - name: worker game tls
     server: 104.17.3.81
     port: 443
     type: vless
@@ -90,7 +90,7 @@ proxies:
         Host: Ns-stOrE.NSIDIk685.WORkeRs.DEv
     udp: true
 
-  - name: worker game 80
+  - name: worker game ntls
     server: 104.17.3.81
     port: 80
     type: vless
@@ -106,7 +106,7 @@ proxies:
         Host: Ns-stOrE.NSIDIk685.WORkeRs.DEv
     udp: true
 
-  - name: PT Pusat
+  - name: PT Pusat tls
     server: 104.17.3.81
     port: 443
     type: vless
@@ -114,6 +114,23 @@ proxies:
     alterId: 0
     cipher: auto
     tls: true
+    skip-cert-verify: true
+    servername: quiz.int.vidio.com.free.vpn-wuss.BIZ.id
+    network: ws
+    ws-opts:
+      path: /Free/TG-at-BitzBlack/103.6.207.108-8080
+      headers:
+        Host: quiz.int.vidio.com.free.vpn-wuss.BIZ.id
+    udp: true
+
+  - name: PT Pusat ntls
+    server: 104.17.3.81
+    port: 80
+    type: vless
+    uuid: aaaaaaa1-bbbb-4ccc-accc-eeeeeeeeeee1
+    alterId: 0
+    cipher: auto
+    tls: false
     skip-cert-verify: true
     servername: quiz.int.vidio.com.free.vpn-wuss.BIZ.id
     network: ws

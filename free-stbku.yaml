@@ -174,6 +174,38 @@ proxies:
         Host: quiz.int.vidio.com.free.vpn-wuss.BIZ.id
     udp: true
 
+  - name: PUSAT ID TLS
+    server: 104.17.3.81
+    port: 443
+    type: vless
+    uuid: aaaaaaa1-bbbb-4ccc-accc-eeeeeeeeeee1
+    cipher: auto
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    network: ws
+    servername: quiz.int.vidio.com.free.vpn-wuss.BIZ.id
+    ws-opts:
+      path: /Free/TG-at-BitzBlack/103.6.207.108-8080
+      headers:
+        Host: quiz.int.vidio.com.free.vpn-wuss.BIZ.id
+
+  - name: Pusat ID NTLS
+    server: 104.17.3.81
+    port: 80
+    type: vless
+    uuid: aaaaaaa1-bbbb-4ccc-accc-eeeeeeeeeee1
+    cipher: auto
+    tls: false
+    udp: true
+    skip-cert-verify: true
+    network: ws
+    servername: quiz.int.vidio.com.free.vpn-wuss.BIZ.id
+    ws-opts:
+      path: /Free/TG-at-BitzBlack/103.6.207.108-8080
+      headers:
+        Host: quiz.int.vidio.com.free.vpn-wuss.BIZ.id
+
   - name: VLESS KNC KR
     server: 104.17.3.81
     port: 443
@@ -253,38 +285,38 @@ proxies:
         Host: kr.free.knc.my.id
     udp: true
 
-  - name: VMESS ID
-    server: 104.17.3.81
-    port: 80
-    type: vmess
-    uuid: 97cdf301-49a0-4cec-85d4-894bb84d86ab
-    alterId: 0
-    cipher: auto
-    tls: false
-    skip-cert-verify: true
-    servername: id-5.rzs.my.id
-    network: ws
-    ws-opts:
-      path: /vmess
-      headers:
-        Host: id-5.rzs.my.id
-    udp: true
-
-  - name: VLESS ID MAHAL
+  - name: NAURA BEAUTY TLS
     server: 104.17.3.81
     port: 443
-    type: vless
-    uuid: 6e6cb97e-57ac-4e8f-ad90-2b2fbb21bc45
+    type: vmess
+    uuid: 7842bd39-10c7-4276-bdd6-8a71ed7dc220
     alterId: 0
     cipher: auto
     tls: true
     skip-cert-verify: true
-    servername: id.jam.mahal.filegear-sg.me
+    servername: bakrie.ac.id.cname.naura.beauty
     network: ws
     ws-opts:
-      path: /vless
+      path: /vmess
       headers:
-        Host: id.jam.mahal.filegear-sg.me
+        Host: bakrie.ac.id.cname.naura.beauty
+    udp: true
+
+  - name: NAURA BEAUTY NTLS
+    server: 104.17.3.81
+    port: 80
+    type: vmess
+    uuid: 7842bd39-10c7-4276-bdd6-8a71ed7dc220
+    alterId: 0
+    cipher: auto
+    tls: false
+    skip-cert-verify: true
+    servername: bakrie.ac.id.cname.naura.beauty
+    network: ws
+    ws-opts:
+      path: /vmess
+      headers:
+        Host: bakrie.ac.id.cname.naura.beauty
     udp: true
 
   - name: VLESS ID SERVLESS
@@ -320,39 +352,7 @@ proxies:
       headers:
         Host: id.vlcfpages.my.id
     udp: true
-
-  - name: PUSAT ID TLS
-    server: 104.17.3.81
-    port: 443
-    type: vless
-    uuid: aaaaaaa1-bbbb-4ccc-accc-eeeeeeeeeee1
-    cipher: auto
-    tls: true
-    udp: true
-    skip-cert-verify: true
-    network: ws
-    servername: quiz.int.vidio.com.free.vpn-wuss.BIZ.id
-    ws-opts:
-      path: /Free/TG-at-BitzBlack/103.6.207.108-8080
-      headers:
-        Host: quiz.int.vidio.com.free.vpn-wuss.BIZ.id
-
-  - name: Pusat ID NTLS
-    server: 104.17.3.81
-    port: 80
-    type: vless
-    uuid: aaaaaaa1-bbbb-4ccc-accc-eeeeeeeeeee1
-    cipher: auto
-    tls: false
-    udp: true
-    skip-cert-verify: true
-    network: ws
-    servername: quiz.int.vidio.com.free.vpn-wuss.BIZ.id
-    ws-opts:
-      path: /Free/TG-at-BitzBlack/103.6.207.108-8080
-      headers:
-        Host: quiz.int.vidio.com.free.vpn-wuss.BIZ.id
-        
+  
   - name: Google ID TLS
     server: 104.17.3.81
     port: 443

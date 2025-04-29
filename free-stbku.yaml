@@ -190,7 +190,7 @@ proxies:
       headers:
         Host: quiz.int.vidio.com.free.vpn-wuss.BIZ.id
 
-  - name: Pusat ID NTLS
+  - name: PUSAT ID NTLS
     server: 104.17.3.81
     port: 80
     type: vless

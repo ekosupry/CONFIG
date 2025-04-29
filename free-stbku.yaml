@@ -12,7 +12,7 @@ proxies:
     grpc-opts:
       grpc-service-name: trojan-grpc
 
-  - name: worker game tls
+  - name: WORKER GAME TLS
     server: 104.17.3.81
     port: 443
     type: vless
@@ -28,7 +28,7 @@ proxies:
         Host: Ns-stOrE.NSIDIk685.WORkeRs.DEv
     udp: true
 
-  - name: worker game ntls
+  - name: WORKER GAME NTLS
     server: 104.17.3.81
     port: 80
     type: vless
@@ -44,7 +44,7 @@ proxies:
         Host: Ns-stOrE.NSIDIk685.WORkeRs.DEv
     udp: true
 
-  - name: Life Times 443
+  - name: LIFE TIME 443
     server: 104.17.3.81
     port: 443
     type: trojan
@@ -58,7 +58,7 @@ proxies:
         Host: mhfz.serverpremium2.web.id
     udp: true
 
-  - name: Life Times 80
+  - name: LIFE TIME 80
     server: 104.17.3.81
     port: 80
     type: trojan
@@ -140,7 +140,7 @@ proxies:
         Host: sgdo.lotush.my.id
     udp: true
 
-  - name: PT Pusat tls
+  - name: PT PUSAT TLS
     server: 104.17.3.81
     port: 443
     type: vless
@@ -157,7 +157,7 @@ proxies:
         Host: quiz.int.vidio.com.free.vpn-wuss.BIZ.id
     udp: true
 
-  - name: PT Pusat ntls
+  - name: PT PUSAT NTLS
     server: 104.17.3.81
     port: 80
     type: vless
@@ -223,7 +223,7 @@ proxies:
         Host: kr.free.knc.my.id
     udp: true
 
-  - name: Life Time 443
+  - name: LIFE TIME 443
     server: 104.17.3.81
     port: 443
     type: trojan
@@ -237,7 +237,7 @@ proxies:
         Host: free.c-stuff.WEB.id
     udp: true
 
-  - name: Life Time 80
+  - name: LIFE TIME 80
     server: 104.17.3.81
     port: 80
     type: trojan

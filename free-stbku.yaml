@@ -12,7 +12,7 @@ proxies:
     grpc-opts:
       grpc-service-name: trojan-grpc
 
-  - name: WORKER GAME TLS
+  - name: WORKER GAME 443
     server: 104.17.3.81
     port: 443
     type: vless
@@ -28,7 +28,7 @@ proxies:
         Host: Ns-stOrE.NSIDIk685.WORkeRs.DEv
     udp: true
 
-  - name: WORKER GAME NTLS
+  - name: WORKER GAME 80
     server: 104.17.3.81
     port: 80
     type: vless

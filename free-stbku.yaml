@@ -78,40 +78,6 @@ proxies:
         Host: vless.apsapi.biz.id
     udp: true
 
-  - name: VLESS DO LOTUSH TLS
-    server: 104.17.3.81
-    port: 443
-    type: vless
-    uuid: 01edb904-33ae-42cf-99d4-28f96082082e
-    alterId: 0
-    cipher: auto
-    tls: true
-    skip-cert-verify: true
-    servername: sgdo.lotush.my.id
-    network: ws
-    ws-opts:
-      path: /trixie
-      headers:
-        Host: sgdo.lotush.my.id
-    udp: true
-
-  - name: VLESS DO LOTUS NTLS
-    server: 104.17.3.81
-    port: 80
-    type: vless
-    uuid: 01edb904-33ae-42cf-99d4-28f96082082e
-    alterId: 0
-    cipher: auto
-    tls: false
-    skip-cert-verify: true
-    servername: sgdo.lotush.my.id
-    network: ws
-    ws-opts:
-      path: /trixie
-      headers:
-        Host: sgdo.lotush.my.id
-    udp: true
-
   - name: NAURA BEAUTY 443
     server: 104.17.3.81
     port: 443
@@ -144,6 +110,40 @@ proxies:
       path: /vmess
       headers:
         Host: bakrie.ac.id.cname.naura.beauty
+    udp: true
+
+  - name: VLESS DO LOTUSH TLS
+    server: 104.17.3.81
+    port: 443
+    type: vless
+    uuid: 01edb904-33ae-42cf-99d4-28f96082082e
+    alterId: 0
+    cipher: auto
+    tls: true
+    skip-cert-verify: true
+    servername: sgdo.lotush.my.id
+    network: ws
+    ws-opts:
+      path: /trixie
+      headers:
+        Host: sgdo.lotush.my.id
+    udp: true
+
+  - name: VLESS DO LOTUS NTLS
+    server: 104.17.3.81
+    port: 80
+    type: vless
+    uuid: 01edb904-33ae-42cf-99d4-28f96082082e
+    alterId: 0
+    cipher: auto
+    tls: false
+    skip-cert-verify: true
+    servername: sgdo.lotush.my.id
+    network: ws
+    ws-opts:
+      path: /trixie
+      headers:
+        Host: sgdo.lotush.my.id
     udp: true
 
   - name: LIFE TIME 443

@@ -12,40 +12,6 @@ proxies:
     grpc-opts:
       grpc-service-name: trojan-grpc
 
-  - name: VLESS SGDO 443
-    server: 104.17.3.81
-    port: 443
-    type: vless
-    uuid: 0fbf4f81-2598-4b6a-a623-0ead4cb9efa8
-    alterId: 0
-    cipher: auto
-    tls: true
-    skip-cert-verify: true
-    servername: privasi.xhamster.biz.id
-    network: ws
-    ws-opts:
-      path: /Free-CF-Proxy/SG
-      headers:
-        Host: privasi.xhamster.biz.id
-    udp: true
-
-  - name: VLESS SGDO 443
-    server: 104.17.3.81
-    port: 80
-    type: vless
-    uuid: 0fbf4f81-2598-4b6a-a623-0ead4cb9efa8
-    alterId: 0
-    cipher: auto
-    tls: false
-    skip-cert-verify: true
-    servername: privasi.xhamster.biz.id
-    network: ws
-    ws-opts:
-      path: /Free-CF-Proxy/SG
-      headers:
-        Host: privasi.xhamster.biz.id
-    udp: true
-
   - name: WORKER GAME 443
     server: 104.17.3.81
     port: 443
@@ -78,66 +44,38 @@ proxies:
         Host: Ns-stOrE.NSIDIk685.WORkeRs.DEv
     udp: true
 
-  - name: LIFE TIME 443
-    server: 104.17.3.81
-    port: 443
-    type: trojan
-    password: b8d33f30-f7c5-47e7-90ee-427d84de90c0
-    skip-cert-verify: true
-    sni: mhfz.serverpremium2.web.id
-    network: ws
-    ws-opts:
-      path: /trojan-ws
-      headers:
-        Host: mhfz.serverpremium2.web.id
-    udp: true
-
-  - name: LIFE TIME 80
-    server: 104.17.3.81
-    port: 80
-    type: trojan
-    password: b8d33f30-f7c5-47e7-90ee-427d84de90c0
-    skip-cert-verify: true
-    sni: mhfz.serverpremium2.web.id
-    network: ws
-    ws-opts:
-      path: /trojan-ws
-      headers:
-        Host: mhfz.serverpremium2.web.id
-    udp: true
-
-  - name: VLESS GOOGLE 443
+  - name: VLESS APSAPI 443
     server: 104.17.3.81
     port: 443
     type: vless
-    uuid: aaaaaaa1-bbbb-4ccc-accc-eeeeeeeeeee1
+    uuid: e9dc7770-522e-4020-a090-bef6ac45bfd4
     alterId: 0
     cipher: auto
     tls: true
     skip-cert-verify: true
-    servername: dns-google.c-bnn.xyz
+    servername: vless.apsapi.biz.id
     network: ws
     ws-opts:
-      path: /Free-CF-Proxy/139.185.39.237-48008
+      path: /SG7
       headers:
-        Host: dns-google.c-bnn.xyz
+        Host: vless.apsapi.biz.id
     udp: true
 
-  - name: VLESS GOOGLE 80
+  - name: VLESS APSAPI 80
     server: 104.17.3.81
     port: 80
     type: vless
-    uuid: aaaaaaa1-bbbb-4ccc-accc-eeeeeeeeeee1
+    uuid: e9dc7770-522e-4020-a090-bef6ac45bfd4
     alterId: 0
     cipher: auto
     tls: false
     skip-cert-verify: true
-    servername: dns-google.c-bnn.xyz
+    servername: vless.apsapi.biz.id
     network: ws
     ws-opts:
-      path: /Free-CF-Proxy/139.185.39.237-48008
+      path: /SG7
       headers:
-        Host: dns-google.c-bnn.xyz
+        Host: vless.apsapi.biz.id
     udp: true
 
   - name: VLESS DO LOTUSH TLS
@@ -172,6 +110,136 @@ proxies:
       path: /trixie
       headers:
         Host: sgdo.lotush.my.id
+    udp: true
+
+  - name: NAURA BEAUTY 443
+    server: 104.17.3.81
+    port: 443
+    type: vmess
+    uuid: 7842bd39-10c7-4276-bdd6-8a71ed7dc220
+    alterId: 0
+    cipher: auto
+    tls: true
+    skip-cert-verify: true
+    servername: bakrie.ac.id.cname.naura.beauty
+    network: ws
+    ws-opts:
+      path: /vmess
+      headers:
+        Host: bakrie.ac.id.cname.naura.beauty
+    udp: true
+
+  - name: NAURA BEAUTY 80
+    server: 104.17.3.81
+    port: 80
+    type: vmess
+    uuid: 7842bd39-10c7-4276-bdd6-8a71ed7dc220
+    alterId: 0
+    cipher: auto
+    tls: false
+    skip-cert-verify: true
+    servername: bakrie.ac.id.cname.naura.beauty
+    network: ws
+    ws-opts:
+      path: /vmess
+      headers:
+        Host: bakrie.ac.id.cname.naura.beauty
+    udp: true
+
+  - name: LIFE TIME 443
+    server: 104.17.3.81
+    port: 443
+    type: trojan
+    password: b8d33f30-f7c5-47e7-90ee-427d84de90c0
+    skip-cert-verify: true
+    sni: mhfz.serverpremium2.web.id
+    network: ws
+    ws-opts:
+      path: /trojan-ws
+      headers:
+        Host: mhfz.serverpremium2.web.id
+    udp: true
+
+  - name: LIFE TIME 80
+    server: 104.17.3.81
+    port: 80
+    type: trojan
+    password: b8d33f30-f7c5-47e7-90ee-427d84de90c0
+    skip-cert-verify: true
+    sni: mhfz.serverpremium2.web.id
+    network: ws
+    ws-opts:
+      path: /trojan-ws
+      headers:
+        Host: mhfz.serverpremium2.web.id
+    udp: true
+
+  - name: VLESS SGDO 443
+    server: 104.17.3.81
+    port: 443
+    type: vless
+    uuid: 0fbf4f81-2598-4b6a-a623-0ead4cb9efa8
+    alterId: 0
+    cipher: auto
+    tls: true
+    skip-cert-verify: true
+    servername: privasi.xhamster.biz.id
+    network: ws
+    ws-opts:
+      path: /Free-CF-Proxy/SG
+      headers:
+        Host: privasi.xhamster.biz.id
+    udp: true
+
+  - name: VLESS SGDO 443
+    server: 104.17.3.81
+    port: 80
+    type: vless
+    uuid: 0fbf4f81-2598-4b6a-a623-0ead4cb9efa8
+    alterId: 0
+    cipher: auto
+    tls: false
+    skip-cert-verify: true
+    servername: privasi.xhamster.biz.id
+    network: ws
+    ws-opts:
+      path: /Free-CF-Proxy/SG
+      headers:
+        Host: privasi.xhamster.biz.id
+    udp: true
+
+  - name: VLESS GOOGLE 443
+    server: 104.17.3.81
+    port: 443
+    type: vless
+    uuid: aaaaaaa1-bbbb-4ccc-accc-eeeeeeeeeee1
+    alterId: 0
+    cipher: auto
+    tls: true
+    skip-cert-verify: true
+    servername: dns-google.c-bnn.xyz
+    network: ws
+    ws-opts:
+      path: /Free-CF-Proxy/139.185.39.237-48008
+      headers:
+        Host: dns-google.c-bnn.xyz
+    udp: true
+
+  - name: VLESS GOOGLE 80
+    server: 104.17.3.81
+    port: 80
+    type: vless
+    uuid: aaaaaaa1-bbbb-4ccc-accc-eeeeeeeeeee1
+    alterId: 0
+    cipher: auto
+    tls: false
+    skip-cert-verify: true
+    servername: dns-google.c-bnn.xyz
+    network: ws
+    ws-opts:
+      path: /Free-CF-Proxy/139.185.39.237-48008
+      headers:
+        Host: dns-google.c-bnn.xyz
     udp: true
 
   - name: PT PUSAT TLS
@@ -240,40 +308,6 @@ proxies:
       headers:
         Host: quiz.int.vidio.com.free.vpn-wuss.BIZ.id
 
-  - name: VLESS APSAPI 443
-    server: 104.17.3.81
-    port: 443
-    type: vless
-    uuid: e9dc7770-522e-4020-a090-bef6ac45bfd4
-    alterId: 0
-    cipher: auto
-    tls: true
-    skip-cert-verify: true
-    servername: vless.apsapi.biz.id
-    network: ws
-    ws-opts:
-      path: /SG7
-      headers:
-        Host: vless.apsapi.biz.id
-    udp: true
-
-  - name: VLESS APSAPI 80
-    server: 104.17.3.81
-    port: 80
-    type: vless
-    uuid: e9dc7770-522e-4020-a090-bef6ac45bfd4
-    alterId: 0
-    cipher: auto
-    tls: false
-    skip-cert-verify: true
-    servername: vless.apsapi.biz.id
-    network: ws
-    ws-opts:
-      path: /SG7
-      headers:
-        Host: vless.apsapi.biz.id
-    udp: true
-
   - name: LIFE TIME 443
     server: 104.17.3.81
     port: 443
@@ -300,40 +334,6 @@ proxies:
       path: /Free/TG-at-BitzBlack/172.235.251.7-587
       headers:
         Host: free.c-stuff.WEB.id
-    udp: true
-
-  - name: NAURA BEAUTY 443
-    server: 104.17.3.81
-    port: 443
-    type: vmess
-    uuid: 7842bd39-10c7-4276-bdd6-8a71ed7dc220
-    alterId: 0
-    cipher: auto
-    tls: true
-    skip-cert-verify: true
-    servername: bakrie.ac.id.cname.naura.beauty
-    network: ws
-    ws-opts:
-      path: /vmess
-      headers:
-        Host: bakrie.ac.id.cname.naura.beauty
-    udp: true
-
-  - name: NAURA BEAUTY 80
-    server: 104.17.3.81
-    port: 80
-    type: vmess
-    uuid: 7842bd39-10c7-4276-bdd6-8a71ed7dc220
-    alterId: 0
-    cipher: auto
-    tls: false
-    skip-cert-verify: true
-    servername: bakrie.ac.id.cname.naura.beauty
-    network: ws
-    ws-opts:
-      path: /vmess
-      headers:
-        Host: bakrie.ac.id.cname.naura.beauty
     udp: true
 
   - name: VLESS ID SERVLESS

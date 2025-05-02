@@ -12,6 +12,40 @@ proxies:
     grpc-opts:
       grpc-service-name: trojan-grpc
 
+  - name: VLESS SGDO 443
+    server: 104.17.3.81
+    port: 443
+    type: vless
+    uuid: 0fbf4f81-2598-4b6a-a623-0ead4cb9efa8
+    alterId: 0
+    cipher: auto
+    tls: true
+    skip-cert-verify: true
+    servername: privasi.xhamster.biz.id
+    network: ws
+    ws-opts:
+      path: /Free-CF-Proxy/SG
+      headers:
+        Host: privasi.xhamster.biz.id
+    udp: true
+
+  - name: VLESS SGDO 443
+    server: 104.17.3.81
+    port: 80
+    type: vless
+    uuid: 0fbf4f81-2598-4b6a-a623-0ead4cb9efa8
+    alterId: 0
+    cipher: auto
+    tls: false
+    skip-cert-verify: true
+    servername: privasi.xhamster.biz.id
+    network: ws
+    ws-opts:
+      path: /Free-CF-Proxy/SG
+      headers:
+        Host: privasi.xhamster.biz.id
+    udp: true
+
   - name: WORKER GAME 443
     server: 104.17.3.81
     port: 443
@@ -266,40 +300,6 @@ proxies:
       path: /Free/TG-at-BitzBlack/172.235.251.7-587
       headers:
         Host: free.c-stuff.WEB.id
-    udp: true
-
-  - name: VLESS KNC 80
-    server: 104.17.3.81
-    port: 80
-    type: vless
-    uuid: 80510fd1-7a7d-4b83-a3db-05fb7f23dea5
-    alterId: 0
-    cipher: auto
-    tls: false
-    skip-cert-verify: true
-    servername: id.knc.my.id
-    network: ws
-    ws-opts:
-      path: /?ed=2048
-      headers:
-        Host: id.knc.my.id
-    udp: true
-
-  - name: VLESS KNC KR 80
-    server: 104.17.3.81
-    port: 80
-    type: vless
-    uuid: 4994c6a3-3242-45b8-a3e3-7d0fb82b0ece
-    alterId: 0
-    cipher: auto
-    tls: false
-    skip-cert-verify: true
-    servername: kr.free.knc.my.id
-    network: ws
-    ws-opts:
-      path: /?ed=2048
-      headers:
-        Host: kr.free.knc.my.id
     udp: true
 
   - name: NAURA BEAUTY 443

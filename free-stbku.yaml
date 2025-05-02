@@ -206,21 +206,38 @@ proxies:
       headers:
         Host: quiz.int.vidio.com.free.vpn-wuss.BIZ.id
 
-  - name: VLESS KNC KR
+  - name: VLESS APSAPI 443
     server: 104.17.3.81
     port: 443
     type: vless
-    uuid: 4994c6a3-3242-45b8-a3e3-7d0fb82b0ece
+    uuid: e9dc7770-522e-4020-a090-bef6ac45bfd4
     alterId: 0
     cipher: auto
     tls: true
     skip-cert-verify: true
-    servername: kr.free.knc.my.id
+    servername: vless.apsapi.biz.id
     network: ws
     ws-opts:
-      path: /?ed=2048
+      path: /SG7
       headers:
-        Host: kr.free.knc.my.id
+        Host: vless.apsapi.biz.id
+    udp: true
+
+  - name: VLESS APSAPI 80
+    server: 104.17.3.81
+    port: 80
+    type: vless
+    uuid: e9dc7770-522e-4020-a090-bef6ac45bfd4
+    alterId: 0
+    cipher: auto
+    tls: false
+    skip-cert-verify: true
+    servername: vless.apsapi.biz.id
+    network: ws
+    ws-opts:
+      path: /SG7
+      headers:
+        Host: vless.apsapi.biz.id
     udp: true
 
   - name: LIFE TIME 443

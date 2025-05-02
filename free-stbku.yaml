@@ -76,17 +76,17 @@ proxies:
     server: 104.17.3.81
     port: 443
     type: vless
-    uuid: 80510fd1-7a7d-4b83-a3db-05fb7f23dea5
+    uuid: aaaaaaa1-bbbb-4ccc-accc-eeeeeeeeeee1
     alterId: 0
     cipher: auto
     tls: true
     skip-cert-verify: true
-    servername: id.knc.my.id
+    servername: dns-google.c-bnn.xyz
     network: ws
     ws-opts:
-      path: /?ed=2048
+      path: /Free-CF-Proxy/139.185.39.237-48008
       headers:
-        Host: id.knc.my.id
+        Host: dns-google.c-bnn.xyz
     udp: true
 
   - name: VLESS KNC2 443

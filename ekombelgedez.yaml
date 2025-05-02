@@ -328,7 +328,7 @@ proxy-groups:
   url: http://www.gstatic.com/generate_204
   interval: 50
 - name: FREE
-  type: url-test
+  type: fallback
   strategy: round-robin
   disable-udp: false
   use:

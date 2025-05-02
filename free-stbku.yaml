@@ -87,12 +87,12 @@ proxies:
     cipher: auto
     tls: true
     skip-cert-verify: true
-    servername: bakrie.ac.id.cname.naura.beauty
+    servername: cname.naura.beauty
     network: ws
     ws-opts:
       path: /vmess
       headers:
-        Host: bakrie.ac.id.cname.naura.beauty
+        Host: cname.naura.beauty
     udp: true
 
   - name: NAURA BEAUTY 80
@@ -104,13 +104,79 @@ proxies:
     cipher: auto
     tls: false
     skip-cert-verify: true
-    servername: bakrie.ac.id.cname.naura.beauty
+    servername: cname.naura.beauty
     network: ws
     ws-opts:
       path: /vmess
       headers:
-        Host: bakrie.ac.id.cname.naura.beauty
+        Host: cname.naura.beauty
     udp: true
+
+  - name: PT PUSAT TLS
+    server: 104.17.3.81
+    port: 443
+    type: vless
+    uuid: aaaaaaa1-bbbb-4ccc-accc-eeeeeeeeeee1
+    alterId: 0
+    cipher: auto
+    tls: true
+    skip-cert-verify: true
+    servername: free.vpn-wuss.BIZ.id
+    network: ws
+    ws-opts:
+      path: /Free/TG-at-BitzBlack/103.6.207.108-8080
+      headers:
+        Host: free.vpn-wuss.BIZ.id
+    udp: true
+
+  - name: PT PUSAT NTLS
+    server: 104.17.3.81
+    port: 80
+    type: vless
+    uuid: aaaaaaa1-bbbb-4ccc-accc-eeeeeeeeeee1
+    alterId: 0
+    cipher: auto
+    tls: false
+    skip-cert-verify: true
+    servername: free.vpn-wuss.BIZ.id
+    network: ws
+    ws-opts:
+      path: /Free/TG-at-BitzBlack/103.6.207.108-8080
+      headers:
+        Host: free.vpn-wuss.BIZ.id
+    udp: true
+
+  - name: PUSAT ID TLS
+    server: cache.netflix.com
+    port: 443
+    type: vless
+    uuid: aaaaaaa1-bbbb-4ccc-accc-eeeeeeeeeee1
+    cipher: auto
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    network: ws
+    servername: free.vpn-wuss.BIZ.id
+    ws-opts:
+      path: /Free/TG-at-BitzBlack/103.6.207.108-8080
+      headers:
+        Host: free.vpn-wuss.BIZ.id
+
+  - name: PUSAT ID NTLS
+    server: cache.netflix.com
+    port: 80
+    type: vless
+    uuid: aaaaaaa1-bbbb-4ccc-accc-eeeeeeeeeee1
+    cipher: auto
+    tls: false
+    udp: true
+    skip-cert-verify: true
+    network: ws
+    servername: free.vpn-wuss.BIZ.id
+    ws-opts:
+      path: /Free/TG-at-BitzBlack/103.6.207.108-8080
+      headers:
+        Host: free.vpn-wuss.BIZ.id
 
   - name: VLESS DO LOTUSH TLS
     server: 104.17.3.81
@@ -241,72 +307,6 @@ proxies:
       headers:
         Host: dns-google.c-bnn.xyz
     udp: true
-
-  - name: PT PUSAT TLS
-    server: 104.17.3.81
-    port: 443
-    type: vless
-    uuid: aaaaaaa1-bbbb-4ccc-accc-eeeeeeeeeee1
-    alterId: 0
-    cipher: auto
-    tls: true
-    skip-cert-verify: true
-    servername: quiz.int.vidio.com.free.vpn-wuss.BIZ.id
-    network: ws
-    ws-opts:
-      path: /Free/TG-at-BitzBlack/103.6.207.108-8080
-      headers:
-        Host: quiz.int.vidio.com.free.vpn-wuss.BIZ.id
-    udp: true
-
-  - name: PT PUSAT NTLS
-    server: 104.17.3.81
-    port: 80
-    type: vless
-    uuid: aaaaaaa1-bbbb-4ccc-accc-eeeeeeeeeee1
-    alterId: 0
-    cipher: auto
-    tls: false
-    skip-cert-verify: true
-    servername: quiz.int.vidio.com.free.vpn-wuss.BIZ.id
-    network: ws
-    ws-opts:
-      path: /Free/TG-at-BitzBlack/103.6.207.108-8080
-      headers:
-        Host: quiz.int.vidio.com.free.vpn-wuss.BIZ.id
-    udp: true
-
-  - name: PUSAT ID TLS
-    server: 104.17.3.81
-    port: 443
-    type: vless
-    uuid: aaaaaaa1-bbbb-4ccc-accc-eeeeeeeeeee1
-    cipher: auto
-    tls: true
-    udp: true
-    skip-cert-verify: true
-    network: ws
-    servername: quiz.int.vidio.com.free.vpn-wuss.BIZ.id
-    ws-opts:
-      path: /Free/TG-at-BitzBlack/103.6.207.108-8080
-      headers:
-        Host: quiz.int.vidio.com.free.vpn-wuss.BIZ.id
-
-  - name: PUSAT ID NTLS
-    server: 104.17.3.81
-    port: 80
-    type: vless
-    uuid: aaaaaaa1-bbbb-4ccc-accc-eeeeeeeeeee1
-    cipher: auto
-    tls: false
-    udp: true
-    skip-cert-verify: true
-    network: ws
-    servername: quiz.int.vidio.com.free.vpn-wuss.BIZ.id
-    ws-opts:
-      path: /Free/TG-at-BitzBlack/103.6.207.108-8080
-      headers:
-        Host: quiz.int.vidio.com.free.vpn-wuss.BIZ.id
 
   - name: LIFE TIME 443
     server: 104.17.3.81

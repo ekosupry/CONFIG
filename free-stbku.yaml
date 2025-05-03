@@ -11,7 +11,22 @@ proxies:
     network: grpc
     grpc-opts:
       grpc-service-name: trojan-grpc
-
+  
+  - name: VLESS MAAF AZA GRPC
+    server: 104.17.3.81
+    port: 443
+    type: vless
+    uuid: 51601f6c-e60b-4624-b030-e874e83435fb
+    cipher: auto
+    tls: true
+    skip-cert-verify: true
+    servername: tunn.maafaza.my.id
+    network: grpc
+    grpc-opts:
+    grpc-mode: gun
+    grpc-service-name: vless-grpc
+    udp: true
+    
   - name: WORKER GAME 443
     server: 104.17.3.81
     port: 443

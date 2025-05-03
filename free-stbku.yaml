@@ -5,6 +5,7 @@ proxies:
     port: 443
     type: vless
     uuid: 1e6611ce-aec7-4a64-8699-d7d731659f05
+    alterId: 0
     cipher: auto
     tls: true
     skip-cert-verify: true
@@ -21,6 +22,7 @@ proxies:
     port: 80
     type: vless
     uuid: 1e6611ce-aec7-4a64-8699-d7d731659f05
+    alterId: 0
     cipher: auto
     tls: false
     skip-cert-verify: true

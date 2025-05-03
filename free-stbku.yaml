@@ -175,6 +175,7 @@ proxies:
     port: 443
     type: vless
     uuid: aaaaaaa1-bbbb-4ccc-accc-eeeeeeeeeee1
+    alterId: 0
     cipher: auto
     tls: true
     udp: true
@@ -191,6 +192,7 @@ proxies:
     port: 80
     type: vless
     uuid: aaaaaaa1-bbbb-4ccc-accc-eeeeeeeeeee1
+    alterId: 0
     cipher: auto
     tls: false
     udp: true
@@ -416,6 +418,7 @@ proxies:
     port: 443
     type: vless
     uuid: 4ea53b3b-ce7b-40db-ad47-b61f9e62fe34
+    alterId: 0
     cipher: auto
     tls: true
     udp: true
@@ -432,6 +435,7 @@ proxies:
     port: 80
     type: vless
     uuid: 6977baaf-b4d4-4545-ad3b-7f476e3c7a5d
+    alterId: 0
     cipher: auto
     tls: false
     udp: true
@@ -566,6 +570,7 @@ proxies:
     port: 443
     type: vless
     uuid: 88833bea-f796-48a9-acab-7f8525351f63
+    alterId: 0
     cipher: auto
     tls: true
     udp: true

@@ -212,6 +212,40 @@ proxies:
         Host: sgdo.lotush.my.id
     udp: true
 
+  - name: VLESS MAAF AZA 443
+    server: 104.17.3.81
+    port: 443
+    type: vless
+    uuid: 51601f6c-e60b-4624-b030-e874e83435fb
+    alterId: 0
+    cipher: auto
+    tls: true
+    skip-cert-verify: true
+    servername: tunn.maafaza.my.id
+    network: ws
+    ws-opts:
+      path: /vless
+      headers:
+        Host: tunn.maafaza.my.id
+    udp: true
+
+  - name: VLESS MAAF AZA 80
+    server: 104.17.3.81
+    port: 80
+    type: vless
+    uuid: 51601f6c-e60b-4624-b030-e874e83435fb
+    alterId: 0
+    cipher: auto
+    tls: false
+    skip-cert-verify: true
+    servername: tunn.maafaza.my.id
+    network: ws
+    ws-opts:
+      path: /vless
+      headers:
+        Host: tunn.maafaza.my.id
+    udp: true
+
   - name: LIFE TIME 443
     server: 104.17.3.81
     port: 443
@@ -334,23 +368,6 @@ proxies:
       path: /Free/TG-at-BitzBlack/172.235.251.7-587
       headers:
         Host: free.c-stuff.WEB.id
-    udp: true
-
-  - name: VLESS ID SERVLESS
-    server: 104.17.3.81
-    port: 443
-    type: vless
-    uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
-    alterId: 0
-    cipher: auto
-    tls: true
-    skip-cert-verify: true
-    servername: id.servless.us.to
-    network: ws
-    ws-opts:
-      path: /vlesscf
-      headers:
-        Host: id.servless.us.to
     udp: true
 
   - name: VLESS ID VLCFPAGE

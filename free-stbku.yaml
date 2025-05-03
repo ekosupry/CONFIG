@@ -11,21 +11,7 @@ proxies:
     network: grpc
     grpc-opts:
       grpc-service-name: trojan-grpc
-
-  - name: VLESS MAAF AZA GRPC TLS
-    server: 104.17.3.81
-    port: 443
-    type: vless
-    uuid: 51601f6c-e60b-4624-b030-e874e83435fb
-    alterId: 0
-    cipher: auto
-    network: grpc
-    tls: true
-    servername: tunn.maafaza.my.id
-    skip-cert-verify: true
-    grpc-opts:
-      grpc-service-name: vless-grpc
-
+      
   - name: GASSKEN 443
     server: 104.17.3.81
     port: 443

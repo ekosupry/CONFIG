@@ -1,39 +1,5 @@
 proxies:
 # Akun INDO port 443 
-  - name: GASSKEN 443
-    server: 104.17.3.81
-    port: 443
-    type: vmess
-    uuid: 081ff1f0-99fe-4313-96dc-7bfd0c8a178e
-    alterId: 0
-    cipher: auto
-    tls: true
-    skip-cert-verify: true
-    servername: gaskeun.my-server.biz.id
-    network: ws
-    ws-opts:
-      path: /vmess
-      headers:
-        Host: gaskeun.my-server.biz.id
-    udp: true
-
-  - name: GASSKEN 80
-    server: 104.17.3.81
-    port: 80
-    type: vmess
-    uuid: 081ff1f0-99fe-4313-96dc-7bfd0c8a178e
-    alterId: 0
-    cipher: auto
-    tls: false
-    skip-cert-verify: true
-    servername: gaskeun.my-server.biz.id
-    network: ws
-    ws-opts:
-      path: /vmess
-      headers:
-        Host: gaskeun.my-server.biz.id
-    udp: true
-
   - name: WORKER GAME 443
     server: 104.17.3.81
     port: 443
@@ -132,6 +98,40 @@ proxies:
       path: /vmess
       headers:
         Host: cname.naura.beauty
+    udp: true
+
+  - name: GASSKEN 443
+    server: 104.17.3.81
+    port: 443
+    type: vmess
+    uuid: 081ff1f0-99fe-4313-96dc-7bfd0c8a178e
+    alterId: 0
+    cipher: auto
+    tls: true
+    skip-cert-verify: true
+    servername: gaskeun.my-server.biz.id
+    network: ws
+    ws-opts:
+      path: /vmess
+      headers:
+        Host: gaskeun.my-server.biz.id
+    udp: true
+
+  - name: GASSKEN 80
+    server: 104.17.3.81
+    port: 80
+    type: vmess
+    uuid: 081ff1f0-99fe-4313-96dc-7bfd0c8a178e
+    alterId: 0
+    cipher: auto
+    tls: false
+    skip-cert-verify: true
+    servername: gaskeun.my-server.biz.id
+    network: ws
+    ws-opts:
+      path: /vmess
+      headers:
+        Host: gaskeun.my-server.biz.id
     udp: true
 
   - name: PT PUSAT TLS

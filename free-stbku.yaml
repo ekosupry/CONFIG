@@ -34,6 +34,20 @@ proxies:
         Host: Ns-stOrE.NSIDIk685.WORkeRs.DEv
     udp: true
 
+  - name: Sidik 443
+    server: 104.17.3.81
+    port: 443
+    type: trojan
+    password: 0a2cab50-b6ab-4e90-a8b0-89921aeff197
+    skip-cert-verify: true
+    sni: do-1.tmtunnels.tech
+    network: ws
+    ws-opts:
+      path: /jihyocantik
+      headers:
+        Host: do-1.tmtunnels.tech
+    udp: true
+
   - name: VLESS APSAPI 443
     server: 104.17.3.81
     port: 443

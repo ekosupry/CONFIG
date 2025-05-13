@@ -1,5 +1,5 @@
 ---
-# ========== ekombelgedez ============
+# ================= XL ==================
 mode: rule
 allow-lan: true
 unified-delay: true
@@ -54,7 +54,7 @@ dns:
   ipv6: true
   prefer-h3: false
   default-nameserver:
-    - 1.1.1.1
+    - 8.8.8.8
   listen: 0.0.0.0:1053
   use-hosts: true
   enhanced-mode: fake-ip
@@ -74,7 +74,7 @@ dns:
     domain: ['+.google.com','+.facebook.com','+.youtube.com']
 tproxy-port: 9898
 mixed-port: 7890
-# ====== wa: 081511411523 ======
+# ================= PG ==================
 proxies:
 proxy-providers:
   ID:
@@ -168,7 +168,8 @@ proxy-groups:
   disable-udp: false
   proxies:
   - BALANCE
-  - FALLBACK
+  - FALLBACK ID
+  - FALLBACK SG
   - BEST-PING
   - NUSANTARA
   - SINGA
@@ -214,7 +215,8 @@ proxy-groups:
   - REJECT
   - DIRECT
   - BALANCE
-  - FALLBACK
+  - FALLBACK ID
+  - FALLBACK SG
   - BEST-PING
   - NUSANTARA
   - SINGA

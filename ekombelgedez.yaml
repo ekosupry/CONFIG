@@ -121,7 +121,8 @@ proxy-groups:
   disable-udp: false
   proxies:
   - BALANCE
-  - FALLBACK
+  - FALLBACK ID
+  - FALLBACK SG
   - BEST-PING
   - NUSANTARA
   - SINGA
@@ -134,7 +135,8 @@ proxy-groups:
   strategy: round-robin
   disable-udp: false
   proxies:
-  - FALLBACK
+  - FALLBACK SG
+  - FALLBACK ID
   - BEST-PING
   - BALANCE
   - NUSANTARA
@@ -149,7 +151,8 @@ proxy-groups:
   strategy: round-robin
   disable-udp: false
   proxies:
-  - FALLBACK
+  - FALLBACK ID
+  - FALLBACK SG
   - BALANCE
   - BEST-PING
   - NUSANTARA
@@ -178,8 +181,9 @@ proxy-groups:
   type: select
   disable-udp: false
   proxies:
+  - FALLBACK ID
+  - FALLBACK SG
   - BALANCE
-  - FALLBACK
   - BEST-PING
   - NUSANTARA
   - SINGA
@@ -192,8 +196,9 @@ proxy-groups:
   type: select
   disable-udp: false
   proxies:
+  - FALLBACK SG
+  - FALLBACK ID
   - BALANCE
-  - FALLBACK
   - BEST-PING
   - NUSANTARA
   - SINGA
@@ -220,7 +225,8 @@ proxy-groups:
   type: select
   disable-udp: false
   proxies:
-  - FALLBACK
+  - FALLBACK ID
+  - FALLBACK SG
   - NUSANTARA
   - SINGA
   - DIRECT
@@ -231,7 +237,8 @@ proxy-groups:
   disable-udp: false
   proxies:
   - DIRECT
-  - FALLBACK
+  - FALLBACK ID
+  - FALLBACK SG
   - NUSANTARA
   - SINGA
   url: 'http://www.gstatic.com/generate_204'
@@ -243,7 +250,8 @@ proxy-groups:
   proxies:
   - NUSANTARA
   - SINGA
-  - FALLBACK
+  - FALLBACK ID
+  - FALLBACK SG
   - DIRECT
   url: 'http://www.gstatic.com/generate_204'
   interval: 60
@@ -254,7 +262,8 @@ proxy-groups:
   proxies:
   - NUSANTARA
   - SINGA
-  - FALLBACK
+  - FALLBACK ID
+  - FALLBACK SG
   - DIRECT
   - REJECT
   url: 'http://www.gstatic.com/generate_204'
@@ -264,7 +273,8 @@ proxy-groups:
   strategy: consistent-hashing
   disable-udp: false
   proxies:
-  - FALLBACK
+  - FALLBACK ID
+  - FALLBACK SG
   - NUSANTARA
   - SINGA
   - DIRECT
@@ -277,6 +287,8 @@ proxy-groups:
   proxies:
   - FREE
   - BALANCE
+  - FALLBACK ID
+  - FALLBACK SG
   - NUSANTARA
   - SINGA
   - DIRECT
@@ -292,13 +304,23 @@ proxy-groups:
   - ID
   url: http://www.gstatic.com/generate_204
   interval: 30
-- name: FALLBACK
+- name: FALLBACK ID
   type: fallback
   strategy: round-robin
   disable-udp: false
   use:
   - ID
   - SG
+  - FR
+  url: http://www.gstatic.com/generate_204
+  interval: 60
+- name: FALLBACK SG
+  type: fallback
+  strategy: round-robin
+  disable-udp: false
+  use:
+  - SG
+  - ID
   - FR
   url: http://www.gstatic.com/generate_204
   interval: 60

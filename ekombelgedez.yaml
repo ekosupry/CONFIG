@@ -120,10 +120,10 @@ proxy-groups:
   type: select
   disable-udp: false
   proxies:
-  - BALANCE
   - FALLBACK ID
   - FALLBACK SG
   - FALLBACK FR
+  - BALANCE
   - BEST-PING
   - NUSANTARA
   - SINGA
@@ -170,11 +170,11 @@ proxy-groups:
   strategy: round-robin
   disable-udp: false
   proxies:
-  - BALANCE
+  - FALLBACK FR
   - FALLBACK ID
   - FALLBACK SG
-  - FALLBACK FR
   - BEST-PING
+  - BALANCE
   - NUSANTARA
   - SINGA
   - FREE
@@ -259,11 +259,11 @@ proxy-groups:
   strategy: round-robin
   disable-udp: false
   proxies:
-  - NUSANTARA
-  - SINGA
   - FALLBACK ID
   - FALLBACK SG
   - FALLBACK FR
+  - NUSANTARA
+  - SINGA
   - DIRECT
   url: 'http://www.gstatic.com/generate_204'
   interval: 60
@@ -272,11 +272,11 @@ proxy-groups:
   strategy: round-robin
   disable-udp: false
   proxies:
-  - NUSANTARA
-  - SINGA
   - FALLBACK ID
   - FALLBACK SG
   - FALLBACK FR
+  - NUSANTARA
+  - SINGA
   - DIRECT
   - REJECT
   url: 'http://www.gstatic.com/generate_204'
@@ -299,11 +299,11 @@ proxy-groups:
   strategy: round-robin
   disable-udp: false
   proxies:
-  - FREE
-  - BALANCE
+  - FALLBACK FR
   - FALLBACK ID
   - FALLBACK SG
-  - FALLBACK FR
+  - FREE
+  - BALANCE
   - NUSANTARA
   - SINGA
   - DIRECT

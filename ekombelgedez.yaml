@@ -1,5 +1,5 @@
 ---
-# ================= XL ==================
+# ================= 104.17.3.81 ==================
 mode: rule
 allow-lan: true
 unified-delay: true
@@ -123,6 +123,7 @@ proxy-groups:
   - BALANCE
   - FALLBACK ID
   - FALLBACK SG
+  - FALLBACK FR
   - BEST-PING
   - NUSANTARA
   - SINGA
@@ -137,6 +138,7 @@ proxy-groups:
   proxies:
   - FALLBACK SG
   - FALLBACK ID
+  - FALLBACK FR
   - BEST-PING
   - BALANCE
   - NUSANTARA
@@ -153,6 +155,7 @@ proxy-groups:
   proxies:
   - FALLBACK ID
   - FALLBACK SG
+  - FALLBACK FR
   - BALANCE
   - BEST-PING
   - NUSANTARA
@@ -170,6 +173,7 @@ proxy-groups:
   - BALANCE
   - FALLBACK ID
   - FALLBACK SG
+  - FALLBACK FR
   - BEST-PING
   - NUSANTARA
   - SINGA
@@ -184,6 +188,7 @@ proxy-groups:
   proxies:
   - FALLBACK ID
   - FALLBACK SG
+  - FALLBACK FR
   - BALANCE
   - BEST-PING
   - NUSANTARA
@@ -199,6 +204,7 @@ proxy-groups:
   proxies:
   - FALLBACK SG
   - FALLBACK ID
+  - FALLBACK FR
   - BALANCE
   - BEST-PING
   - NUSANTARA
@@ -217,6 +223,7 @@ proxy-groups:
   - BALANCE
   - FALLBACK ID
   - FALLBACK SG
+  - FALLBACK FR
   - BEST-PING
   - NUSANTARA
   - SINGA
@@ -229,6 +236,7 @@ proxy-groups:
   proxies:
   - FALLBACK ID
   - FALLBACK SG
+  - FALLBACK FR
   - NUSANTARA
   - SINGA
   - DIRECT
@@ -241,6 +249,7 @@ proxy-groups:
   - DIRECT
   - FALLBACK ID
   - FALLBACK SG
+  - FALLBACK FR
   - NUSANTARA
   - SINGA
   url: 'http://www.gstatic.com/generate_204'
@@ -254,6 +263,7 @@ proxy-groups:
   - SINGA
   - FALLBACK ID
   - FALLBACK SG
+  - FALLBACK FR
   - DIRECT
   url: 'http://www.gstatic.com/generate_204'
   interval: 60
@@ -266,6 +276,7 @@ proxy-groups:
   - SINGA
   - FALLBACK ID
   - FALLBACK SG
+  - FALLBACK FR
   - DIRECT
   - REJECT
   url: 'http://www.gstatic.com/generate_204'
@@ -277,6 +288,7 @@ proxy-groups:
   proxies:
   - FALLBACK ID
   - FALLBACK SG
+  - FALLBACK FR
   - NUSANTARA
   - SINGA
   - DIRECT
@@ -291,6 +303,7 @@ proxy-groups:
   - BALANCE
   - FALLBACK ID
   - FALLBACK SG
+  - FALLBACK FR
   - NUSANTARA
   - SINGA
   - DIRECT
@@ -324,6 +337,16 @@ proxy-groups:
   - SG
   - ID
   - FR
+  url: http://www.gstatic.com/generate_204
+  interval: 60
+- name: FALLBACK FR
+  type: fallback
+  strategy: round-robin
+  disable-udp: false
+  use:
+  - FR
+  - ID
+  - SG
   url: http://www.gstatic.com/generate_204
   interval: 60
 - name: BEST-PING

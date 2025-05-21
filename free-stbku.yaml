@@ -34,18 +34,18 @@ proxies:
         Host: Ns-stOrE.NSIDIk685.WORkeRs.DEv
     udp: true
 
-  - name: Sidik 443
+  - name: TRIAL ROUTING
     server: 104.17.3.81
     port: 443
     type: trojan
-    password: 0a2cab50-b6ab-4e90-a8b0-89921aeff197
+    password: 3d08d919-916e-4d03-9fcd-8aa6afe432b8
     skip-cert-verify: true
-    sni: do-1.tmtunnels.tech
+    sni: do60.srpcom.online
     network: ws
     ws-opts:
-      path: /jihyocantik
+      path: /trojanws
       headers:
-        Host: do-1.tmtunnels.tech
+        Host: do60.srpcom.online
     udp: true
 
   - name: VLESS APSAPI 443

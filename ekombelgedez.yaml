@@ -84,7 +84,7 @@ proxy-providers:
     health-check:
       enable: true
       url: http://www.gstatic.com/generate_204
-      interval: 600
+      interval: 60
     interval: 60
   SG:
     type: http
@@ -93,7 +93,7 @@ proxy-providers:
     health-check:
       enable: true
       url: http://www.gstatic.com/generate_204
-      interval: 600
+      interval: 60
     interval: 60
   FR:
     type: http
@@ -102,7 +102,7 @@ proxy-providers:
     health-check:
       enable: true
       url: http://www.gstatic.com/generate_204
-      interval: 600
+      interval: 60
     interval: 60
 # ================= PG ==================
 proxy-groups:
@@ -115,7 +115,7 @@ proxy-groups:
   - SG
   - FR
   url: 'http://www.gstatic.com/generate_204'
-  interval: 600
+  interval: 60
 - name: UMUM 🌏
   type: select
   disable-udp: false
@@ -130,7 +130,7 @@ proxy-groups:
   - FREE
   - DIRECT
   url: 'http://www.gstatic.com/generate_204'
-  interval: 600
+  interval: 60
 - name: YOUTUBE 🎦
   type: select
   strategy: round-robin
@@ -147,7 +147,7 @@ proxy-groups:
   - DIRECT
   - REJECT
   url: 'http://www.gstatic.com/generate_204'
-  interval: 600
+  interval: 60
 - name: WHATSAPP 📨
   type: select
   strategy: round-robin
@@ -164,7 +164,7 @@ proxy-groups:
   - DIRECT
   - REJECT
   url: 'http://www.gstatic.com/generate_204'
-  interval: 600
+  interval: 60
 - name: FACEBOOK
   type: select
   strategy: round-robin
@@ -181,7 +181,7 @@ proxy-groups:
   - DIRECT
   - REJECT
   url: 'http://www.gstatic.com/generate_204'
-  interval: 600
+  interval: 60
 - name: SOSMED 📲
   type: select
   disable-udp: false
@@ -197,7 +197,7 @@ proxy-groups:
   - DIRECT
   - REJECT
   url: 'http://www.gstatic.com/generate_204'
-  interval: 600
+  interval: 60
 - name: STREAMING 📽️
   type: select
   disable-udp: false
@@ -213,7 +213,7 @@ proxy-groups:
   - DIRECT
   - REJECT
   url: 'http://www.gstatic.com/generate_204'
-  interval: 600
+  interval: 60
 - name: SHOPPING 🛒
   type: select
   disable-udp: false
@@ -229,7 +229,7 @@ proxy-groups:
   - SINGA
   - FREE
   url: 'http://www.gstatic.com/generate_204'
-  interval: 600
+  interval: 60
 - name: GAMING - ROOM 🕹️
   type: select
   disable-udp: false
@@ -241,7 +241,7 @@ proxy-groups:
   - SINGA
   - DIRECT
   url: 'http://www.gstatic.com/generate_204'
-  interval: 600
+  interval: 60
 - name: GAMING - MATCH 🎮
   type: select
   disable-udp: false
@@ -253,7 +253,7 @@ proxy-groups:
   - NUSANTARA
   - SINGA
   url: 'http://www.gstatic.com/generate_204'
-  interval: 600
+  interval: 60
 - name: TRAFIK-AKUN-INDO 🛑
   type: select
   strategy: round-robin
@@ -266,7 +266,7 @@ proxy-groups:
   - SINGA
   - DIRECT
   url: 'http://www.gstatic.com/generate_204'
-  interval: 600
+  interval: 60
 - name: BANK 🏧
   type: select
   strategy: round-robin
@@ -280,7 +280,7 @@ proxy-groups:
   - DIRECT
   - REJECT
   url: 'http://www.gstatic.com/generate_204'
-  interval: 600
+  interval: 60
 - name: ZEROTIER ⚠️
   type: select
   strategy: consistent-hashing
@@ -293,7 +293,7 @@ proxy-groups:
   - SINGA
   - DIRECT
   url: 'http://www.gstatic.com/generate_204'
-  interval: 600
+  interval: 60
 - name: IKLAN 🛡
   type: select
   strategy: round-robin
@@ -309,7 +309,7 @@ proxy-groups:
   - DIRECT
   - REJECT
   url: 'http://www.gstatic.com/generate_204'
-  interval: 600
+  interval: 60
 - name: BALANCE
   type: load-balance
   strategy: round-robin
@@ -318,7 +318,7 @@ proxy-groups:
   - SG
   - ID
   url: http://www.gstatic.com/generate_204
-  interval: 300
+  interval: 30
 - name: FALLBACK ID
   type: fallback
   strategy: round-robin
@@ -328,7 +328,7 @@ proxy-groups:
   - SG
   - FR
   url: http://www.gstatic.com/generate_204
-  interval: 600
+  interval: 60
 - name: FALLBACK SG
   type: fallback
   strategy: round-robin
@@ -338,7 +338,7 @@ proxy-groups:
   - ID
   - FR
   url: http://www.gstatic.com/generate_204
-  interval: 600
+  interval: 60
 - name: FALLBACK FR
   type: fallback
   strategy: round-robin
@@ -348,7 +348,7 @@ proxy-groups:
   - ID
   - SG
   url: http://www.gstatic.com/generate_204
-  interval: 600
+  interval: 60
 - name: BEST-PING
   type: url-test
   strategy: round-robin
@@ -357,7 +357,7 @@ proxy-groups:
   - SG
   - ID
   url: http://www.gstatic.com/generate_204
-  interval: 600
+  interval: 60
 - name: NUSANTARA
   type: url-test
   strategy: round-robin
@@ -365,7 +365,7 @@ proxy-groups:
   use:
   - ID
   url: http://www.gstatic.com/generate_204
-  interval: 500
+  interval: 50
 - name: SINGA
   type: url-test
   strategy: round-robin
@@ -373,7 +373,7 @@ proxy-groups:
   use:
   - SG
   url: http://www.gstatic.com/generate_204
-  interval: 500
+  interval: 50
 - name: FREE
   type: fallback
   strategy: round-robin
@@ -381,7 +381,7 @@ proxy-groups:
   use:
   - FR
   url: http://www.gstatic.com/generate_204
-  interval: 500
+  interval: 50
 # ================= RP  ==================
 rule-providers:
   Portgames:

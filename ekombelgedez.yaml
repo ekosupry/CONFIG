@@ -566,6 +566,7 @@ rules:
 - RULE-SET,Personalads,IKLAN 🛡
 - RULE-SET,Basicads,IKLAN 🛡
 - RULE-SET,18+,PORN 🔥
+- RULE-SET,21+,PORN 🔥
 - RULE-SET,Nsfw,PORN 🔥
 - RULE-SET,Judol,PORN 🔥
 - RULE-SET,YouTube,YOUTUBE 🎦

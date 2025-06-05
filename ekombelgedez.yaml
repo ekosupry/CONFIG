@@ -310,6 +310,22 @@ proxy-groups:
   - REJECT
   url: 'http://www.gstatic.com/generate_204'
   interval: 60
+- name: PORN 🔥
+  type: select
+  strategy: round-robin
+  disable-udp: false
+  proxies:
+  - REJECT
+  - DIRECT
+  - FALLBACK FR
+  - FALLBACK ID
+  - FALLBACK SG
+  - FREE
+  - BALANCE
+  - NUSANTARA
+  - SINGA
+  url: 'http://www.gstatic.com/generate_204'
+  interval: 60
 - name: BALANCE
   type: load-balance
   strategy: round-robin
@@ -476,6 +492,12 @@ rule-providers:
     path: "./rule_provider/18+.yaml"
     url: "https://raw.githubusercontent.com/ekosupry/CONFIG/main/porn1.yaml"
     interval: 14400 # Update rules every 4 hours
+  21+:
+    type: http
+    behavior: domain
+    path: "./rule_provider/18+.yaml"
+    url: "https://raw.githubusercontent.com/ekosupry/CONFIG/main/porn2.yaml"
+    interval: 14400 # Update rules every 4 hours
   Basicads:
     type: http
     behavior: domain
@@ -543,9 +565,9 @@ rules:
 - RULE-SET,Facebook,FACEBOOK
 - RULE-SET,Personalads,IKLAN 🛡
 - RULE-SET,Basicads,IKLAN 🛡
-- RULE-SET,18+,IKLAN 🛡
-- RULE-SET,Nsfw,IKLAN 🛡
-- RULE-SET,Judol,IKLAN 🛡
+- RULE-SET,18+,PORN 🔥
+- RULE-SET,Nsfw,PORN 🔥
+- RULE-SET,Judol,PORN 🔥
 - RULE-SET,YouTube,YOUTUBE 🎦
 - RULE-SET,Speed,SPEEDTEST ⚡
 - RULE-SET,Zero,ZEROTIER ⚠️

@@ -65,6 +65,40 @@ proxies:
         Host: vless.apsapi.biz.id
     udp: true
 
+  - name: ID PUSAT 443
+    server: 104.17.3.81
+    port: 443
+    type: vless
+    uuid: de6e9223-c604-43ee-a583-007ab6124328
+    alterId: 0
+    cipher: auto
+    tls: true
+    skip-cert-verify: true
+    servername: violetvpn.biz.id
+    network: ws
+    ws-opts:
+      path: /id-pusat
+      headers:
+        Host: violetvpn.biz.id
+    udp: true
+
+  - name: ID PUSAT 443
+    server: 104.17.3.81
+    port: 80
+    type: vless
+    uuid: de6e9223-c604-43ee-a583-007ab6124328
+    alterId: 0
+    cipher: auto
+    tls: false
+    skip-cert-verify: true
+    servername: violetvpn.biz.id
+    network: ws
+    ws-opts:
+      path: /id-pusat
+      headers:
+        Host: violetvpn.biz.id
+    udp: true
+
   - name: VLESS APSAPI 80
     server: 104.17.3.81
     port: 80

@@ -82,7 +82,7 @@ proxies:
         Host: violetvpn.biz.id
     udp: true
 
-  - name: ID PUSAT 443
+  - name: ID PUSAT 80
     server: 104.17.3.81
     port: 80
     type: vless

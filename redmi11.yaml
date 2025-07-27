@@ -79,7 +79,7 @@ proxies:
 proxy-providers:
   ID:
     type: http
-    url: "https://raw.githubusercontent.com/ekosupry/AKUN/main/indo-netflix.yaml"
+    url: "https://raw.githubusercontent.com/ekosupry/AKUN/refs/heads/main/netflix-id.yaml"
     path: "./proxy_provider/NUSANTARA.yaml"
     health-check:
       enable: true
@@ -88,7 +88,7 @@ proxy-providers:
     interval: 60
   SG:
     type: http
-    url: "https://raw.githubusercontent.com/ekosupry/AKUN/main/manca-netflix.yaml"
+    url: "https://raw.githubusercontent.com/ekosupry/AKUN/refs/heads/main/netflix-manca.yaml"
     path: "./proxy_provider/SINGA.yaml"
     health-check:
       enable: true
@@ -97,7 +97,7 @@ proxy-providers:
     interval: 60
   FR:
     type: http
-    url: "https://raw.githubusercontent.com/ekosupry/AKUN/main/free-netflix.yaml"
+    url: "https://raw.githubusercontent.com/ekosupry/AKUN/refs/heads/main/netflix-free.yaml"
     path: "./proxy_provider/FREE.yaml"
     health-check:
       enable: true

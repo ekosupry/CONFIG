@@ -20,8 +20,6 @@ payload:
 - DOMAIN-SUFFIX,tri.co.id
 - DOMAIN-SUFFIX,smartfren.com
 - DOMAIN-KEYWORD,smartfren
-- DOMAIN-KEYWORD,pajak
-- DOMAIN-SUFFIX,booking.kai.id
 #media editor
 - DOMAIN-SUFFIX,huggingface.co
 - DOMAIN-SUFFIX,vidu.studio
@@ -63,6 +61,9 @@ payload:
 - DOMAIN-SUFFIX,jagoscalping.com
 - DOMAIN-SUFFIX,otpxl.web.id
 - DOMAIN-SUFFIX,ndeso.web.id
+- DOMAIN-KEYWORD,pajak
+- DOMAIN-SUFFIX,booking.kai.id
+- DOMAIN-SUFFIX,ntp.org
 - IP-CIDR,8.8.8.8/24
 - IP-CIDR,1.1.1.1/24
 

@@ -85,7 +85,7 @@ proxy-providers:
       enable: true
       url: http://www.gstatic.com/generate_204
       interval: 60
-    interval: 60
+    interval: 120
   SG:
     type: http
     url: "https://raw.githubusercontent.com/ekosupry/AKUN/main/manca-stbku.yaml"
@@ -94,7 +94,7 @@ proxy-providers:
       enable: true
       url: http://www.gstatic.com/generate_204
       interval: 60
-    interval: 60
+    interval: 120
   FR:
     type: http
     url: "https://raw.githubusercontent.com/ekosupry/AKUN/refs/heads/main/free-stbku.yaml"
@@ -103,11 +103,11 @@ proxy-providers:
       enable: true
       url: http://www.gstatic.com/generate_204
       interval: 60
-    interval: 60
+    interval: 120
 # ================= PG ==================
 proxy-groups:
 - name: SPEEDTEST ⚡
-  type: url-test
+  type: fallback
   strategy: round-robin
   disable-udp: false
   use:

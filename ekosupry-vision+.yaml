@@ -1,5 +1,5 @@
 ---
-# ========== ekombelgedez ============
+# ================= 104.17.3.81 ==================
 mode: rule
 allow-lan: true
 unified-delay: true
@@ -54,7 +54,7 @@ dns:
   ipv6: true
   prefer-h3: false
   default-nameserver:
-    - 94.140.14.14
+    - 8.8.8.8
   listen: 0.0.0.0:1053
   use-hosts: true
   enhanced-mode: fake-ip
@@ -64,7 +64,7 @@ dns:
     "*.localhost",
   ]
   nameserver:
-    - 94.140.14.14
+    - 1.1.1.1
   fallback: []
   fallback-filter:
     geoip: false
@@ -74,42 +74,45 @@ dns:
     domain: ['+.google.com','+.facebook.com','+.youtube.com']
 tproxy-port: 9898
 mixed-port: 7890
-# ====== wa: 081511411523 ======
+# ================= PG ==================
 proxies:
 proxy-providers:
-  SG:
-    type: http
-    url: "https://raw.githubusercontent.com/ekosupry/AKUN/main/manca-mahfudz.yaml"
-    path: "./proxy_provider/SINGA.yaml"
-    health-check:
-      enable: true
-      url: http://www.gstatic.com/generate_204
-      interval: 60
   ID:
     type: http
-    url: "https://raw.githubusercontent.com/ekosupry/AKUN/main/id-mahfudz.yaml"
+    url: "https://raw.githubusercontent.com/ekosupry/AKUN/main/indo-netflix.yaml"
     path: "./proxy_provider/NUSANTARA.yaml"
     health-check:
       enable: true
       url: http://www.gstatic.com/generate_204
       interval: 60
+    interval: 60
+  SG:
+    type: http
+    url: "https://raw.githubusercontent.com/ekosupry/AKUN/main/manca-netflix.yaml"
+    path: "./proxy_provider/SINGA.yaml"
+    health-check:
+      enable: true
+      url: http://www.gstatic.com/generate_204
+      interval: 60
+    interval: 60
   FR:
     type: http
-    url: "https://raw.githubusercontent.com/ekosupry/AKUN/main/free-vip.yaml"
+    url: "https://raw.githubusercontent.com/ekosupry/AKUN/main/free-netflix.yaml"
     path: "./proxy_provider/FREE.yaml"
     health-check:
       enable: true
       url: http://www.gstatic.com/generate_204
       interval: 60
+    interval: 60
 # ================= PG ==================
 proxy-groups:
 - name: SPEEDTEST ⚡
-  type: select
+  type: url-test
   strategy: round-robin
   disable-udp: false
   use:
-  - SG
   - ID
+  - SG
   - FR
   url: 'http://www.gstatic.com/generate_204'
   interval: 60
@@ -117,12 +120,14 @@ proxy-groups:
   type: select
   disable-udp: false
   proxies:
+  - FALLBACK ID
+  - FALLBACK SG
+  - FALLBACK FR
+  - BALANCE
   - BEST-PING
-  - FREE
   - NUSANTARA
   - SINGA
-  - BALANCE
-  - FALLBACK
+  - FREE
   - DIRECT
   url: 'http://www.gstatic.com/generate_204'
   interval: 60
@@ -131,11 +136,13 @@ proxy-groups:
   strategy: round-robin
   disable-udp: false
   proxies:
-  - SINGA
-  - FALLBACK
-  - BALANCE
+  - FALLBACK SG
+  - FALLBACK ID
+  - FALLBACK FR
   - BEST-PING
+  - BALANCE
   - NUSANTARA
+  - SINGA
   - FREE
   - DIRECT
   - REJECT
@@ -146,11 +153,13 @@ proxy-groups:
   strategy: round-robin
   disable-udp: false
   proxies:
-  - FALLBACK
-  - SINGA
-  - BEST-PING
+  - FALLBACK ID
+  - FALLBACK SG
+  - FALLBACK FR
   - BALANCE
+  - BEST-PING
   - NUSANTARA
+  - SINGA
   - FREE
   - DIRECT
   - REJECT
@@ -161,9 +170,11 @@ proxy-groups:
   strategy: round-robin
   disable-udp: false
   proxies:
-  - BALANCE
-  - FALLBACK
+  - FALLBACK FR
+  - FALLBACK ID
+  - FALLBACK SG
   - BEST-PING
+  - BALANCE
   - NUSANTARA
   - SINGA
   - FREE
@@ -175,8 +186,10 @@ proxy-groups:
   type: select
   disable-udp: false
   proxies:
+  - FALLBACK ID
+  - FALLBACK SG
+  - FALLBACK FR
   - BALANCE
-  - FALLBACK
   - BEST-PING
   - NUSANTARA
   - SINGA
@@ -189,11 +202,13 @@ proxy-groups:
   type: select
   disable-udp: false
   proxies:
-  - SINGA
+  - FALLBACK SG
+  - FALLBACK ID
+  - FALLBACK FR
   - BALANCE
-  - FALLBACK
   - BEST-PING
   - NUSANTARA
+  - SINGA
   - FREE
   - DIRECT
   - REJECT
@@ -203,23 +218,27 @@ proxy-groups:
   type: select
   disable-udp: false
   proxies:
+  - REJECT
+  - DIRECT
   - BALANCE
-  - FALLBACK
+  - FALLBACK ID
+  - FALLBACK SG
+  - FALLBACK FR
   - BEST-PING
   - NUSANTARA
   - SINGA
   - FREE
-  - DIRECT
-  - REJECT
   url: 'http://www.gstatic.com/generate_204'
   interval: 60
 - name: GAMING - ROOM 🕹️
   type: select
   disable-udp: false
   proxies:
+  - FALLBACK ID
+  - FALLBACK SG
+  - FALLBACK FR
   - NUSANTARA
   - SINGA
-  - FREE
   - DIRECT
   url: 'http://www.gstatic.com/generate_204'
   interval: 60
@@ -228,9 +247,11 @@ proxy-groups:
   disable-udp: false
   proxies:
   - DIRECT
+  - FALLBACK ID
+  - FALLBACK SG
+  - FALLBACK FR
   - NUSANTARA
   - SINGA
-  - FREE
   url: 'http://www.gstatic.com/generate_204'
   interval: 60
 - name: TRAFIK-AKUN-INDO 🛑
@@ -238,9 +259,11 @@ proxy-groups:
   strategy: round-robin
   disable-udp: false
   proxies:
+  - FALLBACK ID
+  - FALLBACK SG
+  - FALLBACK FR
   - NUSANTARA
   - SINGA
-  - FREE
   - DIRECT
   url: 'http://www.gstatic.com/generate_204'
   interval: 60
@@ -249,10 +272,13 @@ proxy-groups:
   strategy: round-robin
   disable-udp: false
   proxies:
+  - FALLBACK ID
+  - FALLBACK SG
+  - FALLBACK FR
   - NUSANTARA
   - SINGA
-  - FREE
   - DIRECT
+  - REJECT
   url: 'http://www.gstatic.com/generate_204'
   interval: 60
 - name: ZEROTIER ⚠️
@@ -260,9 +286,11 @@ proxy-groups:
   strategy: consistent-hashing
   disable-udp: false
   proxies:
+  - FALLBACK ID
+  - FALLBACK SG
+  - FALLBACK FR
   - NUSANTARA
   - SINGA
-  - FREE
   - DIRECT
   url: 'http://www.gstatic.com/generate_204'
   interval: 60
@@ -271,19 +299,31 @@ proxy-groups:
   strategy: round-robin
   disable-udp: false
   proxies:
-  - REJECT
-  - BALANCE
+  - FALLBACK FR
+  - FALLBACK ID
+  - FALLBACK SG
   - FREE
+  - BALANCE
+  - NUSANTARA
+  - SINGA
+  - DIRECT
+  - REJECT
   url: 'http://www.gstatic.com/generate_204'
   interval: 60
-- name: Adult 🔞
+- name: PORN 🔥
   type: select
   strategy: round-robin
   disable-udp: false
   proxies:
   - REJECT
   - DIRECT
-  - BEST-PING
+  - FALLBACK FR
+  - FALLBACK ID
+  - FALLBACK SG
+  - FREE
+  - BALANCE
+  - NUSANTARA
+  - SINGA
   url: 'http://www.gstatic.com/generate_204'
   interval: 60
 - name: BALANCE
@@ -295,7 +335,17 @@ proxy-groups:
   - ID
   url: http://www.gstatic.com/generate_204
   interval: 30
-- name: FALLBACK
+- name: FALLBACK ID
+  type: fallback
+  strategy: round-robin
+  disable-udp: false
+  use:
+  - ID
+  - SG
+  - FR
+  url: http://www.gstatic.com/generate_204
+  interval: 60
+- name: FALLBACK SG
   type: fallback
   strategy: round-robin
   disable-udp: false
@@ -303,6 +353,16 @@ proxy-groups:
   - SG
   - ID
   - FR
+  url: http://www.gstatic.com/generate_204
+  interval: 60
+- name: FALLBACK FR
+  type: fallback
+  strategy: round-robin
+  disable-udp: false
+  use:
+  - FR
+  - ID
+  - SG
   url: http://www.gstatic.com/generate_204
   interval: 60
 - name: BEST-PING
@@ -331,16 +391,14 @@ proxy-groups:
   url: http://www.gstatic.com/generate_204
   interval: 50
 - name: FREE
-  type: url-test
+  type: fallback
   strategy: round-robin
   disable-udp: false
   use:
   - FR
   url: http://www.gstatic.com/generate_204
   interval: 50
-
-# ==> Created By Ekombelgedez <<==
-#Bawah ini baris Pisah Trafik
+# ================= RP  ==================
 rule-providers:
   Portgames:
     type: http
@@ -382,13 +440,13 @@ rule-providers:
     type: http
     behavior: classical
     path: "./rule_provider/whatsapp.yaml"
-    url: "https://raw.githubusercontent.com/ekosupry/CONFIG/main/whatsapp.yaml"  
+    url: "https://raw.githubusercontent.com/ekosupry/CONFIG/main/whatsapp.yaml"
     interval: 14400 # Update rules every 4 hours
   Facebook:
     type: http
     behavior: classical
     path: "./rule_provider/wafb.yaml"
-    url: "https://raw.githubusercontent.com/ekosupry/CONFIG/main/facebook.yaml"  
+    url: "https://raw.githubusercontent.com/ekosupry/CONFIG/main/facebook.yaml"
     interval: 14400 # Update rules every 4 hours
   Zero:
     type: http
@@ -433,6 +491,12 @@ rule-providers:
     behavior: domain
     path: "./rule_provider/18+.yaml"
     url: "https://raw.githubusercontent.com/ekosupry/CONFIG/main/porn1.yaml"
+    interval: 14400 # Update rules every 4 hours
+  21+:
+    type: http
+    behavior: domain
+    path: "./rule_provider/18+.yaml"
+    url: "https://raw.githubusercontent.com/ekosupry/CONFIG/main/porn2.yaml"
     interval: 14400 # Update rules every 4 hours
   Basicads:
     type: http
@@ -501,9 +565,10 @@ rules:
 - RULE-SET,Facebook,FACEBOOK
 - RULE-SET,Personalads,IKLAN 🛡
 - RULE-SET,Basicads,IKLAN 🛡
-- RULE-SET,18+,Adult 🔞
-- RULE-SET,Nsfw,Adult 🔞
-- RULE-SET,Judol,Adult 🔞
+- RULE-SET,18+,PORN 🔥
+- RULE-SET,21+,PORN 🔥
+- RULE-SET,Nsfw,PORN 🔥
+- RULE-SET,Judol,PORN 🔥
 - RULE-SET,YouTube,YOUTUBE 🎦
 - RULE-SET,Speed,SPEEDTEST ⚡
 - RULE-SET,Zero,ZEROTIER ⚠️

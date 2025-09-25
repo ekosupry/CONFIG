@@ -589,6 +589,10 @@ rules:
 - RULE-SET,Facebook,FACEBOOK
 - RULE-SET,Personalads,IKLAN 🛡
 - RULE-SET,Basicads,IKLAN 🛡
+- RULE-SET,rule_hijacking,IKLAN 🛡
+- RULE-SET,rule_privacy,IKLAN 🛡
+- RULE-SET,rule_malicious,IKLAN 🛡
+- RULE-SET,rule_maliciousip,IKLAN 🛡
 - RULE-SET,18+,PORN 🔥
 - RULE-SET,21+,PORN 🔥
 - RULE-SET,Nsfw,PORN 🔥

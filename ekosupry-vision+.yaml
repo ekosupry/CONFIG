@@ -510,6 +510,30 @@ rule-providers:
     path: "./rule_provider/personalads.yaml"
     url: "https://raw.githubusercontent.com/ekosupry/CONFIG/main/personalads.yaml"
     interval: 14400 # Update rules every 4 hours
+  rule_hijacking:
+    type: http
+    behavior: classical
+    path: "./rule_provider/rule_hijacking.yaml"
+    url: https://raw.githubusercontent.com/malikshi/open_clash/main/rule_provider/rule_hijacking.yaml
+    interval: 14400
+  rule_privacy:
+    type: http
+    behavior: classical
+    url: https://raw.githubusercontent.com/malikshi/open_clash/main/rule_provider/rule_privacy.yaml
+    path: "./rule_provider/rule_privacy.yaml"
+    interval: 14400
+  rule_malicious:
+    type: http
+    behavior: domain
+    url: https://raw.githubusercontent.com/malikshi/open_clash/main/rule_provider/rule_malicious.yaml
+    path: "./rule_provider/rule_malicious.yaml"
+    interval: 14400
+  rule_maliciousip:
+    type: http
+    behavior: ipcidr
+    url: https://raw.githubusercontent.com/malikshi/open_clash/main/rule_provider/rule_maliciousip.yaml
+    path: "./rule_provider/rule_maliciousip.yaml"
+    interval: 14400
 #Belanja
   Market:
     type: http
